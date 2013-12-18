@@ -1,0 +1,23 @@
+# This package is maintained by 'pkgbuildup', and will update weekly,
+# if something wrong just notice me please.
+# Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
+
+pkgname=deepin-default-wallpapers
+pkgver=git20131101095720~30009677e8
+pkgrel=1
+pkgdesc='Default wallpapers for Linux Deepin'
+arch=('i686' 'x86_64')
+depends=('deepin-system-settings')
+license=('Unknown')
+provides=("${pkgname}")
+conflicts=("${pkgname}-git")
+url="http://www.linuxdeepin.com/"
+_pkgsite="http://packages.linuxdeepin.com"
+# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
+_parent_url="${_pkgsite}/deepin/pool/main/d/deepin-wallpapers"
+source=("${_parent_url}/deepin-default-wallpapers_13.06+git20131101095720~30009677e8_all.deb")
+md5sums=('cfd00550436d07c2b22300dbdb65c18a')
+
+package() {
+    tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
+}

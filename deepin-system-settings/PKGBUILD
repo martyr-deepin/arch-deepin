@@ -1,0 +1,79 @@
+# This package is maintained by 'pkgbuildup', and will update weekly,
+# if something wrong just notice me please.
+# Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
+
+pkgname=deepin-system-settings
+pkgver=git20131119092306~a2b2a79bf9
+pkgrel=1
+pkgdesc='Utility classes for using DCM modules in Linux Deepin environment'
+arch=('i686' 'x86_64')
+depends=('deepin-ui' 'deepin-gsettings' 'polkit' 'python2-pexpect'
+         'gstreamer0.10' 'python2-psutil' 'bluez' 'obex-data-server'
+         'xautomation' 'python2-dbus' 'python2-gtop')
+         # 'deepin-xrandr' 'python-deepin-storm'
+license=('GPL3')
+provides=("${pkgname}")
+conflicts=("${pkgname}-git")
+url="http://www.linuxdeepin.com/"
+_pkgsite="http://packages.linuxdeepin.com"
+# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
+_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
+source=("${_parent_url}/deepin-system-settings_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-all_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-a11y_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-account_1+git20121217085710_all.deb"
+        "${_parent_url}/deepin-system-settings-module-application-associate_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-bluetooth_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-driver_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-mouse_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-power_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-printer_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-system-information_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-touchpad_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-tray-power_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-mount-media_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-date-time_1+git20121217085710_all.deb"
+        "${_parent_url}/deepin-system-settings-module-desktop_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-display_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-individuation_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-keyboard_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-network_1+git20131119092306~a2b2a79bf9_all.deb"
+        "${_parent_url}/deepin-system-settings-module-sound_1+git20131119092306~a2b2a79bf9_all.deb"
+        )
+md5sums=('215e10565fac05b0d10c8b7890249bfc'
+         'ec5c972b81024b58872f424acc15130b'
+         'fa2bae635a17d0669777bb955591a09e'
+         'd2b3bb764afd82fe63ca4ef6a174ad87'
+         'aa16c1c1b4b923dbc8fed9d88b89eea0'
+         'd9ccf6da0ed922cdd1d71d32fc572d00'
+         'fe8dcd2c464f25e8588943b7a1ad02e1'
+         '487d1b4f4fae909451d07f417b430e02'
+         '30755889fc70d62e615010ca99294e92'
+         '46cd4be88b15366c05c3c00855f32e7b'
+         'c05ae0377f2bd8203fe7320043ba553b'
+         'a917ad02ef0426e4c0cb988d5edc0eeb'
+         '2f7187747fb7bc2a3902bc015922a0c2'
+         '2eb0253c8efa005c4a334cd6bc49f7b4'
+         'b1e8997dfc8e5281b8868c0d4466bdaf'
+         'b7735d01fefc7850146083d30b7f4c33'
+         'ec155e024374b9427fb7e1e4fadcc97b'
+         '4d999cbfaa2ab26adaf9e5215723ef99'
+         '73640dc173fb433717e39a1ec52d2e75'
+         '4f05ac45462ac37fea1acb308d5c41a0'
+         '4eea8d3181702ea64193227eb7487c8f'
+        )
+
+package() {
+    # extract *.deb
+    cd ${srcdir}
+    for f in $(ls -1 *.deb); do
+        msg2 "Extracting ${f}"
+        bsdtar -xvf ${f}
+        bsdtar -xvf data.tar.gz -C ${pkgdir}/
+    done
+    
+    # fix python version
+    find ${pkgdir} -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+}
+
+

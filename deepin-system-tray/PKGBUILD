@@ -1,0 +1,25 @@
+# This package is maintained by 'pkgbuildup', and will update weekly,
+# if something wrong just notice me please.
+# Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
+
+pkgname=deepin-system-tray
+pkgver=git20131114092503~1dfbbf0f1a
+pkgrel=1
+pkgdesc='Icon theme from Linux Deepin'
+arch=('i686' 'x86_64')
+depends=('deepin-system-settings')
+license=('GPL3')
+provides=("${pkgname}")
+conflicts=("${pkgname}-git")
+url="http://www.linuxdeepin.com/"
+_pkgsite="http://packages.linuxdeepin.com"
+# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
+_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
+source=("${_parent_url}/deepin-system-tray_0.1-1+git20131114092503~1dfbbf0f1a_all.deb")
+md5sums=('7ea4474e59e4c389ba8cc5817fc33550')
+
+package() {
+    tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
+    find ${pkgdir} -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+}
+

@@ -1,0 +1,327 @@
+###* variables
+# PKGBUILDUP_LOG="./pkgbuildup_result.log"
+# INTEGRITY_CHECK="md5"
+# IGNORE_WARN="t"
+# DOWNLOAD_OVERWRITE="false"
+
+# deepin_pkgsite="http://packages.linuxdeepin.com"
+deepin_pkgsite="http://mirrors.ustc.edu.cn" # candidate server
+tplname="PKGBUILD.tpl"
+
+###* functions
+update_pkgbuild_for_deepin() {
+    local tplfile=$1
+    local pkgverreg=${2:-"git[^_.-]*"}
+    local pkgrelreg=""          # ignore this argument
+    local makepkg=$3
+    # local makepkg="false"
+    # local upload=$4
+    local upload="false"
+    update_pkgbuild_for_source_site "${tplfile}" "${pkgverreg}" "${pkgrelreg}" "${makepkg}" "${upload}"
+}
+
+update_local_git() {
+    git add -u .
+    git commit -m "Update by pkgbuild_update"
+}
+
+###** deepin-desktop-environment
+update_deepin_desktop_environment() {
+    local pkgname="deepin-desktop-environment"
+    local pkgdir="./${pkgname}"
+    local tplfile="${pkgdir}/${tplname}"
+    
+    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
+    local filereg="${pkgname}_.*?\.tar\.gz"
+    
+    local FILE_INFO=("filename::md5::${url}::${filereg}")
+    update_pkgbuild_for_deepin ${tplfile}
+}
+
+###** deepin-desktop-environment-plugins
+update_deepin_desktop_environment_plugins() {
+    local pkgname="deepin-desktop-environment-plugins"
+    local pkgdir="./${pkgname}"
+    local tplfile="${pkgdir}/${tplname}"
+    
+    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
+    local filereg="${pkgname}_.*?_all\.deb"
+    local plugreg_1="${pkgname}-clock_.*?_all\.deb"
+    local plugreg_2="${pkgname}-weather_.*?_all\.deb"
+    
+    local FILE_INFO=("filename::md5::${url}::${filereg}"
+                     "plugfile_1::md5plug_1::${url}::${plugreg_1}"
+                     "plugfile_2::md5plug_2::${url}::${plugreg_2}"
+                     )
+    update_pkgbuild_for_deepin ${tplfile}
+}
+
+###** deepin-notifications
+update_deepin_notifications() {
+    local pkgname="deepin-notifications"
+    local pkgdir="./${pkgname}"
+    local tplfile="${pkgdir}/${tplname}"
+    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
+    local filereg="${pkgname}_.*?_all\.deb"
+    
+    local FILE_INFO=("filename::md5::${url}::${filereg}")
+    update_pkgbuild_for_deepin ${tplfile}
+}
+
+###** deepin-screenshot
+update_deepin_screenshot() {
+    local pkgname="deepin-screenshot"
+    local pkgdir="./${pkgname}"
+    local tplfile="${pkgdir}/${tplname}"
+    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
+    local filereg="${pkgname}_.*?_all\.deb"
+    
+    local FILE_INFO=("filename::md5::${url}::${filereg}")
+    update_pkgbuild_for_deepin ${tplfile}
+}
+
+###** deepin-terminal
+update_deepin_terminal() {
+    local pkgname="deepin-terminal"
+    local pkgdir="./${pkgname}"
+    local tplfile="${pkgdir}/${tplname}"
+    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
+    local filereg="${pkgname}_.*?_all\.deb"
+    
+    local FILE_INFO=("filename::md5::${url}::${filereg}")
+    update_pkgbuild_for_deepin ${tplfile}
+}
+
+###** deepin-webkit
+update_deepin_webkit() {
+    local pkgname="deepin-webkit"
+    local pkgdir="./${pkgname}"
+    local tplfile="${pkgdir}/${tplname}"
+    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
+    local filereg="${pkgname}_.*?_all\.deb"
+    
+    local filereg_x86="lib${pkgname}-.*?_i386.deb"
+    local filereg_x64="lib${pkgname}-.*?_amd64.deb"
+    
+    local FILE_INFO=("filename_x86::md5_x86::${url}::${filereg_x86}"
+                     "filename_x64::md5_x64::${url}::${filereg_x64}")
+    update_pkgbuild_for_deepin ${tplfile}
+}
+
+###** deepin-artwork
+update_deepin_artwork() {
+    local pkgname="deepin-artwork"
+    local pkgdir="./${pkgname}"
+    local tplfile="${pkgdir}/${tplname}"
+    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
+    
+    local filereg="${pkgname}_.*?_all\.deb"
+    local pkgverreg="[0-9]{2}[^_-]*"
+    
+    local FILE_INFO=("filename::md5::${url}::${filereg}")
+    update_pkgbuild_for_deepin ${tplfile} ${pkgverreg}
+}
+
+###** deepin-icon-theme
+update_deepin_icon_theme() {
+    local pkgname="deepin-icon-theme"
+    local pkgdir="./${pkgname}"
+    local tplfile="${pkgdir}/${tplname}"
+    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
+    local filereg="${pkgname}_.*?_all\.deb"
+    
+    local FILE_INFO=("filename::md5::${url}::${filereg}")
+    update_pkgbuild_for_deepin ${tplfile}
+}
+
+###** deepin-cursor-theme
+update_deepin_cursor_theme() {
+    local pkgname="deepin-cursor-theme"
+    local pkgdir="./${pkgname}"
+    local tplfile="${pkgdir}/${tplname}"
+    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
+    
+    local filereg="${pkgname}_.*?_all\.deb"
+    local pkgverreg="[0-9]{2}[^_-]*"
+    
+    local FILE_INFO=("filename::md5::${url}::${filereg}")
+    update_pkgbuild_for_deepin ${tplfile} ${pkgverreg}
+}
+
+
+###** deepin-gtk-theme
+update_deepin_gtk_theme() {
+    local pkgname="deepin-gtk-theme"
+    local pkgdir="./${pkgname}"
+    local tplfile="${pkgdir}/${tplname}"
+    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
+    
+    local filereg="${pkgname}_.*?_all\.deb"
+    
+    local FILE_INFO=("filename::md5::${url}::${filereg}")
+    update_pkgbuild_for_deepin ${tplfile}
+}
+
+###** deepin-system-tray
+update_deepin_system_tray() {
+    local pkgname="deepin-system-tray"
+    local pkgdir="./${pkgname}"
+    local tplfile="${pkgdir}/${tplname}"
+    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
+    
+    local filereg="${pkgname}_.*?_all\.deb"
+    
+    local FILE_INFO=("filename::md5::${url}::${filereg}")
+    update_pkgbuild_for_deepin ${tplfile} ${pkgverreg}
+}
+
+###** deepin-system-settings
+update_deepin_system_settings() {
+    local pkgname="deepin-system-settings"
+    local pkgdir="./${pkgname}"
+    local tplfile="${pkgdir}/${tplname}"
+    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
+    
+    local filereg="${pkgname}_.*?_all\.deb"
+    local modprefix="${pkgname}-module"
+    local modreg_1="${modprefix}-all_.*?_all\.deb"
+    local modreg_2="${modprefix}-a11y_.*?_all\.deb"
+    local modreg_3="${modprefix}-account_.*?_all\.deb"
+    local modreg_4="${modprefix}-application-associate_.*?_all\.deb"
+    local modreg_5="${modprefix}-bluetooth_.*?_all\.deb"
+    local modreg_6="${modprefix}-driver_.*?_all\.deb"
+    local modreg_7="${modprefix}-mouse_.*?_all\.deb"
+    local modreg_8="${modprefix}-power_.*?_all\.deb"
+    local modreg_9="${modprefix}-printer_.*?_all\.deb"
+    local modreg_10="${modprefix}-system-information_.*?_all\.deb"
+    local modreg_11="${modprefix}-touchpad_.*?_all\.deb"
+    local modreg_12="${modprefix}-tray-power_.*?_all\.deb"
+    local modreg_13="${modprefix}-mount-media_.*?_all\.deb"
+    local modreg_14="${modprefix}-date-time_.*?_all\.deb"
+    local modreg_15="${modprefix}-desktop_.*?_all\.deb"
+    local modreg_16="${modprefix}-display_.*?_all\.deb"
+    local modreg_17="${modprefix}-individuation_.*?_all\.deb"
+    local modreg_18="${modprefix}-keyboard_.*?_all\.deb"
+    local modreg_19="${modprefix}-network_.*?_all\.deb"
+    local modreg_20="${modprefix}-sound_.*?_all\.deb"
+    
+    local FILE_INFO=("filename::md5::${url}::${filereg}"
+                     "modname_1::md5mod_1::${url}::${modreg_1}"
+                     "modname_2::md5mod_2::${url}::${modreg_2}"
+                     "modname_3::md5mod_3::${url}::${modreg_3}"
+                     "modname_4::md5mod_4::${url}::${modreg_4}"
+                     "modname_5::md5mod_5::${url}::${modreg_5}"
+                     "modname_6::md5mod_6::${url}::${modreg_6}"
+                     "modname_7::md5mod_7::${url}::${modreg_7}"
+                     "modname_8::md5mod_8::${url}::${modreg_8}"
+                     "modname_9::md5mod_9::${url}::${modreg_9}"
+                     "modname_10::md5mod_10::${url}::${modreg_10}"
+                     "modname_11::md5mod_11::${url}::${modreg_11}"
+                     "modname_12::md5mod_12::${url}::${modreg_12}"
+                     "modname_13::md5mod_13::${url}::${modreg_13}"
+                     "modname_14::md5mod_14::${url}::${modreg_14}"
+                     "modname_15::md5mod_15::${url}::${modreg_15}"
+                     "modname_16::md5mod_16::${url}::${modreg_16}"
+                     "modname_17::md5mod_17::${url}::${modreg_17}"
+                     "modname_18::md5mod_18::${url}::${modreg_18}"
+                     "modname_19::md5mod_19::${url}::${modreg_19}"
+                     "modname_20::md5mod_20::${url}::${modreg_20}"
+                     )
+    update_pkgbuild_for_deepin ${tplfile}
+}
+
+###** deepin-webapps
+update_deepin_webapps() {
+    local pkgname="deepin-webapps"
+    local pkgdir="./${pkgname}"
+    local tplfile="${pkgdir}/${tplname}"
+    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
+    
+    local filereg_1="${pkgname}-kuwo-music_.*?_all\.deb"
+    local filereg_2="${pkgname}-dbank-online-storage_.*?_all\.deb"
+    local filereg_3="${pkgname}-youdao-note_.*?_all\.deb"
+    local filereg_4="${pkgname}-chainrxn_.*?_all\.deb"
+    local filereg_5="${pkgname}-doit-im_.*?_all\.deb"
+    local filereg_6="${pkgname}-microsoft-skydrive_.*?_all\.deb"
+    local filereg_7="${pkgname}-baidu-map_.*?_all\.deb"
+    local filereg_8="${pkgname}-douban_.*?_all\.deb"
+    local filereg_9="${pkgname}-ttpod_.*?_all\.deb"
+    local filereg_10="${pkgname}-kugou-music_.*?_all\.deb"
+    local filereg_11="${pkgname}-kingsoft-fast-docs_.*?_all\.deb"
+    local filereg_12="${pkgname}-xiami-music_.*?_all\.deb"
+    local filereg_13="${pkgname}-cargo-bridge_.*?_all\.deb"
+    local filereg_14="${pkgname}-sina-weibo_.*?_all\.deb"
+    local filereg_15="${pkgname}-pirateslovedaisies_.*?_all\.deb"
+    local filereg_16="${pkgname}-kingsoft-online-storage_.*?_all\.deb"
+    local filereg_17="${pkgname}-baidu-music_.*?_all\.deb"
+    local filereg_18="${pkgname}-baidu-online-storage_.*?_all\.deb"
+    local filereg_19="${pkgname}-paulrouget_.*?_all\.deb"
+    local filereg_20="${pkgname}-towerim_.*?_all\.deb"
+    local filereg_21="${pkgname}-fetion_.*?_all\.deb"
+    local filereg_22="${pkgname}-baidu-hi_.*?_all\.deb"
+    local filereg_23="${pkgname}-12306_.*?_all\.deb"
+    
+    local FILE_INFO=("filename_1::md5_1::${url}::${filereg_1}"
+                     "filename_2::md5_2::${url}::${filereg_2}"
+                     "filename_3::md5_3::${url}::${filereg_3}"
+                     "filename_4::md5_4::${url}::${filereg_4}"
+                     "filename_5::md5_5::${url}::${filereg_5}"
+                     "filename_6::md5_6::${url}::${filereg_6}"
+                     "filename_7::md5_7::${url}::${filereg_7}"
+                     "filename_8::md5_8::${url}::${filereg_8}"
+                     "filename_9::md5_9::${url}::${filereg_9}"
+                     "filename_10::md5_10::${url}::${filereg_10}"
+                     "filename_11::md5_11::${url}::${filereg_11}"
+                     "filename_12::md5_12::${url}::${filereg_12}"
+                     "filename_13::md5_13::${url}::${filereg_13}"
+                     "filename_14::md5_14::${url}::${filereg_14}"
+                     "filename_15::md5_15::${url}::${filereg_15}"
+                     "filename_16::md5_16::${url}::${filereg_16}"
+                     "filename_17::md5_17::${url}::${filereg_17}"
+                     "filename_18::md5_18::${url}::${filereg_18}"
+                     "filename_19::md5_19::${url}::${filereg_19}"
+                     "filename_20::md5_20::${url}::${filereg_20}"
+                     "filename_21::md5_21::${url}::${filereg_21}"
+                     "filename_22::md5_22::${url}::${filereg_22}"
+                     "filename_23::md5_23::${url}::${filereg_23}"
+                     )
+    local pkgverreg="[0-9]+\.[0-9]+[^-_]*"
+    update_pkgbuild_for_deepin ${tplfile} ${pkgverreg}
+}
+
+###** deepin-default-wallpapers
+update_deepin_default_wallpapers() {
+    local pkgname="deepin-default-wallpapers"
+    local pkgdir="./${pkgname}"
+    local tplfile="${pkgdir}/${tplname}"
+    local url="${deepin_pkgsite}/deepin/pool/main/d/deepin-wallpapers"
+    
+    local filereg="${pkgname}_.*?_all\.deb"
+    
+    local FILE_INFO=("filename::md5::${url}::${filereg}")
+    update_pkgbuild_for_deepin ${tplfile} ${pkgverreg}
+}
+
+###* main
+# update_deepin_desktop_environment
+# update_deepin_desktop_environment_plugins
+# update_deepin_notifications
+# update_deepin_screenshot
+# update_deepin_terminal
+# update_deepin_webkit
+# update_deepin_artwork
+# update_deepin_icon_theme
+# update_deepin_cursor_theme
+# update_deepin_gtk_theme
+# update_deepin_system_tray
+update_deepin_system_settings
+# update_deepin_webapps
+# update_deepin_default_wallpapers
+
+# update_local_git
+
+# Local Variables:
+# mode: bash
+# mode: orgstruct
+# End:
+

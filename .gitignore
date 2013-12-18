@@ -1,0 +1,11 @@
+*~
+*/*~
+pkg/
+src/
+*/pkg/
+*/src/
+*/*.pkg.tar.xz
+*/*.tar.gz
+*/*.deb
+*/*.tar.xz
+*/_*

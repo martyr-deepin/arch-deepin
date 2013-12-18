@@ -1,0 +1,37 @@
+# This package is maintained by 'pkgbuildup', and will update weekly,
+# if something wrong just notice me please.
+# Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
+
+pkgname=deepin-desktop-environment-plugins
+pkgver=git20131108153537~9905357014
+pkgrel=1
+pkgdesc='Desktop environment of Linux Deepin'
+arch=('i686' 'x86_64')
+depends=('deepin-desktop-environment' 'deepin-artwork')
+# makedepends=('coffee-script')
+license=('GPL3')
+provides=("${pkgname}")
+conflicts=("${pkgname}-git")
+url="http://www.linuxdeepin.com/"
+_pkgsite="http://packages.linuxdeepin.com"
+# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
+_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
+source=("${_parent_url}/deepin-desktop-environment-plugins_0.0.1+git20131108153537~9905357014_all.deb"
+        "${_parent_url}/deepin-desktop-environment-plugins-clock_0.0.1+git20131108153537~9905357014_all.deb"
+        "${_parent_url}/deepin-desktop-environment-plugins-weather_0.0.1+git20131108153537~9905357014_all.deb"
+        )
+md5sums=('02cae83ff9dcf3553d261d9b2fd18951'
+         'c65bb54d6d65407fd14d70ba61ccf3ef'
+         'c09e974685661cb18b7b13043d699923'
+         )
+
+package() {
+    # extract *.deb
+    cd ${srcdir}
+    for f in $(ls -1 *.deb); do
+        msg2 "Extracting ${f}"
+        bsdtar -xvf ${f}
+        bsdtar -xvf data.tar.gz -C ${pkgdir}/
+    done
+}
+

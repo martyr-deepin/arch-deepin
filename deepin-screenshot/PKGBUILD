@@ -1,0 +1,25 @@
+# This package is maintained by 'pkgbuildup', and will update weekly,
+# if something wrong just notice me please.
+# Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
+
+pkgname=deepin-screenshot
+pkgver=git20131108165119~32e91fbc03
+pkgrel=1
+pkgdesc="Provide a quite easy-to-use screenshot tool. Features:Global hotkey to triggle screenshot tool,Take screenshot of a selected area,Easy to add text and line drawings onto the screenshot"
+depends=('python2' 'gconf' 'python2-xlib' 'deepin-ui' 'python2-wnck' 'python2-xdg' 'python2-scipy' 'python2-pycurl')
+arch=('any')
+url="http://www.linuxdeepin.com/"
+license=('GPL-3')
+_pkgsite="http://packages.linuxdeepin.com"
+# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
+_parent_url="${_pkgsite}/deepin/pool/main/d/deepin-screenshot"
+source=("${_parent_url}/deepin-screenshot_2.0+git20131108165119~32e91fbc03_all.deb")
+md5sums=('0b2129d842aa480935cde22623170f8d')
+
+package() {
+    tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
+    
+    cd ${pkgdir}/usr/share/deepin-screenshot/src/
+    sed -i 's_#! /usr/bin/env python$_#! /usr/bin/env python2_' *.py   
+    sed -i 's_#! /usr/bin/python$_#! /usr/bin/python2_' *.py  
+}

@@ -1,0 +1,27 @@
+# This package is maintained by 'pkgbuildup', and will update weekly,
+# if something wrong just notice me please.
+# Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
+
+pkgname=deepin-gtk-theme
+pkgver=git20131120114604~529217d987
+pkgrel=1
+pkgdesc='Gtk3 theme from Linux Deepin'
+arch=('i686' 'x86_64')
+depends=('gtk-engine-unico')
+license=('GPL3')
+provides=("${pkgname}")
+conflicts=("${pkgname}-git")
+url="http://www.linuxdeepin.com/"
+_pkgsite="http://packages.linuxdeepin.com"
+# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
+_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
+source=("${_parent_url}/deepin-gtk-theme_13.06+git20131120114604~529217d987_all.deb")
+md5sums=('80b37b048e940343301267c1737ab2be')
+
+package() {
+    tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
+    
+    # remove configure files for gtk2 and gtk3 for their format is wrong
+    rm -rvf ${pkgdir}/etc/
+}
+

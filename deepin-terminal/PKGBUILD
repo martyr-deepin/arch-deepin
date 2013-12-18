@@ -1,0 +1,32 @@
+# This package is maintained by 'pkgbuildup', and will update weekly,
+# if something wrong just notice me please.
+# Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
+
+pkgname=deepin-terminal
+pkgver=git20131125000403~c6c474d431
+pkgrel=1
+pkgdesc='Awesome terminal for Linux Deepin'
+arch=('i686' 'x86_64')
+depends=('deepin-ui' 'deepin-vte-plus' 'python2-dbus')
+makedepends=('w3m')
+license=('GPL3')
+provides=('deepin-terminal')
+conflicts=('deepin-terminal-git')
+url="http://www.linuxdeepin.com/"
+_pkgsite="http://packages.linuxdeepin.com"
+# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
+_parent_url="${_pkgsite}/deepin/pool/main/d/deepin-terminal"
+_file_reg="deepin-terminal_+.*?_all.deb"
+source=("${_parent_url}/deepin-terminal_1+git20131125000403~c6c474d431_all.deb")
+md5sums=('1e306ca69968d301f457c2a963d761d5')
+
+package() {
+    tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
+
+    cd ${pkgdir}/usr/share/deepin-terminal/src/
+    sed -i 's_#! /usr/bin/env python$_#! /usr/bin/env python2_' *.py
+    sed -i 's_#! /usr/bin/python$_#! /usr/bin/python2_' *.py
+
+    # there is no 'XHei' font on archinux, so replace it
+    sed -i 's/XHei Mono.Ubuntu/Monospace/' main.py
+}

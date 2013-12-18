@@ -1,0 +1,80 @@
+# This package is maintained by 'pkgbuildup', and will update weekly,
+# if something wrong just notice me please.
+# Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
+
+pkgname=deepin-webapps
+pkgver=0.6
+pkgrel=1
+pkgdesc='Webapps from Deepin Linux'
+arch=('i686' 'x86_64')
+depends=('chromium' 'xdg-utils')
+license=('GPL3')
+provides=("${pkgname}")
+conflicts=("${pkgname}-git")
+url="http://www.linuxdeepin.com/"
+_pkgsite="http://packages.linuxdeepin.com"
+# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
+_parent_url="${_pkgsite}/deepin/pool/main/d/deepin-system-settings"
+source=("${_parent_url}/deepin-webapps-kuwo-music_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-dbank-online-storage_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-youdao-note_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-chainrxn_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-doit-im_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-microsoft-skydrive_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-baidu-map_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-douban_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-ttpod_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-kugou-music_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-kingsoft-fast-docs_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-xiami-music_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-cargo-bridge_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-sina-weibo_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-pirateslovedaisies_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-kingsoft-online-storage_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-baidu-music_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-baidu-online-storage_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-paulrouget_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-towerim_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-fetion_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-baidu-hi_0.6-2~raring1_all.deb"
+        "${_parent_url}/deepin-webapps-12306_0.6-2~raring1_all.deb"
+        )
+md5sums=('30113a6903ec7b0dc7d00ef1d702ef14'
+         '23cd8f26a4522b5be1c2c39e0fe9f46f'
+         '0f623c521f1a06fc247e8e0990b1bc90'
+         '3c3c31f591de70a10dc6a5bf14db6139'
+         'f14fccd566eaf19ab59524b471ce2249'
+         '421afe2d16cb16d6195a4c22f86e6ef4'
+         '5018969c179720aef87d5abc00d726c0'
+         '063a9adac46ffc1bc13fd30bd3542c86'
+         '99840d1815be371aca4ff0427e2f4588'
+         'c6eb3137c12af6aa6698daf31c39154b'
+         '7a31da0d1624420ca34d1535d336767d'
+         'b3065a59b1859b14418d0dcf92b3578e'
+         '3834760d07116f80c5df22d7d16d3143'
+         'e8903adecd4006f3ccbd578119dff7a7'
+         '5fe57c850cedab7325d0d161b6a6c032'
+         '06bd2de6f7f3d403630c8cabd0f3ba07'
+         'e16fd065558e311c8ffa70f9966418eb'
+         '4c8af1c72803e518edd75a8fed765edc'
+         '588fc8d13336bdad4d49a5e8d991b06c'
+         'f08c8ac0c2c2f5873cc3200555613e1a'
+         '84560f5b8198cd3ca7d2bae702e24ee6'
+         '91730aea0685320c75e50f4a1c20e1fa'
+         '501241da75fb56b2b082a5d2fb45de15'
+        )
+
+package() {
+    # extract *.deb
+    cd ${srcdir}
+    for f in $(ls -1 *.deb); do
+        msg2 "Extracting ${f}"
+        bsdtar -xvf ${f}
+        bsdtar -xvf data.tar.gz -C ${pkgdir}/
+    done
+    
+    # run with chromium
+    find ${pkgdir} -iname "*.desktop" | xargs sed -i \
+        's_Exec=/usr/bin/google-chrome_Exec=/usr/bin/chromium_'
+}
+

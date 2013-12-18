@@ -1,0 +1,38 @@
+# Update PKGBUILD which package file living in other linux
+# distribution's source site, and get the latest package file name by
+# Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
+
+pkgname=deepin-webkit
+pkgver=git20131010153235~9ac8cf628b
+pkgrel=1
+pkgdesc='A modified webkitgtk libirary for Linux Deepin'
+arch=('i686' 'x86_64')
+depends=('webkitgtk' 'icu48')
+makedepends=('w3m')
+license=('GPL3')
+provides=('deepin-webkit')
+conflicts=('deepin-webkit-git')
+url="http://www.linuxdeepin.com/"
+
+_pkgsite="http://packages.linuxdeepin.com"
+# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
+_parent_url="${_pkgsite}/deepin/pool/main/d/deepin-webkit"
+_file_x86="libdeepin-webkit-3.0-0_1.8.2.1+git20131010153235~9ac8cf628b_i386.deb"
+_file_x64="libdeepin-webkit-3.0-0_1.8.2.1+git20131010153235~9ac8cf628b_amd64.deb"
+_md5_x86="b2fde05a8b221cb681e6e8f160ab7435"
+_md5_x64="af00dcf30b9b714eab38151e75d3fb57"
+if test "$CARCH" == i686; then
+    _file=${_file_x86}
+    _md5=${_md5_x86}
+else    
+    _file=${_file_x64}
+    _md5=${_md5_x64}
+fi
+source=("${_parent_url}/${_file}")
+md5sums=("${_md5}")
+
+package() {
+    tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
+}
+
+         
