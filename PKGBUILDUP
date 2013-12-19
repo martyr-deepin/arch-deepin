@@ -207,6 +207,14 @@ update_deepin_ui() {
     update_pkgbuild_for_deepin
 }
 
+###** python2-deepin-xrandr
+update_python2_deepin_xrandr() {
+    local pkgname="python2-deepin-xrandr"
+    local url="${deepin_pkgsite}/deepin/pool/main/d/deepin-xrandr"
+    local filereg="deepin-xrandr_.*?\.tar\.gz"
+    update_pkgbuild_for_deepin
+}
+
 ###* main
 # update_deepin_desktop_environment
 # update_deepin_desktop_environment_plugins
@@ -219,13 +227,15 @@ update_deepin_ui() {
 # update_deepin_cursor_theme
 # # update_deepin_gtk_theme
 # update_deepin_system_tray
-update_deepin_system_settings
+# update_deepin_system_settings
 # update_deepin_webapps
 # update_deepin_default_wallpapers
 
 # update_deepin_media_player
 # update_deepin_music_player
 # update_deepin_ui
+
+update_python2_deepin_xrandr
 
 # update_local_git
 
