@@ -18,18 +18,18 @@ source=("${_parent_url}/{% filename %}")
 md5sums=('{% md5 %}')
 
 build(){
-	cd "$srcdir"/${pkgname}-1+${pkgver}
-	python2 setup.py build
+    cd "$srcdir"/${pkgname}-1+${pkgver}
+    python2 setup.py build
 }
 
 package() {
     mkdir -p "$pkgdir"/usr/share/locale
     mkdir -p "$pkgdir"/usr/lib/python2.7/site-packages/dtk/theme
-	cd "$srcdir"/${pkgname}-1+${pkgver}
-	python2 setup.py install --root="$pkgdir/" --optimize=1
-	mv "$pkgdir"/usr/dtk/locale "$pkgdir"/usr/share/
-	mv "$pkgdir"/usr/dtk/theme "$pkgdir"/usr/lib/python2.7/site-packages/dtk/
-	rm -rf "$pkgdir"/usr/dtk/
+    cd "$srcdir"/${pkgname}-1+${pkgver}
+    python2 setup.py install --root="$pkgdir/" --optimize=1
+    mv "$pkgdir"/usr/dtk/locale "$pkgdir"/usr/share/
+    mv "$pkgdir"/usr/dtk/theme "$pkgdir"/usr/lib/python2.7/site-packages/dtk/
+    rm -rf "$pkgdir"/usr/dtk/
 
     # fix python version
     find ${pkgdir} -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='

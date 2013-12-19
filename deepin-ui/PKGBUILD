@@ -18,21 +18,19 @@ source=("${_parent_url}/deepin-ui_1+git20131108164648~e369b783df.tar.gz")
 md5sums=('fe1399d53a14ae0ff1f62443669a72f9')
 
 build(){
-	cd "$srcdir"/${pkgname}-1+${pkgver}
-	python2 setup.py build
+    cd "$srcdir"/${pkgname}-1+${pkgver}
+    python2 setup.py build
 }
 
 package() {
     mkdir -p "$pkgdir"/usr/share/locale
     mkdir -p "$pkgdir"/usr/lib/python2.7/site-packages/dtk/theme
-	cd "$srcdir"/${pkgname}-1+${pkgver}
-	python2 setup.py install --root="$pkgdir/" --optimize=1
-	mv "$pkgdir"/usr/dtk/locale "$pkgdir"/usr/share/
-	mv "$pkgdir"/usr/dtk/theme "$pkgdir"/usr/lib/python2.7/site-packages/dtk/
-	rm -rf "$pkgdir"/usr/dtk/
+    cd "$srcdir"/${pkgname}-1+${pkgver}
+    python2 setup.py install --root="$pkgdir/" --optimize=1
+    mv "$pkgdir"/usr/dtk/locale "$pkgdir"/usr/share/
+    mv "$pkgdir"/usr/dtk/theme "$pkgdir"/usr/lib/python2.7/site-packages/dtk/
+    rm -rf "$pkgdir"/usr/dtk/
 
-	# cd ${pkgdir}/usr/lib/python2.7/site-packages/dtk/ui
-    # sed -i 's_#! /usr/bin/env python$_#! /usr/bin/env python2_' *.py
     # fix python version
     find ${pkgdir} -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
 }
