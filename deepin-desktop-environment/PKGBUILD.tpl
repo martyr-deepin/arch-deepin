@@ -11,9 +11,8 @@ depends=('compiz-core' 'ccsm' 'deepin-artwork' 'deepin-webkit'
     'deepin-system-settings' 'deepin-notifications' 'deepin-system-tray'
     'dbus-glib' 'glib2' 'gtk3' 'gstreamer0.10' 'lightdm' 'opencv' 'sqlite'
     'gvfs' 'xdg-user-dirs')
-# fusion-icon ccsm
 makedepends=('cmake' 'go' 'coffee-script')
-license=('GPL3')
+license=('GPL2')
 provides=("${pkgname}")
 conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
@@ -26,19 +25,18 @@ md5sums=('{% md5 %}')
 package() {
     _srcdir=`find ${srcdir} -maxdepth 1 -type d | tail -1`
     cd ${_srcdir}
-    
+
     mkdir -p build
     cd build
     cmake -DCMAKE_INSTALL_PREFIX="/usr" ..
     make
     make DESTDIR="${pkgdir}" install
-    
+
     # fix python version
     find ${pkgdir} -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
-    
+
     # move 'shutdown' command to /usr/bin/deepin to resolve coflicts
     cd ${pkgdir}
     mkdir -p usr/bin/deepin
     mv usr/bin/shutdown usr/bin/deepin
 }
-

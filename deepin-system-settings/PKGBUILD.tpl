@@ -11,7 +11,7 @@ depends=('deepin-ui' 'deepin-gsettings' 'polkit' 'python2-pexpect'
          'gstreamer0.10' 'python2-psutil' 'bluez' 'obex-data-server'
          'xautomation' 'python2-dbus' 'python2-gtop')
          # 'deepin-xrandr' 'python-deepin-storm'
-license=('GPL3')
+license=('GPL2')
 provides=("${pkgname}")
 conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
@@ -71,9 +71,7 @@ package() {
         bsdtar -xvf ${f}
         bsdtar -xvf data.tar.gz -C ${pkgdir}/
     done
-    
+
     # fix python version
     find ${pkgdir} -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
 }
-
-

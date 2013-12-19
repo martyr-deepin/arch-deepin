@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc='Icon theme from Linux Deepin'
 arch=('i686' 'x86_64')
 depends=('deepin-system-settings')
-license=('GPL3')
+license=('GPL2')
 provides=("${pkgname}")
 conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
@@ -20,8 +20,7 @@ md5sums=('{% md5 %}')
 
 package() {
     tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
-    
+
     # fix python version
     find ${pkgdir} -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
 }
-

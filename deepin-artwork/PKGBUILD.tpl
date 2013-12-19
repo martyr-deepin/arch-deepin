@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc='Artworks package for Linux Deepin'
 arch=('i686' 'x86_64')
 depends=('deepin-icon-theme' 'deepin-gtk-theme' 'wqy-microhei')
-license=('GPL3')
+license=('LGPL3')
 provides=("${pkgname}")
 conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
@@ -21,4 +21,3 @@ md5sums=('{% md5 %}')
 package() {
     tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
 }
-

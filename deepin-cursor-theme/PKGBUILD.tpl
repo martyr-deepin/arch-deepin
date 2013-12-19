@@ -7,7 +7,7 @@ pkgver={% pkgver %}
 pkgrel=1
 pkgdesc='Cursor theme from Linux Deepin'
 arch=('i686' 'x86_64')
-license=('GPL3')
+license=('LGPL3')
 provides=("${pkgname}")
 conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
@@ -20,4 +20,3 @@ md5sums=('{% md5 %}')
 package() {
     tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
 }
-

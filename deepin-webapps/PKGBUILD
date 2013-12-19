@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc='Webapps from Deepin Linux'
 arch=('i686' 'x86_64')
 depends=('chromium' 'xdg-utils')
-license=('GPL3')
+license=('Unknown')
 provides=("${pkgname}")
 conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
@@ -72,9 +72,8 @@ package() {
         bsdtar -xvf ${f}
         bsdtar -xvf data.tar.gz -C ${pkgdir}/
     done
-    
+
     # run with chromium
     find ${pkgdir} -iname "*.desktop" | xargs sed -i \
         's_Exec=/usr/bin/google-chrome_Exec=/usr/bin/chromium_'
 }
-

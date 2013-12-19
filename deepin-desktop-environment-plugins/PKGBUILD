@@ -5,11 +5,10 @@
 pkgname=deepin-desktop-environment-plugins
 pkgver=git20131108153537~9905357014
 pkgrel=1
-pkgdesc='Desktop environment of Linux Deepin'
+pkgdesc='Plugins for Linux Deepin desktop environment'
 arch=('i686' 'x86_64')
 depends=('deepin-desktop-environment' 'deepin-artwork')
-# makedepends=('coffee-script')
-license=('GPL3')
+license=('Unknown')
 provides=("${pkgname}")
 conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
@@ -34,4 +33,3 @@ package() {
         bsdtar -xvf data.tar.gz -C ${pkgdir}/
     done
 }
-

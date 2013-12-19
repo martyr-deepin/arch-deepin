@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc='A modified webkitgtk libirary for Linux Deepin'
 arch=('i686' 'x86_64')
 depends=('webkitgtk' 'icu48')
-license=('GPL3')
+license=('LGPL + GPL + BSD + other')
 provides=("${pkgname}")
 conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
@@ -23,7 +23,7 @@ _md5_x64="{% md5_x64 %}"
 if test "$CARCH" == i686; then
     _file=${_file_x86}
     _md5=${_md5_x86}
-else    
+else
     _file=${_file_x64}
     _md5=${_md5_x64}
 fi
@@ -33,4 +33,3 @@ md5sums=("${_md5}")
 package() {
     tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
 }
-

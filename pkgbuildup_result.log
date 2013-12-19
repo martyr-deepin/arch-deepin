@@ -1,1 +1,14 @@
-[SUCCESS]  ./deepin-system-settings/PKGBUILD.template
+[SUCCESS]  ./deepin-desktop-environment/PKGBUILD.tpl
+[SUCCESS]  ./deepin-desktop-environment-plugins/PKGBUILD.tpl
+[SUCCESS]  ./deepin-notifications/PKGBUILD.tpl
+[SUCCESS]  ./deepin-screenshot/PKGBUILD.tpl
+[SUCCESS]  ./deepin-terminal/PKGBUILD.tpl
+[FAILED]   ./deepin-webkit/PKGBUILD.tpl
+[SUCCESS]  ./deepin-artwork/PKGBUILD.tpl
+[FAILED]   ./deepin-icon-theme/PKGBUILD.tpl
+[SUCCESS]  ./deepin-cursor-theme/PKGBUILD.tpl
+[FAILED]   ./deepin-gtk-theme/PKGBUILD.tpl
+[SUCCESS]  ./deepin-system-tray/PKGBUILD.tpl
+[SUCCESS]  ./deepin-system-settings/PKGBUILD.tpl
+[SUCCESS]  ./deepin-webapps/PKGBUILD.tpl
+[SUCCESS]  ./deepin-default-wallpapers/PKGBUILD.tpl

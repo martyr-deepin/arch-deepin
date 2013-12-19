@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc='Plugins for Linux Deepin desktop environment'
 arch=('i686' 'x86_64')
 depends=('deepin-desktop-environment' 'deepin-artwork')
-license=('GPL3')
+license=('Unknown')
 provides=("${pkgname}")
 conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
@@ -33,4 +33,3 @@ package() {
         bsdtar -xvf data.tar.gz -C ${pkgdir}/
     done
 }
-

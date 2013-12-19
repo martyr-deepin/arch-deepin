@@ -9,7 +9,7 @@ pkgdesc="Provide a quite easy-to-use screenshot tool. Features:Global hotkey to 
 depends=('python2' 'gconf' 'python2-xlib' 'deepin-ui' 'python2-wnck' 'python2-xdg' 'python2-scipy' 'python2-pycurl')
 arch=('any')
 url="http://www.linuxdeepin.com/"
-license=('GPL3')
+license=('LGPL3')
 provides=("${pkgname}")
 conflicts=("${pkgname}-git")
 _pkgsite="http://packages.linuxdeepin.com"
@@ -20,7 +20,7 @@ md5sums=('{% md5 %}')
 
 package() {
     tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
-    
+
     # fix python version
     find ${pkgdir} -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
 }

@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc='System notifications for Linux Deepin desktop environment'
 arch=('i686' 'x86_64')
 depends=('deepin-ui' 'deepin-pygtk-fix' 'python2-dbus' 'python2-cairo')
-license=('GPL3')
+license=('GPL2')
 provides=("${pkgname}")
 conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
@@ -20,9 +20,8 @@ md5sums=('{% md5 %}')
 
 package() {
     tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
-    
+
     # fix python version
     find ${pkgdir} -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
     sed -i 's=\(^#! */usr/bin.*\)python=\1python2=' ${pkgdir}/usr/bin/deepin-notify
 }
-

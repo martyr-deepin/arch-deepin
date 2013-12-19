@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc='Awesome terminal for Linux Deepin'
 arch=('i686' 'x86_64')
 depends=('deepin-ui' 'deepin-vte-plus' 'python2-dbus')
-license=('GPL3')
+license=('GPL2')
 provides=("${pkgname}")
 conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
@@ -25,5 +25,5 @@ package() {
     find ${pkgdir} -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
 
     # there is no 'XHei' font on archinux, so replace it
-    sed -i 's/XHei Mono.Ubuntu/Monospace/' main.py
+    sed -i 's/XHei Mono.Ubuntu/Monospace/' ${pkgdir}/usr/share/deepin-terminal/src/main.py
 }

@@ -5,18 +5,18 @@
 pkgname=deepin-cursor-theme
 pkgver=2013~4
 pkgrel=1
-pkgdesc='Icon theme for Linux Deepin'
+pkgdesc='Cursor theme from Linux Deepin'
 arch=('i686' 'x86_64')
-license=('GPL3')
-provides=('deepin-cursor-theme')
+license=('LGPL3')
+provides=("${pkgname}")
+conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
-_parent_url="${_pkgsite}/deepin/pool/main/d/deepin-cursor-theme"
+_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
 source=("${_parent_url}/deepin-cursor-theme_2013~4-1_all.deb")
 md5sums=('5171429b08fe8ff470853ddf02ea3391')
 
 package() {
     tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
 }
-
