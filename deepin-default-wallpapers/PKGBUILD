@@ -1,5 +1,3 @@
-# This package is maintained by 'pkgbuildup', and will update weekly,
-# if something wrong just notice me please.
 # Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
 
 pkgname=deepin-default-wallpapers
