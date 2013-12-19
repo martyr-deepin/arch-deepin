@@ -72,4 +72,22 @@ package() {
 
     # fix python version
     find ${pkgdir} -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+
+    # fix python problem more
+    cd ${pkgdir}/usr/share/deepin-system-settings/
+
+    # /usr/share/deepin-system-settings/dss/main.py
+    sed -i 's/subprocess.Popen("python %s/subprocess.Popen("python2 %s/' \
+        dss/main.py
+
+    sed -i "s/startswith('python')/startswith('python2')/" \
+        modules/sound/src/tray_sound_gui_small.py
+
+    sed -i "s/'command': \"python /'command': \"python2 /" \
+        modules/keyboard/src/keybind_all.py
+    sed -i "s/'command': 'python /'command': 'python2 /" \
+        modules/keyboard/src/keybind_all.py
+
+    sed -i 's/subprocess.Popen("python %s/subprocess.Popen("python2 %s/' \
+        modules/bluetooth/src/tray_bluetooth_plugin.py
 }
