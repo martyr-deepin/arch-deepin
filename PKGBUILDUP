@@ -331,6 +331,19 @@ update_deepin_music_player() {
     update_pkgbuild_for_deepin ${tplfile} ${pkgverreg}
 }
 
+###** deepin-ui
+update_deepin_ui() {
+    local pkgname="deepin-ui"
+    local pkgdir="./${pkgname}"
+    local tplfile="${pkgdir}/${tplname}"
+    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
+
+    local filereg="${pkgname}_.*?\.tar\.gz"
+
+    local FILE_INFO=("filename::md5::${url}::${filereg}")
+    update_pkgbuild_for_deepin ${tplfile} ${pkgverreg}
+}
+
 ###* main
 # update_deepin_desktop_environment
 # update_deepin_desktop_environment_plugins
@@ -348,7 +361,8 @@ update_deepin_music_player() {
 # update_deepin_default_wallpapers
 
 # update_deepin_media_player
-update_deepin_music_player
+# update_deepin_music_player
+update_deepin_ui
 
 # update_local_git
 

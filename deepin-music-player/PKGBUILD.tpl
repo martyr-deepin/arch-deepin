@@ -1,4 +1,6 @@
 # Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
+# Maintainer: 4679kun <admin[AT]4679.us>
+# Maintainer: dongfengweixiao <dongfengweixiao[AT]gmail.com>
 
 pkgname=deepin-music-player
 pkgver={% pkgver %}
