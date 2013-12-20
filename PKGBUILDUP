@@ -215,7 +215,7 @@ update_deepin_ui() {
 # }
 
 ###* main
-# update_deepin_desktop_environment
+update_deepin_desktop_environment
 # update_deepin_desktop_environment_plugins
 # update_deepin_notifications
 # update_deepin_screenshot

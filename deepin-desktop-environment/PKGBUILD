@@ -14,13 +14,12 @@ license=('GPL2')
 provides=("${pkgname}")
 conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
+install=deepin-desktop-environment.install
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
 _parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
-source=("${_parent_url}/deepin-desktop-environment_1.0+git20131121141728~9b29838bb3.tar.gz"
-        "deepin.ini")
-md5sums=('5590651280e2e74f7512eae6c90894f7'
-         'e4ca574e9dc8d703bfec8f9c0862ced0')
+source=("${_parent_url}/deepin-desktop-environment_1.0+git20131121141728~9b29838bb3.tar.gz")
+md5sums=('5590651280e2e74f7512eae6c90894f7')
 
 package() {
     _srcdir=`find ${srcdir} -maxdepth 1 -type d | tail -1`
@@ -39,8 +38,4 @@ package() {
     cd ${pkgdir}
     mkdir -p usr/bin/deepin
     mv usr/bin/shutdown usr/bin/deepin
-
-    # setup compiz
-    mkdir -p ${pkgdir}/etc/compizconfig
-    cp -vf ${srcdir}/deepin.ini ${pkgdir}/etc/compizconfig
 }
