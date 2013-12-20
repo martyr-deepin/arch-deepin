@@ -184,8 +184,8 @@ update_deepin_webapps() {
 }
 
 ###* main
-update_deepin_artwork
-# update_deepin_cursor_theme
+# update_deepin_artwork
+update_deepin_cursor_theme
 # update_deepin_default_wallpapers
 # update_deepin_desktop_environment
 # update_deepin_desktop_environment_plugins

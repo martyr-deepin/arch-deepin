@@ -6,15 +6,18 @@ pkgrel=1
 pkgdesc='Cursor theme from Linux Deepin'
 arch=('i686' 'x86_64')
 license=('LGPL3')
+url="http://www.linuxdeepin.com/"
 provides=("${pkgname}")
 conflicts=("${pkgname}-git")
-url="http://www.linuxdeepin.com/"
+
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
 _parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
-source=("${_parent_url}/deepin-cursor-theme_2013~4-1_all.deb")
-md5sums=('5171429b08fe8ff470853ddf02ea3391')
+source=("${_parent_url}/deepin-cursor-theme_2013~4-1.tar.gz")
+md5sums=('400777a7f41c9c161116be17070cc253')
 
 package() {
-    tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
+    cd "${srcdir}/${pkgname}-${pkgver}"
+    install -m755 -d "${pkgdir}/usr/share/icons"
+    cp -rvf Deepin-Cursor/ "${pkgdir}/usr/share/icons/"
 }
