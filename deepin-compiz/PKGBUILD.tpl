@@ -2,13 +2,19 @@
 
 pkgname=deepin-compiz
 pkgver={% pkgver %}
-pkgrel={% pkgrel %}
+pkgrel=1
 pkgdesc='A modified compiz for Linux Deepin'
 arch=('i686' 'x86_64')
 depends=()
 license=('GPL2 + LGPL2.1 + MIT/X11')
-provides=("${pkgname}" "compiz" "compiz-core=0.8.8" "compiz-decorator-gtk")
-conflicts=("${pkgname}-git" "compiz" "compiz-core" "compiz-decorator-gtk")
+provides=("${pkgname}" "compiz" "compiz-core=0.9.99" \
+          "compiz-decorator-gtk" "ccsm" "compiz-fusion-plugins-main" \
+          "compiz-fusion-plugins-extra" "libcompizconfig" \
+          "compizconfig-python")
+conflicts=("${pkgname}-git" "compiz" "compiz-core" \ 
+          "compiz-decorator-gtk" "ccsm" "compiz-fusion-plugins-main" \
+          "compiz-fusion-plugins-extra" "libcompizconfig" \
+          "compizconfig-python")
 url="http://www.linuxdeepin.com/"
 
 _pkgsite="http://packages.linuxdeepin.com"

@@ -1,23 +1,29 @@
 # Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
 
 pkgname=deepin-compiz
-pkgver=0.8.8
-pkgrel=3
+pkgver=git20131121164514~f6a5cddae2
+pkgrel=1
 pkgdesc='A modified compiz for Linux Deepin'
 arch=('i686' 'x86_64')
 depends=()
 license=('GPL2 + LGPL2.1 + MIT/X11')
-provides=("${pkgname}" "compiz" "compiz-core=0.8.8" "compiz-decorator-gtk")
-conflicts=("${pkgname}-git" "compiz" "compiz-core" "compiz-decorator-gtk")
+provides=("${pkgname}" "compiz" "compiz-core=0.9.99" \
+          "compiz-decorator-gtk" "ccsm" "compiz-fusion-plugins-main" \
+          "compiz-fusion-plugins-extra" "libcompizconfig" \
+          "compizconfig-python")
+conflicts=("${pkgname}-git" "compiz" "compiz-core" \ 
+          "compiz-decorator-gtk" "ccsm" "compiz-fusion-plugins-main" \
+          "compiz-fusion-plugins-extra" "libcompizconfig" \
+          "compizconfig-python")
 url="http://www.linuxdeepin.com/"
 
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
 _parent_url="${_pkgsite}/deepin/pool/main/c/compiz"
-_file_x86="deepin-compiz_0.8.8-3_i386.deb"
-_file_x64="deepin-compiz_0.8.8-3_amd64.deb"
-_md5_x86="70934beb901bcbb2153c8f8e7d7293fa"
-_md5_x64="673ff57cf3b7203ca0d2c2d4740c21b9"
+_file_x86="compiz_0.9.99-1+git20131121164514~f6a5cddae2_i386.deb"
+_file_x64="compiz_0.9.99-1+git20131121164514~f6a5cddae2_amd64.deb"
+_md5_x86="8ff63c728b1a60901b4afd7c1a51fdb2"
+_md5_x64="03d5b5cb65aa4c97d7d1662f9648791f"
 if test "$CARCH" == i686; then
     _file=${_file_x86}
     _md5=${_md5_x86}
