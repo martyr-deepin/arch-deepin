@@ -5,7 +5,7 @@ pkgver=git20131121141728~9b29838bb3
 pkgrel=1
 pkgdesc='Desktop environment of Linux Deepin'
 arch=('i686' 'x86_64')
-depends=('compiz-core' 'ccsm' 'deepin-artwork' 'deepin-webkit'
+depends=('compiz-dev' 'deepin-artwork' 'deepin-webkit'
     'deepin-system-settings' 'deepin-notifications' 'deepin-system-tray'
     'dbus-glib' 'glib2' 'gtk3' 'gstreamer0.10' 'lightdm' 'opencv' 'sqlite'
     'gvfs' 'xdg-user-dirs')

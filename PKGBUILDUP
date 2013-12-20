@@ -214,20 +214,6 @@ update_deepin_ui() {
 #     update_pkgbuild_for_deepin
 # }
 
-###** deepin-compiz
-update_deepin_compiz() {
-    local pkgname="deepin-compiz"
-    local url="${deepin_pkgsite}/deepin/pool/main/c/compiz"
-
-    local filereg_x86="compiz_.*?_i386.deb"
-    local filereg_x64="compiz_.*?_amd64.deb"
-
-    local FILE_INFO=("filename_x86::md5_x86::${url}::${filereg_x86}"
-                     "filename_x64::md5_x64::${url}::${filereg_x64}")
-
-    update_pkgbuild_for_deepin
-}
-
 ###* main
 # update_deepin_desktop_environment
 # update_deepin_desktop_environment_plugins
@@ -247,8 +233,6 @@ update_deepin_compiz() {
 # update_deepin_media_player
 # update_deepin_music_player
 # update_deepin_ui
-
-update_deepin_compiz
 
 # update_local_git
 
