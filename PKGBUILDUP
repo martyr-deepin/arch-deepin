@@ -87,20 +87,6 @@ update_deepin_terminal() {
     update_pkgbuild_for_deepin
 }
 
-###** deepin-webkit
-update_deepin_webkit() {
-    local pkgname="deepin-webkit"
-    local tplfile="./${pkgname}/${tplname}"
-    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
-
-    local filereg_x86="lib${pkgname}-.*?_i386.deb"
-    local filereg_x64="lib${pkgname}-.*?_amd64.deb"
-
-    local FILE_INFO=("filename_x86::md5_x86::${url}::${filereg_x86}"
-                     "filename_x64::md5_x64::${url}::${filereg_x64}")
-    update_pkgbuild_for_deepin
-}
-
 ###** deepin-artwork
 update_deepin_artwork() {
     local pkgname="deepin-artwork"
@@ -108,23 +94,10 @@ update_deepin_artwork() {
     update_pkgbuild_for_deepin
 }
 
-###** deepin-icon-theme
-update_deepin_icon_theme() {
-    local pkgname="deepin-icon-theme"
-    update_pkgbuild_for_deepin
-}
-
 ###** deepin-cursor-theme
 update_deepin_cursor_theme() {
     local pkgname="deepin-cursor-theme"
     local pkgverreg="[0-9]{2}[^_-]*"
-    update_pkgbuild_for_deepin
-}
-
-
-###** deepin-gtk-theme
-update_deepin_gtk_theme() {
-    local pkgname="deepin-gtk-theme"
     update_pkgbuild_for_deepin
 }
 
@@ -206,25 +179,14 @@ update_deepin_ui() {
     update_pkgbuild_for_deepin
 }
 
-###** OUT python2-deepin-xrandr
-# update_python2_deepin_xrandr() {
-#     local pkgname="python2-deepin-xrandr"
-#     local url="${deepin_pkgsite}/deepin/pool/main/d/deepin-xrandr"
-#     local filereg="deepin-xrandr_.*?\.tar\.gz"
-#     update_pkgbuild_for_deepin
-# }
-
 ###* main
-update_deepin_desktop_environment
+# update_deepin_desktop_environment
 # update_deepin_desktop_environment_plugins
 # update_deepin_notifications
 # update_deepin_screenshot
 # update_deepin_terminal
-# # update_deepin_webkit
 # update_deepin_artwork
-# # update_deepin_icon_theme
 # update_deepin_cursor_theme
-# # update_deepin_gtk_theme
 # update_deepin_system_tray
 # update_deepin_system_settings
 # update_deepin_webapps
