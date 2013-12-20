@@ -46,6 +46,27 @@ update_local_git() {
     git commit -m "Update by pkgbuild_update"
 }
 
+###** deepin-artwork
+update_deepin_artwork() {
+    local pkgname="deepin-artwork"
+    local pkgverreg="[0-9]{2}[^_-]*"
+    update_pkgbuild_for_deepin
+}
+
+###** deepin-cursor-theme
+update_deepin_cursor_theme() {
+    local pkgname="deepin-cursor-theme"
+    local pkgverreg="[0-9]{2}[^_-]*"
+    update_pkgbuild_for_deepin
+}
+
+###** deepin-default-wallpapers
+update_deepin_default_wallpapers() {
+    local pkgname="deepin-default-wallpapers"
+    local url="${deepin_pkgsite}/deepin/pool/main/d/deepin-wallpapers"
+    update_pkgbuild_for_deepin
+}
+
 ###** deepin-desktop-environment
 update_deepin_desktop_environment() {
     local pkgname="deepin-desktop-environment"
@@ -69,41 +90,29 @@ update_deepin_desktop_environment_plugins() {
     update_pkgbuild_for_deepin
 }
 
+###** deepin-media-player
+update_deepin_media_player() {
+    local pkgname="deepin-media-player"
+    update_pkgbuild_for_deepin
+}
+
+###** deepin-music-player
+update_deepin_music_player() {
+    local pkgname="deepin-music-player"
+    update_pkgbuild_for_deepin
+}
+
 ###** deepin-notifications
 update_deepin_notifications() {
     local pkgname="deepin-notifications"
     update_pkgbuild_for_deepin
 }
 
+###** TODO deepin-pygkt-fix
+
 ###** deepin-screenshot
 update_deepin_screenshot() {
     local pkgname="deepin-screenshot"
-    update_pkgbuild_for_deepin
-}
-
-###** deepin-terminal
-update_deepin_terminal() {
-    local pkgname="deepin-terminal"
-    update_pkgbuild_for_deepin
-}
-
-###** deepin-artwork
-update_deepin_artwork() {
-    local pkgname="deepin-artwork"
-    local pkgverreg="[0-9]{2}[^_-]*"
-    update_pkgbuild_for_deepin
-}
-
-###** deepin-cursor-theme
-update_deepin_cursor_theme() {
-    local pkgname="deepin-cursor-theme"
-    local pkgverreg="[0-9]{2}[^_-]*"
-    update_pkgbuild_for_deepin
-}
-
-###** deepin-system-tray
-update_deepin_system_tray() {
-    local pkgname="deepin-system-tray"
     update_pkgbuild_for_deepin
 }
 
@@ -130,6 +139,27 @@ update_deepin_system_settings() {
     update_pkgbuild_for_deepin
 }
 
+###** deepin-system-tray
+update_deepin_system_tray() {
+    local pkgname="deepin-system-tray"
+    update_pkgbuild_for_deepin
+}
+
+###** deepin-terminal
+update_deepin_terminal() {
+    local pkgname="deepin-terminal"
+    update_pkgbuild_for_deepin
+}
+
+###** deepin-ui
+update_deepin_ui() {
+    local pkgname="deepin-ui"
+    local filereg="${pkgname}_.*?\.tar\.gz"
+    update_pkgbuild_for_deepin
+}
+
+###** TODO deepin-vte-plus
+
 ###** deepin-webapps
 update_deepin_webapps() {
     local pkgname="deepin-webapps"
@@ -153,48 +183,21 @@ update_deepin_webapps() {
     update_pkgbuild_for_deepin
 }
 
-###** deepin-default-wallpapers
-update_deepin_default_wallpapers() {
-    local pkgname="deepin-default-wallpapers"
-    local url="${deepin_pkgsite}/deepin/pool/main/d/deepin-wallpapers"
-    update_pkgbuild_for_deepin
-}
-
-###** deepin-media-player
-update_deepin_media_player() {
-    local pkgname="deepin-media-player"
-    update_pkgbuild_for_deepin
-}
-
-###** deepin-music-player
-update_deepin_music_player() {
-    local pkgname="deepin-music-player"
-    update_pkgbuild_for_deepin
-}
-
-###** deepin-ui
-update_deepin_ui() {
-    local pkgname="deepin-ui"
-    local filereg="${pkgname}_.*?\.tar\.gz"
-    update_pkgbuild_for_deepin
-}
-
 ###* main
-# update_deepin_desktop_environment
-# update_deepin_desktop_environment_plugins
-# update_deepin_notifications
-# update_deepin_screenshot
-# update_deepin_terminal
 # update_deepin_artwork
 # update_deepin_cursor_theme
-# update_deepin_system_tray
-# update_deepin_system_settings
-# update_deepin_webapps
 # update_deepin_default_wallpapers
-
+# update_deepin_desktop_environment
+# update_deepin_desktop_environment_plugins
 # update_deepin_media_player
 # update_deepin_music_player
+# update_deepin_notifications
+# update_deepin_screenshot
+# update_deepin_system_settings
+# update_deepin_system_tray
+# update_deepin_terminal
 # update_deepin_ui
+# update_deepin_webapps
 
 # update_local_git
 
