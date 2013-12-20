@@ -92,7 +92,6 @@ update_deepin_webkit() {
     local pkgname="deepin-webkit"
     local tplfile="./${pkgname}/${tplname}"
     local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
-    local filereg="${pkgname}_.*?_all\.deb"
 
     local filereg_x86="lib${pkgname}-.*?_i386.deb"
     local filereg_x64="lib${pkgname}-.*?_amd64.deb"
@@ -207,11 +206,28 @@ update_deepin_ui() {
     update_pkgbuild_for_deepin
 }
 
-###** python2-deepin-xrandr
-update_python2_deepin_xrandr() {
-    local pkgname="python2-deepin-xrandr"
-    local url="${deepin_pkgsite}/deepin/pool/main/d/deepin-xrandr"
-    local filereg="deepin-xrandr_.*?\.tar\.gz"
+###** OUT python2-deepin-xrandr
+# update_python2_deepin_xrandr() {
+#     local pkgname="python2-deepin-xrandr"
+#     local url="${deepin_pkgsite}/deepin/pool/main/d/deepin-xrandr"
+#     local filereg="deepin-xrandr_.*?\.tar\.gz"
+#     update_pkgbuild_for_deepin
+# }
+
+###** deepin-compiz
+update_deepin_compiz() {
+    local pkgname="deepin-compiz"
+    local url="${deepin_pkgsite}/deepin/pool/main/c/compiz"
+    local pkgverreg="\d+\.\d+\.\d+"
+    local PKGREL_CMD="grep -oP '\-\d+_' | tr -d '\-_'"
+    local pkgrelreg=""
+
+    local filereg_x86="${pkgname}_.*?_i386.deb"
+    local filereg_x64="${pkgname}_.*?_amd64.deb"
+
+    local FILE_INFO=("filename_x86::md5_x86::${url}::${filereg_x86}"
+                     "filename_x64::md5_x64::${url}::${filereg_x64}")
+
     update_pkgbuild_for_deepin
 }
 
@@ -235,11 +251,11 @@ update_python2_deepin_xrandr() {
 # update_deepin_music_player
 # update_deepin_ui
 
-update_python2_deepin_xrandr
+update_deepin_compiz
 
 # update_local_git
 
 # Local Variables:
-# mode: bash
+# mode: sh
 # mode: orgstruct
 # End:
