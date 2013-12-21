@@ -60,13 +60,6 @@ update_deepin_cursor_theme() {
     update_pkgbuild_for_deepin
 }
 
-###** deepin-default-wallpapers
-update_deepin_default_wallpapers() {
-    local pkgname="deepin-default-wallpapers"
-    local url="${deepin_pkgsite}/deepin/pool/main/d/deepin-wallpapers"
-    update_pkgbuild_for_deepin
-}
-
 ###** deepin-desktop-environment
 update_deepin_desktop_environment() {
     local pkgname="deepin-desktop-environment"
@@ -137,6 +130,13 @@ update_deepin_ui() {
 
 ###** TODO deepin-vte-plus
 
+###** deepin-wallpapers
+update_deepin_wallpapers() {
+    local pkgname="deepin-wallpapers"
+    local pkgrelreg="\d+\.\d+"
+    update_pkgbuild_for_deepin
+}
+
 ###** deepin-webapps
 update_deepin_webapps() {
     local pkgname="deepin-webapps"
@@ -163,7 +163,7 @@ update_deepin_webapps() {
 ###* main
 # update_deepin_artwork
 # update_deepin_cursor_theme
-update_deepin_default_wallpapers
+update_deepin_wallpapers
 # update_deepin_desktop_environment
 # update_deepin_desktop_environment_plugins
 # update_deepin_media_player
