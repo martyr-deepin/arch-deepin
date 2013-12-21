@@ -1,33 +1,63 @@
 # Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
 
-pkgname=deepin-desktop-environment-plugins
+pkgname=('deepin-desktop-environment-plugins'
+         'deepin-desktop-environment-plugins-clock'
+         'deepin-desktop-environment-plugins-weather')
+pkgbase='deepin-desktop-environment-plugins'
 pkgver=git20131108153537~9905357014
 pkgrel=1
-pkgdesc='Plugins for Linux Deepin desktop environment'
-arch=('i686' 'x86_64')
-depends=('deepin-desktop-environment' 'deepin-artwork')
-license=('Unknown')
-provides=("${pkgname}")
-conflicts=("${pkgname}-git")
+arch=('any')
 url="http://www.linuxdeepin.com/"
-_pkgsite="http://packages.linuxdeepin.com"
-# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
-_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
-source=("${_parent_url}/deepin-desktop-environment-plugins_0.0.1+git20131108153537~9905357014_all.deb"
-        "${_parent_url}/deepin-desktop-environment-plugins-clock_0.0.1+git20131108153537~9905357014_all.deb"
-        "${_parent_url}/deepin-desktop-environment-plugins-weather_0.0.1+git20131108153537~9905357014_all.deb"
-        )
-md5sums=('02cae83ff9dcf3553d261d9b2fd18951'
-         'c65bb54d6d65407fd14d70ba61ccf3ef'
-         'c09e974685661cb18b7b13043d699923'
-         )
+license=('GPL2')
+makedepends=('coffee-script')
 
-package() {
-    # extract *.deb
-    cd ${srcdir}
-    for f in $(ls -1 *.deb); do
-        msg2 "Extracting ${f}"
-        bsdtar -xvf ${f}
-        bsdtar -xvf data.tar.gz -C ${pkgdir}/
-    done
+_fileurl="http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-desktop-environment-plugins/deepin-desktop-environment-plugins_0.0.1+git20131108153537~9905357014.tar.gz"
+source=("${_fileurl}")
+md5sums=('517e435aab9f04d70de1f9a1b6dc964d')
+
+_innerdir="${pkgbase}-0.0.1+${pkgver}"
+
+_install_copyright_and_changelog() {
+    local pkgname=$1
+    mkdir -p "${pkgdir}"/usr/share/doc/${pkgname}
+    cp -f debian/copyright "${pkgdir}"/usr/share/doc/${pkgname}/
+    gzip -c debian/changelog > "${pkgdir}"/usr/share/doc/${pkgname}/changelog.gz
+}
+
+package_deepin-desktop-environment-plugins() {
+    depends=('deepin-desktop-environment-plugins-clock' 'deepin-desktop-environment-plugins-weather')
+    pkgdesc='Meta package for Linux Deepin desktop environment plugins'
+
+    cd "${srcdir}/${_innerdir}"
+    _install_copyright_and_changelog "${pkgname}"
+}
+
+package_deepin-desktop-environment-plugins-clock() {
+    depends=('deepin-artwork' 'deepin-desktop-environment-common')
+    pkgdesc='Linux Deepin desktop environment clock plugin'
+
+    cd "${srcdir}/${_innerdir}"
+
+    (cd clock; make)
+
+    find clock \( -name "*.coffee" -or -name "makefile" \) -delete
+    mkdir -p "${pkgdir}"/usr/share/dde/resources/desktop/plugin
+    cp -R clock "${pkgdir}"/usr/share/dde/resources/desktop/plugin/
+
+    _install_copyright_and_changelog "${pkgname}"
+}
+
+package_deepin-desktop-environment-plugins-weather() {
+    depends=('deepin-artwork' 'deepin-desktop-environment-common')
+    pkgdesc='Linux Deepin desktop environment weather plugin'
+
+    cd "${srcdir}/${_innerdir}"
+
+    (cd weather; make)
+    find weather \( -name "*.coffee" -or -name "makefile" \) -delete
+
+    mkdir -p "${pkgdir}"/usr/share/dde/resources/desktop/plugin
+    cp -R weather "${pkgdir}"/usr/share/dde/resources/desktop/plugin
+
+    _install_copyright_and_changelog "${pkgname}"
 }
