@@ -5,8 +5,8 @@
 # DOWNLOAD_OVERWRITE="false"
 UPLOAD_CMD="burp -kv %s"
 
-# deepin_pkgsite="http://packages.linuxdeepin.com"
-deepin_pkgsite="http://mirrors.ustc.edu.cn" # candidate server
+deepin_pkgsite="http://packages.linuxdeepin.com"
+# deepin_pkgsite="http://mirrors.ustc.edu.cn" # candidate server
 tplname="PKGBUILD.tpl"
 
 ###* functions
@@ -63,7 +63,6 @@ update_deepin_cursor_theme() {
 ###** deepin-desktop-environment
 update_deepin_desktop_environment() {
     local pkgname="deepin-desktop-environment"
-    local filereg="${pkgname}_.*?\.tar\.gz"
     update_pkgbuild_for_deepin
 }
 
@@ -163,8 +162,7 @@ update_deepin_webapps() {
 ###* main
 # update_deepin_artwork
 # update_deepin_cursor_theme
-update_deepin_wallpapers
-# update_deepin_desktop_environment
+update_deepin_desktop_environment
 # update_deepin_desktop_environment_plugins
 # update_deepin_media_player
 # update_deepin_music_player
@@ -174,6 +172,7 @@ update_deepin_wallpapers
 # update_deepin_system_tray
 # update_deepin_terminal
 # update_deepin_ui
+# update_deepin_wallpapers
 # update_deepin_webapps
 
 # update_local_git
