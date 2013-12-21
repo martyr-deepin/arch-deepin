@@ -2,9 +2,9 @@
 
 pkgname=('deepin-default-wallpapers'
          'deepin-extra-wallpapers')
+pkgbase="deepin-wallpapers"
 pkgver={% pkgver %}
 _realver={% pkgrel %}+${pkgver}
-_realbase='deepin-wallpapers'
 pkgrel=1
 arch=('any')
 url="http://www.linuxdeepin.com/"
@@ -25,7 +25,7 @@ package_deepin-default-wallpapers() {
     depends=('deepin-system-settings-module-individuation')
     conflicts=('deepin-extra-wallpapers')
 
-    cd "${srcdir}/${_realbase}-${_realver}"
+    cd "${srcdir}/${pkgbase}-${_realver}"
 
     mkdir -p "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/theme
     mkdir -p "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/backgrounds
@@ -46,7 +46,7 @@ package_deepin-extra-wallpapers() {
     depends=('deepin-system-settings-module-individuation')
     conflicts=('deepin-default-wallpapers')
 
-    cd "${srcdir}/${_realbase}-${_realver}"
+    cd "${srcdir}/${pkgbase}-${_realver}"
 
     mkdir -p "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation
 
