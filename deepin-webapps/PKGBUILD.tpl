@@ -5,11 +5,10 @@ pkgver={% pkgver %}
 pkgrel=1
 pkgdesc='Webapps from Deepin Linux'
 arch=('i686' 'x86_64')
-depends=('chromium' 'xdg-utils')
-license=('Unknown')
-provides=("${pkgname}")
-conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
+license=('Unknown')
+depends=('chromium' 'xdg-utils')
+
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
 _parent_url="${_pkgsite}/deepin/pool/main/d/deepin-system-settings"
@@ -35,8 +34,7 @@ source=("${_parent_url}/{% filename_1 %}"
         "${_parent_url}/{% filename_20 %}"
         "${_parent_url}/{% filename_21 %}"
         "${_parent_url}/{% filename_22 %}"
-        "${_parent_url}/{% filename_23 %}"
-        )
+        "${_parent_url}/{% filename_23 %}")
 md5sums=('{% md5_1 %}'
          '{% md5_2 %}'
          '{% md5_3 %}'
@@ -59,8 +57,7 @@ md5sums=('{% md5_1 %}'
          '{% md5_20 %}'
          '{% md5_21 %}'
          '{% md5_22 %}'
-         '{% md5_23 %}'
-        )
+         '{% md5_23 %}')
 
 package() {
     # extract *.deb

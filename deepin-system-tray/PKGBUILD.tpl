@@ -5,11 +5,10 @@ pkgver={% pkgver %}
 pkgrel=1
 pkgdesc='Icon theme from Linux Deepin'
 arch=('i686' 'x86_64')
-depends=('deepin-system-settings')
-license=('GPL2')
-provides=("${pkgname}")
-conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
+license=('GPL2')
+depends=('deepin-system-settings')
+
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
 _parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"

@@ -5,14 +5,11 @@ pkgver={% pkgver %}
 pkgrel=1
 pkgdesc='Utility classes for using DCM modules in Linux Deepin environment'
 arch=('i686' 'x86_64')
-depends=('deepin-ui' 'deepin-gsettings' 'polkit' 'python2-pexpect'
-         'gstreamer0.10' 'python2-psutil' 'bluez' 'obex-data-server'
-         'xautomation' 'python2-dbus' 'python2-gtop')
-         # 'deepin-xrandr' 'python-deepin-storm'
-license=('GPL2')
-provides=("${pkgname}")
-conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
+license=('GPL2')
+depends=('deepin-ui' 'deepin-gsettings' 'polkit' 'python2-pexpect' 'gstreamer0.10' 'python2-psutil' 'bluez' 'obex-data-server' 'xautomation' 'python2-dbus' 'python2-gtop')
+         # 'deepin-xrandr' 'python-deepin-storm'
+
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
 _parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"

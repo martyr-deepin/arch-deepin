@@ -5,22 +5,19 @@ pkgver={% pkgver %}
 pkgrel=1
 pkgdesc='Plugins for Linux Deepin desktop environment'
 arch=('i686' 'x86_64')
-depends=('deepin-desktop-environment' 'deepin-artwork')
-license=('Unknown')
-provides=("${pkgname}")
-conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
+license=('GPL2')
+depends=('deepin-desktop-environment' 'deepin-artwork')
+
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
 _parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
 source=("${_parent_url}/{% filename %}"
         "${_parent_url}/{% plugfile_1 %}"
-        "${_parent_url}/{% plugfile_2 %}"
-        )
+        "${_parent_url}/{% plugfile_2 %}")
 md5sums=('{% md5 %}'
          '{% md5plug_1 %}'
-         '{% md5plug_2 %}'
-         )
+         '{% md5plug_2 %}')
 
 package() {
     # extract *.deb

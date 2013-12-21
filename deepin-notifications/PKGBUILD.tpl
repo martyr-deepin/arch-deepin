@@ -5,11 +5,11 @@ pkgver={% pkgver %}
 pkgrel=1
 pkgdesc='System notifications for Linux Deepin desktop environment'
 arch=('i686' 'x86_64')
-depends=('deepin-ui' 'deepin-pygtk-fix' 'python2-dbus' 'python2-cairo')
 license=('GPL2')
-provides=("${pkgname}")
-conflicts=("${pkgname}-git" "notify-osd")
 url="http://www.linuxdeepin.com/"
+depends=('deepin-ui' 'deepin-pygtk-fix' 'python2-dbus' 'python2-cairo')
+conflicts=("notify-osd")
+
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
 _parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"

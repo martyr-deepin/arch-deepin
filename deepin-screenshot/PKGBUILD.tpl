@@ -4,12 +4,11 @@ pkgname=deepin-screenshot
 pkgver={% pkgver %}
 pkgrel=1
 pkgdesc="Provide a quite easy-to-use screenshot tool. Features:Global hotkey to triggle screenshot tool,Take screenshot of a selected area,Easy to add text and line drawings onto the screenshot"
-depends=('python2' 'gconf' 'python2-xlib' 'deepin-ui' 'python2-wnck' 'python2-xdg' 'python2-scipy' 'python2-pycurl')
 arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('LGPL3')
-provides=("${pkgname}")
-conflicts=("${pkgname}-git")
+depends=('python2' 'gconf' 'python2-xlib' 'deepin-ui' 'python2-wnck' 'python2-xdg' 'python2-scipy' 'python2-pycurl')
+
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
 _parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"

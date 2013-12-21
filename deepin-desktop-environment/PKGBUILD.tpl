@@ -5,16 +5,12 @@ pkgver={% pkgver %}
 pkgrel=1
 pkgdesc='Desktop environment of Linux Deepin'
 arch=('i686' 'x86_64')
-depends=('dconf' 'gtk2' 'compiz-dev' 'deepin-artwork' 'deepin-webkit'
-    'deepin-system-settings' 'deepin-notifications' 'deepin-system-tray'
-    'dbus-glib' 'glib2' 'gtk3' 'gstreamer0.10' 'lightdm' 'opencv' 'sqlite'
-    'gvfs' 'xdg-user-dirs')
-makedepends=('cmake' 'go' 'coffee-script')
-license=('GPL2')
-provides=("${pkgname}")
-conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
+license=('GPL2')
+depends=('dconf' 'gtk2' 'compiz-dev' 'deepin-artwork' 'deepin-webkit' 'deepin-system-settings' 'deepin-notifications' 'deepin-system-tray' 'dbus-glib' 'glib2' 'gtk3' 'gstreamer0.10' 'lightdm' 'opencv' 'sqlite' 'gvfs' 'xdg-user-dirs')
+makedepends=('cmake' 'go' 'coffee-script')
 install=deepin-desktop-environment.install
+
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
 _parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"

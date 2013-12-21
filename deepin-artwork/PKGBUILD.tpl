@@ -8,8 +8,6 @@ arch=('i686' 'x86_64')
 license=('LGPL3')
 url="http://www.linuxdeepin.com/"
 depends=('deepin-icon-theme' 'deepin-gtk-theme' 'wqy-microhei')
-provides=("${pkgname}")
-conflicts=("${pkgname}-git")
 
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server

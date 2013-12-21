@@ -5,11 +5,10 @@ pkgver={% pkgver %}
 pkgrel=1
 pkgdesc='Awesome terminal for Linux Deepin'
 arch=('any')
-depends=('deepin-ui' 'deepin-vte-plus' 'python2-dbus')
-license=('GPL2')
-provides=("${pkgname}")
-conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
+license=('GPL2')
+depends=('deepin-ui' 'deepin-vte-plus' 'python2-dbus')
+
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
 _parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"

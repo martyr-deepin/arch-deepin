@@ -7,9 +7,9 @@ pkgver={% pkgver %}
 pkgrel=1
 pkgdesc='UI toolkit for Linux Deepin'
 arch=('i686' 'x86_64')
-depends=('deepin-utils' 'deepin-gsettings' 'deepin-pygtk-fix' 'python2-distribute' 'python2' 'glib2' 'python2-cairo' 'python2-imaging' 'libwebkit' 'python-xlib' 'pywebkitgtk' 'libsoup')
 url="http://www.linuxdeepin.com/"
 license=('GPL3')
+depends=('deepin-utils' 'deepin-gsettings' 'deepin-pygtk-fix' 'python2-distribute' 'python2' 'glib2' 'python2-cairo' 'python2-imaging' 'libwebkit' 'python-xlib' 'pywebkitgtk' 'libsoup')
 
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
