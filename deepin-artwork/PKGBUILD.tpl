@@ -15,9 +15,9 @@ md5sums=('{% md5 %}')
 package() {
     cd "${srcdir}/${pkgname}-${pkgver}"
 
-    install -m755 -d "${pkgdir}/usr/share/pixmaps"
-    cp -R usr/share/pixmaps ${pkgdir}/usr/share/pixmaps/
+    mkdir -p "${pkgdir}"/usr/share/pixmaps
+    cp -R usr/share/pixmaps "${pkgdir}"/usr/share/pixmaps/
 
-    install -m755 -d "${pkgdir}/usr/share/sounds"
-    cp -R usr/share/sounds ${pkgdir}/usr/share/sounds/
+    mkdir -p "${pkgdir}"/usr/share/sounds
+    cp -R usr/share/sounds "${pkgdir}"/usr/share/sounds/
 }

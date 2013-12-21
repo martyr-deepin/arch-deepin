@@ -13,6 +13,6 @@ md5sums=('{% md5 %}')
 
 package() {
     cd "${srcdir}/${pkgname}-${pkgver}"
-    install -m755 -d "${pkgdir}/usr/share/icons"
-    cp -R Deepin-Cursor "${pkgdir}/usr/share/icons/"
+    mkdir -p "${pkgdir}"/usr/share/icons
+    cp -R Deepin-Cursor "${pkgdir}"/usr/share/icons/
 }
