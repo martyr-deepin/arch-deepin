@@ -1,0 +1,8 @@
+post_install() {
+    cd /usr/share/deepin-media-player/tools
+    python2 generate_mo.py
+}
+
+post_upgrade() {
+  post_install
+}
