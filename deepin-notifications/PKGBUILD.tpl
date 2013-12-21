@@ -10,10 +10,7 @@ url="http://www.linuxdeepin.com/"
 depends=('deepin-ui' 'deepin-pygtk-fix' 'python2-dbus' 'python2-cairo')
 conflicts=("notify-osd")
 
-_pkgsite="http://packages.linuxdeepin.com"
-# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
-_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
-source=("${_parent_url}/{% filename %}")
+source=("{% fileurl %}")
 md5sums=('{% md5 %}')
 
 package() {

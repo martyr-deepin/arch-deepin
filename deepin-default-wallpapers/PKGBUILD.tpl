@@ -12,16 +12,13 @@ url="http://www.linuxdeepin.com/"
 license=('Unknown')
 depends=('deepin-system-settings-module-individuation')
 
-_pkgsite="http://packages.linuxdeepin.com"
-# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
-_parent_url="${_pkgsite}/deepin/pool/main/d/deepin-wallpapers"
-source=("${_parent_url}/{% filename %}")
+source=("{% fileurl %}")
 md5sums=('{% md5 %}')
 
 package_deepin-default-wallpapers() {
-
+    echo TODO
 }
 
 package_deepin-extra-wallpapers() {
-
+    echo TODO
 }

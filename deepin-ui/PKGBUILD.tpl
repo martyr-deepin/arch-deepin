@@ -11,10 +11,7 @@ url="http://www.linuxdeepin.com/"
 license=('GPL3')
 depends=('deepin-utils' 'deepin-gsettings' 'deepin-pygtk-fix' 'python2-distribute' 'python2' 'glib2' 'python2-cairo' 'python2-imaging' 'libwebkit' 'python-xlib' 'pywebkitgtk' 'libsoup')
 
-_pkgsite="http://packages.linuxdeepin.com"
-# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
-_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
-source=("${_parent_url}/{% filename %}")
+source=("{% fileurl %}")
 md5sums=('{% md5 %}')
 
 build(){

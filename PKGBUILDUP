@@ -23,7 +23,7 @@ update_pkgbuild_for_deepin() {
     if [ -z "${FILE_INFO}" ]; then
         local url=${url:-"${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"}
         local filereg=${filereg:-"${pkgname}_.*?\.tar.gz"}
-        local FILE_INFO=("filename::md5::${url}::${filereg}")
+        local FILE_INFO=("fileurl::md5::${url}::${filereg}")
     fi
 
     local tplfile=${tplfile:-"./${pkgname}/${tplname}"}
@@ -80,12 +80,12 @@ update_deepin_desktop_environment_plugins() {
     local tplfile="./${pkgname}/${tplname}"
 
     local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
-    local filereg="${pkgname}_.*?_all\.deb"
-    local plugreg_1="${pkgname}-clock_.*?_all\.deb"
-    local plugreg_2="${pkgname}-weather_.*?_all\.deb"
-    local FILE_INFO=("filename::md5::${url}::${filereg}"
-                     "plugfile_1::md5plug_1::${url}::${plugreg_1}"
-                     "plugfile_2::md5plug_2::${url}::${plugreg_2}"
+    local filereg_1="${pkgname}_.*?_all\.deb"
+    local filereg_2="${pkgname}-clock_.*?_all\.deb"
+    local filereg_3="${pkgname}-weather_.*?_all\.deb"
+    local FILE_INFO=("fileurl_1::md5_1::${url}::${filereg_1}"
+                     "fileurl_2::md5_2::${url}::${filereg_2}"
+                     "fileurl_3::md5_3::${url}::${filereg_3}"
                      )
     update_pkgbuild_for_deepin
 }
@@ -152,7 +152,7 @@ update_deepin_webapps() {
                    fetion baidu-hi 12306"
     local i=1;
     for app in ${webapps}; do
-        local FILE_INFO["$(expr ${i}-1)"]="filename_${i}::md5_${i}::${url}::${pkgname}-${app}_.*?_all\.deb"
+        local FILE_INFO["$(expr ${i}-1)"]="fileurl_${i}::md5_${i}::${url}::${pkgname}-${app}_.*?_all\.deb"
         ((i++))
     done
 
@@ -162,8 +162,8 @@ update_deepin_webapps() {
 
 ###* main
 # update_deepin_artwork
-update_deepin_cursor_theme
-# update_deepin_default_wallpapers
+# update_deepin_cursor_theme
+update_deepin_default_wallpapers
 # update_deepin_desktop_environment
 # update_deepin_desktop_environment_plugins
 # update_deepin_media_player

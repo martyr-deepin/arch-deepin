@@ -9,15 +9,12 @@ url="http://www.linuxdeepin.com/"
 license=('GPL2')
 depends=('deepin-desktop-environment' 'deepin-artwork')
 
-_pkgsite="http://packages.linuxdeepin.com"
-# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
-_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
-source=("${_parent_url}/{% filename %}"
-        "${_parent_url}/{% plugfile_1 %}"
-        "${_parent_url}/{% plugfile_2 %}")
-md5sums=('{% md5 %}'
-         '{% md5plug_1 %}'
-         '{% md5plug_2 %}')
+source=("{% fileurl_1 %}"
+        "{% fileurl_2 %}"
+        "{% fileurl_3 %}")
+md5sums=('{% md5_1 %}'
+         '{% md5_2 %}'
+         '{% md5_3 %}')
 
 package() {
     # extract *.deb

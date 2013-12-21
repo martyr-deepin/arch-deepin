@@ -9,10 +9,7 @@ license=('LGPL3')
 url="http://www.linuxdeepin.com/"
 depends=('deepin-icon-theme' 'deepin-gtk-theme' 'wqy-microhei')
 
-_pkgsite="http://packages.linuxdeepin.com"
-# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
-_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
-source=("${_parent_url}/{% filename %}")
+source=("{% fileurl %}")
 md5sums=('{% md5 %}')
 
 package() {

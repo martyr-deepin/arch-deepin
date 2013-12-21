@@ -11,10 +11,7 @@ depends=('dconf' 'gtk2' 'compiz-dev' 'deepin-artwork' 'deepin-webkit' 'deepin-sy
 makedepends=('cmake' 'go' 'coffee-script')
 install=deepin-desktop-environment.install
 
-_pkgsite="http://packages.linuxdeepin.com"
-# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
-_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
-source=("${_parent_url}/{% filename %}")
+source=("{% fileurl %}")
 md5sums=('{% md5 %}')
 
 package() {

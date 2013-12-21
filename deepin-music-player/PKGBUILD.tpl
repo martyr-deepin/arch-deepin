@@ -11,10 +11,7 @@ url="http://www.linuxdeepin.com/"
 license=('GPL3')
 depends=('gstreamer0.10-python' 'gstreamer0.10-bad-plugins' 'gstreamer0.10-good-plugins' 'gstreamer0.10-ugly-plugins' 'mutagen' 'python2-chardet' 'python2-scipy' 'python2-pyquery' 'python2-cssselect' 'deepin-ui' 'python2-dbus' 'sonata' 'cddb-py' 'python2-pycurl' 'python-xlib' 'python2-keybinder2')
 
-_pkgsite="http://packages.linuxdeepin.com"
-# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
-_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
-source=("${_parent_url}/{% filename %}")
+source=("{% fileurl %}")
 md5sums=('{% md5 %}')
 
 package() {
