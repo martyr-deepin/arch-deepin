@@ -116,29 +116,6 @@ update_deepin_screenshot() {
     update_pkgbuild_for_deepin
 }
 
-###** deepin-system-settings
-update_deepin_system_settings() {
-    local pkgname="deepin-system-settings"
-    local tplfile="./${pkgname}/${tplname}"
-    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
-
-    # build $FILE_INFO
-    local filereg="${pkgname}_.*?_all\.deb"
-    local FILE_INFO[0]="filename::md5::${url}::${filereg}"
-
-    local modules="all a11y account application-associate bluetooth \
-                   driver mouse power printer system-information \
-                   touchpad tray-power mount-media date-time desktop \
-                   display individuation keyboard network sound"
-    local i=1;
-    for mod in $modules; do
-        local FILE_INFO[${i}]="modname_${i}::md5mod_${i}::${url}::${pkgname}-module-${mod}_.*?_all\.deb"
-        ((i++))
-    done
-
-    update_pkgbuild_for_deepin
-}
-
 ###** deepin-system-tray
 update_deepin_system_tray() {
     local pkgname="deepin-system-tray"
