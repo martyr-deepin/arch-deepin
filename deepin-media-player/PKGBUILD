@@ -1,4 +1,4 @@
-# Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 # Maintainer: dongfengweixiao <dongfengweixiao[AT]gmail.com>
 
 pkgname=deepin-media-player

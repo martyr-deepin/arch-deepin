@@ -1,4 +1,4 @@
-# Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 # Maintainer: 4679kun <admin[AT]4679.us>
 # Maintainer: dongfengweixiao <dongfengweixiao[AT]gmail.com>
 

@@ -1,4 +1,4 @@
-# Maintainer: Xu Fasheng <fasheng.xu@gmail.com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=('deepin-desktop-environment'
          'deepin-desktop-environment-common'
