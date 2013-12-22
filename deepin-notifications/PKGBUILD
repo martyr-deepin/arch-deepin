@@ -5,21 +5,44 @@ pkgver=git20131031105912~9da03fa8e2
 pkgrel=1
 pkgdesc='System notifications for Linux Deepin desktop environment'
 arch=('i686' 'x86_64')
-depends=('deepin-ui' 'deepin-pygtk-fix' 'python2-dbus' 'python2-cairo')
 license=('GPL2')
-provides=("${pkgname}")
-conflicts=("${pkgname}-git" "notify-osd")
 url="http://www.linuxdeepin.com/"
-_pkgsite="http://packages.linuxdeepin.com"
-# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
-_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
-source=("${_parent_url}/deepin-notifications_0.1-1+git20131031105912~9da03fa8e2_all.deb")
-md5sums=('5cc9a9a57df276c95130ecf7fb35d989')
+depends=('deepin-ui' 'deepin-pygtk-fix' 'python2-dbus' 'python2-cairo')
+conflicts=("notify-osd")
+
+source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-notifications/deepin-notifications_0.1-1+git20131031105912~9da03fa8e2.tar.gz")
+md5sums=('e0db8f520fd2555d1c58513abbd67326')
+
+_innerdir="${pkgname}-0.1"
+
+_install_copyright_and_changelog() {
+    local pkgname=$1
+    mkdir -p "${pkgdir}"/usr/share/doc/${pkgname}
+    cp -f debian/copyright "${pkgdir}"/usr/share/doc/${pkgname}/
+    gzip -c debian/changelog > "${pkgdir}"/usr/share/doc/${pkgname}/changelog.gz
+}
+
+# Usage: _easycp dest files...
+_easycp () {
+    local dest=$1; shift
+    mkdir -p "${dest}"
+    cp -vR -t "${dest}" "$@"
+}
 
 package() {
-    tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
+    cd "${srcdir}/${_innerdir}"
+
+    _easycp "${pkgdir}"/usr/share/dbus-1/ services
+    _easycp "${pkgdir}"/usr/share/deepin-notifications/ data
+    _easycp "${pkgdir}"/usr/share/deepin-notifications/ locale
+    _easycp "${pkgdir}"/usr/share/deepin-notifications/ app_theme
+    _easycp "${pkgdir}"/usr/share/deepin-notifications/ skin
+    _easycp "${pkgdir}"/usr/share/deepin-notifications/ src
+    _easycp "${pkgdir}"/usr/bin/ tools/deepin-notify
+
+    _install_copyright_and_changelog "${pkgname}"
 
     # fix python version
     find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
-    sed -i 's=\(^#! */usr/bin.*\)python=\1python2=' ${pkgdir}/usr/bin/deepin-notify
+    sed -i 's=\(^#! */usr/bin.*\)python=\1python2=' "${pkgdir}"/usr/bin/deepin-notify
 }

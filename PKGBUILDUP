@@ -88,6 +88,7 @@ update_deepin_music_player() {
 ###** deepin-notifications
 update_deepin_notifications() {
     local pkgname="deepin-notifications"
+    local pkgrelreg="\d+\.\d+[^-]*"
     update_pkgbuild_for_deepin
 }
 
@@ -156,8 +157,8 @@ update_deepin_webapps() {
 # update_deepin_desktop_environment
 # update_deepin_desktop_environment_plugins
 # update_deepin_media_player
-update_deepin_music_player
-# update_deepin_notifications
+# update_deepin_music_player
+update_deepin_notifications
 # update_deepin_screenshot
 # update_deepin_system_settings
 # update_deepin_system_tray

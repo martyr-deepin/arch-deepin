@@ -13,10 +13,36 @@ conflicts=("notify-osd")
 source=("{% fileurl %}")
 md5sums=('{% md5 %}')
 
+_innerdir="${pkgname}-{% pkgrel %}"
+
+_install_copyright_and_changelog() {
+    local pkgname=$1
+    mkdir -p "${pkgdir}"/usr/share/doc/${pkgname}
+    cp -f debian/copyright "${pkgdir}"/usr/share/doc/${pkgname}/
+    gzip -c debian/changelog > "${pkgdir}"/usr/share/doc/${pkgname}/changelog.gz
+}
+
+# Usage: _easycp dest files...
+_easycp () {
+    local dest=$1; shift
+    mkdir -p "${dest}"
+    cp -vR -t "${dest}" "$@"
+}
+
 package() {
-    tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
+    cd "${srcdir}/${_innerdir}"
+
+    _easycp "${pkgdir}"/usr/share/dbus-1/ services
+    _easycp "${pkgdir}"/usr/share/deepin-notifications/ data
+    _easycp "${pkgdir}"/usr/share/deepin-notifications/ locale
+    _easycp "${pkgdir}"/usr/share/deepin-notifications/ app_theme
+    _easycp "${pkgdir}"/usr/share/deepin-notifications/ skin
+    _easycp "${pkgdir}"/usr/share/deepin-notifications/ src
+    _easycp "${pkgdir}"/usr/bin/ tools/deepin-notify
+
+    _install_copyright_and_changelog "${pkgname}"
 
     # fix python version
     find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
-    sed -i 's=\(^#! */usr/bin.*\)python=\1python2=' ${pkgdir}/usr/bin/deepin-notify
+    sed -i 's=\(^#! */usr/bin.*\)python=\1python2=' "${pkgdir}"/usr/bin/deepin-notify
 }

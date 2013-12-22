@@ -47,6 +47,7 @@ package() {
 
     mkdir -p "${pkgdir}"/usr/share/applications/
     install -m 0644 deepin-music-player.desktop "${pkgdir}"/usr/share/applications/
+    
     _install_copyright_and_changelog "${pkgname}"
     
     # Post install
