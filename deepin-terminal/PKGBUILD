@@ -18,7 +18,6 @@ _filename="${_filename%.tar.gz}"
 _innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
-    local pkgname=$1
     mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
     cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
     gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
@@ -49,7 +48,7 @@ package() {
     mkdir -p "${pkgdir}"/usr/bin
     ln -s /usr/share/deepin-terminal/src/main.py "${pkgdir}"/usr/bin/deepin-terminal
 
-    _install_copyright_and_changelog "${pkgname}"
+    _install_copyright_and_changelog
 
     # fix python version
     find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='

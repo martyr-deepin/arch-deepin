@@ -30,6 +30,13 @@ _easycp () {
     cp -vR -t "${dest}" "$@"
 }
 
+prepare() {
+    cd "${srcdir}/${_innerdir}"
+
+    # fix python version
+    find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+}
+
 package() {
     cd "${srcdir}/${_innerdir}"
 
@@ -50,7 +57,4 @@ package() {
     # remove .po
     find "${pkgdir}" -name '*.po' -exec rm \{} \;
     find "${pkgdir}" -name '*.pot' -exec rm \{} \;
-
-    # fix python version
-    find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
 }

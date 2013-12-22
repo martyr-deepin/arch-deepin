@@ -19,7 +19,6 @@ _filename="${_filename%.tar.gz}"
 _innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
-    local pkgname=$1
     mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
     cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
     gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
@@ -49,7 +48,7 @@ package() {
     mkdir -p "${pkgdir}"/usr/share/applications
     install -m 0644 debian/deepin-media-player.desktop "${pkgdir}"/usr/share/applications/
 
-    _install_copyright_and_changelog "${pkgname}"
+    _install_copyright_and_changelog
 
     # Post install
     mkdir -p "${pkgdir}"/usr/bin
