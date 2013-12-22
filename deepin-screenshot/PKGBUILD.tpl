@@ -9,11 +9,44 @@ url="http://www.linuxdeepin.com/"
 license=('LGPL3')
 depends=('python2' 'gconf' 'python2-xlib' 'deepin-ui' 'python2-wnck' 'python2-xdg' 'python2-scipy' 'python2-pycurl')
 
-source=("{% fileurl %}")
+_fileurl={% fileurl %}
+source=("${_fileurl}")
 md5sums=('{% md5 %}')
 
+_filename="$(basename "${_fileurl}")"
+_filename="${_filename%.tar.gz}"
+_innerdir="${_filename/_/-}"
+
+_install_copyright_and_changelog() {
+    local pkgname=$1
+    mkdir -p "${pkgdir}"/usr/share/doc/${pkgname}
+    cp -f debian/copyright "${pkgdir}"/usr/share/doc/${pkgname}/
+    gzip -c debian/changelog > "${pkgdir}"/usr/share/doc/${pkgname}/changelog.gz
+}
+
+# Usage: _easycp dest files...
+_easycp () {
+    local dest=$1; shift
+    mkdir -p "${dest}"
+    cp -vR -t "${dest}" "$@"
+}
+
 package() {
-    tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
+    cd "${srcdir}/${_innerdir}"
+
+    _easycp "${pkgdir}"/usr/share/deepin-screenshot/ src
+    _easycp "${pkgdir}"/usr/share/deepin-screenshot/ theme
+    _easycp "${pkgdir}"/usr/share/deepin-screenshot/ skin
+    _easycp "${pkgdir}"/usr/share/ locale
+    _easycp "${pkgdir}"/usr/share/icons/hicolor/48x48/apps/ debian/deepin-screenshot.png
+
+    mkdir -p "${pkgdir}"/usr/share/applications/
+    install -m 0644 debian/deepin-screenshot.desktop "${pkgdir}"/usr/share/applications/
+
+    mkdir -p "${pkgdir}"/usr/bin
+    ln -s /usr/share/deepin-screenshot/src/screenshot.py "${pkgdir}"/usr/bin/deepin-screenshot
+
+    _install_copyright_and_changelog "${pkgname}"
 
     # fix python version
     find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
