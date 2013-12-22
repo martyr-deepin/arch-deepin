@@ -2,15 +2,22 @@
 
 ### MERGE TO ONE PACKAGE FOR AUR
 pkgname='deepin-desktop-environment'
-pkgdesc="Desktop environment from Linux Deepin"
-depends=('compiz-dev' 'gtk3' 'webkitgtk' 'deepin-webkit' 'gdk-pixbuf2' 'python2' 'dbus-glib' 'sqlite' 'glib2' 'lightdm' 'gstreamer0.10' 'opencv' 'gvfs' 'xdg-user-dirs')
-
+pkgdesc="Linux Deepin Desktop environment"
+# pkgname=('deepin-desktop-environment'
+#          'deepin-desktop-environment-common'
+#          'deepin-desktop-environment-dock'
+#          'deepin-desktop-environment-launcher'
+#          'deepin-desktop-environment-lightdm-greeter'
+#          'deepin-desktop-environment-desktop'
+#          'deepin-desktop-environment-lock')
+# pkgbase="deepin-desktop-environment"
 pkgver={% pkgver %}
 pkgrel=1
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"
 license=('GPL2')
-makedepends=('cmake' 'go' 'coffee-script')
+depends=('gtk3' 'webkitgtk' 'deepin-webkit' 'gdk-pixbuf2' 'python2' 'dbus-glib' 'sqlite' 'glib2' 'lightdm' 'gstreamer0.10' 'opencv')
+ makedepends=('cmake' 'go' 'coffee-script')
 install=deepin-desktop-environment.install
 
 _fileurl={% fileurl %}
@@ -166,4 +173,9 @@ package() {
     package_deepin-desktop-environment-lightdm-greeter
     package_deepin-desktop-environment-desktop
     package_deepin-desktop-environment-lock
+
+    # overwrite variable at end, $pkgdesc is need again or upload will
+    # be failed
+    pkgdesc="Linux Deepin Desktop environment"
+    depends=('compiz-dev' 'gtk3' 'webkitgtk' 'deepin-webkit' 'gdk-pixbuf2' 'python2' 'dbus-glib' 'sqlite' 'glib2' 'lightdm' 'gstreamer0.10' 'opencv' 'gvfs' 'xdg-user-dirs')
 }

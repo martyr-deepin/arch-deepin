@@ -1,8 +1,9 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 ### MERGE TO ONE PACKAGE FOR AUR
-pkgname='deepin-default-wallpapers'
-
+# pkgname=('deepin-default-wallpapers'
+         # 'deepin-extra-wallpapers')
+# pkgbase='deepin-wallpapers'
 pkgver={% pkgver %}
 _realver={% pkgrel %}+${pkgver}
 pkgrel=1
@@ -67,6 +68,10 @@ package_deepin-extra-wallpapers() {
 }
 
 ### MERGE TO ONE PACKAGE FOR AUR
+pkgname='deepin-default-wallpapers'
 package() {
     package_deepin-default-wallpapers
+
+    pkgdesc='Default wallpapers for Linux Deepin'
+    depends=('deepin-system-settings')
 }
