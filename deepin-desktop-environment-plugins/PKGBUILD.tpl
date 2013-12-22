@@ -25,6 +25,14 @@ _install_copyright_and_changelog() {
     gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
 }
 
+prepare() {
+    cd "${srcdir}/${_innerdir}"
+
+    # fix python version
+    sed -i 's=\(^#! */usr/bin.*\)python=\1python2=' generate_mo update_po
+    sed -i 's=python=python2=' weather/makefile
+}
+
 package_deepin-desktop-environment-plugins() {
     depends=('deepin-desktop-environment-plugins-clock' 'deepin-desktop-environment-plugins-weather')
     pkgdesc='Meta package for Linux Deepin desktop environment plugins'

@@ -26,7 +26,6 @@ _filename="${_filename%.tar.gz}"
 _innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
-    local pkgname=$1
     mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
     cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
     gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
@@ -63,7 +62,7 @@ package_deepin-desktop-environment() {
     depends=('deepin-desktop-environment-dock' 'deepin-desktop-environment-launcher' 'deepin-artwork' 'deepin-desktop-environment-lightdm-greeter' 'deepin-desktop-environment-desktop' 'deepin-desktop-environment-lock')
 
     cd "${srcdir}/${_innerdir}"
-    _install_copyright_and_changelog "${pkgname}"
+    _install_copyright_and_changelog
 }
 
 package_deepin-desktop-environment-common() {
@@ -79,7 +78,7 @@ package_deepin-desktop-environment-common() {
     _easycp "${pkgdir}"/etc/sysctl.d/ debian/30-deepin-inotify-limit.conf
     _easycp "${pkgdir}"/usr/bin/ debian/default-terminal
 
-    _install_copyright_and_changelog "${pkgname}"
+    _install_copyright_and_changelog
 }
 
 package_deepin-desktop-environment-dock() {
@@ -95,7 +94,7 @@ package_deepin-desktop-environment-dock() {
     mkdir -p "${pkgdir}"/usr/share/applications
     install -m 0644 "${_tmpdest}"/usr/share/applications/deepin-dock.desktop "${pkgdir}"/usr/share/applications/deepin-dock.desktop
 
-    _install_copyright_and_changelog "${pkgname}"
+    _install_copyright_and_changelog
 }
 
 package_deepin-desktop-environment-launcher() {
@@ -111,7 +110,7 @@ package_deepin-desktop-environment-launcher() {
     mkdir -p "${pkgdir}"/etc/xdg/autostart
     install -m 0644 "${_tmpdest}"/etc/xdg/autostart/deepin-launcher.desktop "${pkgdir}"/etc/xdg/autostart/
 
-    _install_copyright_and_changelog "${pkgname}"
+    _install_copyright_and_changelog
 }
 
 package_deepin-desktop-environment-desktop() {
@@ -127,7 +126,7 @@ package_deepin-desktop-environment-desktop() {
     mkdir -p "${pkgdir}"/usr/share/applications
     install -m 0644 "${_tmpdest}"/usr/share/applications/deepin-desktop.desktop "${pkgdir}"/usr/share/applications/
 
-    _install_copyright_and_changelog "${pkgname}"
+    _install_copyright_and_changelog
 }
 
 package_deepin-desktop-environment-lightdm-greeter() {
@@ -144,7 +143,7 @@ package_deepin-desktop-environment-lightdm-greeter() {
     mkdir -p "${pkgdir}"/usr/share/xgreeters
     install -m 0644 debian/deepin-greeter.desktop "${pkgdir}"/usr/share/xgreeters/
 
-    _install_copyright_and_changelog "${pkgname}"
+    _install_copyright_and_changelog
 }
 
 package_deepin-desktop-environment-lock() {
@@ -160,5 +159,5 @@ package_deepin-desktop-environment-lock() {
     _easycp "${pkgdir}"/usr/share/dbus-1/system-services/ "${_tmpdest}"/usr/share/dbus-1/system-services/*
     _easycp "${pkgdir}"/etc/dbus-1/system.d/ "${_tmpdest}"/etc/dbus-1/system.d/*
 
-    _install_copyright_and_changelog "${pkgname}"
+    _install_copyright_and_changelog
 }
