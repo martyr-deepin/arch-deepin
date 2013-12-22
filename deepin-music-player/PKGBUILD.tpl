@@ -31,11 +31,31 @@ _easycp () {
 }
 
 package() {
-    # tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
+    cd "${srcdir}/${_innerdir}"
+    
+    _easycp "${pkgdir}"/usr/share/icons/hicolor/128x128/apps/ debian/deepin-music-player.png
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ app_theme
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ image
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ skin
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ locale
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ src
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ wizard
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ plugins
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ tools
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ AUTHORS
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ COPYING
+
+    mkdir -p "${pkgdir}"/usr/share/applications/
+    install -m 0644 deepin-music-player.desktop "${pkgdir}"/usr/share/applications/
+    _install_copyright_and_changelog "${pkgname}"
+    
+    # Post install
+    mkdir -p "${pkgdir}"/usr/bin
+    ln -s /usr/share/deepin-music-player/src/main.py "${pkgdir}"/usr/bin/deepin-music-player
+    
+    cd "${pkgdir}"/usr/share/deepin-music-player/tools
+    python2 generate_mo.py
 
     # fix python version
     find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
-
-    cd ${pkgdir}/usr/share/deepin-music-player/tools
-    python2 generate_mo.py
 }

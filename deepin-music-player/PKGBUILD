@@ -6,24 +6,56 @@ pkgname=deepin-music-player
 pkgver=git20131122104939~00f61cb069
 pkgrel=1
 pkgdesc='Awesome music player with brilliant and tweakful UI Deepin-UI based, gstreamer front-end, with features likes search music by pinyin,quanpin, colorful lyrics supports, and more powerfull functions you will found.'
-depends=('gstreamer0.10-python' 'gstreamer0.10-bad-plugins' 'gstreamer0.10-good-plugins' 'gstreamer0.10-ugly-plugins' 'mutagen' 'python2-chardet' 'python2-scipy' 'python2-pyquery' 'python2-cssselect' 'deepin-ui' 'python2-dbus' 'sonata' 'cddb-py' 'python2-pycurl' 'python-xlib' 'python2-keybinder2')
 arch=('any')
-provides=("${pkgname}")
-conflicts=("${pkgname}-git")
 url="http://www.linuxdeepin.com/"
 license=('GPL3')
-_pkgsite="http://packages.linuxdeepin.com"
-# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
-_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
-source=("${_parent_url}/deepin-music-player_1+git20131122104939~00f61cb069_all.deb")
-md5sums=('156130a0d16f1c6e66de8c3135b9390f')
+depends=('gstreamer0.10-python' 'gstreamer0.10-bad-plugins' 'gstreamer0.10-good-plugins' 'gstreamer0.10-ugly-plugins' 'mutagen' 'python2-chardet' 'python2-scipy' 'python2-pyquery' 'python2-cssselect' 'deepin-ui' 'python2-dbus' 'sonata' 'cddb-py' 'python2-pycurl' 'python-xlib' 'python2-keybinder2')
+
+source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-music-player/deepin-music-player_1+git20131122104939~00f61cb069.tar.gz")
+md5sums=('2abb81c00ead1e36792a983c1565eccc')
+
+_innerdir="${pkgname}-1+${pkgver}"
+
+_install_copyright_and_changelog() {
+    local pkgname=$1
+    mkdir -p "${pkgdir}"/usr/share/doc/${pkgname}
+    cp -f debian/copyright "${pkgdir}"/usr/share/doc/${pkgname}/
+    gzip -c debian/changelog > "${pkgdir}"/usr/share/doc/${pkgname}/changelog.gz
+}
+
+# Usage: _easycp dest files...
+_easycp () {
+    local dest=$1; shift
+    mkdir -p "${dest}"
+    cp -vR -t "${dest}" "$@"
+}
 
 package() {
-    tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
+    cd "${srcdir}/${_innerdir}"
+    
+    _easycp "${pkgdir}"/usr/share/icons/hicolor/128x128/apps/ debian/deepin-music-player.png
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ app_theme
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ image
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ skin
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ locale
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ src
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ wizard
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ plugins
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ tools
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ AUTHORS
+    _easycp "${pkgdir}"/usr/share/deepin-music-player/ COPYING
+
+    mkdir -p "${pkgdir}"/usr/share/applications/
+    install -m 0644 deepin-music-player.desktop "${pkgdir}"/usr/share/applications/
+    _install_copyright_and_changelog "${pkgname}"
+    
+    # Post install
+    mkdir -p "${pkgdir}"/usr/bin
+    ln -s /usr/share/deepin-music-player/src/main.py "${pkgdir}"/usr/bin/deepin-music-player
+    
+    cd "${pkgdir}"/usr/share/deepin-music-player/tools
+    python2 generate_mo.py
 
     # fix python version
     find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
-
-    cd ${pkgdir}/usr/share/deepin-music-player/tools
-    python2 generate_mo.py
 }

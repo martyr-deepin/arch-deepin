@@ -47,13 +47,14 @@ package() {
     install -m 0644 debian/deepin-media-player.desktop "${pkgdir}"/usr/share/applications/
 
     _install_copyright_and_changelog "${pkgname}"
-
+    
+    # Post install
     mkdir -p "${pkgdir}"/usr/bin
     ln -s /usr/share/deepin-media-player/src/deepin-media-player.py "${pkgdir}"/usr/bin/deepin-media-player
 
-    # fix python version
-    find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
-
     cd "${pkgdir}"/usr/share/deepin-media-player/tools
     python2 generate_mo.py
+
+    # fix python version
+    find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
 }

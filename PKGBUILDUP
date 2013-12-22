@@ -155,8 +155,8 @@ update_deepin_webapps() {
 # update_deepin_cursor_theme
 # update_deepin_desktop_environment
 # update_deepin_desktop_environment_plugins
-update_deepin_media_player
-# update_deepin_music_player
+# update_deepin_media_player
+update_deepin_music_player
 # update_deepin_notifications
 # update_deepin_screenshot
 # update_deepin_system_settings
