@@ -9,7 +9,6 @@ arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('GPL3')
 depends=('python2-scipy' 'python2-pyquery' 'deepin-ui' 'mplayer2' 'gstreamer0.10-ugly' 'gstreamer0.10-ugly-plugins' 'python2-formencode' 'gstreamer0.10-python' 'python2-chardet' 'python2-beautifulsoup3' 'python2-notify' 'python2-dbus' 'python2-xlib' )
-install='deepin-media-player.install'
 
 source=("{% fileurl %}")
 md5sums=('{% md5 %}')
@@ -47,11 +46,14 @@ package() {
     mkdir -p "${pkgdir}"/usr/share/applications
     install -m 0644 debian/deepin-media-player.desktop "${pkgdir}"/usr/share/applications/
 
+    _install_copyright_and_changelog "${pkgname}"
+
     mkdir -p "${pkgdir}"/usr/bin
     ln -s /usr/share/deepin-media-player/src/deepin-media-player.py "${pkgdir}"/usr/bin/deepin-media-player
 
     # fix python version
-    find ${pkgdir} -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+    find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
 
-    _install_copyright_and_changelog "${pkgname}"
+    cd "${pkgdir}"/usr/share/deepin-media-player/tools
+    python2 generate_mo.py
 }
