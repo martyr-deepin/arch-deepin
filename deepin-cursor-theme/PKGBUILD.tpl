@@ -17,7 +17,6 @@ _filename="${_filename%-*}"
 _innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
-    local pkgname=$1
     mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
     cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
     gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
@@ -29,5 +28,5 @@ package() {
     mkdir -p "${pkgdir}"/usr/share/icons
     cp -R Deepin-Cursor "${pkgdir}"/usr/share/icons/
 
-    _install_copyright_and_changelog "${pkgname}"
+    _install_copyright_and_changelog
 }

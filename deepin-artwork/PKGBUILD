@@ -18,7 +18,6 @@ _filename="${_filename%.tar.gz}"
 _innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
-    local pkgname=$1
     mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
     cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
     gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
@@ -33,5 +32,5 @@ package() {
     mkdir -p "${pkgdir}"/usr/share/sounds
     cp -R usr/share/sounds "${pkgdir}"/usr/share/sounds/
 
-    _install_copyright_and_changelog "${pkgname}"
+    _install_copyright_and_changelog
 }

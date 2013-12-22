@@ -19,7 +19,6 @@ _filename="${_filename%.tar.gz}"
 _innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
-    local pkgname=$1
     mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
     cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
     gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
@@ -43,7 +42,7 @@ package_deepin-default-wallpapers() {
     cp -R modules/individuation/backgrounds/XY* "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/backgrounds/
     cp -R modules/individuation/theme/nebula.ini "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/theme/
 
-    _install_copyright_and_changelog ${pkgname}
+    _install_copyright_and_changelog
 }
 
 package_deepin-extra-wallpapers() {
@@ -64,5 +63,5 @@ package_deepin-extra-wallpapers() {
     rm "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/backgrounds/XY* -f
     rm "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/theme/nebula.ini -f
 
-    _install_copyright_and_changelog ${pkgname}
+    _install_copyright_and_changelog
 }

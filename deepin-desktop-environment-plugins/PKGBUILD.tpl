@@ -20,7 +20,6 @@ _filename="${_filename%.tar.gz}"
 _innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
-    local pkgname=$1
     mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
     cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
     gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
@@ -31,7 +30,7 @@ package_deepin-desktop-environment-plugins() {
     pkgdesc='Meta package for Linux Deepin desktop environment plugins'
 
     cd "${srcdir}/${_innerdir}"
-    _install_copyright_and_changelog "${pkgname}"
+    _install_copyright_and_changelog
 }
 
 package_deepin-desktop-environment-plugins-clock() {
@@ -46,7 +45,7 @@ package_deepin-desktop-environment-plugins-clock() {
     mkdir -p "${pkgdir}"/usr/share/dde/resources/desktop/plugin
     cp -R clock "${pkgdir}"/usr/share/dde/resources/desktop/plugin/
 
-    _install_copyright_and_changelog "${pkgname}"
+    _install_copyright_and_changelog
 }
 
 package_deepin-desktop-environment-plugins-weather() {
@@ -61,5 +60,5 @@ package_deepin-desktop-environment-plugins-weather() {
     mkdir -p "${pkgdir}"/usr/share/dde/resources/desktop/plugin
     cp -R weather "${pkgdir}"/usr/share/dde/resources/desktop/plugin
 
-    _install_copyright_and_changelog "${pkgname}"
+    _install_copyright_and_changelog
 }
