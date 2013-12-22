@@ -3,7 +3,7 @@
 ### MERGE TO ONE PACKAGE FOR AUR
 pkgname="deepin-webapps"
 
-pkgver=0.6.orig.tar.gz
+pkgver=0.6
 pkgrel=1
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"

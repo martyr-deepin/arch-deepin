@@ -1,12 +1,12 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-pkgver=git20131108153537~9905357014
-pkgrel=1
-
 ### MERGE TO ONE PACKAGE FOR AUR
 pkgname='deepin-desktop-environment-plugins'
 pkgdesc='Plugins for Linux Deepin desktop environment'
 depends=('deepin-artwork' 'deepin-desktop-environment')
+
+pkgver=git20131108153537~9905357014
+pkgrel=1
 
 arch=('any')
 url="http://www.linuxdeepin.com/"
