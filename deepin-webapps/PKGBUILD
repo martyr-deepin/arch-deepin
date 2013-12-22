@@ -1,29 +1,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-pkgname=('deepin-webapps-kuwo-music'
-         'deepin-webapps-dbank-online-storage'
-         'deepin-webapps-youdao-note'
-         'deepin-webapps-chainrxn'
-         'deepin-webapps-doit-im'
-         'deepin-webapps-microsoft-skydrive'
-         'deepin-webapps-baidu-map'
-         'deepin-webapps-douban'
-         'deepin-webapps-ttpod'
-         'deepin-webapps-kugou-music'
-         'deepin-webapps-kingsoft-fast-docs'
-         'deepin-webapps-xiami-music'
-         'deepin-webapps-cargo-bridge'
-         'deepin-webapps-sina-weibo'
-         'deepin-webapps-pirateslovedaisies'
-         'deepin-webapps-kingsoft-online-storage'
-         'deepin-webapps-baidu-music'
-         'deepin-webapps-baidu-online-storage'
-         'deepin-webapps-paulrouget'
-         'deepin-webapps-towerim'
-         'deepin-webapps-fetion'
-         'deepin-webapps-baidu-hi'
-         'deepin-webapps-12306')
-pkgbase="deepin-webapps"
+### MERGE TO ONE PACKAGE FOR AUR
+pkgname="deepin-webapps"
+
 pkgver=0.6.orig.tar.gz
 pkgrel=1
 arch=('i686' 'x86_64')
@@ -180,4 +159,14 @@ package_deepin-webapps-baidu-hi() {
 package_deepin-webapps-12306() {
     pkgdesc="12306"
     _package_webapp
+}
+
+### MERGE TO ONE PACKAGE FOR AUR
+package() {
+    local webapps="kuwo-music dbank-online-storage youdao-note chainrxn doit-im microsoft-skydrive baidu-map douban ttpod kugou-music kingsoft-fast-docs xiami-music cargo-bridge sina-weibo pirateslovedaisies kingsoft-online-storage baidu-music baidu-online-storage paulrouget towerim fetion baidu-hi 12306"
+
+    for app in $webapps; do
+        local pkgname="${app}"
+        eval package_deepin-webapps-"${pkgname}"
+    done
 }

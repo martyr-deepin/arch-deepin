@@ -1,19 +1,15 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-pkgname=('deepin-desktop-environment'
-         'deepin-desktop-environment-common'
-         'deepin-desktop-environment-dock'
-         'deepin-desktop-environment-launcher'
-         'deepin-desktop-environment-lightdm-greeter'
-         'deepin-desktop-environment-desktop'
-         'deepin-desktop-environment-lock')
-pkgbase="deepin-desktop-environment"
+### MERGE TO ONE PACKAGE FOR AUR
+pkgname='deepin-desktop-environment'
+pkgdesc="Desktop environment from Linux Deepin"
+depends=('compiz-dev' 'gtk3' 'webkitgtk' 'deepin-webkit' 'gdk-pixbuf2' 'python2' 'dbus-glib' 'sqlite' 'glib2' 'lightdm' 'gstreamer0.10' 'opencv' 'gvfs' 'xdg-user-dirs')
+
 pkgver={% pkgver %}
 pkgrel=1
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"
 license=('GPL2')
-depends=('gtk3' 'webkitgtk' 'deepin-webkit' 'gdk-pixbuf2' 'python2' 'dbus-glib' 'sqlite' 'glib2' 'lightdm' 'gstreamer0.10' 'opencv')
 makedepends=('cmake' 'go' 'coffee-script')
 install=deepin-desktop-environment.install
 
@@ -160,4 +156,14 @@ package_deepin-desktop-environment-lock() {
     _easycp "${pkgdir}"/etc/dbus-1/system.d/ "${_tmpdest}"/etc/dbus-1/system.d/*
 
     _install_copyright_and_changelog
+}
+
+### MERGE TO ONE PACKAGE FOR AUR
+package() {
+    package_deepin-desktop-environment-common
+    package_deepin-desktop-environment-dock
+    package_deepin-desktop-environment-launcher
+    package_deepin-desktop-environment-lightdm-greeter
+    package_deepin-desktop-environment-desktop
+    package_deepin-desktop-environment-lock
 }

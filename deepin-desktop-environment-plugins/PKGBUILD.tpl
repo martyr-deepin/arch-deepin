@@ -1,11 +1,13 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-pkgname=('deepin-desktop-environment-plugins'
-         'deepin-desktop-environment-plugins-clock'
-         'deepin-desktop-environment-plugins-weather')
-pkgbase='deepin-desktop-environment-plugins'
+### MERGE TO ONE PACKAGE FOR AUR
+pkgname='deepin-desktop-environment-plugins'
+pkgdesc='Plugins for Linux Deepin desktop environment'
+depends=('deepin-artwork' 'deepin-desktop-environment')
+
 pkgver={% pkgver %}
 pkgrel=1
+
 arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('GPL2')
@@ -23,6 +25,14 @@ _install_copyright_and_changelog() {
     mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
     cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
     gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
+}
+
+prepare() {
+    cd "${srcdir}/${_innerdir}"
+
+    # fix python version
+    sed -i 's=\(^#! */usr/bin.*\)python=\1python2=' generate_mo update_po
+    sed -i 's=python=python2=' weather/makefile
 }
 
 package_deepin-desktop-environment-plugins() {
@@ -61,4 +71,10 @@ package_deepin-desktop-environment-plugins-weather() {
     cp -R weather "${pkgdir}"/usr/share/dde/resources/desktop/plugin
 
     _install_copyright_and_changelog
+}
+
+### MERGE TO ONE PACKAGE FOR AUR
+package() {
+    package_deepin-desktop-environment-plugins-clock
+    package_deepin-desktop-environment-plugins-weather
 }

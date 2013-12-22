@@ -127,24 +127,24 @@ update_deepin_wallpapers() {
 ###** deepin-webapps
 update_deepin_webapps() {
     local pkgname="deepin-webapps"
-    local pkgverreg="[0-9]+\.[0-9]+[^-_]*"
+    local pkgverreg="[0-9]+\.[0-9]+[^-_.]*"
     update_pkgbuild_for_deepin
 }
 
 ###* main
 # update_deepin_artwork
 # update_deepin_cursor_theme
-# update_deepin_desktop_environment
-# update_deepin_desktop_environment_plugins
+update_deepin_desktop_environment
+update_deepin_desktop_environment_plugins
 # update_deepin_media_player
 # update_deepin_music_player
 # update_deepin_notifications
-update_deepin_screenshot
+# update_deepin_screenshot
 # update_deepin_system_tray
 # update_deepin_terminal
 # update_deepin_ui
-# update_deepin_wallpapers
-# update_deepin_webapps
+update_deepin_wallpapers
+update_deepin_webapps
 
 # update_deepin_system_settings
 

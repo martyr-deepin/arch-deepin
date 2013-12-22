@@ -1,8 +1,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-pkgname=('deepin-default-wallpapers'
-         'deepin-extra-wallpapers')
-pkgbase="deepin-wallpapers"
+### MERGE TO ONE PACKAGE FOR AUR
+pkgname='deepin-default-wallpapers'
+
 pkgver={% pkgver %}
 _realver={% pkgrel %}+${pkgver}
 pkgrel=1
@@ -64,4 +64,9 @@ package_deepin-extra-wallpapers() {
     rm "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/theme/nebula.ini -f
 
     _install_copyright_and_changelog
+}
+
+### MERGE TO ONE PACKAGE FOR AUR
+package() {
+    package_deepin-default-wallpapers
 }
