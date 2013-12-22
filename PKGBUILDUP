@@ -115,7 +115,6 @@ update_deepin_terminal() {
 ###** deepin-ui
 update_deepin_ui() {
     local pkgname="deepin-ui"
-    local filereg="${pkgname}_.*?\.tar\.gz"
     update_pkgbuild_for_deepin
 }
 
@@ -162,8 +161,8 @@ update_deepin_webapps() {
 # update_deepin_screenshot
 # update_deepin_system_settings
 # update_deepin_system_tray
-update_deepin_terminal
-# update_deepin_ui
+# update_deepin_terminal
+update_deepin_ui
 # update_deepin_wallpapers
 # update_deepin_webapps
 

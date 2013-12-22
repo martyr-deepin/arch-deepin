@@ -7,25 +7,27 @@ pkgver=git20131108164648~e369b783df
 pkgrel=1
 pkgdesc='UI toolkit for Linux Deepin'
 arch=('i686' 'x86_64')
-depends=('deepin-utils' 'deepin-gsettings' 'deepin-pygtk-fix' 'python2-distribute' 'python2' 'glib2' 'python2-cairo' 'python2-imaging' 'libwebkit' 'python-xlib' 'pywebkitgtk' 'libsoup')
 url="http://www.linuxdeepin.com/"
 license=('GPL3')
+depends=('deepin-utils' 'deepin-gsettings' 'deepin-pygtk-fix' 'python2-distribute' 'python2' 'glib2' 'python2-cairo' 'python2-imaging' 'libwebkit' 'python-xlib' 'pywebkitgtk' 'libsoup')
 
-_pkgsite="http://packages.linuxdeepin.com"
-# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
-_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
-source=("${_parent_url}/deepin-ui_1+git20131108164648~e369b783df.tar.gz")
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-ui/deepin-ui_1+git20131108164648~e369b783df.tar.gz
+source=("${_fileurl}")
 md5sums=('fe1399d53a14ae0ff1f62443669a72f9')
 
+_filename="$(basename "${_fileurl}")"
+_filename="${_filename%.tar.gz}"
+_innerdir="${_filename/_/-}"
+
 build(){
-    cd "$srcdir"/${pkgname}-1+${pkgver}
+    cd "${srcdir}/${_innerdir}"
     python2 setup.py build
 }
 
 package() {
+    cd "${srcdir}/${_innerdir}"
     mkdir -p "$pkgdir"/usr/share/locale
     mkdir -p "$pkgdir"/usr/lib/python2.7/site-packages/dtk/theme
-    cd "$srcdir"/${pkgname}-1+${pkgver}
     python2 setup.py install --root="$pkgdir/" --optimize=1
     mv "$pkgdir"/usr/dtk/locale "$pkgdir"/usr/share/
     mv "$pkgdir"/usr/dtk/theme "$pkgdir"/usr/lib/python2.7/site-packages/dtk/
