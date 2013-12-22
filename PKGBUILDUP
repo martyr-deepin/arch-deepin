@@ -127,40 +127,24 @@ update_deepin_wallpapers() {
 ###** deepin-webapps
 update_deepin_webapps() {
     local pkgname="deepin-webapps"
-    local tplfile="./${pkgname}/${tplname}"
-    local url="${deepin_pkgsite}/deepin/pool/main/d/${pkgname}"
-
-    # build $FILE_INFO
-    local webapps="kuwo-music dbank-online-storage youdao-note chainrxn \
-                   doit-im microsoft-skydrive baidu-map douban ttpod \
-                   kugou-music kingsoft-fast-docs xiami-music cargo-bridge \
-                   sina-weibo pirateslovedaisies kingsoft-online-storage \
-                   baidu-music baidu-online-storage paulrouget towerim \
-                   fetion baidu-hi 12306"
-    local i=1;
-    for app in ${webapps}; do
-        local FILE_INFO["$(expr ${i}-1)"]="fileurl_${i}::md5_${i}::${url}::${pkgname}-${app}_.*?_all\.deb"
-        ((i++))
-    done
-
     local pkgverreg="[0-9]+\.[0-9]+[^-_]*"
     update_pkgbuild_for_deepin
 }
 
 ###* main
-update_deepin_artwork
-update_deepin_cursor_theme
+# update_deepin_artwork
+# update_deepin_cursor_theme
 # update_deepin_desktop_environment
 # update_deepin_desktop_environment_plugins
 # update_deepin_media_player
 # update_deepin_music_player
-update_deepin_notifications
+# update_deepin_notifications
 # update_deepin_screenshot
 # update_deepin_system_tray
 # update_deepin_terminal
 # update_deepin_ui
 # update_deepin_wallpapers
-# update_deepin_webapps
+update_deepin_webapps
 
 # update_deepin_system_settings
 

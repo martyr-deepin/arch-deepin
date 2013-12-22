@@ -1,71 +1,183 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-pkgname=deepin-webapps
+pkgname=('deepin-webapps-kuwo-music'
+         'deepin-webapps-dbank-online-storage'
+         'deepin-webapps-youdao-note'
+         'deepin-webapps-chainrxn'
+         'deepin-webapps-doit-im'
+         'deepin-webapps-microsoft-skydrive'
+         'deepin-webapps-baidu-map'
+         'deepin-webapps-douban'
+         'deepin-webapps-ttpod'
+         'deepin-webapps-kugou-music'
+         'deepin-webapps-kingsoft-fast-docs'
+         'deepin-webapps-xiami-music'
+         'deepin-webapps-cargo-bridge'
+         'deepin-webapps-sina-weibo'
+         'deepin-webapps-pirateslovedaisies'
+         'deepin-webapps-kingsoft-online-storage'
+         'deepin-webapps-baidu-music'
+         'deepin-webapps-baidu-online-storage'
+         'deepin-webapps-paulrouget'
+         'deepin-webapps-towerim'
+         'deepin-webapps-fetion'
+         'deepin-webapps-baidu-hi'
+         'deepin-webapps-12306')
+pkgbase="deepin-webapps"
 pkgver={% pkgver %}
 pkgrel=1
-pkgdesc='Webapps from Deepin Linux'
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"
-license=('Unknown')
+license=('GPL2')
 depends=('chromium' 'xdg-utils')
 
-source=(" fileurl_1 %}"
-        " fileurl_2 %}"
-        " fileurl_3 %}"
-        " fileurl_4 %}"
-        " fileurl_5 %}"
-        " fileurl_6 %}"
-        " fileurl_7 %}"
-        " fileurl_8 %}"
-        " fileurl_9 %}"
-        " fileurl_10 %}"
-        " fileurl_11 %}"
-        " fileurl_12 %}"
-        " fileurl_13 %}"
-        " fileurl_14 %}"
-        " fileurl_15 %}"
-        " fileurl_16 %}"
-        " fileurl_17 %}"
-        " fileurl_18 %}"
-        " fileurl_19 %}"
-        " fileurl_20 %}"
-        " fileurl_21 %}"
-        " fileurl_22 %}"
-        " fileurl_23 %}")
-md5sums=('{% md5_1 %}'
-         '{% md5_2 %}'
-         '{% md5_3 %}'
-         '{% md5_4 %}'
-         '{% md5_5 %}'
-         '{% md5_6 %}'
-         '{% md5_7 %}'
-         '{% md5_8 %}'
-         '{% md5_9 %}'
-         '{% md5_10 %}'
-         '{% md5_11 %}'
-         '{% md5_12 %}'
-         '{% md5_13 %}'
-         '{% md5_14 %}'
-         '{% md5_15 %}'
-         '{% md5_16 %}'
-         '{% md5_17 %}'
-         '{% md5_18 %}'
-         '{% md5_19 %}'
-         '{% md5_20 %}'
-         '{% md5_21 %}'
-         '{% md5_22 %}'
-         '{% md5_23 %}')
+source=("${% fileurl %}")
+md5sums=('{% md5 %}')
 
-package() {
-    # extract *.deb
-    cd ${srcdir}
-    for f in $(ls -1 *.deb); do
-        msg2 "Extracting ${f}"
-        bsdtar -xvf ${f}
-        bsdtar -xvf data.tar.gz -C ${pkgdir}/
-    done
+_install_copyright_and_changelog() {
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
+    gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
+}
+
+# Usage: _easycp dest files...
+_easycp () {
+    local dest=$1; shift
+    mkdir -p "${dest}"
+    cp -vR -t "${dest}" "$@"
+}
+
+_package_webapp() {
+    cd "${srcdir}"
+    local _appname="${pkgname#deepin-webapps-}"
+    local _icon=${1:-"${_appname}.png"}
+    local _html=${2:-"${_appname}.html"}
+    local _desktop=${3:-"${_appname}.desktop"}
+
+    _easycp "${pkgdir}"/usr/share/icons/hicolor/48x48/apps/ icons/"${_icon}"
+    _easycp "${pkgdir}"/usr/share/deepin-webapps/ html/"${_html}"
+
+    mkdir -p "${pkgdir}"/usr/share/applications
+    install -m 0644 desktops/"${_desktop}" "${pkgdir}"/usr/share/applications/
+
+    _install_copyright_and_changelog
 
     # run with chromium
-    find "${pkgdir}" -iname "*.desktop" | xargs sed -i \
-        's_Exec=/usr/bin/google-chrome_Exec=/usr/bin/chromium_'
+    sed -i 's_Exec=/usr/bin/google-chrome_Exec=/usr/bin/chromium_' \
+        "${pkgdir}"/usr/share/applications/"${_desktop}"
+}
+
+package_deepin-webapps-kuwo-music() {
+    pkgdesc="Kuwo Music - Kuwo Web Music"
+    _package_webapp "kuwo.png"
+}
+
+package_deepin-webapps-dbank-online-storage() {
+    pkgdesc="DBank Online Storage - Store your files using DBank Online Storage"
+    _package_webapp
+}
+
+package_deepin-webapps-youdao-note() {
+    pkgdesc="Youdao Note - Remember with Youdao Note"
+    _package_webapp
+}
+
+package_deepin-webapps-chainrxn() {
+    pkgdesc="Chain Reaction - an addictive game that is very simple: Clear the level of bombs."
+    _package_webapp "chain-reaction.png"
+}
+
+package_deepin-webapps-doit-im() {
+    pkgdesc="Doit.im - Best Online GTD Service for Getting Things Done, Always Online, Always With You!"
+    _package_webapp
+}
+
+package_deepin-webapps-microsoft-skydrive() {
+    pkgdesc="Microsoft SkyDrive - Edit,save files and coperate online"
+    _package_webapp "microsoft.png"
+}
+
+package_deepin-webapps-baidu-map() {
+    pkgdesc="Baidu Map - Baidu Map Service for China"
+    _package_webapp
+}
+
+package_deepin-webapps-douban() {
+    pkgdesc="Douban FM - Douban Music Service"
+    _package_webapp
+}
+
+package_deepin-webapps-ttpod() {
+    pkgdesc="ttpod - ttpod web"
+    _package_webapp
+}
+
+package_deepin-webapps-kugou-music() {
+    pkgdesc="Kugou Music - Kugou Online Music"
+    _package_webapp
+}
+
+package_deepin-webapps-kingsoft-fast-docs() {
+    pkgdesc="Kingsoft Fast Docs - Edit and save documents online"
+    _package_webapp
+}
+
+package_deepin-webapps-xiami-music() {
+    pkgdesc="Xiami Music - Xiami Music in China"
+    _package_webapp "xiami.png"
+}
+
+package_deepin-webapps-cargo-bridge() {
+    pkgdesc="Cargo Bridge - A new quality of bridge builder. Build a bridge and test your construction skills."
+    _package_webapp
+}
+
+package_deepin-webapps-sina-weibo() {
+    pkgdesc="Sina Weibo - China Popular SNS which is like twitter"
+    _package_webapp "weibo.png"
+}
+
+package_deepin-webapps-pirateslovedaisies() {
+    pkgdesc="Description: Pirates Love Daisies - Davey Jones is sending his minions to collect your most precious resource, your Daisies!! Hire a crew, and use them to thwart the creeps."
+    _package_webapp "pirates-love-daisies.png"
+}
+
+package_deepin-webapps-kingsoft-online-storage() {
+    pkgdesc="Kingsoft Online Storage - Store your files using Kingsoft Online Storage"
+    _package_webapp
+}
+
+package_deepin-webapps-baidu-music() {
+    pkgdesc="Baidu Music - Baidu Web Music"
+    _package_webapp
+}
+
+package_deepin-webapps-baidu-online-storage() {
+    pkgdesc="Baidu Online Storage - Store your files using Baidu Storage"
+    _package_webapp
+}
+
+package_deepin-webapps-paulrouget() {
+    pkgdesc="Runfield - A simple yet wacky HTML5 game demo in which you take the role of a hyper fox."
+    _package_webapp
+}
+
+package_deepin-webapps-towerim() {
+    pkgdesc="Tower.im - 简单好用的团队协作工具"
+    _package_webapp
+}
+
+package_deepin-webapps-fetion() {
+    pkgdesc="Fetion - Chat with friends using Fetion"
+    _package_webapp
+}
+
+package_deepin-webapps-baidu-hi() {
+    pkgdesc="Baidu Hi - Baidu IM Client"
+    _package_webapp
+}
+
+package_deepin-webapps-12306() {
+    pkgdesc="12306"
+    _package_webapp
 }
