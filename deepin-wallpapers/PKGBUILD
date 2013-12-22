@@ -4,20 +4,25 @@ pkgname=('deepin-default-wallpapers'
          'deepin-extra-wallpapers')
 pkgbase="deepin-wallpapers"
 pkgver=git20131101095720~30009677e8
-_realver=13.06+${pkgver}
+_realver=+${pkgver}
 pkgrel=1
 arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('Unknown')
 
-source=("http://mirrors.ustc.edu.cn/deepin/pool/main/d/deepin-wallpapers/deepin-wallpapers_13.06+git20131101095720~30009677e8.tar.gz")
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-wallpapers/deepin-wallpapers_13.06+git20131101095720~30009677e8.tar.gz
+source=("${_fileurl}")
 md5sums=('c50b10996cdacea2b80cd0b8c4cd59d5')
 
+_filename="$(basename "${_fileurl}")"
+_filename="${_filename%.tar.gz}"
+_innerdir="${_filename/_/-}"
+
 _install_copyright_and_changelog() {
-    local _pkgname=$1
-    mkdir -p "${pkgdir}"/usr/share/doc/${_pkgname}
-    cp -f debian/copyright "${pkgdir}"/usr/share/doc/${_pkgname}/
-    gzip -c debian/changelog > "${pkgdir}"/usr/share/doc/${_pkgname}/changelog.gz
+    local pkgname=$1
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
+    gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
 }
 
 package_deepin-default-wallpapers() {
@@ -25,7 +30,7 @@ package_deepin-default-wallpapers() {
     depends=('deepin-system-settings-module-individuation')
     conflicts=('deepin-extra-wallpapers')
 
-    cd "${srcdir}/${pkgbase}-${_realver}"
+    cd "${srcdir}/${_innerdir}"
 
     mkdir -p "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/theme
     mkdir -p "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/backgrounds
@@ -46,7 +51,7 @@ package_deepin-extra-wallpapers() {
     depends=('deepin-system-settings-module-individuation')
     conflicts=('deepin-default-wallpapers')
 
-    cd "${srcdir}/${pkgbase}-${_realver}"
+    cd "${srcdir}/${_innerdir}"
 
     mkdir -p "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation
 

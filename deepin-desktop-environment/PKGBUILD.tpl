@@ -17,10 +17,13 @@ depends=('gtk3' 'webkitgtk' 'deepin-webkit' 'gdk-pixbuf2' 'python2' 'dbus-glib' 
 makedepends=('cmake' 'go' 'coffee-script')
 install=deepin-desktop-environment.install
 
-source=("{% fileurl %}")
+_fileurl={% fileurl %}
+source=("${_fileurl}")
 md5sums=('{% md5 %}')
 
-_innerdir="${pkgbase}-1.0+${pkgver}"
+_filename="$(basename "${_fileurl}")"
+_filename="${_filename%.tar.gz}"
+_innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
     local pkgname=$1

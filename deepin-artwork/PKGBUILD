@@ -8,21 +8,30 @@ arch=('i686' 'x86_64')
 license=('LGPL3')
 url="http://www.linuxdeepin.com/"
 depends=('deepin-icon-theme' 'deepin-gtk-theme' 'wqy-microhei')
-provides=("${pkgname}")
-conflicts=("${pkgname}-git")
 
-_pkgsite="http://packages.linuxdeepin.com"
-# _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
-_parent_url="${_pkgsite}/deepin/pool/main/d/${pkgname}"
-source=("${_parent_url}/deepin-artwork_13.06.15.tar.gz")
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-artwork/deepin-artwork_13.06.15.tar.gz
+source=("${_fileurl}")
 md5sums=('03372c11f42f3faa858c1334de8f650d')
 
+_filename="$(basename "${_fileurl}")"
+_filename="${_filename%.tar.gz}"
+_innerdir="${_filename/_/-}"
+
+_install_copyright_and_changelog() {
+    local pkgname=$1
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
+    gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
+}
+
 package() {
-    cd "${srcdir}/${pkgname}-${pkgver}"
+    cd "${srcdir}/${_innerdir}"
 
     mkdir -p "${pkgdir}"/usr/share/pixmaps
     cp -R usr/share/pixmaps "${pkgdir}"/usr/share/pixmaps/
 
     mkdir -p "${pkgdir}"/usr/share/sounds
     cp -R usr/share/sounds "${pkgdir}"/usr/share/sounds/
+
+    _install_copyright_and_changelog "${pkgname}"
 }

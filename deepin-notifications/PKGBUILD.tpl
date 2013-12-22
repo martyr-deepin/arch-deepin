@@ -10,10 +10,13 @@ url="http://www.linuxdeepin.com/"
 depends=('deepin-ui' 'deepin-pygtk-fix' 'python2-dbus' 'python2-cairo')
 conflicts=("notify-osd")
 
-source=("{% fileurl %}")
+_fileurl={% fileurl %}
+source=("${_fileurl}")
 md5sums=('{% md5 %}')
 
-_innerdir="${pkgname}-{% pkgrel %}"
+_filename="$(basename "${_fileurl}")"
+_filename="${_filename%-*}"
+_innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
     local pkgname=$1

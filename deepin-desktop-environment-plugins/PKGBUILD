@@ -11,11 +11,13 @@ url="http://www.linuxdeepin.com/"
 license=('GPL2')
 makedepends=('coffee-script')
 
-_fileurl="http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-desktop-environment-plugins/deepin-desktop-environment-plugins_0.0.1+git20131108153537~9905357014.tar.gz"
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-desktop-environment-plugins/deepin-desktop-environment-plugins_0.0.1+git20131108153537~9905357014.tar.gz
 source=("${_fileurl}")
 md5sums=('517e435aab9f04d70de1f9a1b6dc964d')
 
-_innerdir="${pkgbase}-0.0.1+${pkgver}"
+_filename="$(basename "${_fileurl}")"
+_filename="${_filename%.tar.gz}"
+_innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
     local pkgname=$1

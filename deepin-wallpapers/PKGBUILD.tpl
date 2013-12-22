@@ -10,8 +10,13 @@ arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('Unknown')
 
-source=("{% fileurl %}")
+_fileurl={% fileurl %}
+source=("${_fileurl}")
 md5sums=('{% md5 %}')
+
+_filename="$(basename "${_fileurl}")"
+_filename="${_filename%.tar.gz}"
+_innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
     local pkgname=$1
@@ -25,7 +30,7 @@ package_deepin-default-wallpapers() {
     depends=('deepin-system-settings-module-individuation')
     conflicts=('deepin-extra-wallpapers')
 
-    cd "${srcdir}/${pkgbase}-${_realver}"
+    cd "${srcdir}/${_innerdir}"
 
     mkdir -p "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/theme
     mkdir -p "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/backgrounds
@@ -46,7 +51,7 @@ package_deepin-extra-wallpapers() {
     depends=('deepin-system-settings-module-individuation')
     conflicts=('deepin-default-wallpapers')
 
-    cd "${srcdir}/${pkgbase}-${_realver}"
+    cd "${srcdir}/${_innerdir}"
 
     mkdir -p "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation
 

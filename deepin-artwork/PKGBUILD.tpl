@@ -9,15 +9,29 @@ license=('LGPL3')
 url="http://www.linuxdeepin.com/"
 depends=('deepin-icon-theme' 'deepin-gtk-theme' 'wqy-microhei')
 
-source=("{% fileurl %}")
+_fileurl={% fileurl %}
+source=("${_fileurl}")
 md5sums=('{% md5 %}')
 
+_filename="$(basename "${_fileurl}")"
+_filename="${_filename%.tar.gz}"
+_innerdir="${_filename/_/-}"
+
+_install_copyright_and_changelog() {
+    local pkgname=$1
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
+    gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
+}
+
 package() {
-    cd "${srcdir}/${pkgname}-${pkgver}"
+    cd "${srcdir}/${_innerdir}"
 
     mkdir -p "${pkgdir}"/usr/share/pixmaps
     cp -R usr/share/pixmaps "${pkgdir}"/usr/share/pixmaps/
 
     mkdir -p "${pkgdir}"/usr/share/sounds
     cp -R usr/share/sounds "${pkgdir}"/usr/share/sounds/
+
+    _install_copyright_and_changelog "${pkgname}"
 }

@@ -17,16 +17,19 @@ depends=('gtk3' 'webkitgtk' 'deepin-webkit' 'gdk-pixbuf2' 'python2' 'dbus-glib' 
 makedepends=('cmake' 'go' 'coffee-script')
 install=deepin-desktop-environment.install
 
-source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-desktop-environment/deepin-desktop-environment_1.0+git20131121141728~9b29838bb3.tar.gz")
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-desktop-environment/deepin-desktop-environment_1.0+git20131121141728~9b29838bb3.tar.gz
+source=("${_fileurl}")
 md5sums=('5590651280e2e74f7512eae6c90894f7')
 
-_innerdir="${pkgbase}-1.0+${pkgver}"
+_filename="$(basename "${_fileurl}")"
+_filename="${_filename%.tar.gz}"
+_innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
     local pkgname=$1
-    mkdir -p "${pkgdir}"/usr/share/doc/${pkgname}
-    cp -f debian/copyright "${pkgdir}"/usr/share/doc/${pkgname}/
-    gzip -c debian/changelog > "${pkgdir}"/usr/share/doc/${pkgname}/changelog.gz
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
+    gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
 }
 
 # Usage: _easycp dest files...

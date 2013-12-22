@@ -11,10 +11,13 @@ url="http://www.linuxdeepin.com/"
 license=('GPL3')
 depends=('gstreamer0.10-python' 'gstreamer0.10-bad-plugins' 'gstreamer0.10-good-plugins' 'gstreamer0.10-ugly-plugins' 'mutagen' 'python2-chardet' 'python2-scipy' 'python2-pyquery' 'python2-cssselect' 'deepin-ui' 'python2-dbus' 'sonata' 'cddb-py' 'python2-pycurl' 'python-xlib' 'python2-keybinder2')
 
-source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-music-player/deepin-music-player_1+git20131122104939~00f61cb069.tar.gz")
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-music-player/deepin-music-player_1+git20131122104939~00f61cb069.tar.gz
+source=("${_fileurl}")
 md5sums=('2abb81c00ead1e36792a983c1565eccc')
 
-_innerdir="${pkgname}-1+${pkgver}"
+_filename="$(basename "${_fileurl}")"
+_filename="${_filename%.tar.gz}"
+_innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
     local pkgname=$1
@@ -32,7 +35,7 @@ _easycp () {
 
 package() {
     cd "${srcdir}/${_innerdir}"
-    
+
     _easycp "${pkgdir}"/usr/share/icons/hicolor/128x128/apps/ debian/deepin-music-player.png
     _easycp "${pkgdir}"/usr/share/deepin-music-player/ app_theme
     _easycp "${pkgdir}"/usr/share/deepin-music-player/ image
@@ -47,13 +50,13 @@ package() {
 
     mkdir -p "${pkgdir}"/usr/share/applications/
     install -m 0644 deepin-music-player.desktop "${pkgdir}"/usr/share/applications/
-    
+
     _install_copyright_and_changelog "${pkgname}"
-    
+
     # Post install
     mkdir -p "${pkgdir}"/usr/bin
     ln -s /usr/share/deepin-music-player/src/main.py "${pkgdir}"/usr/bin/deepin-music-player
-    
+
     cd "${pkgdir}"/usr/share/deepin-music-player/tools
     python2 generate_mo.py
 

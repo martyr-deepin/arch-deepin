@@ -10,10 +10,13 @@ url="http://www.linuxdeepin.com/"
 depends=('deepin-ui' 'deepin-pygtk-fix' 'python2-dbus' 'python2-cairo')
 conflicts=("notify-osd")
 
-source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-notifications/deepin-notifications_0.1-1+git20131031105912~9da03fa8e2.tar.gz")
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-notifications/deepin-notifications_0.1-1+git20131031105912~9da03fa8e2.tar.gz
+source=("${_fileurl}")
 md5sums=('e0db8f520fd2555d1c58513abbd67326')
 
-_innerdir="${pkgname}-0.1"
+_filename="$(basename "${_fileurl}")"
+_filename="${_filename%-*}"
+_innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
     local pkgname=$1

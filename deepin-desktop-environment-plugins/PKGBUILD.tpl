@@ -11,11 +11,13 @@ url="http://www.linuxdeepin.com/"
 license=('GPL2')
 makedepends=('coffee-script')
 
-_fileurl="{% fileurl %}"
+_fileurl={% fileurl %}
 source=("${_fileurl}")
 md5sums=('{% md5 %}')
 
-_innerdir="${pkgbase}-{% pkgrel %}+${pkgver}"
+_filename="$(basename "${_fileurl}")"
+_filename="${_filename%.tar.gz}"
+_innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
     local pkgname=$1

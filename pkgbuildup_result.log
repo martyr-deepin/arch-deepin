@@ -1,1 +1,8 @@
-[SUCCESS]  ./deepin-ui/PKGBUILD.tpl
+[SUCCESS]  ./deepin-artwork/PKGBUILD.tpl
+[SUCCESS]  ./deepin-cursor-theme/PKGBUILD.tpl
+[SUCCESS]  ./deepin-desktop-environment/PKGBUILD.tpl
+[SUCCESS]  ./deepin-desktop-environment-plugins/PKGBUILD.tpl
+[SUCCESS]  ./deepin-media-player/PKGBUILD.tpl
+[SUCCESS]  ./deepin-music-player/PKGBUILD.tpl
+[SUCCESS]  ./deepin-notifications/PKGBUILD.tpl
+[SUCCESS]  ./deepin-wallpapers/PKGBUILD.tpl
