@@ -66,6 +66,6 @@ package() {
     done
 
     # run with chromium
-    find ${pkgdir} -iname "*.desktop" | xargs sed -i \
+    find "${pkgdir}" -iname "*.desktop" | xargs sed -i \
         's_Exec=/usr/bin/google-chrome_Exec=/usr/bin/chromium_'
 }

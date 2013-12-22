@@ -14,11 +14,27 @@ depends=('gstreamer0.10-python' 'gstreamer0.10-bad-plugins' 'gstreamer0.10-good-
 source=("{% fileurl %}")
 md5sums=('{% md5 %}')
 
+_innerdir="${pkgname}-1+${pkgver}"
+
+_install_copyright_and_changelog() {
+    local pkgname=$1
+    mkdir -p "${pkgdir}"/usr/share/doc/${pkgname}
+    cp -f debian/copyright "${pkgdir}"/usr/share/doc/${pkgname}/
+    gzip -c debian/changelog > "${pkgdir}"/usr/share/doc/${pkgname}/changelog.gz
+}
+
+# Usage: _easycp dest files...
+_easycp () {
+    local dest=$1; shift
+    mkdir -p "${dest}"
+    cp -vR -t "${dest}" "$@"
+}
+
 package() {
-    tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
+    # tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
 
     # fix python version
-    find ${pkgdir} -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+    find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
 
     cd ${pkgdir}/usr/share/deepin-music-player/tools
     python2 generate_mo.py

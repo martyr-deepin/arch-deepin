@@ -16,5 +16,5 @@ package() {
     tar xzvf ${srcdir}/data.tar.gz -C ${pkgdir}/
 
     # fix python version
-    find ${pkgdir} -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+    find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
 }
