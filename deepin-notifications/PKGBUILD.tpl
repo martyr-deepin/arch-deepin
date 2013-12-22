@@ -17,9 +17,9 @@ _innerdir="${pkgname}-{% pkgrel %}"
 
 _install_copyright_and_changelog() {
     local pkgname=$1
-    mkdir -p "${pkgdir}"/usr/share/doc/${pkgname}
-    cp -f debian/copyright "${pkgdir}"/usr/share/doc/${pkgname}/
-    gzip -c debian/changelog > "${pkgdir}"/usr/share/doc/${pkgname}/changelog.gz
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
+    gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
 }
 
 # Usage: _easycp dest files...

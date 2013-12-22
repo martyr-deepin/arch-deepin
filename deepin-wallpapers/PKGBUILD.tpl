@@ -14,10 +14,10 @@ source=("{% fileurl %}")
 md5sums=('{% md5 %}')
 
 _install_copyright_and_changelog() {
-    local _pkgname=$1
-    mkdir -p "${pkgdir}"/usr/share/doc/${_pkgname}
-    cp -f debian/copyright "${pkgdir}"/usr/share/doc/${_pkgname}/
-    gzip -c debian/changelog > "${pkgdir}"/usr/share/doc/${_pkgname}/changelog.gz
+    local pkgname=$1
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
+    gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
 }
 
 package_deepin-default-wallpapers() {

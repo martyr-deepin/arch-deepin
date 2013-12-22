@@ -1,1 +1,6 @@
+[SUCCESS]  ./deepin-desktop-environment-plugins/PKGBUILD.tpl
+[SUCCESS]  ./deepin-media-player/PKGBUILD.tpl
+[SUCCESS]  ./deepin-music-player/PKGBUILD.tpl
+[SUCCESS]  ./deepin-notifications/PKGBUILD.tpl
+[SUCCESS]  ./deepin-screenshot/PKGBUILD.tpl
 [SUCCESS]  ./deepin-system-tray/PKGBUILD.tpl
