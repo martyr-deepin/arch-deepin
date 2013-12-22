@@ -47,6 +47,10 @@ package() {
 
     _install_copyright_and_changelog
 
+    # remove .po
+    find "${pkgdir}" -name '*.po' -exec rm \{} \;
+    find "${pkgdir}" -name '*.pot' -exec rm \{} \;
+
     # fix python version
     find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
 }
