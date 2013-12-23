@@ -1,2 +1,11 @@
+[SUCCESS]  ./deepin-desktop-environment/PKGBUILD.tpl
 [SUCCESS]  ./deepin-desktop-environment-plugins/PKGBUILD.tpl
+[SUCCESS]  ./deepin-media-player/PKGBUILD.tpl
+[SUCCESS]  ./deepin-music-player/PKGBUILD.tpl
+[SUCCESS]  ./deepin-notifications/PKGBUILD.tpl
 [SUCCESS]  ./deepin-screenshot/PKGBUILD.tpl
+[SUCCESS]  ./deepin-system-tray/PKGBUILD.tpl
+[SUCCESS]  ./deepin-terminal/PKGBUILD.tpl
+[SUCCESS]  ./deepin-ui/PKGBUILD.tpl
+[SUCCESS]  ./deepin-wallpapers/PKGBUILD.tpl
+[SUCCESS]  ./deepin-webapps/PKGBUILD.tpl
