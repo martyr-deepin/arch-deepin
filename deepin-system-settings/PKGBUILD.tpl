@@ -27,8 +27,7 @@ pkgrel=1
 arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('GPL2')
-depends=('python2' 'polkit')
-# TODO 'cdbs'
+depends=('python2' 'polkit' 'python2-xappy')
 makedepends=('python2-setuptools')
 
 _fileurl={% fileurl %}
@@ -167,10 +166,10 @@ package_deepin-system-settings-module-bluetooth() {
     _install_copyright_and_changelog
 }
 
+# TODO
 package_deepin-system-settings-module-date-time() {
     pkgname='deepin-system-settings-module-date-time'
-    depends=('deepin-system-settings' 'ntp')
-    # TODO 'python-deepin-lunar' 'liblunar-date' 'liblunar-calendar' 'python-libdtk-widget'
+    depends=('deepin-system-settings' 'python2-deepin-lunar' 'ntp')
     pkgdesc='Deepin system settings module for configuring date and time'
 
     cd "${srcdir}/${_innerdir}"
@@ -178,7 +177,6 @@ package_deepin-system-settings-module-date-time() {
     (
         cd modules/date_time/src
         python2 setup.py install --prefix=/usr --root "${pkgdir}"
-        # TODO --install-layout=deb
     )
     # TODO find "${_destdir}"/deepin-system-settings-module-date-time/usr/share/deepin-system-settings \( -name "*.c" -or -name "setup.py" -or -name "com.deepin.*"  -or -name "install_backend.sh" -or -name "*.h" \) -delete
 
@@ -196,6 +194,7 @@ package_deepin-system-settings-module-desktop() {
     _install_copyright_and_changelog
 }
 
+# TODO
 package_deepin-system-settings-module-display() {
     pkgname='deepin-system-settings-module-display'
     depends=('deepin-system-settings' 'python2-deepin-xrandr' 'deepin-gsettings')
@@ -206,6 +205,7 @@ package_deepin-system-settings-module-display() {
     _install_copyright_and_changelog
 }
 
+# TODO
 package_deepin-system-settings-module-driver() {
     pkgname='deepin-system-settings-module-driver'
     depends=('deepin-system-settings')
@@ -216,6 +216,7 @@ package_deepin-system-settings-module-driver() {
     _install_copyright_and_changelog
 }
 
+# TODO
 package_deepin-system-settings-module-individuation() {
     pkgname='deepin-system-settings-module-individuation'
     depends=('deepin-system-settings')
@@ -231,6 +232,7 @@ package_deepin-system-settings-module-individuation() {
     _install_copyright_and_changelog
 }
 
+# TODO
 package_deepin-system-settings-module-keyboard() {
     pkgname='deepin-system-settings-module-keyboard'
     depends=('deepin-system-settings' 'libgnomekbd' 'python2-gconf')
@@ -262,6 +264,7 @@ package_deepin-system-settings-module-mouse() {
     _install_copyright_and_changelog
 }
 
+# TODO
 package_deepin-system-settings-module-network() {
     pkgname='deepin-system-settings-module-network'
     depends=('deepin-system-settings' 'python2-gnomekeyring' 'python2-gudev' 'modemmanager' 'glib-networking' 'networkmanager' 'networkmanager-pptp' 'python2-pytz')
@@ -277,6 +280,7 @@ package_deepin-system-settings-module-network() {
     _install_copyright_and_changelog
 }
 
+# TODO
 package_deepin-system-settings-module-power() {
     pkgname='deepin-system-settings-module-power'
     depends=('deepin-system-settings')
@@ -287,6 +291,7 @@ package_deepin-system-settings-module-power() {
     _install_copyright_and_changelog
 }
 
+# TODO
 package_deepin-system-settings-module-printer() {
     pkgname='deepin-system-settings-module-printer'
     depends=('deepin-system-settings')
@@ -297,6 +302,7 @@ package_deepin-system-settings-module-printer() {
     _install_copyright_and_changelog
 }
 
+# TODO
 package_deepin-system-settings-module-sound() {
     pkgname='deepin-system-settings-module-sound'
     depends=('deepin-system-settings' 'python2-dbus')
@@ -328,6 +334,7 @@ package_deepin-system-settings-module-touchpad() {
     _install_copyright_and_changelog
 }
 
+# TODO
 package_deepin-system-settings-module-tray-power() {
     pkgname='deepin-system-settings-module-tray-power'
     depends=('deepin-system-settings')

@@ -25,6 +25,10 @@ _install_copyright_and_changelog() {
 
 package() {
     cd "${srcdir}/${_innerdir}"
+
+    # TODO fix setup.py
+    sed -i "s/libraries = .*$/libraries = ['glib-2.0', 'lunar-calendar-2.0', 'dltk-2.0'],/" setup.py
+
     python2 setup.py install --prefix=/usr --root="${pkgdir}"
     _install_copyright_and_changelog
 }
