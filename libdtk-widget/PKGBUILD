@@ -33,34 +33,7 @@ build() {
 
 package() {
     cd "${srcdir}/${_innerdir}"
-
-    # override_dh_auto_configure:
-	# ./autogen.sh --prefix=/usr
-# override_dh_install:
-	# find debian/ -name *.la -delete
-	# python2 setup.py install --prefix=/usr --root $(CURDIR)/debian/python-libdtk-widget
-     # --install-layout=deb
-
-    # ./autogen.sh --prefix=/usr
-    # make clean
-    # make
-    # make install
-    # sudo make install
-
-    # sudo python setup.py install
-
     make DESTDIR="$pkgdir" install
 	find "${pkgdir}" -name *.la -delete
-
-    # sed -i 's/pkg_config_cflags(.*)/pkg_config_cflags(['dltk+-2.0', 'pygtk-2.0'])/' setup.py
-    # sed -i "s/include_dirs = .*$/pkg_config_cflags(['pygtk-2.0'])/" setup.py
-    # sed -i "s/libraries = .*$//" setup.py
-    # include_dirs = pkg_config_cflags(['dltk+-2.0', 'pygtk-2.0']),
-
-    # pygobject-2.0
-
-	# python2 setup.py install --prefix=/usr --root "${pkgdir}"
-
-
     _install_copyright_and_changelog
 }
