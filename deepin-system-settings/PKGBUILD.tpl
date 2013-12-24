@@ -91,7 +91,6 @@ prepare() {
 }
 
 package_deepin-system-settings() {
-    pkgname='deepin-system-settings'
     depends=('deepin-ui' 'deepin-gsettings' 'deepin-system-settings-module-all')
     pkgdesc='Utility classes for using DCM modules in Linux Deepin environment'
 
@@ -108,7 +107,6 @@ package_deepin-system-settings() {
 }
 
 package_deepin-system-settings-module-all() {
-    pkgname='deepin-system-settings-module-all'
     depends=('deepin-system-settings' 'deepin-system-settings-module-a11y' 'deepin-system-settings-module-account' 'deepin-system-settings-module-application-associate' 'deepin-system-settings-module-bluetooth' 'deepin-system-settings-module-date-time' 'deepin-system-settings-module-desktop' 'deepin-system-settings-module-display' 'deepin-system-settings-module-driver' 'deepin-system-settings-module-individuation' 'deepin-system-settings-module-keyboard' 'deepin-system-settings-module-mouse' 'deepin-system-settings-module-network' 'deepin-system-settings-module-power' 'deepin-system-settings-module-printer' 'deepin-system-settings-module-sound' 'deepin-system-settings-module-system-information' 'deepin-system-settings-module-touchpad' 'deepin-system-settings-module-mount-media' 'deepin-system-settings-module-tray-power')
     pkgdesc='Deepin system settings module for configuring system'
 
@@ -117,7 +115,6 @@ package_deepin-system-settings-module-all() {
 }
 
 package_deepin-system-settings-module-a11y() {
-    pkgname='deepin-system-settings-module-a11y'
     depends=('deepin-system-settings')
     pkgdesc='Deepin system settings module for configuring accessibility'
 
@@ -127,7 +124,6 @@ package_deepin-system-settings-module-a11y() {
 }
 
 package_deepin-system-settings-module-account() {
-    pkgname='deepin-system-settings-module-account'
     depends=('deepin-system-settings' 'polkit' 'python2-pexpect' 'gstreamer0.10')
     pkgdesc='Deepin system settings module for configuring accounts'
 
@@ -150,7 +146,6 @@ package_deepin-system-settings-module-account() {
 }
 
 package_deepin-system-settings-module-application-associate() {
-    pkgname='deepin-system-settings-module-application-associate'
     depends=('deepin-system-settings' 'python2-psutil')
     pkgdesc='Deepin system settings module for configuring application associate'
 
@@ -160,7 +155,6 @@ package_deepin-system-settings-module-application-associate() {
 }
 
 package_deepin-system-settings-module-bluetooth() {
-    pkgname='deepin-system-settings-module-bluetooth'
     depends=('deepin-system-settings' 'bluez' 'obex-data-server')
     pkgdesc='Deepin system settings module for configuring bluetooth'
 
@@ -170,7 +164,6 @@ package_deepin-system-settings-module-bluetooth() {
 }
 
 package_deepin-system-settings-module-date-time() {
-    pkgname='deepin-system-settings-module-date-time'
     depends=('deepin-system-settings' 'python2-deepin-lunar' 'ntp')
     pkgdesc='Deepin system settings module for configuring date and time'
 
@@ -187,7 +180,6 @@ package_deepin-system-settings-module-date-time() {
 }
 
 package_deepin-system-settings-module-desktop() {
-    pkgname='deepin-system-settings-module-desktop'
     depends=('deepin-system-settings' 'xautomation')
     pkgdesc='Deepin system settings module for configuring desktop'
 
@@ -198,7 +190,6 @@ package_deepin-system-settings-module-desktop() {
 
 # TODO
 package_deepin-system-settings-module-display() {
-    pkgname='deepin-system-settings-module-display'
     depends=('deepin-system-settings' 'python2-deepin-xrandr' 'deepin-gsettings')
     pkgdesc='Deepin system settings module for configuring display'
 
@@ -209,7 +200,6 @@ package_deepin-system-settings-module-display() {
 
 # TODO
 package_deepin-system-settings-module-driver() {
-    pkgname='deepin-system-settings-module-driver'
     depends=('deepin-system-settings')
     pkgdesc='Deepin system settings module for configuring driver'
 
@@ -219,7 +209,6 @@ package_deepin-system-settings-module-driver() {
 }
 
 package_deepin-system-settings-module-individuation() {
-    pkgname='deepin-system-settings-module-individuation'
     depends=('deepin-system-settings' 'python2-deepin-storm')
     # TODO 'python-pystorm' 'deepin-default-wallpapers'
     pkgdesc='Deepin system settings module for configuring individuation'
@@ -236,7 +225,6 @@ package_deepin-system-settings-module-individuation() {
 # TODO error: (main.py:11977): GLib-GIO-ERROR **: Settings schema
 # 'org.gnome.settings-daemon.plugins.key-bindings' is not installed
 package_deepin-system-settings-module-keyboard() {
-    pkgname='deepin-system-settings-module-keyboard'
     depends=('deepin-system-settings' 'libgnomekbd' 'python2-gconf' 'python2-xklavier' 'libgnomekbd')
     pkgdesc='Deepin system settings module for configuring keyboard'
 
@@ -246,7 +234,6 @@ package_deepin-system-settings-module-keyboard() {
 }
 
 package_deepin-system-settings-module-mount-media() {
-    pkgname='deepin-system-settings-module-mount-media'
     depends=('deepin-system-settings')
     pkgdesc='Deepin system settings module for configuring mount media'
 
@@ -256,7 +243,6 @@ package_deepin-system-settings-module-mount-media() {
 }
 
 package_deepin-system-settings-module-mouse() {
-    pkgname='deepin-system-settings-module-mouse'
     depends=('deepin-system-settings')
     pkgdesc='Deepin system settings module for configuring mouse'
 
@@ -267,7 +253,6 @@ package_deepin-system-settings-module-mouse() {
 
 # TODO error: nmlib.nm_utils.InvalidService: 'InvalidService:org.freedesktop.ModemManager'
 package_deepin-system-settings-module-network() {
-    pkgname='deepin-system-settings-module-network'
     depends=('deepin-system-settings' 'python2-keyring' 'python2-gudev' 'modemmanager' 'glib-networking' 'networkmanager' 'networkmanager-pptp' 'python2-pytz')
     # TODO 'networkmanager-l2tp'
     pkgdesc='Deepin system settings module for configuring network'
@@ -283,7 +268,6 @@ package_deepin-system-settings-module-network() {
 
 # TODO error: IOError: [Errno 2] No such file or directory: '/home/fsh/.config/powers.xml'
 package_deepin-system-settings-module-power() {
-    pkgname='deepin-system-settings-module-power'
     depends=('deepin-system-settings')
     pkgdesc='Deepin system settings module for configuring power manager'
 
@@ -294,7 +278,6 @@ package_deepin-system-settings-module-power() {
 
 # TODO
 package_deepin-system-settings-module-printer() {
-    pkgname='deepin-system-settings-module-printer'
     depends=('deepin-system-settings')
     pkgdesc='Deepin system settings module for configuring printer'
 
@@ -304,7 +287,6 @@ package_deepin-system-settings-module-printer() {
 }
 
 package_deepin-system-settings-module-sound() {
-    pkgname='deepin-system-settings-module-sound'
     depends=('deepin-system-settings' 'python2-dbus' 'python2-deepin-pulseaudio')
     pkgdesc='Deepin system settings module for configuring sound'
 
@@ -314,7 +296,6 @@ package_deepin-system-settings-module-sound() {
 }
 
 package_deepin-system-settings-module-system-information() {
-    pkgname='deepin-system-settings-module-system-information'
     depends=('deepin-system-settings' 'python2-gtop')
     pkgdesc='Deepin system settings module for configuring system-information'
 
@@ -324,7 +305,6 @@ package_deepin-system-settings-module-system-information() {
 }
 
 package_deepin-system-settings-module-touchpad() {
-    pkgname='deepin-system-settings-module-touchpad'
     depends=('deepin-system-settings')
     pkgdesc='Deepin system settings module for configuring touchpad'
 
@@ -335,7 +315,6 @@ package_deepin-system-settings-module-touchpad() {
 
 # TODO error: IOError: [Errno 2] No such file or directory: '/home/fsh/.config/powers.xml'
 package_deepin-system-settings-module-tray-power() {
-    pkgname='deepin-system-settings-module-tray-power'
     depends=('deepin-system-settings')
     pkgdesc='Deepin system settings module for configuring tray power icon'
 
