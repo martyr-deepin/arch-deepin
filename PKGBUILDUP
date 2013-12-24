@@ -64,7 +64,7 @@ update_local_git() {
 # update_pkgbuild_for_deepin "deepin-music-player"
 # update_pkgbuild_for_deepin "deepin-notifications"
 # update_pkgbuild_for_deepin "deepin-screenshot"
-update_pkgbuild_for_deepin "deepin-system-settings"
+# update_pkgbuild_for_deepin "deepin-system-settings"
 # update_pkgbuild_for_deepin "deepin-system-tray"
 # update_pkgbuild_for_deepin "deepin-terminal"
 # update_pkgbuild_for_deepin "deepin-ui"
@@ -80,6 +80,27 @@ update_pkgbuild_for_deepin "deepin-system-settings"
 #     local filereg="deepin-xrandr_.*?\.tar.gz"
 #     update_pkgbuild_for_deepin "python2-deepin-xrandr"
 # )
+
+# (
+#     local url=${url:-"${deepin_pkgsite}/deepin/pool/main/p/python-deepin-lunar"}
+#     local filereg="python-deepin-lunar_.*?\.tar.gz"
+#     local pkgverreg="\d+\.\d+\.\d+"
+#     update_pkgbuild_for_deepin "python2-deepin-lunar"
+# )
+
+(
+    local url=${url:-"${deepin_pkgsite}/deepin/pool/main/d/dtk-widget"}
+    local filereg="dtk-widget_.*?\.tar.gz"
+    update_pkgbuild_for_deepin "libdtk-widget"
+)
+
+(
+    local url=${url:-"${deepin_pkgsite}/deepin/pool/main/d/dtk-widget"}
+    local filereg="dtk-widget_.*?\.tar.gz"
+    update_pkgbuild_for_deepin "python2-libdtk-widget"
+)
+# update_pkgbuild_for_deepin "libdtk-widget"
+
 
 # TODO deepin-pygtk-fix
 # TODO deepin-vte-plus
