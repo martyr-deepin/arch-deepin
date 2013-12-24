@@ -64,7 +64,7 @@ update_local_git() {
 # update_pkgbuild_for_deepin "deepin-music-player"
 # update_pkgbuild_for_deepin "deepin-notifications"
 # update_pkgbuild_for_deepin "deepin-screenshot"
-# # update_pkgbuild_for_deepin "deepin-system-settings"
+update_pkgbuild_for_deepin "deepin-system-settings"
 # update_pkgbuild_for_deepin "deepin-system-tray"
 # update_pkgbuild_for_deepin "deepin-terminal"
 # update_pkgbuild_for_deepin "deepin-ui"
@@ -75,13 +75,13 @@ update_local_git() {
 #     update_pkgbuild_for_deepin "deepin-webapps"
 # )
 
-(
-    local url=${url:-"${deepin_pkgsite}/deepin/pool/main/d/deepin-xrandr"}
-    local filereg="deepin-xrandr_.*?\.tar.gz"
-    update_pkgbuild_for_deepin "python2-deepin-xrandr"
-)
+# (
+#     local url=${url:-"${deepin_pkgsite}/deepin/pool/main/d/deepin-xrandr"}
+#     local filereg="deepin-xrandr_.*?\.tar.gz"
+#     update_pkgbuild_for_deepin "python2-deepin-xrandr"
+# )
 
-# TODO deepin-pygkt-fix
+# TODO deepin-pygtk-fix
 # TODO deepin-vte-plus
 
 # update_local_git
