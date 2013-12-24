@@ -1,27 +1,30 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-pkgname=('deepin-system-settings'
-         'deepin-system-settings-module-all'
-         'deepin-system-settings-module-a11y'
-         'deepin-system-settings-module-account'
-         'deepin-system-settings-module-application-associate'
-         'deepin-system-settings-module-bluetooth'
-         'deepin-system-settings-module-date-time'
-         'deepin-system-settings-module-desktop'
-         'deepin-system-settings-module-display'
-         'deepin-system-settings-module-driver'
-         'deepin-system-settings-module-individuation'
-         'deepin-system-settings-module-keyboard'
-         'deepin-system-settings-module-mouse'
-         'deepin-system-settings-module-network'
-         'deepin-system-settings-module-power'
-         'deepin-system-settings-module-printer'
-         'deepin-system-settings-module-sound'
-         'deepin-system-settings-module-system-information'
-         'deepin-system-settings-module-touchpad'
-         'deepin-system-settings-module-tray-power'
-         'deepin-system-settings-module-mount-media')
-pkgbase=deepin-system-settings
+### MERGE TO ONE PACKAGE FOR AUR
+pkgname='deepin-system-settings'
+pkgdesc='Utility classes for using DCM modules in Linux Deepin environment'
+# pkgname=('deepin-system-settings'
+#          'deepin-system-settings-module-all'
+#          'deepin-system-settings-module-a11y'
+#          'deepin-system-settings-module-account'
+#          'deepin-system-settings-module-application-associate'
+#          'deepin-system-settings-module-bluetooth'
+#          'deepin-system-settings-module-date-time'
+#          'deepin-system-settings-module-desktop'
+#          'deepin-system-settings-module-display'
+#          'deepin-system-settings-module-driver'
+#          'deepin-system-settings-module-individuation'
+#          'deepin-system-settings-module-keyboard'
+#          'deepin-system-settings-module-mouse'
+#          'deepin-system-settings-module-network'
+#          'deepin-system-settings-module-power'
+#          'deepin-system-settings-module-printer'
+#          'deepin-system-settings-module-sound'
+#          'deepin-system-settings-module-system-information'
+#          'deepin-system-settings-module-touchpad'
+#          'deepin-system-settings-module-tray-power'
+#          'deepin-system-settings-module-mount-media')
+# pkgbase=deepin-system-settings
 pkgver={% pkgver %}
 pkgrel=1
 arch=('any')
@@ -339,4 +342,46 @@ package_deepin-system-settings-module-tray-power() {
     cd "${srcdir}/${_innerdir}"
     _easycp "${pkgdir}"/usr/share/deepin-system-settings/modules/ modules/tray_power
     _install_copyright_and_changelog
+}
+
+### MERGE TO ONE PACKAGE FOR AUR
+package() {
+    package_deepin-system-settings
+    package_deepin-system-settings-module-all
+    package_deepin-system-settings-module-a11y
+    package_deepin-system-settings-module-account
+    package_deepin-system-settings-module-application-associate
+    package_deepin-system-settings-module-bluetooth
+    package_deepin-system-settings-module-date-time
+    package_deepin-system-settings-module-desktop
+    package_deepin-system-settings-module-display
+    package_deepin-system-settings-module-driver
+    package_deepin-system-settings-module-individuation
+    package_deepin-system-settings-module-keyboard
+    package_deepin-system-settings-module-mouse
+    package_deepin-system-settings-module-network
+    package_deepin-system-settings-module-power
+    package_deepin-system-settings-module-printer
+    package_deepin-system-settings-module-sound
+    package_deepin-system-settings-module-system-information
+    package_deepin-system-settings-module-touchpad
+    package_deepin-system-settings-module-tray-power
+    package_deepin-system-settings-module-mount-media
+
+    # overwrite variable at end, $pkgdesc is need again or upload will
+    # be failed
+    pkgdesc='Utility classes for using DCM modules in Linux Deepin environment'
+    depends=('python2' 'polkit' 'python2-xappy'
+             'deepin-ui' 'deepin-gsettings'
+             'python2-pexpect' 'gstreamer0.10'
+             'python2-psutil'
+             'bluez' 'obex-data-server'
+             'python2-deepin-lunar' 'ntp'
+             'xautomation'
+             'python2-deepin-xrandr' 'deepin-gsettings'
+             'python2-deepin-storm'
+             'libgnomekbd' 'python2-gconf' 'python2-xklavier' 'libgnomekbd'
+             'python2-keyring' 'python2-gudev' 'modemmanager' 'glib-networking' 'networkmanager' 'networkmanager-pptp' 'python2-pytz'
+             'python2-dbus' 'python2-deepin-pulseaudio'
+             'python2-gtop')
 }
