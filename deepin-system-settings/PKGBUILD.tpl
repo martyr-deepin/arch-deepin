@@ -166,7 +166,6 @@ package_deepin-system-settings-module-bluetooth() {
     _install_copyright_and_changelog
 }
 
-# TODO
 package_deepin-system-settings-module-date-time() {
     pkgname='deepin-system-settings-module-date-time'
     depends=('deepin-system-settings' 'python2-deepin-lunar' 'ntp')
@@ -216,10 +215,9 @@ package_deepin-system-settings-module-driver() {
     _install_copyright_and_changelog
 }
 
-# TODO
 package_deepin-system-settings-module-individuation() {
     pkgname='deepin-system-settings-module-individuation'
-    depends=('deepin-system-settings')
+    depends=('deepin-system-settings' 'python2-deepin-storm')
     # TODO 'python-pystorm' 'deepin-default-wallpapers'
     pkgdesc='Deepin system settings module for configuring individuation'
 
@@ -232,11 +230,11 @@ package_deepin-system-settings-module-individuation() {
     _install_copyright_and_changelog
 }
 
-# TODO
+# TODO error: (main.py:11977): GLib-GIO-ERROR **: Settings schema
+# 'org.gnome.settings-daemon.plugins.key-bindings' is not installed
 package_deepin-system-settings-module-keyboard() {
     pkgname='deepin-system-settings-module-keyboard'
-    depends=('deepin-system-settings' 'libgnomekbd' 'python2-gconf')
-    # TODO 'python2-xklavier' 'libgnomekbd-common'
+    depends=('deepin-system-settings' 'libgnomekbd' 'python2-gconf' 'python2-xklavier' 'libgnomekbd')
     pkgdesc='Deepin system settings module for configuring keyboard'
 
     cd "${srcdir}/${_innerdir}"
@@ -264,10 +262,10 @@ package_deepin-system-settings-module-mouse() {
     _install_copyright_and_changelog
 }
 
-# TODO
+# TODO error: nmlib.nm_utils.InvalidService: 'InvalidService:org.freedesktop.ModemManager'
 package_deepin-system-settings-module-network() {
     pkgname='deepin-system-settings-module-network'
-    depends=('deepin-system-settings' 'python2-gnomekeyring' 'python2-gudev' 'modemmanager' 'glib-networking' 'networkmanager' 'networkmanager-pptp' 'python2-pytz')
+    depends=('deepin-system-settings' 'python2-keyring' 'python2-gudev' 'modemmanager' 'glib-networking' 'networkmanager' 'networkmanager-pptp' 'python2-pytz')
     # TODO 'networkmanager-l2tp'
     pkgdesc='Deepin system settings module for configuring network'
 
@@ -280,7 +278,7 @@ package_deepin-system-settings-module-network() {
     _install_copyright_and_changelog
 }
 
-# TODO
+# TODO error: IOError: [Errno 2] No such file or directory: '/home/fsh/.config/powers.xml'
 package_deepin-system-settings-module-power() {
     pkgname='deepin-system-settings-module-power'
     depends=('deepin-system-settings')

@@ -81,12 +81,12 @@ update_local_git() {
 #     update_pkgbuild_for_deepin "python2-deepin-xrandr"
 # )
 
-(
-    local url=${url:-"${deepin_pkgsite}/deepin/pool/main/p/python-deepin-lunar"}
-    local filereg="python-deepin-lunar_.*?\.tar.gz"
-    local pkgverreg="\d+\.\d+\.\d+"
-    update_pkgbuild_for_deepin "python2-deepin-lunar"
-)
+# (
+#     local url=${url:-"${deepin_pkgsite}/deepin/pool/main/p/python-deepin-lunar"}
+#     local filereg="python-deepin-lunar_.*?\.tar.gz"
+#     local pkgverreg="\d+\.\d+\.\d+"
+#     update_pkgbuild_for_deepin "python2-deepin-lunar"
+# )
 
 # (
 #     local url=${url:-"${deepin_pkgsite}/deepin/pool/main/d/dtk-widget"}
@@ -100,6 +100,11 @@ update_local_git() {
 #     update_pkgbuild_for_deepin "python2-libdtk-widget"
 # )
 
+(
+    local url=${url:-"${deepin_pkgsite}/deepin/pool/main/p/pypulseaudio"}
+    local filereg="pypulseaudio_.*?\.tar.gz"
+    update_pkgbuild_for_deepin "python2-deepin-pulseaudio"
+)
 
 # TODO deepin-pygtk-fix
 # TODO deepin-vte-plus
