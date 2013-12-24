@@ -300,11 +300,9 @@ package_deepin-system-settings-module-printer() {
     _install_copyright_and_changelog
 }
 
-# TODO
 package_deepin-system-settings-module-sound() {
     pkgname='deepin-system-settings-module-sound'
-    depends=('deepin-system-settings' 'python2-dbus')
-    # TODO 'python-deepin-pulseaudio'
+    depends=('deepin-system-settings' 'python2-dbus' 'python2-deepin-pulseaudio')
     pkgdesc='Deepin system settings module for configuring sound'
 
     cd "${srcdir}/${_innerdir}"
@@ -332,7 +330,7 @@ package_deepin-system-settings-module-touchpad() {
     _install_copyright_and_changelog
 }
 
-# TODO
+# TODO error: IOError: [Errno 2] No such file or directory: '/home/fsh/.config/powers.xml'
 package_deepin-system-settings-module-tray-power() {
     pkgname='deepin-system-settings-module-tray-power'
     depends=('deepin-system-settings')
