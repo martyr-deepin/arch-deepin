@@ -58,7 +58,7 @@ update_local_git() {
 #     update_pkgbuild_for_deepin "deepin-cursor-theme"
 # )
 
-update_pkgbuild_for_deepin "deepin-desktop-environment"
+# update_pkgbuild_for_deepin "deepin-desktop-environment"
 # update_pkgbuild_for_deepin "deepin-desktop-environment-plugins"
 # update_pkgbuild_for_deepin "deepin-media-player"
 # update_pkgbuild_for_deepin "deepin-music-player"

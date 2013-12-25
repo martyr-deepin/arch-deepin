@@ -35,7 +35,6 @@ package() {
 
     _easycp "${pkgdir}"/usr/share/deepin-terminal/ app_theme
     _easycp "${pkgdir}"/usr/share/deepin-terminal/ locale
-    _easycp "${pkgdir}"/usr/share/deepin-terminal/ README
     _easycp "${pkgdir}"/usr/share/deepin-terminal/ skin
     _easycp "${pkgdir}"/usr/share/deepin-terminal/ src
     _easycp "${pkgdir}"/usr/share/deepin-terminal/ image

@@ -1,7 +1,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-terminal
-pkgver=git20131125000403~c6c474d431
+pkgver=git20131216140427
 pkgrel=1
 pkgdesc='Awesome terminal for Linux Deepin'
 arch=('any')
@@ -9,9 +9,9 @@ url="http://www.linuxdeepin.com/"
 license=('GPL2')
 depends=('deepin-ui' 'deepin-vte-plus' 'python2-dbus')
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-terminal/deepin-terminal_1+git20131125000403~c6c474d431.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-terminal/deepin-terminal_1+git20131216140427~8bc7128b38.tar.gz
 source=("${_fileurl}")
-md5sums=('fc6123025851287a0859d6a7d128f6de')
+md5sums=('14222109ff47414794ce3a8e9ef587a7')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"
@@ -35,7 +35,6 @@ package() {
 
     _easycp "${pkgdir}"/usr/share/deepin-terminal/ app_theme
     _easycp "${pkgdir}"/usr/share/deepin-terminal/ locale
-    _easycp "${pkgdir}"/usr/share/deepin-terminal/ README
     _easycp "${pkgdir}"/usr/share/deepin-terminal/ skin
     _easycp "${pkgdir}"/usr/share/deepin-terminal/ src
     _easycp "${pkgdir}"/usr/share/deepin-terminal/ image
