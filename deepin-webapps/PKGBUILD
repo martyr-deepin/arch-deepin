@@ -1,6 +1,10 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 ### MERGE TO ONE PACKAGE FOR AUR
+pkgname='deepin-webapps'
+pkgdesc="Web apps from Linux Deepin"
+depends=('chromium' 'xdg-utils')
+
 # pkgname=('deepin-webapps-kuwo-music'
 #          'deepin-webapps-dbank-online-storage'
 #          'deepin-webapps-youdao-note'
@@ -25,13 +29,12 @@
 #          'deepin-webapps-baidu-hi'
 #          'deepin-webapps-12306')
 # pkgbase="deepin-webapps"
-
 pkgver=0.6
 pkgrel=1
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"
 license=('GPL2')
-depends=('chromium' 'xdg-utils')
+# depends=('chromium' 'xdg-utils')
 
 source=("$http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-webapps/deepin-webapps_0.6.orig.tar.gz")
 md5sums=('6f184bcbd2f57cd497af550266c36aa0')
@@ -185,7 +188,6 @@ package_deepin-webapps-12306() {
 }
 
 ### MERGE TO ONE PACKAGE FOR AUR
-pkgname='deepin-webapps'
 package() {
     local webapps="kuwo-music dbank-online-storage youdao-note chainrxn doit-im microsoft-skydrive baidu-map douban ttpod kugou-music kingsoft-fast-docs xiami-music cargo-bridge sina-weibo pirateslovedaisies kingsoft-online-storage baidu-music baidu-online-storage paulrouget towerim fetion baidu-hi 12306"
 
@@ -194,6 +196,8 @@ package() {
         eval package_deepin-webapps-"${pkgname}"
     done
 
+    # overwrite variables again, or upload to aur may be failed
+    pkgname='deepin-webapps'
     pkgdesc="Web apps from Linux Deepin"
     depends=('chromium' 'xdg-utils')
 }

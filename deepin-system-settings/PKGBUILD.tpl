@@ -3,6 +3,20 @@
 ### MERGE TO ONE PACKAGE FOR AUR
 pkgname='deepin-system-settings'
 pkgdesc='Utility classes for using DCM modules in Linux Deepin environment'
+depends=('python2' 'polkit' 'python2-xappy'
+         'deepin-ui' 'deepin-gsettings'
+         'python2-pexpect' 'gstreamer0.10'
+         'python2-psutil'
+         'bluez' 'obex-data-server'
+         'python2-deepin-lunar' 'ntp'
+         'xautomation'
+         'python2-deepin-xrandr' 'deepin-gsettings'
+         'python2-deepin-storm'
+         'libgnomekbd' 'python2-gconf' 'python2-xklavier' 'libgnomekbd'
+         'python2-keyring' 'python2-gudev' 'modemmanager' 'glib-networking' 'networkmanager' 'networkmanager-pptp' 'python2-pytz'
+         'python2-dbus' 'python2-deepin-pulseaudio'
+         'python2-gtop')
+
 # pkgname=('deepin-system-settings'
 #          'deepin-system-settings-module-all'
 #          'deepin-system-settings-module-a11y'
@@ -30,7 +44,7 @@ pkgrel=1
 arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('GPL2')
-depends=('python2' 'polkit' 'python2-xappy')
+# depends=('python2' 'polkit' 'python2-xappy')
 makedepends=('python2-setuptools')
 
 _fileurl={% fileurl %}
@@ -347,8 +361,8 @@ package() {
     package_deepin-system-settings-module-tray-power
     package_deepin-system-settings-module-mount-media
 
-    # overwrite variable at end, $pkgdesc is need again or upload will
-    # be failed
+    # overwrite variables again, or upload to aur may be failed
+    pkgname='deepin-system-settings'
     pkgdesc='Utility classes for using DCM modules in Linux Deepin environment'
     depends=('python2' 'polkit' 'python2-xappy'
              'deepin-ui' 'deepin-gsettings'

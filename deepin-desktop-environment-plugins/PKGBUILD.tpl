@@ -3,6 +3,7 @@
 ### MERGE TO ONE PACKAGE FOR AUR
 pkgname='deepin-desktop-environment-plugins'
 pkgdesc='Plugins for Linux Deepin desktop environment'
+
 # pkgname=('deepin-desktop-environment-plugins'
          # 'deepin-desktop-environment-plugins-clock'
          # 'deepin-desktop-environment-plugins-weather')
@@ -80,8 +81,8 @@ package() {
     package_deepin-desktop-environment-plugins-clock
     package_deepin-desktop-environment-plugins-weather
 
-    # overwrite variable at end, $pkgdesc is need again or upload will
-    # be failed
+    # overwrite variables again, or upload to aur may be failed
+    pkgname='deepin-desktop-environment-plugins'
     pkgdesc='Plugins for Linux Deepin desktop environment'
     depends=('deepin-artwork' 'deepin-desktop-environment')
 }
