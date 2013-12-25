@@ -67,7 +67,7 @@ update_local_git() {
 # update_pkgbuild_for_deepin "deepin-system-settings"
 # update_pkgbuild_for_deepin "deepin-system-tray"
 # update_pkgbuild_for_deepin "deepin-terminal"
-# update_pkgbuild_for_deepin "deepin-ui"
+update_pkgbuild_for_deepin "deepin-ui"
 # update_pkgbuild_for_deepin "deepin-wallpapers"
 
 # (
