@@ -1,7 +1,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-system-tray
-pkgver=git20131114092503~1dfbbf0f1a
+pkgver=git20131114092503
 pkgrel=1
 pkgdesc='Icon theme from Linux Deepin'
 arch=('i686' 'x86_64')

@@ -48,26 +48,26 @@ update_local_git() {
 }
 
 ###* Main loop
-# (
-#     local pkgverreg="\d{2}\.\d{2}\.\d{2}"
-#     update_pkgbuild_for_deepin "deepin-artwork"
-# )
+(
+    local pkgverreg="\d{2}\.\d{2}\.\d{2}"
+    update_pkgbuild_for_deepin "deepin-artwork"
+)
 
-# (
-#     local pkgverreg="[0-9]{2}[^_-]*"
-#     update_pkgbuild_for_deepin "deepin-cursor-theme"
-# )
+(
+    local pkgverreg="[0-9]{2}[^_-]*"
+    update_pkgbuild_for_deepin "deepin-cursor-theme"
+)
 
 update_pkgbuild_for_deepin "deepin-desktop-environment"
-# update_pkgbuild_for_deepin "deepin-desktop-environment-plugins"
-# update_pkgbuild_for_deepin "deepin-media-player"
-# update_pkgbuild_for_deepin "deepin-music-player"
-# update_pkgbuild_for_deepin "deepin-notifications"
-# update_pkgbuild_for_deepin "deepin-screenshot"
+update_pkgbuild_for_deepin "deepin-desktop-environment-plugins"
+update_pkgbuild_for_deepin "deepin-media-player"
+update_pkgbuild_for_deepin "deepin-music-player"
+update_pkgbuild_for_deepin "deepin-notifications"
+update_pkgbuild_for_deepin "deepin-screenshot"
 update_pkgbuild_for_deepin "deepin-system-settings"
-# update_pkgbuild_for_deepin "deepin-system-tray"
-# update_pkgbuild_for_deepin "deepin-terminal"
-# update_pkgbuild_for_deepin "deepin-ui"
+update_pkgbuild_for_deepin "deepin-system-tray"
+update_pkgbuild_for_deepin "deepin-terminal"
+update_pkgbuild_for_deepin "deepin-ui"
 update_pkgbuild_for_deepin "deepin-wallpapers"
 
 (
@@ -75,36 +75,38 @@ update_pkgbuild_for_deepin "deepin-wallpapers"
     update_pkgbuild_for_deepin "deepin-webapps"
 )
 
-# (
-    # local url=${url:-"${deepin_pkgsite}/deepin/pool/main/d/deepin-xrandr"}
-    # local filereg="deepin-xrandr_.*?\.tar.gz"
-    # update_pkgbuild_for_deepin "python2-deepin-xrandr"
-# )
+(
+    local url=${url:-"${deepin_pkgsite}/deepin/pool/main/d/deepin-xrandr"}
+    local filereg="deepin-xrandr_.*?\.tar.gz"
+    update_pkgbuild_for_deepin "python2-deepin-xrandr"
+)
 
-# (
-#     local url=${url:-"${deepin_pkgsite}/deepin/pool/main/p/python-deepin-lunar"}
-#     local filereg="python-deepin-lunar_.*?\.tar.gz"
-#     local pkgverreg="\d+\.\d+\.\d+"
-#     update_pkgbuild_for_deepin "python2-deepin-lunar"
-# )
+(
+    local url=${url:-"${deepin_pkgsite}/deepin/pool/main/p/python-deepin-lunar"}
+    local filereg="python-deepin-lunar_.*?\.tar.gz"
+    local pkgverreg="\d+\.\d+\.\d+"
+    update_pkgbuild_for_deepin "python2-deepin-lunar"
+)
 
-# (
-#     local url=${url:-"${deepin_pkgsite}/deepin/pool/main/d/dtk-widget"}
-#     local filereg="dtk-widget_.*?\.tar.gz"
-#     update_pkgbuild_for_deepin "libdtk-widget"
-# )
+(
+    local url=${url:-"${deepin_pkgsite}/deepin/pool/main/d/dtk-widget"}
+    local filereg="dtk-widget_.*?\.tar.gz"
+    update_pkgbuild_for_deepin "libdtk-widget"
+)
 
-# (
-#     local url=${url:-"${deepin_pkgsite}/deepin/pool/main/d/dtk-widget"}
-#     local filereg="dtk-widget_.*?\.tar.gz"
-#     update_pkgbuild_for_deepin "python2-libdtk-widget"
-# )
+(
+    local url=${url:-"${deepin_pkgsite}/deepin/pool/main/d/dtk-widget"}
+    local filereg="dtk-widget_.*?\.tar.gz"
+    update_pkgbuild_for_deepin "python2-libdtk-widget"
+)
 
-# (
-#     local url=${url:-"${deepin_pkgsite}/deepin/pool/main/p/pypulseaudio"}
-#     local filereg="pypulseaudio_.*?\.tar.gz"
-#     update_pkgbuild_for_deepin "python2-deepin-pulseaudio"
-# )
+(
+    local url=${url:-"${deepin_pkgsite}/deepin/pool/main/p/pypulseaudio"}
+    local filereg="pypulseaudio_.*?\.tar.gz"
+    update_pkgbuild_for_deepin "python2-deepin-pulseaudio"
+)
+
+
 
 # TODO deepin-pygtk-fix
 # TODO deepin-vte-plus

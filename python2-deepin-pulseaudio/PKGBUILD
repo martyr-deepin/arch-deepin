@@ -1,7 +1,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=python2-deepin-pulseaudio
-pkgver=git20130823110514~668661bc44
+pkgver=git20130823110514
 pkgrel=1
 pkgdesc='Pulseaudio python2 binding for deepin-system-setting'
 arch=('any')

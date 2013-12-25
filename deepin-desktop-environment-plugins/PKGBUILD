@@ -8,7 +8,7 @@ pkgdesc='Plugins for Linux Deepin desktop environment'
          # 'deepin-desktop-environment-plugins-clock'
          # 'deepin-desktop-environment-plugins-weather')
 # pkgbase='deepin-desktop-environment-plugins'
-pkgver=git20131224153233~8b68d77ec4
+pkgver=git20131224153233
 pkgrel=1
 
 arch=('any')

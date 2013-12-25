@@ -39,7 +39,7 @@ depends=('python2' 'polkit' 'python2-xappy'
 #          'deepin-system-settings-module-tray-power'
 #          'deepin-system-settings-module-mount-media')
 # pkgbase=deepin-system-settings
-pkgver=git20131225083800~2fde0c428a
+pkgver=git20131225083800
 pkgrel=1
 arch=('any')
 url="http://www.linuxdeepin.com/"

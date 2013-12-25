@@ -1,7 +1,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname='python2-libdtk-widget'
-pkgver=git20130815124854~8759cb0fb5
+pkgver=git20130815124854
 pkgrel=1
 pkgdesc='Python2 binds for Deepin widget of Chinese Lunar library'
 arch=('any')

@@ -13,7 +13,7 @@ depends=('compiz-dev' 'gtk3' 'webkitgtk' 'deepin-webkit' 'gdk-pixbuf2' 'python2'
 #          'deepin-desktop-environment-desktop'
 #          'deepin-desktop-environment-lock')
 # pkgbase="deepin-desktop-environment"
-pkgver=git20131223151239~d4f29ce52a~2013
+pkgver=git20131223151239
 pkgrel=1
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"

@@ -2,7 +2,7 @@
 # Contributor: dongfengweixiao <dongfengweixiao[AT]gmail.com>
 
 pkgname=deepin-media-player
-pkgver=git20131031171624~1addba1ab9
+pkgver=git20131031171624
 pkgrel=1
 pkgdesc='New multimedia player with brilliant and tweakful UI. PyGtk and Deepin-ui Mplayer2 front-end, with features likes smplayer, but has a brilliant and tweakful UI.'
 arch=('any')

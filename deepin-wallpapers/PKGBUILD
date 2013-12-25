@@ -4,7 +4,7 @@
 # pkgname=('deepin-default-wallpapers'
          # 'deepin-extra-wallpapers')
 # pkgbase='deepin-wallpapers'
-pkgver=git20131101095720~30009677e8
+pkgver=git20131101095720
 _realver=+${pkgver}
 pkgrel=1
 arch=('any')
