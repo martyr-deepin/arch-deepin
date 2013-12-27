@@ -48,9 +48,6 @@ update_local_git() {
 }
 
 ###* Main loop
-update_pkgbuild_for_deepin "deepin-terminal"
-exit
-
 (
     local pkgverreg="\d{2}\.\d{2}\.\d{2}"
     update_pkgbuild_for_deepin "deepin-artwork"

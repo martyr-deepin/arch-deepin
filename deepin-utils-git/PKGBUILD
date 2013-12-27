@@ -7,7 +7,7 @@ pkgdesc='Utils of DeepinUI Toolkit modules - git version'
 arch=("i686" "x86_64")
 url="https://github.com/linuxdeepin/deepin-utils/"
 license=("GPL3")
-depends=('python2' 'pygtk' 'python2-cairo' 'python2-imaging' 'libwebkit' 'python-xlib' 'pywebkitgtk')
+depends=('python2' 'pygtk' 'python2-cairo' 'python2-imaging' 'libwebkit' 'python2-xlib' 'pywebkitgtk')
 provides=('deepin-utils')
 conflicts=('deepin-utils')
 

@@ -9,7 +9,7 @@ pkgdesc='UI toolkit for Linux Deepin'
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"
 license=('GPL3')
-depends=('deepin-utils' 'deepin-gsettings' 'deepin-pygtk-fix' 'python2-distribute' 'python2' 'glib2' 'python2-cairo' 'python2-imaging' 'libwebkit' 'python-xlib' 'pywebkitgtk' 'libsoup')
+depends=('deepin-utils' 'deepin-gsettings' 'deepin-pygtk-fix' 'python2-distribute' 'python2' 'glib2' 'python2-cairo' 'python2-imaging' 'libwebkit' 'python2-xlib' 'pywebkitgtk' 'libsoup')
 
 _fileurl={% fileurl %}
 source=("${_fileurl}")
