@@ -9,7 +9,7 @@
 [SUCCESS]  ./deepin-terminal/PKGBUILD.tpl
 [SUCCESS]  ./deepin-ui/PKGBUILD.tpl
 [SUCCESS]  ./deepin-wallpapers/PKGBUILD.tpl
-[SUCCESS]  ./deepin-webapps/PKGBUILD.tpl
+[FAILED]   ./deepin-webapps/PKGBUILD.tpl
 [SUCCESS]  ./python2-deepin-xrandr/PKGBUILD.tpl
 [SUCCESS]  ./python2-deepin-lunar/PKGBUILD.tpl
 [SUCCESS]  ./libdtk-widget/PKGBUILD.tpl

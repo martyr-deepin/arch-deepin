@@ -8,7 +8,7 @@ pkgdesc='Plugins for Linux Deepin desktop environment'
          # 'deepin-desktop-environment-plugins-clock'
          # 'deepin-desktop-environment-plugins-weather')
 # pkgbase='deepin-desktop-environment-plugins'
-pkgver=git20131224153233
+pkgver=git20140109110010
 pkgrel=1
 
 arch=('any')
@@ -16,9 +16,9 @@ url="http://www.linuxdeepin.com/"
 license=('GPL2')
 makedepends=('coffee-script')
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-desktop-environment-plugins/deepin-desktop-environment-plugins_0.0.1+git20131224153233~8b68d77ec4.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-desktop-environment-plugins/deepin-desktop-environment-plugins_0.0.1+git20140109110010~ff6d7e991f.tar.gz
 source=("${_fileurl}")
-md5sums=('858b1599a8f67643e19168c6b4c57312')
+md5sums=('f31729d4a6aa57f38db305c3536c2f7a')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"

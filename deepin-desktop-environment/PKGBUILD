@@ -13,7 +13,7 @@ depends=('compiz-dev' 'gtk3' 'webkitgtk' 'deepin-webkit' 'gdk-pixbuf2' 'python2'
 #          'deepin-desktop-environment-desktop'
 #          'deepin-desktop-environment-lock')
 # pkgbase="deepin-desktop-environment"
-pkgver=git20131223151239
+pkgver=git20140109154628
 pkgrel=1
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"
@@ -22,9 +22,9 @@ license=('GPL2')
  makedepends=('cmake' 'go' 'coffee-script')
 install=deepin-desktop-environment.install
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-desktop-environment/deepin-desktop-environment_1.0+git20131223151239~d4f29ce52a~2013.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-desktop-environment/deepin-desktop-environment_1.0+git20140109154628~4f5339afe8~2013.tar.gz
 source=("${_fileurl}")
-md5sums=('1985d50c9f9d2cc97db12c75a1465873')
+md5sums=('65252b7d972f4872a66ed44ea62d5f7c')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"
