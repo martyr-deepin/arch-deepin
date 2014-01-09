@@ -36,8 +36,8 @@ url="http://www.linuxdeepin.com/"
 license=('GPL2')
 # depends=('chromium' 'xdg-utils')
 
-source=("$http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-webapps/deepin-webapps_0.7-1~raring1.debian.tar.gz")
-md5sums=('91387203e9e61ba8f2f8b5b83d02a65a')
+source=("$http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-webapps/deepin-webapps_0.7.orig.tar.xz")
+md5sums=('e4019e5f8dc50342fb85e9877d939ea4')
 
 _install_copyright_and_changelog() {
     mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"

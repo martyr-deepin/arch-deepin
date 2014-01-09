@@ -71,6 +71,7 @@ update_pkgbuild_for_deepin "deepin-ui"
 update_pkgbuild_for_deepin "deepin-wallpapers"
 
 (
+    local filereg="deepin-webapps_.*?\.tar.xz"
     local pkgverreg="[0-9]+\.[0-9]+[^-_.]*"
     update_pkgbuild_for_deepin "deepin-webapps"
 )
