@@ -3,7 +3,7 @@
 ### MERGE TO ONE PACKAGE FOR AUR
 pkgname='deepin-desktop-environment'
 pkgdesc="Linux Deepin Desktop environment"
-depends=('compiz-dev' 'gtk3' 'webkitgtk' 'deepin-webkit' 'gdk-pixbuf2' 'python2' 'dbus-glib' 'sqlite' 'glib2' 'lightdm' 'gstreamer0.10' 'opencv' 'gvfs' 'xdg-user-dirs')
+depends=('deepin-session' 'compiz-dev' 'gtk3' 'webkitgtk' 'deepin-webkit' 'gdk-pixbuf2' 'python2' 'dbus-glib' 'sqlite' 'glib2' 'lightdm' 'gstreamer0.10' 'opencv' 'gvfs' 'xdg-user-dirs')
 
 # pkgname=('deepin-desktop-environment'
 #          'deepin-desktop-environment-common'
@@ -179,5 +179,5 @@ package() {
     # overwrite variables again, or upload to aur may be failed
     pkgname='deepin-desktop-environment'
     pkgdesc="Linux Deepin Desktop environment"
-    depends=('compiz-dev' 'gtk3' 'webkitgtk' 'deepin-webkit' 'gdk-pixbuf2' 'python2' 'dbus-glib' 'sqlite' 'glib2' 'lightdm' 'gstreamer0.10' 'opencv' 'gvfs' 'xdg-user-dirs')
+    depends=('deepin-session' 'compiz-dev' 'gtk3' 'webkitgtk' 'deepin-webkit' 'gdk-pixbuf2' 'python2' 'dbus-glib' 'sqlite' 'glib2' 'lightdm' 'gstreamer0.10' 'opencv' 'gvfs' 'xdg-user-dirs')
 }

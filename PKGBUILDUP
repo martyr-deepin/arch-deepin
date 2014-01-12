@@ -51,6 +51,7 @@ update_local_git() {
 # (
 #     local url="${deepin_pkgsite}/deepin/pool/main/c/compiz"
 #     local filereg="compiz_.*?\.tar.gz"
+#     local makepkg="false"
 #     local upload="false"
 #     update_pkgbuild_for_deepin "deepin-compiz"
 # )

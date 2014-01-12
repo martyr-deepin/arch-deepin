@@ -1,13 +1,16 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+# Contributor: Ryon Sherman <ryon.sherman@gmail.com>
+# Contributor: Iven Hsu <ivenvd AT gmail>
+# Contributor: Nathan Hulse <nat.hulse@gmail.com>
 
 pkgname=deepin-compiz
-pkgver=0.9.99_git20131121164514
+pkgver=0.9.8_git20131121164514
 pkgrel=1
 pkgdesc='A forked compiz for Linux Deepin desktop environment'
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'MIT')
 url="http://www.linuxdeepin.com/"
-depends=('boost' 'xorg-server' 'libxcomposite' 'startup-notification' 'librsvg' 'dbus' 'mesa' 'libxslt' 'fuse' 'glibmm' 'libxrender' 'gmock' 'libwnck' 'pygtk' 'desktop-file-utils' 'pyrex' 'protobuf' 'dconf' 'gtk2')
+depends=('boost-1-53' 'xorg-server' 'libxcomposite' 'startup-notification' 'librsvg' 'dbus' 'mesa' 'libxslt' 'fuse' 'glibmm' 'libxrender' 'gmock' 'libwnck' 'pygtk' 'desktop-file-utils' 'pyrex' 'protobuf' 'dconf' 'gtk2')
 makedepends=('intltool' 'cmake')
 provides=('compiz=0.9')
 conflicts=('compiz-bzr' 'compiz-core' 'compiz-fusion-plugins-main' 'compiz-fusion-plugins-extra' 'compiz-decorator-gtk' 'compiz-decorator-kde' 'libcompizconfig' 'compizconfig-python' 'compizconfig-backend-gconf' 'compiz-bcop' 'ccsm')
