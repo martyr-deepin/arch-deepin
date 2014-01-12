@@ -50,6 +50,10 @@ update_local_git() {
 ###* Package in ready
 (
     local upload="false"
+    update_pkgbuild_for_deepin "deepin-gtk-theme"
+)
+(
+    local upload="false"
     update_pkgbuild_for_deepin "deepin-icon-theme"
 )
 
