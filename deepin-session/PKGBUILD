@@ -8,7 +8,7 @@ pkgdesc='Deepin desktop session'
 arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('GPL2')
-depends=('gnome-session' 'deepin-gnome-settings-daemon')
+depends=('gnome-session-3-8' 'deepin-gnome-settings-daemon')
 
 _fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-session/deepin-session_2.0-2.tar.gz
 source=("${_fileurl}")
