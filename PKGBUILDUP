@@ -49,6 +49,11 @@ update_local_git() {
 
 ###* Package in ready
 (
+    local makepkg="false"
+    local upload="false"
+    update_pkgbuild_for_deepin "deepin-webkit"
+)
+(
     local upload="false"
     update_pkgbuild_for_deepin "deepin-gtk-theme"
 )
