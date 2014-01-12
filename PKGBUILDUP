@@ -65,6 +65,11 @@ update_local_git() {
     local upload="false"
     update_pkgbuild_for_deepin "deepin-icon-theme"
 )
+(
+    local pkgverreg="\d+\.\d+"
+    local upload="false"
+    update_pkgbuild_for_deepin "deepin-session"
+)
 
 ###* Main loop
 (
