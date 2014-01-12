@@ -47,6 +47,10 @@ update_local_git() {
     git commit -m "Update by pkgbuild_update"
 }
 
+###* Test
+
+# exit
+
 ###* Package in ready
 (
     local makepkg="false"
@@ -122,7 +126,11 @@ update_pkgbuild_for_deepin "deepin-wallpapers"
     update_pkgbuild_for_deepin "python2-deepin-pulseaudio"
 )
 
-
+(
+    local url="${deepin_pkgsite}/deepin/pool/main/g/gnome-settings-daemon"
+    local filereg="gnome-settings-daemon_.*?\.tar.gz"
+    update_pkgbuild_for_deepin "deepin-gnome-settings-daemon"
+)
 
 # TODO deepin-pygtk-fix
 # TODO deepin-vte-plus

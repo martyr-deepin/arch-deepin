@@ -3,19 +3,7 @@
 ### MERGE TO ONE PACKAGE FOR AUR
 pkgname='deepin-system-settings'
 pkgdesc='Utility classes for using DCM modules in Linux Deepin environment'
-depends=('python2' 'polkit' 'python2-xappy'
-         'deepin-ui' 'deepin-gsettings'
-         'python2-pexpect' 'gstreamer0.10'
-         'python2-psutil'
-         'bluez' 'obex-data-server'
-         'python2-deepin-lunar' 'ntp'
-         'xautomation'
-         'python2-deepin-xrandr' 'deepin-gsettings'
-         'python2-deepin-storm'
-         'libgnomekbd' 'python2-gconf' 'python2-xklavier' 'libgnomekbd'
-         'python2-keyring' 'python2-gudev' 'modemmanager' 'glib-networking' 'networkmanager' 'networkmanager-pptp' 'python2-pytz'
-         'python2-dbus' 'python2-deepin-pulseaudio'
-         'python2-gtop')
+depends=('python2' 'polkit' 'python2-xappy' 'deepin-ui' 'deepin-gsettings' 'deepin-gnome-settings-daemon' 'python2-pexpect' 'gstreamer0.10' 'python2-psutil' 'bluez' 'obex-data-server' 'python2-deepin-lunar' 'ntp' 'xautomation' 'python2-deepin-xrandr' 'deepin-gsettings' 'python2-deepin-storm' 'libgnomekbd' 'python2-gconf' 'python2-xklavier' 'libgnomekbd' 'python2-keyring' 'python2-gudev' 'modemmanager' 'glib-networking' 'networkmanager' 'networkmanager-pptp' 'python2-pytz' 'python2-dbus' 'python2-deepin-pulseaudio' 'python2-gtop')
 
 # pkgname=('deepin-system-settings'
 #          'deepin-system-settings-module-all'
@@ -364,17 +352,5 @@ package() {
     # overwrite variables again, or upload to aur may be failed
     pkgname='deepin-system-settings'
     pkgdesc='Utility classes for using DCM modules in Linux Deepin environment'
-    depends=('python2' 'polkit' 'python2-xappy'
-             'deepin-ui' 'deepin-gsettings'
-             'python2-pexpect' 'gstreamer0.10'
-             'python2-psutil'
-             'bluez' 'obex-data-server'
-             'python2-deepin-lunar' 'ntp'
-             'xautomation'
-             'python2-deepin-xrandr' 'deepin-gsettings'
-             'python2-deepin-storm'
-             'libgnomekbd' 'python2-gconf' 'python2-xklavier' 'libgnomekbd'
-             'python2-keyring' 'python2-gudev' 'modemmanager' 'glib-networking' 'networkmanager' 'networkmanager-pptp' 'python2-pytz'
-             'python2-dbus' 'python2-deepin-pulseaudio'
-             'python2-gtop')
+    depends=('python2' 'polkit' 'python2-xappy' 'deepin-ui' 'deepin-gsettings' 'deepin-gnome-settings-daemon' 'python2-pexpect' 'gstreamer0.10' 'python2-psutil' 'bluez' 'obex-data-server' 'python2-deepin-lunar' 'ntp' 'xautomation' 'python2-deepin-xrandr' 'deepin-gsettings' 'python2-deepin-storm' 'libgnomekbd' 'python2-gconf' 'python2-xklavier' 'libgnomekbd' 'python2-keyring' 'python2-gudev' 'modemmanager' 'glib-networking' 'networkmanager' 'networkmanager-pptp' 'python2-pytz' 'python2-dbus' 'python2-deepin-pulseaudio' 'python2-gtop')
 }
