@@ -35,9 +35,9 @@ update_pkgbuild_for_deepin() {
     # local upload=${upload:-"true"}
 
     # local makepkg="false"
-    local makepkg="true"
+    local makepkg=${makepkg:-"true"}
     # local upload="false"
-    local upload="true"
+    local upload=${upload:-"true"}
 
     update_pkgbuild_for_source_site "${tplfile}" "${pkgverreg}" "${pkgrelreg}" "${makepkg}" "${upload}"
 }
@@ -46,6 +46,12 @@ update_local_git() {
     git add -u .
     git commit -m "Update by pkgbuild_update"
 }
+
+###* Package in ready
+(
+    local upload="false"
+    update_pkgbuild_for_deepin "deepin-icon-theme"
+)
 
 ###* Main loop
 (
