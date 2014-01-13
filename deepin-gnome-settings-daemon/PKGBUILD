@@ -22,6 +22,12 @@ _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"
 _innerdir="${_filename/_/-}"
 
+_install_copyright_and_changelog() {
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    cp -f debian/copyright "${pkgdir}/usr/share/doc/${pkgname}/"
+    gzip -c debian/changelog > "${pkgdir}/usr/share/doc/${pkgname}/changelog.gz"
+}
+
 build() {
     cd "${srcdir}/${_innerdir}"
 
@@ -38,4 +44,16 @@ build() {
 package() {
     cd "${srcdir}/${_innerdir}"
     make DESTDIR="${pkgdir}" install
+
+    mkdir -p "${pkgdir}"/usr/lib/gnome-settings-daemon
+    gcc -o gnome-settings-daemon/gnome-update-wallpaper-cache debian/gnome-update-wallpaper-cache.c `pkg-config --cflags --libs glib-2.0 gdk-3.0 gdk-x11-3.0 gio-2.0 gnome-desktop-3.0`
+	install -m 0755 gnome-settings-daemon/gnome-update-wallpaper-cache "${pkgdir}"/usr/lib/gnome-settings-daemon/
+
+    mkdir -p "${pkgdir}"/usr/share/apport/package-hooks
+    cp -vf debian/source_gnome-settings-daemon.py "${pkgdir}"/usr/share/apport/package-hooks/
+
+    mkdir -p "${pkgdir}"/usr/bin
+    ln -sf /usr/lib/gnome-settings-daemon/gnome-settings-daemon "${pkgdir}"/usr/bin/gnome-settings-daemon
+
+    _install_copyright_and_changelog
 }
