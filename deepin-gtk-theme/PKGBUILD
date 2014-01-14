@@ -38,13 +38,6 @@ package() {
     _easycp "${pkgdir}"/usr/share/themes/Deepin-Legacy Deepin/*
     _easycp "${pkgdir}"/usr/share/themes/Deepin Deepin-Dark/*
 
-    # mkdir -p "$pkgdir/usr/share/themes"
-    # cp -rf Deepin "$pkgdir/usr/share/themes/Deepin-Legacy"
-    # cp -rf Deepin-Dark "$pkgdir/usr/share/themes/Deepin"
-    # cp -rf Deepin-Fasion "$pkgdir/usr/share/themes/"
-    # cp -rf Deepin-Gray "$pkgdir/usr/share/themes/"
-    # cp -rf "$srcdir/$pkgname-13.06+$pkgver/debian/backgrounds" "$pkgdir/usr/share/backgrounds"
-
     # change gtk-theme name
     sed -i 's/Deepin-Dark/Deepin/g' "$pkgdir/usr/share/themes/Deepin/index.theme"
     sed -i 's/Deepin/Deepin-Legacy/g' "$pkgdir/usr/share/themes/Deepin-Legacy/index.theme"

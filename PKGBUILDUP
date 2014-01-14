@@ -55,6 +55,12 @@ update_local_git() {
 #     local upload="false"
 #     update_pkgbuild_for_deepin "deepin-compiz"
 # )
+# (
+#     local url="${deepin_pkgsite}/deepin/pool/main/g/gnome-settings-daemon"
+#     local filereg="gnome-settings-daemon_.*?\.tar.gz"
+#     # local upload="false"
+#     update_pkgbuild_for_deepin "deepin-gnome-settings-daemon"
+# )
 # exit
 
 ###* Package in ready
