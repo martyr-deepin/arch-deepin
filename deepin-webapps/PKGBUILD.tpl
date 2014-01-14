@@ -49,7 +49,7 @@ _install_copyright_and_changelog() {
 _easycp () {
     local dest=$1; shift
     mkdir -p "${dest}"
-    cp -vR -t "${dest}" "$@"
+    cp -R -t "${dest}" "$@"
 }
 
 _package_webapp() {

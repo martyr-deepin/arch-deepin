@@ -1,4 +1,4 @@
-[FAILED]   ./deepin-desktop-environment/PKGBUILD.tpl
+[SUCCESS]  ./deepin-desktop-environment/PKGBUILD.tpl
 [SUCCESS]  ./deepin-desktop-environment-plugins/PKGBUILD.tpl
 [SUCCESS]  ./deepin-media-player/PKGBUILD.tpl
 [SUCCESS]  ./deepin-music-player/PKGBUILD.tpl

@@ -50,7 +50,7 @@ package() {
 	install -m 0755 gnome-settings-daemon/gnome-update-wallpaper-cache "${pkgdir}"/usr/lib/gnome-settings-daemon/
 
     mkdir -p "${pkgdir}"/usr/share/apport/package-hooks
-    cp -vf debian/source_gnome-settings-daemon.py "${pkgdir}"/usr/share/apport/package-hooks/
+    cp -f debian/source_gnome-settings-daemon.py "${pkgdir}"/usr/share/apport/package-hooks/
 
     mkdir -p "${pkgdir}"/usr/bin
     ln -sf /usr/lib/gnome-settings-daemon/gnome-settings-daemon "${pkgdir}"/usr/bin/gnome-settings-daemon

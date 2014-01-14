@@ -61,14 +61,14 @@ _install_link() {
     local linkfile=$1
     local target=$2
     mkdir -p "$(dirname ${linkfile})"
-    ln -vs "${target}" "${linkfile}"
+    ln -s "${target}" "${linkfile}"
 }
 
 # Usage: _easycp dest files...
 _easycp () {
     local dest=$1; shift
     mkdir -p "${dest}"
-    cp -vR -t "${dest}" "$@"
+    cp -R -t "${dest}" "$@"
 }
 
 prepare() {

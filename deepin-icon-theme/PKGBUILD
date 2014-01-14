@@ -28,8 +28,8 @@ package() {
     cd "${srcdir}/${_innerdir}"
 
     mkdir -p "$pkgdir/usr/share/icons"
-    cp -rvf Deepin "$pkgdir/usr/share/icons/"
-    cp -rvf Deepin-blue "$pkgdir/usr/share/icons/"
+    cp -rf Deepin "$pkgdir/usr/share/icons/"
+    cp -rf Deepin-blue "$pkgdir/usr/share/icons/"
     # cp -rf Deepin-sapphire "$pkgdir/usr/share/icons/Deepin"
 
     _install_copyright_and_changelog
