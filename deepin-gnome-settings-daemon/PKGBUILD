@@ -7,7 +7,7 @@ pkgdesc='A forked gnome-settings-daemon for Linux Deepin'
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"
 license=('GPL2')
-depends=('dconf' 'gnome-desktop-3-8' 'gsettings-desktop-schemas' 'hicolor-icon-theme' 'libcanberra-pulse' 'libnotify' 'libsystemd' 'libwacom' 'pulseaudio' 'pulseaudio-alsa' 'upower' 'ibus' 'librsvg' 'libgweather' 'geocode-glib' 'geoclue2' 'nss' 'libwnck3')
+depends=('dconf' 'gnome-desktop-3-8' 'gsettings-desktop-schemas' 'hicolor-icon-theme' 'libcanberra-pulse' 'libnotify' 'libsystemd' 'libwacom' 'pulseaudio' 'pulseaudio-alsa' 'upower' 'libibus' 'librsvg' 'libgweather' 'geocode-glib' 'geoclue2' 'nss' 'libwnck3')
 makedepends=('intltool' 'xf86-input-wacom' 'libxslt' 'docbook-xsl')
 provides=('gnome-settings-daemon=3.8')
 conflicts=('gnome-settings-daemon')
