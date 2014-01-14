@@ -28,7 +28,7 @@ accident, the packages will update weekly.
   feature in compiz, so we use `ccsm` instead, before launch DDE, run
   ccsm in other DE to enable the following plugins:
   
-    window-decoration
+    window-decoration, and set the command to "gtk-window-decorator"
     application-switcher
     resize-window
         
@@ -42,7 +42,7 @@ accident, the packages will update weekly.
      exec compiz ccp
         
   2 run xinit in tty to enter DDE
-
+  
 # Problem packages
   - deepin-compiz, need boost 1.53
   - deepin-gnome-settings-daemon, need gnome 3.8
@@ -54,7 +54,7 @@ accident, the packages will update weekly.
   - deepin-dock, if press the minimum window, it will not restore it
   - deepin-desktop-environment-plugins, the plugins will be placed in
     the wrong position
-  - deepin-system-settings, some module not works
+  - deepin-system-settings, some modules are out of work
     - display
     - sound
     - keyboard
