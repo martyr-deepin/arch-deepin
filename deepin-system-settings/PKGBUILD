@@ -27,7 +27,7 @@ depends=('python2' 'polkit' 'python2-xappy' 'deepin-ui' 'deepin-gsettings' 'gnom
 #          'deepin-system-settings-module-tray-power'
 #          'deepin-system-settings-module-mount-media')
 # pkgbase=deepin-system-settings
-pkgver=git20140102144838
+pkgver=git20140114150309
 pkgrel=1
 arch=('any')
 url="http://www.linuxdeepin.com/"
@@ -35,9 +35,9 @@ license=('GPL2')
 # depends=('python2' 'polkit' 'python2-xappy')
 makedepends=('python2-setuptools')
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-system-settings/deepin-system-settings_1+git20140102144838~f91afa60bc.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-system-settings/deepin-system-settings_1+git20140114150309~93710c781f.tar.gz
 source=("${_fileurl}")
-md5sums=('25f810e16725aa2df8f2d648fcf57da7')
+md5sums=('a37f412942224a048d85d43faf09fe50')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"
