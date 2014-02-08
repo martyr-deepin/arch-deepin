@@ -35,12 +35,10 @@ package_deepin-default-wallpapers() {
     mkdir -p "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/theme
     mkdir -p "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/backgrounds
 
-    cp -R debian/default-wallpapers/*.jpg "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/backgrounds/
-    cp -R debian/default-wallpapers/default.ini "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/theme/
-
-    cp -R modules/individuation/backgrounds/NE* "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/backgrounds/
+    cp -R modules/individuation/backgrounds/default.jpg "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/backgrounds/
+    cp -R modules/individuation/backgrounds/deepin/ "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/backgrounds/
     cp -R modules/individuation/theme/bird.ini "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/theme/
-    cp -R modules/individuation/backgrounds/XY* "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/backgrounds/
+    cp -R modules/individuation/theme/default.ini "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/theme/
     cp -R modules/individuation/theme/nebula.ini "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/theme/
 
     _install_copyright_and_changelog
@@ -55,14 +53,11 @@ package_deepin-extra-wallpapers() {
 
     mkdir -p "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation
 
-    cp -R modules/individuation/backgrounds "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/
     cp -R modules/individuation/theme "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/
 
-    rm "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/backgrounds/NE* -f
-    rm "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/backgrounds/06.png -f
     rm "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/theme/bird.ini -f
-    rm "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/backgrounds/XY* -f
     rm "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/theme/nebula.ini -f
+    rm "${pkgdir}"/usr/share/deepin-system-settings/modules/individuation/theme/default.ini -f
 
     _install_copyright_and_changelog
 }
