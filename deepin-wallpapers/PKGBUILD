@@ -4,16 +4,16 @@
 # pkgname=('deepin-default-wallpapers'
          # 'deepin-extra-wallpapers')
 # pkgbase='deepin-wallpapers'
-pkgver=git20131101095720
+pkgver=git20140127172901
 _realver=+${pkgver}
 pkgrel=1
 arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('Unknown')
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-wallpapers/deepin-wallpapers_13.06+git20131101095720~30009677e8.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-wallpapers/deepin-wallpapers_13.06+git20140127172901~88badc0564.tar.gz
 source=("${_fileurl}")
-md5sums=('c50b10996cdacea2b80cd0b8c4cd59d5')
+md5sums=('fb4370968cfa60e61b1bab94e6235926')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"
