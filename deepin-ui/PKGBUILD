@@ -3,7 +3,7 @@
 # Contributor: dongfengweixiao <dongfengweixiao[AT]gmail.com>
 
 pkgname=deepin-ui
-pkgver=git20140103100921
+pkgver=git20140211094712
 pkgrel=1
 pkgdesc='UI toolkit for Linux Deepin'
 arch=('i686' 'x86_64')
@@ -11,9 +11,9 @@ url="http://www.linuxdeepin.com/"
 license=('GPL3')
 depends=('deepin-utils' 'deepin-gsettings' 'deepin-pygtk-fix' 'python2-distribute' 'python2' 'glib2' 'python2-cairo' 'python2-imaging' 'libwebkit' 'python2-xlib' 'pywebkitgtk' 'libsoup')
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-ui/deepin-ui_1+git20140103100921~37ee93e00d.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-ui/deepin-ui_1+git20140211094712~d7d4d9182d.tar.gz
 source=("${_fileurl}")
-md5sums=('dc498389d41ab65a8d27a7e4ecd68c2e')
+md5sums=('649f6dde2cbdc7265f2059fefed984a1')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"
