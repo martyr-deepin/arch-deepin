@@ -49,9 +49,9 @@ accident, the packages will update weekly.
 
 # Issues
   For the problem pacakges, the DDE is not perfect now, and the following
-  components will to bring you some trouble:
+  components will bring you some trouble:
 
-  - deepin-dock, if press the minimum window, it will not restore it
+  - deepin-dock, if press the minimum window, it will not be restored
   - deepin-desktop-environment-plugins, the plugins will be placed in
     the wrong position
   - deepin-system-settings, some modules are out of work
