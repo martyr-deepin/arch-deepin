@@ -3,7 +3,7 @@
 # Contributor: dongfengweixiao <dongfengweixiao[AT]gmail.com>
 
 pkgname=deepin-music-player
-pkgver=git20140102102216
+pkgver=git20140213142528
 pkgrel=1
 pkgdesc='Awesome music player with brilliant and tweakful UI Deepin-UI based, gstreamer front-end, with features likes search music by pinyin,quanpin, colorful lyrics supports, and more powerfull functions you will found.'
 arch=('any')
@@ -11,9 +11,9 @@ url="http://www.linuxdeepin.com/"
 license=('GPL3')
 depends=('gstreamer0.10-python' 'gstreamer0.10-bad-plugins' 'gstreamer0.10-good-plugins' 'gstreamer0.10-ugly-plugins' 'mutagen' 'python2-chardet' 'python2-scipy' 'python2-pyquery' 'python2-cssselect' 'deepin-ui' 'python2-dbus' 'sonata' 'cddb-py' 'python2-pycurl' 'python2-xlib' 'python2-keybinder2')
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-music-player/deepin-music-player_1+git20140102102216~fe568e3c93.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-music-player/deepin-music-player_1+git20140213142528~bd20e2b8e8.tar.gz
 source=("${_fileurl}")
-md5sums=('310e42d1ea928d68d34e156c1da8ca00')
+md5sums=('6a7c4ba628f0707947a01a2f5c7da641')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"
