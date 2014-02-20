@@ -61,27 +61,25 @@ update_local_git() {
 #     # local upload="false"
 #     update_pkgbuild_for_deepin "deepin-gnome-settings-daemon"
 # )
+# (
+#     local url="${deepin_pkgsite}/deepin/pool/main/p/pystorm/"
+#     local filereg="pystorm_.*?\.tar.gz"
+#     update_pkgbuild_for_deepin "python2-deepin-storm"
+# )
 # exit
 
 ###* Package in ready
-(
-    local makepkg="false"
-    local upload="false"
-    update_pkgbuild_for_deepin "deepin-webkit"
-)
+
 (
     local upload="false"
     update_pkgbuild_for_deepin "deepin-gtk-theme"
 )
-(
-    local upload="false"
-    update_pkgbuild_for_deepin "deepin-icon-theme"
-)
-(
-    local pkgverreg="\d+\.\d+"
-    local upload="false"
-    update_pkgbuild_for_deepin "deepin-session"
-)
+
+# (
+#     local url="${deepin_pkgsite}/deepin/pool/main/g/gnome-settings-daemon"
+#     local filereg="gnome-settings-daemon_.*?\.tar.gz"
+#     update_pkgbuild_for_deepin "deepin-gnome-settings-daemon"
+# )
 
 ###* Main loop
 (
@@ -96,16 +94,25 @@ update_local_git() {
 
 update_pkgbuild_for_deepin "deepin-desktop-environment"
 update_pkgbuild_for_deepin "deepin-desktop-environment-plugins"
+update_pkgbuild_for_deepin "deepin-game-center"
+update_pkgbuild_for_deepin "deepin-icon-theme"
 update_pkgbuild_for_deepin "deepin-media-player"
 update_pkgbuild_for_deepin "deepin-music-player"
 update_pkgbuild_for_deepin "deepin-notifications"
 update_pkgbuild_for_deepin "deepin-screenshot"
+(
+    local pkgverreg="\d+\.\d+"
+    update_pkgbuild_for_deepin "deepin-session"
+)
 update_pkgbuild_for_deepin "deepin-system-settings"
 update_pkgbuild_for_deepin "deepin-system-tray"
 update_pkgbuild_for_deepin "deepin-terminal"
 update_pkgbuild_for_deepin "deepin-ui"
 update_pkgbuild_for_deepin "deepin-wallpapers"
-
+(
+    local makepkg="false"
+    update_pkgbuild_for_deepin "deepin-webkit"
+)
 (
     local filereg="deepin-webapps_.*?\.tar.xz"
     local pkgverreg="[0-9]+\.[0-9]+[^-_.]*"
@@ -141,12 +148,6 @@ update_pkgbuild_for_deepin "deepin-wallpapers"
     local url="${deepin_pkgsite}/deepin/pool/main/p/pypulseaudio"
     local filereg="pypulseaudio_.*?\.tar.gz"
     update_pkgbuild_for_deepin "python2-deepin-pulseaudio"
-)
-
-(
-    local url="${deepin_pkgsite}/deepin/pool/main/g/gnome-settings-daemon"
-    local filereg="gnome-settings-daemon_.*?\.tar.gz"
-    update_pkgbuild_for_deepin "deepin-gnome-settings-daemon"
 )
 
 # TODO deepin-pygtk-fix
