@@ -61,11 +61,8 @@ update_local_git() {
 #     # local upload="false"
 #     update_pkgbuild_for_deepin "deepin-gnome-settings-daemon"
 # )
-# (
-#     local url="${deepin_pkgsite}/deepin/pool/main/p/pystorm/"
-#     local filereg="pystorm_.*?\.tar.gz"
-#     update_pkgbuild_for_deepin "python2-deepin-storm"
-# )
+
+
 # exit
 
 ###* Package in ready
@@ -142,6 +139,12 @@ update_pkgbuild_for_deepin "deepin-wallpapers"
     local url="${deepin_pkgsite}/deepin/pool/main/d/dtk-widget"
     local filereg="dtk-widget_.*?\.tar.gz"
     update_pkgbuild_for_deepin "python2-libdtk-widget"
+)
+
+(
+    local url="${deepin_pkgsite}/deepin/pool/main/p/pystorm/"
+    local filereg="pystorm_.*?\.tar.gz"
+    update_pkgbuild_for_deepin "python2-deepin-storm"
 )
 
 (
