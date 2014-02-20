@@ -98,6 +98,10 @@ update_pkgbuild_for_deepin "deepin-music-player"
 update_pkgbuild_for_deepin "deepin-notifications"
 update_pkgbuild_for_deepin "deepin-screenshot"
 (
+    local pkgverreg="\d\.\d"
+    update_pkgbuild_for_deepin "deepin-scrot"
+)
+(
     local pkgverreg="\d+\.\d+"
     update_pkgbuild_for_deepin "deepin-session"
 )
