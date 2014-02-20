@@ -8,7 +8,7 @@ pkgdesc='Deepin desktop session'
 arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('GPL2')
-depends=('gnome-session-3-8' 'deepin-gnome-settings-daemon')
+depends=('gnome-session' 'gnome-settings-daemon')
 
 _fileurl={% fileurl %}
 source=("${_fileurl}")
