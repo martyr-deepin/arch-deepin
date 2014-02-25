@@ -44,7 +44,7 @@ update_pkgbuild_for_deepin() {
 
 update_local_git() {
     git add -u .
-    git commit -m "Update by pkgbuild_update"
+    git commit -m "Update by pkgbuildup"
 }
 
 ###* Test
@@ -160,7 +160,7 @@ update_pkgbuild_for_deepin "deepin-wallpapers"
 # TODO deepin-pygtk-fix
 # TODO deepin-vte-plus
 
-# update_local_git
+update_local_git
 
 # Local Variables:
 # mode: sh
