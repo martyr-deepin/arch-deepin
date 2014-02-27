@@ -2,7 +2,7 @@
 # Contributor: dongfengweixiao <dongfengweixiao[AT]gmail.com>
 
 pkgname=deepin-media-player
-pkgver=git20140213145202
+pkgver=git20140226145450
 pkgrel=1
 pkgdesc='New multimedia player with brilliant and tweakful UI. PyGtk and Deepin-ui Mplayer2 front-end, with features likes smplayer, but has a brilliant and tweakful UI.'
 arch=('any')
@@ -10,9 +10,9 @@ url="http://www.linuxdeepin.com/"
 license=('GPL3')
 depends=('python2-scipy' 'python2-pyquery' 'deepin-ui' 'mplayer2' 'gstreamer0.10-ugly' 'gstreamer0.10-ugly-plugins' 'python2-formencode' 'gstreamer0.10-python' 'python2-chardet' 'python2-beautifulsoup3' 'python2-notify' 'python2-dbus' 'python2-xlib' )
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-media-player/deepin-media-player_1+git20140213145202~c2cc8e5ff8.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-media-player/deepin-media-player_1+git20140226145450~16451f377b.tar.gz
 source=("${_fileurl}")
-md5sums=('4a1b13d46f730b0a55686344fe0de3e8')
+md5sums=('6d776c2b91bcba6e2b0a19ddfd992822')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"
