@@ -1,6 +1,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 # Contributor: 4679kun <admin[AT]4679.us>
 # Contributor: dongfengweixiao <dongfengweixiao[AT]gmail.com>
+# Contributor: flu
 
 pkgname=deepin-ui
 pkgver={% pkgver %}
@@ -26,12 +27,12 @@ build(){
 
 package() {
     cd "${srcdir}/${_innerdir}"
-    mkdir -p "$pkgdir"/usr/share/locale
-    mkdir -p "$pkgdir"/usr/lib/python2.7/site-packages/dtk/theme
-    python2 setup.py install --root="$pkgdir/" --optimize=1
-    mv "$pkgdir"/usr/dtk/locale "$pkgdir"/usr/share/
-    mv "$pkgdir"/usr/dtk/theme "$pkgdir"/usr/lib/python2.7/site-packages/dtk/
-    rm -rf "$pkgdir"/usr/dtk/
+    mkdir -p "${pkgdir}"/usr/share/locale
+    mkdir -p "${pkgdir}"/usr/lib/python2.7/site-packages/dtk/theme
+    python2 setup.py install --root="${pkgdir}/" --optimize=1
+    mv "${pkgdir}"/usr/dtk/locale "${pkgdir}"/usr/share/
+    mv "${pkgdir}"/usr/dtk/theme "${pkgdir}"/usr/lib/python2.7/site-packages/dtk/
+    rm -rf "${pkgdir}"/usr/dtk/
 
     # fix python version
     find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='

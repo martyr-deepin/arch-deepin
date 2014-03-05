@@ -1,4 +1,5 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+# Contributo: flu
 
 pkgname=deepin-vte-plus
 _pkgname=vte
@@ -10,8 +11,8 @@ url="https://developer.gnome.org/vte/"
 license=('GPL3')
 depends=('gtk2')
 makedepends=('pygtk' 'intltool' 'gobject-introspection' 'pygobject2-devel')
-provides=('vte=0.28.2')
-conflicts=('vte')
+provides=("${_pkgname}=0.28.2")
+conflicts=("${_pkgname}")
 options=('!libtool' '!emptydirs')
 
 _patchsite="http://packages.linuxdeepin.com"
@@ -21,21 +22,24 @@ source=(http://ftp.gnome.org/pub/GNOME/sources/vte/0.28/vte-$pkgver.tar.xz
 md5sums=('497f26e457308649e6ece32b3bb142ff'
          '55a179adbb01e0060981eb22294e015c')
 
-build() {
+prepare() {
     #unzip patches
-    cd "$srcdir/"
+    cd "${srcdir}/"
     tar -xf vte_0.28.2-6deepin6.debian.tar.gz
 
-    cd "$_pkgname-$pkgver"
+    cd "${_pkgname}-${pkgver}"
 
     #apply patches
     patchdir=$srcdir/debian/patches
     for f in `cat $patchdir/series`; do
         echo "==> patching: ${f##*/}"
         # ignore error if patch again
-        patch -Np1 -i $patchdir/$f || echo '==> patch error: ${f##*/}'
+        patch -Np1 -i "${patchdir}/${f}" || echo '==> patch error: ${f##*/}'
     done
+}
 
+build() {
+    cd "${srcdir}/${_pkgname}-${pkgver}"
     #warning: type-punning to incomplete type might break strict-aliasing rules
     export CFLAGS="$CFLAGS -fno-strict-aliasing"
     export PYTHON="/usr/bin/python2"
@@ -47,7 +51,7 @@ build() {
 }
 
 package(){
-    cd "$srcdir/$_pkgname-$pkgver"
-    make DESTDIR="$pkgdir" install
-    rm -f "$pkgdir/usr/lib/vte/gnome-pty-helper"
+    cd "${srcdir}/${_pkgname}-${pkgver}"
+    make DESTDIR="${pkgdir}" install
+    rm -f "${pkgdir}/usr/lib/vte/gnome-pty-helper"
 }
