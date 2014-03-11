@@ -6,7 +6,7 @@
 [SUCCESS]  ./deepin-music-player/PKGBUILD.tpl
 [SUCCESS]  ./deepin-notifications/PKGBUILD.tpl
 [SUCCESS]  ./deepin-screenshot/PKGBUILD.tpl
-[SUCCESS]  ./deepin-scrot/PKGBUILD.tpl
+[FAILED]   ./deepin-scrot/PKGBUILD.tpl
 [SUCCESS]  ./deepin-session/PKGBUILD.tpl
 [SUCCESS]  ./deepin-system-settings/PKGBUILD.tpl
 [SUCCESS]  ./deepin-system-tray/PKGBUILD.tpl
