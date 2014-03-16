@@ -2,7 +2,7 @@
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 
 pkgname=deepin-icon-theme
-pkgver=git20140109111158
+pkgver=git20140312145031
 pkgrel=1
 pkgdesc='Icon theme from Linux Deepin'
 arch=('any')
@@ -10,9 +10,9 @@ url="http://www.linuxdeepin.com/"
 license=('LGPL3')
 depends=('faenza-icon-theme')
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-icon-theme/deepin-icon-theme_13.06.12+git20140109111158~0536938ae8.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-icon-theme/deepin-icon-theme_13.06.12+git20140312145031~864f17461a.tar.gz
 source=("${_fileurl}")
-md5sums=('b314ffa4ac2900979cbf60b2df5cf4f7')
+md5sums=('8bd856e57451af597478a77f70686b1b')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"
