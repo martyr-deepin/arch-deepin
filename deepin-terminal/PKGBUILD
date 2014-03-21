@@ -1,7 +1,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-terminal
-pkgver=git20140226145909
+pkgver=git20140320082815
 pkgrel=1
 pkgdesc='Awesome terminal for Linux Deepin'
 arch=('any')
@@ -9,9 +9,9 @@ url="http://www.linuxdeepin.com/"
 license=('GPL2')
 depends=('deepin-ui' 'deepin-vte-plus' 'python2-dbus')
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-terminal/deepin-terminal_1+git20140226145909~2065eeb32e.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-terminal/deepin-terminal_1+git20140320082815~1d88bf5e1f.tar.gz
 source=("${_fileurl}")
-md5sums=('c53efa656730f9d6c7e39f8c2004d68f')
+md5sums=('b17d9af0166ce863fbaf7a478893601c')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"
