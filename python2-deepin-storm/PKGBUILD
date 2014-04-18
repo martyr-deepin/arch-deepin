@@ -2,7 +2,7 @@
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 
 pkgname=python2-deepin-storm
-pkgver=git20130426091936
+pkgver=git20131206101931
 pkgrel=1
 arch=('any')
 url="http://linuxdeepin.com/"
@@ -11,9 +11,9 @@ pkgdesc="Python Storm is download library and tool for Linux Deepin project."
 depends=('python2' 'python2-gevent')
 makedepends=('python2-setuptools' 'intltool')
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/p/pystorm//pystorm_0.1+git20130426091936.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/p/pystorm//pystorm_0.1+git20131206101931~ade21bf585.tar.gz
 source=("${_fileurl}")
-md5sums=('8f1850adcf1b32893c79c86b2a42103c')
+md5sums=('4e038798f241ec19620ab48a7d5ac7ec')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"

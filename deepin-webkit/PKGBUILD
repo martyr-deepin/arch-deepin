@@ -2,7 +2,7 @@
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 
 pkgname=deepin-webkit
-pkgver=git20131010153235
+pkgver=git20131220153235
 pkgrel=1
 pkgdesc='A fork of webkit-gtk for Linux Deepin desktop eviroment'
 arch=('i686' 'x86_64')
@@ -14,11 +14,11 @@ optdepends=('gtk2: Netscape plugin support')
 provides=("${pkgname%-*}")
 options=(!libtool !emptydirs)
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-webkit/deepin-webkit_1.8.2.1+git20131010153235~9ac8cf628b.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-webkit/deepin-webkit_1.8.2.1+git20131220153235~9ac8cf628.tar.gz
 source=("${_fileurl}"
         "webkit-gtk-1.8.2-bison-2.6.patch"
 	    "DerivedSources.tar.gz")
-md5sums=('e82e8853b8aa28d499445d45f9d5d139'
+md5sums=('75e2b2c18db9a7ae1f49ec02243e37ba'
          '4d6a5dc625d442e7883e0f27943a9db9'
          'ac866fe0094877f5bd0f22a0eff5bd4d')
 

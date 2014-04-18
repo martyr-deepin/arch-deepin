@@ -1,16 +1,16 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-cursor-theme
-pkgver=2013~4
+pkgver=2014~4
 pkgrel=1
 pkgdesc='Cursor theme from Linux Deepin'
 arch=('i686' 'x86_64')
 license=('LGPL3')
 url="http://www.linuxdeepin.com/"
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-cursor-theme/deepin-cursor-theme_2013~4-1.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-cursor-theme/deepin-cursor-theme_2014~4-2.tar.gz
 source=("${_fileurl}")
-md5sums=('400777a7f41c9c161116be17070cc253')
+md5sums=('dd40eabcd98d529eef29fcaff2dd96c4')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%-*}"

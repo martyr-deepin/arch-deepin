@@ -1,7 +1,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=python2-deepin-xrandr
-pkgver=git20130417113459
+pkgver=git20131206101353
 pkgrel=1
 pkgdesc='XRandR Python2 Binding from Linux Deepin'
 arch=('any')
@@ -10,9 +10,9 @@ license=('GPL2')
 depends=('python2' 'glib2' 'libxrandr')
 makedepends=('python2-setuptools')
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-xrandr/deepin-xrandr_0.1+git20130417113459.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-xrandr/deepin-xrandr_0.1+git20131206101353~1ef723fab0.tar.gz
 source=("${_fileurl}")
-md5sums=('4a38a550f4d57ce2b33e199ffe1e7ff3')
+md5sums=('8aeaf548632c6aeaed13278605963397')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"

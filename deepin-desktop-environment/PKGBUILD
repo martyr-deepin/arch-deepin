@@ -13,7 +13,7 @@ depends=('deepin-session' 'compiz-core-devel' 'gtk3' 'webkitgtk' 'deepin-webkit'
 #          'deepin-desktop-environment-desktop'
 #          'deepin-desktop-environment-lock')
 # pkgbase="deepin-desktop-environment"
-pkgver=git20140313154526
+pkgver=git20140418111334
 pkgrel=1
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"
@@ -22,9 +22,9 @@ license=('GPL2')
  makedepends=('cmake' 'go' 'coffee-script')
 install=deepin-desktop-environment.install
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-desktop-environment/deepin-desktop-environment_1.0+git20140313154526~7809f4569e~2013.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-desktop-environment/deepin-desktop-environment_2.0+git20140418111334~533332cd39.tar.gz
 source=("${_fileurl}")
-md5sums=('9d6e41e0ac9b064ad5ccdb9d3c57c873')
+md5sums=('7f9bc77d10a00d1e8d96a5a602132c52')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"
@@ -179,5 +179,5 @@ package() {
     # overwrite variables again, or upload to aur may be failed
     pkgname='deepin-desktop-environment'
     pkgdesc="Linux Deepin Desktop environment"
-    depends=('deepin-session' 'compiz-dev' 'gtk3' 'webkitgtk' 'deepin-webkit' 'gdk-pixbuf2' 'python2' 'dbus-glib' 'sqlite' 'glib2' 'lightdm' 'gstreamer0.10' 'opencv' 'gvfs' 'xdg-user-dirs')
+    depends=('deepin-session' 'compiz-core-devel' 'gtk3' 'webkitgtk' 'deepin-webkit' 'gdk-pixbuf2' 'python2' 'dbus-glib' 'sqlite' 'glib2' 'lightdm' 'gstreamer0.10' 'opencv' 'gvfs' 'xdg-user-dirs')
 }
