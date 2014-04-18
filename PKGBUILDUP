@@ -63,7 +63,8 @@ update_local_git() {
 # )
 
 
-# exit
+update_pkgbuild_for_deepin "deepin-desktop-environment"
+exit
 
 ###* Package in ready
 
@@ -157,7 +158,7 @@ update_pkgbuild_for_deepin "deepin-wallpapers"
 # TODO deepin-pygtk-fix
 # TODO deepin-vte-plus
 
-update_local_git
+#update_local_git
 
 # Local Variables:
 # mode: sh

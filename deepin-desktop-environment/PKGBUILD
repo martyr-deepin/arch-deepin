@@ -93,7 +93,7 @@ package_deepin-desktop-environment-dock() {
     cd "${srcdir}/${_innerdir}"
     local _tmpdest="${srcdir}/${_innerdir}/build/_tmpdest"
 
-    _easycp "${pkgdir}"/usr/bin/ "${_tmpdest}"/usr/bin/dock
+    _easycp "${pkgdir}"/usr/bin/ "${_tmpdest}"/usr/bin/dde-dock
     _easycp "${pkgdir}"/usr/share/dde/resources/dock/ "${_tmpdest}"/usr/share/dde/resources/dock/*
 
     mkdir -p "${pkgdir}"/usr/share/applications
@@ -109,7 +109,7 @@ package_deepin-desktop-environment-launcher() {
     cd "${srcdir}/${_innerdir}"
     local _tmpdest="${srcdir}/${_innerdir}/build/_tmpdest"
 
-    _easycp "${pkgdir}"/usr/bin/ "${_tmpdest}"/usr/bin/launcher
+    _easycp "${pkgdir}"/usr/bin/ "${_tmpdest}"/usr/bin/dde-launcher
     _easycp "${pkgdir}"/usr/share/dde/resources/launcher/ "${_tmpdest}"/usr/share/dde/resources/launcher/*
 
     mkdir -p "${pkgdir}"/etc/xdg/autostart
@@ -125,7 +125,7 @@ package_deepin-desktop-environment-desktop() {
     cd "${srcdir}/${_innerdir}"
     local _tmpdest="${srcdir}/${_innerdir}/build/_tmpdest"
 
-    _easycp "${pkgdir}"/usr/bin/ "${_tmpdest}"/usr/bin/desktop
+    _easycp "${pkgdir}"/usr/bin/ "${_tmpdest}"/usr/bin/dde-desktop
     _easycp "${pkgdir}"/usr/share/dde/resources/desktop/ "${_tmpdest}"/usr/share/dde/resources/desktop/*
 
     mkdir -p "${pkgdir}"/usr/share/applications
@@ -141,7 +141,7 @@ package_deepin-desktop-environment-lightdm-greeter() {
     cd "${srcdir}/${_innerdir}"
     local _tmpdest="${srcdir}/${_innerdir}/build/_tmpdest"
 
-    _easycp "${pkgdir}"/usr/bin/ "${_tmpdest}"/usr/bin/greeter
+    _easycp "${pkgdir}"/usr/bin/ "${_tmpdest}"/usr/bin/lightdm-deepin-greeter
     _easycp "${pkgdir}"/usr/share/dde/resources/greeter/ "${_tmpdest}"/usr/share/dde/resources/greeter/*
     _easycp "${pkgdir}"/var/lib/polkit-1/localauthority/50-local.d/ debian/lightdm.pkla
 
@@ -158,9 +158,9 @@ package_deepin-desktop-environment-lock() {
     cd "${srcdir}/${_innerdir}"
     local _tmpdest="${srcdir}/${_innerdir}/build/_tmpdest"
 
-    _easycp "${pkgdir}"/usr/bin "${_tmpdest}"/usr/bin/dlock
-    _easycp "${pkgdir}"/usr/bin "${_tmpdest}"/usr/bin/lockservice
-    _easycp "${pkgdir}"/usr/bin "${_tmpdest}"/usr/bin/switchtogreeter
+    _easycp "${pkgdir}"/usr/bin "${_tmpdest}"/usr/bin/dde-lock
+    _easycp "${pkgdir}"/usr/bin "${_tmpdest}"/usr/bin/dde-lockservice
+    _easycp "${pkgdir}"/usr/bin "${_tmpdest}"/usr/bin/dde-switchtogreeter
     _easycp "${pkgdir}"/usr/share/dbus-1/system-services/ "${_tmpdest}"/usr/share/dbus-1/system-services/*
     _easycp "${pkgdir}"/etc/dbus-1/system.d/ "${_tmpdest}"/etc/dbus-1/system.d/*
 
