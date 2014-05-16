@@ -1,7 +1,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-notifications
-pkgver=git20140417174555
+pkgver=git20140422144418
 pkgrel=1
 pkgdesc='System notifications for Linux Deepin desktop environment'
 arch=('i686' 'x86_64')
@@ -10,9 +10,9 @@ url="http://www.linuxdeepin.com/"
 depends=('deepin-ui' 'deepin-pygtk-fix' 'python2-dbus' 'python2-cairo')
 conflicts=("notify-osd")
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-notifications/deepin-notifications_0.2-1+git20140417174555~4446fde0aa~2014.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-notifications/deepin-notifications_0.2-1+git20140422144418~ea373a237f~2014.tar.gz
 source=("${_fileurl}")
-md5sums=('89c289104d881442d692abe3aedd2f33')
+md5sums=('8c60bb67ba5c3c882c9ee0a8dec0a005')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%-*}"

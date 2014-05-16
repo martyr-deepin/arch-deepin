@@ -2,7 +2,7 @@
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 
 pkgname=deepin-gtk-theme
-pkgver=git20140414155340
+pkgver=git20140428113113
 pkgrel=1
 pkgdesc='Gtk3 theme from Linux Deepin'
 arch=('any')
@@ -10,9 +10,9 @@ url="http://www.linuxdeepin.com/"
 license=('LGPL3')
 depends=('gtk-engine-unico')
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-gtk-theme/deepin-gtk-theme_14.06+git20140414155340~63d0519c0f.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-gtk-theme/deepin-gtk-theme_14.06+git20140428113113~625d24e7ac.tar.gz
 source=("${_fileurl}")
-md5sums=('97c36d7838f42e0b59bef5341a8e365a')
+md5sums=('4c9f53c4153269bb022d918cab60ff5c')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"
