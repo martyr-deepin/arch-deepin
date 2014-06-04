@@ -57,7 +57,7 @@ build() {
     )
 
     # fix python version
-    find "${_tmpdest}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+    find "${_tmpdest}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python$=\1python2='
 
     gcc -o debian/default-terminal debian/default-terminal.c `pkg-config --libs --cflags glib-2.0 gio-unix-2.0`
 }
