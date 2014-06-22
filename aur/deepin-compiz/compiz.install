@@ -1,15 +1,12 @@
-pkgname=compiz-core
+pkgname=compiz
 
 post_install() {
     if [ -f usr/share/gconf/schemas/$pkgname.schemas ]; then
 	    echo "  -> Installing GConf schemas... "
    	    gconfpkg --install $pkgname
     fi
-    ls usr/share/glib-2.0/schemas 2>/dev/null | grep -qm1 org.freedesktop.compiz
-    if [ $? -eq 0 ]; then
-        echo "  -> Recompiling the GSettings database... "
-        glib-compile-schemas usr/share/glib-2.0/schemas
-    fi
+    echo "  -> Recompiling the GSettings database... "
+    glib-compile-schemas usr/share/glib-2.0/schemas
 }
 
 pre_upgrade() {

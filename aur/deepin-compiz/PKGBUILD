@@ -4,13 +4,13 @@
 # Contributor: Nathan Hulse <nat.hulse@gmail.com>
 
 pkgname=deepin-compiz
-pkgver=0.9.8_git20131121164514
+pkgver=0.9.8.6_git20131121164514
 pkgrel=1
 pkgdesc='A forked compiz for Linux Deepin desktop environment'
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'MIT')
 url="http://www.linuxdeepin.com/"
-depends=('boost' 'xorg-server' 'libxcomposite' 'startup-notification' 'librsvg' 'dbus' 'mesa' 'libxslt' 'fuse' 'glibmm' 'libxrender' 'gmock' 'libwnck' 'pygtk' 'desktop-file-utils' 'pyrex' 'protobuf' 'dconf' 'gtk2')
+depends=('boost' 'gnome-settings-daemon' 'xorg-server' 'libxcomposite' 'startup-notification' 'librsvg' 'dbus' 'mesa' 'libxslt' 'fuse' 'glibmm' 'libxrender' 'gmock' 'libwnck' 'pygtk' 'desktop-file-utils' 'pyrex' 'protobuf' 'dconf' 'gtk2')
 makedepends=('intltool' 'cmake')
 provides=('compiz=0.9')
 conflicts=('compiz-bzr' 'compiz-core' 'compiz-fusion-plugins-main' 'compiz-fusion-plugins-extra' 'compiz-decorator-gtk' 'compiz-decorator-kde' 'libcompizconfig' 'compizconfig-python' 'compizconfig-backend-gconf' 'compiz-bcop' 'ccsm')
@@ -38,23 +38,18 @@ prepare() {
     patch -p1 < ../fix-boost-interfaces.patch
 
     mkdir build; cd build
-    cmake .. \
+	cmake .. \
         -DCMAKE_INSTALL_PREFIX="/usr" \
+        -DCMAKE_BUILD_TYPE="Release" \
         -DPYTHON_INCLUDE_DIR=/usr/include/python2.7 \
         -DPYTHON_LIBRARY=/usr/lib/libpython2.7.so \
-        -DCMAKE_BUILD_TYPE="Release" \
-        -DQT_QMAKE_EXECUTABLE=qmake-qt4 \
-        -DCOMPIZ_DISABLE_SCHEMAS_INSTALL=On \
-        -DCOMPIZ_BUILD_WITH_RPATH=Off \
-        -DCOMPIZ_PACKAGING_ENABLED=On \
-        -DBUILD_GTK="on" \
-        -DBUILD_METACITY="off" \
-        -DBUILD_KDE4="off" \
-        -DUSE_GCONF="on" \
-        -DUSE_GSETTINGS="on" \
-        -DCOMPIZ_BUILD_TESTING=Off \
-        -DCOMPIZ_WERROR=Off \
-        -DCOMPIZ_DEFAULT_PLUGINS="composite,opengl,decor,resize,place,move"
+        -DCOMPIZ_BUILD_WITH_RPATH=FALSE \
+        -DCOMPIZ_PACKAGING_ENABLED=TRUE \
+        -DCOMPIZ_DISABLE_GS_SCHEMAS_INSTALL=OFF \
+        -DCOMPIZ_BUILD_TESTING=OFF \
+        -DUSE_GCONF=OFF \
+        -DUSE_GSETTINGS=ON \
+        -DCOMPIZ_DEFAULT_PLUGINS="ccp"
 }
 
 build() {
@@ -79,17 +74,16 @@ package() {
     # Amend XDG .desktop file to load the compizconfig plugin with compiz
     sed -i 's/Exec\=compiz/Exec\=compiz ccp/' "${pkgdir}/usr/share/applications/compiz.desktop"
 
-    # Merge the gconf schema files
-    if [ -d "${pkgdir}/usr/share/gconf/schemas" ]; then
-        gconf-merge-schema "${pkgdir}/usr/share/gconf/schemas/compiz.schemas.in" "{$pkgdir}"/usr/share/gconf/schemas/*.schemas
-        sed -i '/<schemalist\/>/d' "${pkgdir}/usr/share/gconf/schemas/compiz.schemas.in"
-        rm -f "${pkgdir}"/usr/share/gconf/schemas/*.schemas
-        mv "${pkgdir}/usr/share/gconf/schemas/compiz.schemas.in" "${pkgdir}/usr/share/gconf/schemas/compiz.schemas"
-    fi
-
     # Add the pesky gsettings schema files manually
     if ls generated/glib-2.0/schemas/ | grep -qm1 .gschema.xml; then
         install -dm755 "${pkgdir}/usr/share/glib-2.0/schemas/"
         install -m644 generated/glib-2.0/schemas/*.gschema.xml "${pkgdir}/usr/share/glib-2.0/schemas/"
     fi
+
+    # Setup xsession profile for deepin compiz
+    cd "${srcdir}/${_innerdir}"
+    install -dm755 "${pkgdir}"/etc/X11/Xsession.d/
+    install -m644 debian/65compiz_profile-on-session "${pkgdir}"/etc/X11/Xsession.d/
+
+    rm "${pkgdir}"/usr/share/glib-2.0/schemas/compiz.gschema.override
 }
