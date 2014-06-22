@@ -14,7 +14,7 @@ tplname="PKGBUILD.tpl"
 # variable $tplfile, $pkgverreg, $pkgrelreg, $makepkg and $upload will
 # be used, besides, if $FILE_INFO is empty, $pkgname, $url and $filereg
 # will be used
-update_pkgbuild_for_deepin() {
+update_pkg() {
     local pkgname=$1
     abort_if_var_empty "${pkgname}" "pkgname"
     msg "Package name: ${pkgname}"
@@ -53,23 +53,23 @@ update_local_git() {
 #     local filereg="compiz_.*?\.tar.gz"
 #     local makepkg="false"
 #     local upload="false"
-#     update_pkgbuild_for_deepin "deepin-compiz"
+#     update_pkg "deepin-compiz"
 # )
 # exit
 
 ###* Main loop
 # (
 #     local pkgverreg="[0-9]{2}[^_-]*"
-#     update_pkgbuild_for_deepin "deepin-cursor-theme"
+#     update_pkg "deepin-cursor-theme"
 # )
-# update_pkgbuild_for_deepin "deepin-icon-theme"
+# update_pkg "deepin-icon-theme"
 
-update_pkgbuild_for_deepin "deepin-game-center"
-update_pkgbuild_for_deepin "deepin-media-player"
-update_pkgbuild_for_deepin "deepin-music-player"
-update_pkgbuild_for_deepin "deepin-screenshot"
-update_pkgbuild_for_deepin "deepin-terminal"
-update_pkgbuild_for_deepin "deepin-ui"
+update_pkg "deepin-game-center"
+update_pkg "deepin-media-player"
+update_pkg "deepin-music-player"
+update_pkg "deepin-screenshot"
+update_pkg "deepin-terminal"
+update_pkg "deepin-ui"
 
 # TODO deepin-pygtk-fix
 # TODO deepin-vte-plus
