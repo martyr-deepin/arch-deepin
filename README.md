@@ -64,19 +64,19 @@ accident, the packages will update weekly.
 # Screenshot
 
 ## desktop 1
-<img src="./screenshot/desktop_1.png"
+<img src="./screenshot/dde_2013_1.png"
 width=500/>
 
 ## desktop 2
-<img src="./screenshot/desktop_2.png"
+<img src="./screenshot/dde_2013_2.png"
 width=500/>
 
 ## desktop 3
-<img src="./screenshot/desktop_3.png"
+<img src="./screenshot/dde_2013_3.png"
 width=500/>
 
 ## desktop 4
-<img src="./screenshot/desktop_4.png"
+<img src="./screenshot/dde_2013_4.png"
 width=500/>
 
 # License
