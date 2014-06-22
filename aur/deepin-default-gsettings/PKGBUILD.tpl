@@ -26,6 +26,9 @@ package() {
     cd "${srcdir}/${_innerdir}"
 
 	(for f in *.override; do cat $f; done) > tmp_all_schemas
+    sed -i '/^menus-have-icons/d' tmp_all_schemas
+    sed -i '/^automatic-mnemonics/d' tmp_all_schemas
+
     mv tmp_all_schemas 99_deepin-default-gsettings.gschema.override
     install -dm755 "${pkgdir}"/usr/share/glib-2.0/schemas/
     install -m644 99_deepin-default-gsettings.gschema.override "${pkgdir}"/usr/share/glib-2.0/schemas/
