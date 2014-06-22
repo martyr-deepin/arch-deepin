@@ -1,0 +1,35 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Contributor: 
+
+pkgname=golang-gettext-go
+_pkgver=0.0
+_pkgvergit=~hg20140403
+pkgver=${_pkgver}${_pkgvergit}
+pkgrel=2
+pkgdesc="This package provides GNU gettext support."
+arch=('i686' 'x86_64')
+url="https://code.google.com/p/gettext-go/"
+license=('GPL2')
+depends=('go>=1.3rc2')
+groups=('deepin')
+options=(staticlibs)
+source=("http://test.packages.linuxdeepin.com/deepin/pool/main/g/${pkgname}/${pkgname}_${pkgver}.orig.tar.xz")
+sha256sums=('6c6b90ca3beaed031cfbcc994795b2e484b96cef8857980733b990661ea8b206')
+
+build(){
+  cd "$srcdir"
+  
+  mkdir -p ${pkgname}-build/src/code.google.com/p/gettext-go/
+  cp -r gettext-go/gettext ${pkgname}-build/src/code.google.com/p/gettext-go/
+  # autobuild go
+  cd "$srcdir"/${pkgname}-build && GOPATH=`pwd` go install code.google.com/p/gettext-go/gettext
+  cd "$srcdir"/${pkgname}-build && GOPATH=`pwd` go install code.google.com/p/gettext-go/gettext/{mo,plural,po}/
+}
+
+package() {
+  cd "$srcdir"
+  
+  mkdir -p "${pkgdir}"/usr/lib/go/{pkg,src/pkg}
+  cp -r "$srcdir"/${pkgname}-build/src/* "${pkgdir}"/usr/lib/go/src/pkg/
+  cp -r "$srcdir"/${pkgname}-build/pkg/* "${pkgdir}"/usr/lib/go/pkg/
+}

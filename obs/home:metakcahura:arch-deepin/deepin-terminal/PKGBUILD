@@ -1,0 +1,32 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Contributor: 
+
+pkgname=deepin-terminal
+pkgver=1.1.git20140515~a4c7a46
+pkgrel=1
+pkgdesc='Awesome terminal for Linux Deepin'
+arch=('any')
+url="https://github.com/linuxdeepin/deepin-terminal"
+license=('GPL2')
+depends=('deepin-ui' 'deepin-vte-plus' 'gtk-update-icon-cache' 'python2-dbus' 'python2-scipy')
+groups=('deepin')
+install="${pkgname}.install"
+source=("${pkgname}-${pkgver}.tar.xz")
+sha256sums=('SKIP')
+
+package() {
+  cd "${pkgname}-${pkgver}"
+
+  install -dm 755 "${pkgdir}"/usr/{bin,share/{applications,deepin-terminal,icons/hicolor/24x24/apps}}
+  
+  cp -r {app_theme,locale,skin,src,image,tools} "${pkgdir}"/usr/share/${pkgname}/
+  install -m 644 ${pkgname}.png "${pkgdir}"/usr/share/icons/hicolor/24x24/apps/ 
+  install -m 644 ${pkgname}.desktop "${pkgdir}"/usr/share/applications/
+  ln -s /usr/share/${pkgname}/src/main.py "${pkgdir}"/usr/bin/${pkgname}
+
+  # fix python version
+  find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+
+  # there is no 'XHei' font on archinux, so replace it
+  sed -i 's/XHei Mono.Ubuntu/Monospace/' "${pkgdir}"/usr/share/${pkgname}/src/main.py
+}

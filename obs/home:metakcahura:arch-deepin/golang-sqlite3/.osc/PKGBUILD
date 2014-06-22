@@ -1,0 +1,37 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Contributor: 
+
+pkgname=golang-sqlite3
+_pkgver=0.0
+_pkgvergit=~git20140609
+pkgver=${_pkgver}${_pkgvergit}
+pkgrel=1
+pkgdesc='File system notification for GO'
+arch=('i686' 'x86_64')
+url="https://github.com/mattn/go-sqlite3"
+license=('GPL2')
+depends=('go>=1.3rc2')
+groups=('deepin')
+options=(staticlibs)
+site="http://test.packages.linuxdeepin.com/deepin/pool/main/g"
+source=("${site}/${pkgname}/${pkgname}_${pkgver}.orig.tar.xz")
+sha256sums=('d61f89212a224c9809e083ec1cba440667655275713ba08d69dcdde2c1052443')
+
+build() {
+  cd "$srcdir"
+
+  rm -rf go-sqlite3/.git
+  mkdir -p golang-sqlite3-build/src/github.com/mattn/
+  cp -r go-sqlite3 golang-sqlite3-build/src/github.com/mattn/
+  # autobuild go
+  cd golang-sqlite3-build && GOPATH=`pwd` go install github.com/mattn/go-sqlite3
+
+}
+
+package() {
+
+  # install go pkg
+  mkdir -p "${pkgdir}"/usr/lib/go/{pkg,src/pkg}
+  cp -r "$srcdir"/golang-sqlite3-build/src/* "${pkgdir}"/usr/lib/go/src/pkg/
+  cp -r "$srcdir"/golang-sqlite3-build/pkg/* "${pkgdir}"/usr/lib/go/pkg/
+}

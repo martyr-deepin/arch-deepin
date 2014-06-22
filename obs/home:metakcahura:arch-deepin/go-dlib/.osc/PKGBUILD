@@ -1,0 +1,39 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Contributor: 
+
+pkgname=go-dlib
+pkgver=git20140522~3948504
+pkgrel=1
+pkgdesc='Go-lang bingdings for dlib'
+arch=('i686' 'x86_64')
+url="https://github.com/linuxdeepin/go-lib"
+license=('GPL2')
+depends=('glib2')
+makedepends=('go>=1.3rc2' 'gettext' 'gdk-pixbuf2' 'golang-gocheck' 'libpulse')
+groups=('deepin')
+options=(staticlibs)
+source=("$pkgname-${pkgver}.tar.xz" 'install.patch')
+sha256sums=('SKIP' 'SKIP')
+
+prepare() {
+  cd "${pkgname}-${pkgver}"
+
+  patch -p1 -i ../install.patch
+}
+
+build(){
+  cd "$srcdir"
+  
+  ln -s go-dlib-${pkgver} dlib && sh dlib/install.sh
+}
+
+package() {
+  cd "$srcdir"
+
+  install -dm 755 "${pkgdir}"/usr/{bin,lib/go/src/pkg/dlib}
+  
+  cp -r pkg "${pkgdir}"/usr/lib/go/
+  cp -r src/dlib/* "${pkgdir}"/usr/lib/go/src/pkg/dlib/
+  install -m 755 bin/proxyer "${pkgdir}"/usr/bin/dbus-proxyer-gen
+  rm "${pkgdir}"/usr/lib/go/src/pkg/dlib/install.sh
+}

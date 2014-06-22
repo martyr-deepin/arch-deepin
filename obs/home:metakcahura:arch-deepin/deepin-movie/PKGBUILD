@@ -1,0 +1,43 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+
+pkgname=deepin-movie
+pkgver=git20140528~08a5dde
+pkgrel=1
+pkgdesc='deepin movie for linuxdeepin desktop environment'
+arch=('any')
+url="https://github.com/linuxdeepin/deepin-movie"
+license=('GPL-2+')
+depends=('qt5-declarative' 'qt5-quickcontrols' 'python2-pyqt5' 'mediainfo' 'python2-ass'
+	 'deepin-ui' 'deepin-menu' 'deepin-qml-widgets' 'qt5-multimedia' 'qt5-webkit'
+	 'qt5-graphicaleffects' 'enca' 'desktop-file-utils' 'python2-pysrt'
+	 'qt5-imageformats' 'python2-setproctitle' 'qt5-systems' 'dde-go-dbus-factory')
+makedepends=('sip')
+groups=('deepin-extra')
+install="${pkgname}.install"
+source=("${pkgname}-${pkgver}.tar.xz" 'generate_mo.sh')
+sha256sums=('SKIP' '89eb6ed5337d7e9e5c77107bf5d763cf1f6aeb429233420e7f67072afe1d2f6e')
+
+prepare() {
+  cd "${pkgname}-${pkgver}"
+
+  # fix python version
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+}
+
+build() {
+  cd "${pkgname}-${pkgver}"
+
+  cd locale && sh "${srcdir}/generate_mo.sh"
+}
+
+package() {
+  cd "${pkgname}-${pkgver}"
+  
+  install -dm 755 "${pkgdir}"/usr/{bin,share/{applications,deepin-movie,locale}}
+  
+  cp -R {*.py,*.qml} "${pkgdir}"/usr/share/${pkgname}/
+  cp -R {image,qvod} "${pkgdir}"/usr/share/${pkgname}/
+  cp -R locale/mo/* "${pkgdir}"/usr/share/locale/
+  install -m 644 ${pkgname}.desktop "${pkgdir}"/usr/share/applications/
+  ln -s /usr/share/${pkgname}/main.py "${pkgdir}"/usr/bin/${pkgname}
+}

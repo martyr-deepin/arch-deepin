@@ -1,0 +1,48 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+
+pkgname=dde-control-center
+pkgver=git20140526~951e4cc
+pkgrel=1
+pkgdesc="New control center for linux deepin"
+arch=('i686' 'x86_64')
+url="https://github.com/linuxdeepin/dde-control-center"
+license=('GPL-3+')
+depends=('go-dlib' 'python2-pyqt5' 'dde-go-dbus-factory' 'dde-qml-dbus-factory'
+	 'python2-sip' 'python2-xpyb' 'deepin-qml-widgets' 'dde-account-faces' 'dde-daemon'
+	 'deepin-artwork-themes' 'dde-qml-gettext-plugin' 'qml-dde-dock-applet' 'qt5-declarative'
+	 'qt5-graphicaleffects' 'qt5-tools' 'qt5-quickcontrols' 'libxtst')
+makedepends=('glib2' 'python2-setuptools' 'gettext' 'go>=1.3rc2' 'gtk3')
+groups=('deepin')
+options=(staticlibs)
+#install=${pkgbase}.install
+source=("${pkgname}-${pkgver}.tar.xz" "generate_mo.sh")
+sha256sums=('SKIP' 'SKIP')
+
+prepare() {
+  cd "${pkgname}-${pkgver}"
+
+  # fix python version
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+}
+
+build(){
+  cd "${pkgname}-${pkgver}"
+  
+  cd dock-applets && qmake && make && cd ..
+  cd locale && sh "${srcdir}"/generate_mo.sh
+}
+
+package() {
+  cd "${pkgname}-${pkgver}"
+  
+  cd dock-applets && make INSTALL_ROOT="${pkgdir}/" install && cd ..
+  
+  install -dm 755 "${pkgdir}"/usr/{bin,share/dde-control-center}
+  cp -R {frame,locale,modules} "${pkgdir}"/usr/share/${pkgname}/
+  install -dm 755 "${pkgdir}"/{etc/xdg/autostart,usr/share/{applications,dbus-1/services}}
+  install -m 644 dde-dock-applets-autostart.desktop "${pkgdir}"/etc/xdg/autostart/
+  install -m 644 ${pkgname}.desktop "${pkgdir}"/usr/share/applications/
+  install -m 644 *.service "${pkgdir}"/usr/share/dbus-1/services/
+  
+  ln -s /usr/share/${pkgname}/frame/main.py "${pkgdir}"/usr/bin/${pkgname}
+}
