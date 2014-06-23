@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">test.packages.linuxdeepin.com</param>
+    <param name="protocol">http</param>
+    <param name="path">/deepin/pool/main/p/pygtk/pygtk_2.24.0.orig.tar.gz</param>
+  </service>
+</services>

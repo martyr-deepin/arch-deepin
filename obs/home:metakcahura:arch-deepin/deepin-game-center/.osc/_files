@@ -1,0 +1,6 @@
+<directory name="deepin-game-center" rev="8" srcmd5="463341c97f4d0fbcdb9249427fa336d7" vrev="8">
+  <serviceinfo code="succeeded" xsrcmd5="3a6d67e02eec1fffd6c9809e15bfa990" />
+  <entry md5="1417315c12082dd02476c8f8f979f87d" mtime="1401309778" name="PKGBUILD" size="1170" />
+  <entry md5="b5f8d19171c060000b06cb634188205f" mtime="1400868352" name="_service" size="481" />
+  <entry md5="7f4298b5e7e91dc41a6835b6a359df12" mtime="1400868352" name="deepin-game-center.install" size="175" />
+</directory>

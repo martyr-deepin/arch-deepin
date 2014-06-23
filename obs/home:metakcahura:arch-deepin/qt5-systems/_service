@@ -1,0 +1,15 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://gitorious.org/qt/qtsystems</param>
+    <param name="revision">stable</param>
+    <param name="filename">qt5-systems</param>
+    <param name="versionprefix">5.3.0</param>
+    <param name="versionformat">git%cd~%h</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+  <service name="set_version"/>
+</services>

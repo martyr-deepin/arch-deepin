@@ -1,0 +1,5 @@
+<directory name="python2-deepin-xrandr" rev="5" srcmd5="e8e5b7dae0789f6b0280d12fddf5ca4a" vrev="5">
+  <serviceinfo code="succeeded" xsrcmd5="a43a8fa6795c16c203bcd0c6151b6009" />
+  <entry md5="19510c5c8b2e7031ad5a27514899f091" mtime="1397614859" name="PKGBUILD" size="869" />
+  <entry md5="4614642501c72119915eab7debaf5640" mtime="1397614396" name="_service" size="289" />
+</directory>

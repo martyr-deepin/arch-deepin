@@ -1,0 +1,5 @@
+<directory name="python2-tesseract" rev="2" srcmd5="afbe90d6700173d6694e6127cbd08b00" vrev="2">
+  <serviceinfo code="succeeded" xsrcmd5="702dd9e16ab98b1be6b4beb5aff92b4a" />
+  <entry md5="a8d2dc724bf0579a911fd7a3fda687fc" mtime="1402764553" name="PKGBUILD" size="659" />
+  <entry md5="3baaa0a8e3372350d8f2cc7cc03e6e6e" mtime="1402764553" name="_service" size="472" />
+</directory>

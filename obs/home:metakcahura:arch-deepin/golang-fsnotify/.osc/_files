@@ -1,0 +1,5 @@
+<directory name="golang-fsnotify" rev="6" srcmd5="d171f984e07100faab12721d122daa3c" vrev="6">
+  <serviceinfo code="succeeded" xsrcmd5="3a946fbd07d0f6b1a8639f90a9a90ad4" />
+  <entry md5="b5f4ace9f825a18eba21873edab45fa6" mtime="1402974070" name="PKGBUILD" size="917" />
+  <entry md5="2c0a57ef7e06bc583597a0afb0bd8320" mtime="1402973352" name="_service" size="454" />
+</directory>

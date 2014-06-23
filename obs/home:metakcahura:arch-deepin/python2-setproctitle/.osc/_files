@@ -1,0 +1,5 @@
+<directory name="python2-setproctitle" rev="1" srcmd5="e9e7a12a653bc7b83defd1ced835d16e" vrev="1">
+  <serviceinfo code="succeeded" xsrcmd5="ab07c8be787d2c784f920273a03d4666" />
+  <entry md5="714d2c9fe152173f0648fd535b37a555" mtime="1402070695" name="PKGBUILD" size="614" />
+  <entry md5="8e4586bd87ec44ce0e19370d5e9a4d51" mtime="1402070696" name="_service" size="243" />
+</directory>

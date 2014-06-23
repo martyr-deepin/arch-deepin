@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">downloads.sourceforge.net</param>
+    <param name="protocol">http</param>
+    <param name="path">/sourceforge/optipng/optipng-0.7.5.tar.gz</param>
+  </service>
+</services>

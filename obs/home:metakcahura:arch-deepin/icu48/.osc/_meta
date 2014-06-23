@@ -1,0 +1,11 @@
+<package name="icu48" project="home:metakcahura:arch-deepin">
+  <title></title>
+  <description></description>
+  <build>
+    <disable/>
+  </build>
+  <publish>
+    <disable/>
+  </publish>
+</package>
+

@@ -1,0 +1,6 @@
+<directory name="deepin-terminal" rev="15" srcmd5="07e082c253c73cf1a5f05b939f877bc6" vrev="15">
+  <serviceinfo code="succeeded" xsrcmd5="9398bd71a5ed4b0b791cedda08885411" />
+  <entry md5="789317e745e0d178c9fcf52b0d391e5a" mtime="1401413965" name="PKGBUILD" size="1183" />
+  <entry md5="163d6611545de600bc382919fa14927a" mtime="1401314597" name="_service" size="473" />
+  <entry md5="c52044ca4c5293e85237c1e8dc24b136" mtime="1401413509" name="deepin-terminal.install" size="184" />
+</directory>

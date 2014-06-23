@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">alioth.debian.org</param>
+    <param name="protocol">https</param>
+    <param name="path">/frs/download.php/latestfile/813/chrpath-0.16.tar.gz</param>
+  </service>
+</services>

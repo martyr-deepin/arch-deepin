@@ -1,0 +1,5 @@
+<directory name="startdde" rev="40" srcmd5="cdbe4a23be244e4c22c74a2610dde1bd" vrev="40">
+  <serviceinfo code="succeeded" xsrcmd5="f580bc0f87928b93d6ee76d2a1695920" />
+  <entry md5="f4965e6034366e99a428617cb397e2e5" mtime="1403048621" name="PKGBUILD" size="1052" />
+  <entry md5="470b0d35af432b02cb93a20f5ec70855" mtime="1400730861" name="_service" size="459" />
+</directory>

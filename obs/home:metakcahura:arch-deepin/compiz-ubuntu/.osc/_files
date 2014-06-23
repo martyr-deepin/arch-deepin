@@ -1,0 +1,11 @@
+<directory name="compiz-ubuntu" rev="20" srcmd5="eedcf082cc050e7f29ca14c1c2e4e0c8" vrev="20">
+  <serviceinfo code="succeeded" xsrcmd5="c74db78fe2c2ef83e6f0028408b0194e" />
+  <entry md5="ff6464050facb8abeeff8364eb5472a1" mtime="1397683563" name="0002_Fix_cmake_install_dir.patch" size="1225" />
+  <entry md5="b98ed1f64ab590617b6f0cdf587a2d51" mtime="1397683585" name="0003_Fix_python_install_command.patch" size="986" />
+  <entry md5="e3834efc175fce21b0e68689c9b26b13" mtime="1397683596" name="0004_Use_python2.patch" size="5051" />
+  <entry md5="b762cc21fcc7eb57175ee46c902ab520" mtime="1397683609" name="0005_Disable_Werror.patch" size="513" />
+  <entry md5="9d1a95f9ed4bda52ea7d4c50fb6171bb" mtime="1401309341" name="PKGBUILD" size="7430" />
+  <entry md5="7fddcdcc8b663091b23e174a50654232" mtime="1401309341" name="_service" size="476" />
+  <entry md5="0f4d2c0fc584f00eef662fb738bd0420" mtime="1397683622" name="compiz-ubuntu.install" size="2819" />
+  <entry md5="42a4a51a7cb008592dd75a55071db522" mtime="1397683636" name="compiz.reset" size="1188" />
+</directory>

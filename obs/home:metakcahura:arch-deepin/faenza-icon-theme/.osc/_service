@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">ppa.launchpad.net</param>
+    <param name="protocol">http</param>
+    <param name="path">/tiheum/equinox/ubuntu/pool/main/f/faenza-icon-theme/faenza-icon-theme_1.3.1.tar.gz</param>
+  </service>
+</services>

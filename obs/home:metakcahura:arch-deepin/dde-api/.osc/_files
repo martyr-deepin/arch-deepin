@@ -1,0 +1,6 @@
+<directory name="dde-api" rev="43" srcmd5="9078e8cf2852479294cd26a7da0949c0" vrev="43">
+  <serviceinfo code="succeeded" xsrcmd5="dde12ec6d35ed794c2fbcd5fd727a204" />
+  <entry md5="54687d7dc517f771e8a915efc529c8a2" mtime="1403048493" name="PKGBUILD" size="1696" />
+  <entry md5="51bc83386e43e9901d6ff0c80c7f501a" mtime="1400739108" name="_service" size="459" />
+  <entry md5="e0bdcb3fd4da31a6060041e83cb22ec1" mtime="1400543186" name="makefile.patch" size="461" />
+</directory>

@@ -1,0 +1,5 @@
+<directory name="python2-pyquery" rev="5" srcmd5="957ebdeb82f09d98b677c4c3673284eb" vrev="5">
+  <serviceinfo code="succeeded" xsrcmd5="c4e582974235cf605f6fb84cfaafe9e1" />
+  <entry md5="3ab012b0efd508e737f8c2f0644bd35a" mtime="1400748295" name="PKGBUILD" size="1603" />
+  <entry md5="3ec3bb319488a7c05b4f54f6176ca236" mtime="1400748237" name="_service" size="419" />
+</directory>

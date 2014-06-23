@@ -1,0 +1,9 @@
+<directory name="acpid" rev="7" srcmd5="4f011d21da4e657d2f84ddc755856f52" vrev="7">
+  <serviceinfo code="succeeded" xsrcmd5="fcdc2ddb426c2b3f2d801ef63cbd2388" />
+  <entry md5="e6d5163b43fb8e1576c3ce32c28dc292" mtime="1398250389" name="PKGBUILD" size="1455" />
+  <entry md5="cf7ce6091029182f82bd3a3a970ffda9" mtime="1398250313" name="_service" size="235" />
+  <entry md5="79cc7a9dceacdeffd51f070c2ba5f023" mtime="1397642816" name="acpid.service" size="154" />
+  <entry md5="d11700eb136e0489835ddaf977a7905b" mtime="1397642817" name="acpid.socket" size="119" />
+  <entry md5="2d37b98d6e74bab815604b8b48c6cfd4" mtime="1397642817" name="anything" size="84" />
+  <entry md5="47f44ff5f02685dce8bcdab8568f0c38" mtime="1397642818" name="handler.sh" size="1837" />
+</directory>

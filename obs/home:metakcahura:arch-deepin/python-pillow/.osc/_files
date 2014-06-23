@@ -1,0 +1,5 @@
+<directory name="python-pillow" rev="3" srcmd5="5b4b55abc52eda7e98b35ba7298bc068" vrev="3">
+  <serviceinfo code="succeeded" xsrcmd5="5aa65d99c120b08e90f153bb64c33b1a" />
+  <entry md5="ae0ef58b5b8467499488bd290957052e" mtime="1397595724" name="PKGBUILD" size="2218" />
+  <entry md5="b6690a853bfce02f556bcc35d4e83ee7" mtime="1397595672" name="_service" size="229" />
+</directory>

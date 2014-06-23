@@ -1,0 +1,13 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/deepin-ui.git</param>
+    <param name="filename">deepin-ui</param>
+    <param name="versionformat">@PARENT_TAG@.git%cd~%h</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+  <service name="set_version"/>
+</services>

@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">cli-apps.org</param>
+    <param name="protocol">http</param>
+    <param name="path">/CONTENT/content-files/86010-xcur2png-0.7.1.tar.gz</param>
+  </service>
+</services>

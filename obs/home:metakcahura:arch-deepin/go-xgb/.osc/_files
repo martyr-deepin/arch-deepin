@@ -1,0 +1,5 @@
+<directory name="go-xgb" rev="29" srcmd5="7c94020a78c283c994251e60e88df621" vrev="29">
+  <serviceinfo code="succeeded" xsrcmd5="e6faf072da0b8ee844e9dbe55de1f9b9" />
+  <entry md5="3d0b1468a7cc97d9fcb3a05932620c4b" mtime="1403024604" name="PKGBUILD" size="1264" />
+  <entry md5="4d2728d5046a7bb4bac7f797717b2fbd" mtime="1402972544" name="_service" size="448" />
+</directory>

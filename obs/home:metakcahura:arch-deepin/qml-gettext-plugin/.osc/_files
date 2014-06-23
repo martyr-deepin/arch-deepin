@@ -1,0 +1,5 @@
+<directory name="qml-gettext-plugin" rev="11" srcmd5="55616eeefc119035712b020dd1000ea4" vrev="11">
+  <serviceinfo code="succeeded" xsrcmd5="6f0516ca1a18fb38cf29e80d2be5437d" />
+  <entry md5="d8630c1488ff60178ac43fb14f41a038" mtime="1401309682" name="PKGBUILD" size="807" />
+  <entry md5="84dca4d5f225768d92404c430f2caf42" mtime="1401140013" name="_service" size="481" />
+</directory>

@@ -1,0 +1,5 @@
+<directory name="chrpath" rev="2" srcmd5="1d85e27b7fc07cc5ee6af25dbdf45bea" vrev="2">
+  <serviceinfo code="succeeded" xsrcmd5="09a1c8638d4162d007f6241190164bd4" />
+  <entry md5="8506cb9273b91222c0edaef2878ef028" mtime="1394552737" name="PKGBUILD" size="823" />
+  <entry md5="923d9b5e4fa6b7a8d8b3ba4d7161eed4" mtime="1394552717" name="_service" size="241" />
+</directory>

@@ -1,0 +1,7 @@
+<directory name="deepin-pygtk" rev="5" srcmd5="4cbac7d7fb06bc76dd3e9d8a7da16173" vrev="5">
+  <serviceinfo code="succeeded" xsrcmd5="bd76748d895ffff88f8dd9c6193a864d" />
+  <entry md5="bb97a228132249e46018015e80e1fbb4" mtime="1397597120" name="PKGBUILD" size="1785" />
+  <entry md5="52970103dc20e3fd4d63f54d55811e20" mtime="1397597076" name="_service" size="250" />
+  <entry md5="996dbf3f9080c6703c7f79d1b6e48ef9" mtime="1397597447" name="pygtk_2.24.0-4~saucy.debian.tar.gz" size="16830" />
+  <entry md5="12acfacd26f19c504a0a2d0edeb66121" mtime="1397596775" name="python27.patch" size="1533" />
+</directory>

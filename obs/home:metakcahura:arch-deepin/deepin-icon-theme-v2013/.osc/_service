@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">test.packages.linuxdeepin.com</param>
+    <param name="protocol">http</param>
+    <param name="path">/deepin/pool/main/d/deepin-icon-theme-v2013/deepin-icon-theme-v2013_1.0-1.tar.gz</param>
+  </service>
+</services>

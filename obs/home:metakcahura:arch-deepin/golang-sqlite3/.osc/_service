@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">test.packages.linuxdeepin.com</param>
+    <param name="protocol">http</param>
+    <param name="path">/deepin/pool/main/g/golang-sqlite3/golang-sqlite3_0.0~git20140609.orig.tar.xz</param>
+  </service>
+</services>

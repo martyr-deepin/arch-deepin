@@ -1,0 +1,10 @@
+<directory name="icu48" rev="8" srcmd5="527d15d875592e00a46647068135671d" vrev="8">
+  <serviceinfo code="succeeded" xsrcmd5="03adf008c5c28fba0e8c5eeceec43e3a" />
+  <entry md5="835c9e3ae0b76aa88a6ce144a42a3bce" mtime="1398267653" name="CVE-2011-4599.patch" size="1051" />
+  <entry md5="9528996e1e2099bb79d25fbd799a511e" mtime="1398267663" name="CVE-2013-0900.patch" size="10881" />
+  <entry md5="c7f04b9b86b9f9f50d48eda157df3abd" mtime="1398267716" name="PKGBUILD" size="1702" />
+  <entry md5="b2c6667a7ea9630d79ca7c4b63bfadb3" mtime="1398267637" name="_service" size="237" />
+  <entry md5="6602e6d9727376174cbb1b688e5e3325" mtime="1398267675" name="indic-ccmp.patch" size="2191" />
+  <entry md5="9581cfaccbf93b6d6f7f7644bebcdafa" mtime="1398267695" name="malayalam-rendering.patch" size="6833" />
+  <entry md5="a6a9daa1e3655c5058148af8903a443b" mtime="1398267705" name="mlym-crash.patch" size="958" />
+</directory>

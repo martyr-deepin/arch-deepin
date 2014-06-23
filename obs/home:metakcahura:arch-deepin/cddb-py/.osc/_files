@@ -1,0 +1,5 @@
+<directory name="cddb-py" rev="1" srcmd5="6a7b8fd51c2d47e374d9f931a93ee91b" vrev="1">
+  <serviceinfo code="succeeded" xsrcmd5="28f6ef655ed452e3a626102be8dd37e7" />
+  <entry md5="ab7bcf49980c200eacce1ba859c3c120" mtime="1400747557" name="PKGBUILD" size="738" />
+  <entry md5="03d93b3c8683ba1a9f382cd1fd1800f9" mtime="1400747558" name="_service" size="232" />
+</directory>

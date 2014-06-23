@@ -1,0 +1,5 @@
+<directory name="cython" rev="3" srcmd5="e849ff02e1f8408b57ce1674563383b4" vrev="3">
+  <serviceinfo code="succeeded" xsrcmd5="3c0434554d4943451b41ed765aee4c64" />
+  <entry md5="d3dd10c09fd9de1b8dc38b8f47cea6af" mtime="1399391439" name="PKGBUILD" size="878" />
+  <entry md5="700a96674b0d1869ff7896604fe4732d" mtime="1400871739" name="_service" size="210" />
+</directory>

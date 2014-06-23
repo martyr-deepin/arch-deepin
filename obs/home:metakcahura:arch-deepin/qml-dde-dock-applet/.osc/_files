@@ -1,0 +1,5 @@
+<directory name="qml-dde-dock-applet" rev="7" srcmd5="4d3e510a489a3a5b3ae61db0b04b0f7d" vrev="7">
+  <serviceinfo code="succeeded" xsrcmd5="14a9cdaaf26e6318ed0eb02a0bf9906a" />
+  <entry md5="6aef638cc725718ad1f9be144eb3ca8f" mtime="1401447751" name="PKGBUILD" size="610" />
+  <entry md5="c1d1cc8eb8709495610e4712b62154ef" mtime="1401314695" name="_service" size="483" />
+</directory>

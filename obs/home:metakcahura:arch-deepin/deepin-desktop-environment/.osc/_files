@@ -1,0 +1,13 @@
+<directory name="deepin-desktop-environment" rev="93" srcmd5="5290ff90f0cc023eb4ee9fadafc4bc1a" vrev="93">
+  <serviceinfo code="succeeded" xsrcmd5="96cbc14a36e43b53699847b6704527ba" />
+  <entry md5="abff38dd4a491038036c437bdf9463fb" mtime="1400733408" name="30-deepin-inotify-limit.conf" size="40" />
+  <entry md5="012467f67748772c361ef0684fbcc53f" mtime="1403048551" name="PKGBUILD" size="2286" />
+  <entry md5="feed5eaa36899ac0b8815ea6305eb474" mtime="1400773582" name="_service" size="515" />
+  <entry md5="70e0a84102c45fda9d7e2c996f164272" mtime="1400773582" name="dde-account.conf" size="353" />
+  <entry md5="30cdbc9b9039fd605660730fa5ad21c6" mtime="1397678939" name="deepin-desktop-environment.install" size="194" />
+  <entry md5="5497b9f557b767f34cbc9afe184c6898" mtime="1401328606" name="default-display-manager" size="17" />
+  <entry md5="051cc88c7307fa8bffe072e4096b822d" mtime="1400733410" name="default-terminal.c" size="717" />
+  <entry md5="d58820b8b184d4f3c58926855d18a4fc" mtime="1401054685" name="guide-app.patch" size="330" />
+  <entry md5="474416573fb69433c7add04fc3488319" mtime="1400733410" name="lightdm-deepin-greeter.desktop" size="167" />
+  <entry md5="24d23776728d502f178554612e411ce0" mtime="1400733411" name="lightdm.pkla" size="262" />
+</directory>

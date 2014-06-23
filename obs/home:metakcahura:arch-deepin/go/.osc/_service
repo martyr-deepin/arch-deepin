@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">storage.googleapis.com</param>
+    <param name="protocol">https</param>
+    <param name="path">/golang/go1.3rc2.linux-386.tar.gz</param>
+  </service>
+<service name="download_url"><param name="host">storage.googleapis.com</param><param name="protocol">https</param><param name="path">/golang/go1.3rc2.linux-amd64.tar.gz</param></service></services>

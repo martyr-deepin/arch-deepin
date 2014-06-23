@@ -1,0 +1,8 @@
+<package name="deepin-icon-theme-v2013" project="home:metakcahura:arch-deepin">
+  <title></title>
+  <description></description>
+  <build>
+    <disable/>
+  </build>
+</package>
+

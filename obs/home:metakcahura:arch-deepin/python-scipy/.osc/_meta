@@ -1,0 +1,8 @@
+<package name="python-scipy" project="home:metakcahura:arch-deepin">
+  <title></title>
+  <description></description>
+  <publish>
+    <disable/>
+  </publish>
+</package>
+

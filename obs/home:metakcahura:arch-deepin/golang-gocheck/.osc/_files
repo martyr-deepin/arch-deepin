@@ -1,0 +1,5 @@
+<directory name="golang-gocheck" rev="7" srcmd5="ceb7a486629ab390e64a5297e0c2f26d" vrev="7">
+  <serviceinfo code="succeeded" xsrcmd5="d6898cc92931f8487cc8c8fa28f906db" />
+  <entry md5="4f34e16ccaa247ce75b1b60c8c3c221f" mtime="1402974301" name="PKGBUILD" size="1356" />
+  <entry md5="4bd494740a65639598580ac3d8b3fd34" mtime="1402974302" name="_service" size="525" />
+</directory>

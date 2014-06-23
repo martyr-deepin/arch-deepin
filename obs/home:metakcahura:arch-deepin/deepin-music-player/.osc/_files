@@ -1,0 +1,7 @@
+<directory name="deepin-music-player" rev="13" srcmd5="502449c9ad86634bb3360b3426cfa5dc" vrev="13">
+  <serviceinfo code="succeeded" xsrcmd5="11fc326ad60987ff73d691b8ec432645" />
+  <entry md5="e4cc63431989f98647a007700360ce60" mtime="1401436399" name="PKGBUILD" size="1542" />
+  <entry md5="33de99697711cb3380b392cf8d425bb5" mtime="1400745950" name="_service" size="479" />
+  <entry md5="eb67e7fe5872c3214001955346f94c9a" mtime="1401309887" name="deepin-music-player.install" size="127" />
+  <entry md5="e543e902598c4a0090b1a0930a0188b9" mtime="1346564541" name="deepin-music-player.png" size="12866" />
+</directory>

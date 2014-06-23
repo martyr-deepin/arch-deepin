@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">downloads.sourceforge.net</param>
+    <param name="protocol">http</param>
+    <param name="path">/mediainfo/libmediainfo_0.7.69.tar.bz2</param>
+  </service>
+</services>

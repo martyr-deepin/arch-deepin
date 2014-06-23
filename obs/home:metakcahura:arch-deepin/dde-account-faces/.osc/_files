@@ -1,0 +1,5 @@
+<directory name="dde-account-faces" rev="7" srcmd5="a2f81f5ede0d75ece5ed7d8504bbaa3f" vrev="7">
+  <serviceinfo code="succeeded" xsrcmd5="92a0501b67b6ea4e244c69e8a6758371" />
+  <entry md5="3e7a29eef4948486fa4093b6d72c8ce3" mtime="1401224786" name="PKGBUILD" size="713" />
+  <entry md5="583dd3305803b4d7ca400a74f10e658c" mtime="1400543173" name="_service" size="277" />
+</directory>

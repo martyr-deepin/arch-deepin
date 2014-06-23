@@ -1,0 +1,5 @@
+<directory name="python2-ass" rev="7" srcmd5="866263d05a1be360853cf0c9d07b449c" vrev="7">
+  <serviceinfo code="succeeded" xsrcmd5="ffb46830bf302ca34cc6350682306972" />
+  <entry md5="495a2eb399e466de64b45203d5aec920" mtime="1401140320" name="PKGBUILD" size="871" />
+  <entry md5="e377b9c40bd98856dc1785d7fdc2ea99" mtime="1400617898" name="_service" size="256" />
+</directory>

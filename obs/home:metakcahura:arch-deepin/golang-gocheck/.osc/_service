@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">test.packages.linuxdeepin.com</param>
+    <param name="protocol">http</param>
+    <param name="path">/deepin/pool/main/g/golang-gocheck/golang-gocheck_0.0~bzr20131118%2b85.orig.tar.gz</param>
+  </service>
+<service name="download_url"><param name="host">test.packages.linuxdeepin.com</param><param name="protocol">http</param><param name="path">/deepin/pool/main/g/golang-gocheck/golang-gocheck_0.0~bzr20131118%2b85-4.debian.tar.gz</param></service></services>

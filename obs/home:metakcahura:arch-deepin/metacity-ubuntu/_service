@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">ftp.gnome.org</param>
+    <param name="protocol">http</param>
+    <param name="path">/pub/gnome/sources/metacity/2.34/metacity-2.34.13.tar.xz</param>
+  </service>
+<service name="download_url"><param name="host">launchpad.net</param><param name="protocol">https</param><param name="path">/ubuntu/+archive/primary/+files/metacity_2.34.13-0ubuntu4.debian.tar.gz</param></service></services>

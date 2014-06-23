@@ -1,0 +1,6 @@
+<directory name="python2-xpyb" rev="7" srcmd5="976203a38865da018a5f89d726aacdd3" vrev="7">
+  <serviceinfo code="succeeded" xsrcmd5="63820988b30d9884e9e4c99789670197" />
+  <entry md5="166e5bdf37b7b127dbf53493a330b764" mtime="1397693054" name="64.patch" size="487" />
+  <entry md5="17c92703e3dc09c4911f3bb1aaa2d3a4" mtime="1397693363" name="PKGBUILD" size="1029" />
+  <entry md5="28e28eaf638ca8e0d0ac406f3db41893" mtime="1397693029" name="_service" size="214" />
+</directory>

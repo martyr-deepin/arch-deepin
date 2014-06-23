@@ -1,0 +1,7 @@
+<directory name="deepin-webkit" rev="15" srcmd5="6b79b536f82301f925affee4397ae4f5" vrev="15">
+  <serviceinfo code="succeeded" xsrcmd5="a589611e4d82a0f56bcdc4342bfd3d2d" />
+  <entry md5="ac866fe0094877f5bd0f22a0eff5bd4d" mtime="1369370379" name="DerivedSources.tar.gz" size="4565" />
+  <entry md5="36b662cbf9ddaeb09a6e81ac71f60edc" mtime="1400612317" name="PKGBUILD" size="1718" />
+  <entry md5="9b7bafe9c89721047bf8dcb387986d5a" mtime="1397587790" name="_service" size="287" />
+  <entry md5="243fb8031cd3953aa54bf95a97a747f9" mtime="1397613366" name="webkit-gtk-1.8.2-bison-2.6.patch" size="15394" />
+</directory>
