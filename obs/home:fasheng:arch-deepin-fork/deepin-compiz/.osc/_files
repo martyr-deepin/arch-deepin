@@ -1,0 +1,10 @@
+<directory name="deepin-compiz" rev="2" srcmd5="37481b3802253fe9fb24ab2107522eaa" vrev="2">
+  <serviceinfo code="failed">
+    <error>service download_url failed:
+Running /usr/lib/obs/service/download_url --host packages.linuxdeepin.com --protocol http --path /deepin/pool/main/c/compiz/compiz_0.9.99-1+git20131121164514~f6a5cddae2.tar.gz --outdir /lxc.tmp.16143/out</error>
+  </serviceinfo>
+  <entry md5="bb139bcba2f7b4636373daa380da4ef6" mtime="1403529787" name="PKGBUILD" size="3791" />
+  <entry md5="8394c566ccff4664cfb4ff96e62b3729" mtime="1403496602" name="_service" size="274" />
+  <entry md5="ecb23b765f690d4ab87463f52bc00418" mtime="1403496604" name="compiz.install" size="732" />
+  <entry md5="fb78a696aaabc856de3aeef98202a0d7" mtime="1403496605" name="fix-boost-interfaces.patch" size="13354" />
+</directory>

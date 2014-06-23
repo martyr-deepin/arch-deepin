@@ -1,3 +1,3 @@
 <project name="home:fasheng:arch-deepin-fork">
-  <package name="patchinfo" state=" " />
+  <package name="deepin-compiz" state=" " />
 </project>
