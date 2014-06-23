@@ -49,19 +49,14 @@ update_local_git() {
 }
 
 ###* Test
-# (
-#     local url="${deepin_pkgsite}/deepin/pool/main/c/compiz"
-#     local filereg="compiz_.*?\.tar.gz"
-#     local makepkg="false"
-#     local upload="false"
-#     update_pkg "deepin-compiz"
-# )
 (
-    local url="${deepin_pkgsite}/deepin/pool/main/g/grub-themes-deepin"
-    local filereg="grub-themes-deepin_.*?\.tar.gz"
+    local url="${deepin_pkgsite}/deepin/pool/main/c/compiz"
+    local filereg="compiz_.*?\.tar.gz"
+    local makepkg="true"
     local upload="false"
-    update_pkg "grub2-themes-deepin"
+    update_pkg "deepin-compiz"
 )
+
 exit
 
 ###* Main loop
@@ -74,6 +69,12 @@ exit
 (
     local upload="false"
     update_pkg "deepin-default-gsettings"
+)
+(
+    local url="${deepin_pkgsite}/deepin/pool/main/g/grub-themes-deepin"
+    local filereg="grub-themes-deepin_.*?\.tar.gz"
+    local upload="false"
+    update_pkg "grub2-themes-deepin"
 )
 update_pkg "deepin-game-center"
 update_pkg "deepin-media-player"

@@ -4,23 +4,23 @@
 # Contributor: Nathan Hulse <nat.hulse@gmail.com>
 
 pkgname=deepin-compiz
-pkgver=0.9.8.6_git20131121164514
+pkgver=0.9.8.6_4+git20140507164843~2e85d002e7
 pkgrel=1
 pkgdesc='A forked compiz for Linux Deepin desktop environment'
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'MIT')
 url="http://www.linuxdeepin.com/"
-depends=('boost' 'gnome-settings-daemon' 'xorg-server' 'libxcomposite' 'startup-notification' 'librsvg' 'dbus' 'mesa' 'libxslt' 'fuse' 'glibmm' 'libxrender' 'gmock' 'libwnck' 'pygtk' 'desktop-file-utils' 'pyrex' 'protobuf' 'dconf' 'gtk2')
-makedepends=('intltool' 'cmake')
+depends=('gnome-settings-daemon' 'xorg-server' 'libxcomposite' 'startup-notification' 'librsvg' 'dbus' 'mesa' 'libxslt' 'fuse' 'glibmm' 'libxrender' 'gmock' 'libwnck' 'pygtk' 'desktop-file-utils' 'pyrex' 'protobuf' 'dconf' 'gtk2')
+makedepends=('intltool' 'cmake' 'boost')
 provides=('compiz=0.9')
 conflicts=('compiz-bzr' 'compiz-core' 'compiz-fusion-plugins-main' 'compiz-fusion-plugins-extra' 'compiz-decorator-gtk' 'compiz-decorator-kde' 'libcompizconfig' 'compizconfig-python' 'compizconfig-backend-gconf' 'compiz-bcop' 'ccsm')
 replaces=('compiz-bzr' 'compiz-core' 'compiz-fusion-plugins-main' 'compiz-fusion-plugins-extra' 'compiz-decorator-gtk' 'compiz-decorator-kde' 'libcompizconfig' 'compizconfig-python' 'compizconfig-backend-gconf' 'compiz-bcop' 'ccsm')
 install='compiz.install'
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/c/compiz/compiz_0.9.99-1+git20131121164514~f6a5cddae2.tar.gz
+_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/c/compiz/compiz_0.9.99-4+git20140507164843~2e85d002e7.tar.gz
 source=("${_fileurl}"
     "fix-boost-interfaces.patch")
-md5sums=('f421ed38ede5c015a74073efeaa32dc8'
+md5sums=('32aa1f833bbc8ced1ebe1547a46fba50'
     'fb78a696aaabc856de3aeef98202a0d7')
 
 _filename="$(basename "${_fileurl}")"
@@ -84,6 +84,4 @@ package() {
     cd "${srcdir}/${_innerdir}"
     install -dm755 "${pkgdir}"/etc/X11/Xsession.d/
     install -m644 debian/65compiz_profile-on-session "${pkgdir}"/etc/X11/Xsession.d/
-
-    rm "${pkgdir}"/usr/share/glib-2.0/schemas/compiz.gschema.override
 }
