@@ -10,7 +10,7 @@ pkgdesc='A forked compiz for Linux Deepin desktop environment'
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'MIT')
 url="http://www.linuxdeepin.com/"
-depends=('gnome-settings-daemon' 'xorg-server' 'libxcomposite' 'startup-notification' 'librsvg' 'dbus' 'mesa' 'libxslt' 'fuse' 'glibmm' 'libxrender' 'gmock' 'libwnck' 'pygtk' 'desktop-file-utils' 'pyrex' 'protobuf' 'dconf' 'gtk2')
+depends=('gnome-settings-daemon' 'xorg-server' 'libxcomposite' 'startup-notification' 'librsvg' 'dbus' 'mesa' 'libxslt' 'fuse' 'glibmm' 'libxrender' 'libwnck' 'pygtk' 'desktop-file-utils' 'pyrex' 'protobuf' 'dconf' 'gtk2')
 makedepends=('intltool' 'cmake' 'boost')
 provides=('compiz=0.9')
 conflicts=('compiz-bzr' 'compiz-core' 'compiz-fusion-plugins-main' 'compiz-fusion-plugins-extra' 'compiz-decorator-gtk' 'compiz-decorator-kde' 'libcompizconfig' 'compizconfig-python' 'compizconfig-backend-gconf' 'compiz-bcop' 'ccsm')

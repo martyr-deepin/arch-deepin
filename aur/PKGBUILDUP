@@ -51,10 +51,11 @@ update_local_git() {
 ###* Test
 
 (
-    local url="${deepin_pkgsite}/deepin/pool/main/g/grub-themes-deepin"
-    local filereg="grub-themes-deepin_.*?\.tar.gz"
+    local url="${deepin_pkgsite}/deepin/pool/main/c/compiz"
+    local filereg="compiz_.*?\.tar.gz"
+    local makepkg="true"
     local upload="false"
-    update_pkg "grub-themes-deepin"
+    update_pkg "deepin-compiz"
 )
 exit
 
@@ -66,11 +67,10 @@ exit
 # update_pkg "deepin-icon-theme"
 
 (
-    local url="${deepin_pkgsite}/deepin/pool/main/c/compiz"
-    local filereg="compiz_.*?\.tar.gz"
-    local makepkg="true"
+    local url="${deepin_pkgsite}/deepin/pool/main/g/grub-themes-deepin"
+    local filereg="grub-themes-deepin_.*?\.tar.gz"
     local upload="false"
-    update_pkg "deepin-compiz"
+    update_pkg "grub-themes-deepin"
 )
 (
     local upload="false"
