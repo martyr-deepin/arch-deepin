@@ -8,6 +8,7 @@ pkgdesc='Default gsettings schemas for Linux Deepin'
 arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('GPL2')
+groups=('deepin')
 depends=()
 install="${pkgname}.install"
 

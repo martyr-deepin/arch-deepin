@@ -8,6 +8,7 @@ pkgdesc='Grub2 themes from Linux Deepin'
 arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('GPL2')
+groups=('deepin')
 depends=('grub')
 
 _fileurl=http://packages.linuxdeepin.com/deepin/pool/main/g/grub-themes-deepin/grub-themes-deepin_0.1.orig.tar.gz

@@ -1,6 +1,6 @@
-<directory name="deepin-default-gsettings" rev="1" srcmd5="87e6f0013fdcc8fd9d115bd061edf4f2" vrev="1">
-  <serviceinfo code="succeeded" xsrcmd5="8af64ce425e291b792aedcae84d20dd8" />
-  <entry md5="a49fa543ade5b055ce9eb988488cea57" mtime="1403536088" name="PKGBUILD" size="1031" />
+<directory name="deepin-default-gsettings" rev="2" srcmd5="41c0e802e75cbd35b11a68fa51b86e2d" vrev="2">
+  <serviceinfo code="succeeded" xsrcmd5="a7fb85af88d3eed7bc8c7ab0de9d25c2" />
+  <entry md5="74f6602df2644315c0f6d472260fb493" mtime="1403536810" name="PKGBUILD" size="1049" />
   <entry md5="229749d509628a31ee1a4f451c58b70b" mtime="1403536089" name="_service" size="302" />
   <entry md5="37d2d23ac89b0c15cda11e169066d7ee" mtime="1403536091" name="deepin-default-gsettings.install" size="292" />
 </directory>
