@@ -1,5 +1,5 @@
-<directory name="protobuf" rev="1" srcmd5="0c334745c52bf647d089c950de8f5fd8" vrev="1">
-  <serviceinfo code="succeeded" xsrcmd5="1a3a3ab96174c7e14cbd47f21c4f97af" />
-  <entry md5="ddcd6cd650900c6141c9723dc7f3faf2" mtime="1397609689" name="PKGBUILD" size="1125" />
+<directory name="protobuf" rev="2" srcmd5="3bbb50fee3d377914fcf30454d50eca2" vrev="2">
+  <serviceinfo code="succeeded" xsrcmd5="3aedd86f43f8c140feb72622321c480d" />
+  <entry md5="80d255385adffd355ccb06ac11352fac" mtime="1403536990" name="PKGBUILD" size="1240" />
   <entry md5="2291c82638e46765120eb2dd0645bda5" mtime="1403531749" name="_service" size="224" />
 </directory>
