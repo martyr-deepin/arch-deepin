@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">protobuf.googlecode.com/</param>
+    <param name="protocol">http</param>
+    <param name="path">files/protobuf-2.5.0.tar.bz2</param>
+  </service>
+</services>
