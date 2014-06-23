@@ -27,7 +27,8 @@ update_pkg() {
     fi
 
     local tplfile=${tplfile:-"./${pkgname}/${tplname}"}
-    local pkgverreg=${pkgverreg:-"git[^~_.-]*"}
+    # local pkgverreg=${pkgverreg:-"git[^~_.-]*"}
+    local pkgverreg=${pkgverreg:-"[^-]*~[a-z0-9]+"}
     local pkgrelreg=${pkgrelreg:-""} # ignore this argument
 
     # TODO
@@ -55,7 +56,13 @@ update_local_git() {
 #     local upload="false"
 #     update_pkg "deepin-compiz"
 # )
-# exit
+(
+    local url="${deepin_pkgsite}/deepin/pool/main/g/grub-themes-deepin"
+    local filereg="grub-themes-deepin_.*?\.tar.gz"
+    local upload="false"
+    update_pkg "grub2-themes-deepin"
+)
+exit
 
 ###* Main loop
 # (
@@ -64,6 +71,10 @@ update_local_git() {
 # )
 # update_pkg "deepin-icon-theme"
 
+(
+    local upload="false"
+    update_pkg "deepin-default-gsettings"
+)
 update_pkg "deepin-game-center"
 update_pkg "deepin-media-player"
 update_pkg "deepin-music-player"
