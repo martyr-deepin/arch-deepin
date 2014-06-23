@@ -1,6 +1,6 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-pkgname=grub2-themes-deepin
+pkgname=grub-themes-deepin
 pkgver=0.1
 pkgrel=1
 pkgdesc='Grub2 themes from Linux Deepin'
@@ -22,7 +22,6 @@ _install_copyright_and_changelog() {
 package() {
     cd "${srcdir}"
 
-    # _easycp "${pkgdir}"/usr/share/deepin-terminal/ app_theme
     cp -rf boot "${pkgdir}"
 
     _install_copyright_and_changelog

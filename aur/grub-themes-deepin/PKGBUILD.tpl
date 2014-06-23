@@ -1,6 +1,6 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-pkgname=grub2-themes-deepin
+pkgname=grub-themes-deepin
 pkgver=0.1
 pkgrel=1
 pkgdesc='Grub2 themes from Linux Deepin'
