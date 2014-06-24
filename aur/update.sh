@@ -1,5 +1,9 @@
 #!/bin/bash
 
+source helper.sh
+
+upload_cmd="burp -v %s"
+
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
 pkgsite="${_pkgsite}/deepin"
@@ -27,7 +31,13 @@ get_pkg_info() {
     pkg_file="${pkgname}_${pkg_version}.tar.gz"
     pkg_fileurl="${pkgsite}/${pkg_directory}/${pkg_file}"
     pkg_sha256sum=$(echo "$pkg_info" | awk 'BEGIN{RS="Checksums-Sha256:"}{if(NR==2){print}}' | grep "${pkg_file}" | awk '{print $1}')
+
+    # fix package version
+    pkg_version_fixed="${pkg_version%~*}"
+    pkg_version_fixed="${pkg_version_fixed/-/_}"
+
     echo "pkg_version: ${pkg_version}"
+    echo "pkg_version_fixed: ${pkg_version_fixed}"
     echo "pkg_directory: ${pkg_directory}"
     echo "pkg_file: ${pkg_file}"
     echo "pkg_fileurl: ${pkg_fileurl}"
@@ -39,39 +49,54 @@ gen_pkgbuild() {
     get_pkg_info "${pkgname}"
     (
         cd "${pkgname}"
-        sed -e "s/@pkgver@/${pkg_version}/g" \
+        sed -e "s/@pkgver@/${pkg_version_fixed}/g" \
             -e "s=@fileurl@=${pkg_fileurl}=g" \
             -e "s/@sha256sum@/${pkg_sha256sum}/g" "${pkgbuild_in}" > PKGBUILD
     )
 }
 
-make_pkg() {
+run_makepkg() {
     local pkgname=$1
-    (
-        cd "${pkgname}"
-    )
+    (cd "${pkgname}"; rm -rf src pkg; makepkg -f) || return 1
 }
 
-push_to_aur() {
+upload_pkg() {
     local pkgname=$1
-    (
-        cd "${pkgname}"
-    )
+
+    # generate a new package source
+    (cd "${pkgname}"; mkaurball -f) || return 1
+
+    local pkgsrc="$(ls --format=single-column --sort=time "${pkgname}"/*.src.tar.gz | head -1)"
+    local upcmd="$(printf "${upload_cmd}" "${pkgsrc}")"
+    printf "Uploading package source to AUR: %s...\n" "${pkgsrc}"
+    printf "Upload command: %s\n" "${upcmd}"
+    eval "${upcmd}" || return 1
+
 }
 
-update_pkg() {
+do_update_pkg() {
     local pkgname=$1
     echo "==> update package: ${pkgname}"
-    gen_pkgbuild "${pkgname}"
-    make_pkg "${pkgname}"
-    push_to_aur "${pkgname}"
+    gen_pkgbuild "${pkgname}" || return 1
+    run_makepkg "${pkgname}" || return 1
+    upload_pkg "${pkgname}" || return 1
     echo
 }
 
+update_pkg() {
+    do_update_pkg "$@"
+    if (( $? )); then
+        log_failed "$@"
+    else
+        log_success "$@"
+    fi
+}
+
 download_debian_source
-update_pkg "deepin-game-center"
+
+# update_pkg "deepin-game-center"
 # update_pkg "deepin-media-player"
-# update_pkg "deepin-music-player"
+update_pkg "deepin-music-player"
 # update_pkg "deepin-screenshot"
 # update_pkg "deepin-terminal"
 # update_pkg "deepin-ui"
