@@ -4,20 +4,20 @@
 # Contributor: flu
 
 pkgname=deepin-ui
-pkgver={% pkgver %}
+pkgver=@pkgver@
 pkgrel=1
 pkgdesc='UI toolkit for Linux Deepin'
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"
 license=('GPL3')
-depends=('deepin-utils' 'deepin-gsettings' 'deepin-pygtk-fix' 'python2-distribute' 'python2' 'glib2' 'python2-cairo' 'python2-imaging' 'libwebkit' 'python2-xlib' 'pywebkitgtk' 'libsoup')
+depends=('deepin-utils' 'deepin-gsettings' 'deepin-pygtk' 'python2-distribute' 'python2' 'glib2' 'python2-cairo' 'python2-imaging' 'libwebkit' 'python2-xlib' 'pywebkitgtk' 'libsoup')
 
-_fileurl={% fileurl %}
+_fileurl="@fileurl@"
 source=("${_fileurl}")
-md5sums=('{% md5 %}')
+sha256sums=('@sha256sum@')
 
 _filename="$(basename "${_fileurl}")"
-_filename="${_filename%.tar.gz}"
+_filename="${_filename%-*}"
 _innerdir="${_filename/_/-}"
 
 build(){

@@ -4,20 +4,20 @@
 # Contributor: flu
 
 pkgname=deepin-ui
-pkgver=git20140325085729
+pkgver=1.1_20140507164634
 pkgrel=1
 pkgdesc='UI toolkit for Linux Deepin'
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"
 license=('GPL3')
-depends=('deepin-utils' 'deepin-gsettings' 'deepin-pygtk-fix' 'python2-distribute' 'python2' 'glib2' 'python2-cairo' 'python2-imaging' 'libwebkit' 'python2-xlib' 'pywebkitgtk' 'libsoup')
+depends=('deepin-utils' 'deepin-gsettings' 'deepin-pygtk' 'python2-distribute' 'python2' 'glib2' 'python2-cairo' 'python2-imaging' 'libwebkit' 'python2-xlib' 'pywebkitgtk' 'libsoup')
 
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-ui/deepin-ui_1+git20140325085729~1db408f84b.tar.gz
+_fileurl="http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-ui/deepin-ui_1.1-20140507164634~df466b0600.tar.gz"
 source=("${_fileurl}")
-md5sums=('79feba22aed91c186c85a4526ca6f8e6')
+sha256sums=('2b783a6f2880ab25fd5bd1f23afef18358e7580464ba3bbbfd917c2e717ee038')
 
 _filename="$(basename "${_fileurl}")"
-_filename="${_filename%.tar.gz}"
+_filename="${_filename%-*}"
 _innerdir="${_filename/_/-}"
 
 build(){
