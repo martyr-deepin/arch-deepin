@@ -2,7 +2,7 @@
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 
 pkgname=deepin-game-center
-pkgver=1.0.1-20140610145314~db89cbb33f
+pkgver=1.0.1_20140610145314
 pkgrel=1
 pkgdesc="Game center for Linuxdeepin"
 arch=('any')
@@ -16,7 +16,7 @@ source=("${_fileurl}")
 sha256sums=('a7b79cb74565bb0363937d22509d55400c3db052742247fd351fce6dde33371e')
 
 _filename="$(basename "${_fileurl}")"
-_filename="${_filename%.tar.gz}"
+_filename="${_filename%-*}"
 _innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
