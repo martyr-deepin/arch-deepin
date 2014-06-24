@@ -2,14 +2,13 @@
 
 source helper.sh
 
-upload_cmd="burp -v %s"
-
 _pkgsite="http://packages.linuxdeepin.com"
 # _pkgsite="http://mirrors.ustc.edu.cn" # candidate server
 pkgsite="${_pkgsite}/deepin"
 deepin_debian_source="${pkgsite}/dists/trusty/main/source/Sources.gz"
-pkgbuild_in="PKGBUILD.in"
 tmp_source_file="/tmp/sources"
+pkgbuild_in="PKGBUILD.in"
+upload_cmd="burp -v %s"
 
 download_debian_source() {
     curl --retry 3 --retry-delay 3 -o "${tmp_source_file}".gz "${deepin_debian_source}"
@@ -94,11 +93,11 @@ update_pkg() {
 
 download_debian_source
 
-# update_pkg "deepin-game-center"
-# update_pkg "deepin-media-player"
-# update_pkg "deepin-music-player"
-# update_pkg "deepin-screenshot"
-# update_pkg "deepin-terminal"
+update_pkg "deepin-game-center"
+update_pkg "deepin-media-player"
+update_pkg "deepin-music-player"
+update_pkg "deepin-screenshot"
+update_pkg "deepin-terminal"
 update_pkg "deepin-ui"
 
 # rm -vf "${tmp_source_file}"
