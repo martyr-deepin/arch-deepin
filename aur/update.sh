@@ -97,8 +97,8 @@ download_debian_source
 # update_pkg "deepin-game-center"
 # update_pkg "deepin-media-player"
 # update_pkg "deepin-music-player"
-update_pkg "deepin-screenshot"
-# update_pkg "deepin-terminal"
+# update_pkg "deepin-screenshot"
+update_pkg "deepin-terminal"
 # update_pkg "deepin-ui"
 
 # rm -vf "${tmp_source_file}"

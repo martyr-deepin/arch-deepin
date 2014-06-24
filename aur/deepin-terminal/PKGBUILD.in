@@ -1,7 +1,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-terminal
-pkgver={% pkgver %}
+pkgver=@pkgver@
 pkgrel=1
 pkgdesc='Awesome terminal for Linux Deepin'
 arch=('any')
@@ -9,12 +9,12 @@ url="http://www.linuxdeepin.com/"
 license=('GPL2')
 depends=('deepin-ui' 'deepin-vte-plus' 'python2-dbus')
 
-_fileurl={% fileurl %}
+_fileurl="@fileurl@"
 source=("${_fileurl}")
-md5sums=('{% md5 %}')
+sha256sums=('@sha256sum@')
 
 _filename="$(basename "${_fileurl}")"
-_filename="${_filename%.tar.gz}"
+_filename="${_filename%-*}"
 _innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
