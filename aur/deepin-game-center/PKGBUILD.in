@@ -1,9 +1,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 
-
 pkgname=deepin-game-center
-pkgver={% pkgver %}
+pkgver=@pkgver@
 pkgrel=1
 pkgdesc="Game center for Linuxdeepin"
 arch=('any')
@@ -12,9 +11,9 @@ license=('GPL2')
 depends=('deepin-ui' 'flashplugin' 'hicolor-icon-theme' 'python2' 'python2-deepin-storm' 'python2-scipy' 'python2-jswebkit')
 install=${pkgname}.install
 
-_fileurl={% fileurl %}
+_fileurl="@fileurl@"
 source=("${_fileurl}")
-md5sums=('{% md5 %}')
+sha256sums=('@sha256sum@')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"
