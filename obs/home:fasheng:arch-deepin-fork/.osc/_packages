@@ -2,5 +2,4 @@
   <package name="deepin-compiz" state=" " />
   <package name="protobuf" state=" " />
   <package name="grub-themes-deepin" state=" " />
-  <package name="deepin-default-gsettings" state=" " />
 </project>

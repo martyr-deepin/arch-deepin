@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">packages.linuxdeepin.com</param>
-    <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/d/deepin-default-gsettings/deepin-default-gsettings_0.1-20140516154954~ebf15b5df7.tar.gz</param>
-  </service>
-</services>
