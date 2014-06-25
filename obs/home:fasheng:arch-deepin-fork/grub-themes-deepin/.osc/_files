@@ -1,5 +1,5 @@
-<directory name="grub-themes-deepin" rev="3" srcmd5="c343deb74a7560c08e241f84a7fbbe55" vrev="3">
-  <serviceinfo code="succeeded" xsrcmd5="a5110cd8ac414d89f7e0ab66dc004582" />
-  <entry md5="2d9d3a3c38289d630b80638783b54b4d" mtime="1403536795" name="PKGBUILD" size="547" />
-  <entry md5="93cebb40147f1b0c5fff32fae02030da" mtime="1403535610" name="_service" size="269" />
+<directory name="grub-themes-deepin" rev="4" srcmd5="86095bd0909d40cfecb3bd0cc0676093" vrev="4">
+  <serviceinfo code="succeeded" xsrcmd5="8b45b7f7df9fdce86a3bc8c8b486d59f" />
+  <entry md5="689a8aa3e3c4456f8a9104654cbe9771" mtime="1403667605" name="PKGBUILD" size="718" />
+  <entry md5="0d5d3bd8c1c29fef5cc858596224be19" mtime="1403667606" name="_service" size="270" />
 </directory>

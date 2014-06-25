@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">packages.linuxdeepin.com</param>
     <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/g/grub-themes-deepin/grub-themes-deepin_0.1.orig.tar.gz</param>
+    <param name="path">/deepin/pool/universe/g/grub-themes-deepin/grub-themes-deepin_0.5-9.tar.gz</param>
   </service>
 </services>
