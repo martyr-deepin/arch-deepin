@@ -8,7 +8,7 @@ pkgdesc="Game center for Linuxdeepin"
 arch=('any')
 url="https://github.com/linuxdeepin/deepin-game-center"
 license=('GPL2')
-depends=('deepin-ui' 'flashplugin' 'hicolor-icon-theme' 'python2' 'python2-deepin-storm' 'python2-scipy' 'python2-jswebkit')
+depends=('deepin-ui' 'flashplugin' 'hicolor-icon-theme' 'python2' 'python2-scipy' 'python2-jswebkit')
 install=${pkgname}.install
 
 _fileurl="http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-game-center/deepin-game-center_1.0.1-20140610145314~db89cbb33f.tar.gz"
