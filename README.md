@@ -32,11 +32,6 @@ More information to see the [topic](https://bbs.archlinux.org/viewtopic.php?id=1
   *Notice: this is still a testing version, if desktop blocked for
    issues, just kill startdde in another tty, :-)*
   
-# Issues
-  - some shortcuts not working
-  - boot menu in dde-control-center not working
-  - dde-shutdown will make screen blocked, so please just do not press `Ctrl-Alt-Delete`
-    
 # Troubleshooting
   - Why network in deepin-control-center not working?
   
