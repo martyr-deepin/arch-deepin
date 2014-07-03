@@ -1,7 +1,0 @@
-<directory name="deepin-compiz" rev="7" srcmd5="229aec2d12d10f0a1fd231f94dfaaa62" vrev="7">
-  <serviceinfo code="succeeded" xsrcmd5="7bb26ae863d9f1b794b260de43fd7388" />
-  <entry md5="6a259b7102fa9ba8d122a549f9dbcbf2" mtime="1403536768" name="PKGBUILD" size="3817" />
-  <entry md5="f51be90e158613f2d918ee469eddfb1c" mtime="1403530604" name="_service" size="274" />
-  <entry md5="ecb23b765f690d4ab87463f52bc00418" mtime="1403496604" name="compiz.install" size="732" />
-  <entry md5="fb78a696aaabc856de3aeef98202a0d7" mtime="1403496605" name="fix-boost-interfaces.patch" size="13354" />
-</directory>

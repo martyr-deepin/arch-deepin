@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">packages.linuxdeepin.com</param>
-    <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/c/compiz/compiz_0.9.99-4+git20140507164843~2e85d002e7.tar.gz</param>
-  </service>
-</services>

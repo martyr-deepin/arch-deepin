@@ -1,5 +1,0 @@
-<project name="home:fasheng:arch-deepin-fork">
-  <package name="deepin-compiz" state=" " />
-  <package name="protobuf" state=" " />
-  <package name="grub-themes-deepin" state=" " />
-</project>
