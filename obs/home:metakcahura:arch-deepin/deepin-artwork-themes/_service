@@ -4,7 +4,7 @@
     <param name="url">git://github.com/linuxdeepin/deepin-themes.git</param>
     <param name="filename">deepin-themes</param>
     <param name="versionformat">git%cd~%h</param>
-    <param name="versionprefix">14.04.1</param>
+    <param name="versionprefix">14.04.2</param>
   </service>
   <service name="recompress">
     <param name="file">*.tar</param>

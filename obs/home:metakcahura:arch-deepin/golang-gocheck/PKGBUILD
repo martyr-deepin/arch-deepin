@@ -5,7 +5,7 @@ pkgname=golang-gocheck
 _pkgver=0.0
 _pkgvergit=~bzr20131118+85
 pkgver=${_pkgver}${_pkgvergit}
-pkgrel=2
+pkgrel=5
 pkgdesc='Richer testing framework for Go libraries and applications to use'
 arch=('any')
 url="http://labix.org/gocheck"
@@ -15,9 +15,9 @@ groups=('deepin')
 options=(staticlibs)
 site="http://test.packages.linuxdeepin.com/deepin/pool/main/g"
 source=("${site}/${pkgname}/${pkgname}_${pkgver}.orig.tar.gz"
-        "${site}/${pkgname}/${pkgname}_${pkgver}-4.debian.tar.gz")
+        "${site}/${pkgname}/${pkgname}_${pkgver}-5.debian.tar.gz")
 sha256sums=('71ba0752af3cd04a42a95ef68c098d251430281c8461272df259d52d6092f7da'
-	    'bf469d86349402b7f2a17670b503ec747739aaa9ea860e39f911f463603b887e')
+	    '05ec3d7199e45d0df85b2708ec05e895e9a62c988dd130adb98a21a355a62e7a')
 
 prepare() {
 # apply patches

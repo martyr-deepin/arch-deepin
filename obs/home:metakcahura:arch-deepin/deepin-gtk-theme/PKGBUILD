@@ -2,8 +2,8 @@
 
 pkgname=deepin-gtk-theme
 _pkgver=14.07
-_pkgvergit=20140613144300~8ecd9c84db
-pkgver=${_pkgver}.git20140613~8ecd9c8
+_pkgvergit=20140620102152~82064e11b0
+pkgver=${_pkgver}.git20140620~82064e1
 pkgrel=0
 pkgdesc="Deepin GTK Theme."
 arch=('any')

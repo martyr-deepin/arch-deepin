@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">test.packages.linuxdeepin.com</param>
     <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/g/golang-gettext-go/golang-gettext-go_0.0~hg20140403.orig.tar.xz</param>
+    <param name="path">/deepin/pool/main/g/golang-gettext-go/golang-gettext-go_0.0~hg20140603.orig.tar.xz</param>
   </service>
 </services>

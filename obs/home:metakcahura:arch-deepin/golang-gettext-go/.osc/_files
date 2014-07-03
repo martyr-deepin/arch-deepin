@@ -1,5 +1,5 @@
-<directory name="golang-gettext-go" rev="3" srcmd5="1f727dc810cf1d12d98cecbc764ebf6f" vrev="3">
-  <serviceinfo code="succeeded" xsrcmd5="7d3c6990fe5ab4522eb86d80939483d4" />
-  <entry md5="d19601cf9ddf61e04f122a4be8872e07" mtime="1402973543" name="PKGBUILD" size="1188" />
-  <entry md5="040eb3376217e2f9232047fd15a944cf" mtime="1400598536" name="_service" size="282" />
+<directory name="golang-gettext-go" rev="4" srcmd5="66d2264216d5c611cb97b977451455b9" vrev="4">
+  <serviceinfo code="succeeded" xsrcmd5="5546ddd989271009b50f9eade927fb85" />
+  <entry md5="7e98477154d5d154669fbfe94167f1de" mtime="1403697670" name="PKGBUILD" size="1188" />
+  <entry md5="918d2c938be5825691349f4c792c3a6e" mtime="1403697671" name="_service" size="282" />
 </directory>

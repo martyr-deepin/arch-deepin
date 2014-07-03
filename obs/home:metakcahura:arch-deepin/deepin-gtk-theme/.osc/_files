@@ -1,5 +1,5 @@
-<directory name="deepin-gtk-theme" rev="23" srcmd5="75ede3df12106a091e9eff6e6d0fa372" vrev="23">
-  <serviceinfo code="succeeded" xsrcmd5="b78da642ad4dd84117072448403eb028" />
-  <entry md5="de104b24e042931b6958830e9bd8401a" mtime="1402762427" name="PKGBUILD" size="1256" />
-  <entry md5="74b6c2d55faa97f47fb393ec385c2b30" mtime="1402762427" name="_service" size="293" />
+<directory name="deepin-gtk-theme" rev="24" srcmd5="414a703e6404cc16fb9b605e4c64599a" vrev="24">
+  <serviceinfo code="succeeded" xsrcmd5="bca6e82a1df5de2b43ae6ea2c6573762" />
+  <entry md5="d8e737d048f95e2a992db23748959304" mtime="1403710057" name="PKGBUILD" size="1256" />
+  <entry md5="3ff8efd4783a205829836c3fd9f773ee" mtime="1403710058" name="_service" size="293" />
 </directory>

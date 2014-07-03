@@ -4,7 +4,7 @@
     <param name="url">git://github.com/linuxdeepin/deepin-game-center.git</param>
     <param name="filename">deepin-game-center</param>
     <param name="versionformat">git%cd~%h</param>
-    <param name="versionprefix">1.0.0</param>
+    <param name="versionprefix">1.0.1</param>
   </service>
   <service name="recompress">
     <param name="file">*.tar</param>

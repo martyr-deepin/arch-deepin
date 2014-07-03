@@ -12,6 +12,7 @@ depends=('gstreamer0.10-python' 'gstreamer0.10-bad-plugins' 'gstreamer0.10-good-
 	 'gstreamer0.10-ugly-plugins' 'mutagen' 'python2-chardet' 'python2-pyquery'
 	 'python2-cssselect' 'deepin-ui' 'python2-dbus' 'sonata' 'cddb-py' 'python2-scipy'
 	 'python2-pycurl' 'python2-xlib' 'python2-keybinder2' 'desktop-file-utils')
+makedepends=('libx264')
 groups=('deepin-extra')
 install="${pkgname}.install"
 source=("${pkgname}-${pkgver}.tar.xz")

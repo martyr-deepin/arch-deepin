@@ -9,7 +9,7 @@ url="https://github.com/linuxdeepin/dde"
 license=('GPL-2+')
 depends=('dde-control-center' 'deepin-menu' 'deepin-artwork'
 	 'deepin-webkit' 'cairo' 'python2')
-makedepends=('cmake' 'go>=1.3rc2' 'coffee-script' 'golang-gettext-go' 'gnome-desktop'
+makedepends=('cmake' 'go>=1.3' 'coffee-script' 'golang-gettext-go' 'gnome-desktop'
 	     'webkitgtk' 'dbus-glib' 'lightdm' 'gettext' 'libnotify' 'libxtst')
 optdepends=('lightdm: LightDM for lightdm-deepin-greeter')
 groups=('deepin')

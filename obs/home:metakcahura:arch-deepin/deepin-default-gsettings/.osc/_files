@@ -1,7 +1,7 @@
-<directory name="deepin-default-gsettings" rev="7" srcmd5="f8383f9c80982d63c32675dc2cc6a6fa" vrev="7">
-  <serviceinfo code="succeeded" xsrcmd5="b8a5d2601a39e29cf86d39f48af72d14" />
-  <entry md5="78bf3e6c8bb202a9eb5af849e47cb987" mtime="1401324787" name="PKGBUILD" size="1025" />
-  <entry md5="058f59ff51f0f1f342a5ac8ea5451a92" mtime="1401271720" name="_service" size="306" />
+<directory name="deepin-default-gsettings" rev="10" srcmd5="1563917a7ebe62c7c0c7a6c4d8b8b85d" vrev="10">
+  <serviceinfo code="succeeded" xsrcmd5="d3c0a4b5d650050362ac6a381ffdca33" />
+  <entry md5="e1331395c13f7aaeb12d99031b8e56bb" mtime="1403715968" name="PKGBUILD" size="846" />
+  <entry md5="2b90be30de568ed105c1fa3aa8493152" mtime="1403696636" name="_service" size="484" />
   <entry md5="a6c5e54b6e954a5687cf0a4d048979a2" mtime="1401324787" name="arch-fix.patch" size="336" />
   <entry md5="32499d6bb31dd5f86564b7e975a094d3" mtime="1401270797" name="deepin-default-gsettings.install" size="160" />
 </directory>

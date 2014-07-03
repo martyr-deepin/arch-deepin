@@ -3,7 +3,7 @@
 
 pkgname=deepin-artwork-themes
 _pkgname=deepin-themes
-pkgver=14.04.1
+pkgver=14.04.2
 pkgrel=1
 pkgdesc='Deepin artwork themes'
 arch=('any')
@@ -29,5 +29,5 @@ package() {
   python2 convert.py
   
   install -dm 755 "${pkgdir}"/usr/share/personalization
-  cp -R {cache,components,themes} "${pkgdir}"/usr/share/personalization/
+  cp -R {autogen,components,themes} "${pkgdir}"/usr/share/personalization/
 }

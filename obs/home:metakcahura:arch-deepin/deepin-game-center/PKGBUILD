@@ -30,7 +30,7 @@ prepare() {
 package() {
   cd "${pkgname}-${pkgver}"
 
-  install -dm 755 "${pkgdir}"/usr/{bin,share/{${pkgname},applications,icons/hicolor/48x48/apps}}
+  install -dm 755 "${pkgdir}"/usr/{bin,share/{deepin-game-center,applications,icons/hicolor/48x48/apps}}
 
   cp -rf {app_theme,image,locale,skin,src,static,weibo_skin,weibo_theme} "${pkgdir}"/usr/share/${pkgname}
 

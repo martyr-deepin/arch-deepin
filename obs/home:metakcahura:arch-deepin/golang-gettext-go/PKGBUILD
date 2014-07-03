@@ -3,9 +3,9 @@
 
 pkgname=golang-gettext-go
 _pkgver=0.0
-_pkgvergit=~hg20140403
+_pkgvergit=~hg20140603
 pkgver=${_pkgver}${_pkgvergit}
-pkgrel=2
+pkgrel=1
 pkgdesc="This package provides GNU gettext support."
 arch=('i686' 'x86_64')
 url="https://code.google.com/p/gettext-go/"
@@ -14,7 +14,7 @@ depends=('go>=1.3rc2')
 groups=('deepin')
 options=(staticlibs)
 source=("http://test.packages.linuxdeepin.com/deepin/pool/main/g/${pkgname}/${pkgname}_${pkgver}.orig.tar.xz")
-sha256sums=('6c6b90ca3beaed031cfbcc994795b2e484b96cef8857980733b990661ea8b206')
+sha256sums=('768a014e1d1e65ae67290a5c66703a3ed99870ab6971f34065eb8c2220a30b9e')
 
 build(){
   cd "$srcdir"

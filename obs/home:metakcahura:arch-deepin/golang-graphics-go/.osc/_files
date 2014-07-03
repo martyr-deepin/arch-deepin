@@ -1,5 +1,5 @@
-<directory name="golang-graphics-go" rev="4" srcmd5="33474673c0a8748c82dd8def5b07bddb" vrev="4">
-  <serviceinfo code="succeeded" xsrcmd5="d49d6967c13c29026c6e4690c6641482" />
-  <entry md5="20f76275c9a07ce80c4abddb420225de" mtime="1402974507" name="PKGBUILD" size="1181" />
+<directory name="golang-graphics-go" rev="11" srcmd5="95be9114aa2edeac14888015957a498e" vrev="11">
+  <serviceinfo code="succeeded" xsrcmd5="3c7e3b3d3e94b97270893068f29bd2ee" />
+  <entry md5="8ba503b8644cd46a82787b0e2584b3d4" mtime="1403700798" name="PKGBUILD" size="1181" />
   <entry md5="d8289820ce29527ecb9ec6c4d39f1754" mtime="1397807517" name="_service" size="285" />
 </directory>

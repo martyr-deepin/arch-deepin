@@ -1,7 +1,14 @@
 <services>
-  <service name="download_url">
-    <param name="host">test.packages.linuxdeepin.com</param>
-    <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/d/deepin-default-gsettings/deepin-default-gsettings_0.1-20140516154954~ebf15b5df7.tar.gz</param>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/default-gsettings.git</param>
+    <param name="filename">deepin-default-gsettings</param>
+    <param name="versionformat">git%cd~%h</param>
+    <param name="versionprefix">0.1</param>
   </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+  <service name="set_version"/>
 </services>

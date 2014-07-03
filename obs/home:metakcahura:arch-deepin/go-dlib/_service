@@ -5,6 +5,7 @@
     <param name="filename">go-dlib</param>
     <param name="versionformat">git%cd~%h</param>
     <param name="versionprefix">0.0.3</param>
+    <param name="revision"></param>
   </service>
   <service name="recompress">
     <param name="file">*.tar</param>

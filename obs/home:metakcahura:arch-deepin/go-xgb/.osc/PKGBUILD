@@ -3,12 +3,12 @@
 
 pkgname=go-xgb
 pkgver=git20140510~eabb7fe
-pkgrel=3
+pkgrel=4
 pkgdesc='XGB is the X protocol Go language Binding.'
 arch=('i686' 'x86_64')
 url="https://github.com/BurntSushi/xgb"
 license=('GPL2')
-depends=('go>=1.3rc2' 'xcb-proto')
+depends=('go>=1.3' 'xcb-proto')
 groups=('deepin')
 options=(staticlibs)
 source=("xgb-${pkgver}.tar.xz")

@@ -2,7 +2,7 @@
 
 import os
 
-PROXYER = '/usr/bin/dbus-proxyer-gen'
+PROXYER = '/usr/bin/dbus-generator'
 def generate_source(json,target):
     json_header = json.split('.in.json')[0]
     outdir = ''

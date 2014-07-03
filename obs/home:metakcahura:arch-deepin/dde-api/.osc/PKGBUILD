@@ -10,7 +10,7 @@ url="https://github.com/linuxdeepin/dde-api"
 license=('GPL2')
 depends=('go-dlib' 'dde-go-dbus-factory' 'gdk-pixbuf2' 'libxi'
 	 'libgnomekbd' 'libcanberra' 'go-xgb' 'go-xgbutil')
-makedepends=('go>=1.3rc2' 'gtk3' 'libpulse' 'gnome-desktop' 'libxtst')
+makedepends=('go>=1.3' 'gtk3' 'libpulse' 'gnome-desktop' 'libxtst')
 groups=('deepin')
 options=(staticlibs)
 source=("${pkgname}-${pkgver}.tar.xz")
@@ -24,7 +24,6 @@ build(){
   cd logger && GOPATH=`pwd` go build && cd ..
   cd lunar-calendar && GOPATH=`pwd` go build && cd ..
   cd mousearea && GOPATH=`pwd` go build && cd ..
-  cd pinyin-search && GOPATH=`pwd` go build && cd ..
   cd set-date-time && GOPATH=`pwd` go build && cd ..
   cd sound && GOPATH=`pwd` go build && cd ..
 }
@@ -41,5 +40,5 @@ package() {
   install -m 644 data/conf/*.conf "${pkgdir}"/etc/dbus-1/system.d/
   install -m 644 data/logrotate.d/* "${pkgdir}"/etc/logrotate.d/
   
-  install -m 755 {gra*/graphic,gru*/grub2ext,log*/logger,lun*/lunar-calendar,mou*/mousearea,pin*/pinyin-search,set*/set-date-time,sou*/sound} "${pkgdir}"/usr/lib/deepin-api
+  install -m 755 {gra*/graphic,gru*/grub2ext,log*/logger,lun*/lunar-calendar,mou*/mousearea,set*/set-date-time,sou*/sound} "${pkgdir}"/usr/lib/deepin-api/
 }

@@ -2,7 +2,7 @@
   <title></title>
   <description></description>
   <publish>
-    <enable/>
+    <disable/>
   </publish>
 </package>
 
