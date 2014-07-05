@@ -6,11 +6,13 @@ you could find them in
 
 And now, thanks @metak's great job, we could install all them more easily
 through his OBS repository, just add following code to
-/etc/pacman.conf
+/etc/pacman.conf (if you download or checking package with problems,
+just use the alternative server)
 
     [home_metakcahura_arch-deepin_Arch_Extra]
     SigLevel = Never
     Server = http://download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
+    #Server = http://anorien.csc.warwick.ac.uk/mirrors/download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
 
 Then
     
