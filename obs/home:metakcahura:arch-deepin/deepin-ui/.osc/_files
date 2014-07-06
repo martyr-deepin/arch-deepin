@@ -1,5 +1,5 @@
-<directory name="deepin-ui" rev="13" srcmd5="5e9807361513b3ddbd4c716cb43b891c" vrev="13">
-  <serviceinfo code="succeeded" xsrcmd5="71c63dde6bef1810e57b03a1c8f51495" />
+<directory name="deepin-ui" rev="14" srcmd5="fa4f5561d07b63fddbc0608516ca3473" vrev="14">
+  <serviceinfo code="succeeded" xsrcmd5="26807fafda5c065f067270ad97e2f71d" />
   <entry md5="667dfd6e4362467d928d5c76752fef7e" mtime="1402765024" name="PKGBUILD" size="1385" />
   <entry md5="2e9af7a33acbea8cedc05cb46fab48d6" mtime="1402512204" name="_service" size="430" />
 </directory>

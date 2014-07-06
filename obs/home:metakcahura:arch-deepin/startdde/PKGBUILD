@@ -8,8 +8,8 @@ arch=('i686' 'x86_64')
 url="http://github.com/linuxdeepin/startdde"
 license=('GPL-2+')
 depends=('go-dlib' 'dde-daemon' 'dde-qml-dbus-factory' 'deepin-webkit' 'cairo')
-makedepends=('cmake' 'gettext' 'go>=1.3rc2' 'coffee-script' 'python2' 'webkitgtk'
-	     'golang-fsnotify' 'go-xgbutil')
+makedepends=('cmake' 'gettext' 'go>=1.3' 'coffee-script' 'python2' 'webkitgtk'
+	     'golang-fsnotify' 'go-xgbutil' 'geoclue')
 groups=('deepin')
 options=(staticlibs)
 conflicts=('deepin-session')

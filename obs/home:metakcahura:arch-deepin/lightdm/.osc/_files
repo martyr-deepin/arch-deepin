@@ -1,8 +1,8 @@
-<directory name="lightdm" rev="6" srcmd5="ccef07ae68b26770519a1234b4b90d2f" vrev="6">
-  <serviceinfo code="succeeded" xsrcmd5="e2d37d726358d28db9fc310897771db3" />
-  <entry md5="b6e86409da4cdf9cc12c3ed1f16ef216" mtime="1401064565" name="PKGBUILD" size="4667" />
+<directory name="lightdm" rev="7" srcmd5="49fa3a9ab4e594410cafda0211dd41ec" vrev="7">
+  <serviceinfo code="succeeded" xsrcmd5="55907b7f9f90c9f58569ae7216e343e6" />
+  <entry md5="2f31d7a9e09b5205bc00d0984aa82b7e" mtime="1404397717" name="PKGBUILD" size="4667" />
   <entry md5="8b08ab3e9982d442ec94d5a96e987295" mtime="1397577243" name="Xsession" size="1282" />
-  <entry md5="f754e24bead25612bfbbff9ae5e26892" mtime="1400599999" name="_service" size="237" />
+  <entry md5="7849273b1c129c133afd2091e56dbe79" mtime="1404397718" name="_service" size="237" />
   <entry md5="4b76e4ca1de2a0d9895571720583a7e5" mtime="1397577244" name="lightdm-autologin.pam" size="580" />
   <entry md5="984d514368965d2693609346adc16d5d" mtime="1401064343" name="lightdm-deepin-default-config.patch" size="1756" />
   <entry md5="c90e417872f361646320596b650db0e0" mtime="1397577244" name="lightdm-default-config.patch" size="1347" />

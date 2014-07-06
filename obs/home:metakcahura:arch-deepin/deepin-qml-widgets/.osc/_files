@@ -1,5 +1,5 @@
-<directory name="deepin-qml-widgets" rev="29" srcmd5="34f72b5e046236ab5d2c1986bdb1bf5e" vrev="29">
-  <serviceinfo code="succeeded" xsrcmd5="b12718fe00b6d29b9874d627038c53aa" />
+<directory name="deepin-qml-widgets" rev="30" srcmd5="a24574a63dd591a02d8d5f0f7a90196a" vrev="30">
+  <serviceinfo code="succeeded" xsrcmd5="8ae46f1eb6b36b9b7ad0638d62059a67" />
   <entry md5="c6be43b36e6a5f66dee038dfb36b96b8" mtime="1401454191" name="PKGBUILD" size="604" />
-  <entry md5="6b752f42b7ca4a85d0b122704d07e1f1" mtime="1403708496" name="_service" size="526" />
+  <entry md5="2cda42d9cbb47bed7fd7fc37e8ee7e91" mtime="1404394295" name="_service" size="516" />
 </directory>

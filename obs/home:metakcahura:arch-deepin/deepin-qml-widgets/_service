@@ -5,7 +5,7 @@
     <param name="filename">deepin-qml-widgets</param>
     <param name="versionformat">git%cd~%h</param>
     <param name="versionprefix">0.0.2</param>
-    <param name="revision">9e302a957c</param>
+    <param name="revision"></param>
   </service>
   <service name="recompress">
     <param name="file">*.tar</param>

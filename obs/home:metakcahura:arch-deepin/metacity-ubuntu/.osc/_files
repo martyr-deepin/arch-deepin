@@ -1,5 +1,5 @@
-<directory name="metacity-ubuntu" rev="7" srcmd5="1f69e68437de9683e20336fccf3df900" vrev="7">
-  <serviceinfo code="succeeded" xsrcmd5="7abad5d83b99819d3a9ab39243d95a1e" />
+<directory name="metacity-ubuntu" rev="1" srcmd5="5790fc0da429f5b38a7c3d5cedf030ef" vrev="1">
+  <serviceinfo code="succeeded" xsrcmd5="6a2fa6ebe7f7c6ae18aa45665d9458ac" />
   <entry md5="2410be773d7be72f7a53eda06fceb8ff" mtime="1397614962" name="PKGBUILD" size="1799" />
   <entry md5="58dafff63e67c50bfe11bfea53b5c04e" mtime="1397613840" name="_service" size="453" />
   <entry md5="1ba70e1e6d2c021735935bb8640d2457" mtime="1387163755" name="metacity.install" size="299" />

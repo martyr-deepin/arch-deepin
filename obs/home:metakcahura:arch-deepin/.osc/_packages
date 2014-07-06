@@ -75,4 +75,8 @@
   <package name="startdde" state=" " />
   <package name="underscorejs" state=" " />
   <package name="xcur2png" state=" " />
+  <package name="deepin-compiz" state=" " />
+  <package name="go-dlib-dbus-proxyer" state=" " />
+  <package name="grub-themes-deepin" state=" " />
+  <package name="metacity" state=" " />
 </project>

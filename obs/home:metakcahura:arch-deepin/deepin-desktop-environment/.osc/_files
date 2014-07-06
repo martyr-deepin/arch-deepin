@@ -1,5 +1,5 @@
-<directory name="deepin-desktop-environment" rev="96" srcmd5="6583599fa0f8f4059dfed7ba8f9e4926" vrev="96">
-  <serviceinfo code="succeeded" xsrcmd5="783f7810a56b7224fe05090d22abb330" />
+<directory name="deepin-desktop-environment" rev="97" srcmd5="094075112709ec1fea6a6ceca9d9cf43" vrev="97">
+  <serviceinfo code="succeeded" xsrcmd5="cba0354c5bf6b762967c63f950b31edf" />
   <entry md5="abff38dd4a491038036c437bdf9463fb" mtime="1400733408" name="30-deepin-inotify-limit.conf" size="40" />
   <entry md5="a4141b3c151ccf75de0460f2143b4793" mtime="1403713387" name="PKGBUILD" size="2283" />
   <entry md5="eaa0ab3c92e5f82ad65682153d4df9af" mtime="1403872072" name="_service" size="508" />
