@@ -60,6 +60,7 @@ More information to see the [topic](https://bbs.archlinux.org/viewtopic.php?id=1
     make it autstarted on login,
 
         cp /usr/share/applications/polkit-gnome-authentication-agent-1.desktop ~/.config/autostart/
+        sed -i 's/\(OnlyShowIn=.*\)/\1Deepin;/' ~/.config/autostart/polkit-gnome-authentication-agent-1.desktop 
 
 # Screenshot
 
