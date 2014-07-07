@@ -5,15 +5,15 @@ pkgname=golang-jamslam-freetype-go
 _pkgver=0.0
 _pkgvergit=~git20140306
 pkgver=${_pkgver}${_pkgvergit}
-pkgrel=3
+pkgrel=4
 pkgdesc='File system notification for GO'
 arch=('i686' 'x86_64')
 url="https://github.com/BurntSushi/xgb"
 license=('GPL2')
-depends=('go>=1.3rc2')
+depends=('go>=1.3')
 groups=('deepin')
 options=(staticlibs)
-source=("http://test.packages.linuxdeepin.com/deepin/pool/main/g/${pkgname}/${pkgname}_${pkgver}.orig.tar.xz")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/g/${pkgname}/${pkgname}_${pkgver}.orig.tar.xz")
 sha256sums=('028b753388ec2d54105ae3c2713cae4075d9a578a39648c38b05105ac65711a4')
 
 build(){

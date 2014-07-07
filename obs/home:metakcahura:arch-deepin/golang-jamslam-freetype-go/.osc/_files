@@ -1,5 +1,5 @@
-<directory name="golang-jamslam-freetype-go" rev="6" srcmd5="d0191f9ad9f65fa345ea7d9789236ad8" vrev="6">
-  <serviceinfo code="succeeded" xsrcmd5="68ca6895a8a5159c711358bbb4eb161e" />
-  <entry md5="9399f4c791e540e5f03c90cdbe889741" mtime="1403700823" name="PKGBUILD" size="1585" />
-  <entry md5="4a2663ab5da711c2d952c111b63135ef" mtime="1397807622" name="_service" size="301" />
+<directory name="golang-jamslam-freetype-go" rev="7" srcmd5="b0f4db0944a0f3010f3e55ab9915c820" vrev="7">
+  <serviceinfo code="succeeded" xsrcmd5="a07139f582e7cb5c10fb3da6947c0cc7" />
+  <entry md5="424de521cdde1ae015a736552187501a" mtime="1404661799" name="PKGBUILD" size="1577" />
+  <entry md5="b3cf5c2f07e42cb09e8f737c0bcd1a24" mtime="1404661799" name="_service" size="296" />
 </directory>

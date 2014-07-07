@@ -1,7 +1,7 @@
-<directory name="deepin-desktop-environment" rev="97" srcmd5="094075112709ec1fea6a6ceca9d9cf43" vrev="97">
-  <serviceinfo code="succeeded" xsrcmd5="cba0354c5bf6b762967c63f950b31edf" />
+<directory name="deepin-desktop-environment" rev="98" srcmd5="3836982400ed1bf5ece8b628840e60a4" vrev="98">
+  <serviceinfo code="succeeded" xsrcmd5="fe843a8f2fa5f36fc2c90e744f3b2af2" />
   <entry md5="abff38dd4a491038036c437bdf9463fb" mtime="1400733408" name="30-deepin-inotify-limit.conf" size="40" />
-  <entry md5="a4141b3c151ccf75de0460f2143b4793" mtime="1403713387" name="PKGBUILD" size="2283" />
+  <entry md5="7c071465d0982dc39de8a9c76da52065" mtime="1404669223" name="PKGBUILD" size="2292" />
   <entry md5="eaa0ab3c92e5f82ad65682153d4df9af" mtime="1403872072" name="_service" size="508" />
   <entry md5="70e0a84102c45fda9d7e2c996f164272" mtime="1400773582" name="dde-account.conf" size="353" />
   <entry md5="30cdbc9b9039fd605660730fa5ad21c6" mtime="1397678939" name="deepin-desktop-environment.install" size="194" />

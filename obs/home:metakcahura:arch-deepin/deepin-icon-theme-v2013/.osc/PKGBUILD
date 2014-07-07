@@ -2,7 +2,7 @@
 
 pkgname=deepin-icon-theme-v2013
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Deepin Icons Theme"
 arch=('any')
 options=(!strip)
@@ -11,7 +11,7 @@ license=('LGPL-3+')
 depends=('faenza-icon-theme')
 groups=('deepin-extra')
 #install=$pkgname.install
-source=("http://test.packages.linuxdeepin.com/deepin/pool/main/d/$pkgname/${pkgname}_${pkgver}-1.tar.gz")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/d/$pkgname/${pkgname}_${pkgver}-1.tar.gz")
 sha256sums=('99f559bd62fdd70fd917229111c2eb654ca9b48da47ac8833f722c256a454030')
 
 package() {

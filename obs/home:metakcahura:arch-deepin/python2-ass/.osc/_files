@@ -1,5 +1,5 @@
-<directory name="python2-ass" rev="7" srcmd5="866263d05a1be360853cf0c9d07b449c" vrev="7">
-  <serviceinfo code="succeeded" xsrcmd5="ffb46830bf302ca34cc6350682306972" />
-  <entry md5="495a2eb399e466de64b45203d5aec920" mtime="1401140320" name="PKGBUILD" size="871" />
-  <entry md5="e377b9c40bd98856dc1785d7fdc2ea99" mtime="1400617898" name="_service" size="256" />
+<directory name="python2-ass" rev="8" srcmd5="bc590b9a270112fed07a1d91100363ea" vrev="8">
+  <serviceinfo code="succeeded" xsrcmd5="ce6ecca12229d81e033c91256873d240" />
+  <entry md5="b09b39159c83f1e6d850135aa79fa39e" mtime="1404663564" name="PKGBUILD" size="866" />
+  <entry md5="71d7fc9864e9299a399b47411c1854fd" mtime="1404663565" name="_service" size="251" />
 </directory>

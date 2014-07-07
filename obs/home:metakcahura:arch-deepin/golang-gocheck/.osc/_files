@@ -1,5 +1,5 @@
-<directory name="golang-gocheck" rev="8" srcmd5="77fdcc67afdf3f986882c2712abac2a6" vrev="8">
-  <serviceinfo code="succeeded" xsrcmd5="32c692406c1b6a3e5e1eaa0f62575659" />
-  <entry md5="65995667f21ac2a6abf3e75243c4b7f9" mtime="1403695555" name="PKGBUILD" size="1356" />
-  <entry md5="d2a58552e044f4df3a7b1f723563d9fb" mtime="1403695556" name="_service" size="525" />
+<directory name="golang-gocheck" rev="9" srcmd5="295591bc8afd4f768d735db028e5b47c" vrev="9">
+  <serviceinfo code="succeeded" xsrcmd5="0a12944d5daaa98f0028293de8d06b04" />
+  <entry md5="4981743195d147ebb79cf078b667efdc" mtime="1404661650" name="PKGBUILD" size="1348" />
+  <entry md5="a65a31f350f55d5583903b050f37a8bd" mtime="1404661651" name="_service" size="515" />
 </directory>

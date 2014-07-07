@@ -79,4 +79,5 @@
   <package name="go-dlib-dbus-proxyer" state=" " />
   <package name="grub-themes-deepin" state=" " />
   <package name="metacity" state=" " />
+  <package name="polkit-gnome" state=" " />
 </project>

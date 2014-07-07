@@ -1,8 +1,5 @@
 <package name="deepin-cursor-theme" project="home:metakcahura:arch-deepin">
   <title></title>
   <description></description>
-  <build>
-    <disable/>
-  </build>
 </package>
 

@@ -1,8 +1,5 @@
 <package name="dde-account-faces" project="home:metakcahura:arch-deepin">
   <title></title>
   <description></description>
-  <build>
-    <disable/>
-  </build>
 </package>
 

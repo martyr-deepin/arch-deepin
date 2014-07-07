@@ -8,6 +8,14 @@ post_install() {
   /usr/lib/deepin-daemon/theme-thumb-tool --icon /usr/share/personalization/thumbnail 2> /dev/null || echo "Error handling --icon"
   /usr/lib/deepin-daemon/theme-thumb-tool --cursor /usr/share/personalization/thumbnail 2> /dev/null || echo "Error handling --cursor"
   /usr/lib/deepin-daemon/theme-thumb-tool --background /usr/share/personalization/thumbnail 2> /dev/null || echo "Error handling --background"
+  
+  echo
+  echo ":: Execute the following line to autostart polkit-gnome:"
+  echo
+  echo "   cp /usr/share/applications/polkit-gnome-authentication-agent-1.desktop ~/.config/autostart/"
+  echo
+  
+  sed -i 's/\(NotShowIn=.*\)/\1Deepin;/' /etc/xdg/autostart/nm-applet.desktop
 }
 
 post_upgrade() {

@@ -1,8 +1,8 @@
-<directory name="dde-daemon" rev="86" srcmd5="4fb43f35f9a136adb7a40bc2a66cdc0c" vrev="86">
-  <serviceinfo code="succeeded" xsrcmd5="5519e4411bf4bc59b7625cb1895356f0" />
-  <entry md5="4a2c3e1e0abf3520f17008d6f0a73f1d" mtime="1404320812" name="PKGBUILD" size="1749" />
+<directory name="dde-daemon" rev="93" srcmd5="2dc69e255f1642af9a7ac81c00e66051" vrev="93">
+  <serviceinfo code="succeeded" xsrcmd5="14be27a4fc49ed91308c0277e297a95e" />
+  <entry md5="9dece5fbd6ac4dc6af65519a99ef3aa8" mtime="1404668696" name="PKGBUILD" size="1800" />
   <entry md5="16c2ab480a8637c11a5b3861f899a149" mtime="1400735857" name="_service" size="508" />
-  <entry md5="f26108cd92cc3a587a6c232afd353b6c" mtime="1403869571" name="dde-daemon.install" size="1055" />
+  <entry md5="b80abe551fbe92dadfe380a2b611647b" mtime="1404670370" name="dde-daemon.install" size="1330" />
   <entry md5="1cf622c8dc5348d3dd92cd512fc20007" mtime="1400735363" name="generate_mo.sh" size="236" />
   <entry md5="3d49b4369336e50f1cd7549513f7083c" mtime="1398902756" name="makefile.patch" size="311" />
 </directory>

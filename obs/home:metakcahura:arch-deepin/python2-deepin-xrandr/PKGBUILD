@@ -6,7 +6,7 @@ _pkgname=deepin-xrandr
 _pkgver=0.1
 _pkgvergit=+git20131206101353~1ef723fab0
 pkgver=${_pkgver}${_pkgvergit}
-pkgrel=1
+pkgrel=2
 pkgdesc='XRandR Python2 Binding from Linux Deepin'
 arch=('any')
 url="http://www.linuxdeepin.com/"
@@ -14,7 +14,7 @@ license=('GPL2')
 depends=('python2' 'glib2' 'libxrandr')
 makedepends=('python2-setuptools')
 groups=('deepin')
-source=("http://test.packages.linuxdeepin.com/deepin/pool/main/d/${_pkgname}/${_pkgname}_${pkgver}.tar.gz")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/d/${_pkgname}/${_pkgname}_${pkgver}.tar.gz")
 sha256sums=('eb4ac7311113f34f70854ec13d05875bc2f1c435ded60f36e3f0bf2dec4b352d')
 
 prepare() {

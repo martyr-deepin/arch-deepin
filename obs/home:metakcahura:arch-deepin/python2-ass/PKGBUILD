@@ -4,14 +4,14 @@
 pkgname=python2-ass
 _pkgname=python-ass
 pkgver=0.4.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A library for parsing and manipulating Advanced SubStation Alpha subtitle files."
 arch=('any')
 url="http://github.com/rfw/python-ass"
 license=('GPL3')
 depends=('python2')
 makedepends=('python2-setuptools' 'python2-distribute' 'libass')
-source=("http://test.packages.linuxdeepin.com/deepin/pool/main/p/${_pkgname}/${_pkgname}_${pkgver}-1.tar.gz")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/p/${_pkgname}/${_pkgname}_${pkgver}-1.tar.gz")
 sha256sums=('e4aa5bed22484a6802ee833194d7c162a1cf63311e0543bca0b10b964f969e4b')
 
 prepare() {

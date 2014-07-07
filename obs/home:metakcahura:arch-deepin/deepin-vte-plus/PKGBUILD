@@ -4,7 +4,7 @@
 pkgname=deepin-vte-plus
 _pkgname=vte
 pkgver=0.28.2
-pkgrel=6
+pkgrel=7
 pkgdesc="Virtual Terminal Emulator widget for use with GTK2 - with several patches"
 arch=('i686' 'x86_64')
 license=('GPL3')
