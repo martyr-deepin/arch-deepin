@@ -16,7 +16,7 @@ source=("${_fileurl}")
 sha256sums=('@sha256sum@')
 
 _filename="$(basename "${_fileurl}")"
-_filename="${_filename%-*}"
+_filename="${_filename%.tar.gz}"
 _innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {

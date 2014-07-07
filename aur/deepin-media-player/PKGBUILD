@@ -2,7 +2,7 @@
 # Contributor: dongfengweixiao <dongfengweixiao[AT]gmail.com>
 
 pkgname=deepin-media-player
-pkgver=1.1_20140526100121
+pkgver=1.1+20140703161214
 pkgrel=1
 pkgdesc='New multimedia player with brilliant and tweakful UI. PyGtk and Deepin-ui Mplayer2 front-end, with features likes smplayer, but has a brilliant and tweakful UI.'
 arch=('any')
@@ -10,12 +10,12 @@ url="http://www.linuxdeepin.com/"
 license=('GPL3')
 depends=('python2-scipy' 'python2-pyquery' 'deepin-ui' 'mplayer2' 'gstreamer0.10-ugly' 'gstreamer0.10-ugly-plugins' 'python2-formencode' 'gstreamer0.10-python' 'python2-chardet' 'python2-beautifulsoup3' 'python2-notify' 'python2-dbus' 'python2-xlib' )
 
-_fileurl="http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-media-player/deepin-media-player_1.1-20140526100121~6ac6ea0a8b.tar.gz"
+_fileurl="http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-media-player/deepin-media-player_1.1+20140703161214~6ac6ea0a8b.tar.gz"
 source=("${_fileurl}")
-sha256sums=('029174f2c10dd1ee4c78a32498f0366fd656717a107cbd6558de86aee4f33684')
+sha256sums=('6988949977f01ab49a3ed441564aed858ee4434ee20c560d2cbd624cc7a3334b')
 
 _filename="$(basename "${_fileurl}")"
-_filename="${_filename%-*}"
+_filename="${_filename%.tar.gz}"
 _innerdir="${_filename/_/-}"
 
 _install_copyright_and_changelog() {
