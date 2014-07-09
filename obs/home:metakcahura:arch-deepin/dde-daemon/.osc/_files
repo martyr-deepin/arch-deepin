@@ -1,5 +1,5 @@
-<directory name="dde-daemon" rev="93" srcmd5="2dc69e255f1642af9a7ac81c00e66051" vrev="93">
-  <serviceinfo code="succeeded" xsrcmd5="14be27a4fc49ed91308c0277e297a95e" />
+<directory name="dde-daemon" rev="94" srcmd5="b356550cdb223f2dbff3fccc26d75de6" vrev="94">
+  <serviceinfo code="succeeded" xsrcmd5="cbc73608f34b7fcc86ccd4883fb7d9a1" />
   <entry md5="9dece5fbd6ac4dc6af65519a99ef3aa8" mtime="1404668696" name="PKGBUILD" size="1800" />
   <entry md5="16c2ab480a8637c11a5b3861f899a149" mtime="1400735857" name="_service" size="508" />
   <entry md5="b80abe551fbe92dadfe380a2b611647b" mtime="1404670370" name="dde-daemon.install" size="1330" />
