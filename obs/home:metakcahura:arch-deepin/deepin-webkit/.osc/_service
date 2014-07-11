@@ -1,7 +1,15 @@
 <services>
-  <service name="download_url">
-    <param name="host">packages.linuxdeepin.com</param>
-    <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/d/deepin-webkit/deepin-webkit_1.8.2.1%2bgit20131220153235~9ac8cf628.tar.gz</param>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/deepin-webkit.git</param>
+    <param name="filename">deepin-webkit</param>
+    <param name="versionformat">git%cd~%h</param>
+    <param name="versionprefix">1.8.2.1</param>
+    <param name="revision"></param>
   </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+  <service name="set_version"/>
 </services>

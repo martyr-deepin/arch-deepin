@@ -2,9 +2,7 @@
 # Contributor: 
 
 pkgname=deepin-webkit
-_pkgver=1.8.2.1
-_pkgvergit=+git20131220153235~9ac8cf628
-pkgver=${_pkgver}${_pkgvergit}
+pkgver=1.8.2.1
 pkgrel=3
 pkgdesc='A fork of webkit-gtk for Linux Deepin desktop eviroment'
 arch=('i686' 'x86_64')
@@ -16,10 +14,10 @@ optdepends=('gtk2: Netscape plugin support')
 provides=("${pkgname}")
 groups=('deepin')
 options=(!libtool !emptydirs)
-source=("http://test.packages.linuxdeepin.com/deepin/pool/main/d/${pkgname}/${pkgname}_${pkgver}.tar.gz"
+source=("${pkgname}-${pkgver}.tar.xz"
         "webkit-gtk-1.8.2-bison-2.6.patch"
 	"DerivedSources.tar.gz")
-sha256sums=('7f15b029114d33b994a276d3967cf24a172a532a14d33f3f07a7dd44a8d8758f'
+sha256sums=('SKIP'
 	    'cea36d9a955e4f5c2cd2fe2037ff63067217596e88cbbaa1da2ecc7546d3cd44'
 	    '7a5fbc735dcda90faeafb26778a741ebe1a5fcf0cfb44de5369db42aa60561df')
 
