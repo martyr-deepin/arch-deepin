@@ -1,0 +1,39 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Contributor: 
+
+pkgname=deepin-game-center
+pkgver=git20140509~c0cac57
+pkgrel=1
+pkgdesc="Game center for Linuxdeepin"
+arch=('any')
+url="https://github.com/linuxdeepin/deepin-game-center"
+license=('GPL2')
+depends=('deepin-ui' 'flashplugin' 'hicolor-icon-theme' 'python2-deepin-storm' 'python2-scipy' 'python2-jswebkit')
+groups=('deepin-extra')
+install="${pkgname}.install"
+options=(staticlibs)
+source=("$pkgname-${pkgver}.tar.xz")
+noextract=("${pkgname}-${pkgver}.tar.xz")
+sha256sums=('SKIP')
+
+prepare() {
+  cd "$srcdir"
+
+  tar -C "$srcdir" -xvJf ${pkgname}-${pkgver}.tar.xz
+  
+  cd "${pkgname}-${pkgver}"
+
+  # fix python version
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+}
+
+package() {
+  cd "${pkgname}-${pkgver}"
+
+  install -dm 755 "${pkgdir}"/usr/{bin,share/{deepin-game-center,applications,icons/hicolor/48x48/apps}}
+
+  cp -rf {app_theme,image,locale,skin,src,static,weibo_skin,weibo_theme} "${pkgdir}"/usr/share/${pkgname}
+
+  install -m 644 ${pkgname}.desktop "${pkgdir}"/usr/share/applications/
+  ln -s /usr/share/${pkgname}/src/${pkgname}.py "${pkgdir}"/usr/bin/${pkgname}
+}

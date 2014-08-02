@@ -1,0 +1,29 @@
+post_install() {
+  glib-compile-schemas --allow-any-name usr/share/glib-2.0/schemas
+  getent passwd deepin-daemon > /dev/null || useradd deepin-daemon -r -M -U
+  passwd -l deepin-daemon > /dev/null
+  touch /var/log/deepin.log && chown deepin-daemon:deepin-daemon /var/log/deepin.log
+  
+  /usr/lib/deepin-daemon/theme-thumb-tool --gtk /usr/share/personalization/thumbnail 2> /dev/null || echo "Error handling --gtk"
+  /usr/lib/deepin-daemon/theme-thumb-tool --icon /usr/share/personalization/thumbnail 2> /dev/null || echo "Error handling --icon"
+  /usr/lib/deepin-daemon/theme-thumb-tool --cursor /usr/share/personalization/thumbnail 2> /dev/null || echo "Error handling --cursor"
+  /usr/lib/deepin-daemon/theme-thumb-tool --background /usr/share/personalization/thumbnail 2> /dev/null || echo "Error handling --background"
+  
+  echo
+  echo ":: Execute the following line to autostart polkit-gnome:"
+  echo
+  echo "   cp /usr/share/applications/polkit-gnome-authentication-agent-1.desktop ~/.config/autostart/"
+  echo
+  
+  sed -i 's/\(NotShowIn=.*\)/\1Deepin;/' /etc/xdg/autostart/nm-applet.desktop
+}
+
+post_upgrade() {
+  post_install $1
+}
+
+post_remove() {
+  getent passwd deepin-daemon > /dev/null 2>&1 && userdel deepin-daemon
+  getent group deepin-daemon > /dev/null 2>&1 && groupdel deepin-daemon
+  rm -f /var/log/deepin.log
+}

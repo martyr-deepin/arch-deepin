@@ -1,0 +1,44 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Contributor: 
+
+pkgname=dde-api
+pkgver=git20140516~7c4023a
+pkgrel=1
+pkgdesc='Go-lang bingdings for dde-daemon'
+arch=('i686' 'x86_64')
+url="https://github.com/linuxdeepin/dde-api"
+license=('GPL2')
+depends=('go-dlib' 'dde-go-dbus-factory' 'gdk-pixbuf2' 'libxi'
+	 'libgnomekbd' 'libcanberra' 'go-xgb' 'go-xgbutil')
+makedepends=('go>=1.3' 'gtk3' 'libpulse' 'gnome-desktop' 'libxtst')
+groups=('deepin')
+options=(staticlibs)
+source=("${pkgname}-${pkgver}.tar.xz")
+sha256sums=('SKIP')
+
+build(){
+  cd "${pkgname}-${pkgver}"
+  
+  cd graphic && GOPATH=`pwd` go build && cd ..
+  cd grub2ext && GOPATH=`pwd` go build && cd ..
+  cd logger && GOPATH=`pwd` go build && cd ..
+  cd lunar-calendar && GOPATH=`pwd` go build && cd ..
+  cd mousearea && GOPATH=`pwd` go build && cd ..
+  cd set-date-time && GOPATH=`pwd` go build && cd ..
+  cd sound && GOPATH=`pwd` go build && cd ..
+}
+
+package() {
+  cd "${pkgname}-${pkgver}"
+
+  install -dm 755 "${pkgdir}"/etc/{dbus-1/system.d,logrotate.d}
+  install -dm 755 "${pkgdir}"/usr/lib/deepin-api
+  install -dm 755 "${pkgdir}"/usr/share/dbus-1/{services,system-services}
+  
+  install -m 644 data/system-service/*.service "${pkgdir}"/usr/share/dbus-1/system-services/
+  install -m 644 data/service/*.service "${pkgdir}"/usr/share/dbus-1/services/
+  install -m 644 data/conf/*.conf "${pkgdir}"/etc/dbus-1/system.d/
+  install -m 644 data/logrotate.d/* "${pkgdir}"/etc/logrotate.d/
+  
+  install -m 755 {gra*/graphic,gru*/grub2ext,log*/logger,lun*/lunar-calendar,mou*/mousearea,set*/set-date-time,sou*/sound} "${pkgdir}"/usr/lib/deepin-api/
+}

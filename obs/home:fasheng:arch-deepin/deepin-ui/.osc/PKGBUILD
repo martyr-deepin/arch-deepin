@@ -1,0 +1,44 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+
+pkgname=deepin-ui
+pkgver=20140507~df466b0
+pkgrel=1
+pkgdesc='UI toolkit for Linux Deepin'
+arch=('i686' 'x86_64')
+url="https://github.com/linuxdeepin/deepin-ui"
+license=('GPL-2+')
+depends=('python2-deepin-utils' 'python2-deepin-gsettings' 'deepin-pygtk' 'python2-scipy'
+	 'glib2' 'python2-cairo' 'python2-imaging' 'python2-xlib' 'pywebkitgtk' 'libsoup' 'gettext')
+makedepends=('python2-setuptools' 'webkitgtk')
+groups=('deepin')
+source=("${pkgname}-${pkgver}.tar.xz")
+sha256sums=('SKIP')
+
+prepare() {
+  cd "${pkgname}-${pkgver}"
+
+  # fix python version
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+}
+
+build(){
+  cd "${pkgname}-${pkgver}"
+  
+  cd dtk/tools && python2 generate_mo.py && cd ../..
+  python2 setup.py build
+}
+
+package() {
+  cd "${pkgname}-${pkgver}"
+  
+  install -dm 755 "${pkgdir}"/usr/share/pyshared/dtk
+  #mkdir -p "${pkgdir}"/usr/lib/python2.7/site-packages/dtk/theme
+  python2 setup.py install --root="${pkgdir}" --optimize=1
+  
+  mv "${pkgdir}"/usr/dtk/locale "${pkgdir}"/usr/share/
+  mv "${pkgdir}"/usr/dtk/{skin,theme} "${pkgdir}"/usr/share/pyshared/dtk/
+  rm -rf "${pkgdir}"/usr/dtk/
+  
+  ln -s /usr/share/pyshared/dtk/theme "${pkgdir}"/usr/lib/python2.7/site-packages/dtk/theme
+  ln -s /usr/share/pyshared/dtk/skin "${pkgdir}"/usr/lib/python2.7/site-packages/dtk/skin
+}

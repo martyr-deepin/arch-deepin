@@ -1,0 +1,40 @@
+From 0734ddbfaacff73b80747272ad7044ff904290f6 Mon Sep 17 00:00:00 2001
+From: "Owen W. Taylor" <otaylor@fishsoup.net>
+Date: Mon, 19 Oct 2009 18:43:00 -0400
+Subject: [PATCH] Don't focus ancestor window on a different workspace
+
+When we are moving a window with a modal dialog to a different
+workspace, meta_workspace_focus_default_window() can be called
+with 'not_this_one' being the focused modal dialog.
+
+Since the ancestor of that window is also being moved, we must
+not focus it as an alternative to the current window; this will
+cause windows to be moved back and Metacity to get into an
+inconsistent confused state.
+
+https://bugzilla.redhat.com/show_bug.cgi?id=237158
+
+https://bugzilla.gnome.org/show_bug.cgi?id=598995
+---
+ src/core/workspace.c |    5 ++++-
+ 1 files changed, 4 insertions(+), 1 deletions(-)
+
+diff --git a/src/core/workspace.c b/src/core/workspace.c
+index e877b19..6ffea30 100644
+--- a/src/core/workspace.c
++++ b/src/core/workspace.c
+@@ -975,7 +975,10 @@ focus_ancestor_or_mru_window (MetaWorkspace *workspace,
+       MetaWindow *ancestor;
+       ancestor = NULL;
+       meta_window_foreach_ancestor (not_this_one, record_ancestor, &ancestor);
+-      if (ancestor != NULL)
++      if (ancestor != NULL &&
++          (ancestor->on_all_workspaces ||
++           ancestor->workspace == workspace) &&
++          meta_window_showing_on_its_workspace (ancestor))
+         {
+           meta_topic (META_DEBUG_FOCUS,
+                       "Focusing %s, ancestor of %s\n", 
+-- 
+1.7.9
+

@@ -1,0 +1,31 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+
+pkgname=python2-deepin-gsettings
+_pkgname=deepin-gsettings
+pkgver=git20131206~a64de3a
+pkgrel=1
+pkgdesc='deepin gsettings python bindings'
+arch=('i686' 'x86_64')
+depends=('python2-setuptools')
+provides=('deepin-gsettings')
+groups=('deepin')
+url="https://github.com/linuxdeepin/deepin-gsettings"
+license=('GPL-3')
+source=("${_pkgname}-${pkgver}.tar.xz")
+sha256sums=('SKIP')
+
+prepare() {
+  cd "${_pkgname}-${pkgver}"
+
+  # fix python version
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+}
+
+build(){
+  cd "${_pkgname}-${pkgver}"
+  python2 setup.py build
+}
+package() {
+  cd "${_pkgname}-${pkgver}"
+  python2 setup.py install --root="$pkgdir/" --optimize=1
+}

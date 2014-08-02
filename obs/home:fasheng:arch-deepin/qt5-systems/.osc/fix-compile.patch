@@ -1,0 +1,301 @@
+diff -ruN a/src/imports/publishsubscribe/qdeclarativevaluespacepublisher_p.h b/src/imports/publishsubscribe/qdeclarativevaluespacepublisher_p.h
+--- a/src/imports/publishsubscribe/qdeclarativevaluespacepublisher_p.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/imports/publishsubscribe/qdeclarativevaluespacepublisher_p.h	2014-06-18 11:53:01.505464991 +0200
+@@ -53,7 +53,7 @@
+ #ifndef QDECLARATIVEVALUESPACEPUBLISHER_H
+ #define QDECLARATIVEVALUESPACEPUBLISHER_H
+ 
+-#include <qvaluespacepublisher.h>
++#include <../../../src/publishsubscribe/qvaluespacepublisher.h>
+ #include <QtCore/qstringlist.h>
+ #include <QtCore/qvariant.h>
+ 
+diff -ruN a/src/imports/publishsubscribe/qdeclarativevaluespacesubscriber_p.h b/src/imports/publishsubscribe/qdeclarativevaluespacesubscriber_p.h
+--- a/src/imports/publishsubscribe/qdeclarativevaluespacesubscriber_p.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/imports/publishsubscribe/qdeclarativevaluespacesubscriber_p.h	2014-06-18 12:13:42.845507962 +0200
+@@ -53,7 +53,7 @@
+ #ifndef QDECLARATIVEVALUESPACESUBSCRIBER_P_H
+ #define QDECLARATIVEVALUESPACESUBSCRIBER_P_H
+ 
+-#include <qvaluespacesubscriber.h>
++#include <../../../src/publishsubscribe/qvaluespacesubscriber.h>
+ #include <QtCore/qstringlist.h>
+ 
+ QT_BEGIN_NAMESPACE
+diff -ruN a/src/imports/serviceframework/qdeclarativeservice.cpp b/src/imports/serviceframework/qdeclarativeservice.cpp
+--- a/src/imports/serviceframework/qdeclarativeservice.cpp	2014-06-18 08:25:01.000000000 +0200
++++ b/src/imports/serviceframework/qdeclarativeservice.cpp	2014-06-18 12:51:11.252252460 +0200
+@@ -44,7 +44,7 @@
+ #include <QQmlEngine>
+ #include <QQmlInfo>
+ 
+-#include <qservicereply.h>
++#include <../../../src/serviceframework/qservicereply.h>
+ 
+ QT_BEGIN_NAMESPACE
+ 
+diff -ruN a/src/imports/serviceframework/qdeclarativeserviceold_p.h b/src/imports/serviceframework/qdeclarativeserviceold_p.h
+--- a/src/imports/serviceframework/qdeclarativeserviceold_p.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/imports/serviceframework/qdeclarativeserviceold_p.h	2014-06-18 13:14:09.828966849 +0200
+@@ -43,8 +43,8 @@
+ #define QDECLARATIVESERVICE_H
+ 
+ #include <QtCore>
+-#include <qserviceinterfacedescriptor.h>
+-#include <qservicemanager.h>
++#include <../../../src/serviceframework/qserviceinterfacedescriptor.h>
++#include <../../../src/serviceframework/qservicemanager.h>
+ #include <qqml.h>
+ #include <qqmllist.h>
+ 
+diff -ruN a/src/imports/serviceframework/qdeclarativeservice_p.h b/src/imports/serviceframework/qdeclarativeservice_p.h
+--- a/src/imports/serviceframework/qdeclarativeservice_p.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/imports/serviceframework/qdeclarativeservice_p.h	2014-06-18 12:40:29.328896907 +0200
+@@ -42,8 +42,8 @@
+ #ifndef QDECLARATIVESERVICE_P_H
+ #define QDECLARATIVESERVICE_P_H
+ #include <QtCore>
+-#include <qserviceinterfacedescriptor.h>
+-#include <qservicemanager.h>
++#include <../../../src/serviceframework/qserviceinterfacedescriptor.h>
++#include <../../../src/serviceframework/qservicemanager.h>
+ #include <qqml.h>
+ #include <qqmllist.h>
+ 
+diff -ruN a/src/imports/systeminfo/qdeclarativedeviceinfo_p.h b/src/imports/systeminfo/qdeclarativedeviceinfo_p.h
+--- a/src/imports/systeminfo/qdeclarativedeviceinfo_p.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/imports/systeminfo/qdeclarativedeviceinfo_p.h	2014-06-18 10:45:40.781991784 +0200
+@@ -53,7 +53,7 @@
+ #ifndef QDECLARATIVEDEVICEINFO_P_H
+ #define QDECLARATIVEDEVICEINFO_P_H
+ 
+-#include <qdeviceinfo.h>
++#include <../../../src/systeminfo/qdeviceinfo.h>
+ 
+ QT_BEGIN_NAMESPACE
+ 
+diff -ruN a/src/imports/systeminfo/qdeclarativenetworkinfo_p.h b/src/imports/systeminfo/qdeclarativenetworkinfo_p.h
+--- a/src/imports/systeminfo/qdeclarativenetworkinfo_p.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/imports/systeminfo/qdeclarativenetworkinfo_p.h	2014-06-18 11:07:39.772037442 +0200
+@@ -53,7 +53,7 @@
+ #ifndef QDECLARATIVENETWORKINFO_P_H
+ #define QDECLARATIVENETWORKINFO_P_H
+ 
+-#include <qnetworkinfo.h>
++#include <../../../src/systeminfo/qnetworkinfo.h>
+ 
+ QT_BEGIN_NAMESPACE
+ 
+diff -ruN a/src/imports/systeminfo/qdeclarativestorageinfo_p.h b/src/imports/systeminfo/qdeclarativestorageinfo_p.h
+--- a/src/imports/systeminfo/qdeclarativestorageinfo_p.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/imports/systeminfo/qdeclarativestorageinfo_p.h	2014-06-18 11:18:49.632060631 +0200
+@@ -53,7 +53,7 @@
+ #ifndef QDECLARATIVESTORAGEINFO_P_H
+ #define QDECLARATIVESTORAGEINFO_P_H
+ 
+-#include <qstorageinfo.h>
++#include <../../../src/systeminfo/qstorageinfo.h>
+ 
+ QT_BEGIN_NAMESPACE
+ 
+diff -ruN a/src/imports/systeminfo/qsysteminfo.cpp b/src/imports/systeminfo/qsysteminfo.cpp
+--- a/src/imports/systeminfo/qsysteminfo.cpp	2014-06-18 08:25:01.000000000 +0200
++++ b/src/imports/systeminfo/qsysteminfo.cpp	2014-06-18 11:44:37.622114216 +0200
+@@ -44,7 +44,7 @@
+ 
+ #include "qdeclarativedeviceinfo_p.h"
+ #include "qdeclarativenetworkinfo_p.h"
+-#include <qscreensaver.h>
++#include <../../../src/systeminfo/qscreensaver.h>
+ #include "qdeclarativestorageinfo_p.h"
+ 
+ QT_BEGIN_NAMESPACE
+diff -ruN a/src/publishsubscribe/qvaluespace.h b/src/publishsubscribe/qvaluespace.h
+--- a/src/publishsubscribe/qvaluespace.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/publishsubscribe/qvaluespace.h	2014-06-18 12:04:56.292156402 +0200
+@@ -42,7 +42,7 @@
+ #ifndef QVALUESPACE_H
+ #define QVALUESPACE_H
+ 
+-#include <qpublishsubscribeglobal.h>
++#include <../../../src/publishsubscribe/qpublishsubscribeglobal.h>
+ 
+ #include <QtCore/qlist.h>
+ #include <QtCore/quuid.h>
+diff -ruN a/src/publishsubscribe/qvaluespacepublisher.h b/src/publishsubscribe/qvaluespacepublisher.h
+--- a/src/publishsubscribe/qvaluespacepublisher.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/publishsubscribe/qvaluespacepublisher.h	2014-06-18 11:59:26.212144976 +0200
+@@ -42,7 +42,7 @@
+ #ifndef QVALUESPACEPUBLISHER_H
+ #define QVALUESPACEPUBLISHER_H
+ 
+-#include <qvaluespace.h>
++#include <../../../src/publishsubscribe/qvaluespace.h>
+ 
+ #include <QtCore/qobject.h>
+ #include <QtCore/qstring.h>
+diff -ruN a/src/publishsubscribe/qvaluespacesubscriber.h b/src/publishsubscribe/qvaluespacesubscriber.h
+--- a/src/publishsubscribe/qvaluespacesubscriber.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/publishsubscribe/qvaluespacesubscriber.h	2014-06-18 12:19:29.898853309 +0200
+@@ -42,7 +42,7 @@
+ #ifndef QVALUESPACESUBSCRIBER_H
+ #define QVALUESPACESUBSCRIBER_H
+ 
+-#include <qvaluespace.h>
++#include <../../../src/publishsubscribe/qvaluespace.h>
+ 
+ #include <QtCore/qshareddata.h>
+ #include <QtCore/qvariant.h>
+diff -ruN a/src/serviceframework/ipc/instancemanager_p.h b/src/serviceframework/ipc/instancemanager_p.h
+--- a/src/serviceframework/ipc/instancemanager_p.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/serviceframework/ipc/instancemanager_p.h	2014-06-18 09:25:45.695159129 +0200
+@@ -45,7 +45,7 @@
+ #include <qserviceframeworkglobal.h>
+ #include "qremoteserviceregister.h"
+ #include "qremoteserviceregisterentry_p.h"
+-#include <private/qserviceclientcredentials_p.h>
++#include <qserviceclientcredentials_p.h>
+ #include <QHash>
+ #include <QMutexLocker>
+ #include <QMetaObject>
+diff -ruN a/src/serviceframework/qservicefilter.h b/src/serviceframework/qservicefilter.h
+--- a/src/serviceframework/qservicefilter.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/serviceframework/qservicefilter.h	2014-06-18 13:16:34.845638535 +0200
+@@ -42,7 +42,7 @@
+ #ifndef QSERVICEFILTER_H
+ #define QSERVICEFILTER_H
+ 
+-#include "qserviceframeworkglobal.h"
++#include "../../../src/serviceframework/qserviceframeworkglobal.h"
+ #include <QStringList>
+ 
+ QT_BEGIN_NAMESPACE
+diff -ruN a/src/serviceframework/qservice.h b/src/serviceframework/qservice.h
+--- a/src/serviceframework/qservice.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/serviceframework/qservice.h	2014-06-18 13:16:14.148971152 +0200
+@@ -42,7 +42,7 @@
+ #ifndef Q_SERVICE_H
+ #define Q_SERVICE_H
+ 
+-#include "qserviceframeworkglobal.h"
++#include "../../../src/serviceframework/qserviceframeworkglobal.h"
+ 
+ QT_BEGIN_NAMESPACE
+ 
+diff -ruN a/src/serviceframework/qserviceinterfacedescriptor.h b/src/serviceframework/qserviceinterfacedescriptor.h
+--- a/src/serviceframework/qserviceinterfacedescriptor.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/serviceframework/qserviceinterfacedescriptor.h	2014-06-18 12:29:21.012207105 +0200
+@@ -42,7 +42,7 @@
+ #ifndef QSERVICEINTERFACEDESCRIPTOR_H
+ #define QSERVICEINTERFACEDESCRIPTOR_H
+ 
+-#include "qserviceframeworkglobal.h"
++#include "../../../src/serviceframework/qserviceframeworkglobal.h"
+ #include <QString>
+ #include <QVariant>
+ #include "qservice.h"
+diff -ruN a/src/serviceframework/qservicemanager.h b/src/serviceframework/qservicemanager.h
+--- a/src/serviceframework/qservicemanager.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/serviceframework/qservicemanager.h	2014-06-18 13:16:06.648970892 +0200
+@@ -42,11 +42,11 @@
+ #ifndef QSERVICEMANAGER_H
+ #define QSERVICEMANAGER_H
+ 
+-#include "qserviceframeworkglobal.h"
++#include "../../../src/serviceframework/qserviceframeworkglobal.h"
+ 
+-#include "qservice.h"
+-#include "qserviceinterfacedescriptor.h"
+-#include "qservicefilter.h"
++#include "../../../src/serviceframework/qservice.h"
++#include "../../../src/serviceframework/qserviceinterfacedescriptor.h"
++#include "../../../src/serviceframework/qservicefilter.h"
+ 
+ #include <QObject>
+ #include <QList>
+diff -ruN a/src/serviceframework/qservicereply.h b/src/serviceframework/qservicereply.h
+--- a/src/serviceframework/qservicereply.h	2014-06-18 08:25:02.000000000 +0200
++++ b/src/serviceframework/qservicereply.h	2014-06-18 12:52:20.095588177 +0200
+@@ -42,8 +42,8 @@
+ #ifndef QSERVICEREPLY_H
+ #define QSERVICEREPLY_H
+ 
+-#include "qserviceframeworkglobal.h"
+-#include "qservicemanager.h"
++#include "../../../src/serviceframework/qserviceframeworkglobal.h"
++#include "../../../src/serviceframework/qservicemanager.h"
+ 
+ #include <QObject>
+ #include <QMetaObject>
+diff -ruN a/src/systeminfo/qbatteryinfo.h b/src/systeminfo/qbatteryinfo.h
+--- a/src/systeminfo/qbatteryinfo.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/systeminfo/qbatteryinfo.h	2014-06-18 11:24:03.425404826 +0200
+@@ -43,7 +43,7 @@
+ #ifndef QBATTERYINFO_H
+ #define QBATTERYINFO_H
+ 
+-#include <QtSystemInfo/qsysteminfoglobal.h>
++#include <../../../src/systeminfo/qsysteminfoglobal.h>
+ #include <QtCore/qobject.h>
+ 
+ QT_BEGIN_NAMESPACE
+diff -ruN a/src/systeminfo/qdeviceinfo.h b/src/systeminfo/qdeviceinfo.h
+--- a/src/systeminfo/qdeviceinfo.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/systeminfo/qdeviceinfo.h	2014-06-18 11:00:59.705356927 +0200
+@@ -42,7 +42,7 @@
+ #ifndef QDEVICEINFO_H
+ #define QDEVICEINFO_H
+ 
+-#include <QtSystemInfo/qsysteminfoglobal.h>
++#include <../../../src/systeminfo/qsysteminfoglobal.h>
+ #include <QtCore/qobject.h>
+ 
+ QT_BEGIN_NAMESPACE
+diff -ruN a/src/systeminfo/qnetworkinfo.h b/src/systeminfo/qnetworkinfo.h
+--- a/src/systeminfo/qnetworkinfo.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/systeminfo/qnetworkinfo.h	2014-06-18 11:13:16.898715779 +0200
+@@ -42,7 +42,7 @@
+ #ifndef QNETWORKINFO_H
+ #define QNETWORKINFO_H
+ 
+-#include <QtSystemInfo/qsysteminfoglobal.h>
++#include <../../../src/systeminfo/qsysteminfoglobal.h>
+ #include <QtCore/qobject.h>
+ #include <QtNetwork/qnetworkinterface.h>
+ 
+diff -ruN a/src/systeminfo/qscreensaver.h b/src/systeminfo/qscreensaver.h
+--- a/src/systeminfo/qscreensaver.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/systeminfo/qscreensaver.h	2014-06-18 11:24:12.548738476 +0200
+@@ -42,7 +42,7 @@
+ #ifndef QSCREENSAVER_H
+ #define QSCREENSAVER_H
+ 
+-#include <QtSystemInfo/qsysteminfoglobal.h>
++#include <../../../src/systeminfo/qsysteminfoglobal.h>
+ #include <QtCore/qobject.h>
+ 
+ QT_BEGIN_NAMESPACE
+diff -ruN a/src/systeminfo/qstorageinfo.cpp b/src/systeminfo/qstorageinfo.cpp
+--- a/src/systeminfo/qstorageinfo.cpp	2014-06-18 08:25:01.000000000 +0200
++++ b/src/systeminfo/qstorageinfo.cpp	2014-06-18 11:43:50.612112589 +0200
+@@ -39,7 +39,7 @@
+ **
+ ****************************************************************************/
+ 
+-#include "qstorageinfo.h"
++#include "../../../src/systeminfo/qstorageinfo.h"
+ 
+ #include <QtCore/qstringlist.h>
+ 
+diff -ruN a/src/systeminfo/qstorageinfo.h b/src/systeminfo/qstorageinfo.h
+--- a/src/systeminfo/qstorageinfo.h	2014-06-18 08:25:01.000000000 +0200
++++ b/src/systeminfo/qstorageinfo.h	2014-06-18 11:23:57.648737959 +0200
+@@ -42,7 +42,7 @@
+ #ifndef QSTORAGEINFO_H
+ #define QSTORAGEINFO_H
+ 
+-#include <QtSystemInfo/qsysteminfoglobal.h>
++#include <../../../src/systeminfo/qsysteminfoglobal.h>
+ #include <QtCore/qobject.h>
+ #include <QtCore/qstringlist.h>
+ 

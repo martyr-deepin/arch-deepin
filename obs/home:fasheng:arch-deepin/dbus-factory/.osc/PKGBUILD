@@ -1,0 +1,62 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Contributor: 
+
+pkgbase="dbus-factory"
+pkgname=('dde-go-dbus-factory'
+	 'dde-qml-dbus-factory')
+pkgver=git20140516~5ed6a4d
+pkgrel=1
+pkgdesc='dde qml gettext plugin'
+arch=('i686' 'x86_64')
+url="https://github.com/linuxdeepin/dbus-factory"
+license=('GPL2')
+depends=()
+makedepends=('go>=1.3' 'go-dlib' 'go-dlib-dbus-proxyer' 'qt5-quickcontrols'
+	     'qt5-declarative' 'python2' 'gettext' 'bluez' 'udisks2' 'upower' 'accountsservice' 'libdbus' 'networkmanager' 'dhcpcd')
+groups=('deepin')
+options=(staticlibs)
+source=("${pkgbase}-${pkgver}.tar.xz" "json_build.py")
+sha256sums=('SKIP' 'b94d03d1f68d70bac2f96edea4539e771ac635a75ee0d5f57fdd5879ad0ad1f3')
+
+build() {
+  cd "${pkgbase}-${pkgver}"
+
+  # fix python version
+  #find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+  
+  cd in.json && python2 ../../json_build.py
+}
+
+package_dde-qml-dbus-factory() {
+  cd "${srcdir}/${pkgbase}-${pkgver}"
+
+  pkgdesc='Go-lang dbus gen QML for dlib'
+  depends=('qt5-declarative')
+  optdepends=('udisks2: Disk Management Service'
+	      'bluez: Daemons for the bluetooth protocol stack'
+	      'upower: Abstraction for enumerating power devices'
+	      'accountsservice: D-Bus interface for user account query and manipulation'
+	      'polkit: Application development toolkit for controlling system-wide privileges'
+	      'libdbus: DBus library'
+	      'networkmanager: Network Management daemon')
+  
+  for i in `find in.json -name "qmldir"`;do 
+    module=`cat $i | grep module` 
+    module=${module##module } 
+    echo $module
+    dir=${module//./\/} 
+    mkdir -p "${pkgdir}"/usr/lib/qt/qml/${dir} 
+    cp ${i%%\/qmldir}/* -r "${pkgdir}"/usr/lib/qt/qml/${dir}; 
+  done
+}
+
+package_dde-go-dbus-factory() {
+  cd "${srcdir}/${pkgbase}-${pkgver}"
+
+  pkgdesc='Go-lang dbus gen for dlib'
+  
+  install -dm 755 "${pkgdir}"/usr/lib/go/pkg/`go env GOHOSTOS`_`go env GOHOSTARCH`/dbus
+  install -dm 755 "${pkgdir}"/usr/lib/go/src/pkg/dbus
+  cp in.json/go/src/* -r "${pkgdir}"/usr/lib/go/src/pkg/dbus
+  cp in.json/go/pkg/`go env GOHOSTOS`_`go env GOHOSTARCH`/* -r "${pkgdir}"/usr/lib/go/pkg/`go env GOHOSTOS`_`go env GOHOSTARCH`/dbus
+}
