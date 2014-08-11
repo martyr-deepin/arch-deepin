@@ -7,7 +7,7 @@ pkgdesc='Python2 binds lunar library for gtk-2.0 from Linux Deepin'
 arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('GPL2')
-depends=('libdtk-widget' 'python2-libdtk-widget' 'python2' 'python2-gobject2' 'glib2' 'deepin-pygtk-fix' 'lunar-calendar2' 'lunar-date')
+depends=('libdtk-widget' 'python2-libdtk-widget' 'python2' 'python2-gobject2' 'glib2' 'deepin-pygtk' 'lunar-calendar2' 'lunar-date')
 
 makedepends=('python2-setuptools' 'autogen')
 

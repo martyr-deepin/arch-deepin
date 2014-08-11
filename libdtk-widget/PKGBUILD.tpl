@@ -7,7 +7,7 @@ pkgdesc='Deepin widget of Chinese Lunar library'
 arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('GPL2')
-depends=('deepin-pygtk-fix' 'glib2' 'gdk-pixbuf2')
+depends=('deepin-pygtk' 'glib2' 'gdk-pixbuf2')
 makedepends=('autogen' 'gobject-introspection' 'python2' 'python2-gobject2' 'pygobject2-devel' 'gtk-doc')
 
 _fileurl={% fileurl %}

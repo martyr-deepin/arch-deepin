@@ -7,7 +7,7 @@ pkgdesc='System notifications for Linux Deepin desktop environment'
 arch=('i686' 'x86_64')
 license=('GPL2')
 url="http://www.linuxdeepin.com/"
-depends=('deepin-ui' 'deepin-pygtk-fix' 'python2-dbus' 'python2-cairo')
+depends=('deepin-ui' 'deepin-pygtk' 'python2-dbus' 'python2-cairo')
 conflicts=("notify-osd")
 
 _fileurl={% fileurl %}
