@@ -1,9 +1,9 @@
 <services>
   <service name="tar_scm">
     <param name="scm">git</param>
-    <param name="url">git://github.com/linuxdeepin/dde-api.git</param>
+    <param name="url">git://gitcafe.com/Deepin/dde-api.git</param>
     <param name="filename">dde-api</param>
-    <param name="versionformat">git%cd~%h</param>
+    <param name="versionformat">git%cd.%h</param>
     <param name="versionprefix">0.0.2</param>
     <param name="revision"></param>
   </service>

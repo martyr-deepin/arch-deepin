@@ -1,5 +1,5 @@
-<directory name="go-xgbutil" rev="25" srcmd5="05900df08303b17cb620016533fc3fbb" vrev="25">
-  <serviceinfo code="succeeded" xsrcmd5="6495994a7d4f64e7060dd3a56406e54a" />
+<directory name="go-xgbutil" rev="27" srcmd5="79cd190c2429207106b2e69d23ec18c9" vrev="27">
+  <serviceinfo code="succeeded" xsrcmd5="d1c1dc947ae843af547b8dc52f7bc33a" />
   <entry md5="02e2f494ae6b48ec6d801c5f94b6f79b" mtime="1403698817" name="PKGBUILD" size="1622" />
-  <entry md5="2324e236dbd8211706f0086ae6de8632" mtime="1402972997" name="_service" size="454" />
+  <entry md5="3ef9221d3196b7d54a4f4b7c29c44385" mtime="1408563888" name="_service" size="454" />
 </directory>

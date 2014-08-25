@@ -1,7 +1,8 @@
-<directory name="go-dlib" rev="92" srcmd5="d7d031d0e99b4ab32f4b4c31fc06729c" vrev="92">
-  <serviceinfo code="succeeded" xsrcmd5="7d68c8cf26cfbc3041aada297a44e829" />
-  <entry md5="f70c4fcde61d56a1fe23fc0ba242925d" mtime="1404315439" name="PKGBUILD" size="1115" />
-  <entry md5="a37e2c22ac96dbd3355e4e1ae622ed3a" mtime="1404315440" name="_service" size="494" />
+<directory name="go-dlib" rev="107" srcmd5="1dcb14b84722ab69574f6d3e15c7dd75" vrev="107">
+  <serviceinfo code="succeeded" xsrcmd5="3789a13f44d6efeb2307330dfd98c1bb" />
+  <entry md5="3adba88284a73bbf0a50b5b6ae14fad9" mtime="1408965291" name="PKGBUILD" size="775" />
+  <entry md5="c6542f19391d08bc561a508d8b3a6ace" mtime="1408563412" name="_service" size="490" />
+  <entry md5="7b2c9b1272cd2d236ff086ebd102608b" mtime="1408962361" name="install-path-fix.patch" size="1072" />
   <entry md5="0b3618629c1f31e601d1332ddfabb9c8" mtime="1397819875" name="install.patch" size="318" />
   <entry md5="c5cdc9a00d5b80745bc67b126ca43aa7" mtime="1403697396" name="install.sh" size="265" />
 </directory>

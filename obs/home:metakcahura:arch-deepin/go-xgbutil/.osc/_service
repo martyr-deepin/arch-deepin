@@ -3,7 +3,7 @@
     <param name="scm">git</param>
     <param name="url">git://github.com/BurntSushi/xgbutil.git</param>
     <param name="filename">xgbutil</param>
-    <param name="versionformat">git%cd~%h</param>
+    <param name="versionformat">git%cd.%h</param>
     <param name="versionprefix">1</param>
   </service>
   <service name="recompress">

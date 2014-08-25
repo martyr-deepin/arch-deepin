@@ -1,5 +1,5 @@
-<directory name="golang-sqlite3" rev="7" srcmd5="79e5ba83cb49a0315213e871cb3854f2" vrev="7">
-  <serviceinfo code="succeeded" xsrcmd5="99a73a783e6740b719b62eee88cbca8a" />
-  <entry md5="2c8b24d05c823a31ef205a2aaf820be1" mtime="1404664664" name="PKGBUILD" size="1049" />
+<directory name="golang-sqlite3" rev="8" srcmd5="4d902d9d6158d2fdf27238bbcce2b39e" vrev="8">
+  <serviceinfo code="succeeded" xsrcmd5="671e25e583638f981628bfa9f0e65b66" />
+  <entry md5="8a7372199c2bb7d46d43bf2137b79d79" mtime="1408564148" name="PKGBUILD" size="1049" />
   <entry md5="2bdd495a2029d7b5e948c5c273d9332f" mtime="1404664664" name="_service" size="272" />
 </directory>

@@ -11,8 +11,8 @@ arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dbus-factory"
 license=('GPL2')
 depends=()
-makedepends=('go>=1.3' 'go-dlib' 'go-dlib-dbus-proxyer' 'qt5-quickcontrols'
-	     'qt5-declarative' 'python2' 'gettext' 'bluez' 'udisks2' 'upower' 'accountsservice' 'libdbus' 'networkmanager' 'dhcpcd')
+makedepends=('gettext' 'go>=1.3' 'go-dlib' 'qt5-webkit' 'qt5-quickcontrols' 'python2'
+	     'bluez' 'udisks2' 'upower' 'accountsservice' 'libdbus' 'dbus-generator')
 groups=('deepin')
 options=(staticlibs)
 source=("${pkgbase}-${pkgver}.tar.xz" "json_build.py")

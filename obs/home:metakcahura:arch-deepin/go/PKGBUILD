@@ -11,12 +11,12 @@
 
 pkgname=go
 epoch=2
-pkgver=1.3
+pkgver=1.3.1
 pkgrel=1
 pkgdesc='Compiler and tools for the Go programming language from Google'
 arch=('x86_64' 'i686')
 url='http://golang.org/'
-license=('custom')
+license=('BSD')
 depends=('perl' 'gawk')
 makedepends=('inetutils' 'mercurial')
 options=('!strip' 'staticlibs')
@@ -28,16 +28,16 @@ install="$pkgname.install"
 
 if [ "$CARCH" == 'x86_64' ]; then
  source=("http://go.googlecode.com/files/${pkgname}$pkgver.linux-amd64.tar.gz"
-	 "tools.go-7e8840964994.tar.xz")
- sha1sums=('b6b154933039987056ac307e20c25fa508a06ba6' 'SKIP')
+	 "tools.go-c0cd000c8cea.tar.xz")
+ sha1sums=('3af011cc19b21c7180f2604fd85fbc4ddde97143' 'SKIP')
 else
  source=("http://go.googlecode.com/files/${pkgname}$pkgver.linux-386.tar.gz"
-	 "tools.go-7e8840964994.tar.xz")
- sha1sums=('22db33b0c4e242ed18a77b03a60582f8014fd8a6' 'SKIP')
+	 "tools.go-c0cd000c8cea.tar.xz")
+ sha1sums=('36f87ce21cdb4cb8920bb706003d8655b4e1fc81' 'SKIP')
 fi
 
 build() {
-  cd "$srcdir/$pkgname/src"
+  cd "$pkgname/src"
 
   export GOROOT="$srcdir/$pkgname"
   export GOBIN="$GOROOT/bin"

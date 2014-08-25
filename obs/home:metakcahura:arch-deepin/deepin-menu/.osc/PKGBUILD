@@ -4,11 +4,11 @@ pkgname=deepin-menu
 pkgver=git20140516~6267532
 pkgrel=1
 pkgdesc="System notifications for linuxdeepin desktop environment."
-arch=('any')
-url="https://github.com/linuxdeepin/deepin-menu"
+arch=('i686' 'x86_64')
+url="https://gitcafe.com/Deepin/deepin-menu"
 license=('GPL-3+')
 depends=('python2-pyqt5')
-makedepends=('python2-setuptools')
+makedepends=('python2-setuptools' 'qt5-declarative')
 groups=('deepin')
 options=(staticlibs)
 source=("${pkgname}-${pkgver}.tar.xz")
@@ -25,12 +25,15 @@ build() {
   cd "${pkgname}-${pkgver}"
   
   python2 setup.py build
+  qmake && make
 }
 
 package() {
   cd "${pkgname}-${pkgver}"
   
   python2 setup.py install --root="${pkgdir}" --optimize=1
+  
+  make INSTALL_ROOT="$pkgdir/" install
 
   install -dm 755 "${pkgdir}"/usr/share/pyshared
   mv "${pkgdir}"/usr/deepin_menu "${pkgdir}"/usr/share/pyshared

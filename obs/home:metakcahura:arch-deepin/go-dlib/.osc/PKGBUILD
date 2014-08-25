@@ -9,27 +9,27 @@ arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/go-lib"
 license=('GPL2')
 depends=('glib2')
-makedepends=('go>=1.3' 'gettext' 'gdk-pixbuf2' 'golang-gocheck' 'libpulse')
+makedepends=('go>=1.3' 'gettext' 'gdk-pixbuf2' 'golang-gocheck'
+	     'libpulse' 'go-xgb' 'gtk3')
 groups=('deepin')
 options=(staticlibs)
-source=("${pkgname}-${pkgver}.tar.xz")
-sha256sums=('SKIP')
+source=("${pkgname}-${pkgver}.tar.xz" 'install-path-fix.patch')
+sha256sums=('SKIP' 'f18096ac5074a02e4ab04280ac3d14e815cabb7a292fbd199b98e03bae2088ec')
+
+prepare(){
+  cd "${pkgname}-${pkgver}"
+
+  patch -i "${srcdir}/install-path-fix.patch"
+}
 
 build(){
-  cd "$srcdir"
+  cd "${pkgname}-${pkgver}"
   
-  mkdir -p ${pkgname}-build/src/pkg.linuxdeepin.com/lib
-  cp -r ${pkgname}-${pkgver}/* ${pkgname}-build/src/pkg.linuxdeepin.com/lib/
-  rm -rf ${pkgname}-build/src/pkg.linuxdeepin.com/lib/.git
-  cd ${pkgname}-build && GOPATH=`pwd` go install pkg.linuxdeepin.com/lib
-  cd $srcdir/${pkgname}-build && GOPATH=`pwd` go install pkg.linuxdeepin.com/lib/{dbus,gettext,gio-2.0,glib-2.0,gobject-2.0,graphic,logger,pinyin,proxy,pulse,utils}
+  make
 }
 
 package() {
-  cd "$srcdir"
+  cd "${pkgname}-${pkgver}"
 
-  install -dm 755 "${pkgdir}"/usr/lib/go/{pkg,src/pkg}
-  
-  cp -r ${pkgname}-build/pkg/* "${pkgdir}"/usr/lib/go/pkg/
-  cp -r ${pkgname}-build/src/* "${pkgdir}"/usr/lib/go/src/pkg/
+  make DESTDIR="$pkgdir/" install
 }

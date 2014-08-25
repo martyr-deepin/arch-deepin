@@ -19,26 +19,11 @@ sha256sums=('SKIP')
 build(){
   cd "${pkgname}-${pkgver}"
   
-  cd graphic && GOPATH=`pwd` go build && cd ..
-  cd grub2ext && GOPATH=`pwd` go build && cd ..
-  cd logger && GOPATH=`pwd` go build && cd ..
-  cd lunar-calendar && GOPATH=`pwd` go build && cd ..
-  cd mousearea && GOPATH=`pwd` go build && cd ..
-  cd set-date-time && GOPATH=`pwd` go build && cd ..
-  cd sound && GOPATH=`pwd` go build && cd ..
+  make
 }
 
 package() {
   cd "${pkgname}-${pkgver}"
 
-  install -dm 755 "${pkgdir}"/etc/{dbus-1/system.d,logrotate.d}
-  install -dm 755 "${pkgdir}"/usr/lib/deepin-api
-  install -dm 755 "${pkgdir}"/usr/share/dbus-1/{services,system-services}
-  
-  install -m 644 data/system-service/*.service "${pkgdir}"/usr/share/dbus-1/system-services/
-  install -m 644 data/service/*.service "${pkgdir}"/usr/share/dbus-1/services/
-  install -m 644 data/conf/*.conf "${pkgdir}"/etc/dbus-1/system.d/
-  install -m 644 data/logrotate.d/* "${pkgdir}"/etc/logrotate.d/
-  
-  install -m 755 {gra*/graphic,gru*/grub2ext,log*/logger,lun*/lunar-calendar,mou*/mousearea,set*/set-date-time,sou*/sound} "${pkgdir}"/usr/lib/deepin-api/
+  make DESTDIR="$pkgdir/" install
 }
