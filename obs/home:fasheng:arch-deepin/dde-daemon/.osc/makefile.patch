@@ -1,9 +1,0 @@
-diff -ruN dde-daemon-0.0.1.old/makefile dde-daemon-0.0.1/makefile
---- dde-daemon-0.0.1.old/makefile	2014-04-25 04:51:46.000000000 +0200
-+++ dde-daemon-0.0.1/makefile	2014-05-01 00:57:27.383296930 +0200
-@@ -1,4 +1,4 @@
--run:=go build -o .out && rm .out
-+run:=go build && cd ..
- 
- all: 
- 	cd accounts/ &&  $(run)
