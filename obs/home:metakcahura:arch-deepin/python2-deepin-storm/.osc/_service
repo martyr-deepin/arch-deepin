@@ -1,10 +1,10 @@
 <services>
   <service name="tar_scm">
     <param name="scm">git</param>
-    <param name="url">git://github.com/linuxdeepin/deepin-storm.git</param>
+    <param name="url">git://gitcafe.com/Deepin/deepin-storm.git</param>
     <param name="filename">deepin-storm</param>
-    <param name="versionformat">git%cd~%h</param>
-    <param name="versionprefix">0.3</param>
+    <param name="versionformat">%cd.%h</param>
+    <param name="versionprefix">0.2</param>
   </service>
   <service name="recompress">
     <param name="file">*.tar</param>

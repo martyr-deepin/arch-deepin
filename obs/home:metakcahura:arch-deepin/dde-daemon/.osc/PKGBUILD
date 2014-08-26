@@ -10,7 +10,8 @@ url="https://gitcafe.com/Deepin/dde-daemon"
 license=('GPL2')
 depends=('go-dlib' 'dde-go-dbus-factory' 'libgnomekbd' 'acpid' 'bluez' 'dde-api' 'go-xgb' 'grub-themes-deepin'
 	 'go-xgbutil' 'golang-sqlite3' 'libpulse' 'cairo'  'metacity-ubuntu' 'xcur2png'
-	 'polkit-gnome' 'network-manager-applet' 'startdde')
+	 'polkit-gnome' 'network-manager-applet')
+	 #'startdde'
 makedepends=('gettext' 'go>=1.3' 'golang-fsnotify' 'upower' 'python2' 'gtk3' 'gtk2'
 	     'libnotify' 'libcanberra' 'libsystemd' 'gnome-desktop' 'dhcpcd'
 	     'libxkbfile' 'scons' 'golang-jamslam-freetype-go')

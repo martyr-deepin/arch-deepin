@@ -1,17 +1,17 @@
 # $Id$
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
+# Contributor: padfoot <padfoot@exemail.com.au>
 # Contributor: Morfeo <morfeo89@hotmail.it>
 
 pkgbase=lightdm
 pkgname=('lightdm' 'liblightdm-qt4' 'liblightdm-qt5')
-pkgver=1.11.4
+pkgver=1.11.6
 pkgrel=1
-epoch=1
 pkgdesc='A lightweight display manager'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/lightdm'
 license=('GPL3' 'LGPL3')
-makedepends=('which' 'gettext' 'gobject-introspection' 'gtk-doc' 'intltool' 'itstool' 'libxklavier' 'polkit' 'qt4' 'qt5-base')
+makedepends=('which' 'gettext' 'gobject-introspection' 'gtk-doc' 'intltool' 'itstool' 'libxklavier' 'polkit' 'qt4' 'qt5-base' 'systemd')
 source=("https://launchpad.net/lightdm/${pkgver%.*}/${pkgver}/+download/${pkgbase}-${pkgver}.tar.xz"
         'lightdm.service'
         'lightdm.tmpfiles'
@@ -21,7 +21,7 @@ source=("https://launchpad.net/lightdm/${pkgver%.*}/${pkgver}/+download/${pkgbas
         #'lightdm-default-config.patch'
         'lightdm-deepin-default-config.patch'
         'Xsession')
-sha256sums=('65c1365185d3da7ae3f6a06a30b9ae103feb6706e1c43abe44edf945f8116a47'
+sha256sums=('d7e5aa32172696b47cc9fd7f59230199443c856c0097afa93b99d86d81185436'
             '0d2adba25cdbe59e97ffd302083db9d5e23920780f41e04f64512cd6b633289a'
             'b29521fbd7a48a8f60b93ecca3b30c30bcb71560de8033c8d39b25c22c6f696f'
             'e8c4c5fd3b801a390d201166fd1fb9730e78a5c62928768103b870b6bd980ea0'
@@ -29,7 +29,7 @@ sha256sums=('65c1365185d3da7ae3f6a06a30b9ae103feb6706e1c43abe44edf945f8116a47'
             'a89566307e1c81c24f037d854cbd472d2f94f8a4b759877a01563a332319f7d6'
             #'20de3152b9ea037be1cbb9a32c052cb53d3362daf7c4ebd3d8669a1af0f13723'
             '37f3cdf7eff23cbbdcdfb1c5bb1c277aa8af3e686f44d288612501a24d8303c4'
-            '4d5674906742200b3c171f978457e943560f2c10a2b9156fcd44da3796d185a2')
+            '7fb85a1b54406032a922e8fd6f45d869fcfe5681df630e74e8e50c040b786ee4')
 
 prepare() {
   cd ${pkgbase}-${pkgver}
@@ -50,6 +50,8 @@ package_lightdm() {
 depends=('libxklavier' 'polkit' 'systemd')
 optdepends=('xorg-server-xephyr: LightDM test mode'
             'accountsservice: limit visible accounts')
+provides=("lightdm=${pkgver}")
+conflicts=('lightdm')
 backup=('etc/apparmor.d/lightdm-guest-session'
         'etc/lightdm/keys.conf'
         'etc/lightdm/lightdm.conf'
@@ -94,6 +96,8 @@ install="${pkgbase}.install"
 package_liblightdm-qt4() {
 pkgdesc='LightDM Qt client library'
 depends=('lightdm' 'qt4')
+provides=('liblightdm-qt4')
+conflicts=('liblightdm-qt4')
 options=('!emptydirs')
 
   cd ${pkgbase}-${pkgver}
@@ -109,6 +113,8 @@ options=('!emptydirs')
 package_liblightdm-qt5() {
 pkgdesc='LightDM Qt client library'
 depends=('lightdm' 'qt5-base')
+provides=('liblightdm-qt5')
+conflicts=('liblightdm-qt5')
 options=('!emptydirs')
 
   cd ${pkgbase}-${pkgver}

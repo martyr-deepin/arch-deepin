@@ -1,7 +1,7 @@
 <services>
   <service name="tar_scm">
     <param name="scm">git</param>
-    <param name="url">git://github.com/linuxdeepin/dde-control-center.git</param>
+    <param name="url">git://gitcafe.com/Deepin/dde-control-center.git</param>
     <param name="filename">dde-control-center</param>
     <param name="versionformat">git%cd~%h</param>
     <param name="versionprefix">0.0.3</param>

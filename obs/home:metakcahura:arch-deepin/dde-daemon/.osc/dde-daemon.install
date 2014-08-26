@@ -4,11 +4,15 @@ post_install() {
   passwd -l deepin-daemon > /dev/null
   touch /var/log/deepin.log && chown deepin-daemon:deepin-daemon /var/log/deepin.log
   
-  /usr/lib/deepin-daemon/theme-thumb-tool --gtk /usr/share/personalization/thumbnail 2> /dev/null || echo "Error handling --gtk"
-  /usr/lib/deepin-daemon/theme-thumb-tool --icon /usr/share/personalization/thumbnail 2> /dev/null || echo "Error handling --icon"
-  /usr/lib/deepin-daemon/theme-thumb-tool --cursor /usr/share/personalization/thumbnail 2> /dev/null || echo "Error handling --cursor"
-  /usr/lib/deepin-daemon/theme-thumb-tool --background /usr/share/personalization/thumbnail 2> /dev/null || echo "Error handling --background"
-  
+  command=/usr/lib/deepin-daemon/theme-thumb-tool
+  target_dir=/usr/share/personalization/thumbnail
+  if [ -x $command ];then
+      $command --gtk $target_dir 2> /dev/null || echo "Error handling --gtk"
+      $command --icon $target_dir 2> /dev/null || echo "Error handling --icon"
+      $command --cursor $target_dir 2> /dev/null || echo "Error handling --cursor"
+      $command --background $target_dir 2> /dev/null || echo "Error handling --background"
+  fi
+ 
   if [ -f /usr/share/applications/polkit-gnome-authentication-agent-1.desktop ]; then
       cp -f /usr/share/applications/polkit-gnome-authentication-agent-1.desktop /etc/xdg/autostart/
       sed -i 's/\(OnlyShowIn=.*\)/\1Deepin;/' /etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop 

@@ -1,6 +1,10 @@
-<directory name="dde-control-center" rev="52" srcmd5="b8524300b339421dd3b6fc11bcd6a7ba" vrev="52">
-  <serviceinfo code="succeeded" xsrcmd5="0b4123768f38ed5e15a823bc0ca0e34c" />
+<directory name="dde-control-center" rev="53" srcmd5="b1a376ffaf1daa6b8c4e420fcf2105f7" vrev="53">
+  <serviceinfo code="failed">
+    <error>service tar_scm failed:
+Running /usr/lib/obs/service/tar_scm --scm git --url git://gitcafe.com/Deepin/dde-control-center.git --filename dde-control-center --versionformat git%cd~%h --versionprefix 0.0.3 --outdir /lxc.tmp.10756/out
+Argument --versionformat got an argument with not supported char.</error>
+  </serviceinfo>
   <entry md5="c2b9626f775a280d5549feb4ddd1f55a" mtime="1404668716" name="PKGBUILD" size="1762" />
-  <entry md5="2eb62fa614fc350e946d906c6440a167" mtime="1403871398" name="_service" size="517" />
+  <entry md5="43af2f59714056d862592e20a5cc3cc6" mtime="1409053390" name="_service" size="513" />
   <entry md5="1cf622c8dc5348d3dd92cd512fc20007" mtime="1400737508" name="generate_mo.sh" size="236" />
 </directory>
