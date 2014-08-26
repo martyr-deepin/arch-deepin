@@ -4,20 +4,21 @@
 
 pkgname=compiz-ubuntu
 
-_ubuntu_rel=0ubuntu2
-_actual_ver=0.9.11
-_extra_ver=+14.10.20140606
+_ubuntu_rel=0ubuntu1
+_actual_ver=0.9.12
+_extra_ver=+14.10.20140812
 
 # AUR Fix
-pkgver=0.9.11.14.10.20140606
+pkgver=0.9.12.14.10.20140812
 realver=${_actual_ver}${_extra_ver/+/.}
 
-pkgrel=3
+pkgrel=1
 pkgdesc="OpenGL window and compositing manager"
 url="http://www.compiz.org/"
 arch=('i686' 'x86_64')
 license=('GPL')
-depends=('boost-libs' 'dbus' 'fuse' 'glibmm' 'glu' 'librsvg' 'libxcomposite' 'libxdamage' 'libxinerama' 'libxrandr' 'libxslt' 'libwnck' 'mesa' 'metacity-ubuntu' 'startup-notification' 'protobuf' 'pyrex' 'gsettings-desktop-schemas' 'gnome-settings-daemon')
+depends=('boost-libs' 'dbus' 'fuse' 'glibmm' 'glu' 'librsvg' 'libxcomposite' 'libxdamage' 'libxinerama' 'libxrandr' 'libxslt' 'libwnck' 'mesa'
+	 'metacity' 'startup-notification' 'protobuf' 'pyrex' 'gsettings-desktop-schemas' 'gnome-settings-daemon')
 # The schemas from gnome-settings-daemon are needed
 # depends+=('gnome-settings-daemon')
 makedepends=('boost' 'cmake' 'gettext' 'intltool' 'libwnck' 'dhclient')
@@ -25,19 +26,20 @@ optdepends=('gnome-control-center: GNOME Control Center'
             'unity-control-center: Unity Control Center')
 groups=('unity')
 options=('emptydirs')
-conflicts=('compiz')
+conflicts=('compiz' 'metacity-ubuntu')
 provides=('compiz-core' 'compiz')
 install=compiz-ubuntu.install
 source=(#"https://launchpad.net/ubuntu/+archive/primary/+files/compiz_${_actual_ver}${_extra_ver}.orig.tar.gz"
-        "https://launchpad.net/~townsend/+archive/compiz-nvidia-refresh-test/+files/compiz_0.9.11+14.10.20140606-0ubuntu2ppa1.tar.gz"
+        #"https://launchpad.net/~townsend/+archive/ubuntu/compiz-nvidia-refresh-test/+files/compiz_0.9.12%2B14.10.20140812-0ubuntu1ppa1.tar.gz"
+        "https://launchpad.net/~townsend/+archive/ubuntu/compiz-nvidia-refresh-test/+files/compiz_0.9.12+14.10.20140812-0ubuntu1ppa1.tar.gz"
         "https://launchpad.net/ubuntu/+archive/primary/+files/compiz_${_actual_ver}${_extra_ver}-${_ubuntu_rel}.diff.gz"
         'compiz.reset'
         '0002_Fix_cmake_install_dir.patch'
         '0003_Fix_python_install_command.patch'
         '0004_Use_python2.patch'
         '0005_Disable_Werror.patch')
-sha512sums=('046ce99633328c2bf4cb0a5b52de6ba4516e32fbb4dd798dc37feb7730fb63eae1e0633e5a1b0896bc7689104460c420132aeaed6c036760e7a0fe89d09659fd'
-            '257e44de6ad6d02fd45b76797ef71d1cd98238ca27ac678b33116b2c7db2865d37fe54d6c6c7e60333a83d17ca8efb220a0b59a0865b7f86a4417db4fc90d903'
+sha512sums=('SKIP'
+            'SKIP'
             '5f4b38c5fe3af9de0fe7897b9fdd04184dff9bf448f21ef19d9ae1b224c972061d8b183aa01cf8dcdf4fb37bb3466233ce53a6dfbbe51b0ff04f17568d2dc7ff'
             'ba80a6e5c3a7b488974046f8c1b906bb178691a9224b5c8f3542e0948099e2291b8888fbd4f591eaa16f9209e7288f11e122d1673731e7f1aa7c84aa6e3207c6'
             'bd7c8c0bf4cb3767c5b4b6d9c2d79e958ff9f34375a8223b509aec16b3682e219568e17378fa392f6ca4267f695835d83ef1c5db12898ea7b7cc75e1151d02b2'

@@ -17,7 +17,7 @@ sha256sums=('SKIP' '9fd525ce974bc939b769cb57ff9361a14b55670b95b61343c9299bc9e56e
 prepare() {
   cd "${pkgname}-${pkgver}"
 
-  patch -p1 -i ../fix-compile.patch
+  #patch -p1 -i ../fix-compile.patch
 }
 
 build() {

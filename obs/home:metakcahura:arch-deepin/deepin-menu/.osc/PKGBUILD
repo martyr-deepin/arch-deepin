@@ -8,7 +8,7 @@ arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/deepin-menu"
 license=('GPL-3+')
 depends=('python2-pyqt5')
-makedepends=('python2-setuptools' 'qt5-declarative')
+makedepends=('python2-setuptools' 'qt5-declarative' 'qt5-x11extras')
 groups=('deepin')
 options=(staticlibs)
 source=("${pkgname}-${pkgver}.tar.xz")
@@ -35,7 +35,8 @@ package() {
   
   make INSTALL_ROOT="$pkgdir/" install
 
-  install -dm 755 "${pkgdir}"/usr/share/pyshared
-  mv "${pkgdir}"/usr/deepin_menu "${pkgdir}"/usr/share/pyshared
-  chmod +x "${pkgdir}"/usr/share/pyshared/deepin_menu/main.py
+  #install -dm 755 "${pkgdir}"/usr/share/pyshared
+  #cp -r "${pkgdir}"/usr/deepin_menu/* "${pkgdir}"/usr/share/pyshared
+  #chmod +x "${pkgdir}"/usr/share/pyshared/deepin_menu/menu.py
+  #rm -rf "${pkgdir}"/usr/deepin_menu
 }

@@ -5,7 +5,7 @@ pkgver=20140508~fc6d8b7
 pkgrel=1
 pkgdesc="System notifications for linuxdeepin desktop environment."
 arch=('i686' 'x86_64')
-url="https://github.com/linuxdeepin/deepin-notifications"
+url="https://gitcafe.com/Deepin/deepin-notifications"
 license=('GPL-3+')
 depends=('glib2' 'python2' 'go-dlib' 'dde-go-dbus-factory')
 makedepends=('go>=1.3')

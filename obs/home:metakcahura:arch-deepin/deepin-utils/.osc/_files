@@ -1,5 +1,5 @@
-<directory name="deepin-utils" rev="20" srcmd5="78f3094c740deb9d1edd1fcb185c51de" vrev="20">
-  <serviceinfo code="succeeded" xsrcmd5="828413258fe23bcd2820e3f5eb59da25" />
-  <entry md5="cf7a61f42f6039ffe9338aee02b45e00" mtime="1401316468" name="PKGBUILD" size="857" />
-  <entry md5="28bb4be8c787ceab8f38acc5972c40cb" mtime="1401314637" name="_service" size="469" />
+<directory name="deepin-utils" rev="22" srcmd5="fc7524801f7ea6f2504a95b430c4d7b5" vrev="22">
+  <serviceinfo code="succeeded" xsrcmd5="fc2ef6d23617f82746a4d7b6f3fe1a15" />
+  <entry md5="0d859e3ff372dee1c7f9e5fd3e3547e1" mtime="1408986580" name="PKGBUILD" size="853" />
+  <entry md5="35cee9ea831873e4485b73c8747b7926" mtime="1408986645" name="_service" size="462" />
 </directory>

@@ -3,7 +3,7 @@
     <param name="scm">git</param>
     <param name="url">git://gitcafe.com/Deepin/deepin-webkit.git</param>
     <param name="filename">deepin-webkit</param>
-    <param name="versionformat">git%cd.%h</param>
+    <param name="versionformat">%cd.%h</param>
     <param name="versionprefix">1.8.2.1</param>
     <param name="revision"></param>
   </service>

@@ -1,7 +1,7 @@
-<directory name="deepin-icon-theme" rev="28" srcmd5="aaf8b49618e0312a1a96c37c3c7449e9" vrev="28">
-  <serviceinfo code="succeeded" xsrcmd5="35f3b1d4b2ecb95868da799ace9768af" />
-  <entry md5="458e1dd5160fc42d4ee7d76783c38409" mtime="1401435180" name="PKGBUILD" size="966" />
-  <entry md5="374fdecf124f6840ad72c34a7cc938a8" mtime="1401335885" name="_service" size="522" />
+<directory name="deepin-icon-theme" rev="29" srcmd5="e2cc86839f73d7061cf7d66c740bf753" vrev="29">
+  <serviceinfo code="succeeded" xsrcmd5="ceb479e10a8f78ccbc84879145270c15" />
+  <entry md5="f9537d0c0756daedcc3a45f13c027c16" mtime="1408996555" name="PKGBUILD" size="961" />
+  <entry md5="e9ebfbd2e6ac200cc3036b813e47c108" mtime="1408996556" name="_service" size="515" />
   <entry md5="366e0ba0291e577b5f562db97347ade2" mtime="1401335886" name="convert_refactor.py" size="3578" />
   <entry md5="686123271f57e4cbd1c37612ac82fc79" mtime="1401153689" name="deepin-icon-theme.install" size="170" />
 </directory>

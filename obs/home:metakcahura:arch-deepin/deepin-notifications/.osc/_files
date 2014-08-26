@@ -1,5 +1,5 @@
-<directory name="deepin-notifications" rev="19" srcmd5="87d46eb82db7639804da9274ac852745" vrev="19">
-  <serviceinfo code="succeeded" xsrcmd5="fa89d48de9bd5cbfd3cb16f38fe5f1c1" />
-  <entry md5="e4fa89f847f4643f3d6aa2c9223ad730" mtime="1404668224" name="PKGBUILD" size="1047" />
-  <entry md5="493b1182f92033eece60ad0536f71662" mtime="1401314564" name="_service" size="523" />
+<directory name="deepin-notifications" rev="20" srcmd5="547c184e3fe3ad5d8f512190e7a0a3a8" vrev="20">
+  <serviceinfo code="succeeded" xsrcmd5="1e6c41fc9704d8ba61c44ed91eb2a41e" />
+  <entry md5="785d98ff7c21beea10b1bcdd3d05a04c" mtime="1408987972" name="PKGBUILD" size="1043" />
+  <entry md5="1bcde9954f1b9934ff407572d86745b9" mtime="1408987980" name="_service" size="512" />
 </directory>

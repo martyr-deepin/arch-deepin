@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">launchpad.net</param>
     <param name="protocol">https</param>
-    <param name="path">/~townsend/+archive/compiz-nvidia-refresh-test/+files/compiz_0.9.11+14.10.20140606-0ubuntu2ppa1.tar.gz</param>
+    <param name="path">/~townsend/+archive/compiz-nvidia-refresh-test/+files/compiz_0.9.12+14.10.20140812-0ubuntu1ppa1.tar.gz</param>
   </service>
-<service name="download_url"><param name="host">launchpad.net</param><param name="protocol">https</param><param name="path">/ubuntu/+archive/primary/+files/compiz_0.9.11+14.10.20140606-0ubuntu2.diff.gz</param></service></services>
+<service name="download_url"><param name="host">launchpad.net</param><param name="protocol">https</param><param name="path">/ubuntu/+archive/primary/+files/compiz_0.9.12+14.10.20140812-0ubuntu1.diff.gz</param></service></services>

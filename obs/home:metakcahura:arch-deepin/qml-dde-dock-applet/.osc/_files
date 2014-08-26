@@ -1,5 +1,5 @@
-<directory name="qml-dde-dock-applet" rev="7" srcmd5="4d3e510a489a3a5b3ae61db0b04b0f7d" vrev="7">
-  <serviceinfo code="succeeded" xsrcmd5="14a9cdaaf26e6318ed0eb02a0bf9906a" />
-  <entry md5="6aef638cc725718ad1f9be144eb3ca8f" mtime="1401447751" name="PKGBUILD" size="610" />
-  <entry md5="c1d1cc8eb8709495610e4712b62154ef" mtime="1401314695" name="_service" size="483" />
+<directory name="qml-dde-dock-applet" rev="8" srcmd5="2fa4da74169357619910cadf63318b91" vrev="8">
+  <serviceinfo code="succeeded" xsrcmd5="6cfb9daea091792d5454f696232e0c37" />
+  <entry md5="bdc0a567ae340fad17b49ec8c7bae23e" mtime="1408993860" name="PKGBUILD" size="606" />
+  <entry md5="4e46d342a3891188b33972af28eb1fef" mtime="1408993861" name="_service" size="476" />
 </directory>

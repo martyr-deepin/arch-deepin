@@ -3,7 +3,7 @@
     <param name="scm">git</param>
     <param name="url">git://gitcafe.com/Deepin/dbus-factory.git</param>
     <param name="filename">dbus-factory</param>
-    <param name="versionformat">git%cd.%h</param>
+    <param name="versionformat">%cd.%h</param>
     <param name="versionprefix">0.0.2</param>
     <param name="revision"></param>
   </service>

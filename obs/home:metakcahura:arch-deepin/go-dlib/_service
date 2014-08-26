@@ -3,7 +3,7 @@
     <param name="scm">git</param>
     <param name="url">git://gitcafe.com/Deepin/go-lib.git</param>
     <param name="filename">go-dlib</param>
-    <param name="versionformat">git%cd.%h</param>
+    <param name="versionformat">%cd.%h</param>
     <param name="versionprefix">0.0.4</param>
     <param name="revision"></param>
   </service>

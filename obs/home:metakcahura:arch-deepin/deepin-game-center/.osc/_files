@@ -1,6 +1,7 @@
-<directory name="deepin-game-center" rev="10" srcmd5="1735c26700c581324ea085cb66df451c" vrev="10">
-  <serviceinfo code="succeeded" xsrcmd5="77506ac585c7ad8218c4f495bba017be" />
-  <entry md5="ef83b3fda8de0398254e8272269da161" mtime="1403711759" name="PKGBUILD" size="1178" />
-  <entry md5="40a66ba0be11bf9a2bd17e5f565323d4" mtime="1403711760" name="_service" size="481" />
+<directory name="deepin-game-center" rev="11" srcmd5="6244b9cc279b85113359ef6b56b0f5fa" vrev="11">
+  <serviceinfo code="succeeded" xsrcmd5="5fce156c9071816789485b167db2a15c" />
+  <entry md5="84a0bc5344128f12e82288de77a746be" mtime="1409011080" name="PKGBUILD" size="984" />
+  <entry md5="50c7dc1149582a008cf2821b041dfb6c" mtime="1409011080" name="_service" size="467" />
+  <entry md5="c64c32ce93597abfcb4212725bcfa00b" mtime="1409011081" name="arch-makefile-fix.patch" size="278" />
   <entry md5="7f4298b5e7e91dc41a6835b6a359df12" mtime="1400868352" name="deepin-game-center.install" size="175" />
 </directory>

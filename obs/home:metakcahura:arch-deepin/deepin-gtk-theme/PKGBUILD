@@ -3,11 +3,11 @@
 pkgname=deepin-gtk-theme
 _pkgver=14.07
 _pkgvergit=20140702090519~e0d4286989
-pkgver=${_pkgver}.git20140702~e0d4286
+pkgver=14.07.20140702.e0d4286
 pkgrel=1
 pkgdesc="Deepin GTK Theme."
 arch=('any')
-url="https://github.com/linuxdeepin/deepin-gtk-theme"
+url="https://gitcafe.com/Deepin/deepin-gtk-theme"
 license=('LGPL-3+')
 depends=('gtk-engine-unico')
 optdepends=('gtk-engine-murrine: for gtk2 themes')

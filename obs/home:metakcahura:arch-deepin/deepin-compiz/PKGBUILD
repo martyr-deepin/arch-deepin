@@ -10,30 +10,22 @@ pkgrel=2
 pkgdesc='A forked compiz for Linux Deepin desktop environment'
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'MIT')
-url="http://www.linuxdeepin.com/"
+url="https://gitcafe.com/Deepin/deepin-compiz"
 groups=('deepin')
 depends=('gnome-settings-daemon' 'xorg-server' 'libxcomposite' 'startup-notification' 'librsvg' 'dbus'
-		'mesa' 'libxslt' 'fuse' 'glibmm' 'libxrender' 'libwnck' 'pygtk' 'desktop-file-utils' 'pyrex'
-        'protobuf' 'dconf' 'gtk2' 'metacity-ubuntu' 'gsettings-desktop-schemas')
+	 'mesa' 'libxslt' 'fuse' 'glibmm' 'libxrender' 'libwnck' 'pygtk' 'desktop-file-utils' 'pyrex'
+         'protobuf' 'dconf' 'gtk2' 'metacity-ubuntu' 'gsettings-desktop-schemas')
 makedepends=('gettext' 'intltool' 'cmake' 'boost' 'glu')
 optdepends=('gnome-control-center: GNOME Control Center')
 provides=('compiz=0.9')
 conflicts=('compiz-bzr' 'compiz-core' 'compiz-fusion-plugins-main' 'compiz-fusion-plugins-extra' 'compiz-decorator-gtk' 'compiz-decorator-kde' 'libcompizconfig' 'compizconfig-python' 'compizconfig-backend-gconf' 'compiz-bcop' 'ccsm')
 replaces=('compiz-bzr' 'compiz-core' 'compiz-fusion-plugins-main' 'compiz-fusion-plugins-extra' 'compiz-decorator-gtk' 'compiz-decorator-kde' 'libcompizconfig' 'compizconfig-python' 'compizconfig-backend-gconf' 'compiz-bcop' 'ccsm')
 install='compiz.install'
-
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/main/c/compiz/compiz_0.9.99-4+git20140507164843~2e85d002e7.tar.gz
-source=("${_fileurl}"
-    "fix-boost-interfaces.patch")
-md5sums=('32aa1f833bbc8ced1ebe1547a46fba50'
-    'fb78a696aaabc856de3aeef98202a0d7')
-
-_filename="$(basename "${_fileurl}")"
-_filename="${_filename%-*.tar.gz}"
-_innerdir="${_filename/_/-}"
+source=("${pkgname}-${pkgver}.tar.xz" 'fix-boost-interfaces.patch')
+sha256sums=('SKIP' '9b041e3ca5fe54984d064bab9c3c8fa623e8c0e752129c53c578922a48582845')
 
 prepare() {
-  cd "${srcdir}/${_innerdir}"
+  cd "${pkgname}-${pkgver}"
 
   export PYTHON="/usr/bin/python2"
 
@@ -44,7 +36,7 @@ prepare() {
 }
 
 build() {
-  cd "${srcdir}/${_innerdir}"
+  cd "${pkgname}-${pkgver}"
     
   [[ -d build ]] && rm -rvf build/
   mkdir build/
@@ -66,7 +58,7 @@ build() {
 }
 
 package() {
-  cd "${srcdir}/${_innerdir}/build"
+  cd "${pkgname}-${pkgver}/build"
   
   make DESTDIR="${pkgdir}" install
 
@@ -90,7 +82,7 @@ package() {
   fi
 
   # Setup xsession profile for deepin compiz
-  cd "${srcdir}/${_innerdir}"
+  cd "${srcdir}/${pkgname}-${pkgver}"
   install -dm755 "${pkgdir}"/etc/X11/Xsession.d/
   install -m644 debian/65compiz_profile-on-session "${pkgdir}"/etc/X11/Xsession.d/
 }

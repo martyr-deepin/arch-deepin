@@ -1,9 +1,9 @@
 <services>
   <service name="tar_scm">
     <param name="scm">git</param>
-    <param name="url">git://github.com/linuxdeepin/deepin-music-player.git</param>
+    <param name="url">git://gitcafe.com/Deepin/deepin-music.git</param>
     <param name="filename">deepin-music-player</param>
-    <param name="versionformat">git%cd~%h</param>
+    <param name="versionformat">%cd.%h</param>
     <param name="versionprefix">1.1</param>
   </service>
   <service name="recompress">

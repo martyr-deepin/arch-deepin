@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc='Deepin artwork themes'
 arch=('any')
 license=('LGPL3')
-url="https://github.com/linuxdeepin/deepin-themes"
+url="https://gitcafe.com/Deepin/deepin-themes"
 depends=('deepin-icon-theme')
 optdepends=('deepin-icon-theme-v2013: old deepin icons')
 makedepends=('python2')
@@ -29,5 +29,5 @@ package() {
   python2 convert.py
   
   install -dm 755 "${pkgdir}"/usr/share/personalization
-  cp -R {autogen,components,themes} "${pkgdir}"/usr/share/personalization/
+  cp -R {preview,themes,thumbnail} "${pkgdir}"/usr/share/personalization/
 }

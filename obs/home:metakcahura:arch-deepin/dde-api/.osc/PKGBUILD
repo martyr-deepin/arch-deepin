@@ -6,7 +6,7 @@ pkgver=git20140516~7c4023a
 pkgrel=1
 pkgdesc='Go-lang bingdings for dde-daemon'
 arch=('i686' 'x86_64')
-url="https://github.com/linuxdeepin/dde-api"
+url="https://gitcafe.com/Deepin/dde-api"
 license=('GPL2')
 depends=('go-dlib' 'dde-go-dbus-factory' 'gdk-pixbuf2' 'libxi'
 	 'libgnomekbd' 'libcanberra' 'go-xgb' 'go-xgbutil')

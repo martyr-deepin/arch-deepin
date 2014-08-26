@@ -1,5 +1,5 @@
-<directory name="qml-gettext-plugin" rev="11" srcmd5="55616eeefc119035712b020dd1000ea4" vrev="11">
-  <serviceinfo code="succeeded" xsrcmd5="6f0516ca1a18fb38cf29e80d2be5437d" />
-  <entry md5="d8630c1488ff60178ac43fb14f41a038" mtime="1401309682" name="PKGBUILD" size="807" />
-  <entry md5="84dca4d5f225768d92404c430f2caf42" mtime="1401140013" name="_service" size="481" />
+<directory name="qml-gettext-plugin" rev="12" srcmd5="64dc7874f9716cde29cac8a369f89df0" vrev="12">
+  <serviceinfo code="succeeded" xsrcmd5="ffc7f359477f96f92b3220a7522a72ae" />
+  <entry md5="c1ffb6df5fa11ebc3fc79f84e5c291c2" mtime="1408993631" name="PKGBUILD" size="803" />
+  <entry md5="38412029e099703644b5fa80fa5046b8" mtime="1408993631" name="_service" size="474" />
 </directory>

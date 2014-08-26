@@ -5,7 +5,7 @@ pkgver=13.06.13.git20140526~de3d62e
 pkgrel=1
 pkgdesc="This package is DeepinIconTheme which inherits the faenza-icon-theme."
 arch=('any')
-url="https://github.com/linuxdeepin/deepin-icon-theme"
+url="https://gitcafe.com/Deepin/deepin-icon-theme"
 license=('LGPL-3+')
 depends=('faenza-icon-theme' 'gtk-update-icon-cache')
 makedepends=('inkscape')
@@ -22,7 +22,7 @@ build() {
   
   python2 ../convert_refactor.py Deepin src-deepin
   python2 ../convert_refactor.py Deepin-blue src-deepin-blue
-  #python2 ../convert_refactor.py Deepin-sapphire src-deepin-sapphire
+  python2 ../convert_refactor.py Deepin-sapphire src-deepin-sapphire
 }
 
 package() {

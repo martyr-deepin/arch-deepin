@@ -1,6 +1,7 @@
-<directory name="deepin-terminal" rev="17" srcmd5="8936d4dc0bb74142841d4b6e08406dac" vrev="17">
-  <serviceinfo code="succeeded" xsrcmd5="afae4729c44e82c4efffbdbd1e1bd89a" />
-  <entry md5="789317e745e0d178c9fcf52b0d391e5a" mtime="1401413965" name="PKGBUILD" size="1183" />
-  <entry md5="163d6611545de600bc382919fa14927a" mtime="1401314597" name="_service" size="473" />
+<directory name="deepin-terminal" rev="20" srcmd5="31596eb3ade8d86379038c0cf24b80d1" vrev="20">
+  <serviceinfo code="succeeded" xsrcmd5="443bd540006749f753837cb85dce0a99" />
+  <entry md5="24a831a4a5664a337e079bd6979cf828" mtime="1408984383" name="PKGBUILD" size="987" />
+  <entry md5="d1b4ad2874d5bbe34b8089fe284b20a1" mtime="1408982312" name="_service" size="466" />
+  <entry md5="6bbba2eed2b012bf5e6dbb75a5f68394" mtime="1408984384" name="arch-makefile-fix.patch" size="278" />
   <entry md5="c52044ca4c5293e85237c1e8dc24b136" mtime="1401413509" name="deepin-terminal.install" size="184" />
 </directory>
