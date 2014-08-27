@@ -5,7 +5,7 @@ pkgver=git20140522~a4e32db
 pkgrel=1
 pkgdesc="Linux Deepin desktop environment."
 arch=('i686' 'x86_64')
-url="https://github.com/linuxdeepin/dde"
+url="https://gitcafe.com/Deepin/dde-workspace"
 license=('GPL-2+')
 depends=('dde-control-center' 'deepin-menu' 'deepin-artwork'
 	 'deepin-webkit' 'cairo' 'python2')
@@ -14,20 +14,8 @@ makedepends=('cmake' 'go>=1.3' 'coffee-script' 'golang-gettext-go' 'gnome-deskto
 optdepends=('lightdm: LightDM for lightdm-deepin-greeter')
 groups=('deepin')
 install="${pkgname}.install"
-source=("${pkgname}-${pkgver}.tar.xz"
-	"30-deepin-inotify-limit.conf"
-	"lightdm-deepin-greeter.desktop"
-	"lightdm.pkla"
-	"default-terminal.c"
-	"dde-account.conf"
-	"default-display-manager")
-sha256sums=('SKIP'
-	    '57792923fd07d6e99528947735d124e1a6d7a90fbb4535610658b7b5766602ab'
-	    '4722a6fd21abbaacabff6cda65c2c0ef3b6757fdaa170431ccd6fa0d4b69b74d'
-	    '29207219b369ec07381d7fd4ba479414061c484ae55de5e5a900e157d67a6978'
-	    'b8c0a212149292f697f7f2d9c4e28a4358a440c1d08fcbf5659373fb2ff6b34c'
-	    '6769bdac277fc7a336529d97e85ca5157952501a23f6a08621929dae7f4b9970'
-	    '3667d6cce9a00f0b8c8bc27250b2ceaf421382d3b4e687a5bcea4c64292030df')
+source=("${pkgname}-${pkgver}.tar.xz" 'default-display-manager')
+sha256sums=('SKIP' '3667d6cce9a00f0b8c8bc27250b2ceaf421382d3b4e687a5bcea4c64292030df')
 
 build() {
   cd "${pkgname}-${pkgver}"
@@ -38,9 +26,7 @@ build() {
   #export PYTHON=/usr/bin/python2
   cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release && make
   
-  cd "$srcdir"
-  
-  gcc -o default-terminal default-terminal.c `pkg-config --libs --cflags glib-2.0 gio-unix-2.0`
+  gcc -o ../debian/default-terminal ../debian/default-terminal.c `pkg-config --libs --cflags glib-2.0 gio-unix-2.0`
 }
 
 package() {
@@ -50,12 +36,11 @@ package() {
   
   install -dm 755 "${pkgdir}"/{etc/{X11,init,sysctl.d},usr/{bin,share/xgreeters},var/lib/polkit-1/localauthority/50-local.d}
   
-  cd "$srcdir"
-  install -m 644 30-deepin-inotify-limit.conf "${pkgdir}"/etc/sysctl.d/
-  install -m 644 dde-account.conf "${pkgdir}"/etc/init/
-  install -m 644 lightdm-deepin-greeter.desktop "${pkgdir}"/usr/share/xgreeters/
-  install -m 755 default-terminal "${pkgdir}"/usr/bin/
-  install -m 755 lightdm.pkla "${pkgdir}"/var/lib/polkit-1/localauthority/50-local.d/
-  install -m 644 default-display-manager "${pkgdir}"/etc/X11/
+  install -m 644 ../debian/30-deepin-inotify-limit.conf "${pkgdir}"/etc/sysctl.d/
+  install -m 644 ../debian/dde-account.conf "${pkgdir}"/etc/init/
+  install -m 644 ../debian/lightdm-deepin-greeter.desktop "${pkgdir}"/usr/share/xgreeters/
+  install -m 755 ../debian/default-terminal "${pkgdir}"/usr/bin/
+  install -m 755 ../debian/lightdm.pkla "${pkgdir}"/var/lib/polkit-1/localauthority/50-local.d/
+  install -m 644 "${srcdir}"/default-display-manager "${pkgdir}"/etc/X11/
   chmod 700 "${pkgdir}"/var/lib/polkit-1
 }

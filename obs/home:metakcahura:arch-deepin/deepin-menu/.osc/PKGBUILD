@@ -3,7 +3,7 @@
 pkgname=deepin-menu
 pkgver=git20140516~6267532
 pkgrel=1
-pkgdesc="System notifications for linuxdeepin desktop environment."
+pkgdesc="Deepin menu service for building beautiful menus."
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/deepin-menu"
 license=('GPL-3+')
@@ -36,7 +36,12 @@ package() {
   make INSTALL_ROOT="$pkgdir/" install
 
   #install -dm 755 "${pkgdir}"/usr/share/pyshared
-  #cp -r "${pkgdir}"/usr/deepin_menu/* "${pkgdir}"/usr/share/pyshared
-  #chmod +x "${pkgdir}"/usr/share/pyshared/deepin_menu/menu.py
-  #rm -rf "${pkgdir}"/usr/deepin_menu
+  install -dm 755 "${pkgdir}"/usr/share/dbus-1/services/
+  install -dm 755 "${pkgdir}"/etc/xdg/autostart/
+  
+  mv "${pkgdir}"/usr/deepin_menu "${pkgdir}"/usr/share/pyshared
+  chmod +x "${pkgdir}"/usr/share/pyshared/menu.py
+  
+  install -m 644 *.service "${pkgdir}"/usr/share/dbus-1/services/
+  install -m 644 *.desktop "${pkgdir}"/etc/xdg/autostart/
 }

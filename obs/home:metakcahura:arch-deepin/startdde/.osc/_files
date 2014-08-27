@@ -1,5 +1,5 @@
-<directory name="startdde" rev="48" srcmd5="f2c219ea90ce50e3b9c1f7d71536d67e" vrev="48">
-  <serviceinfo code="succeeded" xsrcmd5="dc7ff58634f0b6e5e779eee44e98b340" />
-  <entry md5="23a0f3528d923830c58d0d0ae2182b98" mtime="1409053403" name="PKGBUILD" size="1057" />
+<directory name="startdde" rev="49" srcmd5="51ce53ed0b61453b9a0bc05d2863e657" vrev="49">
+  <serviceinfo code="succeeded" xsrcmd5="cb4fd1e0e2f17f78109cd02f57e5dc3d" />
+  <entry md5="00598a10f184f36dfc1d6fcbecba9357" mtime="1409054195" name="PKGBUILD" size="1051" />
   <entry md5="b3e28ab60a9f989ea5089bf9b9debf4f" mtime="1409053403" name="_service" size="488" />
 </directory>

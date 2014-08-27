@@ -19,7 +19,7 @@ sha256sums=('SKIP')
 build() {
   cd "${pkgname}-${pkgver}"
   
-  GOPATH=/usr/lib/go go build -o startdde
+  GOPATH=`pwd` go build -o startdde
   mkdir dialogUI/build && cd dialogUI/build
   cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release ..
 }
