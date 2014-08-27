@@ -1,5 +1,0 @@
-<directory name="mediainfo" rev="1" srcmd5="0603b019b81a664389c192b4b0763a5e" vrev="1">
-  <serviceinfo code="succeeded" xsrcmd5="3ca639ba8b9d48c666fd1271bd772d9e" />
-  <entry md5="05f63b012eec15148df27bc7c842ebb4" mtime="1400620407" name="PKGBUILD" size="681" />
-  <entry md5="6170ce29c22936fc0265822792d5d295" mtime="1400620340" name="_service" size="231" />
-</directory>

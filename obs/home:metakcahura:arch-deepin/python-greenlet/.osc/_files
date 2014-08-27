@@ -1,5 +1,0 @@
-<directory name="python-greenlet" rev="3" srcmd5="30ad1d86e2d9dda58bbb137ca2f637bb" vrev="3">
-  <serviceinfo code="succeeded" xsrcmd5="94d4dac8cb7451d8c3fbc405eba0f5a0" />
-  <entry md5="337a009578aa79019cbfaa98d32bad26" mtime="1399472134" name="PKGBUILD" size="1261" />
-  <entry md5="36b3dad4137243c53f9ed0ea20f6ce68" mtime="1400871597" name="_service" size="232" />
-</directory>

@@ -1,6 +1,0 @@
-<directory name="dde-control-center" rev="54" srcmd5="bb5a2291746605ecbab5ee4f7b7dde7e" vrev="54">
-  <serviceinfo code="succeeded" xsrcmd5="4cee973479c00e91e5f7cf0b5fd3122b" />
-  <entry md5="54c4da74844ce501d5e20f8cf4bc3d6e" mtime="1409054718" name="PKGBUILD" size="1840" />
-  <entry md5="415e0ec09477cb6562d64c1c2d06047f" mtime="1409054719" name="_service" size="510" />
-  <entry md5="1cf622c8dc5348d3dd92cd512fc20007" mtime="1400737508" name="generate_mo.sh" size="236" />
-</directory>

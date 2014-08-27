@@ -1,7 +1,0 @@
-<directory name="qt5-systems" rev="15" srcmd5="94855477a394f19bace0df4776454a04" vrev="15">
-  <serviceinfo code="succeeded" xsrcmd5="89d5af00d5f96f934ec7b8df2a5bfb49" />
-  <entry md5="7c26ac8907a9224061c7e28ece4d4807" mtime="1403095121" name="PKGBUILD" size="788" />
-  <entry md5="2cd50533de0573c25178b19a674eab79" mtime="1409059254" name="_service" size="494" />
-  <entry md5="21af342e9987d266b9dfd86d6425dde4" mtime="1403092748" name="fix-compile.patch" size="12514" />
-  <entry md5="bb0bd3fa2765ba614eeca1134120ef49" mtime="1403073687" name="fix_qserviceclientcredentials.patch" size="546" />
-</directory>

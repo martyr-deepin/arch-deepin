@@ -1,5 +1,0 @@
-<directory name="deepin-gsettings" rev="8" srcmd5="e468b54e390c064d7601d294a4598f31" vrev="8">
-  <serviceinfo code="succeeded" xsrcmd5="ed06e4ab215589bafc095dfdf74457cd" />
-  <entry md5="1c1af4c590427dc277e16acaf1e274fc" mtime="1408995201" name="PKGBUILD" size="743" />
-  <entry md5="31c721036a4be5f0ae28a9e4a1b83ccc" mtime="1408995202" name="_service" size="468" />
-</directory>

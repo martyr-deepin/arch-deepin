@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">cython.org</param>
-    <param name="protocol">http</param>
-    <param name="path">/release/Cython-0.20.2.tar.gz</param>
-  </service>
-</services>

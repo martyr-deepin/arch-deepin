@@ -1,8 +1,0 @@
-<directory name="go" rev="21" srcmd5="6f73064c20fbe081ab62594d51c8e389" vrev="21">
-  <serviceinfo code="succeeded" xsrcmd5="befc88259e5d45d4832fd40e5c8ad8e7" />
-  <entry md5="a89505933b2f3ec3a1afac86c04866ba" mtime="1408562043" name="PKGBUILD" size="5366" />
-  <entry md5="403e58fc1e4a1cff934c05729f5ebdd2" mtime="1408562044" name="_service" size="411" />
-  <entry md5="165a273d9f3f2a6410eae17d5d9ba5d9" mtime="1397653959" name="go.install" size="380" />
-  <entry md5="8921b1a742aad2f0c88d19786e3dd403" mtime="1402966975" name="tools.go-7e8840964994.tar.xz" size="5026176" />
-  <entry md5="8815f9ec521b4f97c18dfbbb32f3cbf8" mtime="1408562162" name="tools.go-c0cd000c8cea.tar.xz" size="5192652" />
-</directory>

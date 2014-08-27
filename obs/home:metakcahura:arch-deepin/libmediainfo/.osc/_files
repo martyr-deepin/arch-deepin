@@ -1,6 +1,0 @@
-<directory name="libmediainfo" rev="1" srcmd5="5a73de41b97a3e8127f24da4f40f9c21" vrev="1">
-  <serviceinfo code="succeeded" xsrcmd5="7d799963519ec4d471d4f3b407f1fe1a" />
-  <entry md5="324656643f509d239780ea87565cb4ae" mtime="1400620696" name="PKGBUILD" size="1295" />
-  <entry md5="fd58cf8e679a2d7727218f6aa0fcadbe" mtime="1400620557" name="_service" size="234" />
-  <entry md5="2f4b21cc250f663d52b497dedb963e3b" mtime="1397606065" name="libmediainfo-0.7.50-libmms.patch" size="1774" />
-</directory>

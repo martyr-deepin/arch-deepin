@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">pypi.python.org</param>
-    <param name="protocol">https</param>
-    <param name="path">/packages/source/P/Pillow/Pillow-2.5.3.zip</param>
-  </service>
-</services>

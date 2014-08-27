@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">packages.linuxdeepin.com</param>
-    <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/v/vte/vte_0.28.2.orig.tar.xz</param>
-  </service>
-<service name="download_url"><param name="host">packages.linuxdeepin.com</param><param name="protocol">http</param><param name="path">/deepin/pool/main/v/vte/vte_0.28.2-6deepin7~saucy.debian.tar.gz</param></service></services>

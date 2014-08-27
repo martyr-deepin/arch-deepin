@@ -1,5 +1,0 @@
-<directory name="golang-gettext-go" rev="6" srcmd5="a44cbfe85f66cce7bcd68ac9c60e2cd7" vrev="6">
-  <serviceinfo code="succeeded" xsrcmd5="c14f7518827b630ac2a6b8cc390160a9" />
-  <entry md5="ac903fc7973dec82e1a4c4c4e590866a" mtime="1408563556" name="PKGBUILD" size="1180" />
-  <entry md5="89a211680cb3b9c1fdb28f7f10dcc0e7" mtime="1404663403" name="_service" size="277" />
-</directory>

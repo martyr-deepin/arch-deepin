@@ -1,5 +1,0 @@
-<directory name="deepin-artwork" rev="4" srcmd5="4b7ec36d2be4bd10f316bc75e14759cd" vrev="4">
-  <serviceinfo code="succeeded" xsrcmd5="d15df20b0196790d36b14c9f3edb7828" />
-  <entry md5="c83ba50e6f91ca56074a2b4e77c69237" mtime="1404665096" name="PKGBUILD" size="572" />
-  <entry md5="2aec6d04b19f0aadce66e99de54b4e9d" mtime="1404665096" name="_service" size="259" />
-</directory>

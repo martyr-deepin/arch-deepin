@@ -1,7 +1,0 @@
-<directory name="deepin-movie" rev="39" srcmd5="b57ed85408e1698c58399882f6c17dd1" vrev="39">
-  <serviceinfo code="succeeded" xsrcmd5="b3f88758e366b3a5df391aff5c49be9f" />
-  <entry md5="7b81187885456de3d3e1ad23ede3c348" mtime="1403074721" name="PKGBUILD" size="1457" />
-  <entry md5="132483e3220b4507a956e5f626d2e707" mtime="1409046550" name="_service" size="497" />
-  <entry md5="eb67e7fe5872c3214001955346f94c9a" mtime="1400621314" name="deepin-movie.install" size="127" />
-  <entry md5="8ef41771e9f00dcd02e9963085e0888c" mtime="1403074722" name="generate_mo.sh" size="237" />
-</directory>

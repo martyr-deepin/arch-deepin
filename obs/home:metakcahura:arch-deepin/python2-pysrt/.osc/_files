@@ -1,5 +1,0 @@
-<directory name="python2-pysrt" rev="1" srcmd5="1843847645809d00e646e614a4b8b7c2" vrev="1">
-  <serviceinfo code="succeeded" xsrcmd5="a3c3ec2ddf89f75383d4eb1c3bd91091" />
-  <entry md5="5ef11816328e321e224c7d31e7687847" mtime="1400616741" name="PKGBUILD" size="749" />
-  <entry md5="feeacdff70b3eb458d6849cb80b54d55" mtime="1400616742" name="_service" size="230" />
-</directory>

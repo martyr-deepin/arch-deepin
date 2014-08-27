@@ -1,5 +1,0 @@
-<directory name="python2-deepin-storm" rev="7" srcmd5="c286884b6b62121d6bb7ef0c8ab50039" vrev="7">
-  <serviceinfo code="succeeded" xsrcmd5="6b5cd1bbc5659671ba2c492255d298b3" />
-  <entry md5="54bb98fee0ad030d22f1aa22759308a9" mtime="1409050785" name="PKGBUILD" size="730" />
-  <entry md5="db178ae78ad8cba1827298650bf05865" mtime="1409050786" name="_service" size="460" />
-</directory>

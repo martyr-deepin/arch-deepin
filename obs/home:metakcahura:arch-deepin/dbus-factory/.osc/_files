@@ -1,6 +1,0 @@
-<directory name="dbus-factory" rev="82" srcmd5="c9a872635418f2c424141ea2f94b451c" vrev="82">
-  <serviceinfo code="succeeded" xsrcmd5="960361a8f37c370f4e651f64ee09b134" />
-  <entry md5="9b1a31c974c18d1afe25310f2a3529f2" mtime="1408966159" name="PKGBUILD" size="2155" />
-  <entry md5="f368b80244377ebeb0d63fc85357b59a" mtime="1408992111" name="_service" size="498" />
-  <entry md5="077a6d1a1ab0e3a048d2ee03ec470aad" mtime="1403867358" name="json_build.py" size="1742" />
-</directory>

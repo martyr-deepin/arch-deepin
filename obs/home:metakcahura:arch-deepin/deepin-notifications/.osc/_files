@@ -1,5 +1,0 @@
-<directory name="deepin-notifications" rev="20" srcmd5="547c184e3fe3ad5d8f512190e7a0a3a8" vrev="20">
-  <serviceinfo code="succeeded" xsrcmd5="1e6c41fc9704d8ba61c44ed91eb2a41e" />
-  <entry md5="785d98ff7c21beea10b1bcdd3d05a04c" mtime="1408987972" name="PKGBUILD" size="1043" />
-  <entry md5="1bcde9954f1b9934ff407572d86745b9" mtime="1408987980" name="_service" size="512" />
-</directory>

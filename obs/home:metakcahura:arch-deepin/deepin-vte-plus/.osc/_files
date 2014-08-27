@@ -1,5 +1,0 @@
-<directory name="deepin-vte-plus" rev="8" srcmd5="5120b83dffcfeb42fd794458b367748e" vrev="8">
-  <serviceinfo code="succeeded" xsrcmd5="e8c751a98ddcea4bd02d8b571de25eea" />
-  <entry md5="637ebf45d5af3d4527959dc5e39c45ae" mtime="1404664193" name="PKGBUILD" size="1705" />
-  <entry md5="f947b66b14094fda557c936e8053e4aa" mtime="1404664193" name="_service" size="456" />
-</directory>

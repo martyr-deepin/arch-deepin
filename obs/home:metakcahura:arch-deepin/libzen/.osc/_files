@@ -1,5 +1,0 @@
-<directory name="libzen" rev="3" srcmd5="1bcdb4a529c2664a536aa61968281655" vrev="3">
-  <serviceinfo code="succeeded" xsrcmd5="fea7bb7580bae9f378b5074e1230e13f" />
-  <entry md5="3fb1a8c7bc743300c58bd825d35531f1" mtime="1400620975" name="PKGBUILD" size="1345" />
-  <entry md5="3cbe2417fa0eb9f5ddd77e436f85f752" mtime="1400620890" name="_service" size="225" />
-</directory>

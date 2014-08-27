@@ -1,5 +1,0 @@
-<directory name="python2-gevent" rev="3" srcmd5="2b55788ba54b18a1e0557258345c3c4c" vrev="3">
-  <serviceinfo code="succeeded" xsrcmd5="7c6a18cbd1c92c5dbc1c275c62ba2e4e" />
-  <entry md5="f0b12b5c2a59e14fe3a756a79029ea50" mtime="1400871444" name="PKGBUILD" size="988" />
-  <entry md5="15a4b33630562122c6f7a7810132af7c" mtime="1400871170" name="_service" size="240" />
-</directory>

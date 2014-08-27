@@ -1,5 +1,0 @@
-<directory name="python-scipy" rev="3" srcmd5="c4217ddf5dba63ba0d48bf1d9fe11209" vrev="3">
-  <serviceinfo code="succeeded" xsrcmd5="77cd15638535de1c8b445bcb01496e07" />
-  <entry md5="188db3e7ebd3ade60f14a9516f8e52d6" mtime="1400257902" name="PKGBUILD" size="2944" />
-  <entry md5="35184e3767dd0b8aa0733c3c913395dd" mtime="1400869909" name="_service" size="231" />
-</directory>

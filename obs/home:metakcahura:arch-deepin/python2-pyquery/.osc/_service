@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">pypi.python.org</param>
-    <param name="protocol">http</param>
-    <param name="path">/packages/source/p/pyquery/pyquery-1.2.8.zip</param>
-  </service>
-<service name="download_url"><param name="host">bitbucket.org</param><param name="protocol">https</param><param name="path">/olauzanne/pyquery/raw/b70710332032/LICENSE.txt</param></service></services>

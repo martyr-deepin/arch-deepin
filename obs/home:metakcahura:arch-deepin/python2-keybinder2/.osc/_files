@@ -1,5 +1,0 @@
-<directory name="python2-keybinder2" rev="3" srcmd5="ccbb6596d6dbf74e1e5f1329efc697dc" vrev="3">
-  <serviceinfo code="succeeded" xsrcmd5="c0e06125a07fdbfd028a248700abd180" />
-  <entry md5="e9a5a5af723fd77400ca316bcf36128d" mtime="1400748106" name="PKGBUILD" size="1210" />
-  <entry md5="d1c6f584a4c394053aef7a48fea19acd" mtime="1400748003" name="_service" size="217" />
-</directory>

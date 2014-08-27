@@ -1,5 +1,0 @@
-<directory name="python2-xlib" rev="3" srcmd5="f8760fc7633e913e8aa735cde0eacc28" vrev="3">
-  <serviceinfo code="succeeded" xsrcmd5="7e3d6b89bae8c52e1ef6dc78d9de6d9b" />
-  <entry md5="abc30848d4cf149696ffc39929bf6c0a" mtime="1397596118" name="PKGBUILD" size="808" />
-  <entry md5="ce3753370ac19ec77f12cdedbfde1106" mtime="1397596090" name="_service" size="263" />
-</directory>

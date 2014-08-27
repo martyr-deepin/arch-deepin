@@ -1,8 +1,0 @@
-<package name="python2-gevent" project="home:metakcahura:arch-deepin">
-  <title></title>
-  <description></description>
-  <publish>
-    <disable/>
-  </publish>
-</package>
-

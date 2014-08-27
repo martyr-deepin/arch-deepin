@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">underscorejs.org</param>
-    <param name="protocol">http</param>
-    <param name="path">/LICENSE</param>
-  </service>
-<service name="download_url"><param name="host">underscorejs.org</param><param name="protocol">http</param><param name="path">/underscore-min.js</param></service><service name="download_url"><param name="host">underscorejs.org</param><param name="protocol">http</param><param name="path">/underscore.js</param></service></services>

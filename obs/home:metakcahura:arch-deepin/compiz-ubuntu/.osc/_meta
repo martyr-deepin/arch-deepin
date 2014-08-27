@@ -1,8 +1,0 @@
-<package name="compiz-ubuntu" project="home:metakcahura:arch-deepin">
-  <title></title>
-  <description></description>
-  <publish>
-    <enable/>
-  </publish>
-</package>
-

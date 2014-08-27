@@ -1,5 +1,0 @@
-<directory name="deepin-menu" rev="25" srcmd5="46c085edfa4aa97f40fab8708ca9718b" vrev="25">
-  <serviceinfo code="succeeded" xsrcmd5="01ecd7a303241e8569f81038f41b8601" />
-  <entry md5="e8276eb3bf53c2c52e303ea63a41078d" mtime="1409058492" name="PKGBUILD" size="1236" />
-  <entry md5="a585aa3702d8b182cecbd5a6134ae349" mtime="1409058493" name="_service" size="494" />
-</directory>
