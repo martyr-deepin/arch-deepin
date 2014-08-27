@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc='deepin movie for linuxdeepin desktop environment'
 arch=('any')
 url="https://github.com/linuxdeepin/deepin-movie"
-license=('GPL-2+')
+license=('GPL3')
 depends=('qt5-declarative' 'qt5-quickcontrols' 'python2-pyqt5' 'mediainfo' 'python2-ass'
 	 'deepin-ui' 'deepin-menu' 'deepin-qml-widgets' 'qt5-multimedia' 'qt5-webkit'
 	 'qt5-graphicaleffects' 'enca' 'desktop-file-utils' 'python2-pysrt'

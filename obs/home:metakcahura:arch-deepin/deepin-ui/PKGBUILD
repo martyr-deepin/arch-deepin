@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc='UI toolkit for Linux Deepin'
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/deepin-ui"
-license=('GPL-2+')
+license=('GPL3')
 depends=('python2-deepin-utils' 'python2-deepin-gsettings' 'deepin-pygtk' 'python2-scipy'
 	 'glib2' 'python2-cairo' 'python2-imaging' 'python2-xlib' 'pywebkitgtk' 'libsoup' 'gettext')
 makedepends=('python2-setuptools' 'webkitgtk')

@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: 
+# Contributor:
 
 pkgname=deepin-webkit
 pkgver=1.8.2.1.git20140710.d7502b9
@@ -7,7 +7,7 @@ pkgrel=1
 pkgdesc='A fork of webkit-gtk for Linux Deepin desktop eviroment'
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"
-license=('LGPL + GPL + BSD + other')
+license=('custom')
 depends=('libxt' 'libxslt' 'sqlite' 'libsoup' 'enchant' 'libgl' 'geoclue' 'gtk3'
 	 'gstreamer0.10-base-plugins' 'libsecret' 'libwebp' 'harfbuzz-icu')
 makedepends=('gtk2' 'gperf' 'gobject-introspection' 'python2' 'mesa' 'gtk-doc'

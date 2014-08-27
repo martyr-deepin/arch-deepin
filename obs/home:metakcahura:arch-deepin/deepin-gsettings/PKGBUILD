@@ -10,7 +10,7 @@ depends=('python2-setuptools')
 provides=('deepin-gsettings')
 groups=('deepin')
 url="https://gitcafe.com/Deepin/deepin-gsettings"
-license=('GPL-3')
+license=('GPL3')
 source=("${_pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 

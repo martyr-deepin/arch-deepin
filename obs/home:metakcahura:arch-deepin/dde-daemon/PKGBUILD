@@ -7,7 +7,7 @@ pkgrel=1
 pkgdesc='Go-lang bingdings for dde-daemon'
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-daemon"
-license=('GPL2')
+license=('GPL3')
 depends=('go-dlib' 'dde-go-dbus-factory' 'libgnomekbd' 'acpid' 'bluez' 'dde-api' 'go-xgb' 'grub-themes-deepin'
 	 'go-xgbutil' 'golang-sqlite3' 'libpulse' 'cairo'  'metacity-ubuntu' 'xcur2png'
 	 'polkit-gnome' 'network-manager-applet')

@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc="New control center for linux deepin"
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-control-center"
-license=('GPL-3+')
+license=('GPL3')
 depends=('go-dlib' 'python2-pyqt5' 'dde-go-dbus-factory' 'dde-qml-dbus-factory'
 	 'python2-sip' 'python2-xpyb' 'deepin-qml-widgets' 'dde-account-faces' 'dde-daemon'
 	 'deepin-artwork-themes' 'dde-qml-gettext-plugin' 'qml-dde-dock-applet' 'qt5-declarative'

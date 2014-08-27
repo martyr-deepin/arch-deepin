@@ -7,7 +7,7 @@ pkgrel=9
 pkgdesc='Grub2 themes from Linux Deepin'
 arch=('any')
 url="http://www.linuxdeepin.com/"
-license=('GPL2')
+license=('GPL3')
 groups=('deepin')
 depends=('grub')
 

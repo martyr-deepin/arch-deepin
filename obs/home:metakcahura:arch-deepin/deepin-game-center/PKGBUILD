@@ -7,7 +7,7 @@ pkgrel=1
 pkgdesc="Game center for Linuxdeepin"
 arch=('any')
 url="https://gitcafe.com/Deepin/deepin-game"
-license=('GPL2')
+license=('GPL3')
 depends=('deepin-ui' 'flashplugin' 'hicolor-icon-theme' 'python2-deepin-storm'
 	 'python2-scipy' 'python2-jswebkit')
 groups=('deepin-extra')
