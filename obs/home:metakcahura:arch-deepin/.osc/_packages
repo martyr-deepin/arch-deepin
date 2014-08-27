@@ -79,4 +79,5 @@
   <package name="metacity" state=" " />
   <package name="polkit-gnome" state=" " />
   <package name="dbus-generator" state=" " />
+  <package name="deepin-screenshot" state=" " />
 </project>
