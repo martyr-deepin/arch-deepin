@@ -10,7 +10,7 @@ license=('GPL3')
 depends=('go-dlib' 'python2-pyqt5' 'dde-go-dbus-factory' 'dde-qml-dbus-factory'
 	 'python2-sip' 'python2-xpyb' 'deepin-qml-widgets' 'dde-account-faces' 'dde-daemon'
 	 'deepin-artwork-themes' 'dde-qml-gettext-plugin' 'qml-dde-dock-applet' 'qt5-declarative'
-	 'qt5-graphicaleffects' 'qt5-tools' 'qt5-quickcontrols' 'libxtst' 'network-manager-applet')
+	 'qt5-graphicaleffects' 'qt5-tools' 'qt5-quickcontrols' 'qt5-svg' 'libxtst' 'network-manager-applet')
 makedepends=('glib2' 'python2-setuptools' 'gettext' 'go>=1.3' 'gtk3' 'dhcpcd')
 groups=('deepin')
 options=(staticlibs)
@@ -27,7 +27,7 @@ prepare() {
 
 build(){
   cd "${pkgname}-${pkgver}"
-  
+
   cd dock-applets && qmake && make && cd ..
   cd qt5frame && qmake && make && cd ..
   cd locale && sh ../debian/generate_mo.sh
@@ -35,16 +35,16 @@ build(){
 
 package() {
   cd "${pkgname}-${pkgver}"
-  
+
   cd dock-applets && make INSTALL_ROOT="${pkgdir}/" install && cd ..
   cd qt5frame && make INSTALL_ROOT="${pkgdir}/" install && cd ..
-  
+
   #install -dm 755 "${pkgdir}"/usr/{bin,share/dde-control-center}
   #cp -R {frame,locale,modules} "${pkgdir}"/usr/share/${pkgname}/
   install -dm 755 "${pkgdir}"/{etc/xdg/autostart,usr/share/{applications,dbus-1/services}}
   install -m 644 dde-dock-applets-autostart.desktop "${pkgdir}"/etc/xdg/autostart/
   install -m 644 ${pkgname}.desktop "${pkgdir}"/usr/share/applications/
   install -m 644 *.service "${pkgdir}"/usr/share/dbus-1/services/
-  
+
   #ln -s /usr/share/${pkgname}/frame/main.py "${pkgdir}"/usr/bin/${pkgname}
 }
