@@ -10,15 +10,12 @@ url="http://www.linuxdeepin.com/"
 license=('GPL3')
 groups=('deepin')
 depends=('grub')
-
-_fileurl=http://packages.linuxdeepin.com/deepin/pool/universe/g/grub-themes-deepin/grub-themes-deepin_0.5-9.tar.gz
-source=("${_fileurl}")
+source=("http://packages.linuxdeepin.com/deepin/pool/universe/g/${pkgname}_${pkgver}-${pkgrel}.tar.gz")
 sha256sums=('9c951864d49f58a253bc310342ec8d23fd78aa1683188a79a91e3f979091f842')
 
-_innerdir="${pkgname}-${pkgver}"
-
 package() {
-    cd "${srcdir}/${_innerdir}"
-    install -dm644 "${pkgdir}"/boot/grub/themes
-    cp -rf deepin-grub2-themes/deepin "${pkgdir}"/boot/grub/themes/
+  cd "${pkgname}-${pkgver}"
+  
+  install -dm755 "${pkgdir}"/boot/grub/themes
+  cp -rf deepin-grub2-themes/deepin "${pkgdir}"/boot/grub/themes/
 }
