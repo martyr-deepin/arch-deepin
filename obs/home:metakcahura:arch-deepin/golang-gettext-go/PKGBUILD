@@ -2,9 +2,10 @@
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=golang-gettext-go
-_pkgver=0.0
-_pkgvergit=~hg20140603
-pkgver=${_pkgver}${_pkgvergit}
+_pkgverbase=0.0
+_pkgvergit=20140603
+_pkgver=${_pkgverbase}~hg${_pkgvergit}
+pkgver=${_pkgverbase}.${_pkgvergit}
 pkgrel=3
 pkgdesc="This package provides GNU gettext support."
 arch=('i686' 'x86_64')
@@ -12,23 +13,44 @@ url="https://code.google.com/p/gettext-go/"
 license=('GPL2')
 depends=('go>=1.3')
 options=(staticlibs)
-source=("http://packages.linuxdeepin.com/deepin/pool/main/g/${pkgname}/${pkgname}_${pkgver}.orig.tar.xz")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/g/${pkgname}/${pkgname}_${_pkgver}.orig.tar.xz")
 sha256sums=('768a014e1d1e65ae67290a5c66703a3ed99870ab6971f34065eb8c2220a30b9e')
+
+_gobuild_dir="${pkgname}-build"
+_gopkg="code.google.com/p/gettext-go/gettext"
 
 build(){
   cd "$srcdir"
 
-  mkdir -p ${pkgname}-build/src/code.google.com/p/gettext-go/
-  cp -r gettext-go/gettext ${pkgname}-build/src/code.google.com/p/gettext-go/
-  # autobuild go
-  cd "$srcdir"/${pkgname}-build && GOPATH=`pwd` go install code.google.com/p/gettext-go/gettext
-  cd "$srcdir"/${pkgname}-build && GOPATH=`pwd` go install code.google.com/p/gettext-go/gettext/{mo,plural,po}/
+  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+  cp -r gettext-go/gettext/* "${_gobuild_dir}"/src/"${_gopkg}"/
+  GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
+  GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/{mo,plural,po}
 }
 
 package() {
-  cd "$srcdir"
+  cd "${srcdir}"
 
-  mkdir -p "${pkgdir}"/usr/lib/go/{pkg,src/pkg}
-  cp -r "$srcdir"/${pkgname}-build/src/* "${pkgdir}"/usr/lib/go/src/pkg/
-  cp -r "$srcdir"/${pkgname}-build/pkg/* "${pkgdir}"/usr/lib/go/pkg/
+  mkdir -p "${pkgdir}"/usr/lib/go/src/pkg/
+  mkdir -p "${pkgdir}"/usr/lib/go/pkg/
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/pkg/
+  cp -r "${_gobuild_dir}"/pkg/* "${pkgdir}"/usr/lib/go/pkg/
 }
+
+# build(){
+#   cd "$srcdir"
+
+#   mkdir -p ${pkgname}-build/src/code.google.com/p/gettext-go/
+#   cp -r gettext-go/gettext ${pkgname}-build/src/code.google.com/p/gettext-go/
+#   # autobuild go
+#   cd "$srcdir"/${pkgname}-build && GOPATH=`pwd` go install code.google.com/p/gettext-go/gettext
+#   cd "$srcdir"/${pkgname}-build && GOPATH=`pwd` go install code.google.com/p/gettext-go/gettext/{mo,plural,po}/
+# }
+
+# package() {
+#   cd "$srcdir"
+
+#   mkdir -p "${pkgdir}"/usr/lib/go/{pkg,src/pkg}
+#   cp -r "$srcdir"/${pkgname}-build/src/* "${pkgdir}"/usr/lib/go/src/pkg/
+#   cp -r "$srcdir"/${pkgname}-build/pkg/* "${pkgdir}"/usr/lib/go/pkg/
+# }
