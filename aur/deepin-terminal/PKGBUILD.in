@@ -50,7 +50,7 @@ package() {
     _install_copyright_and_changelog
 
     # fix python version
-    find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+    find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 
     # there is no 'XHei' font on archinux, so replace it
     sed -i 's/XHei Mono.Ubuntu/Monospace/' "${pkgdir}"/usr/share/deepin-terminal/src/main.py

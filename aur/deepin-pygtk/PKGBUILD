@@ -54,5 +54,5 @@ package() {
     cd "${srcdir}/${_pkgname}-${pkgver}"
     make DESTDIR="${pkgdir}" install
     install -m644 gtk/gtk-extrafuncs.defs "${pkgdir}/usr/share/pygtk/2.0/defs/"
-    sed -i 's=\(^#! */usr/bin.*\)python=\1python2=' "${pkgdir}"/usr/lib/pygtk/2.0/{,demos/}*.py
+    sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2=' "${pkgdir}"/usr/lib/pygtk/2.0/{,demos/}*.py
 }
