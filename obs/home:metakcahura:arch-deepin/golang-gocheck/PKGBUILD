@@ -3,8 +3,8 @@
 
 pkgname=golang-gocheck
 _pkgver=0.0
-_pkgvergit=~bzr20131118+85
-pkgver=${_pkgver}${_pkgvergit}
+_pkgvergit=20131118.85
+pkgver=${_pkgver}.${_pkgvergit}
 pkgrel=7
 pkgdesc='Richer testing framework for Go libraries and applications to use'
 arch=('any')

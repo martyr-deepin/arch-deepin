@@ -4,7 +4,7 @@
 pkgname=dbus-generator
 pkgver=git20140522~3948504
 pkgrel=1
-pkgdesc='Go-lang bingdings for dlib'
+pkgdesc='Convert dbus interfaces to go-lang or qml wrapper code'
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/go-dbus-generator"
 license=('GPL3')

@@ -1,8 +1,8 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: 
+# Contributor:
 
 pkgname=deepin-cursor-theme
-pkgver=2014~4
+pkgver=2014.4
 pkgrel=2
 pkgdesc='Cursor theme from Linux Deepin'
 arch=('any')

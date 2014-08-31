@@ -3,8 +3,8 @@
 
 pkgname=golang-sqlite3
 _pkgver=0.0
-_pkgvergit=~git20140623
-pkgver=${_pkgver}${_pkgvergit}
+_pkgvergit=20140623
+pkgver=${_pkgver}.${_pkgvergit}
 pkgrel=3
 pkgdesc='File system notification for GO'
 arch=('i686' 'x86_64')
