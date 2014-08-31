@@ -10,7 +10,7 @@ url="https://gitcafe.com/Deepin/dde-daemon"
 license=('GPL3')
 depends=('dde-api' 'grub-themes-deepin' 'cairo' 'libcanberra' 'dbus' 'deepin-webkit'
     'gtk3' 'glib2' 'gdk-pixbuf2' 'gstreamer0.10' 'libsystemd' 'acpid' 'libpulse'
-    'xcur2png' 'upower' 'bluez' 'polkit-gnome' 'network-manager-applet')
+    'xcur2png' 'upower' 'bluez' 'polkit-gnome' 'metacity-ubuntu' 'network-manager-applet')
 makedepends=('go>=1.3' 'go-dlib' 'dde-go-dbus-factory' 'go-xgb' 'go-xgbutil'
     'golang-fsnotify' 'golang-sqlite3' 'gettext' 'python2')
 optdepends=()
