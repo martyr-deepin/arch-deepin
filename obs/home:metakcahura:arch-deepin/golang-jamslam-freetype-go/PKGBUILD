@@ -2,9 +2,10 @@
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=golang-jamslam-freetype-go
-_pkgver=0.0
+_pkgverbase=0.0
 _pkgvergit=20140306
-pkgver=${_pkgver}.${_pkgvergit}
+_pkgver=${_pkgverbase}~git${_pkgvergit}
+pkgver=${_pkgverbase}.${_pkgvergit}
 pkgrel=5
 pkgdesc='File system notification for GO'
 arch=('i686' 'x86_64')
@@ -12,24 +13,26 @@ url="https://github.com/BurntSushi/xgb"
 license=('GPL2')
 depends=('go>=1.3')
 options=(staticlibs)
-source=("http://packages.linuxdeepin.com/deepin/pool/main/g/${pkgname}/${pkgname}_${pkgver}.orig.tar.xz")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/g/${pkgname}/${pkgname}_${_pkgver}.orig.tar.xz")
 sha256sums=('028b753388ec2d54105ae3c2713cae4075d9a578a39648c38b05105ac65711a4')
+
+_gobuild_dir="${pkgname}-build"
+_gopkg="code.google.com/p/jamslam-freetype-go/freetype"
 
 build(){
   cd "$srcdir"
 
-  mkdir -p golang-jamslam-freetype-go-build/src/code.google.com/p/jamslam-freetype-go/
-  cp -r jamslam-freetype-go/freetype golang-jamslam-freetype-go-build/src/code.google.com/p/jamslam-freetype-go/
-  # autobuild go
-  cd golang-jamslam-freetype-go-build && GOPATH=`pwd` go install code.google.com/p/jamslam-freetype-go/freetype
-  # build truetype submodule
-  cp -r "$srcdir"/jamslam-freetype-go/freetype/truetype "$srcdir"/golang-jamslam-freetype-go-build/src/code.google.com/p/jamslam-freetype-go/freetype
-  cd "$srcdir"/golang-jamslam-freetype-go-build && GOPATH=`pwd` go install code.google.com/p/jamslam-freetype-go/freetype/truetype
+  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+  cp -r jamslam-freetype-go/freetype/* "${_gobuild_dir}"/src/"${_gopkg}"/
+  GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
+  GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/truetype
 }
 
 package() {
+  cd "${srcdir}"
 
-  mkdir -p "${pkgdir}"/usr/lib/go/{pkg,src/pkg/code.google.com/p/jamslam-freetype-go}
-  cp -r "$srcdir"/golang-jamslam-freetype-go-build/src/code.google.com/p/jamslam-freetype-go/* "${pkgdir}"/usr/lib/go/src/pkg/code.google.com/p/jamslam-freetype-go
-  cp -r "$srcdir"/golang-jamslam-freetype-go-build/pkg/* "${pkgdir}"/usr/lib/go/pkg/
+  mkdir -p "${pkgdir}"/usr/lib/go/src/pkg/
+  mkdir -p "${pkgdir}"/usr/lib/go/pkg/
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/pkg/
+  cp -r "${_gobuild_dir}"/pkg/* "${pkgdir}"/usr/lib/go/pkg/
 }
