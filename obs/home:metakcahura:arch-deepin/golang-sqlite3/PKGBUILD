@@ -2,9 +2,10 @@
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=golang-sqlite3
-_pkgver=0.0
+_pkgverbase=0.0
 _pkgvergit=20140623
-pkgver=${_pkgver}.${_pkgvergit}
+_pkgver=${_pkgverbase}~git${_pkgvergit}
+pkgver=${_pkgverbase}.${_pkgvergit}
 pkgrel=3
 pkgdesc='File system notification for GO'
 arch=('i686' 'x86_64')
@@ -12,24 +13,25 @@ url="https://github.com/mattn/go-sqlite3"
 license=('GPL2')
 depends=('go>=1.3')
 options=(staticlibs)
-source=("http://packages.linuxdeepin.com/deepin/pool/main/g/${pkgname}/${pkgname}_${pkgver}.orig.tar.xz")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/g/${pkgname}/${pkgname}_${_pkgver}.orig.tar.xz")
 sha256sums=('83b32c3478a087788c74f5ff81b2df894b6dc05454863f1f52b8f0ce6dca5f44')
 
-build() {
+_gobuild_dir="${pkgname}-build"
+_gopkg="github.com/mattn/go-sqlite3"
+
+build(){
   cd "$srcdir"
 
-  rm -rf go-sqlite3/.git
-  mkdir -p golang-sqlite3-build/src/github.com/mattn/
-  cp -r go-sqlite3 golang-sqlite3-build/src/github.com/mattn/
-  # autobuild go
-  cd golang-sqlite3-build && GOPATH=`pwd` go install github.com/mattn/go-sqlite3
-
+  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+  cp -r go-sqlite3/* "${_gobuild_dir}"/src/"${_gopkg}"/
+  GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
 }
 
 package() {
+  cd "${srcdir}"
 
-  # install go pkg
-  mkdir -p "${pkgdir}"/usr/lib/go/{pkg,src/pkg}
-  cp -r "$srcdir"/golang-sqlite3-build/src/* "${pkgdir}"/usr/lib/go/src/pkg/
-  cp -r "$srcdir"/golang-sqlite3-build/pkg/* "${pkgdir}"/usr/lib/go/pkg/
+  mkdir -p "${pkgdir}"/usr/lib/go/src/pkg/
+  mkdir -p "${pkgdir}"/usr/lib/go/pkg/
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/pkg/
+  cp -r "${_gobuild_dir}"/pkg/* "${pkgdir}"/usr/lib/go/pkg/
 }
