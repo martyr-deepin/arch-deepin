@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: 
+# Contributor:
 
 pkgname=deepin-vte-plus
 _pkgname=vte
@@ -8,18 +8,19 @@ pkgrel=7
 pkgdesc="Virtual Terminal Emulator widget for use with GTK2 - with several patches"
 arch=('i686' 'x86_64')
 license=('GPL3')
-options=('!libtool' '!emptydirs')
+url="https://developer.gnome.org/vte/"
+groups=('deepin-extra')
 depends=('gtk2')
 makedepends=('deepin-pygtk' 'intltool' 'gobject-introspection' 'pygobject2-devel' 'gettext')
-url="https://developer.gnome.org/vte/"
-site="http://test.packages.linuxdeepin.com/deepin/pool/main/v"
-source=("${site}/${_pkgname}/${_pkgname}_${pkgver}.orig.tar.xz"
-        "${site}/${_pkgname}/${_pkgname}_${pkgver}-6deepin7~saucy.debian.tar.gz")
-sha256sums=('ee52b91ecab31d0a64399896ce0c3515e579ea8ac212a00eb9b0895c58f001fe'
-	    'b63a344541f0feebddac0232a8d7196d22d4819ec32cbd6cb39e33b2ba50e940')
 provides=('vte=0.28.2')
 conflicts=('vte')
-groups=('deepin')
+options=('!libtool' '!emptydirs')
+
+_site="http://test.packages.linuxdeepin.com/deepin/pool/main/v"
+source=("${_site}/${_pkgname}/${_pkgname}_${pkgver}.orig.tar.xz"
+        "${_site}/${_pkgname}/${_pkgname}_${pkgver}-6deepin7~saucy.debian.tar.gz")
+sha256sums=('ee52b91ecab31d0a64399896ce0c3515e579ea8ac212a00eb9b0895c58f001fe'
+	    'b63a344541f0feebddac0232a8d7196d22d4819ec32cbd6cb39e33b2ba50e940')
 
 prepare() {
 
