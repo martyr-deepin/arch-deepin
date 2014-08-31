@@ -25,7 +25,7 @@ prepare() {
   cd "${pkgname}-${pkgver}"
 
   # fix python version
-  find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+  find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 package() {

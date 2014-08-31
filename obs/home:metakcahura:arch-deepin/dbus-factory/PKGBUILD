@@ -22,7 +22,7 @@ build() {
   cd "${pkgbase}-${pkgver}"
 
   # fix python version
-  #find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python=\1python2='
+  #find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
   
   cd in.json && python2 ../../json_build.py
 }
