@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: 
+# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=golang-graphics-go
 _pkgver=0.0
@@ -11,14 +11,13 @@ arch=('i686' 'x86_64')
 url="http://code.google.com/p/graphics-go/"
 license=('GPL2')
 depends=('go>=1.3')
-groups=('deepin')
 options=(staticlibs)
 source=("http://packages.linuxdeepin.com/deepin/pool/main/g/${pkgname}/${pkgname}_${pkgver}.orig.tar.xz")
 sha256sums=('d91af80386956e33215f1dc77800051d64354a3a43b56d616e08078fa08d8314')
 
 build(){
   cd "$srcdir"
-  
+
   mkdir -p golang-graphics-go-build/src/code.google.com/p/
   cp -r graphics-go golang-graphics-go-build/src/code.google.com/p/
   # autobuild go

@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: 
+# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dbus-generator
 pkgver=git20140522~3948504
@@ -7,8 +7,7 @@ pkgrel=1
 pkgdesc='Go-lang bingdings for dlib'
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/go-dbus-generator"
-license=('GPL2')
-depends=('glib2')
+license=('GPL3')
 makedepends=('go>=1.3' 'gettext' 'go-dlib' 'golang-gocheck')
 conflicts=('go-dlib<=0.0.2' 'go-dlib-dbus-proxyer')
 groups=('deepin')
@@ -18,7 +17,7 @@ sha256sums=('SKIP')
 
 build(){
   cd "${pkgname}-${pkgver}"
-  
+
   mkdir -p ../build/src/pkg.linuxdeepin.com/dbus-generator
   cp -r *.* example-xml ../build/src/pkg.linuxdeepin.com/dbus-generator
   cd ../build && GOPATH=`pwd` go install pkg.linuxdeepin.com/dbus-generator

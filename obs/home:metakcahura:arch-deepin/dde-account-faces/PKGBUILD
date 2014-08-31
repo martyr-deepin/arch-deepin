@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: 
+# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-account-faces
 _pkgver=1.0.4
@@ -9,7 +9,7 @@ pkgrel=2
 pkgdesc='Deepin Account face Images'
 arch=('any')
 url="http://www.linuxdeepin.com/"
-license=('GPL3')
+license=('custom')
 depends=('accountsservice')
 makedepends=()
 groups=('deepin')

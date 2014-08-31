@@ -7,8 +7,8 @@ pkgdesc="System notifications for linuxdeepin desktop environment."
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/deepin-notifications"
 license=('GPL3')
-depends=('glib2' 'python2' 'go-dlib' 'dde-go-dbus-factory')
-makedepends=('go>=1.3')
+depends=('glib2' 'python2')
+makedepends=('go>=1.3' 'go-dlib' 'dde-go-dbus-factory')
 groups=('deepin')
 options=(staticlibs)
 source=("${pkgname}-${pkgver}.tar.xz")
@@ -23,7 +23,7 @@ prepare() {
 
 build() {
   cd "${pkgname}-${pkgver}"/src
-  
+
   GOPATH=`pwd` go build && mv src ${pkgname}
 }
 
