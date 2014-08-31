@@ -1,7 +1,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-screenshot
-pkgver=2.1+20140703160929
+pkgver=2.1.20140827144735
 pkgrel=1
 pkgdesc="Provide a quite easy-to-use screenshot tool. Features:Global hotkey to triggle screenshot tool,Take screenshot of a selected area,Easy to add text and line drawings onto the screenshot"
 arch=('any')
@@ -9,9 +9,9 @@ url="http://www.linuxdeepin.com/"
 license=('LGPL3')
 depends=('python2' 'gconf' 'python2-xlib' 'deepin-ui' 'python2-wnck' 'python2-xdg' 'python2-scipy' 'python2-pycurl')
 
-_fileurl="http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-screenshot/deepin-screenshot_2.1+20140703160929~bed4810663.tar.gz"
+_fileurl="http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-screenshot/deepin-screenshot_2.1+20140827144735~e8d30811b5.tar.gz"
 source=("${_fileurl}")
-sha256sums=('575bcdb7b58d8351990488a826b1e55df4480faf29102e303f6a00e4dbdd03cb')
+sha256sums=('c1cbb97ec194812fb049408a2765f7dddc6690b3e47c48e09ad7a4fceb4591a5')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"

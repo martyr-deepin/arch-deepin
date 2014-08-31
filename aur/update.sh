@@ -34,6 +34,7 @@ get_pkg_info() {
     # fix package version
     pkg_version_fixed="${pkg_version%~*}"
     pkg_version_fixed="${pkg_version_fixed/-/_}"
+    pkg_version_fixed="${pkg_version_fixed/+/.}"
 
     echo "pkg_version: ${pkg_version}"
     echo "pkg_version_fixed: ${pkg_version_fixed}"
