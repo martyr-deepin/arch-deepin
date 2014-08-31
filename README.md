@@ -35,6 +35,13 @@ More information to see the [topic](https://bbs.archlinux.org/viewtopic.php?id=1
    issues, just kill startdde in another tty, :-)*
   
 # Troubleshooting
+  - How to report debugging information of deepin?
+    
+    Just use journalctl, for example, the following command will
+    print all deepin related log messages since boot:
+
+       journalctl -b | grep -i 'deepin'
+  
   - Why network in deepin-control-center not working?
   
     LinuxDeepin manage network through NetworkManager, so don't
