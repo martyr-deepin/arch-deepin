@@ -1,7 +1,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-utils-git
-pkgver=20131210
+pkgver=20140706.ec7da4a
 pkgrel=1
 pkgdesc='Utils of DeepinUI Toolkit modules - git version'
 arch=("i686" "x86_64")
