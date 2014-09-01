@@ -33,10 +33,9 @@ package() {
 
   make install DESTDIR="${pkgdir}/"
 
-  install -dm 755 "${pkgdir}"/{etc/{X11,init,sysctl.d},usr/{bin,share/xgreeters},var/lib/polkit-1/localauthority/50-local.d}
+  install -dm 755 "${pkgdir}"/{etc/{X11,sysctl.d},usr/{bin,share/xgreeters},var/lib/polkit-1/localauthority/50-local.d}
 
   install -m 644 ../debian/30-deepin-inotify-limit.conf "${pkgdir}"/etc/sysctl.d/
-  install -m 644 ../debian/dde-account.conf "${pkgdir}"/etc/init/
   install -m 644 ../debian/lightdm-deepin-greeter.desktop "${pkgdir}"/usr/share/xgreeters/
   install -m 755 ../debian/default-terminal "${pkgdir}"/usr/bin/
   install -m 755 ../debian/lightdm.pkla "${pkgdir}"/var/lib/polkit-1/localauthority/50-local.d/
