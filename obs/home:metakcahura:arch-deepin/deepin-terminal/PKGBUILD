@@ -20,7 +20,7 @@ prepare(){
   patch -i "${srcdir}/arch-makefile-fix.patch"
 
   # fix python version
-  find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 package() {
