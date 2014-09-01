@@ -71,16 +71,13 @@ More information to see the [topic](https://bbs.archlinux.org/viewtopic.php?id=1
 
 # Screenshot
 
-<img src="./screenshot/dde_2014_01.png"
+<img src="./screenshot/dde_2014.1_01.png"
 width=500/>
 
-<img src="./screenshot/dde_2014_02.png"
+<img src="./screenshot/dde_2014.2_02.png"
 width=500/>
 
-<img src="./screenshot/dde_2014_03.png"
-width=500/>
-
-<img src="./screenshot/dde_2014_04.png"
+<img src="./screenshot/dde_2014.3_03.png"
 width=500/>
 
 # License
