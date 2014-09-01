@@ -74,10 +74,10 @@ More information to see the [topic](https://bbs.archlinux.org/viewtopic.php?id=1
 <img src="./screenshot/dde_2014.1_01.png"
 width=500/>
 
-<img src="./screenshot/dde_2014.2_02.png"
+<img src="./screenshot/dde_2014.1_02.png"
 width=500/>
 
-<img src="./screenshot/dde_2014.3_03.png"
+<img src="./screenshot/dde_2014.1_03.png"
 width=500/>
 
 # License
