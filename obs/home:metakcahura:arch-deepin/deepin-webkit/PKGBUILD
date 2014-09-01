@@ -8,10 +8,10 @@ pkgdesc='A fork of webkit-gtk for Linux Deepin desktop eviroment'
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"
 license=('LGPL' 'GPL' 'BSD' 'custom')
-depends=('libxt' 'libxslt' 'sqlite' 'libsoup' 'enchant' 'libgl' 'gtk3'
-	 'gstreamer0.10-base-plugins' 'libsecret' 'libwebp' 'harfbuzz-icu')
+depends=('geoclue' 'libxt' 'libxslt' 'sqlite' 'libsoup' 'enchant' 'libgl' 'gtk3'
+	'gstreamer0.10-base-plugins' 'libsecret' 'libwebp' 'harfbuzz-icu')
 makedepends=('gtk2' 'gperf' 'gobject-introspection' 'python2' 'mesa' 'gtk-doc'
-	     'gawk' 'chrpath' 'bison' 'perl' 'flex' 'which' 'gettext')
+	'gawk' 'chrpath' 'bison' 'perl' 'flex' 'which' 'gettext')
 optdepends=('gtk2: Netscape plugin support')
 provides=("${pkgname}")
 groups=('deepin')
