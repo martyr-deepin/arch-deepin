@@ -1,8 +1,8 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor:
+# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-game-center
-pkgver=git20140509~c0cac57
+pkgver=1.0.1.20140509.c0cac57
 pkgrel=1
 pkgdesc="Game center for Linuxdeepin"
 arch=('any')
@@ -12,21 +12,12 @@ depends=('deepin-ui' 'flashplugin' 'hicolor-icon-theme' 'python2-scipy' 'python2
 groups=('deepin-extra')
 install="${pkgname}.install"
 options=(staticlibs)
-source=("$pkgname-${pkgver}.tar.xz" 'arch-makefile-fix.patch')
-noextract=("${pkgname}-${pkgver}.tar.xz")
-sha256sums=('SKIP' 'b06b22b9f2636f905400683f17257424edd92645d842a8a54e881be38da94bae')
+source=("$pkgname-${pkgver}.tar.xz")
+sha256sums=('SKIP')
 
 prepare() {
-  cd "$srcdir"
-
-  tar -C "$srcdir" -xvJf ${pkgname}-${pkgver}.tar.xz
-
-  cd "${pkgname}-${pkgver}"
-
-  patch -i "${srcdir}/arch-makefile-fix.patch"
-
   # fix python version
-  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 package() {
