@@ -10,7 +10,7 @@ url="https://gitcafe.com/Deepin/dde-workspace"
 license=('GPL3')
 groups=('deepin')
 depends=('dde-control-center' 'deepin-menu' 'deepin-artwork'
-	 'deepin-webkit' 'cairo' 'dbus-glib' 'python2')
+	 'libdeepin-webkit' 'cairo' 'dbus-glib' 'python2')
 makedepends=('cmake' 'go>=1.3' 'coffee-script' 'go-gettext-go' 'gettext' 'webkitgtk' 'lightdm')
 optdepends=('lightdm: LightDM for lightdm-deepin-greeter')
 replaces=("deepin-desktop-environment")
