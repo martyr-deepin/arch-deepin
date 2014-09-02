@@ -8,7 +8,7 @@ pkgdesc='Convert dbus interfaces to go-lang or qml wrapper code'
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/go-dbus-generator"
 license=('GPL3')
-makedepends=('go>=1.3' 'gettext' 'go-dlib' 'golang-gocheck')
+makedepends=('go>=1.3' 'gettext' 'go-dlib' 'go-gocheck')
 conflicts=('go-dlib<=0.0.2' 'go-dlib-dbus-proxyer')
 groups=('deepin-dev')
 options=(staticlibs)
