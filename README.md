@@ -61,14 +61,6 @@ More information to see the [topic](https://bbs.archlinux.org/viewtopic.php?id=1
         sudo systemctl enable ModemManager
         sudo systemctl start ModemManager
 
-  - Why I couldn't change user icon in account panel?
-
-    You need install `polkit-gnome` or other authentication agents and
-    make it autstarted on login,
-
-        cp /usr/share/applications/polkit-gnome-authentication-agent-1.desktop /etc/xdg/autostart/
-        sed -i 's/\(OnlyShowIn=.*\)/\1Deepin;/' /etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop 
-
 # Screenshot
 
 <img src="./screenshot/dde_2014.1_01.png"
