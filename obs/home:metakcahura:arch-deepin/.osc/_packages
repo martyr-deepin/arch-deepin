@@ -14,7 +14,6 @@
   <package name="deepin-artwork-themes" state=" " />
   <package name="deepin-cursor-theme" state=" " />
   <package name="deepin-default-gsettings" state=" " />
-  <package name="deepin-desktop-environment" state=" " />
   <package name="deepin-game-center" state=" " />
   <package name="deepin-gsettings" state=" " />
   <package name="deepin-gtk-theme" state=" " />
