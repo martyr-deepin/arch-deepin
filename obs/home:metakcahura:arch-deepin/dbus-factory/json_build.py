@@ -43,10 +43,6 @@ def build(path,target,installdir):
         elif target == 'golang':
             target = 'go'
             work = work + target + '/'
-            install_path_dir = install_dir+'/'+path
-            cmd = 'GOPATH=`pwd` go install '+ install_path_dir
-            os.chdir(work)
-            os.system(cmd)
     finally:
         os.chdir(owd)
 
