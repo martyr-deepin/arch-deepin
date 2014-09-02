@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">packages.linuxdeepin.com</param>
+    <param name="protocol">http</param>
+    <param name="path">/deepin/pool/main/g/golang-jamslam-freetype-go/golang-jamslam-freetype-go_0.0~git20140306.orig.tar.xz</param>
+  </service>
+</services>
