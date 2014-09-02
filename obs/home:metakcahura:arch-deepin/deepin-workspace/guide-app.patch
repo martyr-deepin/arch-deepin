@@ -1,0 +1,11 @@
+--- a/app/CMakeLists.txt	2014-05-22 11:50:04.000000000 +0200
++++ b/app/CMakeLists.txt	2014-05-25 23:47:34.425596341 +0200
+@@ -8,7 +8,7 @@
+ add_subdirectory(zone)
+ add_subdirectory(osd)
+ add_subdirectory(lowpower)
+-add_subdirectory(guide)
++#add_subdirectory(guide)
+ 
+ install(
+     DIRECTORY ${PROJECT_SOURCE_DIR}/resources/common
