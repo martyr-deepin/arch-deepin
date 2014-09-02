@@ -80,4 +80,10 @@
   <package name="polkit-gnome" state=" " />
   <package name="dbus-generator" state=" " />
   <package name="deepin-screenshot" state=" " />
+  <package name="go-sqlite3" state=" " />
+  <package name="go-jamslam-freetype-go" state=" " />
+  <package name="go-graphics-go" state=" " />
+  <package name="go-gocheck" state=" " />
+  <package name="go-gettext-go" state=" " />
+  <package name="go-fsnotify" state=" " />
 </project>

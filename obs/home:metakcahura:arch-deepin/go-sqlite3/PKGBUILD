@@ -1,0 +1,36 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+_pkgname=golang-sqlite3
+pkgname=go-sqlite3
+_pkgverbase=0.0
+_pkgvergit=20140623
+_pkgver=${_pkgverbase}~git${_pkgvergit}
+pkgver=${_pkgverbase}.${_pkgvergit}
+pkgrel=3
+pkgdesc='File system notification for GO'
+arch=('i686' 'x86_64')
+url="https://github.com/mattn/go-sqlite3"
+license=('GPL2')
+depends=('go>=1.3')
+replaces=('golang-sqlite3')
+options=(staticlibs)
+source=("http://packages.linuxdeepin.com/deepin/pool/main/g/${_pkgname}/${_pkgname}_${_pkgver}.orig.tar.xz")
+sha256sums=('83b32c3478a087788c74f5ff81b2df894b6dc05454863f1f52b8f0ce6dca5f44')
+
+_gobuild_dir="${_pkgname}-build"
+_gopkg="github.com/mattn/go-sqlite3"
+
+prepare() {
+  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+  cp -r go-sqlite3/* "${_gobuild_dir}"/src/"${_gopkg}"/
+}
+
+build() {
+  GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
+}
+
+package() {
+  mkdir -p "${pkgdir}"/usr/lib/go/src/pkg/
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/pkg/
+}
