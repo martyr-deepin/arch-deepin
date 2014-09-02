@@ -2,7 +2,7 @@
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=golang-fsnotify
-pkgver=git20140222
+pkgver=0.0.20140710.6b1ef89
 pkgrel=2
 pkgdesc='File system notification for GO'
 arch=('i686' 'x86_64')
@@ -10,24 +10,22 @@ url="https://github.com/howeyc/fsnotify"
 license=('GPL2')
 depends=('go>=1.3')
 options=(staticlibs)
-source=("fsnotify-${pkgver}.tar.xz")
+source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
+_gobuild_dir="${pkgname}-build"
+_gopkg="github.com/howeyc/fsnotify"
+
+prepare() {
+  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+  cp -r "${pkgname}-${pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
+}
+
 build() {
-  cd "$srcdir"
-
-  #rm -rf fsnotify-${pkgver}/.git
-  mkdir -p golang-fsnotify-build/src/github.com/howeyc/fsnotify
-  cp -r fsnotify-${pkgver}/* golang-fsnotify-build/src/github.com/howeyc/fsnotify/
-  # autobuild go
-  cd golang-fsnotify-build && GOPATH=`pwd` go install github.com/howeyc/fsnotify
-
+  GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
 }
 
 package() {
-
-  # install go pkg
-  mkdir -p "${pkgdir}"/usr/lib/go/{pkg,src/pkg}
-  cp -r "$srcdir"/golang-fsnotify-build/src/* "${pkgdir}"/usr/lib/go/src/pkg/
-  cp -r "$srcdir"/golang-fsnotify-build/pkg/* "${pkgdir}"/usr/lib/go/pkg/
+  mkdir -p "${pkgdir}"/usr/lib/go/src/pkg/
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/pkg/
 }

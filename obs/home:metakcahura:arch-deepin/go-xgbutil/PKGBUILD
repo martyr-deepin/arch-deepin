@@ -10,20 +10,24 @@ url="https://github.com/BurntSushi/xgbutil"
 license=('GPL2')
 depends=('go>=1.3' 'go-xgb' 'golang-graphics-go' 'golang-jamslam-freetype-go')
 options=(staticlibs)
-source=("xgbutil-${pkgver}.tar.xz")
+source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
-build() {
-  cd "${srcdir}"
+_gobuild_dir="${pkgname}-build"
+_gopkg="github.com/BurntSushi/xgbutil"
 
-  mkdir -p go-xgbutil-build/src/github.com/BurntSushi/
-  cp -r xgbutil-"${pkgver}" go-xgbutil-build/src/github.com/BurntSushi/xgbutil/
-  GOPATH="${srcdir}"/go-xgbutil-build go install github.com/BurntSushi/xgbutil
-  GOPATH="${srcdir}"/go-xgbutil-build go install github.com/BurntSushi/xgbutil/{ewmh,gopher,icccm,keybind,motif,mousebind,xcursor,xevent,xgraphics,xinerama,xprop,xrect,xwindow}
+prepare() {
+  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+  cp -r "${pkgname}-${pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
 }
 
+# TODO: depends on other go library, do not try to build or will appear permission denied issue
+# build() {
+  # GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
+  # GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/{ewmh,gopher,icccm,keybind,motif,mousebind,xcursor,xevent,xgraphics,xinerama,xprop,xrect,xwindow}
+# }
+
 package() {
-  install -dm 755 "${pkgdir}"/usr/lib/go/{pkg,src/pkg}
-  cp -rf "${srcdir}"/go-xgbutil-build/src/* "${pkgdir}"/usr/lib/go/src/pkg/
-  cp -rf "${srcdir}"/go-xgbutil-build/pkg/* "${pkgdir}"/usr/lib/go/pkg/
+  mkdir -p "${pkgdir}"/usr/lib/go/src/pkg/
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/pkg/
 }

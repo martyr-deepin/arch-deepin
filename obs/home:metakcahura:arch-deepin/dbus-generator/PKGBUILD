@@ -17,14 +17,10 @@ sha256sums=('SKIP')
 
 build(){
   cd "${pkgname}-${pkgver}"
-
-  mkdir -p ../build/src/pkg.linuxdeepin.com/dbus-generator
-  cp -r *.* example-xml ../build/src/pkg.linuxdeepin.com/dbus-generator
-  cd ../build && GOPATH=`pwd` go install pkg.linuxdeepin.com/dbus-generator
+  go build -o dbus-generator
 }
 
 package() {
-  #cd "${pkgname}-${pkgver}"
-
-  install -Dm 755 build/bin/dbus-generator "${pkgdir}"/usr/bin/dbus-generator
+  cd "${pkgname}-${pkgver}"
+  install -Dm 755 dbus-generator "${pkgdir}"/usr/bin/dbus-generator
 }

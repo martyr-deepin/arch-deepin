@@ -19,19 +19,16 @@ sha256sums=('d91af80386956e33215f1dc77800051d64354a3a43b56d616e08078fa08d8314')
 _gobuild_dir="${pkgname}-build"
 _gopkg="code.google.com/p/graphics-go/graphics"
 
-build(){
-  cd "$srcdir"
-
+prepare() {
   mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
   cp -r graphics-go/graphics/* "${_gobuild_dir}"/src/"${_gopkg}"/
+}
+
+build() {
   GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
 }
 
 package() {
-  cd "${srcdir}"
-
   mkdir -p "${pkgdir}"/usr/lib/go/src/pkg/
-  mkdir -p "${pkgdir}"/usr/lib/go/pkg/
   cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/pkg/
-  cp -r "${_gobuild_dir}"/pkg/* "${pkgdir}"/usr/lib/go/pkg/
 }

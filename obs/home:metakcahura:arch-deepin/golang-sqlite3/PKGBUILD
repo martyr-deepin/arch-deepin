@@ -19,19 +19,16 @@ sha256sums=('83b32c3478a087788c74f5ff81b2df894b6dc05454863f1f52b8f0ce6dca5f44')
 _gobuild_dir="${pkgname}-build"
 _gopkg="github.com/mattn/go-sqlite3"
 
-build(){
-  cd "$srcdir"
-
+prepare() {
   mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
   cp -r go-sqlite3/* "${_gobuild_dir}"/src/"${_gopkg}"/
+}
+
+build() {
   GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
 }
 
 package() {
-  cd "${srcdir}"
-
   mkdir -p "${pkgdir}"/usr/lib/go/src/pkg/
-  mkdir -p "${pkgdir}"/usr/lib/go/pkg/
   cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/pkg/
-  cp -r "${_gobuild_dir}"/pkg/* "${pkgdir}"/usr/lib/go/pkg/
 }

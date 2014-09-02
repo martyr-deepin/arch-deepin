@@ -19,20 +19,17 @@ sha256sums=('028b753388ec2d54105ae3c2713cae4075d9a578a39648c38b05105ac65711a4')
 _gobuild_dir="${pkgname}-build"
 _gopkg="code.google.com/p/jamslam-freetype-go/freetype"
 
-build(){
-  cd "$srcdir"
-
+prepare() {
   mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
   cp -r jamslam-freetype-go/freetype/* "${_gobuild_dir}"/src/"${_gopkg}"/
+}
+
+build() {
   GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
   GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/truetype
 }
 
 package() {
-  cd "${srcdir}"
-
   mkdir -p "${pkgdir}"/usr/lib/go/src/pkg/
-  mkdir -p "${pkgdir}"/usr/lib/go/pkg/
   cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/pkg/
-  cp -r "${_gobuild_dir}"/pkg/* "${pkgdir}"/usr/lib/go/pkg/
 }

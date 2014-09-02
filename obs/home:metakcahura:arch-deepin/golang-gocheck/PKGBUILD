@@ -10,7 +10,7 @@ pkgrel=7
 pkgdesc='Richer testing framework for Go libraries and applications to use'
 arch=('any')
 url="http://labix.org/gocheck"
-license=('GPL2')
+license=('BSD')
 makedepends=('go>=1.3')
 options=(staticlibs)
 site="http://packages.linuxdeepin.com/deepin/pool/main/g"
@@ -23,31 +23,26 @@ _gobuild_dir="${pkgname}-build"
 _gopkg="launchpad.net/gocheck"
 
 prepare() {
-  cd "$pkgname-$_pkgver"
+  cd "${pkgname}-${_pkgver}"
 
   # apply patches
-  patchdir=$srcdir/debian/patches
-  for f in $(< $patchdir/series); do
+  patchdir="${srcdir}"/debian/patches
+  for f in $(< "${patchdir}"/series); do
     echo "==> patching: ${f##*/}"
     # ignore error if patch again
     patch -Np1 -i $patchdir/$f || echo '==> patch error: ${f##*/}'
   done
 
+  cd "${srcdir}"
+  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+  cp -r "${pkgname}-${_pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
 }
 
 build() {
-  cd "${srcdir}"
-
-  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
-  cp -r "${pkgname}-${_pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
   GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
 }
 
 package() {
-  cd "${srcdir}"
-
   mkdir -p "${pkgdir}"/usr/lib/go/src/pkg/
-  mkdir -p "${pkgdir}"/usr/lib/go/pkg/
   cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/pkg/
-  cp -r "${_gobuild_dir}"/pkg/* "${pkgdir}"/usr/lib/go/pkg/
 }
