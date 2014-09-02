@@ -1,8 +1,8 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+# Contributor: 
 
 pkgname=deepin-music-player
-pkgver=1.1.20140509.26e1c04
+pkgver=1.git20140509~26e1c04
 pkgrel=1
 pkgdesc='Awesome music player with brilliant and tweakful UI Deepin-UI based.'
 arch=('any')
@@ -17,14 +17,30 @@ groups=('deepin-extra')
 install="${pkgname}.install"
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
+noextract=("${pkgname}-${pkgver}.tar.xz")
 
 prepare() {
+  cd "$srcdir"
+
+  tar -C "$srcdir" -xvJf ${pkgname}-${pkgver}.tar.xz
+  
+  cd "${pkgname}-${pkgver}"
   # fix python version
-  find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 package() {
   cd "${pkgname}-${pkgver}"
 
-  make DESTDIR="${pkgdir}/" install
+  install -dm 755 "${pkgdir}"/usr/{bin,share/{applications,deepin-music-player}}
+  cp -r {app_theme,image,skin,locale,src,wizard,plugins,tools,AUTHORS,COPYING} "${pkgdir}"/usr/share/${pkgname}/
+
+  install -m 644 ${pkgname}.desktop "${pkgdir}"/usr/share/applications/
+
+  # Post install
+  chmod 755 "${pkgdir}"/usr/share/${pkgname}/src/main.py
+  ln -s /usr/share/${pkgname}/src/main.py "${pkgdir}"/usr/bin/${pkgname}
+
+  cd "${pkgdir}"/usr/share/${pkgname}/tools && python2 generate_mo.py
+  rm -rf "${pkgdir}"/usr/share/${pkgname}/{tools,locale/{*.po,*.pot}}
 }
