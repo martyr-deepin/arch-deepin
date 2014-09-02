@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">ftp.gnome.org</param>
+    <param name="protocol">http</param>
+    <param name="path">/pub/gnome/sources/metacity/3.12/metacity-3.12.0.tar.xz</param>
+  </service>
+</services>

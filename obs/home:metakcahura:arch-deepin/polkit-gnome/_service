@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">ftp.gnome.org</param>
+    <param name="protocol">http</param>
+    <param name="path">/pub/gnome/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz</param>
+  </service>
+</services>
