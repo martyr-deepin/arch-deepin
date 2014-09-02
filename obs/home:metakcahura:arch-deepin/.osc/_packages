@@ -29,7 +29,6 @@
   <package name="deepin-ui" state=" " />
   <package name="deepin-utils" state=" " />
   <package name="deepin-vte-plus" state=" " />
-  <package name="deepin-webkit" state=" " />
   <package name="faenza-icon-theme" state=" " />
   <package name="go" state=" " />
   <package name="go-dlib" state=" " />
