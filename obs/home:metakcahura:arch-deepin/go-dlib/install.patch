@@ -1,7 +1,0 @@
---- go-dlib-0.0.1/install.sh.old	2013-12-25 05:26:54.000000000 +0100
-+++ go-dlib-0.0.1/install.sh	2014-04-18 13:09:55.811855658 +0200
-@@ -6,4 +6,3 @@
- GOPATH=${PWD1} go install dlib/pseudo
- GOPATH=${PWD1} go install dlib/dbus/proxyer
- GOLIB=`go env GOHOSTOS`_`go env GOHOSTARCH`
--rm ${PWD1}/pkg/${GOLIB}/dlib/pseudo.a

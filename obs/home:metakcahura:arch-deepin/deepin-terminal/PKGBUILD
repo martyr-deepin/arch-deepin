@@ -2,7 +2,7 @@
 # Contributor:
 
 pkgname=deepin-terminal
-pkgver=1.1.git20140515~a4c7a46
+pkgver=1.1.20140515.a4c7a46
 pkgrel=1
 pkgdesc='Awesome terminal for Linux Deepin'
 arch=('any')
@@ -15,8 +15,6 @@ source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
 prepare(){
-  cd "${pkgname}-${pkgver}"
-
   # fix python version
   find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
