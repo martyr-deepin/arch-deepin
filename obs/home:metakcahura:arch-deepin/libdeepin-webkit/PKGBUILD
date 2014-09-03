@@ -14,7 +14,8 @@ depends=('geoclue' 'libxt' 'libxslt' 'sqlite' 'libsoup' 'enchant' 'libgl' 'gtk3'
 makedepends=('gtk2' 'gperf' 'gobject-introspection' 'python2' 'mesa' 'gtk-doc'
 	'gawk' 'chrpath' 'bison' 'perl' 'flex' 'which' 'gettext')
 optdepends=('gtk2: Netscape plugin support')
-replaces=("deepin-webkit")
+provides=('deepin-webkit')
+replaces=('deepin-webkit')
 options=(!libtool !emptydirs)
 source=("${pkgname}-${pkgver}.tar.xz"
         "webkit-gtk-1.8.2-bison-2.6.patch"
