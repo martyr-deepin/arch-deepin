@@ -5,7 +5,7 @@ pkgbase="dbus-factory"
 pkgname=('dde-go-dbus-factory'
 	 'dde-qml-dbus-factory')
 pkgver=0.0.2.20140516.5ed6a4d
-pkgrel=1
+pkgrel=2
 pkgdesc='dde qml gettext plugin'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dbus-factory"
