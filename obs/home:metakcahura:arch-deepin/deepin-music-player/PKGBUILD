@@ -23,8 +23,14 @@ prepare() {
   find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
+build() {
+  cd "${pkgname}-${pkgver}"
+
+  make
+}
+
 package() {
   cd "${pkgname}-${pkgver}"
 
-  make DESTDIR="${pkgdir}/" PREFIX=/usr install
+  make DESTDIR="${pkgdir}" PREFIX="/usr" install
 }
