@@ -78,7 +78,6 @@
   <package name="go-gocheck" state=" " />
   <package name="go-gettext-go" state=" " />
   <package name="go-fsnotify" state=" " />
-  <package name="deepin-workspace" state=" " />
   <package name="libdeepin-webkit" state=" " />
   <package name="dde-workspace" state=" " />
 </project>
