@@ -49,7 +49,7 @@ More information to see the [topic](https://bbs.archlinux.org/viewtopic.php?id=1
      
         sudo systemctl start NetworkManager
      
-    And if you want to experience DDE for a long time, use
+    And if you want to experience DDE for a long time, using
     NetworkManager instead of netctl is a better choice,
      
         sudo systemctl stop netctl
