@@ -27,16 +27,16 @@ prepare() {
 build() {
   cd "${pkgname}-${pkgver}"
 
-  cd locale && sh "${srcdir}/generate_mo.sh"
+  cd locale && sh "${srcdir}"/generate_mo.sh
 }
 
 package() {
   cd "${pkgname}-${pkgver}"
-  
+
   install -dm 755 "${pkgdir}"/usr/{bin,share/{applications,deepin-movie,locale}}
-  
+
   cp -R {*.py,*.qml} "${pkgdir}"/usr/share/${pkgname}/
-  cp -R {image,qvod} "${pkgdir}"/usr/share/${pkgname}/
+  cp -R image "${pkgdir}"/usr/share/${pkgname}/
   cp -R locale/mo/* "${pkgdir}"/usr/share/locale/
   install -m 644 ${pkgname}.desktop "${pkgdir}"/usr/share/applications/
   ln -s /usr/share/${pkgname}/main.py "${pkgdir}"/usr/bin/${pkgname}
