@@ -19,18 +19,11 @@ sha256sums=('SKIP')
 build() {
   cd "${pkgname}-${pkgver}"
 
-  GOPATH=`pwd` go build -o startdde
-  mkdir dialogUI/build && cd dialogUI/build
-  cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release ..
+  make
 }
 
 package() {
   cd "${pkgname}-${pkgver}"
 
-  install -dm 755 "${pkgdir}"/usr/{bin,share/xsessions}
-
-  install -m 755 startdde "${pkgdir}"/usr/bin/
-  install -m 644 *.desktop "${pkgdir}"/usr/share/xsessions/
-
-  cd dialogUI/build && make DESTDIR="$pkgdir/" install
+  make DESTDIR="${pkgdir}" install
 }
