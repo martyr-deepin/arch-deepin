@@ -25,13 +25,11 @@ prepare() {
   rm -rf "${_gobuild_dir}"/src/"${_gopkg}"/debian
 }
 
-# TODO: depends on other go library, do not try to build or will appear permission denied issue
-# build() {
-#   GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
-#   GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/{dbus,gdkpixbuf,gettext,gio-2.0,glib-2.0,gobject-2.0,graphic,log,pinyin,proxy,pulse,utils}
-# }
+# go-dlib depends on other go library, and do not try to run
+# `go install' here or will appear permission denied problem
 
 package() {
   mkdir -p "${pkgdir}"/usr/lib/go/src/pkg/
   cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/pkg/
+  find "${pkgdir}"/usr/lib/go/src/pkg/ -type d -name 'testdata' | xargs rm -rf
 }
