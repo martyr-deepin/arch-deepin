@@ -2,7 +2,7 @@
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 
 pkgname=deepin-game-center
-pkgver=1.0.1.20140827144221
+pkgver=1.0.1.20140912162350
 pkgrel=1
 pkgdesc="Game center for Linuxdeepin"
 arch=('any')
@@ -11,9 +11,9 @@ license=('GPL2')
 depends=('deepin-ui' 'flashplugin' 'hicolor-icon-theme' 'python2' 'python2-scipy' 'python2-jswebkit')
 install=${pkgname}.install
 
-_fileurl="http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-game-center/deepin-game-center_1.0.1+20140827144221~c29e36b238.tar.gz"
+_fileurl="http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-game-center/deepin-game-center_1.0.1+20140912162350~e5f86f085a.tar.gz"
 source=("${_fileurl}")
-sha256sums=('fc759ab5fca1121bf1324c3eea662b408466a34bf1dcedcf6366782f72fe28e9')
+sha256sums=('498b1b39b6d6e7a798ceebe7a91ca772839ac50fccd594ce782947047fbf803d')
 
 _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"
