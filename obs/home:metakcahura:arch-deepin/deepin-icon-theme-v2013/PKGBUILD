@@ -8,13 +8,14 @@ arch=('any')
 options=(!strip)
 url="http://www.linuxdeepin.com"
 license=('LGPL3')
-depends=('faenza-icon-theme')
 groups=('deepin-extra')
 #install=$pkgname.install
 source=("http://packages.linuxdeepin.com/deepin/pool/main/d/$pkgname/${pkgname}_${pkgver}-1.tar.gz")
 sha256sums=('99f559bd62fdd70fd917229111c2eb654ca9b48da47ac8833f722c256a454030')
 
 package() {
+  depends=('faenza-icon-theme')
+  
   cd "${pkgname}-${pkgver}"
   
   mkdir -p "$pkgdir/usr/share/icons"

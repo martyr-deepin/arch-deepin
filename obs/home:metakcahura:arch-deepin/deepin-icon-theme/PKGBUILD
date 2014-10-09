@@ -7,7 +7,6 @@ pkgdesc="This package is DeepinIconTheme which inherits the faenza-icon-theme."
 arch=('any')
 url="https://gitcafe.com/Deepin/deepin-icon-theme"
 license=('LGPL3')
-depends=('faenza-icon-theme' 'gtk-update-icon-cache')
 makedepends=('inkscape')
 groups=('deepin')
 options=(!strip)
@@ -26,6 +25,8 @@ build() {
 }
 
 package() {
+  depends=('faenza-icon-theme' 'gtk-update-icon-cache')
+
   cd "${pkgname}-${pkgver}"
   
   install -dm 755 "$pkgdir"/usr/share/icons
