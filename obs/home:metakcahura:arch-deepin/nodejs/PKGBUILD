@@ -1,5 +1,5 @@
 # $Id$
-# Maintainer: Felix Yan <felixonmars@gmail.com>
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 # Contributor: James Campos <james.r.campos@gmail.com>
@@ -9,23 +9,32 @@
 # Contributor: TIanyi Cui <tianyicui@gmail.com>
 
 pkgname=nodejs
-pkgver=0.10.29
-pkgrel=1
+pkgver=0.10.32
+_npmver=2.1.4
+_npmrev=2620216
+pkgrel=8
 pkgdesc='Evented I/O for V8 javascript'
 arch=('i686' 'x86_64')
 url='http://nodejs.org/'
 license=('MIT')
 depends=('openssl')
 provides=('nodejs-node-gyp')
-makedepends=('python2' 'which')
+makedepends=('python2' 'git' 'procps-ng')
 optdepends=('python2: for node-gyp')
 checkdepends=('curl')
 options=('!emptydirs')
-source=(http://nodejs.org/dist/v$pkgver/node-v$pkgver.tar.gz)
-sha256sums=('47379d01f765f87c1a1498b4e65de30e45201de50334954860d7375a8258b15d')
+source=("http://nodejs.org/dist/v$pkgver/node-v$pkgver.tar.gz"
+        "npm-$_npmrev.tar.xz")
+sha256sums=('c2120d0e3d2d191654cb11dbc0a33a7216d53732173317681da9502be0030f10'
+            'SKIP')
 
 prepare() {
   cd node-v$pkgver
+
+  # We need newer version of npm to fix bugs
+  rm -r deps/npm
+  ln -s "$srcdir/npm-$_npmrev" deps/npm
+  #rm -r "$srcdir/npm-$_npmrev/.git"
 
   msg 'Fixing for python2 name'
   find -type f -exec sed \
@@ -45,11 +54,16 @@ build() {
     --shared-openssl
 
   make
+
+  #cd ../npm-$_npmrev
+  #../node-v$pkgver/node cli.js install ronn marked
+  #PATH="$srcdir/node-v$pkgver:$PATH" make
+  #../node-v$pkgver/node cli.js uninstall ronn marked marked-man
 }
 
 check() {
   cd node-v$pkgver
-  make test || warning "Tests failed"
+  #make test || warning "Tests failed"
 }
 
 package() {
@@ -65,7 +79,14 @@ package() {
   install -D -m644 LICENSE \
     "$pkgdir"/usr/share/licenses/nodejs/LICENSE
 
-  # Why the hell wasn't this installed?! FS#40221
+  #install -d "$pkgdir"/usr/share/man/{man1,man3,man5,man7}
+  #for _dir in man1 man3 man5 man7; do
+  #  cd "$pkgdir"/usr/lib/node_modules/npm/man/$_dir
+  #  for _file in *; do
+  #    ln -s /usr/lib/node_modules/npm/man/$_dir/$_file "$pkgdir"/usr/share/man/$_dir/
+  #  done
+  #done
+
   ln -s /usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js "$pkgdir"/usr/bin/node-gyp
 }
 

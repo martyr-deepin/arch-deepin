@@ -11,7 +11,7 @@ license=('GPL')
 depends=('gtk3')
 makedepends=('gnome-common' 'which')
 source=("${pkgname}-${pkgver}.tar.xz")
-sha256sums=('b3c77e20cbc37ed10aee27b6b7dd9edb9d6b6a0e6a1d60bbf4b9c32a2f2429e6')
+md5sums=('SKIP')
 
 build() {
   cd "${pkgname}-${pkgver}"

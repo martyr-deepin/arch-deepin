@@ -4,7 +4,7 @@
     <param name="url">git://gitcafe.com/Deepin/deepin-webkit.git</param>
     <param name="filename">libdeepin-webkit</param>
     <param name="versionformat">%cd.%h</param>
-    <param name="versionprefix">1.8.2.1</param>
+    <param name="versionprefix"></param>
     <param name="revision"></param>
   </service>
   <service name="recompress">

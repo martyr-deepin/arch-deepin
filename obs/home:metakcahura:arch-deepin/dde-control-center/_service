@@ -4,7 +4,7 @@
     <param name="url">git://gitcafe.com/Deepin/dde-control-center.git</param>
     <param name="filename">dde-control-center</param>
     <param name="versionformat">%cd.%h</param>
-    <param name="versionprefix">0.0.3</param>
+    <param name="versionprefix"></param>
     <param name="revision"></param>
   </service>
   <service name="recompress">

@@ -4,7 +4,7 @@
     <param name="url">git://gitcafe.com/Deepin/qml-gettext-plugin.git</param>
     <param name="filename">qml-gettext-plugin</param>
     <param name="versionformat">%cd.%h</param>
-    <param name="versionprefix">0.0.3</param>
+    <param name="versionprefix"></param>
   </service>
   <service name="recompress">
     <param name="file">*.tar</param>

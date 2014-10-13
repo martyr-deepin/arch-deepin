@@ -4,7 +4,7 @@
     <param name="url">git://gitorious.org/qt/qtsystems</param>
     <param name="revision">stable</param>
     <param name="filename">qt5-systems</param>
-    <param name="versionprefix">5.3.0</param>
+    <param name="versionprefix"></param>
     <param name="versionformat">%cd.%h</param>
   </service>
   <service name="recompress">

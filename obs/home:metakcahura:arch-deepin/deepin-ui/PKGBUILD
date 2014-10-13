@@ -31,12 +31,13 @@ build(){
 package() {
   cd "${pkgname}-${pkgver}"
   
-  install -dm 755 "${pkgdir}"/usr/share/pyshared/dtk
+  install -dm 755 "${pkgdir}"/usr/share/{locale,pyshared/dtk}
   #mkdir -p "${pkgdir}"/usr/lib/python2.7/site-packages/dtk/theme
   python2 setup.py install --root="${pkgdir}" --optimize=1
   
-  mv "${pkgdir}"/usr/dtk/locale "${pkgdir}"/usr/share/
-  mv "${pkgdir}"/usr/dtk "${pkgdir}"/usr/share/pyshared/
+  cp -r dtk/locale/mo/* "${pkgdir}"/usr/share/locale/
+  #mv "${pkgdir}"/usr/dtk "${pkgdir}"/usr/share/pyshared/
+  mv "${pkgdir}"/usr/lib/python2.7/site-packages/dtk/{skin,theme} "${pkgdir}"/usr/share/pyshared/dtk/
   
   ln -s /usr/share/pyshared/dtk/theme "${pkgdir}"/usr/lib/python2.7/site-packages/dtk/theme
   ln -s /usr/share/pyshared/dtk/skin "${pkgdir}"/usr/lib/python2.7/site-packages/dtk/skin

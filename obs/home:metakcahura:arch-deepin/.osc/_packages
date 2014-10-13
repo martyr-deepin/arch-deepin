@@ -43,14 +43,9 @@
   <package name="metacity-ubuntu" state=" " />
   <package name="nodejs" state=" " />
   <package name="nodejs-mkdirp" state=" " />
-  <package name="optipng" state=" " />
-  <package name="python-greenlet" state=" " />
   <package name="python-pillow" state=" " />
   <package name="python-scipy" state=" " />
   <package name="python2-ass" state=" " />
-  <package name="python2-deepin-storm" state=" " />
-  <package name="python2-deepin-xrandr" state=" " />
-  <package name="python2-gevent" state=" " />
   <package name="python2-jswebkit" state=" " />
   <package name="python2-keybinder2" state=" " />
   <package name="python2-pyquery" state=" " />
@@ -79,4 +74,5 @@
   <package name="go-fsnotify" state=" " />
   <package name="libdeepin-webkit" state=" " />
   <package name="dde-workspace" state=" " />
+  <package name="deepin-translator" state=" " />
 </project>

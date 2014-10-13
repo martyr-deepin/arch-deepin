@@ -4,7 +4,7 @@
     <param name="url">git://gitcafe.com/Deepin/deepin-utils.git</param>
     <param name="filename">deepin-utils</param>
     <param name="versionformat">%cd.%h</param>
-    <param name="versionprefix">0.0.2</param>
+    <param name="versionprefix"></param>
   </service>
   <service name="recompress">
     <param name="file">*.tar</param>

@@ -4,7 +4,7 @@
     <param name="url">git://gitcafe.com/Deepin/deepin-qml-widgets.git</param>
     <param name="filename">deepin-qml-widgets</param>
     <param name="versionformat">%cd.%h</param>
-    <param name="versionprefix">0.0.2</param>
+    <param name="versionprefix"></param>
     <param name="revision"></param>
   </service>
   <service name="recompress">
