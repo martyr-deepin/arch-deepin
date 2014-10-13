@@ -39,6 +39,7 @@ def build(path,target,installdir):
         if target == 'qml':
             work = work + target +'/'+path
             os.chdir(work)
+            os.system('qmake')
             os.system('make')
         elif target == 'golang':
             target = 'go'
