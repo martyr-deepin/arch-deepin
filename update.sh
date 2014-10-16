@@ -22,7 +22,6 @@ obs_pkgs=(
     startdde
     deepin-qml-widgets
     qml-dde-dock-applet
-    qml-gettext-plugin
     dde-control-center
     deepin-menu
     deepin-notifications
