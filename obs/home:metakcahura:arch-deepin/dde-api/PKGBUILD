@@ -9,7 +9,7 @@ arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-api"
 license=('GPL3')
 depends=('glib2' 'gdk-pixbuf2' 'gtk3' 'libcanberra')
-makedepends=('go>=1.3' 'go-dlib' 'go-xgb' 'go-xgbutil' 'dde-go-dbus-factory')
+makedepends=('go>=1.3' 'go-dlib' 'go-xgb' 'go-xgbutil' 'go-fsnotify' 'dde-go-dbus-factory')
 groups=('deepin')
 options=(staticlibs)
 source=("${pkgname}-${pkgver}.tar.xz")

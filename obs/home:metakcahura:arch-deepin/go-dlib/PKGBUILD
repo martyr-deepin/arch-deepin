@@ -9,7 +9,7 @@ arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/go-lib"
 license=('GPL3')
 depends=('go>=1.3')
-makedepends=('gettext' 'go-gocheck' 'go-xgb'
+makedepends=('gettext' 'go-gocheck' 'go-xgb' 'go-fsnotify'
 	'gtk3' 'gdk-pixbuf2' 'libpulse'  'glib2')
 groups=('deepin-dev')
 options=(staticlibs)
