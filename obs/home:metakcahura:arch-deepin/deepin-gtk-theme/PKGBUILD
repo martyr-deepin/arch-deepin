@@ -2,20 +2,21 @@
 
 pkgname=deepin-gtk-theme
 _pkgver=14.07
-_pkgvergit=20140702090519~e0d4286989
-pkgver=14.07.20140702.e0d4286
+_pkgvergit=20140919162552~6ca92f7879
+pkgver=20140919.6ca92f7
 pkgrel=1
 pkgdesc="Deepin GTK Theme."
 arch=('any')
 url="https://gitcafe.com/Deepin/deepin-gtk-theme"
 license=('LGPL3')
-depends=('gtk-engine-unico')
 optdepends=('gtk-engine-murrine: for gtk2 themes')
 groups=('deepin')
-source=("http://packages.linuxdeepin.com/deepin/pool/main/d/$pkgname/${pkgname}_${_pkgver}-${_pkgvergit}_all.deb")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/d/$pkgname/${pkgname}_${_pkgver}+${_pkgvergit}_all.deb")
 sha256sums=('SKIP')
 
 package() {
+  depends=('gtk-engine-unico')
+
   cd "$srcdir"
   
   #mkdir -p "$pkgdir/usr/share/themes"
@@ -26,7 +27,7 @@ package() {
   #cp -rf Deepin-blared "$pkgdir/usr/share/themes/"
   #cp -rf debian/backgrounds "$pkgdir/usr/share/"
   
-  ar xv ${pkgname}_${_pkgver}-${_pkgvergit}_all.deb
+  ar xv ${pkgname}_${_pkgver}+${_pkgvergit}_all.deb
   tar -C "$pkgdir" -xvJf data.tar.xz
   rm -rf "${pkgdir}"/usr/share/doc
   

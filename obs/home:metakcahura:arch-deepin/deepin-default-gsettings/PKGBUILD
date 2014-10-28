@@ -5,7 +5,6 @@ pkgver=git20140516~ebf15b5
 pkgrel=1
 pkgdesc='deepin default settings of gsettings'
 arch=('any')
-depends=('deepin-gtk-theme' 'deepin-icon-theme')
 groups=('deepin')
 url="https://gitcafe.com/Deepin/default-gsettings"
 license=('GPL3')
@@ -23,6 +22,8 @@ prepare() {
 }
 
 package() {
+	depends=('deepin-gtk-theme' 'deepin-icon-theme')
+
   cd "${pkgname}-${pkgver}"
   
   install -dm 755 "${pkgdir}"/usr/share/glib-2.0/schemas

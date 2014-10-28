@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">packages.linuxdeepin.com</param>
     <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/d/deepin-gtk-theme/deepin-gtk-theme_14.07-20140702090519~e0d4286989_all.deb</param>
+    <param name="path">/deepin/pool/main/d/deepin-gtk-theme/deepin-gtk-theme_14.07+20140919162552~6ca92f7879_all.deb</param>
   </service>
 </services>
