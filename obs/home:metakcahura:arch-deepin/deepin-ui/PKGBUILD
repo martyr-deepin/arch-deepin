@@ -24,21 +24,14 @@ prepare() {
 build(){
   cd "${pkgname}-${pkgver}"
   
-  cd dtk/tools && python2 generate_mo.py && cd ../..
   python2 setup.py build
+  (cd dtk/tools; python2 generate_mo.py)
 }
 
 package() {
   cd "${pkgname}-${pkgver}"
   
-  install -dm 755 "${pkgdir}"/usr/share/{locale,pyshared/dtk}
-  #mkdir -p "${pkgdir}"/usr/lib/python2.7/site-packages/dtk/theme
   python2 setup.py install --root="${pkgdir}" --optimize=1
-  
+  install -dm 755 "${pkgdir}"/usr/share/locale
   cp -r dtk/locale/mo/* "${pkgdir}"/usr/share/locale/
-  #mv "${pkgdir}"/usr/dtk "${pkgdir}"/usr/share/pyshared/
-  mv "${pkgdir}"/usr/lib/python2.7/site-packages/dtk/{skin,theme} "${pkgdir}"/usr/share/pyshared/dtk/
-  
-  ln -s /usr/share/pyshared/dtk/theme "${pkgdir}"/usr/lib/python2.7/site-packages/dtk/theme
-  ln -s /usr/share/pyshared/dtk/skin "${pkgdir}"/usr/lib/python2.7/site-packages/dtk/skin
 }
