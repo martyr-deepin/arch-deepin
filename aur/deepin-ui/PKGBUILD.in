@@ -20,20 +20,24 @@ _filename="$(basename "${_fileurl}")"
 _filename="${_filename%.tar.gz}"
 _innerdir="${_filename/_/-}"
 
-build(){
-    cd "${srcdir}/${_innerdir}"
-    python2 setup.py build
+prepare() {
+  cd "${srcdir}/${_innerdir}"
+
+  # fix python version
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+}
+
+build() {
+  cd "${srcdir}/${_innerdir}"
+
+  python2 setup.py build
+  (cd dtk/tools; python2 generate_mo.py)
 }
 
 package() {
-    cd "${srcdir}/${_innerdir}"
-    mkdir -p "${pkgdir}"/usr/share/locale
-    mkdir -p "${pkgdir}"/usr/lib/python2.7/site-packages/dtk/theme
-    python2 setup.py install --root="${pkgdir}/" --optimize=1
-    mv "${pkgdir}"/usr/dtk/locale "${pkgdir}"/usr/share/
-    mv "${pkgdir}"/usr/dtk/theme "${pkgdir}"/usr/lib/python2.7/site-packages/dtk/
-    rm -rf "${pkgdir}"/usr/dtk/
+  cd "${srcdir}/${_innerdir}"
 
-    # fix python version
-    find "${pkgdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  python2 setup.py install --root="${pkgdir}" --optimize=1
+  install -dm 755 "${pkgdir}"/usr/share/locale
+  cp -r dtk/locale/mo/* "${pkgdir}"/usr/share/locale/
 }
