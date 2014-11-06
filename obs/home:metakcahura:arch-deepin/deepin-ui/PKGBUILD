@@ -7,10 +7,11 @@ pkgdesc='UI toolkit for Linux Deepin'
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/deepin-ui"
 license=('GPL3')
+groups=('deepin')
 depends=('python2-deepin-utils' 'python2-deepin-gsettings' 'deepin-pygtk' 'python2-scipy'
 	 'glib2' 'python2-cairo' 'python2-imaging' 'python2-xlib' 'pywebkitgtk' 'libsoup' 'gettext')
 makedepends=('python2-setuptools' 'webkitgtk')
-groups=('deepin')
+replaces=('deepin-ui-git')
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
@@ -23,14 +24,14 @@ prepare() {
 
 build(){
   cd "${pkgname}-${pkgver}"
-  
+
   python2 setup.py build
   (cd dtk/tools; python2 generate_mo.py)
 }
 
 package() {
   cd "${pkgname}-${pkgver}"
-  
+
   python2 setup.py install --root="${pkgdir}" --optimize=1
   install -dm 755 "${pkgdir}"/usr/share/locale
   cp -r dtk/locale/mo/* "${pkgdir}"/usr/share/locale/
