@@ -3,7 +3,6 @@
   <package name="cddb-py" state=" " />
   <package name="chrpath" state=" " />
   <package name="coffee-script" state=" " />
-  <package name="compiz-ubuntu" state=" " />
   <package name="cython" state=" " />
   <package name="dbus-factory" state=" " />
   <package name="dde-account-faces" state=" " />
@@ -61,7 +60,6 @@
   <package name="xcur2png" state=" " />
   <package name="deepin-compiz" state=" " />
   <package name="grub-themes-deepin" state=" " />
-  <package name="metacity" state=" " />
   <package name="polkit-gnome" state=" " />
   <package name="dbus-generator" state=" " />
   <package name="deepin-screenshot" state=" " />

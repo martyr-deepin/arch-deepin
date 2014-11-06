@@ -10,9 +10,9 @@ url="https://gitcafe.com/Deepin/default-gsettings"
 license=('GPL3')
 install="${pkgname}.install"
 source=("$pkgname-${pkgver}.tar.xz"
-	"arch-fix.patch")
+      	"arch-fix.patch")
 sha256sums=('SKIP'
-	    '544d96c73c5d26a5a7d33cf27daec62e199f2c0e9f2094253baae48c3aa0784a')
+          	'544d96c73c5d26a5a7d33cf27daec62e199f2c0e9f2094253baae48c3aa0784a')
 
 prepare() {
   cd "${pkgname}-${pkgver}"
@@ -22,10 +22,10 @@ prepare() {
 }
 
 package() {
-	depends=('deepin-gtk-theme' 'deepin-icon-theme')
+  depends=('deepin-gtk-theme' 'deepin-icon-theme')
 
   cd "${pkgname}-${pkgver}"
-  
+
   install -dm 755 "${pkgdir}"/usr/share/glib-2.0/schemas
   install -m 644 gsettings-override "${pkgdir}"/usr/share/glib-2.0/schemas/99_${pkgname}.gschema.override
 }

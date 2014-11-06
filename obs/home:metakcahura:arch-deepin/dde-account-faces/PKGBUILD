@@ -10,15 +10,15 @@ pkgdesc='Deepin Account face Images'
 arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('custom')
-depends=('accountsservice')
-makedepends=()
 groups=('deepin')
 source=("http://packages.linuxdeepin.com/deepin/pool/main/d/${pkgname}/${pkgname}_${_pkgver}-2${_pkgverubu}.tar.gz")
 sha256sums=('82fad602e2499282770f6fe45caa0b31bb9bbeb1d0411026ed1c1d2c8ebd0cde')
 
 package() {
-  cd "${pkgname}-${_pkgver}"
+	depends=('accountsservice')
+    
+    cd "${pkgname}-${_pkgver}"
 
-  install -dm 755 "${pkgdir}"/var/lib/AccountsService/icons
-  install -m 644 *.png "${pkgdir}"/var/lib/AccountsService/icons/
+    install -dm 755 "${pkgdir}"/var/lib/AccountsService/icons
+    install -m 644 *.png "${pkgdir}"/var/lib/AccountsService/icons/
 }
