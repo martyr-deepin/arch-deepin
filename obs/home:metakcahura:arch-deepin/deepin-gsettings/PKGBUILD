@@ -11,6 +11,9 @@ provides=('deepin-gsettings')
 groups=('deepin')
 url="https://gitcafe.com/Deepin/deepin-gsettings"
 license=('GPL3')
+provides=('deepin-gsettings')
+replaces=('deepin-gsettings')
+conflicts=('deepin-gsettings')
 source=("${_pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
