@@ -13,6 +13,7 @@ makedepends=('python2-setuptools')
 license=('GPL3')
 provides=('deepin-utils')
 replaces=('deepin-utils' 'deepin-utils-git')
+conflicts=('deepin-utils' 'deepin-utils-git')
 source=("${_pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
