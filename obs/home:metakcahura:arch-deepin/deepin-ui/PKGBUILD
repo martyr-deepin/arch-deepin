@@ -12,6 +12,7 @@ depends=('python2-deepin-utils' 'python2-deepin-gsettings' 'deepin-pygtk' 'pytho
 	 'glib2' 'python2-cairo' 'python2-imaging' 'python2-xlib' 'pywebkitgtk' 'libsoup' 'gettext')
 makedepends=('python2-setuptools' 'webkitgtk')
 replaces=('deepin-ui-git')
+conflicts=('deepin-ui-git')
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
