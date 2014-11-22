@@ -1,19 +1,19 @@
 # Install
 
 Add following code to `/etc/pacman.conf` (if you downloading or
-checking packages with problem, just use the alternative server)
+checking packages with problem, just use the alternative server):
 
     [home_metakcahura_arch-deepin_Arch_Extra]
     SigLevel = Never
     Server = http://download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
     #Server = http://anorien.csc.warwick.ac.uk/mirrors/download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
 
-Then
+Then:
     
     sudo pacman -Sy deepin
   
 If you want to experience more applications from Deepin, etc
-`deepin-music` and `deepin-movie`, just install deepin-extra
+`deepin-music` and `deepin-movie`, just install deepin-extra:
 
     sudo pacman -Sy deepin-extra
   
