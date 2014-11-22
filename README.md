@@ -1,13 +1,7 @@
-# Description
+# Install
 
-A collection of software from Linux Deepin that ported to Archlinux,
-you could find them in
-[AUR](https://aur.archlinux.org/packages/?O=0&C=0&SeB=nd&K=deepin&outdated=&SB=n&SO=a&PP=50&do_Search=Go),
-
-And now, thanks @metak's great job, we could install all them more
-easily through his OBS repository, just add following code to
-/etc/pacman.conf (if you downloading or checking package with
-problems, just use the alternative server)
+Add following code to `/etc/pacman.conf` (if you downloading or
+checking packages with problem, just use the alternative server)
 
     [home_metakcahura_arch-deepin_Arch_Extra]
     SigLevel = Never
@@ -18,9 +12,13 @@ Then
     
     sudo pacman -Sy deepin
   
-More information to see the [topic](https://bbs.archlinux.org/viewtopic.php?id=181861).
+If you want to experience more applications from Deepin, etc
+`deepin-music` and `deepin-movie`, just install deepin-extra
 
+    sudo pacman -Sy deepin-extra
+  
 # Launch DDE
+
   We can use either lightdm or xinit to launch DDE, if use xinit,
   specific configuration is as follows:
   
@@ -29,12 +27,9 @@ More information to see the [topic](https://bbs.archlinux.org/viewtopic.php?id=1
      exec startdde
         
   2. run xinit in tty to enter DDE
-  
-  
-  *Notice: this is still a testing version, if desktop blocked for
-   issues, just kill startdde in another tty, :-)*
-  
+
 # Troubleshooting
+
   - How to report debugging information of deepin?
     
     Just use journalctl, for example, the following command will
