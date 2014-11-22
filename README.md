@@ -8,12 +8,13 @@ checking packages with problem, just use the alternative server):
     Server = http://download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
     #Server = http://anorien.csc.warwick.ac.uk/mirrors/download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
 
-Then:
+Then install `deepin`:
     
     sudo pacman -Sy deepin
   
-If you want to experience more applications from Deepin, etc
-`deepin-music` and `deepin-movie`, just install deepin-extra:
+If you want to experience more applications from Deepin, such as
+`deepin-music` and `deepin-movie`, you could also install
+`deepin-extra`:
 
     sudo pacman -Sy deepin-extra
   
