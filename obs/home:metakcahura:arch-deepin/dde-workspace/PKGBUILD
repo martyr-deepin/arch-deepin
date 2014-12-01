@@ -14,16 +14,26 @@ makedepends=('cmake' 'go' 'coffee-script' 'go-gettext-go' 'webkitgtk'
 source=("${pkgbase}-${pkgver}.tar.xz" 'default-display-manager')
 sha256sums=('SKIP' '3667d6cce9a00f0b8c8bc27250b2ceaf421382d3b4e687a5bcea4c64292030df')
 
+prepare() {
+  cp -r "${pkgbase}-${pkgver}" "${pkgbase}-${pkgver}-greeter"
+
+  cd "${srcdir}"/${pkgbase}-${pkgver}
+  sed "7s|add_|#add_|" -i app/CMakeLists.txt || die "sed failed"
+}
+
 build() {
   cd "${pkgbase}-${pkgver}"
 
-  [[ -d build ]] && rm -rvf build/
-  mkdir build && cd build
-
   #export PYTHON=/usr/bin/python2
+  mkdir -p build && cd build/
   cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release && make
 
   gcc -o ../debian/default-terminal ../debian/default-terminal.c `pkg-config --libs --cflags glib-2.0 gio-unix-2.0`
+
+  cd "${srcdir}"/${pkgbase}-${pkgver}-greeter
+
+  mkdir -p build && cd build/
+  cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release && make
 }
 
 package_dde-workspace() {
@@ -38,32 +48,20 @@ package_dde-workspace() {
 
   make install DESTDIR="${pkgdir}"
 
-  install -dm755 "${pkgdir}"/{etc/{X11,sysctl.d},usr/{bin,share/xgreeters}}
+  install -dm755 "${pkgdir}"/etc/{X11,sysctl.d}
 
   install -m644 ../debian/30-deepin-inotify-limit.conf "${pkgdir}"/etc/sysctl.d/
   install -m755 ../debian/default-terminal "${pkgdir}"/usr/bin/
   install -m644 "${srcdir}"/default-display-manager "${pkgdir}"/etc/X11/
-
-  ## move greeter files to tmp dir
-  mkdir -p ${srcdir}/greeter
-  mv -v ${pkgdir}/usr/bin/lightdm-deepin-greeter ${srcdir}/greeter
-  mv -v ${pkgdir}/usr/share/dde/resources/greeter ${srcdir}/greeter
-  mv -v ${pkgdir}/usr/share/personalization/greeter-theme ${srcdir}/greeter
-  mv -v ${pkgdir}/usr/share/xgreeters/lightdm-deepin-greeter.desktop ${srcdir}/greeter
 }
 
 package_lightdm-deepin-greeter() {
   pkgdesc="Lightdm greeter for Linux Deepin desktop environment."
   depends=('lightdm')
 
-  install -dm755 ${pkgdir}/usr/{bin,share/{dde/resources,personalization,xgreeters}}
-  install -dm755 ${pkgdir}/var/lib/polkit-1/localauthority/50-local.d
+  cd "${srcdir}"/${pkgbase}-${pkgver}-greeter/build/app/greeter
 
-  install -m755 "${pkgbase}-${pkgver}"/debian/lightdm.pkla "${pkgdir}"/var/lib/polkit-1/localauthority/50-local.d/
+  make install DESTDIR="${pkgdir}"
+
   chmod 700 "${pkgdir}"/var/lib/polkit-1
-
-  install -m755 ${srcdir}/greeter/lightdm-deepin-greeter ${pkgdir}/usr/bin/
-  install -m755 ${srcdir}/greeter/lightdm-deepin-greeter.desktop ${pkgdir}/usr/share/xgreeters/
-  mv -v ${srcdir}/greeter/greeter ${pkgdir}/usr/share/dde/resources/
-  mv -v ${srcdir}/greeter/greeter-theme ${pkgdir}/usr/share/personalization/
 }
