@@ -2,21 +2,20 @@
 # Contributor:
 
 pkgname=deepin-artwork-themes
-_pkgname=deepin-themes
 pkgver=14.04.2
 pkgrel=1
 pkgdesc='Deepin artwork themes'
 arch=('any')
 license=('LGPL3')
-url="https://gitcafe.com/Deepin/deepin-themes"
+url="https://gitcafe.com/Deepin/deepin-artwork-themes"
 optdepends=('deepin-icon-theme-v2013: old deepin icons')
 makedepends=('python2')
 groups=('deepin')
-source=("${_pkgname}-${pkgver}.tar.xz")
+source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
 prepare() {
-    cd "${_pkgname}-${pkgver}"
+    cd "${pkgname}-${pkgver}"
 
     # fix python version
     find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
@@ -25,7 +24,7 @@ prepare() {
 package() {
 	depends=('deepin-icon-theme')
 
-    cd "${_pkgname}-${pkgver}"
+    cd "${pkgname}-${pkgver}"
 
     python2 convert.py
 

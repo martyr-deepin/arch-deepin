@@ -3,19 +3,19 @@
 
 pkgname=deepin-artwork
 pkgver=2014
-pkgrel=3
+pkgrel=4
 pkgdesc='Deepin artwork themes (sounds)'
 arch=('any')
 license=('LGPL3')
 url="http://www.linuxdeepin.com/"
 groups=('deepin')
-source=("http://packages.linuxdeepin.com/deepin/pool/main/d/${pkgname}/${pkgname}_${pkgver}-3_all.deb")
-sha256sums=('9ea277c5a4b08d52ca8e283377b43cf3d5068769b4fc8cf249017aee722db3d9')
+source=("http://packages.linuxdeepin.com/deepin/pool/main/d/${pkgname}/${pkgname}_${pkgver}-4_all.deb")
+sha256sums=('SKIP')
 
 package() {
   cd "$srcdir"
 
-  ar xv ${pkgname}_${pkgver}-3_all.deb
+  ar xv ${pkgname}_${pkgver}-4_all.deb
   tar -C "$pkgdir" -xvJf data.tar.xz
   rm -rf "${pkgdir}"/usr/share/doc
 }

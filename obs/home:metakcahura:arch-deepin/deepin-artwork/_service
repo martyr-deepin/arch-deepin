@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">packages.linuxdeepin.com</param>
     <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/d/deepin-artwork/deepin-artwork_2014-3_all.deb</param>
+    <param name="path">/deepin/pool/main/d/deepin-artwork/deepin-artwork_2014-4_all.deb</param>
   </service>
 </services>

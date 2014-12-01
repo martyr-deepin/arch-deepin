@@ -1,8 +1,8 @@
 <services>
   <service name="tar_scm">
     <param name="scm">git</param>
-    <param name="url">git://gitcafe.com/Deepin/deepin-themes.git</param>
-    <param name="filename">deepin-themes</param>
+    <param name="url">git://gitcafe.com/Deepin/deepin-artwork-themes.git</param>
+    <param name="filename">deepin-artwork-themes</param>
     <param name="versionformat">%cd.%h</param>
     <param name="versionprefix"></param>
   </service>

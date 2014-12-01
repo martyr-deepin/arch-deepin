@@ -30,11 +30,9 @@
   <package name="deepin-vte-plus" state=" " />
   <package name="go" state=" " />
   <package name="go-dlib" state=" " />
-  <package name="go-hg" state=" " />
   <package name="go-xgb" state=" " />
   <package name="go-xgbutil" state=" " />
   <package name="gtk-engine-unico" state=" " />
-  <package name="icu48" state=" " />
   <package name="libmediainfo" state=" " />
   <package name="libzen" state=" " />
   <package name="lightdm" state=" " />
@@ -72,5 +70,4 @@
   <package name="libdeepin-webkit" state=" " />
   <package name="dde-workspace" state=" " />
   <package name="deepin-translator" state=" " />
-  <package name="icu" state=" " />
 </project>

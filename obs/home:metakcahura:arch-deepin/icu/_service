@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">download.icu-project.org</param>
-    <param name="protocol">http</param>
-    <param name="path">/files/icu4c/54.1/icu4c-54_1-src.tgz</param>
-  </service>
-</services>
