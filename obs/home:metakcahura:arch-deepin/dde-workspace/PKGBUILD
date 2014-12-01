@@ -18,7 +18,7 @@ prepare() {
   cp -r "${pkgbase}-${pkgver}" "${pkgbase}-${pkgver}-greeter"
 
   cd "${srcdir}"/${pkgbase}-${pkgver}
-  sed "7s|add_|#add_|" -i app/CMakeLists.txt || die "sed failed"
+  sed "/add_subdirectory(greeter)/d" -i app/CMakeLists.txt || die "sed failed"
 }
 
 build() {
