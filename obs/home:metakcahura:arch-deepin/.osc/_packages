@@ -70,4 +70,5 @@
   <package name="libdeepin-webkit" state=" " />
   <package name="dde-workspace" state=" " />
   <package name="deepin-translator" state=" " />
+  <package name="deepin-gettext-tools" state=" " />
 </project>
