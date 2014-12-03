@@ -31,6 +31,25 @@ If you want to experience more applications from Deepin, such as
 
 # Troubleshooting
 
+  - Could not download packages, report `Maximum file size exceeded`
+  
+    Please try again after a while, or use the alternative server:
+    
+        Server = http://anorien.csc.warwick.ac.uk/mirrors/download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
+
+  - Could not install packages, report `invalid or corrupted package (checksum)`
+  
+    Simply, remove the package files that out of date and run `pacman
+    -Syu` again. In most case, this is caused by an issue of OBS that
+    `pkgrel` will not increase automatically if maintainer rebuild the
+    package.
+    
+  - There are conflicting files when updating to dde-daemon-20141201.b14fbe0
+  
+    I'm afraid we have to remove the conflicting files manually:
+    
+        sudo rm /usr/share/personalization/thumbnail/autogen/*.png
+  
   - How to report debugging information of deepin?
     
     Just use journalctl, for example, the following command will
@@ -56,6 +75,9 @@ If you want to experience more applications from Deepin, such as
         sudo systemctl start  NetworkManager
         sudo systemctl enable ModemManager
         sudo systemctl start ModemManager
+
+  - Conflicting files when updating dde-daemon
+
 
 # Screenshot
 
