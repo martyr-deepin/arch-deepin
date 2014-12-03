@@ -1,0 +1,35 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=deepin-gettext-tools
+pkgver=20141029.6ba50ec
+pkgrel=0
+pkgdesc='Deepin Internationalization utilities'
+arch=('i686' 'x86_64')
+url="https://gitcafe.com/Deepin/deepin-gettext-tools"
+license=('GPL3')
+depends=('qt5-base' 'python2')
+makedepends=('qt5-declarative' 'qt5-tools')
+groups=('deepin-dev')
+options=(staticlibs)
+source=("${pkgname}-${pkgver}.tar.xz")
+sha256sums=('SKIP')
+
+prepare() {
+  cd "${pkgname}-${pkgver}"
+
+  # fix python version
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+}
+
+build() {
+  cd "${pkgname}-${pkgver}"
+
+  make
+}
+
+package() {
+  cd "${pkgname}-${pkgver}"
+
+  make DESTDIR="$pkgdir/" install
+}
