@@ -3,7 +3,7 @@
     <param name="scm">git</param>
     <param name="url">git://gitcafe.com/Deepin/deepin-notifications.git</param>
     <param name="filename">deepin-notifications</param>
-    <param name="versionformat">%cd.%h</param>
+    <param name="versionformat">%cd.%h.1</param>
     <param name="versionprefix"></param>
     <param name="revision"></param>
   </service>

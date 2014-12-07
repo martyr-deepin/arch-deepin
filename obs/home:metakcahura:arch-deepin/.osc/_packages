@@ -17,7 +17,7 @@
   <package name="deepin-gsettings" state=" " />
   <package name="deepin-gtk-theme" state=" " />
   <package name="deepin-icon-theme" state=" " />
-  <package name="deepin-icon-theme-v2013" state=" " />
+  <package name="deepin-icon-theme-v2013" state="D" />
   <package name="deepin-menu" state=" " />
   <package name="deepin-movie" state=" " />
   <package name="deepin-music-player" state=" " />
