@@ -16,14 +16,14 @@ source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
 build() {
-  cd "${pkgname}-${pkgver}"/src
+  cd "${pkgname}-${pkgver}"
 
-  qmake
+  qmake PREFIX=/usr
   make
 }
 
 package() {
-  cd "${pkgname}-${pkgver}"/src
+  cd "${pkgname}-${pkgver}"
 
   make INSTALL_ROOT="${pkgdir}" install
 }
