@@ -34,7 +34,6 @@ obs_pkgs=(
     deepin-compiz
     libdeepin-webkit
     deepin-icon-theme
-    deepin-icon-theme-v2013
 )
 
 update_aur() {
