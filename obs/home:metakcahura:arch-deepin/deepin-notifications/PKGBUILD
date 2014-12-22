@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-notifications
 pkgver=20140508.fc6d8b7
@@ -10,7 +10,7 @@ url="https://gitcafe.com/Deepin/deepin-notifications"
 license=('GPL3')
 groups=('deepin')
 depends=('qt5-declarative' 'qt5-svg')
-conflicts=("notify-osd")
+conflicts=('notify-osd')
 options=(staticlibs)
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')

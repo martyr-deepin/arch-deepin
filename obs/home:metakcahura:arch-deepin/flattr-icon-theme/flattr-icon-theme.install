@@ -1,5 +1,5 @@
 post_install() {
-  gtk-update-icon-cache -ftq usr/share/icons/Deepin{,-2014}
+  gtk-update-icon-cache -ftq usr/share/icons/Flattr{,_next}
 }
 
 post_upgrade() {

@@ -1,11 +1,11 @@
 <services>
   <service name="tar_scm">
     <param name="scm">git</param>
-    <param name="url">git://gitcafe.com/Deepin/dde-daemon.git</param>
-    <param name="filename">dde-daemon</param>
+    <param name="url">git://github.com/NitruxSA/flattr-icons.git</param>
+    <param name="filename">flattr-icon-theme</param>
     <param name="versionformat">%cd.%h</param>
     <param name="versionprefix"></param>
-    <param name="revision">release/2014.2</param>
+    <param name="revision"></param>
   </service>
   <service name="recompress">
     <param name="file">*.tar</param>
@@ -13,4 +13,3 @@
   </service>
   <service name="set_version"/>
 </services>
-

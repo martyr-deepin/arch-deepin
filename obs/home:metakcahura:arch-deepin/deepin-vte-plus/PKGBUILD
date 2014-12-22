@@ -1,17 +1,17 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor:
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-vte-plus
 _pkgname=vte
 pkgver=0.28.2
-pkgrel=7
+pkgrel=8
 pkgdesc="Virtual Terminal Emulator widget for use with GTK2 - with several patches"
 arch=('i686' 'x86_64')
 license=('GPL3')
 url="https://developer.gnome.org/vte/"
 groups=('deepin-extra')
 depends=('gtk2')
-makedepends=('deepin-pygtk' 'intltool' 'gobject-introspection' 'pygobject2-devel' 'gettext')
+makedepends=('deepin-pygtk' 'intltool' 'gobject-introspection' 'pygobject2-devel')
 provides=('vte=0.28.2')
 conflicts=('vte')
 options=('!libtool' '!emptydirs')

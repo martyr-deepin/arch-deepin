@@ -1,4 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=qt5-systems
 pkgver=5.3.0.git20140128.aa651c7
@@ -9,26 +10,29 @@ arch=('i686' 'x86_64')
 url="http://qt-project.org/"
 license=('GPL3' 'LGPL')
 depends=('qt5-declarative' 'gconf')
-replaces=('qt5-qtsystems-git')
+makedepends=('bluez' 'bluez-libs')
+optdepends=('bluez: Bluetooth'
+            'bluez-libs: Bluetooth')
 conflicts=('qt5-systems-git')
-source=("${pkgname}-${pkgver}.tar.xz" "fix-compile.patch")
-sha256sums=('SKIP' '9fd525ce974bc939b769cb57ff9361a14b55670b95b61343c9299bc9e56e3d2b')
+source=("${pkgname}-${pkgver}.tar.xz" 'fix-compile-new.patch')
+sha256sums=('SKIP' 'SKIP')
 
 prepare() {
   cd "${pkgname}-${pkgver}"
 
-  patch -p1 -i ../fix-compile.patch
+  patch -p1 -i ../fix-compile-new.patch
 }
 
 build() {
   cd "${pkgname}-${pkgver}"
 
-  qmake
-  make
+  mkdir -p build && cd build
+  qmake ..
+  make -j8
 }
 
 package() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"/build
 
   make INSTALL_ROOT="${pkgdir}" install
   rm -rf "${pkgdir}"/usr/lib/cmake

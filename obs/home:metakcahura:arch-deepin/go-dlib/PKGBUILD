@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=go-dlib
 pkgver=0.0.4.20140522.3948504
@@ -8,9 +8,8 @@ pkgdesc='Go-lang bingdings for dlib'
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/go-lib"
 license=('GPL3')
-depends=('go>=1.3')
-makedepends=('gettext' 'go-gocheck' 'go-xgb' 'go-fsnotify'
-	'gtk3' 'gdk-pixbuf2' 'libpulse'  'glib2')
+makedepends=('go' 'go-gocheck' 'go-xgb' 'go-fsnotify'
+			 'gtk3' 'gdk-pixbuf2' 'libpulse' 'glib2')
 groups=('deepin-dev')
 options=(staticlibs)
 source=("${pkgname}-${pkgver}.tar.xz")
@@ -29,7 +28,7 @@ prepare() {
 # `go install' here or will appear permission denied problem
 
 package() {
-  mkdir -p "${pkgdir}"/usr/lib/go/src/pkg/
-  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/pkg/
-  find "${pkgdir}"/usr/lib/go/src/pkg/ -type d -name 'testdata' | xargs rm -rf
+  mkdir -p "${pkgdir}"/usr/lib/go/src
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src
+  find "${pkgdir}"/usr/lib/go/src -type d -name 'testdata' | xargs rm -rf
 }

@@ -5,6 +5,7 @@
     <param name="filename">deepin-terminal</param>
     <param name="versionformat">%cd.%h</param>
     <param name="versionprefix"></param>
+    <param name="revision">release/2014.2</param>
   </service>
   <service name="recompress">
     <param name="file">*.tar</param>

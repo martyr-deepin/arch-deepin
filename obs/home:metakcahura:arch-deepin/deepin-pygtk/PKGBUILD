@@ -1,9 +1,10 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-pygtk
 _pkgname=pygtk
 pkgver=2.24.0
-pkgrel=5
+pkgrel=6
 pkgdesc="Python bindings for the GTK widget set - with patches to fix memory leak for deepin-ui"
 arch=('i686' 'x86_64')
 url="http://www.pygtk.org/"

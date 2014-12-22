@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">packages.linuxdeepin.com</param>
     <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/g/golang-sqlite3/golang-sqlite3_0.0~git20140623.orig.tar.xz</param>
+    <param name="path">/deepin/pool/main/g/golang-sqlite3/golang-sqlite3_0.0~git2014090312.orig.tar.xz</param>
   </service>
 </services>

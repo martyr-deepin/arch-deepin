@@ -1,4 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-default-gsettings
 pkgver=git20140516~ebf15b5
@@ -10,7 +11,7 @@ url="https://gitcafe.com/Deepin/default-gsettings"
 license=('GPL3')
 install="${pkgname}.install"
 source=("$pkgname-${pkgver}.tar.xz"
-      	"arch-fix.patch")
+      	'arch-fix.patch')
 sha256sums=('SKIP'
           	'544d96c73c5d26a5a7d33cf27daec62e199f2c0e9f2094253baae48c3aa0784a')
 

@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgbase=dde-workspace
 pkgname=('dde-workspace' 'lightdm-deepin-greeter')
@@ -57,11 +57,9 @@ package_dde-workspace() {
 
 package_lightdm-deepin-greeter() {
   pkgdesc="Lightdm greeter for Linux Deepin desktop environment."
-  depends=('lightdm')
+  depends=('cairo' 'gtk3' 'libdeepin-webkit' 'lightdm' 'nodejs' 'python2')
 
   cd "${srcdir}"/${pkgbase}-${pkgver}-greeter/build/app/greeter
 
   make install DESTDIR="${pkgdir}"
-
-  chmod 700 "${pkgdir}"/var/lib/polkit-1
 }

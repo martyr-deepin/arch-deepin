@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-daemon
 pkgver=git20140523~2c3ea42
@@ -8,12 +8,12 @@ pkgdesc='Go-lang bingdings for dde-daemon'
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-daemon"
 license=('GPL3')
-depends=('dde-api' 'grub-themes-deepin' 'cairo' 'libcanberra' 'dbus' 'libdeepin-webkit'
-    'gtk3' 'glib2' 'gdk-pixbuf2' 'gstreamer0.10' 'libsystemd' 'acpid' 'libpulse'
-    'xcur2png' 'upower' 'bluez' 'polkit-gnome' 'metacity-ubuntu' 'network-manager-applet')
-makedepends=('go>=1.3' 'go-dlib' 'dde-go-dbus-factory' 'go-xgb' 'go-xgbutil'
-    'go-fsnotify' 'go-sqlite3' 'gettext' 'python2')
-optdepends=()
+depends=('dde-api' 'grub-themes-deepin' 'cairo' 'libcanberra' 'dbus'
+		 'libdeepin-webkit' 'gtk3' 'glib2' 'gdk-pixbuf2' 'gstreamer0.10'
+		 'libsystemd' 'acpid' 'libpulse' 'xcur2png' 'upower' 'bluez'
+		 'polkit-gnome' 'metacity-ubuntu' 'network-manager-applet')
+makedepends=('go' 'go-dlib' 'dde-go-dbus-factory' 'go-xgb' 'go-gocheck'
+			 'go-xgbutil' 'go-fsnotify' 'go-sqlite3' 'python2')
 groups=('deepin')
 install="${pkgname}.install"
 conflicts=('dde-daemon-gsd-input')
@@ -29,5 +29,5 @@ build(){
 package() {
   cd "${pkgname}-${pkgver}"
 
-  make DESTDIR="$pkgdir/" install
+  make DESTDIR="$pkgdir" install
 }

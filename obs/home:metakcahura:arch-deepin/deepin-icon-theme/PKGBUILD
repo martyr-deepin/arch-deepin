@@ -1,4 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-icon-theme
 pkgver=13.06.13.git20140526~de3d62e
@@ -12,23 +13,27 @@ groups=('deepin')
 options=(!strip)
 install="${pkgname}.install"
 source=("${pkgname}-${pkgver}.tar.xz"
-	'convert_refactor.py')
-sha256sums=('SKIP'
-	    'a44565e3ad220d5d1dcefd15a24debcb581ce683c476755f72703aa26d0d0ce7')
+        'python-fix.patch'
+        'fix-inherits.patch')
+sha256sums=('SKIP' 'SKIP' 'SKIP')
+
+prepare() {
+  cd "${pkgname}-${pkgver}"
+
+  patch -p0 -i ../python-fix.patch
+  patch -p1 -i ../fix-inherits.patch
+}
 
 build() {
   cd "${pkgname}-${pkgver}"
   
-  python2 ../convert_refactor.py Deepin src-deepin
-  python2 ../convert_refactor.py Deepin-blue src-deepin-blue
-  python2 ../convert_refactor.py Deepin-sapphire src-deepin-sapphire
+  make
 }
 
 package() {
-  depends=('faenza-icon-theme' 'gtk-update-icon-cache')
+  depends=('flattr-icon-theme' 'faenza-icon-theme' 'gtk-update-icon-cache')
 
   cd "${pkgname}-${pkgver}"
   
-  install -dm 755 "$pkgdir"/usr/share/icons
-  cp -rf Deepin{,-blue} "$pkgdir"/usr/share/icons/
+  make DESTDIR="$pkgdir" install
 }

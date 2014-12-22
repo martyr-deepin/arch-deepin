@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dbus-generator
 pkgver=git20140522~3948504
@@ -8,7 +8,7 @@ pkgdesc='Convert dbus interfaces to go-lang or qml wrapper code'
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/go-dbus-generator"
 license=('GPL3')
-makedepends=('go>=1.3' 'gettext' 'go-dlib' 'go-gocheck')
+makedepends=('go' 'go-dlib' 'go-gocheck' 'qt5-declarative')
 conflicts=('go-dlib<=0.0.2' 'go-dlib-dbus-proxyer')
 groups=('deepin-dev')
 options=(staticlibs)
@@ -16,11 +16,12 @@ source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
 build(){
-  cd "${pkgname}-${pkgver}"
-  go build -o dbus-generator
+	cd "${pkgname}-${pkgver}"
+
+	mkdir -pv out
+	go build -o out/dbus-generator
 }
 
 package() {
-  cd "${pkgname}-${pkgver}"
-  install -Dm 755 dbus-generator "${pkgdir}"/usr/bin/dbus-generator
+	install -Dm 755 "${pkgname}-${pkgver}"/out/dbus-generator "${pkgdir}"/usr/bin/dbus-generator
 }

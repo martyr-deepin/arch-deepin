@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor:
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-artwork-themes
 pkgver=14.04.2
@@ -8,26 +8,25 @@ pkgdesc='Deepin artwork themes'
 arch=('any')
 license=('LGPL3')
 url="https://gitcafe.com/Deepin/deepin-artwork-themes"
-optdepends=('deepin-icon-theme-v2013: old deepin icons')
 makedepends=('python2')
 groups=('deepin')
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
 prepare() {
-    cd "${pkgname}-${pkgver}"
+	cd "${pkgname}-${pkgver}"
 
-    # fix python version
-    find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+	# fix python version
+	find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 package() {
 	depends=('deepin-icon-theme')
 
-    cd "${pkgname}-${pkgver}"
+	cd "${pkgname}-${pkgver}"
 
-    python2 convert.py
+	python2 convert.py
 
-    install -dm 755 "${pkgdir}"/usr/share/personalization
-    cp -R {preview,themes,thumbnail} "${pkgdir}"/usr/share/personalization/
+	install -dm 755 "${pkgdir}"/usr/share/personalization
+	cp -R {preview,themes,thumbnail} "${pkgdir}"/usr/share/personalization/
 }

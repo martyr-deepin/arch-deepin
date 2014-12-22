@@ -1,0 +1,11 @@
+--- Makefile.old	2014-12-22 02:05:57.000000000 +0100
++++ Makefile	2014-12-22 02:08:10.796187165 +0100
+@@ -7,7 +7,7 @@
+ 	cd out; qmake ..; make
+ 
+ translate:
+-	deepin-generate-mo locale/locale_config.ini
++	cd locale && sh ../debian/generate_mo.sh locale_config.ini
+ 
+ install: build translate
+ 	mkdir -p ${DESTDIR}${PREFIX}/share/locale

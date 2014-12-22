@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 # Contributor: Ryon Sherman <ryon.sherman@gmail.com>
 # Contributor: Iven Hsu <ivenvd AT gmail>
 # Contributor: Nathan Hulse <nat.hulse@gmail.com>
@@ -12,14 +12,21 @@ arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'MIT')
 url="https://gitcafe.com/Deepin/deepin-compiz"
 groups=('deepin')
-depends=('gnome-settings-daemon' 'xorg-server' 'libxcomposite' 'startup-notification' 'librsvg' 'dbus'
-	 'mesa' 'libxslt' 'fuse' 'glibmm' 'libxrender' 'libwnck' 'pygtk' 'desktop-file-utils' 'pyrex'
-         'protobuf' 'dconf' 'gtk2' 'metacity-ubuntu' 'gsettings-desktop-schemas')
+depends=('gnome-settings-daemon' 'xorg-server' 'libxcomposite' 'startup-notification'
+         'librsvg' 'dbus' 'mesa' 'libxslt' 'fuse' 'glibmm' 'libxrender' 'libwnck'
+         'pygtk' 'desktop-file-utils' 'pyrex' 'protobuf' 'dconf' 'gtk2'
+         'metacity-ubuntu' 'gsettings-desktop-schemas')
 makedepends=('gettext' 'intltool' 'cmake' 'boost' 'glu')
 optdepends=('gnome-control-center: GNOME Control Center')
 provides=('compiz=0.9')
-conflicts=('compiz-bzr' 'compiz-core' 'compiz-fusion-plugins-main' 'compiz-fusion-plugins-extra' 'compiz-decorator-gtk' 'compiz-decorator-kde' 'libcompizconfig' 'compizconfig-python' 'compizconfig-backend-gconf' 'compiz-bcop' 'ccsm')
-replaces=('compiz-bzr' 'compiz-core' 'compiz-fusion-plugins-main' 'compiz-fusion-plugins-extra' 'compiz-decorator-gtk' 'compiz-decorator-kde' 'libcompizconfig' 'compizconfig-python' 'compizconfig-backend-gconf' 'compiz-bcop' 'ccsm')
+conflicts=('compiz-bzr' 'compiz-core' 'compiz-fusion-plugins-main'
+           'compiz-fusion-plugins-extra' 'compiz-decorator-gtk'
+           'compiz-decorator-kde' 'libcompizconfig' 'compizconfig-python'
+           'compizconfig-backend-gconf' 'compiz-bcop' 'ccsm')
+replaces=('compiz-bzr' 'compiz-core' 'compiz-fusion-plugins-main'
+          'compiz-fusion-plugins-extra' 'compiz-decorator-gtk'
+          'compiz-decorator-kde' 'libcompizconfig' 'compizconfig-python'
+          'compizconfig-backend-gconf' 'compiz-bcop' 'ccsm')
 install='compiz.install'
 source=("${pkgname}-${pkgver}.tar.xz" 'fix-boost-interfaces.patch')
 sha256sums=('SKIP' '9b041e3ca5fe54984d064bab9c3c8fa623e8c0e752129c53c578922a48582845')

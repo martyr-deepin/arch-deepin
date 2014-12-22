@@ -1,4 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-movie
 pkgver=git20140528~08a5dde
@@ -7,11 +8,7 @@ pkgdesc='deepin movie for linuxdeepin desktop environment'
 arch=('any')
 url="https://github.com/linuxdeepin/deepin-movie"
 license=('GPL3')
-depends=('qt5-declarative' 'qt5-quickcontrols' 'python2-pyqt5' 'mediainfo' 'python2-ass'
-	 'deepin-ui' 'deepin-menu' 'deepin-qml-widgets' 'qt5-multimedia' 'qt5-webkit'
-	 'qt5-graphicaleffects' 'enca' 'desktop-file-utils' 'python2-pysrt'
-	 'qt5-imageformats' 'python2-setproctitle' 'qt5-systems' 'dde-go-dbus-factory')
-makedepends=('sip')
+makedepends=('python2-sip')
 groups=('deepin-extra')
 install="${pkgname}.install"
 source=("${pkgname}-${pkgver}.tar.xz" 'generate_mo.sh')
@@ -28,16 +25,29 @@ build() {
   cd "${pkgname}-${pkgver}"
 
   cd locale && sh "${srcdir}"/generate_mo.sh
+  #make
 }
 
 package() {
+  depends=('qt5-declarative' 'qt5-quickcontrols' 'qt5-multimedia' 'qt5-webkit'
+           'qt5-graphicaleffects' 'qt5-imageformats' 'qt5-systems' 'python2-pyqt5'
+           'mediainfo' 'python2-ass' 'deepin-menu' 'deepin-qml-widgets' 'enca'
+           'python2-pysrt' 'python2-setproctitle' 'dde-go-dbus-factory'
+           'deepin-ui' 'desktop-file-utils' 'python2-magic' python2-xpybutil)
+
   cd "${pkgname}-${pkgver}"
 
-  install -dm 755 "${pkgdir}"/usr/{bin,share/{applications,deepin-movie,locale}}
+  #make DESTDIR="${pkgdir}" PREFIX="/usr" install
 
-  cp -R {*.py,*.qml} "${pkgdir}"/usr/share/${pkgname}/
-  cp -R image "${pkgdir}"/usr/share/${pkgname}/
-  cp -R locale/mo/* "${pkgdir}"/usr/share/locale/
-  install -m 644 ${pkgname}.desktop "${pkgdir}"/usr/share/applications/
-  ln -s /usr/share/${pkgname}/main.py "${pkgdir}"/usr/bin/${pkgname}
+  install -dm755 "${pkgdir}"/usr/{bin,share/{applications,deepin-movie,icons/hicolor/scalable/apps,locale}}
+
+  install -m 644 *.desktop "${pkgdir}"/usr/share/applications/
+  install -m 644 image/deepin-movie.svg "${pkgdir}"/usr/share/icons/hicolor/scalable/apps/
+
+  mv -v *.py "${pkgdir}"/usr/share/deepin-movie/
+  mv -v *.qml "${pkgdir}"/usr/share/deepin-movie/
+  mv -v image "${pkgdir}"/usr/share/deepin-movie/
+  mv -v locale/mo/* "${pkgdir}"/usr/share/locale/
+
+  ln -s /usr/share/deepin-movie/main.py "$pkgdir"/usr/bin/deepin-movie
 }

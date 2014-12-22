@@ -1,15 +1,14 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=go-xgbutil
 pkgver=git20140311~800bc6c
-pkgrel=3
+pkgrel=4
 pkgdesc='xgbutil is a utility library designed to work with the X Go Binding.'
-arch=('i686' 'x86_64')
+arch=('any')
 url="https://github.com/BurntSushi/xgbutil"
 license=('GPL2')
-depends=('go>=1.3' 'go-xgb' 'go-graphics-go' 'go-jamslam-freetype-go')
-options=(staticlibs)
+depends=('go-xgb' 'go-graphics-go' 'go-jamslam-freetype-go')
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
@@ -17,17 +16,17 @@ _gobuild_dir="${pkgname}-build"
 _gopkg="github.com/BurntSushi/xgbutil"
 
 prepare() {
-  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
-  cp -r "${pkgname}-${pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
+	mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+	cp -r "${pkgname}-${pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
 }
 
-# TODO: depends on other go library, do not try to build or will appear permission denied issue
-# build() {
-  # GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
-  # GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/{ewmh,gopher,icccm,keybind,motif,mousebind,xcursor,xevent,xgraphics,xinerama,xprop,xrect,xwindow}
-# }
+#build() {
+#	GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
+#	GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/{ewmh,gopher,icccm,keybind,motif,mousebind,xcursor,xevent,xgraphics,xinerama,xprop,xrect,xwindow}
+#}
 
 package() {
-  mkdir -p "${pkgdir}"/usr/lib/go/src/pkg/
-  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/pkg/
+	mkdir -p "${pkgdir}"/usr/lib/go/src
+	cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/
+	#cp -r "${_gobuild_dir}"/pkg/* "${pkgdir}"/usr/lib/go/pkg/
 }

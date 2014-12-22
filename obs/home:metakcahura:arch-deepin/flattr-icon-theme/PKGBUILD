@@ -1,0 +1,28 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=flattr-icon-theme
+pkgver=0.r55.d85950e
+pkgrel=1
+pkgdesc="Flattr is an icon theme for GTK based desktops. The set is inspired by the latest flat design trend."
+arch=('any')
+url="https://github.com/NitruxSA/flattr-icons"
+license=('CC BY-SA 4.0')
+depends=('librsvg')
+conflicts=('flattr-icons' 'flattr-icon-theme' 'flattr-icon-theme-git')
+provides=('flattr-icon-theme')
+install="${pkgname}.install"
+source=("${pkgname}-${pkgver}.tar.xz")
+md5sums=('SKIP')
+
+package() {
+	depends=('gtk-update-icon-cache')
+
+	cd "${pkgname}-${pkgver}"
+
+	install -d -m 755 "$pkgdir"/usr/share/icons/Flattr
+
+	rm -rf {CONTRIBUTORS,CREDITS,LICENSE,README.md}
+	cp -r * "$pkgdir"/usr/share/icons/Flattr/
+	mv -v "$pkgdir"/usr/share/icons/Flattr/_NEXT "$pkgdir"/usr/share/icons/Flattr_next
+}

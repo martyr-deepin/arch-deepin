@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor:
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-terminal
 pkgver=1.1.20140515.a4c7a46
@@ -8,25 +8,27 @@ pkgdesc='Awesome terminal for Linux Deepin'
 arch=('any')
 url="https://gitcafe.com/Deepin/deepin-terminal"
 license=('GPL3')
-depends=('deepin-ui' 'deepin-vte-plus' 'gtk-update-icon-cache' 'python2-dbus' 'python2-scipy')
+depends=('deepin-vte-plus' 'python2-dbus' 'python2-scipy')
 groups=('deepin-extra')
 install="${pkgname}.install"
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
 prepare(){
-  # fix python version
-  find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+	# fix python version
+	find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build() {
-  cd "${pkgname}-${pkgver}"
+	cd "${pkgname}-${pkgver}"
 
-  make
+	make
 }
 
 package() {
-  cd "${pkgname}-${pkgver}"
+	depends+=('deepin-ui' 'gtk-update-icon-cache')
 
-  make DESTDIR="${pkgdir}" PREFIX="/usr" install
+	cd "${pkgname}-${pkgver}"
+
+	make DESTDIR="${pkgdir}" PREFIX="/usr" install
 }

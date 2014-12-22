@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-dock-applets
 pkgver=20141203.cbfdfa8
@@ -9,21 +9,23 @@ arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-dock-applets"
 license=('GPL3')
 depends=('dde-daemon' 'dde-api' 'deepin-qml-widgets' 'dde-qml-dbus-factory'
-         'qml-dde-dock-applet' 'deepin-artwork-themes' 'gtk2' 'qt5-svg' 'qt5-declarative')
-makedepends=('deepin-gettext-tools' 'qt5-tools' 'gettext' 'python2')
+         'qml-dde-dock-applet' 'gtk2' 'qt5-svg' 'qt5-declarative')
+makedepends=('deepin-gettext-tools' 'qt5-tools' 'python2')
 groups=('deepin')
 options=(staticlibs)
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
 build() {
-  cd "${pkgname}-${pkgver}"
+	cd "${pkgname}-${pkgver}"
 
-  make
+	make
 }
 
 package() {
-  cd "${pkgname}-${pkgver}"
+	depends+=('deepin-artwork-themes')
+	
+	cd "${pkgname}-${pkgver}"
 
-  make DESTDIR="${pkgdir}" install
+	make DESTDIR="${pkgdir}" install
 }

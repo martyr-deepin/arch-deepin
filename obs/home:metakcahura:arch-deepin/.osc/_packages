@@ -17,7 +17,6 @@
   <package name="deepin-gsettings" state=" " />
   <package name="deepin-gtk-theme" state=" " />
   <package name="deepin-icon-theme" state=" " />
-  <package name="deepin-icon-theme-v2013" state="D" />
   <package name="deepin-menu" state=" " />
   <package name="deepin-movie" state=" " />
   <package name="deepin-music-player" state=" " />
@@ -71,4 +70,7 @@
   <package name="dde-workspace" state=" " />
   <package name="deepin-translator" state=" " />
   <package name="deepin-gettext-tools" state=" " />
+  <package name="dde-dock-applets" state=" " />
+  <package name="flattr-icon-theme" state=" " />
+  <package name="python2-xpybutil" state=" " />
 </project>

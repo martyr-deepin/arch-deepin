@@ -1,0 +1,11 @@
+--- deepin/index.theme.old	2014-12-22 05:54:50.000000000 +0100
++++ deepin/index.theme	2014-12-22 05:55:17.000000000 +0100
+@@ -1,7 +1,7 @@
+ [Icon Theme]
+ Name=Deepin
+ Comment=Default icon theme for linux deepin
+-Inherits=flattr,Faenza
++Inherits=Flattr,Faenza
+ 
+ Example=x-directory-normal
+ 

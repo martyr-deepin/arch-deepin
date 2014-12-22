@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-qml-widgets
 pkgver=git20140522~d0f293d
@@ -10,7 +10,7 @@ url="https://gitcafe.com/Deepin/deepin-qml-widgets"
 license=('GPL3')
 groups=('deepin')
 depends=('qt5-multimedia' 'qt5-webkit' 'qt5-imageformats'
-    'qt5-graphicaleffects' 'qt5-x11extras' 'qtchooser')
+		 'qt5-graphicaleffects' 'qt5-x11extras')
 conflicts=('dde-qml-gettext-plugin')
 provides=('dde-qml-gettext-plugin')
 replaces=('dde-qml-gettext-plugin')
@@ -27,5 +27,5 @@ build(){
 package() {
   cd "${pkgname}-${pkgver}"
 
-  make INSTALL_ROOT="${pkgdir}/" install
+  make INSTALL_ROOT="${pkgdir}" install
 }

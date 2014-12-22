@@ -1,5 +1,5 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=libdeepin-webkit
 pkgver=1.8.2.1.git20140710.d7502b9
@@ -9,20 +9,21 @@ arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"
 license=('LGPL' 'GPL' 'BSD' 'custom')
 groups=('deepin')
-depends=('geoclue' 'libxt' 'libxslt' 'sqlite' 'libsoup' 'enchant' 'libgl' 'gtk3'
-	'gstreamer0.10-base-plugins' 'libsecret' 'libwebp' 'harfbuzz-icu')
-makedepends=('gtk2' 'gperf' 'gobject-introspection' 'python2' 'mesa' 'gtk-doc'
-	'gawk' 'chrpath' 'bison' 'perl' 'flex' 'which' 'gettext')
+depends=('geoclue' 'libxt' 'libxslt' 'sqlite' 'libsoup' 'enchant'
+         'libgl' 'gtk3'	'gstreamer0.10-base-plugins' 'libsecret'
+         'libwebp' 'harfbuzz-icu')
+makedepends=('gtk2' 'gperf' 'gobject-introspection' 'python2' 'mesa'
+             'gtk-doc' 'gawk' 'chrpath' 'bison' 'perl' 'flex')
 optdepends=('gtk2: Netscape plugin support')
 provides=('deepin-webkit')
 replaces=('deepin-webkit')
 options=(!libtool !emptydirs)
 source=("${pkgname}-${pkgver}.tar.xz"
         "webkit-gtk-1.8.2-bison-2.6.patch"
-	    "DerivedSources.tar.gz")
+	      "DerivedSources.tar.gz")
 sha256sums=('SKIP'
-	    'cea36d9a955e4f5c2cd2fe2037ff63067217596e88cbbaa1da2ecc7546d3cd44'
-	    '7a5fbc735dcda90faeafb26778a741ebe1a5fcf0cfb44de5369db42aa60561df')
+	          'cea36d9a955e4f5c2cd2fe2037ff63067217596e88cbbaa1da2ecc7546d3cd44'
+	          '7a5fbc735dcda90faeafb26778a741ebe1a5fcf0cfb44de5369db42aa60561df')
 
 prepare(){
   cd "${pkgname}-${pkgver}"

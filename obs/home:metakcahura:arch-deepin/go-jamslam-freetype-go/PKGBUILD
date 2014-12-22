@@ -1,37 +1,36 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 _pkgname=golang-jamslam-freetype-go
 pkgname=go-jamslam-freetype-go
 _pkgverbase=0.0
-_pkgvergit=20140306
+_pkgvergit=20140903
 _pkgver=${_pkgverbase}~git${_pkgvergit}
 pkgver=${_pkgverbase}.${_pkgvergit}
-pkgrel=5
+pkgrel=1
 pkgdesc='File system notification for GO'
-arch=('i686' 'x86_64')
+arch=('any')
 url="https://github.com/BurntSushi/xgb"
 license=('GPL2')
-depends=('go>=1.3')
+depends=('go')
 replaces=('golang-jamslam-freetype-go')
-options=(staticlibs)
 source=("http://packages.linuxdeepin.com/deepin/pool/main/g/${_pkgname}/${_pkgname}_${_pkgver}.orig.tar.xz")
-sha256sums=('028b753388ec2d54105ae3c2713cae4075d9a578a39648c38b05105ac65711a4')
+md5sums=('SKIP')
 
 _gobuild_dir="${_pkgname}-build"
 _gopkg="code.google.com/p/jamslam-freetype-go/freetype"
 
 prepare() {
   mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
-  cp -r jamslam-freetype-go/freetype/* "${_gobuild_dir}"/src/"${_gopkg}"/
+  cp -r freetype/* "${_gobuild_dir}"/src/"${_gopkg}"/
 }
 
-build() {
-  GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
-  GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/truetype
-}
+#build() {
+#  GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
+#  GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/truetype
+#}
 
 package() {
-  mkdir -p "${pkgdir}"/usr/lib/go/src/pkg/
-  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/pkg/
+  mkdir -p "${pkgdir}"/usr/lib/go/src
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/
 }
