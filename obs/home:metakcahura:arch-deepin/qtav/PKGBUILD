@@ -1,0 +1,27 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=qtav
+pkgver=20140413
+pkgrel=1
+pkgdesc="qt multimedia framework"
+arch=('i686' 'x86_64')
+url="https://gitcafe.com/Deepin/QtAV"
+license=('GPL')
+depends=('qt5-base')
+makedepends=('qt5-tools')
+source=("${pkgname}-${pkgver}.tar.xz")
+sha256sums=('SKIP')
+
+build(){
+	cd "${pkgname}-${pkgver}"
+
+    qmake
+    make PREFIX=/usr
+}
+
+package() {
+	cd "${pkgname}-${pkgver}"
+
+	make INSTALL_ROOT="${pkgdir}" install
+}

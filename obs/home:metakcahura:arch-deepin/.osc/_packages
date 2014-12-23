@@ -72,4 +72,5 @@
   <package name="dde-dock-applets" state=" " />
   <package name="flattr-icon-theme" state=" " />
   <package name="python2-xpybutil" state=" " />
+  <package name="qtav" state=" " />
 </project>
