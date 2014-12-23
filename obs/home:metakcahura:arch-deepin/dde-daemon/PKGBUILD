@@ -18,14 +18,21 @@ groups=('deepin')
 install="${pkgname}.install"
 conflicts=('dde-daemon-gsd-input')
 options=(staticlibs)
-source=("${pkgname}-${pkgver}.tar.xz")
-sha256sums=('SKIP')
+source=("${pkgname}-${pkgver}.tar.xz" "fix-compile.patch")
+sha256sums=('SKIP' 'SKIP')
 
-build(){
+prepare() {
+  cd "${pkgname}-${pkgver}"
+
+  patch -p1 -i ../fix-compile.patch
+}
+
+build() {
   cd "${pkgname}-${pkgver}"
 
   make
 }
+
 package() {
   cd "${pkgname}-${pkgver}"
 
