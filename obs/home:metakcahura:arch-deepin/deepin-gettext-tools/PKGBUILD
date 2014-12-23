@@ -5,12 +5,10 @@ pkgname=deepin-gettext-tools
 pkgver=20141029.6ba50ec
 pkgrel=0
 pkgdesc='Deepin Internationalization utilities'
-arch=('i686' 'x86_64')
+arch=('any')
 url="https://gitcafe.com/Deepin/deepin-gettext-tools"
 license=('GPL3')
-depends=('python2')
 groups=('deepin-dev')
-options=(staticlibs)
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
@@ -22,10 +20,11 @@ prepare() {
 }
 
 package() {
+  depends=('python2')
+
   cd "${pkgname}-${pkgver}"
 
-  install -dm755 "${pkgdir}"/usr/lib/deepin-gettext-tools/
-  install -dm755 "${pkgdir}"/usr/bin/
+  install -dm755 "${pkgdir}"/usr/{bin,lib/deepin-gettext-tools}
   install -m755 src/generate_mo.py "${pkgdir}"/usr/lib/deepin-gettext-tools/
   install -m755 src/update_pot.py "${pkgdir}"/usr/lib/deepin-gettext-tools/
   install -m644 src/blank.py "${pkgdir}"/usr/lib/deepin-gettext-tools/
