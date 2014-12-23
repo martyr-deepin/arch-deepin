@@ -30,6 +30,6 @@ prepare() {
 #}
 
 package() {
-  mkdir -p "${pkgdir}"/usr/lib/go/src
-  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src/
+  mkdir -p "${pkgdir}"/usr/lib/go/site/src
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
 }

@@ -51,6 +51,6 @@ package_dde-go-dbus-factory() {
 
   cd "${pkgbase}-${pkgver}"
 
-  install -dm 755 "${pkgdir}"/usr/lib/go/src/dbus
-  cp in.json/go/src/* -r "${pkgdir}"/usr/lib/go/src/dbus
+  install -dm 755 "${pkgdir}"/usr/lib/go/site/src/dbus
+  cp in.json/go/src/* -r "${pkgdir}"/usr/lib/go/site/src/dbus
 }

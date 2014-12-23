@@ -28,7 +28,7 @@ prepare() {
 # `go install' here or will appear permission denied problem
 
 package() {
-  mkdir -p "${pkgdir}"/usr/lib/go/src
-  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/src
-  find "${pkgdir}"/usr/lib/go/src -type d -name 'testdata' | xargs rm -rf
+  mkdir -p "${pkgdir}"/usr/lib/go/site/src
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src
+  find "${pkgdir}"/usr/lib/go/site/src -type d -name 'testdata' | xargs rm -rf
 }
