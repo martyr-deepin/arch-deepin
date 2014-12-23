@@ -9,6 +9,7 @@ arch=('any')
 url="https://gitcafe.com/Deepin/deepin-gettext-tools"
 license=('GPL3')
 groups=('deepin-dev')
+depends=('gettext' 'python2')
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
