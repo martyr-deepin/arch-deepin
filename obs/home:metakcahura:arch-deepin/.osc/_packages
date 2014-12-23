@@ -50,7 +50,6 @@
   <package name="python2-tesseract" state=" " />
   <package name="python2-xlib" state=" " />
   <package name="python2-xpyb" state=" " />
-  <package name="qml-dde-dock-applet" state=" " />
   <package name="qt5-systems" state=" " />
   <package name="startdde" state=" " />
   <package name="underscorejs" state=" " />

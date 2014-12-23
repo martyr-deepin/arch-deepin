@@ -9,7 +9,7 @@ arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-dock-applets"
 license=('GPL3')
 depends=('dde-daemon' 'dde-api' 'deepin-qml-widgets' 'dde-qml-dbus-factory'
-         'qml-dde-dock-applet' 'gtk2' 'qt5-svg' 'qt5-declarative')
+         'gtk2' 'qt5-svg' 'qt5-declarative')
 makedepends=('deepin-gettext-tools' 'qt5-tools' 'python2')
 groups=('deepin')
 options=(staticlibs)
@@ -24,7 +24,7 @@ build() {
 
 package() {
 	depends+=('deepin-artwork-themes')
-	
+
 	cd "${pkgname}-${pkgver}"
 
 	make DESTDIR="${pkgdir}" install
