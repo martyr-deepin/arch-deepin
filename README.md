@@ -39,10 +39,13 @@ If you want to experience more applications from Deepin, such as
 
   - Could not install packages, report `invalid or corrupted package (checksum)`
   
-    Simply, remove the package files that out of date and run `pacman
-    -Syu` again. In most case, this is caused by an issue of OBS that
-    `pkgrel` will not increase automatically if maintainer rebuild the
-    package.
+    In most case, this is caused by an issue of OBS that `pkgrel` will
+    not increase automatically if maintainer rebuild the package, more
+    information to see this [issue](https://github.com/fasheng/arch-deepin/issues/54)
+    
+    We could try to remove the cached package files that out of date
+    and run `pacman -Syu` again. If not work, please install them
+    manually through `pacman -U`.
     
   - There are conflicting files when updating to dde-daemon-20141201.b14fbe0
   
