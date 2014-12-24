@@ -19,11 +19,11 @@ sha256sums=('SKIP')
 build(){
   cd "${pkgname}-${pkgver}"
 
-  make
+  make GOPATH="/usr/lib/go/site"
 }
 
 package() {
   cd "${pkgname}-${pkgver}"
 
-  make GOPATH="/usr/lib/go/site" DESTDIR="${pkgdir}" install
+  make DESTDIR="${pkgdir}" install
 }
