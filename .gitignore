@@ -8,4 +8,5 @@
 */**/*.tar.xz
 aur/**/_*
 obs/**/.osc
+obs/**/binaries
 __*
