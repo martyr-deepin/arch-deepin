@@ -19,7 +19,7 @@ build(){
 	cd "${pkgname}-${pkgver}"
 
 	mkdir -pv out
-	go build -o out/dbus-generator
+	GOPATH="/usr/lib/go/site" go build -o out/dbus-generator
 }
 
 package() {

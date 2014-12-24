@@ -13,15 +13,13 @@ groups=('deepin')
 options=(!strip)
 install="${pkgname}.install"
 source=("${pkgname}-${pkgver}.tar.xz"
-        'python-fix.patch'
-        'fix-inherits.patch')
-sha256sums=('SKIP' 'SKIP' 'SKIP')
+        'fix-arch.patch')
+sha256sums=('SKIP' 'SKIP')
 
 prepare() {
   cd "${pkgname}-${pkgver}"
 
-  patch -p0 -i ../python-fix.patch
-  patch -p1 -i ../fix-inherits.patch
+  patch -p1 -i ../fix-arch.patch
 }
 
 build() {

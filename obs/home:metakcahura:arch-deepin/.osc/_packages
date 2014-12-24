@@ -73,4 +73,5 @@
   <package name="flattr-icon-theme" state=" " />
   <package name="python2-xpybutil" state=" " />
   <package name="qtav" state=" " />
+  <package name="ffmpeg" state=" " />
 </project>

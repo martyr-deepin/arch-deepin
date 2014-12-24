@@ -9,7 +9,7 @@ arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/QtAV"
 license=('GPL')
 depends=('qt5-base')
-makedepends=('qt5-tools')
+makedepends=('qt5-tools' 'ffmpeg')
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 

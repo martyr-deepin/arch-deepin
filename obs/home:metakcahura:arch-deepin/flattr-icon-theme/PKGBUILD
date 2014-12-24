@@ -8,7 +8,6 @@ pkgdesc="Flattr is an icon theme for GTK based desktops. The set is inspired by 
 arch=('any')
 url="https://github.com/NitruxSA/flattr-icons"
 license=('CC BY-SA 4.0')
-depends=('librsvg')
 conflicts=('flattr-icons' 'flattr-icon-theme' 'flattr-icon-theme-git')
 provides=('flattr-icon-theme')
 install="${pkgname}.install"
@@ -16,7 +15,7 @@ source=("${pkgname}-${pkgver}.tar.xz")
 md5sums=('SKIP')
 
 package() {
-	depends=('gtk-update-icon-cache')
+	depends=('librsvg' 'gtk-update-icon-cache')
 
 	cd "${pkgname}-${pkgver}"
 
@@ -24,5 +23,5 @@ package() {
 
 	rm -rf {CONTRIBUTORS,CREDITS,LICENSE,README.md}
 	cp -r * "$pkgdir"/usr/share/icons/Flattr/
-	mv -v "$pkgdir"/usr/share/icons/Flattr/_NEXT "$pkgdir"/usr/share/icons/Flattr_next
+	mv -v "$pkgdir"/usr/share/icons/Flattr/_NEXT "$pkgdir"/usr/share/icons/Flattr_NEXT
 }

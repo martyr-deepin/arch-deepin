@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">ffmpeg.org</param>
+    <param name="protocol">http</param>
+    <param name="path">/releases/ffmpeg-2.5.2.tar.bz2</param>
+  </service>
+<service name="download_url"><param name="host">ffmpeg.org</param><param name="protocol">http</param><param name="path">/releases/ffmpeg-2.5.2.tar.bz2.asc</param></service></services>
