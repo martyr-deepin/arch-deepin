@@ -1,7 +1,6 @@
 # Install
 
-Add following code to `/etc/pacman.conf` (if you downloading or
-checking packages with problem, just use the alternative server):
+Add following code to `/etc/pacman.conf`:
 
     [home_metakcahura_arch-deepin_Arch_Extra]
     SigLevel = Never
@@ -31,22 +30,17 @@ If you want to experience more applications from Deepin, such as
 
 # Troubleshooting
 
-  - Could not download packages, report `Maximum file size exceeded`
+  - Install deepin packages failed, report `Maximum file size
+    exceeded` or `invalid or corrupted package (checksum)`
   
-    Please try again after a while, or use the alternative server:
+    Please setup `wget` as default download tool by removing comment
+    from line `XferCommand = /usr/bin/wget --passive-ftp -c -O%o %u`
+    in `/etc/pacman.conf`, then try again.
+    
+    If not work, try the alternative server:
     
         Server = http://anorien.csc.warwick.ac.uk/mirrors/download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
 
-  - Could not install packages, report `invalid or corrupted package (checksum)`
-  
-    In most case, this is caused by an issue of OBS that `pkgrel` will
-    not increase automatically if maintainer rebuild the package, more
-    information to see this [issue](https://github.com/fasheng/arch-deepin/issues/54)
-    
-    We could try to remove the cached package files that out of date
-    and run `pacman -Syu` again. If not work, please install them
-    manually through `pacman -U`.
-    
   - There are conflicting files when updating to dde-daemon-20141201.b14fbe0
   
     I'm afraid we have to remove the conflicting files manually:
