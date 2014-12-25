@@ -1,14 +1,13 @@
 diff --git a/bin/dde-session-daemon/daemon.go b/bin/dde-session-daemon/daemon.go
-index f7abf89..fdbd113 100644
+index f7abf89..bd5c149 100644
 --- a/bin/dde-session-daemon/daemon.go
 +++ b/bin/dde-session-daemon/daemon.go
-@@ -10,7 +10,8 @@ import _ "pkg.linuxdeepin.com/dde-daemon/audio"
- import _ "pkg.linuxdeepin.com/dde-daemon/appearance"
+@@ -21,7 +21,7 @@ import _ "pkg.linuxdeepin.com/dde-daemon/network"
+ import _ "pkg.linuxdeepin.com/dde-daemon/mounts"
  
- import _ "pkg.linuxdeepin.com/dde-daemon/clipboard"
--import _ "pkg.linuxdeepin.com/dde-daemon/datetime"
-+
-+// import _ "pkg.linuxdeepin.com/dde-daemon/datetime"
- import _ "pkg.linuxdeepin.com/dde-daemon/mime"
+ import _ "pkg.linuxdeepin.com/dde-daemon/dock"
+-import _ "pkg.linuxdeepin.com/dde-daemon/launcher"
++//import _ "pkg.linuxdeepin.com/dde-daemon/launcher"
+ import _ "pkg.linuxdeepin.com/dde-daemon/keybinding"
  
- import _ "pkg.linuxdeepin.com/dde-daemon/screenedge"
+ import _ "pkg.linuxdeepin.com/dde-daemon/dsc"
