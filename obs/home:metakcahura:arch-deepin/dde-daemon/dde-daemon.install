@@ -1,8 +1,5 @@
 post_install() {
   glib-compile-schemas --allow-any-name usr/share/glib-2.0/schemas
-  getent passwd deepin-daemon > /dev/null || useradd deepin-daemon -r -M -U
-  passwd -l deepin-daemon > /dev/null
-  touch /var/log/deepin.log && chown deepin-daemon:deepin-daemon /var/log/deepin.log
   
   command=/usr/lib/deepin-daemon/theme-thumb-tool
   target_dir=/usr/share/personalization/thumbnail
@@ -28,8 +25,3 @@ post_upgrade() {
   post_install $1
 }
 
-post_remove() {
-  getent passwd deepin-daemon > /dev/null 2>&1 && userdel deepin-daemon
-  getent group deepin-daemon > /dev/null 2>&1 && groupdel deepin-daemon
-  rm -f /var/log/deepin.log
-}

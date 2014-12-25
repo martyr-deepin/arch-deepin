@@ -11,7 +11,8 @@ license=('GPL3')
 depends=('dde-api' 'grub-themes-deepin' 'cairo' 'libcanberra' 'dbus'
 		 'libdeepin-webkit' 'gtk3' 'glib2' 'gdk-pixbuf2' 'gstreamer0.10'
 		 'libsystemd' 'acpid' 'libpulse' 'xcur2png' 'upower' 'bluez'
-		 'polkit-gnome' 'metacity-ubuntu' 'network-manager-applet')
+		 'polkit-gnome' 'metacity-ubuntu' 'network-manager-applet'
+		 'xdotool' 'rfkill')
 makedepends=('go' 'go-dlib' 'dde-go-dbus-factory' 'go-xgb' 'go-gocheck'
 			 'go-xgbutil' 'go-fsnotify' 'go-sqlite3' 'python2')
 groups=('deepin')
