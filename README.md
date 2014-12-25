@@ -33,9 +33,10 @@ If you want to experience more applications from Deepin, such as
   - Install deepin packages failed, report `Maximum file size
     exceeded` or `invalid or corrupted package (checksum)`
   
-    Please setup `wget` as default download tool by removing comment
-    from line `XferCommand = /usr/bin/wget --passive-ftp -c -O%o %u`
-    in `/etc/pacman.conf`, then try again.
+    Well, the repository site of openSUSE looks like not friendly to
+    archlinux users. Please setup `wget` as default download tool by
+    removing comment from line `XferCommand = /usr/bin/wget
+    --passive-ftp -c -O%o %u` in `/etc/pacman.conf`, then try again.
     
     If not work, try the alternative server:
     
