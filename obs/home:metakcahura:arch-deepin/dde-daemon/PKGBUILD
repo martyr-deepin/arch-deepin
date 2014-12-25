@@ -19,18 +19,8 @@ groups=('deepin')
 install="${pkgname}.install"
 conflicts=('dde-daemon-gsd-input')
 options=(staticlibs)
-source=("${pkgname}-${pkgver}.tar.xz" "fix-i686-compile.patch")
-sha256sums=('SKIP' 'SKIP')
-
-prepare() {
-  cd "${pkgname}-${pkgver}"
-
-  # TODO: a temporary solution by disable datatime module of
-  # dde-session-daemon to avoid build issue for go1.4/i686
-  if test "$CARCH" == i686; then
-    patch -p1 -i ../fix-i686-compile.patch
-  fi
-}
+source=("${pkgname}-${pkgver}.tar.xz")
+sha256sums=('SKIP')
 
 build() {
   cd "${pkgname}-${pkgver}"
