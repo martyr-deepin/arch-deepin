@@ -57,7 +57,7 @@ build() {
   # If you really want to build Go without SSE2 support, just uncomment the
   # following export and rebuild:
   #
-  # export GO386=387
+  export GO386=387
 
   # Enable ARM crosscompilation for linux
   export GOOS=linux
@@ -155,7 +155,7 @@ package() {
 
   # Fix for FS#32813
   find "$pkgdir" -type f -name sql.go -exec chmod -x {} \;
-  
+
   # Remove all executable source files
   find "$pkgdir/usr/lib/go/src/pkg" -type f -executable -delete
 
