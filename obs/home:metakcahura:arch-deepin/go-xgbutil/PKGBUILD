@@ -8,7 +8,6 @@ pkgdesc='xgbutil is a utility library designed to work with the X Go Binding.'
 arch=('any')
 url="https://github.com/BurntSushi/xgbutil"
 license=('GPL2')
-depends=('go-xgb' 'go-graphics-go' 'go-jamslam-freetype-go')
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
@@ -26,6 +25,8 @@ prepare() {
 #}
 
 package() {
+	depends=('go-xgb' 'go-graphics-go' 'go-jamslam-freetype-go')
+
 	mkdir -p "${pkgdir}"/usr/lib/go/site/src
 	cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
 	#cp -r "${_gobuild_dir}"/pkg/* "${pkgdir}"/usr/lib/go/site/pkg/

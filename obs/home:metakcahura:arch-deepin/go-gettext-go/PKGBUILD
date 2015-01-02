@@ -12,9 +12,7 @@ pkgdesc="This package provides GNU gettext support."
 arch=('any')
 url="https://code.google.com/p/gettext-go/"
 license=('GPL2')
-makedepends=('go')
 replaces=('golang-gettext-go')
-options=(staticlibs)
 source=("http://packages.linuxdeepin.com/deepin/pool/main/g/${_pkgname}/${_pkgname}_${_pkgver}.orig.tar.xz")
 md5sums=('SKIP')
 
@@ -22,16 +20,18 @@ _gobuild_dir="${_pkgname}-build"
 _gopkg="github.com/chai2010/gettext-go"
 
 prepare() {
-  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
-  cp -r gettext "${_gobuild_dir}"/src/"${_gopkg}"/
+	mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+	cp -r gettext "${_gobuild_dir}"/src/"${_gopkg}"/
 }
 
-build() {
-  GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/gettext
-  GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/gettext/{mo,plural,po}
-}
+#build() {
+#  GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/gettext
+#  GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/gettext/{mo,plural,po}
+#}
 
 package() {
-  mkdir -p "${pkgdir}"/usr/lib/go/site/src
-  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
+	depends=('go')
+
+	mkdir -p "${pkgdir}"/usr/lib/go/site/src
+	cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
 }

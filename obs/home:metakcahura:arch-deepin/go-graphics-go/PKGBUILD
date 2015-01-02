@@ -12,7 +12,6 @@ pkgdesc='File system notification for GO'
 arch=('any')
 url="http://code.google.com/p/graphics-go/"
 license=('GPL2')
-depends=('go')
 replaces=('golang-graphics-go')
 source=("http://packages.linuxdeepin.com/deepin/pool/main/g/${_pkgname}/${_pkgname}_${_pkgver}.orig.tar.xz")
 md5sums=('SKIP')
@@ -30,6 +29,8 @@ prepare() {
 #}
 
 package() {
+	depends=('go')
+
 	mkdir -p "${pkgdir}"/usr/lib/go/site/src
 
 	cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/

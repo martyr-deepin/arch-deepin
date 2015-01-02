@@ -12,7 +12,6 @@ pkgdesc='File system notification for GO'
 arch=('any')
 url="https://github.com/BurntSushi/xgb"
 license=('GPL2')
-depends=('go')
 replaces=('golang-jamslam-freetype-go')
 source=("http://packages.linuxdeepin.com/deepin/pool/main/g/${_pkgname}/${_pkgname}_${_pkgver}.orig.tar.xz")
 md5sums=('SKIP')
@@ -21,8 +20,8 @@ _gobuild_dir="${_pkgname}-build"
 _gopkg="code.google.com/p/jamslam-freetype-go/freetype"
 
 prepare() {
-  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
-  cp -r freetype/* "${_gobuild_dir}"/src/"${_gopkg}"/
+	mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+	cp -r freetype/* "${_gobuild_dir}"/src/"${_gopkg}"/
 }
 
 #build() {
@@ -31,6 +30,8 @@ prepare() {
 #}
 
 package() {
-  mkdir -p "${pkgdir}"/usr/lib/go/site/src
-  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
+	depends=('go')
+
+	mkdir -p "${pkgdir}"/usr/lib/go/site/src
+	cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
 }

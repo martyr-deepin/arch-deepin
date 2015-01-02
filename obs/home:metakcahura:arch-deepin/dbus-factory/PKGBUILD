@@ -1,56 +1,50 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-pkgbase="dbus-factory"
+pkgbase=dbus-factory
 pkgname=('dde-go-dbus-factory'
          'dde-qml-dbus-factory')
 pkgver=0.0.2.20140516.5ed6a4d
 pkgrel=2
-pkgdesc='dde qml gettext plugin'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dbus-factory"
 license=('GPL2')
-makedepends=('go' 'go-dlib' 'qt5-webkit' 'qt5-quickcontrols' 'python2' 'bluez'
-             'udisks2' 'upower' 'accountsservice' 'libdbus' 'dbus-generator')
+makedepends=('go' 'go-dlib' 'qt5-webkit' 'qt5-quickcontrols' 'python2'
+             'bluez' 'bluez-libs' 'udisks2' 'upower' 'accountsservice'
+             'libdbus' 'dbus-generator')
 groups=('deepin')
-options=(staticlibs)
-source=("${pkgbase}-${pkgver}.tar.xz" "json_build.py")
-sha256sums=('SKIP' 'e8c4f2d4a5e488af27ccec93936e337c5d026889fe446ced94ed887834522435')
+options=('staticlibs')
+source=("${pkgbase}-${pkgver}.tar.xz" "fix-arch.patch")
+sha256sums=('SKIP' 'SKIP')
 
 build() {
-  cd "${pkgbase}-${pkgver}"
+    cd "${pkgbase}-${pkgver}"
 
-  cd in.json && python2 ../../json_build.py
+    patch -p1 -i ../fix-arch.patch
+
+    make -j8
 }
 
 package_dde-qml-dbus-factory() {
-  pkgdesc='Go-lang dbus gen QML for dlib'
-  depends=('qt5-declarative')
-  optdepends=('udisks2: Disk Management Service'
-              'bluez: Daemons for the bluetooth protocol stack'
-              'upower: Abstraction for enumerating power devices'
-              'accountsservice: D-Bus interface for user account query and manipulation'
-              'polkit: Application development toolkit for controlling system-wide privileges'
-              'libdbus: DBus library'
-              'networkmanager: Network Management daemon')
+    pkgdesc='Go-lang dbus gen QML for dlib'
+    depends=('qt5-declarative')
+    optdepends=('udisks2: Disk Management Service'
+                'bluez: Daemons for the bluetooth protocol stack'
+                'upower: Abstraction for enumerating power devices'
+                'accountsservice: D-Bus interface for user account query and manipulation'
+                'polkit: Application development toolkit for controlling system-wide privileges'
+                'libdbus: DBus library'
+                'networkmanager: Network Management daemon')
 
-  cd "${pkgbase}-${pkgver}"
+    cd "${pkgbase}-${pkgver}"
 
-  for i in `find in.json -name "qmldir"`;do
-    module=`cat $i | grep module`
-    module=${module##module }
-    echo $module
-    dir=${module//./\/}
-    mkdir -p "${pkgdir}"/usr/lib/qt/qml/${dir}
-    cp ${i%%\/qmldir}/* -r "${pkgdir}"/usr/lib/qt/qml/${dir};
-  done
+    make DESTDIR="${pkgdir}" install-qml
 }
 
 package_dde-go-dbus-factory() {
-  pkgdesc='Go-lang dbus gen for dlib'
+    pkgdesc='Go-lang dbus gen for dlib'
 
-  cd "${pkgbase}-${pkgver}"
+    cd "${pkgbase}-${pkgver}"
 
-  install -dm 755 "${pkgdir}"/usr/lib/go/site/src/dbus
-  cp in.json/go/src/* -r "${pkgdir}"/usr/lib/go/site/src/dbus
+    make DESTDIR="${pkgdir}" install-golang
 }

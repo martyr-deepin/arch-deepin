@@ -74,4 +74,6 @@
   <package name="python2-xpybutil" state=" " />
   <package name="qtav" state=" " />
   <package name="ffmpeg" state=" " />
+  <package name="go-git" state=" " />
+  <package name="xdotool" state=" " />
 </project>

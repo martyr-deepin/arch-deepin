@@ -12,7 +12,6 @@ pkgdesc='Richer testing framework for Go libraries and applications to use'
 arch=('any')
 url="http://labix.org/gocheck"
 license=('BSD')
-depends=('go')
 replaces=('golang-gocheck')
 site="http://packages.linuxdeepin.com/deepin/pool/main/g"
 source=("${site}/${_pkgname}/${_pkgname}_${_pkgver}.orig.tar.gz"
@@ -44,6 +43,8 @@ prepare() {
 #}
 
 package() {
+  depends=('go')
+
   mkdir -p "${pkgdir}"/usr/lib/go/site/src
   cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
 }
