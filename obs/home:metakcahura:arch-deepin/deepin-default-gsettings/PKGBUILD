@@ -20,10 +20,6 @@ prepare() {
 
   cat *.override >> gsettings-override
   patch -p0 -i "${srcdir}/arch-fix.patch"
-
-  # setup default background
-  echo "[com.deepin.dde.personalization]" >> gsettings-override
-  echo "picture-uri='file:///usr/share/personalization/themes/Deepin/wallpapers/2.1.jpg'" >> gsettings-override
 }
 
 package() {
