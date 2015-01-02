@@ -38,7 +38,6 @@ package() {
   _easycp "${pkgdir}"/usr/share/deepin-screenshot/ theme
   _easycp "${pkgdir}"/usr/share/deepin-screenshot/ skin
   _easycp "${pkgdir}"/usr/share/ locale
-  _easycp "${pkgdir}"/usr/share/icons/hicolor/48x48/apps/ debian/deepin-screenshot.png
 
   mkdir -p "${pkgdir}"/usr/share/applications/
   install -m 0644 debian/deepin-screenshot.desktop "${pkgdir}"/usr/share/applications/
