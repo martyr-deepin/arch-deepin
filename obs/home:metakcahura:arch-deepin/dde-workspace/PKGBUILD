@@ -26,14 +26,14 @@ build() {
 
   #export PYTHON=/usr/bin/python2
   mkdir -p build && cd build/
-  cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release && make
+  cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release && make -j8
 
   gcc -o ../debian/default-terminal ../debian/default-terminal.c `pkg-config --libs --cflags glib-2.0 gio-unix-2.0`
 
   cd "${srcdir}"/${pkgbase}-${pkgver}-greeter
 
   mkdir -p build && cd build/
-  cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release && make
+  cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release && make -j8
 }
 
 package_dde-workspace() {
@@ -48,11 +48,14 @@ package_dde-workspace() {
 
   make install DESTDIR="${pkgdir}"
 
-  install -dm755 "${pkgdir}"/etc/{X11,sysctl.d}
+  install -dm755 "${pkgdir}"/{etc/{X11,sysctl.d},usr/share/backgrounds}
 
   install -m644 ../debian/30-deepin-inotify-limit.conf "${pkgdir}"/etc/sysctl.d/
   install -m755 ../debian/default-terminal "${pkgdir}"/usr/bin/
   install -m644 "${srcdir}"/default-display-manager "${pkgdir}"/etc/X11/
+
+  ## add default background..
+  install -m644 ../resources/greeter/images/background/default_background.jpg "${pkgdir}"/usr/share/backgrounds/
 }
 
 package_lightdm-deepin-greeter() {

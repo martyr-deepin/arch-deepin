@@ -3,7 +3,7 @@
 
 pkgname=deepin-artwork-themes
 pkgver=14.04.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Deepin artwork themes'
 arch=('any')
 license=('LGPL3')
@@ -29,8 +29,4 @@ package() {
 
 	install -dm 755 "${pkgdir}"/usr/share/personalization
 	cp -R {preview,themes,thumbnail} "${pkgdir}"/usr/share/personalization/
-
-	# setup default background
-	install -dm 755 "${pkgdir}"/usr/share/backgrounds
-	ln -sf /usr/share/personalization/themes/Deepin/wallpapers/2.1.jpg "${pkgdir}"/usr/share/backgrounds/default_background.jpg
 }
