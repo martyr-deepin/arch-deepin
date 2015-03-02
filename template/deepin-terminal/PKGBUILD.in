@@ -2,18 +2,17 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-terminal
-pkgver=1.1+20141230110750~bc441b7aae
+pkgver=@PKGVER@
 pkgrel=1
 pkgdesc='Awesome terminal for Linux Deepin'
 arch=('any')
 url="https://gitcafe.com/Deepin/deepin-terminal"
 license=('GPL3')
-depends=('deepin-vte-plus' 'python2-dbus' 'python2-scipy')
+depends=('deepin-vte' 'python2-dbus' 'python2-scipy')
 groups=('deepin-extra')
 install="${pkgname}.install"
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
-sha256sums=('e8f756064def8b69a2e3c63f8cb0e1070082da997862ee0ecaa2b5b84be1d1e7')
+source=("@SOURCE@")
+sha256sums=('@SHA256SUM@')
 
 prepare(){
 	# fix python version

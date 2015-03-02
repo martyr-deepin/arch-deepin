@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-notifications
-pkgver=0.3+20141216180805~a93d61767c
+pkgver=@PKGVER@
 pkgrel=1
 pkgdesc="System notifications for linuxdeepin desktop environment."
 arch=('i686' 'x86_64')
@@ -11,9 +11,8 @@ license=('GPL3')
 groups=('deepin')
 depends=('qt5-declarative' 'qt5-svg')
 conflicts=('notify-osd')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
-sha256sums=('SKIP')
+source=("@SOURCE@")
+sha256sums=('@SHA256SUM@')
 
 build() {
   cd "${pkgname}-${pkgver}"

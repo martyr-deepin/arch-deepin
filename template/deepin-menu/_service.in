@@ -1,7 +1,7 @@
 <services>
   <service name="download_url">
-    <param name="host">ftp.fau.de</param>
-    <param name="protocol">https</param>
-    <param name="path">/deepin/pool/main/d/deepin-menu/deepin-menu_1.1+20141216195521~1247e3bd11.tar.gz</param>
+    <param name="host">@HOST@</param>
+    <param name="protocol">@PROTOCOL@</param>
+    <param name="path">@PATH@</param>
   </service>
 </services>

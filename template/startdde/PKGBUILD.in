@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=startdde
-pkgver=0.1+20141230181929~b99e7b174d
+pkgver=@PKGVER@
 pkgrel=1
 pkgdesc="starter of deepin desktop environment"
 arch=('i686' 'x86_64')
@@ -15,9 +15,8 @@ makedepends=('cmake' 'coffee-script' 'python2' 'webkitgtk' 'go' 'sqlite'
 groups=('deepin')
 options=(staticlibs)
 conflicts=('deepin-session')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/s/${pkgname}/${pkgname}_${pkgver}.tar.gz")
-sha256sums=('c817aec6aeb2dfa1ca8e6feb0222a752dc8f6f16bc53a33b5a9c089f79256eb1')
+source=("@SOURCE@")
+sha256sums=('@SHA256SUM@')
 
 build() {
 	cd "${pkgname}-${pkgver}"

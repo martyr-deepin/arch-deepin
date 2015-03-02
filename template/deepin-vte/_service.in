@@ -1,0 +1,12 @@
+<services>
+  <service name="download_url">
+    <param name="host">@HOST1@</param>
+    <param name="protocol">@PROTOCOL1@</param>
+    <param name="path">@PATH1@</param>
+  </service>
+    <service name="download_url">
+    <param name="host">@HOST2@</param>
+    <param name="protocol">@PROTOCOL2@</param>
+    <param name="path">@PATH2@</param>
+  </service>
+</services>

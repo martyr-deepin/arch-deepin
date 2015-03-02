@@ -2,16 +2,15 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=go-dlib
-pkgver=0.0.4+20150108105637~88ae48d3c8
+pkgver=@PKGVER@
 pkgrel=1
 pkgdesc='Go-lang bingdings for dlib'
 arch=('any')
 url="https://gitcafe.com/Deepin/go-lib"
 license=('GPL3')
 groups=('deepin-dev')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
-sha256sums=('307abef63fd1a13831ef3587e154d35a657536feae924f29e36101b8ac82cfc9')
+source=("@SOURCE@")
+sha256sums=('@SHA256SUM@')
 
 _gobuild_dir="${pkgname}-build"
 _gopkg="pkg.linuxdeepin.com/lib"

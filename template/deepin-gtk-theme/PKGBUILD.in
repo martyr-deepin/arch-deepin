@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-gtk-theme
-pkgver=14.07+20141223164347~1b5a54ef99
+pkgver=@PKGVER@
 pkgrel=1
 pkgdesc="Deepin GTK Theme."
 arch=('any')
@@ -10,9 +10,8 @@ url="https://gitcafe.com/Deepin/deepin-gtk-theme"
 license=('LGPL3')
 optdepends=('gtk-engine-murrine: for gtk2 themes')
 groups=('deepin')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}_all.deb")
-sha256sums=('SKIP')
+source=("@SOURCE@")
+sha256sums=('@SHA256SUM@')
 
 package() {
 	depends=('gtk-engine-unico')

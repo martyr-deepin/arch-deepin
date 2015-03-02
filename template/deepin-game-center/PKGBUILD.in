@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-game-center
-pkgver=1.0.1+20141230144448~4e7bbbfda6
+pkgver=@PKGVER@
 pkgrel=1
 pkgdesc="Game center for Linuxdeepin"
 arch=('any')
@@ -11,9 +11,8 @@ license=('GPL3')
 makedepends=('python2')
 groups=('deepin-extra')
 install="${pkgname}.install"
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
-sha256sums=('cefa9548840757af0fa6c07b98924de2a9860327d85b0d86f4cca710ff8f8a3f')
+source=("@SOURCE@")
+sha256sums=('@SHA256SUM@')
 
 prepare() {
 	# fix python version

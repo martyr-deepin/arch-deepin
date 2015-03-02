@@ -7,8 +7,8 @@
 _pkgname=compiz
 _mainver=0.9.99
 pkgname=deepin-compiz
-_pkgver=0.9.99-5+git20140707164843~2e85d002e7
-pkgver=0.9.99+git20140707164843~2e85d002e7
+_pkgver=@PKGVER@
+pkgver=@PKGVER@
 pkgrel=1
 epoch=1
 pkgdesc='A forked compiz for Linux Deepin desktop environment'
@@ -32,10 +32,9 @@ replaces=('compiz-bzr' 'compiz-core' 'compiz-fusion-plugins-main'
           'compiz-decorator-kde' 'libcompizconfig' 'compizconfig-python'
           'compizconfig-backend-gconf' 'compiz-bcop' 'ccsm')
 install='compiz.install'
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/c/${_pkgname}/${_pkgname}_${_pkgver}.tar.gz"
+source=("@SOURCE@"
 		'fix-boost-interfaces.patch')
-sha256sums=('4077a2f9d86da2781a48e90651b7a52482c6c2d4ac8e60b37d91208f4b9a4250'
+sha256sums=('@SHA256SUM@'
 			'9b041e3ca5fe54984d064bab9c3c8fa623e8c0e752129c53c578922a48582845')
 
 prepare() {

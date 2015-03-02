@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-icon-theme
-pkgver=13.06.13+20150114160019~dff58a2dad
+pkgver=@PKGVER@
 pkgrel=1
 pkgdesc="This package is DeepinIconTheme which inherits the faenza-icon-theme."
 arch=('any')
@@ -12,9 +12,8 @@ makedepends=('inkscape')
 groups=('deepin')
 options=(!strip)
 install="${pkgname}.install"
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
-sha256sums=('f897855958c5cd8bdc5660965d4771e2927d0b1269a476256928967e6de6e042')
+source=("@SOURCE@")
+sha256sums=('@SHA256SUM@')
 
 prepare() {
 	cd "${pkgname}-${pkgver}"

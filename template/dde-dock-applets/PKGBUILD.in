@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-dock-applets
-pkgver=0.0.4+20150129143814~7c87fbdc84
+pkgver=@PKGVER@
 pkgrel=1
 pkgdesc="New control center for linux deepin"
 arch=('i686' 'x86_64')
@@ -12,9 +12,8 @@ depends=('dde-daemon' 'dde-api' 'deepin-qml-widgets' 'dde-qml-dbus-factory'
          'gtk2' 'qt5-svg' 'qt5-declarative')
 makedepends=('deepin-gettext-tools' 'qt5-tools' 'python2')
 groups=('deepin')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
-sha256sums=('883f5b810ed7a1bddedffbb19ade4ba276d5c08df1c1843b24177b37fad19a9b')
+source=("@SOURCE@")
+sha256sums=('@SHA256SUM@')
 
 build() {
 	cd "${pkgname}-${pkgver}"

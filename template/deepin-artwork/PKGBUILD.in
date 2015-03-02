@@ -2,16 +2,15 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-artwork
-pkgver=2014
-pkgrel=4
+pkgver=@PKGVER@
+pkgrel=1
 pkgdesc='Deepin artwork themes (sounds)'
 arch=('any')
 license=('LGPL3')
 url="http://www.linuxdeepin.com/"
 groups=('deepin')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}-4_all.deb")
-sha256sums=('SKIP')
+source=("@SOURCE@")
+sha256sums=('@SHA256SUM@')
 
 package() {
 	cd "$srcdir"

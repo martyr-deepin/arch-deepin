@@ -2,16 +2,15 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-cursor-theme
-pkgver=2014~4
-pkgrel=2
+pkgver=@PKGVER@
+pkgrel=1
 pkgdesc='Cursor theme from Linux Deepin'
 arch=('any')
 license=('LGPL3')
 url="http://www.linuxdeepin.com/"
 groups=('deepin')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}-2.tar.gz")
-sha256sums=('8e1f395f784771d09858d016eb539e7027d1ccb5132841a7cd54f038943f67c0')
+source=("@SOURCE@")
+sha256sums=('@SHA256SUM@')
 
 package() {
   cd "${pkgname}-${pkgver}"

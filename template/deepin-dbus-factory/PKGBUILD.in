@@ -1,27 +1,27 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-pkgbase=dbus-factory
+pkgbase=deepin-dbus-factory
+_pkgbase=dbus-factory
 pkgname=('dde-go-dbus-factory'
          'dde-qml-dbus-factory')
-pkgver=0.0.2+20141226160557~7e89f03592
+pkgver=@PKGVER@
 pkgrel=1
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dbus-factory"
-license=('GPL2')
+license=('GPL3')
 makedepends=('go' 'go-dlib' 'qt5-webkit' 'qt5-quickcontrols' 'python2'
              'bluez' 'bluez-libs' 'udisks2' 'upower' 'accountsservice'
-             'libdbus' 'dbus-generator')
+             'libdbus' 'deepin-dbus-generator')
 groups=('deepin')
 options=('staticlibs')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgbase}_${pkgver}.tar.gz"
+source=("@SOURCE@"
         "fix-arch.patch")
-sha256sums=('cb8cb6aa76b94fc6a647d4361bf02793c05a217f87ad23b76e0e5f0211dfe01e'
+sha256sums=('@SHA256SUM@'
             'b01823357e6a1c7178fade964a87c6e80ad55acb9f15e40f4e3d7edf9022c420')
 
 build() {
-    cd "${pkgbase}-${pkgver}"
+    cd "${_pkgbase}-${pkgver}"
 
     patch -p1 -i ../fix-arch.patch
 
@@ -29,7 +29,7 @@ build() {
 }
 
 package_dde-qml-dbus-factory() {
-    pkgdesc='Go-lang dbus gen QML for dlib'
+    pkgdesc='QML DBus factory for DDE'
     depends=('qt5-declarative')
     optdepends=('udisks2: Disk Management Service'
                 'bluez: Daemons for the bluetooth protocol stack'
@@ -39,15 +39,15 @@ package_dde-qml-dbus-factory() {
                 'libdbus: DBus library'
                 'networkmanager: Network Management daemon')
 
-    cd "${pkgbase}-${pkgver}"
+    cd "${_pkgbase}-${pkgver}"
 
     make DESTDIR="${pkgdir}" install-qml
 }
 
 package_dde-go-dbus-factory() {
-    pkgdesc='Go-lang dbus gen for dlib'
+    pkgdesc='Go-lang DBus factory for DDE'
 
-    cd "${pkgbase}-${pkgver}"
+    cd "${_pkgbase}-${pkgver}"
 
     make DESTDIR="${pkgdir}" install-golang
 }

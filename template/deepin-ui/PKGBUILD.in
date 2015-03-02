@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-ui
-pkgver=1.1+20141229194712~5a86faec50
+pkgver=@PKGVER@
 pkgrel=1
 pkgdesc='UI toolkit for Linux Deepin'
 arch=('i686' 'x86_64')
@@ -15,9 +15,8 @@ depends=('python2-deepin-utils' 'python2-deepin-gsettings' 'deepin-pygtk'
 makedepends=('deepin-gettext-tools' 'python2-setuptools' 'webkitgtk')
 replaces=('deepin-ui-git')
 conflicts=('deepin-ui-git')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
-sha256sums=('3829f85b4b888d36fac9f9d9180e6d2453e3f3fcdcc02f1051503d4ba100decc')
+source=("@SOURCE@")
+sha256sums=('@SHA256SUM@')
 
 prepare() {
 	cd "${pkgname}-${pkgver}"

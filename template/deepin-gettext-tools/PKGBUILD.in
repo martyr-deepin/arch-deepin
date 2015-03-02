@@ -2,16 +2,15 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-gettext-tools
-pkgver=0.0.1+20141216200739~6ba50ecb9c
+pkgver=@PKGVER@
 pkgrel=1
 pkgdesc='Deepin Internationalization utilities'
 arch=('any')
 url="https://gitcafe.com/Deepin/deepin-gettext-tools"
 license=('GPL3')
 groups=('deepin-dev')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
-sha256sums=('3ab3dab041ac8902e6ca50c1282fea2deec794cdd208972dbc56f4f5eaba539b')
+source=("@SOURCE@")
+sha256sums=('@SHA256SUM@')
 
 prepare() {
     cd "${pkgname}-${pkgver}"

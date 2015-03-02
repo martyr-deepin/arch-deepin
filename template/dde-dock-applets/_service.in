@@ -1,7 +1,7 @@
 <services>
   <service name="download_url">
-    <param name="host">ftp.fau.de</param>
-    <param name="protocol">https</param>
-    <param name="path">/deepin/pool/main/d/dde-dock-applets/dde-dock-applets_0.0.4+20150129143814~7c87fbdc84.tar.gz</param>
+    <param name="host">@HOST@</param>
+    <param name="protocol">@PROTOCOL@</param>
+    <param name="path">@PATH@</param>
   </service>
 </services>

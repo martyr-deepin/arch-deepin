@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-music-player
-pkgver=1.1+20150204093722~081154cf7b
+pkgver=@PKGVER@
 pkgrel=1
 pkgdesc='Awesome music player with brilliant and tweakful UI Deepin-UI based.'
 arch=('any')
@@ -11,9 +11,8 @@ license=('GPL3')
 makedepends=('python2')
 groups=('deepin-extra')
 install="${pkgname}.install"
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
-sha256sums=('ac8cf7b151a387c6ed3bfbfb9e6e4c92fee75c89d62124f6a38fb9d3ba7ff9af')
+source=("@SOURCE@")
+sha256sums=('@SHA256SUM@')
 
 prepare() {
 	# fix python version

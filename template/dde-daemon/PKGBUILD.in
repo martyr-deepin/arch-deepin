@@ -2,13 +2,13 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-daemon
-pkgver=0.0.1+20150209101554~660a820a61
+pkgver=@PKGVER@
 pkgrel=1
 pkgdesc='Go-lang bingdings for dde-daemon'
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-daemon"
 license=('GPL3')
-depends=('dde-api' 'grub-themes-deepin' 'cairo' 'libcanberra' 'dbus'
+depends=('dde-api' 'grub-theme-deepin' 'cairo' 'libcanberra' 'dbus'
 		 'libdeepin-webkit' 'gtk3' 'glib2' 'gdk-pixbuf2' 'gstreamer0.10'
 		 'libsystemd' 'acpid' 'libpulse' 'xcur2png' 'upower' 'bluez'
 		 'polkit-gnome' 'metacity-ubuntu' 'network-manager-applet' 'xdotool')
@@ -18,10 +18,9 @@ groups=('deepin')
 install="${pkgname}.install"
 conflicts=('dde-daemon-gsd-input')
 options=(staticlibs)
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz"
+source=("@SOURCE@"
         "fix-i686-compile.patch")
-sha256sums=('db271a63dc972c41a29bbbb6a30af897c4f7efe28e8ad3dbac37e061c508dd2c'
+sha256sums=('@SHA256SUM@'
             'SKIP')
 
 prepare() {

@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-default-gsettings
-pkgver=0.2+20141216171821~2cf686e3fa
+pkgver=@PKGVER@
 pkgrel=1
 pkgdesc='deepin default settings of gsettings'
 arch=('any')
@@ -10,10 +10,9 @@ groups=('deepin')
 url="https://gitcafe.com/Deepin/default-gsettings"
 license=('GPL3')
 install="${pkgname}.install"
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz"
+source=("@SOURCE@"
 		'arch-fix.patch')
-sha256sums=('0cce133851f4b46512637f2528a57281b3e0d571cbf636b0f0fa117e58fc8d9c'
+sha256sums=('@SHA256SUM@'
 			'544d96c73c5d26a5a7d33cf27daec62e199f2c0e9f2094253baae48c3aa0784a')
 
 prepare() {

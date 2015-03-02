@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-screenshot
-pkgver=2.1.20140703.08a5dde
+pkgver=@PKGVER@
 pkgrel=1
 pkgdesc="Easy-to-use screenshot tool for linuxdeepin desktop environment"
 arch=('any')
@@ -10,8 +10,8 @@ url="https://gitcafe.com/Deepin/deepin-screenshot"
 license=('GPL3')
 groups=('deepin-extra')
 install="${pkgname}.install"
-source=("${pkgname}-${pkgver}.tar.xz")
-sha256sums=('SKIP')
+source=("@SOURCE@")
+sha256sums=('@SHA256SUM@')
 
 # Usage: _easycp dest files...
 _easycp () {

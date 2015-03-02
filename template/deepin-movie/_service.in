@@ -1,7 +1,7 @@
 <services>
   <service name="download_url">
-    <param name="host">ftp.fau.de</param>
-    <param name="protocol">https</param>
-    <param name="path">/deepin/pool/main/d/deepin-movie/deepin-movie_2.2+20150211132515~f8f651edba.tar.gz</param>
+    <param name="host">@HOST@</param>
+    <param name="protocol">@PROTOCOL@</param>
+    <param name="path">@PATH@</param>
   </service>
 </services>
