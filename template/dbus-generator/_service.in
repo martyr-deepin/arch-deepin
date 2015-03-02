@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">ftp.fau.de</param>
+    <param name="protocol">https</param>
+    <param name="path">/deepin/pool/main/d/dbus-generator/dbus-generator_0.0.3+20141120163131~84ee26c38d.tar.gz</param>
+  </service>
+</services>

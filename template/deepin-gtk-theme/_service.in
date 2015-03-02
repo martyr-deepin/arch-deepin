@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">ftp.fau.de</param>
+    <param name="protocol">https</param>
+    <param name="path">/deepin/pool/main/d/deepin-gtk-theme/deepin-gtk-theme_14.07+20141223164347~1b5a54ef99_all.deb</param>
+  </service>
+</services>

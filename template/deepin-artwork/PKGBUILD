@@ -1,0 +1,22 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=deepin-artwork
+pkgver=2014
+pkgrel=4
+pkgdesc='Deepin artwork themes (sounds)'
+arch=('any')
+license=('LGPL3')
+url="http://www.linuxdeepin.com/"
+groups=('deepin')
+_mirror="https://ftp.fau.de/deepin/pool/main"
+source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}-4_all.deb")
+sha256sums=('SKIP')
+
+package() {
+	cd "$srcdir"
+
+	ar xv ${pkgname}_${pkgver}-4_all.deb
+	tar -C "$pkgdir" -xvzf data.tar.gz
+	rm -rf "${pkgdir}"/usr/share/doc
+}

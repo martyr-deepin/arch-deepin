@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">ftp.fau.de</param>
+    <param name="protocol">https</param>
+    <param name="path">/deepin/pool/main/d/deepin-icon-theme/deepin-icon-theme_13.06.13+20150114160019~dff58a2dad.tar.gz</param>
+  </service>
+</services>

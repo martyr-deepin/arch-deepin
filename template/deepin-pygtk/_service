@@ -1,0 +1,12 @@
+<services>
+  <service name="download_url">
+    <param name="host">ftp.fau.de</param>
+    <param name="protocol">https</param>
+    <param name="path">/deepin/pool/main/p/pygtk/pygtk_2.24.0.orig.tar.gz</param>
+  </service>
+  <service name="download_url">
+    <param name="host">ftp.fau.de</param>
+    <param name="protocol">https</param>
+    <param name="path">/deepin/pool/main/p/pygtk/pygtk_2.24.0-4~saucy.debian.tar.gz</param>
+  </service>
+</services>

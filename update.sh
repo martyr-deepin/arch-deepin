@@ -40,6 +40,21 @@ update_aur() {
     (cd "${aur_dir}"; ./update.sh)
 }
 
+update_obs_dev() {
+    for p in ${obs_pkgs_dev[@]}; do
+        do_obs_trigger_rerun "${obs_dir}/${p}"
+    done
+}
+update_obs_extra() {
+    for p in ${obs_pkgs_extra[@]}; do
+        do_obs_trigger_rerun "${obs_dir}/${p}"
+    done
+}
+update_obs() {
+    for p in ${obs_pkgs_dev[@]} ${obs_pkgs_extra[@]} ${obs_pkgs[@]}; do
+        do_obs_trigger_rerun "${obs_dir}/${p}"
+    done
+}
 do_obs_trigger_rerun() {
     prj_dir="${1}"
     prj_name="$(basename ${1})"
@@ -48,24 +63,6 @@ do_obs_trigger_rerun() {
         cd "${obs_dir}/${p}"
         osc service rr
     )
-}
-
-update_obs_dev() {
-    for p in ${obs_pkgs_dev[@]}; do
-        do_obs_trigger_rerun "${obs_dir}/${p}"
-    done
-}
-
-update_obs_extra() {
-    for p in ${obs_pkgs_extra[@]}; do
-        do_obs_trigger_rerun "${obs_dir}/${p}"
-    done
-}
-
-update_obs() {
-    for p in ${obs_pkgs_dev[@]} ${obs_pkgs_extra[@]} ${obs_pkgs[@]}; do
-        do_obs_trigger_rerun "${obs_dir}/${p}"
-    done
 }
 
 update_"$1"

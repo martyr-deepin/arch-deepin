@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">ftp.fau.de</param>
+    <param name="protocol">https</param>
+    <param name="path">/deepin/pool/main/d/deepin-game-center/deepin-game-center_1.0.1+20141230144448~4e7bbbfda6.tar.gz</param>
+  </service>
+</services>

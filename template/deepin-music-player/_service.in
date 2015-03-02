@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">ftp.fau.de</param>
+    <param name="protocol">https</param>
+    <param name="path">/deepin/pool/main/d/deepin-music-player/deepin-music-player_1.1+20150204093722~081154cf7b.tar.gz</param>
+  </service>
+</services>
