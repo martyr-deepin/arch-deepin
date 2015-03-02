@@ -1,15 +1,7 @@
 <services>
-  <service name="tar_scm">
-    <param name="scm">git</param>
-    <param name="url">git://gitcafe.com/Deepin/deepin-qml-widgets.git</param>
-    <param name="filename">deepin-qml-widgets</param>
-    <param name="versionformat">%cd.%h</param>
-    <param name="versionprefix"></param>
-    <param name="revision">release/2014.2</param>
+  <service name="download_url">
+    <param name="host">ftp.fau.de</param>
+    <param name="protocol">https</param>
+    <param name="path">/deepin/pool/main/d/deepin-qml-widgets/deepin-qml-widgets_0.0.2+20150203171526~feb6d6ad2f.tar.gz</param>
   </service>
-  <service name="recompress">
-    <param name="file">*.tar</param>
-    <param name="compression">xz</param>
-  </service>
-  <service name="set_version"/>
 </services>

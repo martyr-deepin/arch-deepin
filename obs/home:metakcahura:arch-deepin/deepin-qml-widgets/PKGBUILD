@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-qml-widgets
-pkgver=git20140522~d0f293d
+pkgver=0.0.2+20150203171526~feb6d6ad2f
 pkgrel=1
 pkgdesc='Deepin QML widgets'
 arch=('i686' 'x86_64')
@@ -15,17 +15,18 @@ conflicts=('dde-qml-gettext-plugin')
 provides=('dde-qml-gettext-plugin')
 replaces=('dde-qml-gettext-plugin')
 options=('!emptydirs')
-source=("${pkgname}-${pkgver}.tar.xz")
-sha256sums=('SKIP')
+_mirror="https://ftp.fau.de/deepin/pool/main"
+source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
+sha256sums=('eafadf1a7ca22999a9f682b95ddf4f15d00e52a085de2af41cbb755c7694f69e')
 
 build(){
-  cd "${pkgname}-${pkgver}"
+	cd "${pkgname}-${pkgver}"
 
-  qmake && make
+	qmake && make
 }
 
 package() {
-  cd "${pkgname}-${pkgver}"
+	cd "${pkgname}-${pkgver}"
 
-  make INSTALL_ROOT="${pkgdir}" install
+	make INSTALL_ROOT="${pkgdir}" install
 }

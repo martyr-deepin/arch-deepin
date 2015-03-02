@@ -1,7 +1,29 @@
 <services>
-  <service name="download_url">
-    <param name="host">storage.googleapis.com</param>
-    <param name="protocol">https</param>
-    <param name="path">/golang/go1.4.linux-386.tar.gz</param>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://go.googlesource.com/go</param>
+    <param name="filename">go</param>
+    <param name="package-meta">yes</param>
+    <param name="version">1.4.1</param>
+    <param name="versionprefix"></param>
+    <param name="revision">886b02d705ffb1be8b4974ac4c355d480a24e3ec</param>
   </service>
-<service name="download_url"><param name="host">storage.googleapis.com</param><param name="protocol">https</param><param name="path">/golang/go1.4.linux-amd64.tar.gz</param></service></services>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+  <service name="set_version"/>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://go.googlesource.com/tools</param>
+    <param name="filename">go-tools</param>
+    <param name="package-meta">yes</param>
+    <param name="version">git</param>
+    <param name="versionprefix"></param>
+    <param name="revision"></param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+</services>

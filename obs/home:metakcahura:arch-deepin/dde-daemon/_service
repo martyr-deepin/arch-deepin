@@ -1,16 +1,7 @@
 <services>
-  <service name="tar_scm">
-    <param name="scm">git</param>
-    <param name="url">git://gitcafe.com/Deepin/dde-daemon.git</param>
-    <param name="filename">dde-daemon</param>
-    <param name="versionformat">%cd.%h</param>
-    <param name="versionprefix"></param>
-    <param name="revision">release/2014.2</param>
+  <service name="download_url">
+    <param name="host">ftp.fau.de</param>
+    <param name="protocol">https</param>
+    <param name="path">/deepin/pool/main/d/dde-daemon/dde-daemon_0.0.1+20150209101554~660a820a61.tar.gz</param>
   </service>
-  <service name="recompress">
-    <param name="file">*.tar</param>
-    <param name="compression">xz</param>
-  </service>
-  <service name="set_version"/>
 </services>
-

@@ -9,13 +9,14 @@ arch=('any')
 license=('LGPL3')
 url="http://www.linuxdeepin.com/"
 groups=('deepin')
-source=("http://packages.linuxdeepin.com/deepin/pool/main/d/${pkgname}/${pkgname}_${pkgver}-4_all.deb")
-md5sums=('SKIP')
+_mirror="https://ftp.fau.de/deepin/pool/main"
+source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}-4_all.deb")
+sha256sums=('SKIP')
 
 package() {
-  cd "$srcdir"
+	cd "$srcdir"
 
-  ar xv ${pkgname}_${pkgver}-4_all.deb
-  tar -C "$pkgdir" -xvzf data.tar.gz
-  rm -rf "${pkgdir}"/usr/share/doc
+	ar xv ${pkgname}_${pkgver}-4_all.deb
+	tar -C "$pkgdir" -xvzf data.tar.gz
+	rm -rf "${pkgdir}"/usr/share/doc
 }

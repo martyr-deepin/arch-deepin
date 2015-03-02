@@ -9,10 +9,10 @@
 # Contributor: TIanyi Cui <tianyicui@gmail.com>
 
 pkgname=nodejs
-pkgver=0.10.32
-_npmver=2.1.4
-_npmrev=2620216
-pkgrel=8
+pkgver=0.10.35
+_npmver=2.2.0
+_npmrev=6f2b726
+pkgrel=4
 pkgdesc='Evented I/O for V8 javascript'
 arch=('i686' 'x86_64')
 url='http://nodejs.org/'
@@ -25,7 +25,7 @@ checkdepends=('curl')
 options=('!emptydirs')
 source=("http://nodejs.org/dist/v$pkgver/node-v$pkgver.tar.gz"
         "npm-$_npmrev.tar.xz")
-sha256sums=('c2120d0e3d2d191654cb11dbc0a33a7216d53732173317681da9502be0030f10'
+sha256sums=('0043656bb1724cb09dbdc960a2fd6ee37d3badb2f9c75562b2d11235daa40a03'
             'SKIP')
 
 prepare() {

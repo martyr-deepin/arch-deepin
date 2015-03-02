@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">cython.org</param>
     <param name="protocol">http</param>
-    <param name="path">/release/Cython-0.21.tar.gz</param>
+    <param name="path">/release/Cython-0.21.2.tar.gz</param>
   </service>
 </services>

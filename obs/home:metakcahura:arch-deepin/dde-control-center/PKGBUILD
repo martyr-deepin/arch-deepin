@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-control-center
-pkgver=git20140526~951e4cc
+pkgver=0.1+20150211150410~6b5195ef53
 pkgrel=1
 pkgdesc="New control center for linux deepin"
 arch=('i686' 'x86_64')
@@ -13,8 +13,9 @@ depends=('dde-daemon' 'deepin-qml-widgets' 'dde-qml-dbus-factory'
 makedepends=('deepin-gettext-tools' 'qt5-tools')
 groups=('deepin')
 options=(staticlibs)
-source=("${pkgname}-${pkgver}.tar.xz")
-sha256sums=('SKIP')
+_mirror="https://ftp.fau.de/deepin/pool/main"
+source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
+sha256sums=('89ce5952e15f2cebf5f8465ff26e7df788c025e62e4eb29f15d4d08f6e772207')
 
 prepare() {
 	cd "${pkgname}-${pkgver}"

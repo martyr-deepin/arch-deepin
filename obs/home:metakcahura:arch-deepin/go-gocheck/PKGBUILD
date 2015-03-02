@@ -3,19 +3,16 @@
 
 _pkgname=golang-gocheck
 pkgname=go-gocheck
-_pkgverbase=0.0
-_pkgvergit=20131118+85
-_pkgver=${_pkgverbase}~bzr${_pkgvergit}
-pkgver=${_pkgverbase}.${_pkgvergit/+/.}
+pkgver=0.0~bzr20131118+85
 pkgrel=8
 pkgdesc='Richer testing framework for Go libraries and applications to use'
 arch=('any')
 url="http://labix.org/gocheck"
 license=('BSD')
 replaces=('golang-gocheck')
-site="http://packages.linuxdeepin.com/deepin/pool/main/g"
-source=("${site}/${_pkgname}/${_pkgname}_${_pkgver}.orig.tar.gz"
-        "${site}/${_pkgname}/${_pkgname}_${_pkgver}-6.debian.tar.gz")
+_mirror="https://ftp.fau.de/deepin/pool/main"
+source=("${_mirror}/g/${_pkgname}/${_pkgname}_${pkgver}.orig.tar.gz"
+        "${_mirror}/g/${_pkgname}/${_pkgname}_${pkgver}-6.debian.tar.gz")
 sha256sums=('71ba0752af3cd04a42a95ef68c098d251430281c8461272df259d52d6092f7da'
             '3a50e3d0c4ccb9397f13c30a6f057187c419e3b362c6b90767ed0bec049108fc')
 
@@ -23,19 +20,19 @@ _gobuild_dir="${_pkgname}-build"
 _gopkg="launchpad.net/gocheck"
 
 prepare() {
-  cd "${_pkgname}-${_pkgver}"
+	cd "${_pkgname}-${pkgver}"
 
-  # apply patches
-  patchdir="${srcdir}"/debian/patches
-  for f in $(< "${patchdir}"/series); do
-    echo "==> patching: ${f##*/}"
-    # ignore error if patch again
-    patch -Np1 -i $patchdir/$f || echo '==> patch error: ${f##*/}'
-  done
+	# apply patches
+	patchdir="${srcdir}"/debian/patches
+	for f in $(< "${patchdir}"/series); do
+	echo "==> patching: ${f##*/}"
+	# ignore error if patch again
+	patch -Np1 -i $patchdir/$f || echo '==> patch error: ${f##*/}'
+	done
 
-  cd "${srcdir}"
-  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
-  cp -r "${_pkgname}-${_pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
+	cd "${srcdir}"
+	mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+	cp -r "${_pkgname}-${pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
 }
 
 #build() {
@@ -43,8 +40,8 @@ prepare() {
 #}
 
 package() {
-  depends=('go')
+	depends=('go')
 
-  mkdir -p "${pkgdir}"/usr/lib/go/site/src
-  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
+	mkdir -p "${pkgdir}"/usr/lib/go/site/src
+	cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
 }

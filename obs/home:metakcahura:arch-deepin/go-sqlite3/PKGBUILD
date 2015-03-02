@@ -3,18 +3,16 @@
 
 _pkgname=golang-sqlite3
 pkgname=go-sqlite3
-_pkgverbase=0.0
-_pkgvergit=2014090312
-_pkgver=${_pkgverbase}~git${_pkgvergit}
-pkgver=${_pkgverbase}.${_pkgvergit}
+pkgver=0.0~git2014090312
 pkgrel=1
 pkgdesc='File system notification for GO'
 arch=('any')
 url="https://github.com/mattn/go-sqlite3"
 license=('GPL2')
 replaces=('golang-sqlite3')
-source=("http://packages.linuxdeepin.com/deepin/pool/main/g/${_pkgname}/${_pkgname}_${_pkgver}.orig.tar.xz")
-md5sums=('SKIP')
+_mirror="https://ftp.fau.de/deepin/pool/main"
+source=("${_mirror}/g/${_pkgname}/${_pkgname}_${pkgver}.orig.tar.xz")
+sha256sums=('6ea0bf947cc275faf13b6588626a9f8dd248a167f715654c93217d3be4421cc1')
 
 _gobuild_dir="${_pkgname}-build"
 _gopkg="github.com/mattn/go-sqlite3"

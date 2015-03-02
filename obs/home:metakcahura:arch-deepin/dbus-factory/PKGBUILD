@@ -4,8 +4,8 @@
 pkgbase=dbus-factory
 pkgname=('dde-go-dbus-factory'
          'dde-qml-dbus-factory')
-pkgver=0.0.2.20140516.5ed6a4d
-pkgrel=2
+pkgver=0.0.2+20141226160557~7e89f03592
+pkgrel=1
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dbus-factory"
 license=('GPL2')
@@ -14,15 +14,18 @@ makedepends=('go' 'go-dlib' 'qt5-webkit' 'qt5-quickcontrols' 'python2'
              'libdbus' 'dbus-generator')
 groups=('deepin')
 options=('staticlibs')
-source=("${pkgbase}-${pkgver}.tar.xz" "fix-arch.patch")
-sha256sums=('SKIP' 'SKIP')
+_mirror="https://ftp.fau.de/deepin/pool/main"
+source=("${_mirror}/d/${pkgname}/${pkgbase}_${pkgver}.tar.gz"
+        "fix-arch.patch")
+sha256sums=('cb8cb6aa76b94fc6a647d4361bf02793c05a217f87ad23b76e0e5f0211dfe01e'
+            'b01823357e6a1c7178fade964a87c6e80ad55acb9f15e40f4e3d7edf9022c420')
 
 build() {
     cd "${pkgbase}-${pkgver}"
 
     patch -p1 -i ../fix-arch.patch
 
-    make -j8
+    make -j$(expr $(nproc) \* 2 - 1) -l$(nproc)
 }
 
 package_dde-qml-dbus-factory() {

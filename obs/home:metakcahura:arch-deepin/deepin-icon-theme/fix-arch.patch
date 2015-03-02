@@ -6,7 +6,7 @@ diff -ruN a/deepin/index.theme b/deepin/index.theme
  Name=Deepin
  Comment=Default icon theme for linux deepin
 -Inherits=flattr,Faenza
-+Inherits=Flattr,Flattr_NEXT,Faenza
++Inherits=Flattr,Faenza
  
  Example=x-directory-normal
  

@@ -2,52 +2,43 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-movie
-pkgver=git20140528~08a5dde
+pkgver=2.2+20150211132515~f8f651edba
 pkgrel=1
 pkgdesc='deepin movie for linuxdeepin desktop environment'
 arch=('any')
 url="https://github.com/linuxdeepin/deepin-movie"
 license=('GPL3')
-makedepends=('python2-sip')
+makedepends=('python2-sip' 'deepin-gettext-tools')
 groups=('deepin-extra')
 install="${pkgname}.install"
-source=("${pkgname}-${pkgver}.tar.xz" 'generate_mo.sh')
-sha256sums=('SKIP' '89eb6ed5337d7e9e5c77107bf5d763cf1f6aeb429233420e7f67072afe1d2f6e')
+_mirror="https://ftp.fau.de/deepin/pool/main"
+source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
+sha256sums=('4bb5e3ed1f1c346090cb11081916e10a3ef7d2277c3330d768bf49d63eefe385')
 
 prepare() {
-  cd "${pkgname}-${pkgver}"
+    cd "${pkgname}-${pkgver}"
 
-  # fix python version
-  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+    sed 's\python\python2\' -i Makefile
+
+    # fix python version
+    find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build() {
-  cd "${pkgname}-${pkgver}"
+    cd "${pkgname}-${pkgver}"
 
-  cd locale && sh "${srcdir}"/generate_mo.sh
-  #make
+    make
 }
 
 package() {
-  depends=('qt5-declarative' 'qt5-quickcontrols' 'qt5-multimedia' 'qt5-webkit'
-           'qt5-graphicaleffects' 'qt5-imageformats' 'qt5-systems' 'python2-pyqt5'
-           'mediainfo' 'python2-ass' 'deepin-menu' 'deepin-qml-widgets' 'enca'
-           'python2-pysrt' 'python2-setproctitle' 'dde-go-dbus-factory'
-           'deepin-ui' 'desktop-file-utils' 'python2-magic' python2-xpybutil)
+    depends=('qt5-declarative' 'qt5-quickcontrols' 'qt5-multimedia' 'qt5-webkit'
+             'qt5-graphicaleffects' 'qt5-imageformats' 'qt5-systems'
+             'python2-ass' 'python2-magic' 'python2-peewee' 'python2-pyqt5'
+             'python2-pysrt' 'python2-setproctitle' 'python2-xpybutil'
+             'dde-go-dbus-factory' 'deepin-menu' 'deepin-qml-widgets' 'deepin-ui'
+             'desktop-file-utils' 'enca' 'mediainfo' 'qtav')
 
-  cd "${pkgname}-${pkgver}"
+    cd "${pkgname}-${pkgver}"
 
-  #make DESTDIR="${pkgdir}" PREFIX="/usr" install
-
-  install -dm755 "${pkgdir}"/usr/{bin,share/{applications,deepin-movie,icons/hicolor/scalable/apps,locale}}
-
-  install -m 644 *.desktop "${pkgdir}"/usr/share/applications/
-  install -m 644 image/deepin-movie.svg "${pkgdir}"/usr/share/icons/hicolor/scalable/apps/
-
-  mv -v *.py "${pkgdir}"/usr/share/deepin-movie/
-  mv -v *.qml "${pkgdir}"/usr/share/deepin-movie/
-  mv -v image "${pkgdir}"/usr/share/deepin-movie/
-  mv -v locale/mo/* "${pkgdir}"/usr/share/locale/
-
-  ln -s /usr/share/deepin-movie/main.py "$pkgdir"/usr/bin/deepin-movie
+    make DESTDIR="${pkgdir}" install
 }

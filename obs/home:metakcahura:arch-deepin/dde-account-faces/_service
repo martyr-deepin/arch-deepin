@@ -1,7 +1,7 @@
 <services>
   <service name="download_url">
-    <param name="host">packages.linuxdeepin.com</param>
-    <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/d/dde-account-faces/dde-account-faces_1.0.4-2~trusty.tar.gz</param>
+    <param name="host">ftp.fau.de</param>
+    <param name="protocol">https</param>
+    <param name="path">/deepin/pool/main/d/dde-account-faces/dde-account-faces_1.0.7-1~trusty.tar.gz</param>
   </service>
 </services>

@@ -2,9 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-gtk-theme
-_pkgver=14.07
-_pkgvergit=20141030105337~708d5d2bf0
-pkgver=20141030.708d5d2
+pkgver=14.07+20141223164347~1b5a54ef99
 pkgrel=1
 pkgdesc="Deepin GTK Theme."
 arch=('any')
@@ -12,27 +10,20 @@ url="https://gitcafe.com/Deepin/deepin-gtk-theme"
 license=('LGPL3')
 optdepends=('gtk-engine-murrine: for gtk2 themes')
 groups=('deepin')
-source=("http://packages.linuxdeepin.com/deepin/pool/main/d/$pkgname/${pkgname}_${_pkgver}+${_pkgvergit}_all.deb")
+_mirror="https://ftp.fau.de/deepin/pool/main"
+source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}_all.deb")
 sha256sums=('SKIP')
 
 package() {
-  depends=('gtk-engine-unico')
+	depends=('gtk-engine-unico')
 
-  cd "$srcdir"
-  
-  #mkdir -p "$pkgdir/usr/share/themes"
-  #cp -rf Deepin "$pkgdir/usr/share/themes/Deepin-Legacy"
-  #cp -rf Deepin-Dark "$pkgdir/usr/share/themes/Deepin"
-  #cp -rf Deepin-Fasion "$pkgdir/usr/share/themes/"
-  #cp -rf Deepin-Gray "$pkgdir/usr/share/themes/"
-  #cp -rf Deepin-blared "$pkgdir/usr/share/themes/"
-  #cp -rf debian/backgrounds "$pkgdir/usr/share/"
-  
-  ar xv ${pkgname}_${_pkgver}+${_pkgvergit}_all.deb
-  tar -C "$pkgdir" -xvJf data.tar.xz
-  rm -rf "${pkgdir}"/usr/share/doc
-  
-  # Change gtk-theme name
-  #sed -i 's/Deepin-Dark/Deepin/g' "$pkgdir/usr/share/themes/Deepin/index.theme"
-  #sed -i 's/Deepin/Deepin-Legacy/g' "$pkgdir/usr/share/themes/Deepin-Legacy/index.theme"
+	cd "$srcdir"
+
+	ar xv ${pkgname}_${pkgver}_all.deb
+	tar -C "$pkgdir" -xvJf data.tar.xz
+	rm -rf "${pkgdir}"/usr/share/doc
+
+	# Change gtk-theme name
+	#sed -i 's/Deepin-Dark/Deepin/g' "$pkgdir/usr/share/themes/Deepin/index.theme"
+	#sed -i 's/Deepin/Deepin-Legacy/g' "$pkgdir/usr/share/themes/Deepin-Legacy/index.theme"
 }

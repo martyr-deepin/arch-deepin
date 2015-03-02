@@ -31,7 +31,6 @@
   <package name="go-dlib" state=" " />
   <package name="go-xgb" state=" " />
   <package name="go-xgbutil" state=" " />
-  <package name="gtk-engine-unico" state=" " />
   <package name="libmediainfo" state=" " />
   <package name="libzen" state=" " />
   <package name="lightdm" state=" " />
@@ -76,4 +75,9 @@
   <package name="ffmpeg" state=" " />
   <package name="go-git" state=" " />
   <package name="xdotool" state=" " />
+  <package name="go-goconvey" state=" " />
+  <package name="hardening-wrapper" state=" " />
+  <package name="libunwind" state=" " />
+  <package name="python2-peewee" state=" " />
+  <package name="pywebkitgtk" state=" " />
 </project>

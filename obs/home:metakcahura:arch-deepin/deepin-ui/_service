@@ -1,13 +1,7 @@
 <services>
-  <service name="tar_scm">
-    <param name="scm">git</param>
-    <param name="url">git://gitcafe.com/Deepin/deepin-ui.git</param>
-    <param name="filename">deepin-ui</param>
-    <param name="versionformat">%cd.%h</param>
+  <service name="download_url">
+    <param name="host">ftp.fau.de</param>
+    <param name="protocol">https</param>
+    <param name="path">/deepin/pool/main/d/deepin-ui/deepin-ui_1.1+20141229194712~5a86faec50.tar.gz</param>
   </service>
-  <service name="recompress">
-    <param name="file">*.tar</param>
-    <param name="compression">xz</param>
-  </service>
-  <service name="set_version"/>
 </services>

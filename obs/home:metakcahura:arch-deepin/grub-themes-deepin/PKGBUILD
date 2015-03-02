@@ -9,7 +9,8 @@ arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('GPL3')
 groups=('deepin')
-source=("http://packages.linuxdeepin.com/deepin/pool/universe/g/${pkgname}_${pkgver}-${pkgrel}.tar.gz")
+_mirror="https://ftp.fau.de/deepin/pool/universe"
+source=("${_mirror}/g/${pkgname}/${pkgname}_${pkgver}-${pkgrel}.tar.gz")
 sha256sums=('9c951864d49f58a253bc310342ec8d23fd78aa1683188a79a91e3f979091f842')
 
 package() {

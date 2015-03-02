@@ -1,15 +1,7 @@
 <services>
-  <service name="tar_scm">
-    <param name="scm">git</param>
-    <param name="url">git://gitcafe.com/Deepin/deepin-notifications.git</param>
-    <param name="filename">deepin-notifications</param>
-    <param name="versionformat">%cd.%h.1</param>
-    <param name="versionprefix"></param>
-    <param name="revision">release/2014.2</param>
+  <service name="download_url">
+    <param name="host">ftp.fau.de</param>
+    <param name="protocol">https</param>
+    <param name="path">/deepin/pool/main/d/deepin-notifications/deepin-notifications_0.3+20141216180805~a93d61767c.tar.gz</param>
   </service>
-  <service name="recompress">
-    <param name="file">*.tar</param>
-    <param name="compression">xz</param>
-  </service>
-  <service name="set_version"/>
 </services>

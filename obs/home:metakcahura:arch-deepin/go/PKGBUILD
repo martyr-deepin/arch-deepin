@@ -11,35 +11,31 @@
 
 pkgname=go
 epoch=2
-pkgver=1.4
+pkgver=1.4.1
 pkgrel=1
 pkgdesc='Compiler and tools for the Go programming language from Google'
 arch=('x86_64' 'i686')
 url='http://golang.org/'
 license=('BSD')
-depends=('perl' 'gawk')
-makedepends=('inetutils' 'mercurial' 'git')
+makedepends=('inetutils' 'git' 'mercurial')
 options=('!strip' 'staticlibs')
 optdepends=('mercurial: for fetching sources from mercurial repositories'
             'git: for fetching sources from git repositories'
             'bzr: for fetching sources from bazaar repositories'
             'subversion: for fetching sources from subversion repositories')
 install="$pkgname.install"
+source=("${pkgname}-${pkgver}.tar.xz" 'go-tools-git.tar.xz')
+sha256sums=('SKIP' 'SKIP')
 
-if [ "$CARCH" == 'x86_64' ]; then
- source=("https://storage.googleapis.com/golang/${pkgname}$pkgver.linux-amd64.tar.gz"
-	       "go-tools.tar.xz")
- sha1sums=('cd82abcb0734f82f7cf2d576c9528cebdafac4c6' 'SKIP')
-else
- source=("https://storage.googleapis.com/golang/${pkgname}$pkgver.linux-386.tar.gz"
-	       "go-tools.tar.xz")
- sha1sums=('cb18d8122bfd3bbba20fa1a19b8f7566dcff795d' 'SKIP')
-fi
+prepare() {
+  mkdir -p src/golang.org/x/tools
+  mv -v go-tools-git/* src/golang.org/x/tools/
+}
 
 build() {
-  cd "$pkgname/src"
+  cd "$pkgname-$pkgver/src"
 
-  export GOROOT="$srcdir/$pkgname"
+  export GOROOT="$srcdir/$pkgname-$pkgver"
   export GOBIN="$GOROOT/bin"
   export GOPATH="$srcdir/"
   export GOROOT_FINAL=/usr/lib/go
@@ -51,14 +47,15 @@ build() {
   #  * Chromium, which is not expected to be used on older i686 CPUs
   #  * Julia, which requires SSE2
   #
-  # Go is so slow that it is unusable on i686 when SSE2 is not enabled, so I am
-  # also making an exception for Go.
+  # Go is so slow that it is unusable on i686 when SSE2 is not enabled,
+  # so I am also making an exception for Go.
   #
   # If you really want to build Go without SSE2 support, just uncomment the
   # following export and rebuild:
   #
   # export GO386=387
-
+  #
+  
   # Enable ARM crosscompilation for linux
   export GOOS=linux
   export GOARCH=arm
@@ -80,7 +77,6 @@ build() {
     i686) GOARCH=386 ;;
   esac
 
-  cd "$srcdir/"
   #$GOROOT/bin/go get -d golang.org/x/tools/cmd/godoc
   $GOROOT/bin/go build -o $srcdir/godoc golang.org/x/tools/cmd/godoc
   for tool in vet cover; do
@@ -90,9 +86,9 @@ build() {
 }
 
 check() {
-  cd "$pkgname"
+  cd "$pkgname-$pkgver"
 
-  export GO386=387
+  #export GO386=387
 
   export GOOS=linux
   if [ "$CARCH" == 'x86_64' ]; then
@@ -101,18 +97,18 @@ check() {
     export GOARCH=386
   fi
 
-  export GOROOT="$srcdir/$pkgname"
+  export GOROOT="$srcdir/$pkgname-$pkgver"
   export GOBIN="$GOROOT/bin"
-  export PATH="$srcdir/$pkgname/bin:$PATH"
+  export PATH="$srcdir/$pkgname-$pkgver/bin:$PATH"
 
   # TestSimpleMulticastListener will fail in standard chroot
   cd src && bash run.bash --no-rebuild || true
 }
 
 package() {
-  cd "$pkgname"
+  cd "$pkgname-$pkgver"
 
-  export GOROOT="$srcdir/$pkgname"
+  export GOROOT="$srcdir/$pkgname-$pkgver"
   export GOBIN="$GOROOT/bin"
 
   install -Dm755 "$srcdir/godoc" "$pkgdir/usr/bin/godoc"
@@ -153,6 +149,11 @@ package() {
   # This is to make go get code.google.com/p/go-tour/gotour and
   # then running the gotour executable work out of the box.
   ln -sf /usr/bin "$pkgdir/usr/lib/go/bin"
+
+  # For FS#42660 / FS#42661 / gox
+  install -Dm755 src/make.bash "$pkgdir/usr/lib/go/src/make.bash"
+  install -Dm755 src/run.bash "$pkgdir/usr/lib/go/src/run.bash"
+  cp -r misc/ "$pkgdir/usr/lib/go/"
 
   # For godoc
   install -Dm644 favicon.ico "$pkgdir/usr/lib/go/favicon.ico"

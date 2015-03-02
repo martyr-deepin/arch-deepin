@@ -3,18 +3,16 @@
 
 _pkgname=golang-graphics-go
 pkgname=go-graphics-go
-_pkgverbase=0.0
-_pkgvergit=20140903
-_pkgver=${_pkgverbase}~git${_pkgvergit}
-pkgver=${_pkgverbase}.${_pkgvergit}
+pkgver=0.0~git20140903
 pkgrel=1
 pkgdesc='File system notification for GO'
 arch=('any')
 url="http://code.google.com/p/graphics-go/"
 license=('GPL2')
 replaces=('golang-graphics-go')
-source=("http://packages.linuxdeepin.com/deepin/pool/main/g/${_pkgname}/${_pkgname}_${_pkgver}.orig.tar.xz")
-md5sums=('SKIP')
+_mirror="https://ftp.fau.de/deepin/pool/main"
+source=("${_mirror}/g/${_pkgname}/${_pkgname}_${pkgver}.orig.tar.xz")
+sha256sums=('ae9471645f94a0ed070c5695ad087cff3de1bb01ba40f56ad786c6de75e06218')
 
 _gobuild_dir="${_pkgname}-build"
 _gopkg="code.google.com/p/graphics-go/graphics"

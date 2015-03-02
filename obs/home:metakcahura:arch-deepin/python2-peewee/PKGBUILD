@@ -1,0 +1,21 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=python2-peewee
+pkgver=2.4.7
+pkgrel=1
+pkgdesc="A small, expressive ORM for Python. Supports postgresql, mysql and sqlite."
+url="https://pypi.python.org/pypi/peewee/"
+arch=('any')
+license=('MIT')
+depends=('python2')
+makedepends=('python2-setuptools')
+optdepends=('python2-psycopg2' 'mysql-python')
+source=(http://pypi.python.org/packages/source/p/peewee/peewee-$pkgver.tar.gz)
+md5sums=('14687b7193dfdcdb0cf6f07ff59e4897')
+
+package() {
+	cd "peewee-$pkgver"
+
+	python2 setup.py install --prefix=/usr --root=$pkgdir
+}

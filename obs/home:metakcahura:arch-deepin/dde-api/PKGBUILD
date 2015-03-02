@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-api
-pkgver=git20140516~7c4023a
+pkgver=0.0.2+20150107093816~d93500c16a
 pkgrel=1
 pkgdesc='Go-lang bingdings for dde-daemon'
 arch=('i686' 'x86_64')
@@ -13,8 +13,9 @@ makedepends=('go' 'go-dlib' 'go-xgb' 'go-xgbutil'
 			 'go-fsnotify' 'dde-go-dbus-factory')
 groups=('deepin')
 options=(staticlibs)
-source=("${pkgname}-${pkgver}.tar.xz")
-sha256sums=('SKIP')
+_mirror="https://ftp.fau.de/deepin/pool/main"
+source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
+sha256sums=('7a45f0c64513c9be7e7795fcb58c1c3eb694e6a1a6a36fb6037281e1dc72e813')
 
 build(){
   cd "${pkgname}-${pkgver}"

@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">pywebkitgtk.googlecode.com</param>
+    <param name="protocol">http</param>
+    <param name="path">/files/pywebkitgtk-1.1.8.tar.gz</param>
+  </service>
+</services>

@@ -1,15 +1,7 @@
 <services>
-  <service name="tar_scm">
-    <param name="scm">git</param>
-    <param name="url">git://gitcafe.com/Deepin/dde-dock-applets.git</param>
-    <param name="filename">dde-dock-applets</param>
-    <param name="versionformat">%cd.%h</param>
-    <param name="versionprefix"></param>
-    <param name="revision">release/2014.2</param>
+  <service name="download_url">
+    <param name="host">ftp.fau.de</param>
+    <param name="protocol">https</param>
+    <param name="path">/deepin/pool/main/d/dde-dock-applets/dde-dock-applets_0.0.4+20150129143814~7c87fbdc84.tar.gz</param>
   </service>
-  <service name="recompress">
-    <param name="file">*.tar</param>
-    <param name="compression">xz</param>
-  </service>
-  <service name="set_version"/>
 </services>
