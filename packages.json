@@ -1,0 +1,200 @@
+[
+  {
+    "Name": "dde-account-faces",
+    "OriginRepoDir": "dde-account-faces",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "dde-api",
+    "OriginRepoDir": "dde-api",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "dde-control-center",
+    "OriginRepoDir": "dde-control-center",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "dde-daemon",
+    "OriginRepoDir": "dde-daemon",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "dde-dock-applets",
+    "OriginRepoDir": "dde-dock-applets",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "dde-workspace",
+    "OriginRepoDir": "deepin-desktop-environment",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-artwork",
+    "OriginRepoDir": "deepin-artwork",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-artwork-themes",
+    "OriginRepoDir": "deepin-artwork-themes",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-compiz",
+    "OriginRepoDir": "compiz",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-cursor-theme",
+    "OriginRepoDir": "deepin-cursor-theme",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-dbus-factory",
+    "OriginRepoDir": "dbus-factory",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-dbus-generator",
+    "OriginRepoDir": "dbus-generator",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-default-gsettings",
+    "OriginRepoDir": "deepin-default-gsettings",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-game-center",
+    "OriginRepoDir": "deepin-game-center",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-gettext-tools",
+    "OriginRepoDir": "deepin-gettext-tools",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "python2-deepin-gsettings",
+    "OriginRepoDir": "deepin-gsettings",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-gtk-theme",
+    "OriginRepoDir": "deepin-gtk-theme",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-icon-theme",
+    "OriginRepoDir": "deepin-icon-theme",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-menu",
+    "OriginRepoDir": "deepin-menu",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-movie",
+    "OriginRepoDir": "deepin-movie",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-music-player",
+    "OriginRepoDir": "deepin-music-player",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-notifications",
+    "OriginRepoDir": "deepin-notifications",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-pygtk",
+    "OriginRepoDir": "pygtk",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-qml-widgets",
+    "OriginRepoDir": "deepin-qml-widgets",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-screenshot",
+    "OriginRepoDir": "deepin-screenshot",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-terminal",
+    "OriginRepoDir": "deepin-terminal",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-ui",
+    "OriginRepoDir": "deepin-ui",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-utils",
+    "OriginRepoDir": "deepin-utils",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "deepin-vte",
+    "OriginRepoDir": "vte",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "go-dlib",
+    "OriginRepoDir": "golang-dlib-dev",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "grub-theme-deepin",
+    "OriginRepoDir": "grub-themes-deepin",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "libdeepin-webkit",
+    "OriginRepoDir": "deepin-webkit",
+    "Updated": false,
+    "LastVersion": ""
+  },
+  {
+    "Name": "startdde",
+    "OriginRepoDir": "startdde",
+    "Updated": false,
+    "LastVersion": ""
+  }
+]

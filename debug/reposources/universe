@@ -1,0 +1,3026 @@
+Package: acpi-call
+Binary: acpi-call-tools, acpi-call-source
+Version: 20140823-1
+Section: kernel
+Maintainer: Thomas Koch <linrunner@gmx.net>
+Build-Depends: debhelper (>= 7.0.50~), bzip2
+Architecture: all
+Standards-Version: 3.9.3
+Format: 1.0
+Directory: pool/universe/a/acpi-call
+Files:
+ 56134d970b0c43eb4256e86ced7c7404 90165 acpi-call_20140823-1.tar.gz
+ fad0a07bed12f60ad9d4b9d5b3992ef4 1000 acpi-call_20140823-1.dsc
+Checksums-Sha1:
+ d1a3d692422dd6cbeac165951f9d09b1e2ba2106 90165 acpi-call_20140823-1.tar.gz
+ ce42f30b3887b121009b7a071ee5bc12cc19a252 1000 acpi-call_20140823-1.dsc
+Checksums-Sha256:
+ 0f5b5a4be84ecb5a17e4c0da3ef25c30d41162156637649cb293a480456803f2 90165 acpi-call_20140823-1.tar.gz
+ b719da69a91c9c153fa65bea5df8a92595b6edc9e44ede85369fccdecbf822a7 1000 acpi-call_20140823-1.dsc
+Homepage: https://github.com/mkottman/acpi_call
+Package-List: acpi-call-source deb kernel optional
+ acpi-call-tools deb kernel optional
+Vcs-Git: git://github.com/mkottman/acpi_call.git
+Vcs-Browser: https://github.com/mkottman/acpi_call.git
+
+Package: acpi-call-transition
+Binary: acpi-call-tools
+Version: 20141111
+Section: oldlibs
+Maintainer: Thomas Koch <linrunner@gmx.net>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.6
+Format: 3.0 (native)
+Directory: pool/universe/a/acpi-call-transition
+Files:
+ fca291ed01c4cce2aeeaeb9dc353ecba 1372 acpi-call-transition_20141111.tar.gz
+ 2a9b5e5965b897deb4895cf504b3e469 1424 acpi-call-transition_20141111.dsc
+Checksums-Sha1:
+ 0ac2d200045516af55032f631008ca469ab07e57 1372 acpi-call-transition_20141111.tar.gz
+ 8bc2aa8ef441062a779cf67fbd5df690eee4316e 1424 acpi-call-transition_20141111.dsc
+Checksums-Sha256:
+ b271110d4688a0b62e973c7bf1a9023f50903922055579d567566ae8723d80fd 1372 acpi-call-transition_20141111.tar.gz
+ 7a42e44a3a4362efee9aa1fabb0d51be02522d54bb0bf2720851121a6ce962d7 1424 acpi-call-transition_20141111.dsc
+Package-List: acpi-call-tools deb oldlibs extra
+
+Package: aptik
+Binary: aptik
+Version: 1.6.1~65~ubuntu14.04.1
+Section: utils
+Maintainer: Tony George <tony.george.kol@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac, libgtk-3-dev, libgee-dev, libsoup2.4-dev, libjson-glib-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (native)
+Directory: pool/universe/a/aptik
+Files:
+ 4e6c8da7a59c3501434233bf8d4ef0aa 266772 aptik_1.6.1~65~ubuntu14.04.1.tar.gz
+ 104313a57f26ab083959a4567ce48607 688 aptik_1.6.1~65~ubuntu14.04.1.dsc
+Checksums-Sha1:
+ 4322e195c0b151eb30f010cfe42efb6a2bb4d7d3 266772 aptik_1.6.1~65~ubuntu14.04.1.tar.gz
+ 11bc3ba025ee19fd7495574ab932fae0952f5f0f 688 aptik_1.6.1~65~ubuntu14.04.1.dsc
+Checksums-Sha256:
+ d3f02f6fc1a07115b051f08d761e6911ceb75dcc2d0a2c2ad2c59fc18ea54782 266772 aptik_1.6.1~65~ubuntu14.04.1.tar.gz
+ 9c85765ee0aca588b2c21904a1e88bce0793bd3a525f66e01ee6216adf86719f 688 aptik_1.6.1~65~ubuntu14.04.1.dsc
+Homepage: http://teejeetech.blogspot.in/
+Package-List: aptik deb utils extra
+
+Package: autotools-dev
+Format: 3.0 (native)
+Binary: autotools-dev
+Architecture: all
+Version: 20140510.1
+Maintainer: Henrique de Moraes Holschuh <hmh@debian.org>
+Homepage: http://savannah.gnu.org/projects/config/
+Standards-Version: 3.9.3
+Vcs-Browser: http://git.debian.org/?p=users/hmh/autotools-dev.git
+Vcs-Git: git://git.debian.org/users/hmh/autotools-dev.git
+Build-Depends: debhelper (>> 7)
+Build-Depends-Indep: perl
+Package-List:
+ autotools-dev deb devel optional
+Priority: optional
+Section: devel
+Directory: pool/universe/a/autotools-dev
+Files: 
+ d5310e581dde71c0eeb2f25e009033cb 1305 autotools-dev_20140510.1.dsc
+ 220987afe2d55d86a5c5c64fbd016841 71165 autotools-dev_20140510.1.tar.gz
+Checksums-Sha1: 
+ 13908dd84f50c2f340ba326ac9e418ab488a9688 1305 autotools-dev_20140510.1.dsc
+ f4f779c114471385deaf1d33572c45895eccfdca 71165 autotools-dev_20140510.1.tar.gz
+Checksums-Sha256: 
+ ccf36a5f25f98e52e505363d4bb28cfa5f31104a96f2010940c0fbc35c3eda90 1305 autotools-dev_20140510.1.dsc
+ fdd7573224bb9747431b7af5deb1d7badd4bdac71171e77190fe475b0558dfc9 71165 autotools-dev_20140510.1.tar.gz
+
+Package: bbswitch
+Binary: bbswitch-dkms, bbswitch-source
+Version: 0.8-1~trustyppa1
+Section: kernel
+Maintainer: The Bumblebee Project <bumblebee@lists.launchpad.net>
+Build-Depends: debhelper (>= 9), dkms
+Architecture: all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/b/bbswitch
+Files:
+ 5b116b31ace3604ddf9d1fc1f4bc5807 15800 bbswitch_0.8.orig.tar.gz
+ eda1c8fee9b287b6e06668ca7769777e 2507 bbswitch_0.8-1~trustyppa1.debian.tar.gz
+ f78e92f4e6b6a474cef0668abbb8b881 1688 bbswitch_0.8-1~trustyppa1.dsc
+Checksums-Sha1:
+ e282ee682d794e3962baa4dead01917c42571e78 15800 bbswitch_0.8.orig.tar.gz
+ 0647e62bf004976dac0af71a35ff53c21d4cffb6 2507 bbswitch_0.8-1~trustyppa1.debian.tar.gz
+ 72a8bead26d1ecf0af09968552bd394c2e02bfbc 1688 bbswitch_0.8-1~trustyppa1.dsc
+Checksums-Sha256:
+ 76cabd3f734fb4fe6ebfe3ec9814138d0d6f47d47238521ecbd6a986b60d1477 15800 bbswitch_0.8.orig.tar.gz
+ bc1d060bf9642e492f179dd2b8f3f8bf0545166d6f83ca48691ca64a0bb83608 2507 bbswitch_0.8-1~trustyppa1.debian.tar.gz
+ db0fe48f29020afdd9215ae317d1b92d8a7591594df74199ab63ad4a55d17a60 1688 bbswitch_0.8-1~trustyppa1.dsc
+Homepage: https://github.com/Bumblebee-Project/bbswitch
+Uploaders: Peter Lekensteyn <lekensteyn@gmail.com>, Bruno Pagani <bruno.n.pagani@gmail.com>
+Package-List: bbswitch-dkms deb kernel extra
+ bbswitch-source deb kernel extra
+Vcs-Git: git://github.com/Bumblebee-Project/bbswitch.git
+Vcs-Browser: https://github.com/Bumblebee-Project/bbswitch
+
+Package: boost1.49
+Format: 3.0 (quilt)
+Binary: libboost1.49-dbg, libboost1.49-dev, libboost1.49-all-dev, libboost1.49-doc, libboost-chrono1.49.0, libboost-chrono1.49-dev, libboost-date-time1.49.0, libboost-date-time1.49-dev, libboost-filesystem1.49.0, libboost-filesystem1.49-dev, libboost-graph1.49.0, libboost-graph1.49-dev, libboost-graph-parallel1.49.0, libboost-graph-parallel1.49-dev, libboost-iostreams1.49.0, libboost-iostreams1.49-dev, libboost-locale1.49.0, libboost-locale1.49-dev, libboost-math1.49.0, libboost-math1.49-dev, libboost-mpi1.49.0, libboost-mpi1.49-dev, libboost-mpi-python1.49.0, libboost-mpi-python1.49-dev, libboost-program-options1.49.0, libboost-program-options1.49-dev, libboost-python1.49.0, libboost-python1.49-dev, libboost-random1.49.0, libboost-random1.49-dev, libboost-regex1.49.0, libboost-regex1.49-dev, libboost-serialization1.49.0, libboost-serialization1.49-dev, libboost-signals1.49.0, libboost-signals1.49-dev, libboost-system1.49.0, libboost-system1.49-dev, libboost-test1.49.0,
+ libboost-test1.49-dev, libboost-thread1.49.0, libboost-thread1.49-dev, libboost-timer1.49.0, libboost-timer1.49-dev, libboost-wave1.49.0,
+ libboost-wave1.49-dev
+Architecture: any all
+Version: 1.49.0-4
+Maintainer: Debian Boost Team <pkg-boost-devel@lists.alioth.debian.org>
+Uploaders: Steve M. Robbins <smr@debian.org>, Domenico Andreoli <cavok@debian.org>
+Homepage: http://www.boost.org/
+Standards-Version: 3.9.2
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-boost/boost/trunk/
+Vcs-Svn: svn://svn.debian.org/svn/pkg-boost/boost/trunk
+Build-Depends: debhelper (>= 8), zlib1g-dev, libbz2-dev, libicu-dev, mpi-default-dev, bison, flex, docbook-to-man, help2man, xsltproc, doxygen, python, python-all-dev, python3, python3-all-dev (>= 3.1)
+Build-Conflicts: libopenmpi-dev (= 1.3.2-2)
+Package-List:
+ libboost-chrono1.49-dev deb libdevel optional
+ libboost-chrono1.49.0 deb libs optional
+ libboost-date-time1.49-dev deb libdevel optional
+ libboost-date-time1.49.0 deb libs optional
+ libboost-filesystem1.49-dev deb libdevel optional
+ libboost-filesystem1.49.0 deb libs optional
+ libboost-graph-parallel1.49-dev deb libdevel optional
+ libboost-graph-parallel1.49.0 deb libs optional
+ libboost-graph1.49-dev deb libdevel optional
+ libboost-graph1.49.0 deb libs optional
+ libboost-iostreams1.49-dev deb libdevel optional
+ libboost-iostreams1.49.0 deb libs important
+ libboost-locale1.49-dev deb libdevel optional
+ libboost-locale1.49.0 deb libs optional
+ libboost-math1.49-dev deb libdevel optional
+ libboost-math1.49.0 deb libs optional
+ libboost-mpi-python1.49-dev deb libdevel optional
+ libboost-mpi-python1.49.0 deb python optional
+ libboost-mpi1.49-dev deb libdevel optional
+ libboost-mpi1.49.0 deb libs optional
+ libboost-program-options1.49-dev deb libdevel optional
+ libboost-program-options1.49.0 deb libs optional
+ libboost-python1.49-dev deb libdevel optional
+ libboost-python1.49.0 deb python optional
+ libboost-random1.49-dev deb libdevel optional
+ libboost-random1.49.0 deb libs optional
+ libboost-regex1.49-dev deb libdevel optional
+ libboost-regex1.49.0 deb libs optional
+ libboost-serialization1.49-dev deb libdevel optional
+ libboost-serialization1.49.0 deb libs optional
+ libboost-signals1.49-dev deb libdevel optional
+ libboost-signals1.49.0 deb libs optional
+ libboost-system1.49-dev deb libdevel optional
+ libboost-system1.49.0 deb libs optional
+ libboost-test1.49-dev deb libdevel optional
+ libboost-test1.49.0 deb libs optional
+ libboost-thread1.49-dev deb libdevel optional
+ libboost-thread1.49.0 deb libs optional
+ libboost-timer1.49-dev deb libdevel optional
+ libboost-timer1.49.0 deb libs optional
+ libboost-wave1.49-dev deb libdevel optional
+ libboost-wave1.49.0 deb libs optional
+ libboost1.49-all-dev deb libdevel optional
+ libboost1.49-dbg deb debug extra
+ libboost1.49-dev deb libdevel optional
+ libboost1.49-doc deb doc optional
+Priority: optional
+Section: libs
+Directory: pool/universe/b/boost1.49
+Files: 
+ 458dee20680da1172d9c8b86d6c1a97f 4680 boost1.49_1.49.0-4.dsc
+ 0d202cb811f934282dea64856a175698 48499961 boost1.49_1.49.0.orig.tar.bz2
+ 86d5a84ee294bf6eaf532bb3f3a8cfd7 109322 boost1.49_1.49.0-4.debian.tar.gz
+Checksums-Sha1: 
+ 7e0a41e9720bccf8baee6b949e60f95afa32ee0b 4680 boost1.49_1.49.0-4.dsc
+ 26a52840e9d12f829e3008589abf0a925ce88524 48499961 boost1.49_1.49.0.orig.tar.bz2
+ ffb3f7e63d0dbfb81a32e398ab344839bc8a0dc1 109322 boost1.49_1.49.0-4.debian.tar.gz
+Checksums-Sha256: 
+ 9dfecb748fba6580d352b38148c893bb009e8023d92483ba944bea415e5987f3 4680 boost1.49_1.49.0-4.dsc
+ dd748a7f5507a7e7af74f452e1c52a64e651ed1f7263fce438a06641d2180d3c 48499961 boost1.49_1.49.0.orig.tar.bz2
+ a48c15d2e97133599f6d1c0f30cf8488962ad7d87b4bb8bdb60314a7609023cb 109322 boost1.49_1.49.0-4.debian.tar.gz
+
+Package: builddeb
+Binary: builddeb
+Version: 1.28-0ubuntu1~trusty
+Section: devel
+Maintainer: pasgui (lgp203.free.fr) <lgp203@free.fr>
+Build-Depends: debhelper (>= 9), quilt (>= 0.40), zlib1g-dev
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/b/builddeb
+Files:
+ 469fa2327c8302197bd0926112c53db0 2839083 builddeb_1.28.orig.tar.gz
+ 6c55815ffb2f5a4acdc97778de3e973b 7963 builddeb_1.28-0ubuntu1~trusty.debian.tar.gz
+ 5abd82686cde1c92b2860a5783655a22 1131 builddeb_1.28-0ubuntu1~trusty.dsc
+Checksums-Sha1:
+ 5a10ff29445ab49066f55a3fb473d68cf577aa09 2839083 builddeb_1.28.orig.tar.gz
+ 9156b9313b2600052117eb186358c3663df16b1f 7963 builddeb_1.28-0ubuntu1~trusty.debian.tar.gz
+ 31f4727cf1c58c8897e572928e702ab21f43f42c 1131 builddeb_1.28-0ubuntu1~trusty.dsc
+Checksums-Sha256:
+ aaeb7d2989c8f7289e1c3d339501e4babdc756e3e3c802f4a47591de45f9ae5b 2839083 builddeb_1.28.orig.tar.gz
+ 493ce58f2b2ce89d90be9206496c9ba7cea6854e2d9a83679790dccadb429461 7963 builddeb_1.28-0ubuntu1~trusty.debian.tar.gz
+ 2fc9341ea7f36bce26a8acb7a9c64024236bc4e8a60d35442f5f6b69301c993b 1131 builddeb_1.28-0ubuntu1~trusty.dsc
+Homepage: http://lgp203.free.fr
+Package-List: builddeb deb contrib/devel optional
+
+Package: bumblebee
+Binary: bumblebee, bumblebee-nvidia, bumblebee-dbg
+Version: 3.2.1-90~trustyppa1
+Section: utils
+Maintainer: The Bumblebee Project <bumblebee@lists.launchpad.net>
+Build-Depends: debhelper (>= 9), libbsd-dev (>= 0.2.0), pkg-config, libx11-dev, libglib2.0-dev, help2man, dh-systemd (>= 1.4)
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/b/bumblebee
+Files:
+ 30974e677bb13e8a3825fd6f3e7d3b24 143110 bumblebee_3.2.1.orig.tar.gz
+ db18e5fc8efc9718fe01dd0e0088025b 7324 bumblebee_3.2.1-90~trustyppa1.debian.tar.gz
+ 5bcbdf797d0a89de24bf85079a10bead 1822 bumblebee_3.2.1-90~trustyppa1.dsc
+Checksums-Sha1:
+ a715f4aa1b0c24dd4352ff7e0bc390f1e4e03cd9 143110 bumblebee_3.2.1.orig.tar.gz
+ 731149ee604032754adc36d0c3b15d39869ec707 7324 bumblebee_3.2.1-90~trustyppa1.debian.tar.gz
+ 387c361bbf7a9ca5adcd4cd082333174a04dd955 1822 bumblebee_3.2.1-90~trustyppa1.dsc
+Checksums-Sha256:
+ 1018703b07e2f607a4641249d69478ce076ae5a1e9dd6cff5694d394fa7ee30e 143110 bumblebee_3.2.1.orig.tar.gz
+ 5101517272e8fe6477cb4494fdff26b549ce7ad2587657d77989b51ba9c0395c 7324 bumblebee_3.2.1-90~trustyppa1.debian.tar.gz
+ a2be242b2ac42ac53929a1c0dc04da0555d6007e4d4cc5732aeb4f1660910da0 1822 bumblebee_3.2.1-90~trustyppa1.dsc
+Homepage: https://launchpad.net/~bumblebee
+Uploaders: Peter Lekensteyn <lekensteyn@gmail.com>, Bruno Pagani <bruno.n.pagani@gmail.com>
+Package-List: bumblebee deb utils extra
+ bumblebee-dbg deb debug extra
+ bumblebee-nvidia deb contrib/utils extra
+Vcs-Git: git://github.com/Bumblebee-Project/Bumblebee.git
+Vcs-Browser: https://github.com/Bumblebee-Project/Bumblebee
+
+Package: codeblocks
+Binary: codeblocks, codeblocks-common, libcodeblocks0, codeblocks-dbg, codeblocks-contrib, codeblocks-libwxcontrib0, codeblocks-contrib-common, codeblocks-contrib-dbg, codeblocks-dev, codeblocks-headers, codeblocks-wxcontrib-dev, codeblocks-wxcontrib-headers, libwxsmithlib0, libwxsmithlib0-dev, wxsmith-dev, wxsmith-headers
+Version: 13.12svn10122-0ubuntu1~trusty
+Section: x11
+Maintainer: pasgui <lgp203@free.fr>
+Build-Depends: debhelper (>= 9), cdbs, automake (>= 1.9), libtool (>= 1.4), libwxgtk2.8-dev, wx-common, zip, libbz2-dev, zlib1g-dev, libgtk2.0-dev, libgamin-dev, libstdc++6-4.3-dev | libstdc++6-4.4-dev | libstdc++6-4.5-dev | libstdc++6-4.6-dev, libboost1.40-dev | libboost-dev (>= 1.40), libhunspell-dev, libfontconfig1-dev, libglib2.0-dev
+Architecture: any all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/c/codeblocks
+Files:
+ b9ca7ffd7fdb63a4595a77bf894dabbb 17777820 codeblocks_13.12svn10122.orig.tar.gz
+ 002827c34e6ef632e9a9605edba6e414 71748 codeblocks_13.12svn10122-0ubuntu1~trusty.debian.tar.gz
+ 4492784ac00ef3d1a4bf4f7c54983f45 2419 codeblocks_13.12svn10122-0ubuntu1~trusty.dsc
+Checksums-Sha1:
+ 651dd379bdd919430fb573a5435b1f3f0f6fa90a 17777820 codeblocks_13.12svn10122.orig.tar.gz
+ 51e66111142029b78eb79661acc3babf46f85f61 71748 codeblocks_13.12svn10122-0ubuntu1~trusty.debian.tar.gz
+ 63626680dde08cc2f1d251737ce1f22601e8d3e1 2419 codeblocks_13.12svn10122-0ubuntu1~trusty.dsc
+Checksums-Sha256:
+ 082e8b7dae15dbf81a105202232b74e8f4daec99a29bf1cf20a22745e98d6215 17777820 codeblocks_13.12svn10122.orig.tar.gz
+ a57e442ec26ba72e6264f9ed6c06da597fca6ba6e30bc05b3eddc3ca5286ed5f 71748 codeblocks_13.12svn10122-0ubuntu1~trusty.debian.tar.gz
+ 9de583365797b411a6e455ae0ced8c5c4114e002f270f57474b53a68c2b43757 2419 codeblocks_13.12svn10122-0ubuntu1~trusty.dsc
+Homepage: http://www.codeblocks.org
+Package-List: codeblocks deb x11 optional
+ codeblocks-common deb x11 optional
+ codeblocks-contrib deb x11 optional
+ codeblocks-contrib-common deb x11 optional
+ codeblocks-contrib-dbg deb debug extra
+ codeblocks-dbg deb debug extra
+ codeblocks-dev deb libdevel optional
+ codeblocks-headers deb x11 optional
+ codeblocks-libwxcontrib0 deb libs optional
+ codeblocks-wxcontrib-dev deb libdevel optional
+ codeblocks-wxcontrib-headers deb x11 optional
+ libcodeblocks0 deb libs optional
+ libwxsmithlib0 deb libs optional
+ libwxsmithlib0-dev deb libdevel optional
+ wxsmith-dev deb libdevel optional
+ wxsmith-headers deb x11 optional
+Original-Maintainer: Jens Lody <jens@codeblocks.org>
+
+Package: codeblocks-fr
+Binary: codeblocks-fr
+Version: 13.12svn9781-0ubuntu1~trusty
+Section: doc
+Maintainer: pasgui (lgp203.free.fr) <lgp203@free.fr>
+Build-Depends: debhelper (>= 9), devscripts, fakeroot, gettext
+Architecture: all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/c/codeblocks-fr
+Files:
+ e5bd3b18b66c6640a3926bb29bc9316d 93817 codeblocks-fr_13.12svn9781.orig.tar.gz
+ f340038d0c8db5189dc31dadc0efa960 1969 codeblocks-fr_13.12svn9781-0ubuntu1~trusty.debian.tar.gz
+ d97a30a915f003180e5d1e9fde44cf95 1186 codeblocks-fr_13.12svn9781-0ubuntu1~trusty.dsc
+Checksums-Sha1:
+ 590c7b3c13f51155858899273acba7b81712107c 93817 codeblocks-fr_13.12svn9781.orig.tar.gz
+ 13a71997c8be26e080699ac97acffcc0c9def69f 1969 codeblocks-fr_13.12svn9781-0ubuntu1~trusty.debian.tar.gz
+ f5e8baf74f4f65d5c8f0fe49fa6daad13ade344b 1186 codeblocks-fr_13.12svn9781-0ubuntu1~trusty.dsc
+Checksums-Sha256:
+ 2f2a146e8f8e98f9296f316f437d7c26aa6a5ce2890be2d13c35281b65b7f745 93817 codeblocks-fr_13.12svn9781.orig.tar.gz
+ b820e54bd2b6b4de94742bc611246e5a59fbca8c587fa8a5707362852fbe9fe0 1969 codeblocks-fr_13.12svn9781-0ubuntu1~trusty.debian.tar.gz
+ 3677516d29426b6b818051dd3dd243cb3f79e9f551f1a922d02c3c6e084960b5 1186 codeblocks-fr_13.12svn9781-0ubuntu1~trusty.dsc
+Package-List: codeblocks-fr deb doc optional
+
+Package: conky-manager
+Binary: conky-manager
+Version: 2.3.3~132~ubuntu14.04.1
+Section: utils
+Maintainer: Tony George <tony.george.kol@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac, libgtk-3-dev, libgee-dev, libjson-glib-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (native)
+Directory: pool/universe/c/conky-manager
+Files:
+ c4090e7a3de2a52591d0cad8aaaa8c81 766509 conky-manager_2.3.3~132~ubuntu14.04.1.tar.gz
+ 548688bf6fd3df5a4dcf89cb9133a29f 724 conky-manager_2.3.3~132~ubuntu14.04.1.dsc
+Checksums-Sha1:
+ 9c27ea86f0f5f7a196d9940f20c79e2a24a1330d 766509 conky-manager_2.3.3~132~ubuntu14.04.1.tar.gz
+ 2c94d07ef824ff10d02bf661156d3afeafd55e8c 724 conky-manager_2.3.3~132~ubuntu14.04.1.dsc
+Checksums-Sha256:
+ 62c2b99ba5f45242b32bdb975b2c3e5c7d11a70d61846325bb2ad083ce69b2bf 766509 conky-manager_2.3.3~132~ubuntu14.04.1.tar.gz
+ f667f890dd62a35183a5e00e34cdd911290e51f8f4ad267764453ab6f97475a4 724 conky-manager_2.3.3~132~ubuntu14.04.1.dsc
+Homepage: http://teejeetech.blogspot.in/
+Package-List: conky-manager deb utils extra
+
+Package: dmusic-plugin-baidumusic
+Format: 3.0 (native)
+Binary: dmusic-plugin-baidumusic
+Architecture: all
+Version: 0.23~deepin3~trusty
+Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Homepage: https://github.com/sumary/dmusic-plugin-baidumusic.git
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ dmusic-plugin-baidumusic deb universe/net extra
+Priority: extra
+Section: universe/net
+Directory: pool/universe/d/dmusic-plugin-baidumusic
+Files: 
+ 46b1aabe085b3285df8720768124e6fe 1279 dmusic-plugin-baidumusic_0.23~deepin3~trusty.dsc
+ 8bdc7ad9b673c3dfe8b02e9479103330 25224 dmusic-plugin-baidumusic_0.23~deepin3~trusty.tar.gz
+Checksums-Sha1: 
+ 05f1b64cafa0704c3f52a19f4eb468f6492bf4ff 1279 dmusic-plugin-baidumusic_0.23~deepin3~trusty.dsc
+ f403804ed6a47d39fc1aa54b83498d02d997297d 25224 dmusic-plugin-baidumusic_0.23~deepin3~trusty.tar.gz
+Checksums-Sha256: 
+ 0ad84912c0640d98e4efce551b539c4f394697d541ad3cf67221472b87327397 1279 dmusic-plugin-baidumusic_0.23~deepin3~trusty.dsc
+ 668690fa9617469c1eb4d940c82fc64f50d52d1bbbfe20cabdab25ab9383c63e 25224 dmusic-plugin-baidumusic_0.23~deepin3~trusty.tar.gz
+
+Package: douml
+Binary: douml-core, douml-globalchange, douml-filecontrol, douml-cpputil, douml-html, douml-sort, douml-xmi, douml-usecasewizard, douml-deploy, douml-plugouts, douml
+Version: 1.0~dev02-81e4c3-0ubuntu2~trusty
+Section: graphics
+Maintainer: pasgui (lgp203.free.fr) <lgp203@free.fr>
+Build-Depends: debhelper (>= 9), cdbs, quilt, libqt4-dev, libqt4-qt3support, libboost-dev, libfile-fcntllock-perl, vim-common, g++ (>= 4:4.7.2)
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/d/douml
+Files:
+ 713ee24af1485ffb2b9ba5a72893cd43 5769289 douml_1.0~dev02-81e4c3.orig.tar.gz
+ c2a033f33bc2786f97b0423528c71662 7738 douml_1.0~dev02-81e4c3-0ubuntu2~trusty.debian.tar.gz
+ f6cdee480375b2dbe7bf3b14642d4cc8 1758 douml_1.0~dev02-81e4c3-0ubuntu2~trusty.dsc
+Checksums-Sha1:
+ 3997d5db1a318793d1761af028bdcc4d7437dbd2 5769289 douml_1.0~dev02-81e4c3.orig.tar.gz
+ ee01ba71a9080a670efa05f153048b27169b3251 7738 douml_1.0~dev02-81e4c3-0ubuntu2~trusty.debian.tar.gz
+ e05950175b4e72b559f42bca74810e84b2fda7df 1758 douml_1.0~dev02-81e4c3-0ubuntu2~trusty.dsc
+Checksums-Sha256:
+ f777b8fbd0b15d45261bbbfc2777e6d0e74bf70946838b1361525844db36f28d 5769289 douml_1.0~dev02-81e4c3.orig.tar.gz
+ c8633870b2ca3db35272adfb2ddd5eaf4ca2386ea6ba8f4a64da1876d9be321c 7738 douml_1.0~dev02-81e4c3-0ubuntu2~trusty.debian.tar.gz
+ 22df1501c41fa3d0f5832f951c19058384fdf56005ba507b4e21c9d1ae9c3d36 1758 douml_1.0~dev02-81e4c3-0ubuntu2~trusty.dsc
+Package-List: douml deb graphics optional
+ douml-core deb graphics optional
+ douml-cpputil deb graphics optional
+ douml-deploy deb graphics optional
+ douml-filecontrol deb graphics optional
+ douml-globalchange deb graphics optional
+ douml-html deb graphics optional
+ douml-plugouts deb graphics optional
+ douml-sort deb graphics optional
+ douml-usecasewizard deb graphics optional
+ douml-xmi deb graphics optional
+
+Package: fcitx-qt5
+Format: 3.0 (quilt)
+Binary: fcitx-frontend-config, fcitx-frontend-qt5, fcitx-libs-qt5, fcitx-libs-qt5-dev, fcitx-libs-qt5-dbg
+Architecture: any all
+Version: 0.1.1-9
+Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
+Uploaders: Aron Xu <aron@debian.org>, YunQiang Su <wzssyqa@gmail.com>
+Homepage: http://code.google.com/p/fcitx
+Standards-Version: 3.9.4
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ime/fcitx-qt5.git
+Vcs-Git: git://anonscm.debian.org/pkg-ime/fcitx-qt5.git
+Build-Depends: debhelper (>= 9), cmake, pkg-config, intltool, fcitx-libs-dev (>= 1:4.2.4), qtbase5-dev, qtbase5-private-dev
+Package-List:
+ fcitx-frontend-config deb libs optional
+ fcitx-frontend-qt5 deb libs optional
+ fcitx-libs-qt5 deb libs optional
+ fcitx-libs-qt5-dbg deb debug extra
+ fcitx-libs-qt5-dev deb libdevel optional
+Priority: optional
+Section: libs
+Directory: pool/universe/f/fcitx-qt5
+Files: 
+ e459468fd13bf326bf620d2e3617356d 1926 fcitx-qt5_0.1.1-9.dsc
+ aaab342c87fa92c57642473fe9c7f004 44748 fcitx-qt5_0.1.1.orig.tar.xz
+ 4a1544e59629921107f2f4172df00987 2846 fcitx-qt5_0.1.1-9.debian.tar.gz
+Checksums-Sha1: 
+ 86be89b1fe53f22cbdb82dd53da4fa62260ae2d6 1926 fcitx-qt5_0.1.1-9.dsc
+ 1a822f5800939be66399e43d107f1448137bafde 44748 fcitx-qt5_0.1.1.orig.tar.xz
+ d1c1488118037177f9dd57bade47705f86ef8ead 2846 fcitx-qt5_0.1.1-9.debian.tar.gz
+Checksums-Sha256: 
+ f922d7117a49e7b8b19be339f4cb0b36dfb7507dcfde992b33e9927ddee1e685 1926 fcitx-qt5_0.1.1-9.dsc
+ f322cf7b095d5012525235c53f7225e07c9e344f787b088014dab6d7e24c29ef 44748 fcitx-qt5_0.1.1.orig.tar.xz
+ be409fe2ee70d4c29eb4443b838391b146eeffdc44631354ce6fff687e358761 2846 fcitx-qt5_0.1.1-9.debian.tar.gz
+
+Package: fcitx-sogoupinyin-uk
+Format: 3.0 (native)
+Binary: fcitx-sogoupinyin-uk
+Architecture: all
+Version: 0.0.9
+Maintainer: Aron Xu <happyaron.xu@gmail.com>
+Homepage: http://code.google.com/p/fcitx
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 7)
+Package-List:
+ fcitx-sogoupinyin-uk deb universe/utils extra
+Priority: extra
+Section: universe/utils
+Directory: pool/universe/f/fcitx-sogoupinyin-uk
+Files: 
+ 244f5db1555fadc39940a9c7b6c95444 1161 fcitx-sogoupinyin-uk_0.0.9.dsc
+ 39c1721a969987492bf23f6357812fa8 15369 fcitx-sogoupinyin-uk_0.0.9.tar.gz
+Checksums-Sha1: 
+ 20934292b7e2aea5f0438dd5cd4c858813bc9f89 1161 fcitx-sogoupinyin-uk_0.0.9.dsc
+ 469ac308874bf4646cd8a8e99878c8dd2e145d65 15369 fcitx-sogoupinyin-uk_0.0.9.tar.gz
+Checksums-Sha256: 
+ 7be64263cc5dbaed59e9bf14d548100cfb8a1f73170b4f3348ee5de184e87c17 1161 fcitx-sogoupinyin-uk_0.0.9.dsc
+ c29934d134a55e21035390e2b2a803bf558fcd5374372ad2edc220095b249889 15369 fcitx-sogoupinyin-uk_0.0.9.tar.gz
+
+Package: gambas3
+Binary: gambas3, gambas3-dev, gambas3-examples, gambas3-gb-args, gambas3-gb-cairo, gambas3-gb-chart, gambas3-gb-clipper, gambas3-gb-complex, gambas3-gb-compress, gambas3-gb-compress-bzlib2, gambas3-gb-compress-zlib, gambas3-gb-crypt, gambas3-gb-data, gambas3-gb-db, gambas3-gb-db-form, gambas3-gb-db-mysql, gambas3-gb-db-odbc, gambas3-gb-db-postgresql, gambas3-gb-db-sqlite2, gambas3-gb-db-sqlite3, gambas3-gb-dbus, gambas3-gb-desktop, gambas3-gb-desktop-gnome, gambas3-gb-eval-highlight, gambas3-gb-form, gambas3-gb-form-dialog, gambas3-gb-form-mdi, gambas3-gb-form-stock, gambas3-gb-gmp, gambas3-gb-gsl, gambas3-gb-gtk, gambas3-gb-gtk-opengl, gambas3-gb-httpd, gambas3-gb-image, gambas3-gb-image-effect, gambas3-gb-image-imlib, gambas3-gb-image-io, gambas3-gb-jit, gambas3-gb-libxml, gambas3-gb-logging, gambas3-gb-map, gambas3-gb-media, gambas3-gb-memcached, gambas3-gb-mime, gambas3-gb-mysql, gambas3-gb-ncurses, gambas3-gb-net, gambas3-gb-net-curl, gambas3-gb-net-pop3,
+ gambas3-gb-net-smtp, gambas3-gb-openal, gambas3-gb-opengl, gambas3-gb-opengl-glsl, gambas3-gb-opengl-glu, gambas3-gb-opengl-sge, gambas3-gb-openssl, gambas3-gb-option, gambas3-gb-pcre, gambas3-gb-pdf, gambas3-gb-qt4, gambas3-gb-qt4-ext, gambas3-gb-qt4-opengl, gambas3-gb-qt4-webkit, gambas3-gb-report, gambas3-gb-sdl, gambas3-gb-sdl-sound, gambas3-gb-settings, gambas3-gb-signal, gambas3-gb-v4l, gambas3-gb-vb, gambas3-gb-web, gambas3-gb-xml, gambas3-gb-xml-html, gambas3-gb-xml-rpc, gambas3-gb-xml-xslt, gambas3-ide, gambas3-runtime,
+ gambas3-scripter
+Version: 3.5.2-2trusty1
+Section: devel
+Maintainer: Krisztián Kende <nemh@freemail.hu>
+Build-Depends: bzip2, debhelper (>= 9), dh-autoreconf, gettext, kdelibs5-dev, libalure-dev, libbz2-dev, libcurl4-openssl-dev, libdbus-1-dev, libffi-dev, libglew-dev, libgmime-2.6-dev, libgmp-dev, libgnome-keyring-dev, libgsl0-dev, libgstreamer1.0-dev, libgstreamer-plugins-base1.0-dev, libgtk2.0-dev, libgtkglext1-dev, libimlib2-dev, libjpeg-dev, libmysqlclient-dev, libncurses5-dev, libopenal-dev, libpangox-1.0-dev, libpcre3-dev, libpng12-dev, libpoppler-private-dev, libpq-dev, libqt4-dev, libqt4-opengl-dev, libqtwebkit-dev, librsvg2-dev, libsdl1.2-dev, libsdl-gfx1.2-dev, libsdl-mixer1.2-dev, libsdl-sound1.2-dev, libsdl-ttf2.0-dev, libsqlite0-dev, libsqlite3-dev, libssl-dev, libv4l-dev, libxml2-dev, libxslt1-dev, libxt-dev, libxtst-dev, linux-libc-dev, llvm-3.3-dev, mesa-common-dev, pkg-config, unixodbc-dev, zlib1g-dev
+Architecture: any all
+Standards-Version: 3.9.4.0
+Format: 3.0 (quilt)
+Directory: pool/universe/g/gambas3
+Files:
+ badfa2ad97e6f418244a7ed2383a46bb 12264964 gambas3_3.5.2.orig.tar.bz2
+ dd9c0e0b76ff7628afd5a06a1bdc49b0 18971 gambas3_3.5.2-2trusty1.debian.tar.gz
+ 71574745872c9c15a00d7eaf911a7e6e 6883 gambas3_3.5.2-2trusty1.dsc
+Checksums-Sha1:
+ 96db04b1926d8f6992c57ce7ec5c7ec8b2a91dd6 12264964 gambas3_3.5.2.orig.tar.bz2
+ 6f9d4bfc476dcb538f13ef21f0d761bb6916c57e 18971 gambas3_3.5.2-2trusty1.debian.tar.gz
+ 14237fae3a99d002a3e6770a797c7b39a640d45f 6883 gambas3_3.5.2-2trusty1.dsc
+Checksums-Sha256:
+ e0ea5f71bb1f720510cf0f88624ef48752947bc6c35ae9d6021f69a1a31be065 12264964 gambas3_3.5.2.orig.tar.bz2
+ 62dc69f8d064aba1490f11f4a14e1530c4b83f73d43bd3258736e898570cc3aa 18971 gambas3_3.5.2-2trusty1.debian.tar.gz
+ 64790d9e8c7dbfa5afbedd18c6a6ca06e8713d81f93cba95c46e3852a565d7a7 6883 gambas3_3.5.2-2trusty1.dsc
+Homepage: http://gambas.sourceforge.net
+Package-List: gambas3 deb devel optional
+ gambas3-dev deb devel optional
+ gambas3-examples deb devel optional
+ gambas3-gb-args deb libdevel optional
+ gambas3-gb-cairo deb devel optional
+ gambas3-gb-chart deb libdevel optional
+ gambas3-gb-clipper deb libdevel optional
+ gambas3-gb-complex deb libdevel optional
+ gambas3-gb-compress deb libdevel optional
+ gambas3-gb-compress-bzlib2 deb libdevel optional
+ gambas3-gb-compress-zlib deb libdevel optional
+ gambas3-gb-crypt deb libdevel optional
+ gambas3-gb-data deb libdevel optional
+ gambas3-gb-db deb libdevel optional
+ gambas3-gb-db-form deb libdevel optional
+ gambas3-gb-db-mysql deb libdevel optional
+ gambas3-gb-db-odbc deb libdevel optional
+ gambas3-gb-db-postgresql deb libdevel optional
+ gambas3-gb-db-sqlite2 deb libdevel optional
+ gambas3-gb-db-sqlite3 deb libdevel optional
+ gambas3-gb-dbus deb devel optional
+ gambas3-gb-desktop deb libdevel optional
+ gambas3-gb-desktop-gnome deb libdevel optional
+ gambas3-gb-eval-highlight deb libdevel optional
+ gambas3-gb-form deb libdevel optional
+ gambas3-gb-form-dialog deb libdevel optional
+ gambas3-gb-form-mdi deb libdevel optional
+ gambas3-gb-form-stock deb devel optional
+ gambas3-gb-gmp deb libdevel optional
+ gambas3-gb-gsl deb libdevel optional
+ gambas3-gb-gtk deb libdevel optional
+ gambas3-gb-gtk-opengl deb libdevel optional
+ gambas3-gb-httpd deb libdevel optional
+ gambas3-gb-image deb libdevel optional
+ gambas3-gb-image-effect deb libdevel optional
+ gambas3-gb-image-imlib deb libdevel optional
+ gambas3-gb-image-io deb libdevel optional
+ gambas3-gb-jit deb libdevel optional
+ gambas3-gb-libxml deb libdevel optional
+ gambas3-gb-logging deb libdevel optional
+ gambas3-gb-map deb libdevel optional
+ gambas3-gb-media deb libdevel optional
+ gambas3-gb-memcached deb libdevel optional
+ gambas3-gb-mime deb libdevel optional
+ gambas3-gb-mysql deb libdevel optional
+ gambas3-gb-ncurses deb libdevel optional
+ gambas3-gb-net deb libdevel optional
+ gambas3-gb-net-curl deb libdevel optional
+ gambas3-gb-net-pop3 deb libdevel optional
+ gambas3-gb-net-smtp deb libdevel optional
+ gambas3-gb-openal deb libdevel optional
+ gambas3-gb-opengl deb libdevel optional
+ gambas3-gb-opengl-glsl deb libdevel optional
+ gambas3-gb-opengl-glu deb libdevel optional
+ gambas3-gb-opengl-sge deb libdevel optional
+ gambas3-gb-openssl deb libdevel optional
+ gambas3-gb-option deb libdevel optional
+ gambas3-gb-pcre deb libdevel optional
+ gambas3-gb-pdf deb libdevel optional
+ gambas3-gb-qt4 deb libdevel optional
+ gambas3-gb-qt4-ext deb libdevel optional
+ gambas3-gb-qt4-opengl deb libdevel optional
+ gambas3-gb-qt4-webkit deb kde optional
+ gambas3-gb-report deb libdevel optional
+ gambas3-gb-sdl deb libdevel optional
+ gambas3-gb-sdl-sound deb libdevel optional
+ gambas3-gb-settings deb libdevel optional
+ gambas3-gb-signal deb libdevel optional
+ gambas3-gb-v4l deb libdevel optional
+ gambas3-gb-vb deb libdevel optional
+ gambas3-gb-web deb libdevel optional
+ gambas3-gb-xml deb libdevel optional
+ gambas3-gb-xml-html deb libdevel optional
+ gambas3-gb-xml-rpc deb libdevel optional
+ gambas3-gb-xml-xslt deb libdevel optional
+ gambas3-ide deb devel optional
+ gambas3-runtime deb libdevel optional
+ gambas3-scripter deb libdevel optional
+
+Package: gecko-sharp-4.0
+Binary: gecko-sharp-4.0
+Version: 0.13-1
+Section: cli-mono
+Maintainer: Eberhard Beilharz <eb1@sil.org>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, dpkg-dev (>= 1.13.19), dc, lsb-release, autoconf, automake, dh-autoreconf, pkg-config, libgtk2.0-dev, libglib2.0-dev, libwebkit-cil-dev, mono-3, gtk-sharp-4.0
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/universe/g/gecko-sharp-4.0
+Files:
+ f88eaa06e71f8d8fa34cf59a3e034a6b 166456 gecko-sharp-4.0_0.13.orig.tar.bz2
+ e8b7a964262c2d35766531131ca22f6c 1888 gecko-sharp-4.0_0.13-1.debian.tar.gz
+ 0bd89eeecc20ec83e87ab7cc33504c5d 1589 gecko-sharp-4.0_0.13-1.dsc
+Checksums-Sha1:
+ 2435ce6fdb130d59e7479758d1bd98d334704e58 166456 gecko-sharp-4.0_0.13.orig.tar.bz2
+ 1c82e87145e528b05341a89beab7e6b4ef214cd7 1888 gecko-sharp-4.0_0.13-1.debian.tar.gz
+ 27f725fe49ec37d8dd0c6df85e441995b968548b 1589 gecko-sharp-4.0_0.13-1.dsc
+Checksums-Sha256:
+ bebeedccfa4c6bdf9cc465b0ecb80008b1dfb46980e90d59a3915a28f5186639 166456 gecko-sharp-4.0_0.13.orig.tar.bz2
+ 3ac27b97c86ba6a5edc5606483cbcadb6317b0b91832c4892cfdaf036f5b9bec 1888 gecko-sharp-4.0_0.13-1.debian.tar.gz
+ 4a24386fea6a092d4bc0356573a829967f8e7cb40ebdda8e2ffbc0ed68aa5318 1589 gecko-sharp-4.0_0.13-1.dsc
+Homepage: http://www.mono-project.com/
+Package-List: gecko-sharp-4.0 deb cli-mono extra
+
+Package: gnome-sharp-4.0
+Binary: gnome-sharp-4.0
+Version: 2.24.1-3ubuntu1
+Section: cli-mono
+Maintainer: Eberhard Beilharz <eb1@sil.org>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, dpkg-dev (>= 1.13.19), libglib2.0-dev (>= 2.4), bison, libtool, dc, lsb-release, libx11-dev, libxt-dev, zlib1g-dev, autoconf, automake, dh-autoreconf, python, pkg-config, gettext, libpango1.0-dev, libatk1.0-dev, libgtk2.0-dev, libgif-dev, libglade2-dev, gnome-devel, libgnomecanvas2-dev, libgnomeui-dev, mono-3, gtk-sharp-4.0, libgdiplus-4.0, mono-addins-4.0
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/universe/g/gnome-sharp-4.0
+Files:
+ 9b6c6e2dd7ec496307aa09c0f0f285a1 421905 gnome-sharp-4.0_2.24.1.orig.tar.bz2
+ 21b9f51e84bc9f21994fba444150a50b 10881 gnome-sharp-4.0_2.24.1-3ubuntu1.debian.tar.gz
+ 7dfaebb0f16af0f1fec097e1622cce79 1842 gnome-sharp-4.0_2.24.1-3ubuntu1.dsc
+Checksums-Sha1:
+ 0361544c72e7c1d635ad76665656071da90b80c4 421905 gnome-sharp-4.0_2.24.1.orig.tar.bz2
+ 28aa5c62c729753cc67ae7a6682ad670d01ee7bf 10881 gnome-sharp-4.0_2.24.1-3ubuntu1.debian.tar.gz
+ 88b49eaf74fda45a37457a7e1482e2dff2423e80 1842 gnome-sharp-4.0_2.24.1-3ubuntu1.dsc
+Checksums-Sha256:
+ 5e48dea478fe25d86108aae20c2b3b0d6d90f64cc4fc375a6e4ff65f5892afe3 421905 gnome-sharp-4.0_2.24.1.orig.tar.bz2
+ c5e04cd1f3b8cc43ecc6bcdea4ad2042fa53e3c2256e99cc1eccc9c432153802 10881 gnome-sharp-4.0_2.24.1-3ubuntu1.debian.tar.gz
+ f8aaefd5cc4401055ff2fdc632162f4ef00b2d632bc4d7ef61f0735a9fb1b97a 1842 gnome-sharp-4.0_2.24.1-3ubuntu1.dsc
+Homepage: http://www.mono-project.com/GtkSharp
+Package-List: gnome-sharp-4.0 deb cli-mono extra
+
+Package: grub-customizer
+Binary: grub-customizer
+Version: 4.0.6-0ubuntu1~ppa1t
+Section: admin
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7.3), libgtkmm-3.0-dev (>= 2.20.0), libssl-dev, cmake (>= 2.6.2), gettext (>= 0.17), dpatch, libarchive-dev
+Architecture: any
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/universe/g/grub-customizer
+Files:
+ e4d76cd7cb6eb7ec03461e77db43bf34 481254 grub-customizer_4.0.6.orig.tar.gz
+ 81607025343570cbaf5fdc6d40acde03 12215 grub-customizer_4.0.6-0ubuntu1~ppa1t.debian.tar.gz
+ 4d003134ec2d2dd22439bad4a18ee2fc 1670 grub-customizer_4.0.6-0ubuntu1~ppa1t.dsc
+Checksums-Sha1:
+ adeeec8a9695d44d5c34d99498cd8a7848b4c6e1 481254 grub-customizer_4.0.6.orig.tar.gz
+ 79b2486ce243dfd9213d98bc9cec39d6f4826179 12215 grub-customizer_4.0.6-0ubuntu1~ppa1t.debian.tar.gz
+ e858bf540e66a8e47bf881e62bbeb51477f1d858 1670 grub-customizer_4.0.6-0ubuntu1~ppa1t.dsc
+Checksums-Sha256:
+ 8cdb9f130530120cc8be0fe568c2349194d34d565d2e9700006da39793f1f2e2 481254 grub-customizer_4.0.6.orig.tar.gz
+ acb1b2f0f5ac63759e64206db2f0c1e35c05817301b5d8cb1cf35967ad71d8ed 12215 grub-customizer_4.0.6-0ubuntu1~ppa1t.debian.tar.gz
+ 72c729f7edda17d86e3543ebae1ada12320bc7410fddb3d526b5617feefa2c76 1670 grub-customizer_4.0.6-0ubuntu1~ppa1t.dsc
+Homepage: https://launchpad.net/grub-customizer
+Package-List: grub-customizer deb admin optional
+Original-Maintainer: Daniel Richter <danielrichter2007@web.de>
+
+Package: grub-themes-deepin
+Format: 3.0 (native)
+Binary: grub-themes-deepin
+Architecture: all
+Version: 0.5-9
+Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Homepage: http://malcer.deviantart.com/art/Dharma-GRUB2-theme-323177583
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ grub-themes-deepin deb universe/misc extra
+Priority: extra
+Section: universe/misc
+Directory: pool/universe/g/grub-themes-deepin
+Files: 
+ f9fd705efafdd0679914e71aa4a86aee 1201 grub-themes-deepin_0.5-9.dsc
+ d40ba6875207326aa0747025798ecda9 4795534 grub-themes-deepin_0.5-9.tar.gz
+Checksums-Sha1: 
+ 9a850f0e5225827258b01b87e14c9fb1ec8c17fc 1201 grub-themes-deepin_0.5-9.dsc
+ a033e60a6d869167b1cf7d667cf78a1bd9e2c12a 4795534 grub-themes-deepin_0.5-9.tar.gz
+Checksums-Sha256: 
+ 552cf1a40e2e417fb4ba07bad29313150ed10a0bdb6357b12433f6b535520f3c 1201 grub-themes-deepin_0.5-9.dsc
+ 9c951864d49f58a253bc310342ec8d23fd78aa1683188a79a91e3f979091f842 4795534 grub-themes-deepin_0.5-9.tar.gz
+
+Package: gstreamer0.10-ffmpeg
+Format: 3.0 (quilt)
+Binary: gstreamer0.10-ffmpeg, gstreamer0.10-ffmpeg-dbg
+Architecture: any
+Version: 0.10.13-5
+Maintainer: Maintainers of GStreamer packages <pkg-gstreamer-maintainers@lists.alioth.debian.org>
+Uploaders: Loic Minier <lool@dooz.org>, Sebastian Dröge <slomo@debian.org>, Sjoerd Simons <sjoerd@debian.org>
+Standards-Version: 3.8.4
+Build-Depends: debhelper (>= 8.1.3), cdbs (>= 0.4.93), dpkg-dev (>= 1.15.1), autotools-dev, zlib1g-dev, libglib2.0-dev (>= 2.4.0), pkg-config (>= 0.11.0), libgstreamer0.10-dev (>= 0.10.36), libgstreamer-plugins-base0.10-dev (>= 0.10.36), liborc-0.4-dev (>= 1:0.4.6), gstreamer-tools (>= 0.10.36), libavcodec-dev (>= 4:0.7), libpostproc-dev (>= 4:0.7), libavformat-dev (>= 4:0.7), libswscale-dev (>= 4:0.7), libbz2-dev
+Package-List:
+ gstreamer0.10-ffmpeg deb libs optional
+ gstreamer0.10-ffmpeg-dbg deb debug extra
+Priority: optional
+Section: libs
+Directory: pool/universe/g/gstreamer0.10-ffmpeg
+Files: 
+ 1be2ff8b280abb6dce99854f8572ce3b 1767 gstreamer0.10-ffmpeg_0.10.13-5.dsc
+ 7f5beacaf1312db2db30a026b36888c4 4784059 gstreamer0.10-ffmpeg_0.10.13.orig.tar.bz2
+ 4d63fea7a1b067c04d271457cd317421 10835 gstreamer0.10-ffmpeg_0.10.13-5.debian.tar.gz
+Checksums-Sha1: 
+ acf154b71e71cf454aed17979780925322988f55 1767 gstreamer0.10-ffmpeg_0.10.13-5.dsc
+ 8de5c848638c16c6c6c14ce3b22eecd61ddeed44 4784059 gstreamer0.10-ffmpeg_0.10.13.orig.tar.bz2
+ 2ab92fda754349ce1407378e3a4a41abcbb55657 10835 gstreamer0.10-ffmpeg_0.10.13-5.debian.tar.gz
+Checksums-Sha256: 
+ 2457dfa500d57b3b6e5127610900e5643a83da2b51bd9fd73a29b941b27e63f1 1767 gstreamer0.10-ffmpeg_0.10.13-5.dsc
+ 76fca05b08e00134e3cb92fa347507f42cbd48ddb08ed3343a912def187fbb62 4784059 gstreamer0.10-ffmpeg_0.10.13.orig.tar.bz2
+ 455ea376fb68a849fc86805e7e60dcd681d7089b9aa26e7391db7e8de00f286a 10835 gstreamer0.10-ffmpeg_0.10.13-5.debian.tar.gz
+
+Package: gtk-sharp-4.0
+Binary: gtk-sharp-4.0
+Version: 2.12.22-2
+Section: libs
+Maintainer: Eberhard Beilharz <eb1@sil.org>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, autoconf, automake, libtool, libglib2.0-dev (>= 2.12.0), libgtk2.0-dev (>= 2.12.0), libglade2-dev (>= 2.3.6), libpango1.0-dev, mono-3
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/universe/g/gtk-sharp-4.0
+Files:
+ cfc9290ecdefc0698cd5f878a80b6e74 1643904 gtk-sharp-4.0_2.12.22.orig.tar.bz2
+ 311d0e0f67305363276a0438efa13582 21448 gtk-sharp-4.0_2.12.22-2.debian.tar.gz
+ 3e24feb443310e2179c8eba52349d0b1 1577 gtk-sharp-4.0_2.12.22-2.dsc
+Checksums-Sha1:
+ c1f9b77137aabf001ed0f531691dec53cee987e9 1643904 gtk-sharp-4.0_2.12.22.orig.tar.bz2
+ 4bad577c936dde9c454e4256256afc1bd1879554 21448 gtk-sharp-4.0_2.12.22-2.debian.tar.gz
+ 922cf0e4973d39969bfb8144e53cbe5352e16407 1577 gtk-sharp-4.0_2.12.22-2.dsc
+Checksums-Sha256:
+ 070ff4cde1001004823b18e9aead00cccee3d606f92d5b55c03b6b1e5a147ad2 1643904 gtk-sharp-4.0_2.12.22.orig.tar.bz2
+ f6d5febb193357078ffc765222ba287945bd8e84b3140919d7d3bbf82dfce1dc 21448 gtk-sharp-4.0_2.12.22-2.debian.tar.gz
+ 20f8e496ee902f40a87f76e10391c6903688a0ced7ece68d3199b70cec2a6ccd 1577 gtk-sharp-4.0_2.12.22-2.dsc
+Homepage: http://www.mono-project.com/GtkSharp
+Package-List: gtk-sharp-4.0 deb libs extra
+
+Package: handbrake
+Binary: handbrake-cli, handbrake-gtk
+Version: 6006svnppa1~raring1
+Section: graphics
+Maintainer: John Stebbins <jstebbins.hb@gmail.com>
+Build-Depends: debhelper (>= 6), autotools-dev, libtool, libgudev-1.0-dev, intltool, autoconf, yasm (>= 1.1.0), libbz2-dev, zlib1g-dev, libgtk-3-dev, libwebkitgtk-3.0-dev, libnotify-dev, libgstreamer1.0-dev, libgstreamer-plugins-base1.0-dev, wget, python (>= 2.6), libappindicator3-dev, libfribidi-dev (>= 0.19.0), libxml2-dev, libogg-dev, libtheora-dev, libvorbis-dev, libsamplerate0-dev, libfreetype6-dev, libfontconfig1-dev, libass-dev
+Architecture: i386 amd64
+Standards-Version: 3.8.4
+Format: 1.0
+Directory: pool/universe/h/handbrake
+Files:
+ ecd6899f64b330fdaa91921bec11af65 37749305 handbrake_6006svnppa1~raring1.tar.gz
+ 1e0e70356a3fa90f71ff60786ace803d 1622 handbrake_6006svnppa1~raring1.dsc
+Checksums-Sha1:
+ 523bb765cd2c2a6ca583eac4d32abcf1b066135f 37749305 handbrake_6006svnppa1~raring1.tar.gz
+ df95572df988ec8bb5cf34fef3583ee17f2bbec5 1622 handbrake_6006svnppa1~raring1.dsc
+Checksums-Sha256:
+ 0f90bbc78e5853d9e94575d4d1bd40759ab301fe72642eaa014edaeab12b5cb2 37749305 handbrake_6006svnppa1~raring1.tar.gz
+ 470d582e69bb0142590d3afb59299c1202d30949d4c72da4fc035f9179f69e1e 1622 handbrake_6006svnppa1~raring1.dsc
+Homepage: http://www.handbrake.fr/
+Package-List: handbrake-cli deb graphics optional
+ handbrake-gtk deb graphics optional
+
+Package: homebank
+Binary: homebank, homebank-data
+Version: 4.5.6-0ubuntu1~trusty
+Section: gnome
+Maintainer: pasgui (lgp203.free.fr) <lgp203@free.fr>
+Build-Depends: debhelper (>= 9), cdbs, autotools-dev, pkg-config, libgtk2.0-dev, libxml-parser-perl, patchutils, libofx-dev
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/h/homebank
+Files:
+ 5163383d462e631e1447c083526521b9 1875012 homebank_4.5.6.orig.tar.gz
+ 73afbc0bd64a4764558c7df7e1d5b548 14989 homebank_4.5.6-0ubuntu1~trusty.debian.tar.gz
+ 96405a04a33a30eced97995ba22b93b4 1323 homebank_4.5.6-0ubuntu1~trusty.dsc
+Checksums-Sha1:
+ 80197f540a94407dd062f2786367d0e5e892eb6a 1875012 homebank_4.5.6.orig.tar.gz
+ ea36a88ff3c821f343c6391a271e3361be443e82 14989 homebank_4.5.6-0ubuntu1~trusty.debian.tar.gz
+ ee9127c5f85518d81b1ace010d2d3ec6630aaac8 1323 homebank_4.5.6-0ubuntu1~trusty.dsc
+Checksums-Sha256:
+ a60fa9056d07e6111b894ab1673c4568a568d42b30f785912a379c61b76b37a6 1875012 homebank_4.5.6.orig.tar.gz
+ 0ebaea9e76aa65288bc3196a5a8ac7472b673bc5d3b2cbecba6d128d9716ff78 14989 homebank_4.5.6-0ubuntu1~trusty.debian.tar.gz
+ 610e1b9b5d62b487f32ad7bcef8b193883fbdb4982e33189311740417b21727a 1323 homebank_4.5.6-0ubuntu1~trusty.dsc
+Homepage: http://homebank.free.fr/
+Package-List: homebank deb gnome optional
+ homebank-data deb gnome optional
+Original-Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
+
+Package: i-nex
+Binary: i-nex
+Version: 7.4.0+bzr887+20150112~ubuntu14.04.1
+Section: admin
+Maintainer: eloaders <eloaders@linux.pl>
+Build-Depends: debhelper (>= 7), dh-autoreconf, python | python-all | python-dev | python-all-dev, pkg-config, dpkg-dev (>= 1.14.17), libcpuid11-dev, lsb-release, libprocps3-dev | libprocps0-dev | libproc-dev, libx11-dev, libxext-dev, libgl1-mesa-dev, libglu1-mesa-dev, gambas3-dev (>= 3.6.0), gambas3-gb-image (>= 3.6.0), gambas3-gb-qt4 (>= 3.6.0), gambas3-gb-form (>= 3.6.0), gambas3-gb-desktop (>= 3.6.0), gambas3-gb-desktop-x11 (>= 3.6.0), imagemagick
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (native)
+Directory: pool/universe/i/i-nex
+Files:
+ d8a903abf9102ae48144ded2ba2714a0 3843666 i-nex_7.4.0+bzr887+20150112~ubuntu14.04.1.tar.gz
+ c37f001c9e31f28fa8b331d4c71eeeed 1203 i-nex_7.4.0+bzr887+20150112~ubuntu14.04.1.dsc
+Checksums-Sha1:
+ 9b422a36337a7f422e1e7f0610178515885c7636 3843666 i-nex_7.4.0+bzr887+20150112~ubuntu14.04.1.tar.gz
+ 6e3ba5f03e9f44e711d6e0f1d37b746c9a5fe5a0 1203 i-nex_7.4.0+bzr887+20150112~ubuntu14.04.1.dsc
+Checksums-Sha256:
+ 7b03f9bcf3cd4cdc540c48456ae9857c793751c85446b827b5983eb5654b026a 3843666 i-nex_7.4.0+bzr887+20150112~ubuntu14.04.1.tar.gz
+ 34081a2f7a1bd295a9801c95f03cb6f89da3d9edba622286b545b9586fa515b2 1203 i-nex_7.4.0+bzr887+20150112~ubuntu14.04.1.dsc
+Homepage: http://i-nex.linux.pl
+Uploaders: eloaders <eloaders@linux.pl>
+Package-List: i-nex deb contrib/admin extra
+Vcs-Git: https://github.com/eloaders/I-Nex.git
+Vcs-Browser: https://github.com/eloaders/I-Nex
+
+Package: idea
+Format: 3.0 (quilt)
+Binary: idea
+Architecture: all
+Version: 13.1.3-3
+Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Homepage: http://www.jetbrains.com/idea/
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ idea deb universe/devel optional
+Priority: optional
+Section: universe/devel
+Directory: pool/universe/i/idea
+Files: 
+ 8770350eb6b22f034d16f56138c3edca 1340 idea_13.1.3-3.dsc
+ 549eb3f9fdef62e6a20993af668a1788 145494652 idea_13.1.3.orig.tar.xz
+ 9f1a6269f75dc4466bf463a9a8704765 2224 idea_13.1.3-3.debian.tar.gz
+Checksums-Sha1: 
+ 4c69ae8a75533e7acbf7984e7555428247452803 1340 idea_13.1.3-3.dsc
+ 932a830e7454106b681b89b9b5d2b75c08959bbc 145494652 idea_13.1.3.orig.tar.xz
+ 28f922056035f9bc526d9002c14443c78305845f 2224 idea_13.1.3-3.debian.tar.gz
+Checksums-Sha256: 
+ f112cbbba8e7c5cd045b6119fa87e7bf9368258433da63d2678dd152c9835060 1340 idea_13.1.3-3.dsc
+ ec8d25115715f7b68adb5c642aa70ac7e1e84ac9f7837cdb799e28319478817d 145494652 idea_13.1.3.orig.tar.xz
+ 343039b1585caac248454e65596d52d7a6990dfc83ca55ae1d3a54756c62bb51 2224 idea_13.1.3-3.debian.tar.gz
+
+Package: jscall-sharp-0
+Binary: jscall-sharp-0
+Version: 0.0.1
+Section: web
+Maintainer: Eberhard Beilharz <eb1@sil.org>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, autoconf, automake, libtool, pkg-config, gtk-sharp-4.0, gecko-sharp-4.0, mono-3
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/universe/j/jscall-sharp-0
+Files:
+ 226c1da0eb92e9b9db4575c5c9e8054e 28757 jscall-sharp-0_0.0.1.orig.tar.bz2
+ a3f1e5f3a240dfa8d06f5952c4c2856a 21031 jscall-sharp-0_0.0.1.debian.tar.gz
+ c8f143c4594851b6b42f98b2eddf8791 1456 jscall-sharp-0_0.0.1.dsc
+Checksums-Sha1:
+ 37189f0e2a4df78aaca716ca1e1f1eb61bda134d 28757 jscall-sharp-0_0.0.1.orig.tar.bz2
+ e7256899f7c4809f65c3a9b4c8c5f7f43c1748fd 21031 jscall-sharp-0_0.0.1.debian.tar.gz
+ 0d45858426934539e82e77ff2cd5b3048dae2cb5 1456 jscall-sharp-0_0.0.1.dsc
+Checksums-Sha256:
+ 48a5fc6c0ef709bc5a81d8f13676bb16f5871f343a0e5c73908ae8d47eb21c3e 28757 jscall-sharp-0_0.0.1.orig.tar.bz2
+ 4c6be13b039484565b821a38595fbe40e1d9392d7d7fd1970cdb9bf2d9360eb6 21031 jscall-sharp-0_0.0.1.debian.tar.gz
+ f5be7d9158068d78255a2639087c51a2758e357e142f55bdcb77c2ae3f7c13e6 1456 jscall-sharp-0_0.0.1.dsc
+Package-List: jscall-sharp-0 deb web extra
+
+Package: kuaipan4uk
+Format: 3.0 (native)
+Binary: kuaipan4uk
+Architecture: i386 amd64
+Version: 2.0.0.3
+Maintainer: Ubuntu Kylin Team <ubuntukylin-members@lists.launchpad.net>
+Uploaders: Luo Lei <luolei@ubuntukylin.com>
+Homepage: https://launchpad.net/kuaipan4uk
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9.0.0), libqt4-dev, libboost-filesystem-dev, libboost-iostreams-dev, libboost-thread-dev, libcurl4-dev, libqxt-dev
+Package-List:
+ kuaipan4uk deb non-free/utils optional
+Priority: optional
+Section: non-free/utils
+Directory: pool/universe/k/kuaipan4uk
+Files: 
+ 3621ff615b17890fe289de541deea5dc 1293 kuaipan4uk_2.0.0.3.dsc
+ ac5c98ee6812f157481c556117ce1973 4455366 kuaipan4uk_2.0.0.3.tar.gz
+Checksums-Sha1: 
+ 04d2f0e03daaeab9999202d12e9e2d37631f7604 1293 kuaipan4uk_2.0.0.3.dsc
+ f090768c5487cb8ce09f4d10ca91794e481626da 4455366 kuaipan4uk_2.0.0.3.tar.gz
+Checksums-Sha256: 
+ 1fb4359ea82260d5ed6cf73c2212092bb56e2f58dc3c667fd60789309bc43bf4 1293 kuaipan4uk_2.0.0.3.dsc
+ 3f9caabdc549a1ea28235f50cc26ba852f0996f2fd9f120b36ea8248b7e75cfe 4455366 kuaipan4uk_2.0.0.3.tar.gz
+
+Package: libgdiplus-4.0
+Binary: libgdiplus-4.0
+Version: 2.10.9-1ubuntu1
+Section: cli-mono
+Maintainer: Eberhard Beilharz <eb1@sil.org>
+Build-Depends: debhelper (>= 7.0.50~), mono-3, libglib2.0-dev (>= 2.4), bison, libtool, dc, lsb-release, libx11-dev, libxt-dev, zlib1g-dev, autoconf, automake, dh-autoreconf, python, pkg-config, git-core, apache2, apache2-threaded-dev, gettext, libpango1.0-dev, libatk1.0-dev, libgtk2.0-dev, libgif-dev, libglade2-dev
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/universe/libg/libgdiplus-4.0
+Files:
+ b4615c14584b5d73cbb9757c28887654 2074317 libgdiplus-4.0_2.10.9.orig.tar.bz2
+ cd27e6c51b16ad05569e605a1903274a 247462 libgdiplus-4.0_2.10.9-1ubuntu1.debian.tar.gz
+ 056b4003785d3f32e24dc1abc5b895c6 1736 libgdiplus-4.0_2.10.9-1ubuntu1.dsc
+Checksums-Sha1:
+ 5e127b818d9af032928c7f7cfba812c1231a8478 2074317 libgdiplus-4.0_2.10.9.orig.tar.bz2
+ 994161f4d09a2d36b659238f1e4a60008de4672a 247462 libgdiplus-4.0_2.10.9-1ubuntu1.debian.tar.gz
+ 2c8c8ea96ca82215de7d1766f98e7c7d951656e1 1736 libgdiplus-4.0_2.10.9-1ubuntu1.dsc
+Checksums-Sha256:
+ 6ddeb6c327bada7cb6e06d1a20714f526a0c69520dfd42c12ddd032c3c5d964e 2074317 libgdiplus-4.0_2.10.9.orig.tar.bz2
+ 930583f192ff2020b6d407e6a40e191550427aa56accc76765971b5e395c4fbb 247462 libgdiplus-4.0_2.10.9-1ubuntu1.debian.tar.gz
+ 66c67f878c313723c78d0d56b76e9dd2b98ca8350ebd05519a91c6d5e45638b2 1736 libgdiplus-4.0_2.10.9-1ubuntu1.dsc
+Homepage: http://www.mono-project.com/
+Package-List: libgdiplus-4.0 deb cli-mono extra
+
+Package: libgee-0.8
+Binary: libgee-0.8-2, libgee-0.8-dev, libgee-0.8-2-dbg, gir1.2-gee-0.8
+Version: 0.16.1-1~14.04~valateam2
+Section: libs
+Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.alioth.debian.org>
+Build-Depends: cdbs (>= 0.4.93), debhelper (>= 9), dh-autoreconf, pkg-config (>= 0.14), libglib2.0-dev (>= 2.36), valac (>= 0.25.1), libgirepository1.0-dev (>= 0.10), gobject-introspection (>= 0.10)
+Architecture: any
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Directory: pool/universe/libg/libgee-0.8
+Files:
+ d30cf203784431b0fdc3216b1acd999c 667024 libgee-0.8_0.16.1.orig.tar.xz
+ 84daf27c3eb8f13f785907e01ae82dae 7956 libgee-0.8_0.16.1-1~14.04~valateam2.debian.tar.xz
+ 83b675cf98a6ad6304f355ff2a7a1501 2432 libgee-0.8_0.16.1-1~14.04~valateam2.dsc
+Checksums-Sha1:
+ 0f7447b12e02e7123a35c1c70ad5bbf1fb2fe14a 667024 libgee-0.8_0.16.1.orig.tar.xz
+ 260a6213837a3ad9781342e64f73cda170199eaa 7956 libgee-0.8_0.16.1-1~14.04~valateam2.debian.tar.xz
+ c25806673f1d42d36b0493d3670970b766c86d6b 2432 libgee-0.8_0.16.1-1~14.04~valateam2.dsc
+Checksums-Sha256:
+ d95f8ea8e78f843c71b1958fa2fb445e4a325e4821ec23d0d5108d8170e564a5 667024 libgee-0.8_0.16.1.orig.tar.xz
+ a7a4e99e6cf8af539b41d0018025caae4672a72e3d51a4e3e196f1b0264bae6b 7956 libgee-0.8_0.16.1-1~14.04~valateam2.debian.tar.xz
+ 8cec2b1a5466d7881f00991701b6b42d9a330da8bb1a1021621268cafc22ce06 2432 libgee-0.8_0.16.1-1~14.04~valateam2.dsc
+Homepage: https://wiki.gnome.org/Projects/Libgee
+Uploaders: Sebastian Dröge <slomo@debian.org>, Marc-Andre Lureau <marcandre.lureau@gmail.com>, Sjoerd Simons <sjoerd@debian.org>
+Package-List: gir1.2-gee-0.8 deb introspection optional arch=any
+ libgee-0.8-2 deb libs optional arch=any
+ libgee-0.8-2-dbg deb debug extra arch=any
+ libgee-0.8-dev deb libdevel optional arch=any
+Vcs-Git: git://git.debian.org/git/pkg-vala/libgee.git
+Vcs-Browser: http://git.debian.org/?p=pkg-vala/libgee.git
+
+Package: libvdpau
+Binary: libvdpau-dev, libvdpau1, libvdpau-doc
+Version: 0.9-0ubuntu0~ppa0~trusty
+Section: libs
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), dh-autoreconf, pkg-config, libx11-dev, x11proto-dri2-dev (>= 2.2), libxext-dev
+Build-Depends-Indep: doxygen-latex, graphviz, ghostscript
+Architecture: any all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/libv/libvdpau
+Files:
+ 6750404478b10b54687c03e19a772649 424240 libvdpau_0.9.orig.tar.bz2
+ f4091d335af771ede3515647d32d928c 6920 libvdpau_0.9-0ubuntu0~ppa0~trusty.debian.tar.xz
+ 5035b1e0d00851ebdde01daa3d0f6ae4 2311 libvdpau_0.9-0ubuntu0~ppa0~trusty.dsc
+Checksums-Sha1:
+ 989bf76f99524f863b6a6662fe40f48bf9c0c46f 424240 libvdpau_0.9.orig.tar.bz2
+ d6db54cf02e3cc3dc78e2e3ea44305fbd179b43f 6920 libvdpau_0.9-0ubuntu0~ppa0~trusty.debian.tar.xz
+ 6c8e84c9dfd78e3c8dfac8bdea1000db8b8025ba 2311 libvdpau_0.9-0ubuntu0~ppa0~trusty.dsc
+Checksums-Sha256:
+ 77d1afd7d94fec302f13db1d6cc53ec2c50c274bde9530942b0e61d92b8f72b4 424240 libvdpau_0.9.orig.tar.bz2
+ 39b5ae25f6ea40aa7d0e700bbae19f4d4e9071b5f84f52a2c17c1bcb5de70d16 6920 libvdpau_0.9-0ubuntu0~ppa0~trusty.debian.tar.xz
+ d89ae12df125750b9ade8716236cb22d2c41b27edbb57a1f18a3930d72ecc7e1 2311 libvdpau_0.9-0ubuntu0~ppa0~trusty.dsc
+Homepage: http://cgit.freedesktop.org/~aplattner/libvdpau
+Uploaders: Jean-Yves Avenard <jyavenard@gmail.com>, Russ Allbery <rra@debian.org>, Andreas Beckmann <anbe@debian.org>,
+Package-List: libvdpau-dev deb libdevel optional arch=any
+ libvdpau-doc deb doc optional arch=all
+ libvdpau1 deb libs optional arch=any
+Vcs-Git: git://anonscm.debian.org/pkg-nvidia/libvdpau.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-nvidia/libvdpau.git
+
+Package: lwqq
+Binary: liblwqq0, liblwqq-dev, liblwqq-dbg
+Version: 0.4.2+git201502262350.b9387e8-1~lainme~trusty
+Section: net
+Maintainer: lainme <lainme993@gmail.com>
+Build-Depends: debhelper (>= 7), cdbs, cmake, pkg-config, libcurl4-openssl-dev | libcurl4-nss-dev | libcurl4-gnutls-dev, libsqlite3-dev, libev-dev, libmozjs-17.0-dev | libmozjs185-dev, zlib1g-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/l/lwqq
+Files:
+ 2e0c3db5a5bdf7e87967cc7b01d659d0 177137 lwqq_0.4.2+git201502262350.b9387e8.orig.tar.gz
+ 0fcefc13257529fc8b65024932fa9215 4075 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.debian.tar.gz
+ 3a624ec290c719a1b9e79a202d391e7f 2119 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.dsc
+Checksums-Sha1:
+ 82f4455179e9601ea663dcca50a4feb854d40716 177137 lwqq_0.4.2+git201502262350.b9387e8.orig.tar.gz
+ 2eadff18b9f3c958fb151d748914fd3967740115 4075 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.debian.tar.gz
+ 7cfc6faeef8f12acb004625fceef0f090afc30e4 2119 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.dsc
+Checksums-Sha256:
+ ad5a9f972ffd9a3cedee7a0a9dcfde7ba8a489ea6c2154a6d41c633466a592bb 177137 lwqq_0.4.2+git201502262350.b9387e8.orig.tar.gz
+ 60eeeac46ad3028f7b8c4f3b5295cc4d9a6afa70deff69785962d28fc6236659 4075 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.debian.tar.gz
+ 22791f80e804174f8874315818835f326376ae78cc7185341fd8b42c3c2b37dd 2119 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.dsc
+Homepage: https://github.com/xiehuc/lwqq
+Package-List: liblwqq-dbg deb debug extra
+ liblwqq-dev deb libdevel extra
+ liblwqq0 deb net extra
+
+Package: mono-3
+Binary: mono-3
+Version: 3.4.0-1ubuntu1
+Section: cli-mono
+Maintainer: Eberhard Beilharz <eb1@sil.org>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, dpkg-dev (>= 1.13.19), libglib2.0-dev (>= 2.4), bison, libtool, dc, lsb-release, libx11-dev, libxt-dev, zlib1g-dev, autoconf, automake, dh-autoreconf, python, pkg-config, git-core, apache2, apache2-threaded-dev, gettext, libpango1.0-dev, libatk1.0-dev, libgtk2.0-dev, libgif-dev, libglade2-dev, mono-devel, mono-gmcs
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/universe/m/mono-3
+Files:
+ 805bc9de6e8bced40cd9136367234804 82645230 mono-3_3.4.0.orig.tar.bz2
+ 921e316c0c2c384348284d94d26601bd 21782 mono-3_3.4.0-1ubuntu1.debian.tar.gz
+ 9530a6886c574281ec5738649ddadedd 1705 mono-3_3.4.0-1ubuntu1.dsc
+Checksums-Sha1:
+ c6fd159e77879b27104569488124302db94d65bf 82645230 mono-3_3.4.0.orig.tar.bz2
+ ff54247c572f16fd8583084882495330c8b598e8 21782 mono-3_3.4.0-1ubuntu1.debian.tar.gz
+ 85fd9fc60cadaad77a2344a3d6d052581f410767 1705 mono-3_3.4.0-1ubuntu1.dsc
+Checksums-Sha256:
+ 21bf421c96d9bc517835ef007d464aec8a5c7117f8092b6063c11e3262667efa 82645230 mono-3_3.4.0.orig.tar.bz2
+ 26aa4c0a056270c67890d7a824eaee0a37c48ba4143e583f3fe0a4da1fd408f7 21782 mono-3_3.4.0-1ubuntu1.debian.tar.gz
+ 37f7333f1cdc66922d9833490c7e5a684345ef0ff55f7551dc043f8a235942ac 1705 mono-3_3.4.0-1ubuntu1.dsc
+Homepage: http://mono-project.com
+Package-List: mono-3 deb cli-mono extra
+
+Package: mono-addins-4.0
+Binary: mono-addins-4.0
+Version: 1.1-1ubuntu1
+Section: cli-mono
+Maintainer: Eberhard Beilharz <eb1@sil.org>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, dpkg-dev (>= 1.13.19), libglib2.0-dev (>= 2.4), bison, libtool, dc, lsb-release, libx11-dev, libxt-dev, zlib1g-dev, autoconf, automake, dh-autoreconf, pkg-config, gettext, libgif-dev, libglade2-dev, mono-3, gtk-sharp-4.0
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/universe/m/mono-addins-4.0
+Files:
+ 3bddbe20e38b10f64f97415cd2fc0539 436224 mono-addins-4.0_1.1.orig.tar.bz2
+ 8c5e10d81293ae94433829f64df97809 2353 mono-addins-4.0_1.1-1ubuntu1.debian.tar.gz
+ ff94c8d7465cf704df7d4606b689bbf1 1683 mono-addins-4.0_1.1-1ubuntu1.dsc
+Checksums-Sha1:
+ 6240666dcc69291e4bf5ca90649e1f3dafbe2531 436224 mono-addins-4.0_1.1.orig.tar.bz2
+ 5740a4056b36dff402481d89544339c20001f804 2353 mono-addins-4.0_1.1-1ubuntu1.debian.tar.gz
+ d0042a121f127583ee19389f1c2a19b28fdbb94f 1683 mono-addins-4.0_1.1-1ubuntu1.dsc
+Checksums-Sha256:
+ 26f4dc50d13a667a72cc5e93e5b286c3bc1385fe93af5e95d9d5ca3e15cc3f48 436224 mono-addins-4.0_1.1.orig.tar.bz2
+ f84f7403a006010f903aff2baf2abe2a77504303a91bf3da37c4bcacdb8aab9b 2353 mono-addins-4.0_1.1-1ubuntu1.debian.tar.gz
+ ceb7966447d71ffc5e7b60443594ee8c512eb1b2fdd81746b164b29e9ed19504 1683 mono-addins-4.0_1.1-1ubuntu1.dsc
+Homepage: http://www.mono-project.com/Mono.Addins
+Package-List: mono-addins-4.0 deb cli-mono extra
+
+Package: monodevelop-4.0
+Binary: monodevelop-current, monodevelop-4.0
+Version: 4.2.2-1ubuntu2
+Section: devel
+Maintainer: Eberhard Beilharz <eb1@sil.org>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, dpkg-dev (>= 1.13.19), libglib2.0-dev (>= 2.4), bison, libtool, dc, lsb-release, libx11-dev, libxt-dev, zlib1g-dev, autoconf, automake, dh-autoreconf, python, pkg-config, git-core, gettext, libpango1.0-dev, libatk1.0-dev, libgtk2.0-dev, libgif-dev, libgnomecanvas2-dev, libgnomeui-dev, libgnome2.24-cil, libgnome2.0-cil-dev, libgconf2.0-cil-dev, gnome-devel, libglade2-dev, libglade2.0-cil-dev, mono-3, gtk-sharp-4.0, gnome-sharp-4.0, mono-addins-4.0, libgdiplus-4.0
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/universe/m/monodevelop-4.0
+Files:
+ 34bf8adb9b5b6a798e65f3c0ce4edced 30665688 monodevelop-4.0_4.2.2.orig.tar.bz2
+ 0b4578bf01c7082fc8a2b2d5977244a5 14564 monodevelop-4.0_4.2.2-1ubuntu2.debian.tar.gz
+ c98b86f6494d500195ce14592071b766 1995 monodevelop-4.0_4.2.2-1ubuntu2.dsc
+Checksums-Sha1:
+ d63473a0830789da006dfb46769d626aa45393ef 30665688 monodevelop-4.0_4.2.2.orig.tar.bz2
+ 6ecb5f8a046420577c0ebc4e85b0e81c95f90fd9 14564 monodevelop-4.0_4.2.2-1ubuntu2.debian.tar.gz
+ e701385d8c3e382aa876c9febee49cf74105fc9c 1995 monodevelop-4.0_4.2.2-1ubuntu2.dsc
+Checksums-Sha256:
+ 89a2254605b2dabb9167ff19ce441b1d9c718c6cfae555df05f73ed5a904b109 30665688 monodevelop-4.0_4.2.2.orig.tar.bz2
+ 843984a0b50aa385b3dcc493aa76dceb02637d7a7fc683088872e0bb5a1518ac 14564 monodevelop-4.0_4.2.2-1ubuntu2.debian.tar.gz
+ 56c2ede996989a22d8a560f24dbdb890026db34345fd7ae449168f7d23cf49ce 1995 monodevelop-4.0_4.2.2-1ubuntu2.dsc
+Homepage: http://www.monodevelop.com/
+Package-List: monodevelop-4.0 deb devel extra
+ monodevelop-current deb devel extra
+
+Package: monodevelop-5
+Binary: monodevelop-current, monodevelop-5
+Version: 5.0.1.3-1
+Section: devel
+Maintainer: Eberhard Beilharz <eb1@sil.org>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, dpkg-dev (>= 1.13.19), libglib2.0-dev (>= 2.4), bison, libtool, dc, lsb-release, libx11-dev, libxt-dev, zlib1g-dev, autoconf, automake, dh-autoreconf, python, pkg-config, git-core, gettext, libpango1.0-dev, libatk1.0-dev, libgtk2.0-dev, libgif-dev, libgnomecanvas2-dev, libgnomeui-dev, libgnome2.24-cil, libgnome2.0-cil-dev, libgconf2.0-cil-dev, gnome-devel, libglade2-dev, libglade2.0-cil-dev, mono-3, gtk-sharp-4.0, gnome-sharp-4.0, mono-addins-4.0, libgdiplus-4.0, jscall-sharp-0
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/universe/m/monodevelop-5
+Files:
+ 5b22f4cf0112c5a6540d4406381bafa7 41689958 monodevelop-5_5.0.1.3.orig.tar.bz2
+ 2dc65742c185a566b9719b367086033b 15796 monodevelop-5_5.0.1.3-1.debian.tar.gz
+ 896d81d3612be000d32e893dc903e192 1979 monodevelop-5_5.0.1.3-1.dsc
+Checksums-Sha1:
+ ecbb4d382409485cd313cc08c6c1351286490186 41689958 monodevelop-5_5.0.1.3.orig.tar.bz2
+ b891d05f271b3c4052704ca0ef4ac410db3372b1 15796 monodevelop-5_5.0.1.3-1.debian.tar.gz
+ 17abef9df365dbd2074e7618c5a2c2327d12fa7e 1979 monodevelop-5_5.0.1.3-1.dsc
+Checksums-Sha256:
+ 0ed06d28ecebf9332fd47a89c348c6a2f661fda5f6b46e13b88e8ef2a4b8a790 41689958 monodevelop-5_5.0.1.3.orig.tar.bz2
+ f9e2de0711b86a263b6d61c8fad6b04f1425fc8e22ab9013baa2f191c1e607fb 15796 monodevelop-5_5.0.1.3-1.debian.tar.gz
+ 25ac8788d8ebd102e6c344279d7aabe3f46bcf72ff39a3c548fcd0a9eced108e 1979 monodevelop-5_5.0.1.3-1.dsc
+Homepage: http://www.monodevelop.com/
+Package-List: monodevelop-5 deb devel extra
+ monodevelop-current deb devel extra
+
+Package: monodevelop-database-4.0
+Binary: monodevelop-database-4.0
+Version: 4.2.2-1ubuntu1
+Section: cli-mono
+Maintainer: Eberhard Beilharz <eb1@sil.org>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, dpkg-dev (>= 1.13.19), libglib2.0-dev (>= 2.4), bison, libtool, dc, lsb-release, libx11-dev, libxt-dev, zlib1g-dev, autoconf, automake, dh-autoreconf, python, pkg-config, gettext, libpango1.0-dev, libatk1.0-dev, libgtk2.0-dev, libgif-dev, libglade2-dev, mono-3, mono-addins-4.0, monodevelop-4.0 (>= 4.2.2), gtk-sharp-4.0
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/universe/m/monodevelop-database-4.0
+Files:
+ 73dd5fbb516599d7c6393ac452f6f288 435543 monodevelop-database-4.0_4.2.2.orig.tar.bz2
+ 941cdc85e8d61a17f66057c94026f27f 3421 monodevelop-database-4.0_4.2.2-1ubuntu1.debian.tar.gz
+ 21465ae8d031f9171b20a05b641b7c8b 1866 monodevelop-database-4.0_4.2.2-1ubuntu1.dsc
+Checksums-Sha1:
+ 327d4a5273c6fff97883579b112475987b6bbd8b 435543 monodevelop-database-4.0_4.2.2.orig.tar.bz2
+ 30a6bd81af9a922b0732ba2ae384106d9c8bf95e 3421 monodevelop-database-4.0_4.2.2-1ubuntu1.debian.tar.gz
+ 8c3dc855a0eb17fd6ce0c34e5caadc0b422ebfb8 1866 monodevelop-database-4.0_4.2.2-1ubuntu1.dsc
+Checksums-Sha256:
+ 6fa77ce58b516ad91513199b39d3a9bd1a08f6a81d253533bd2ace3c9af50cfe 435543 monodevelop-database-4.0_4.2.2.orig.tar.bz2
+ 7bc55f56f299d01b3b90d01b2006b97b53b6c3b799b67749e9234621493a133a 3421 monodevelop-database-4.0_4.2.2-1ubuntu1.debian.tar.gz
+ 1d1b706347668b0ea2cdf192fe3e959b7fee7d7e8c52149046e00fb72bd59092 1866 monodevelop-database-4.0_4.2.2-1ubuntu1.dsc
+Homepage: http://www.monodevelop.com/
+Package-List: monodevelop-database-4.0 deb cli-mono extra
+
+Package: monodevelop-database-5
+Binary: monodevelop-database-5
+Version: 5.0.1.3-1
+Section: cli-mono
+Maintainer: Eberhard Beilharz <eb1@sil.org>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, dpkg-dev (>= 1.13.19), libglib2.0-dev (>= 2.4), bison, libtool, dc, lsb-release, libx11-dev, libxt-dev, zlib1g-dev, autoconf, automake, dh-autoreconf, python, pkg-config, gettext, libpango1.0-dev, libatk1.0-dev, libgtk2.0-dev, libgif-dev, libglade2-dev, mono-3, mono-addins-4.0, monodevelop-5 (>= 5.0.1.3), gtk-sharp-4.0
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/universe/m/monodevelop-database-5
+Files:
+ c3201148862c6ced4fdc13c108ac810f 386714 monodevelop-database-5_5.0.1.3.orig.tar.bz2
+ 4a44704d64d14aeec6e8970d4d0f8b88 3934 monodevelop-database-5_5.0.1.3-1.debian.tar.gz
+ d78ed5835b0328c7b90187700226bc83 1834 monodevelop-database-5_5.0.1.3-1.dsc
+Checksums-Sha1:
+ f31f48ff5f34ca43f37333a9578a8616d8eca344 386714 monodevelop-database-5_5.0.1.3.orig.tar.bz2
+ 79d0bde7fc76a0cc07a1eed1c15839034c132bb1 3934 monodevelop-database-5_5.0.1.3-1.debian.tar.gz
+ 620d321671202117a38942b7ebc994a432973f7b 1834 monodevelop-database-5_5.0.1.3-1.dsc
+Checksums-Sha256:
+ f5e9e31b62f93b112936f39a2aa013b73d2b14c602b2bddf9ff7b145aee102ab 386714 monodevelop-database-5_5.0.1.3.orig.tar.bz2
+ f203be6cc66c216199d53bb515b81b0062fdb3f0d3c479de00faef41b7e997bd 3934 monodevelop-database-5_5.0.1.3-1.debian.tar.gz
+ f87ad095fac7b6e64fe914ae60cd6d5c188be2e871bd3c49a8c8414835674d58 1834 monodevelop-database-5_5.0.1.3-1.dsc
+Homepage: http://www.monodevelop.com/
+Package-List: monodevelop-database-5 deb cli-mono extra
+
+Package: monodevelop-debugger-gdb-4.0
+Binary: monodevelop-debugger-gdb-4.0
+Version: 4.2.2-1ubuntu1
+Section: cli-mono
+Maintainer: Eberhard Beilharz <eb1@sil.org>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, dpkg-dev (>= 1.13.19), libglib2.0-dev (>= 2.4), bison, libtool, dc, lsb-release, libx11-dev, libxt-dev, zlib1g-dev, autoconf, automake, dh-autoreconf, python, pkg-config, gettext, libpango1.0-dev, libatk1.0-dev, libgtk2.0-dev, libgif-dev, libglade2-dev, mono-3, monodevelop-4.0 (>= 4.2.2), mono-addins-4.0, gtk-sharp-4.0
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/universe/m/monodevelop-debugger-gdb-4.0
+Files:
+ c18d13045a9dadf3239bc00a76d5ad8c 17483 monodevelop-debugger-gdb-4.0_4.2.2.orig.tar.bz2
+ 3b9ef9618cbbe86ec45f6f6231fa11e5 2879 monodevelop-debugger-gdb-4.0_4.2.2-1ubuntu1.debian.tar.gz
+ 3060b40b18a756abbb38a717c9f6693c 1899 monodevelop-debugger-gdb-4.0_4.2.2-1ubuntu1.dsc
+Checksums-Sha1:
+ 9a891cdaaef6b1839a5c05a1add02551f71c3a6a 17483 monodevelop-debugger-gdb-4.0_4.2.2.orig.tar.bz2
+ f10ae6afca90a1cc40e23a52f350c2de93b041f8 2879 monodevelop-debugger-gdb-4.0_4.2.2-1ubuntu1.debian.tar.gz
+ 69d97149f7dd75df27ae7ed0b9ffb0407a880efc 1899 monodevelop-debugger-gdb-4.0_4.2.2-1ubuntu1.dsc
+Checksums-Sha256:
+ edca3600da7c184521137cc67c7950bd8c42fafc8e3590908876256623385ab4 17483 monodevelop-debugger-gdb-4.0_4.2.2.orig.tar.bz2
+ b035a2a9dee2dc26adb466db8982f5fb5dc2329a1711753fdbe235d61ab9d2db 2879 monodevelop-debugger-gdb-4.0_4.2.2-1ubuntu1.debian.tar.gz
+ 2c11d390d53e6f48278d48155764c03a76ebf9c46e1d4674bd78a38b372ae417 1899 monodevelop-debugger-gdb-4.0_4.2.2-1ubuntu1.dsc
+Homepage: http://www.monodevelop.com/
+Package-List: monodevelop-debugger-gdb-4.0 deb cli-mono extra
+
+Package: monodevelop-debugger-gdb-5
+Binary: monodevelop-debugger-gdb-5
+Version: 5.0.1.3-1
+Section: cli-mono
+Maintainer: Eberhard Beilharz <eb1@sil.org>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, dpkg-dev (>= 1.13.19), libglib2.0-dev (>= 2.4), bison, libtool, dc, lsb-release, libx11-dev, libxt-dev, zlib1g-dev, autoconf, automake, dh-autoreconf, python, pkg-config, gettext, libpango1.0-dev, libatk1.0-dev, libgtk2.0-dev, libgif-dev, libglade2-dev, mono-3, monodevelop-5 (>= 5.0.1.3), mono-addins-4.0, gtk-sharp-4.0
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/universe/m/monodevelop-debugger-gdb-5
+Files:
+ 9bfcaa6a45d3e692f4be98da85e240fc 28505 monodevelop-debugger-gdb-5_5.0.1.3.orig.tar.bz2
+ 0be4ed0eedb4a4f0022a539018cbad3d 3058 monodevelop-debugger-gdb-5_5.0.1.3-1.debian.tar.gz
+ 5570ca3120244f04f46eeb35b81b1208 1867 monodevelop-debugger-gdb-5_5.0.1.3-1.dsc
+Checksums-Sha1:
+ 62519fec947b91568c4bab70feef9635cc5409d4 28505 monodevelop-debugger-gdb-5_5.0.1.3.orig.tar.bz2
+ 33bdf3d9d97262f7cdce34ed104054ad7675cee1 3058 monodevelop-debugger-gdb-5_5.0.1.3-1.debian.tar.gz
+ 6a33a86e137ac821bf65a53e06ffb46e244505ad 1867 monodevelop-debugger-gdb-5_5.0.1.3-1.dsc
+Checksums-Sha256:
+ 38fed3313739635df68ad1b8f60f2737824c2e1deb2b64f669cdc57a0e7e9315 28505 monodevelop-debugger-gdb-5_5.0.1.3.orig.tar.bz2
+ 796c2f42ab65612eb760b73014252dfbaef3de998957a10856b4564d5d7b62da 3058 monodevelop-debugger-gdb-5_5.0.1.3-1.debian.tar.gz
+ 692b71479aedaba319a42d7c29ae77d7f0f1c8df835b5f8cb31fe6089f936375 1867 monodevelop-debugger-gdb-5_5.0.1.3-1.dsc
+Homepage: http://www.monodevelop.com/
+Package-List: monodevelop-debugger-gdb-5 deb cli-mono extra
+
+Package: nvidia-graphics-drivers-340
+Binary: nvidia-340, nvidia-340-dev, libcuda1-340, nvidia-libopencl1-340, nvidia-opencl-icd-340, nvidia-340-uvm
+Version: 340.76-100ubuntu100~ppa0~trusty
+Section: misc
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 8.0.0), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, libc6, libxvmc1, dh-modaliases, libxv1
+Architecture: i386 amd64
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/universe/n/nvidia-graphics-drivers-340
+Files:
+ a2950ca477ffca518afde27df80cff91 77444737 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa0~trusty.tar.gz
+ 21ed13638f7980f576f6d73d3461a8e1 2263 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa0~trusty.dsc
+Checksums-Sha1:
+ ebd833cd20ca4651b62f4f2bf8c3fe931b155660 77444737 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa0~trusty.tar.gz
+ 50bd631c066e7dcd6d5a0699bdf6e4e0e82e722e 2263 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa0~trusty.dsc
+Checksums-Sha256:
+ cb137f049d2f5e6bab5e00ca13292f088416da6bf29defe14e6af96472f5ec57 77444737 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa0~trusty.tar.gz
+ 8b29d200ea38bf229c041e6eae537e446dff36b1ec0da78faf3e9a846e908eab 2263 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa0~trusty.dsc
+Package-List: libcuda1-340 deb restricted/misc optional arch=i386,amd64
+ nvidia-340 deb restricted/misc optional arch=i386,amd64
+ nvidia-340-dev deb restricted/misc optional arch=i386,amd64
+ nvidia-340-uvm deb restricted/misc optional arch=i386,amd64
+ nvidia-libopencl1-340 deb restricted/misc optional arch=i386,amd64
+ nvidia-opencl-icd-340 deb restricted/misc optional arch=i386,amd64
+Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
+Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
+
+Package: nvidia-graphics-drivers-343
+Binary: nvidia-343, nvidia-343-dev, libcuda1-343, nvidia-libopencl1-343, nvidia-opencl-icd-343, nvidia-343-uvm, nvidia-319, nvidia-319-dev
+Version: 343.22-100ubuntu100~ppa1~trusty
+Section: misc
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 8.0.0), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, libc6, libxvmc1, dh-modaliases, libxv1
+Architecture: i386 amd64
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/universe/n/nvidia-graphics-drivers-343
+Files:
+ 0fed65bb4b27fdfacac2ec4c3dfc8c44 81717061 nvidia-graphics-drivers-343_343.22-100ubuntu100~ppa1~trusty.tar.gz
+ ae3452ffb79ffbbbfbe43b9ebecd44a3 2409 nvidia-graphics-drivers-343_343.22-100ubuntu100~ppa1~trusty.dsc
+Checksums-Sha1:
+ 3d5eadb18feb76e5f19b338cc44a556218175cfe 81717061 nvidia-graphics-drivers-343_343.22-100ubuntu100~ppa1~trusty.tar.gz
+ b2a89ab0443ada2c55cabf2ea99e9e274cb6a1d2 2409 nvidia-graphics-drivers-343_343.22-100ubuntu100~ppa1~trusty.dsc
+Checksums-Sha256:
+ 4e3edfe9343a558c3a00bc999e5db9a9a50327568734ee6695f7dd36112165c6 81717061 nvidia-graphics-drivers-343_343.22-100ubuntu100~ppa1~trusty.tar.gz
+ 628efe2a6a5e7707f98ef52f50c14fbe256f8389aef401683fa3580e07b10fe5 2409 nvidia-graphics-drivers-343_343.22-100ubuntu100~ppa1~trusty.dsc
+Package-List: libcuda1-343 deb restricted/misc optional arch=i386,amd64
+ nvidia-319 deb restricted/misc optional arch=i386,amd64
+ nvidia-319-dev deb restricted/misc optional arch=i386,amd64
+ nvidia-343 deb restricted/misc optional arch=i386,amd64
+ nvidia-343-dev deb restricted/misc optional arch=i386,amd64
+ nvidia-343-uvm deb restricted/misc optional arch=i386,amd64
+ nvidia-libopencl1-343 deb restricted/misc optional arch=i386,amd64
+ nvidia-opencl-icd-343 deb restricted/misc optional arch=i386,amd64
+Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
+Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
+
+Package: nvidia-graphics-drivers-346
+Binary: nvidia-346, nvidia-346-dev, libcuda1-346, nvidia-libopencl1-346, nvidia-opencl-icd-346, nvidia-346-uvm, nvidia-319, nvidia-319-dev
+Version: 346.47-100ubuntu100~ppa0~trusty
+Section: misc
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 8.0.0), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, libc6, libxvmc1, dh-modaliases, libxv1
+Architecture: i386 amd64
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/universe/n/nvidia-graphics-drivers-346
+Files:
+ cd9cc62eac884fa72569ad1f643c1c85 82155011 nvidia-graphics-drivers-346_346.47-100ubuntu100~ppa0~trusty.tar.gz
+ 7f8d112676c887a4d0190a52bae60e25 2404 nvidia-graphics-drivers-346_346.47-100ubuntu100~ppa0~trusty.dsc
+Checksums-Sha1:
+ 4ff28081bc24988b40ec84090b4f5d533c8262aa 82155011 nvidia-graphics-drivers-346_346.47-100ubuntu100~ppa0~trusty.tar.gz
+ f5913cea456165dc9d0c884a1fba4d781c5d4bba 2404 nvidia-graphics-drivers-346_346.47-100ubuntu100~ppa0~trusty.dsc
+Checksums-Sha256:
+ 043ea482022258d5beb46766cef5b21055615feaa0d14be53c4f13fa42e518ee 82155011 nvidia-graphics-drivers-346_346.47-100ubuntu100~ppa0~trusty.tar.gz
+ 79c7fbba65b13a2081182e43b5bb68731d67dc03dce23788b202371a7b8638f4 2404 nvidia-graphics-drivers-346_346.47-100ubuntu100~ppa0~trusty.dsc
+Package-List: libcuda1-346 deb restricted/misc optional arch=i386,amd64
+ nvidia-319 deb restricted/misc optional arch=i386,amd64
+ nvidia-319-dev deb restricted/misc optional arch=i386,amd64
+ nvidia-346 deb restricted/misc optional arch=i386,amd64
+ nvidia-346-dev deb restricted/misc optional arch=i386,amd64
+ nvidia-346-uvm deb restricted/misc optional arch=amd64
+ nvidia-libopencl1-346 deb restricted/misc optional arch=i386,amd64
+ nvidia-opencl-icd-346 deb restricted/misc optional arch=i386,amd64
+Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
+Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
+
+Package: nvidia-settings
+Binary: nvidia-settings, nvidia-settings-319, nvidia-settings-319-updates, nvidia-settings-313-updates, nvidia-settings-310, nvidia-settings-310-updates, nvidia-settings-304, nvidia-settings-304-updates, nvidia-settings-experimental-304, nvidia-settings-updates
+Version: 346.47-100ubuntu100~ppa0~trusty
+Section: x11
+Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7), m4, libgtk2.0-dev, libgtk-3-dev, libxext-dev, xutils-dev, libxrandr-dev, libgl1-mesa-dev | libgl-dev, libxxf86vm-dev, libxv-dev, libvdpau-dev, quilt, libjansson-dev
+Architecture: i386 amd64
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/universe/n/nvidia-settings
+Files:
+ 46e8aeb1a1f5b13591963c580c929bcd 1957013 nvidia-settings_346.47-100ubuntu100~ppa0~trusty.tar.gz
+ fb6eeeb376263cc617e43b6231f110c7 2817 nvidia-settings_346.47-100ubuntu100~ppa0~trusty.dsc
+Checksums-Sha1:
+ 6f9144d2fb764bbb94648c18a6e42169d4c3e042 1957013 nvidia-settings_346.47-100ubuntu100~ppa0~trusty.tar.gz
+ 3cd826f516ac536ec478e89dc304602d27f3563a 2817 nvidia-settings_346.47-100ubuntu100~ppa0~trusty.dsc
+Checksums-Sha256:
+ 9421cddce4258be6a94c3e2d1afd42d7bd2d69704d2640e027994d642e27c0a0 1957013 nvidia-settings_346.47-100ubuntu100~ppa0~trusty.tar.gz
+ c30e5aeba2fcfca3c3f590a57b2c560a1951dcea48de533663173a458c1613d9 2817 nvidia-settings_346.47-100ubuntu100~ppa0~trusty.dsc
+Uploaders: Randall Donald <rdonald@debian.org>
+Package-List: nvidia-settings deb contrib/x11 optional arch=i386,amd64
+ nvidia-settings-304 deb contrib/x11 optional arch=i386,amd64
+ nvidia-settings-304-updates deb contrib/x11 optional arch=i386,amd64
+ nvidia-settings-310 deb contrib/x11 optional arch=i386,amd64
+ nvidia-settings-310-updates deb contrib/x11 optional arch=i386,amd64
+ nvidia-settings-313-updates deb contrib/x11 optional arch=i386,amd64
+ nvidia-settings-319 deb contrib/x11 optional arch=i386,amd64
+ nvidia-settings-319-updates deb contrib/x11 optional arch=i386,amd64
+ nvidia-settings-experimental-304 deb contrib/x11 optional arch=i386,amd64
+ nvidia-settings-updates deb contrib/x11 optional arch=i386,amd64
+Vcs-Git: git://github.com/tseliot/nvidia-settings.git
+Vcs-Browser: http://github.com/tseliot/nvidia-settings
+Original-Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+
+Package: parted
+Format: 3.0 (quilt)
+Binary: parted, parted-udeb, libparted2, libparted-fs-resize0, libparted2-udeb, libparted-fs-resize0-udeb, libparted-i18n, libparted-dev, libparted0-dev, libparted2-dbg, libparted-fs-resize0-dbg, parted-doc
+Architecture: any all
+Version: 3.2-6
+Maintainer: Parted Maintainer Team <parted-maintainers@lists.alioth.debian.org>
+Uploaders: Otavio Salvador <otavio@debian.org>, Bastian Blank <waldi@debian.org>, Xavier Oswald <xoswald@debian.org>, Colin Watson <cjwatson@debian.org>
+Homepage: http://www.gnu.org/software/parted
+Standards-Version: 3.8.4
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=parted/debian/parted.git
+Vcs-Git: git://anonscm.debian.org/parted/debian/parted.git
+Build-Depends: dpkg-dev (>= 1.15.7~), debhelper (>= 9~), dh-exec, libncurses-dev | libncurses5-dev, libreadline-dev | libreadline6-dev, libdevmapper-dev (>= 2:1.02.39) [linux-any], uuid-dev, gettext, texinfo (>= 4.2), debianutils (>= 1.13.1), libblkid-dev, pkg-config, check, dh-autoreconf, autoconf (>= 2.63), automake (>= 1:1.11.6), autopoint
+Package-List:
+ libparted-dev deb libdevel optional
+ libparted-fs-resize0 deb libs optional
+ libparted-fs-resize0-dbg deb debug extra
+ libparted-fs-resize0-udeb udeb debian-installer extra
+ libparted-i18n deb localization optional
+ libparted0-dev deb oldlibs extra
+ libparted2 deb libs optional
+ libparted2-dbg deb debug extra
+ libparted2-udeb udeb debian-installer extra
+ parted deb admin optional
+ parted-doc deb doc optional
+ parted-udeb udeb debian-installer extra
+Priority: optional
+Section: admin
+Directory: pool/universe/p/parted
+Files: 
+ 39fb4b49ecfc049f5d1537cb19320b6b 2587 parted_3.2-6.dsc
+ 0247b6a7b314f8edeb618159fa95f9cb 1655244 parted_3.2.orig.tar.xz
+ cbb90df74a44f8b9fc27f31b9f1428a4 64119 parted_3.2-6.debian.tar.gz
+Checksums-Sha1: 
+ dd96645fa32a4c938c9b6ebe67a25af185480355 2587 parted_3.2-6.dsc
+ 78db6ca8dd6082c5367c8446bf6f7ae044091959 1655244 parted_3.2.orig.tar.xz
+ 8cf0a9b7da44baff74bcc3073528c0a6f1c34934 64119 parted_3.2-6.debian.tar.gz
+Checksums-Sha256: 
+ a9ae757e4744f55d5d226ee4896eac9c1e9c54b6daa299f0934ec52fbdb7f02e 2587 parted_3.2-6.dsc
+ 858b589c22297cacdf437f3baff6f04b333087521ab274f7ab677cb8c6bb78e4 1655244 parted_3.2.orig.tar.xz
+ cc2df639c5d0c6be37612fd3ec86d4c83a332fdb3ba71dadd6f70dea598419a8 64119 parted_3.2-6.debian.tar.gz
+
+Package: pidgin-lwqq
+Binary: pidgin-lwqq, pidgin-lwqq-dbg
+Version: 0.4.2+git201502271631.17d115f-1~lainme~trusty
+Section: net
+Maintainer: lainme <lainme993@gmail.com>
+Build-Depends: debhelper (>= 7), cdbs, cmake, pkg-config, libglib2.0-dev, libpurple-dev, liblwqq-dev (>= 0.4.2)
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/p/pidgin-lwqq
+Files:
+ 1fb0502cbfa09bf4b9d6faff500457b4 1956099 pidgin-lwqq_0.4.2+git201502271631.17d115f.orig.tar.gz
+ 8b251afa8bf8511e81dcfe51eec152f6 3220 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.debian.tar.gz
+ edcfe13135388a02a8b8933e80d27e29 2063 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.dsc
+Checksums-Sha1:
+ 3b0b1abeceea376ed0b45289931d1b9f828b351c 1956099 pidgin-lwqq_0.4.2+git201502271631.17d115f.orig.tar.gz
+ cd05eb6c5f27c0c36d7c92806cc18d1e6ca54a19 3220 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.debian.tar.gz
+ 7bb559df46074652f19523bd51750bb09f4f02e8 2063 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.dsc
+Checksums-Sha256:
+ bcbc590042bab89ee262d57c6f41e81ce006a654063a38fccd401d885beeddf8 1956099 pidgin-lwqq_0.4.2+git201502271631.17d115f.orig.tar.gz
+ 677421cf3cf058f0559e337844e3ee8afaa3f0779c9fa453325aff3e4dd253bb 3220 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.debian.tar.gz
+ 220bcb822f43a8cbd59e64b4a614131e82517dda09a3d787c59acb9635ce73f1 2063 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.dsc
+Homepage: https://github.com/xiehuc/pidgin-lwqq
+Package-List: pidgin-lwqq deb net extra
+ pidgin-lwqq-dbg deb debug extra
+
+Package: pidgin-lwqq-unstable
+Binary: pidgin-lwqq-unstable, pidgin-lwqq-unstable-dbg
+Version: 0.2-d+git201403121353.fdc9b5c-1~lainme~trusty
+Section: net
+Maintainer: lainme <lainme993@gmail.com>
+Build-Depends: debhelper (>= 7), cdbs, cmake, pkg-config, libglib2.0-dev, libpurple-dev, libcurl4-openssl-dev, libsqlite3-dev, libev-dev, libmozjs185-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/p/pidgin-lwqq-unstable
+Files:
+ 09b55e0f753d49cd2550ce6658935ab2 677953 pidgin-lwqq-unstable_0.2-d+git201403121353.fdc9b5c.orig.tar.gz
+ 5045378c337b7922b4972bb5b317ac25 3887 pidgin-lwqq-unstable_0.2-d+git201403121353.fdc9b5c-1~lainme~trusty.debian.tar.gz
+ c0e1750f8e070c7b467648ce111451df 2218 pidgin-lwqq-unstable_0.2-d+git201403121353.fdc9b5c-1~lainme~trusty.dsc
+Checksums-Sha1:
+ d78b6bde972512ce0dfa795799fc1d50bfc256c8 677953 pidgin-lwqq-unstable_0.2-d+git201403121353.fdc9b5c.orig.tar.gz
+ c0205c7d4c29ebf6466f73f13b17ea061c42ba86 3887 pidgin-lwqq-unstable_0.2-d+git201403121353.fdc9b5c-1~lainme~trusty.debian.tar.gz
+ 611b9f872ded208656c171ab3d63025a9200a2ca 2218 pidgin-lwqq-unstable_0.2-d+git201403121353.fdc9b5c-1~lainme~trusty.dsc
+Checksums-Sha256:
+ 7b8f47fda5ccd5a902479341503bc3c0cf606bb6f99587ed705f5485beffb8fc 677953 pidgin-lwqq-unstable_0.2-d+git201403121353.fdc9b5c.orig.tar.gz
+ a106f59131390ed1abdb3876caf1fcf97122d153dd94c1721f71e2072211a849 3887 pidgin-lwqq-unstable_0.2-d+git201403121353.fdc9b5c-1~lainme~trusty.debian.tar.gz
+ 8249354a16e5320a918512f18eb04753e995d227ccc3e61d6d8914453da31b27 2218 pidgin-lwqq-unstable_0.2-d+git201403121353.fdc9b5c-1~lainme~trusty.dsc
+Homepage: https://github.com/xiehuc/pidgin-lwqq
+Package-List: pidgin-lwqq-unstable deb net extra
+ pidgin-lwqq-unstable-dbg deb debug extra
+
+Package: premake4
+Binary: premake4
+Version: 4.4~beta5-0ubuntu1~trusty
+Section: devel
+Maintainer: pasgui (lgp203.free.fr) <lgp203@free.fr>
+Build-Depends: debhelper (>= 9)
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/p/premake4
+Files:
+ 5c7f7708294c6131dcdc6895b3f6b7cc 458884 premake4_4.4~beta5.orig.tar.gz
+ caeb1f702094bf3cbda6527795d611b2 11025 premake4_4.4~beta5-0ubuntu1~trusty.debian.tar.gz
+ 2b1b15ca705f8612fd8e6098fc413b5a 1154 premake4_4.4~beta5-0ubuntu1~trusty.dsc
+Checksums-Sha1:
+ 4c6dcd262d18b53398a5f6a03bf2dd00f2b1cc14 458884 premake4_4.4~beta5.orig.tar.gz
+ 634e3a628a499784e91fcdce503f19c5b2b222a0 11025 premake4_4.4~beta5-0ubuntu1~trusty.debian.tar.gz
+ 74252b3196bbf2da1d537d0a10ce57f384ddd0f7 1154 premake4_4.4~beta5-0ubuntu1~trusty.dsc
+Checksums-Sha256:
+ a185a065449d172c1dfe08b1566222149a064200fe04cc6721cb464d4d646575 458884 premake4_4.4~beta5.orig.tar.gz
+ cc43d86b8c7b7d44026642da4595cd25342fac679797fa5b3a941e8adea66f12 11025 premake4_4.4~beta5-0ubuntu1~trusty.debian.tar.gz
+ 8c5c4b888bdc511e3101b96a39441f0f74d42c3d162046de771fb7298bb0fc1a 1154 premake4_4.4~beta5-0ubuntu1~trusty.dsc
+Homepage: http://www.industriousone.com/premake/
+Package-List: premake4 deb contrib/devel optional
+
+Package: premake5
+Binary: premake5
+Version: 1.0~dev17-ec1ea83-0ubuntu1~trusty
+Section: devel
+Maintainer: pasgui (lgp203.free.fr) <lgp203@free.fr>
+Build-Depends: debhelper (>= 9)
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/p/premake5
+Files:
+ 6bd6322d46b0b273444bd2574e55e4eb 432226 premake5_1.0~dev17-ec1ea83.orig.tar.gz
+ db6cd172f50157445dcd982b05d7ac5a 72971 premake5_1.0~dev17-ec1ea83-0ubuntu1~trusty.debian.tar.gz
+ 0340bcba2ab2e1db7badb4925bbfd988 1213 premake5_1.0~dev17-ec1ea83-0ubuntu1~trusty.dsc
+Checksums-Sha1:
+ 7aa9e79d22245a9b8258b69e9c21349a6d490879 432226 premake5_1.0~dev17-ec1ea83.orig.tar.gz
+ 72d17be1b0f6b3d69121d269ce1bf2aee25bd2ed 72971 premake5_1.0~dev17-ec1ea83-0ubuntu1~trusty.debian.tar.gz
+ f4c350449541acfd962aa6e484d853833599385a 1213 premake5_1.0~dev17-ec1ea83-0ubuntu1~trusty.dsc
+Checksums-Sha256:
+ 2f6d78de509083977cebe69930f20ee1496a1a136d539a49b3927cb3f384cc6d 432226 premake5_1.0~dev17-ec1ea83.orig.tar.gz
+ adccd5675f2287c14adea13a11422658f6fe16c56e51a444d68005ba71fd1413 72971 premake5_1.0~dev17-ec1ea83-0ubuntu1~trusty.debian.tar.gz
+ fc27b1d4ef18955c127eed70eaaf5c7f5bb0e760cbc107b60ef122860193fe57 1213 premake5_1.0~dev17-ec1ea83-0ubuntu1~trusty.dsc
+Homepage: https://bitbucket.org/premake/premake-dev
+Package-List: premake5 deb contrib/devel optional
+
+Package: primus
+Binary: primus, primus-libs, primus-libs-ia32, primus-libs-dbg
+Version: 20131127-1~trustyppa1
+Section: utils
+Maintainer: The Bumblebee Project <bumblebee@lists.launchpad.net>
+Build-Depends: debhelper (>= 9), bash-completion, mesa-common-dev
+Architecture: i386 amd64
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/p/primus
+Files:
+ 31290b69a5c17794d9e60b911221e073 26125 primus_20131127.orig.tar.gz
+ 76b4acbfaabce0b5216e8ca79d3dc963 3889 primus_20131127-1~trustyppa1.debian.tar.gz
+ f7b6908ab626ed110e6ba48ecca48762 1788 primus_20131127-1~trustyppa1.dsc
+Checksums-Sha1:
+ cc29979a51b9a72a3bd885585c1e60060f352508 26125 primus_20131127.orig.tar.gz
+ 88e21b560eb3619fc166f34cc9480b7185b01fe6 3889 primus_20131127-1~trustyppa1.debian.tar.gz
+ faa196fa9bca878eb67bc9f05d0499eca7a9ddb7 1788 primus_20131127-1~trustyppa1.dsc
+Checksums-Sha256:
+ 3feed2f9cc639f5de166637477aabe7f6a95f7f283277e205f3449cfcb7f3504 26125 primus_20131127.orig.tar.gz
+ b7e5e5e81b2c16705f24108e449b45fa7154a1588d71c5357c81ac59b366c55d 3889 primus_20131127-1~trustyppa1.debian.tar.gz
+ fe2543299f046f88b3bdc01ab3fc5d359a69e95f54132f64095c867ee38ea428 1788 primus_20131127-1~trustyppa1.dsc
+Homepage: https://github.com/amonakov/primus
+Uploaders: Bruno Pagani <bruno.n.pagani@gmail.com>, Dmitry Zhurikhin <zhurikhin@gmail.com>
+Package-List: primus deb utils extra
+ primus-libs deb utils extra
+ primus-libs-dbg deb debug extra
+ primus-libs-ia32 deb utils extra
+Vcs-Git: git://github.com/amonakov/primus.git
+Vcs-Browser: https://github.com/amonakov/primus
+
+Package: pyqt5
+Format: 3.0 (quilt)
+Binary: python-pyqt5, python-pyqt5-dbg, python3-pyqt5, python3-pyqt5-dbg, pyqt5-dev, pyqt5-doc, pyqt5-dev-tools
+Architecture: any all
+Version: 5.3.1-1
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Uploaders: Dmitry Shachnev <mitya57@gmail.com>, Scott Kitterman <scott@kitterman.com>
+Homepage: http://www.riverbankcomputing.co.uk/software/pyqt/
+Standards-Version: 3.9.4
+Vcs-Browser: http://anonscm.debian.org/viewvc/python-modules/packages/pyqt5/trunk/
+Vcs-Svn: svn://anonscm.debian.org/python-modules/packages/pyqt5/trunk/
+Build-Depends: dpkg-dev (>= 1.16.1~), debhelper (>= 9), libicu-dev, libdbus-1-dev (>= 1.0.2), qt5-qmake, libpulse-dev, libqt5opengl5-dev (>= 5.3.1~), libqt5webkit5-dev (>= 5.3.1~), libglib2.0-dev, libxml2-dev, libgstreamer0.10-dev, libgstreamer-plugins-base0.10-dev, libsqlite3-dev, libxslt1-dev, qtmultimedia5-dev (>= 5.3.1~), qtdeclarative5-dev (>= 5.3.1~), qttools5-dev (>= 5.3.1~), libqt5svg5-dev (>= 5.3.1~), libqt5xmlpatterns5-dev (>= 5.3.1~), python-dbus-dev, python-all-dbg, python-all-dev, python3-all-dbg, python3-all-dev (>= 3.2.3-6~), python-dbus, python-dbus-dbg, python3-dbus, python3-dbus-dbg, python-sip-dbg, python-sip-dev (>= 4.16.1~), python3-sip-dbg, python3-sip-dev (>= 4.16.1~), python-sphinx, python3-sphinx
+Package-List:
+ pyqt5-dev deb python optional
+ pyqt5-dev-tools deb python optional
+ pyqt5-doc deb doc optional
+ python-pyqt5 deb python optional
+ python-pyqt5-dbg deb debug extra
+ python3-pyqt5 deb python optional
+ python3-pyqt5-dbg deb debug extra
+Priority: optional
+Section: python
+Directory: pool/universe/p/pyqt5
+Files: 
+ e6c43887e7162901feaf542b19b4bf32 2719 pyqt5_5.3.1-1.dsc
+ b358d56149d7fafe68881c006b7a5bde 2582156 pyqt5_5.3.1.orig.tar.xz
+ 12d3d39940dd65a0965f7f6234ad2ef3 10093 pyqt5_5.3.1-1.debian.tar.gz
+Checksums-Sha1: 
+ f085f2579275f54be0e31891153be565ac19b9d3 2719 pyqt5_5.3.1-1.dsc
+ 111869f7de858749ce6e4cf3221fe8e8b40ff630 2582156 pyqt5_5.3.1.orig.tar.xz
+ c32c48a47331bcd39c59ebb7d85ce00fb19b544b 10093 pyqt5_5.3.1-1.debian.tar.gz
+Checksums-Sha256: 
+ 005f6e5579b64dfc730a8218021307ba0babe3f062e02ddb6c01d3f5c599ad48 2719 pyqt5_5.3.1-1.dsc
+ 1e947f547e1933b33d6264a43b3f2376569f8f9e4a6dbef170ffafb83b788a35 2582156 pyqt5_5.3.1.orig.tar.xz
+ 1201375902c46546839c7846c69a9d983fe6d30a5df8f16c2b8b01c6e1c0b6ea 10093 pyqt5_5.3.1-1.debian.tar.gz
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+
+Package: qt5-extra
+Format: 3.0 (native)
+Binary: qt5-extra, qt5-plugins
+Architecture: all
+Version: 1-deepin10
+Maintainer: lilongyu <lilongyu@linuxdeepin.com>
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 7)
+Package-List:
+ qt5-extra deb admin optional
+ qt5-plugins deb admin optional
+Priority: optional
+Section: admin
+Directory: pool/universe/q/qt5-extra
+Files: 
+ 3e41231baaef96bc5a47f8995695bbc4 1113 qt5-extra_1-deepin10.dsc
+ d98a7c8604324d7fae642751a5aaf0ba 2111 qt5-extra_1-deepin10.tar.gz
+Checksums-Sha1: 
+ 91020641797118d04f5b8b8182fd591ac28514af 1113 qt5-extra_1-deepin10.dsc
+ dea405b7356e9d06c37184630537adc8955dab78 2111 qt5-extra_1-deepin10.tar.gz
+Checksums-Sha256: 
+ 0acd72d785bc4bd6c23302ff11bbf81772e2a6659928df783ff806da318a1eed 1113 qt5-extra_1-deepin10.dsc
+ 772a5efc8ef0b0564e233544215e21e3ffce8cee5a400ef61e3442acb8ad9e52 2111 qt5-extra_1-deepin10.tar.gz
+
+Package: qtbase-opensource-src
+Format: 3.0 (quilt)
+Binary: libqt5core5a, libqt5gui5, libqt5network5, libqt5opengl5, libqt5sql5, libqt5sql5-mysql, libqt5sql5-odbc, libqt5sql5-psql, libqt5sql5-sqlite, libqt5sql5-tds, libqt5xml5, libqt5dbus5, libqt5test5, libqt5concurrent5, libqt5widgets5, libqt5printsupport5, qtbase5-dev, qtbase5-private-dev, libqt5opengl5-dev, qtbase5-dev-tools, qt5-qmake, qtbase5-examples, qtbase5-dbg, qtbase5-dev-tools-dbg, qtbase5-examples-dbg, qt5-default, qtbase5-doc-html
+Architecture: any all
+Version: 5.3.1+dfsg-3
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Timo Jyrinki <timo@debian.org>, Dmitry Shachnev <mitya57@gmail.com>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtbase.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtbase.git
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1), firebird-dev [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sh4 sparc], freetds-dev, gdb, libasound2-dev [linux-any], libatspi2.0-dev, libcups2-dev, libdbus-1-dev, libfontconfig1-dev, libfreetype6-dev, libgbm-dev [linux-any], libgl1-mesa-dev | libgl-dev, libgles2-mesa-dev [linux-any] | libgles2-dev [linux-any], libglib2.0-dev, libglu1-mesa-dev | libglu-dev, libgstreamer-plugins-base0.10-dev, libgstreamer0.10-dev, libgtk2.0-dev, libharfbuzz-dev, libicu-dev, libjpeg-dev, libmtdev-dev [linux-any], libmysqlclient-dev, libopenvg1-mesa-dev [!hurd-any], libpng-dev, libpq-dev, libpulse-dev, libsqlite3-dev, libssl-dev, libudev-dev [linux-any], libx11-dev, libx11-xcb-dev, libxcb-icccm4-dev, libxcb-image0-dev, libxcb-keysyms1-dev, libxcb-randr0-dev, libxcb-render-util0-dev, libxcb-render0-dev, libxcb-shape0-dev, libxcb-shm0-dev, libxcb-sync-dev, libxcb-xfixes0-dev, libxcb-xkb-dev, libxcb1-dev, libxi-dev, libxkbcommon-dev, libxkbcommon-x11-dev, libxrender-dev, pkg-kde-tools (>= 0.14.2), unixodbc-dev, zlib1g-dev
+Package-List:
+ libqt5concurrent5 deb libs optional
+ libqt5core5a deb libs optional
+ libqt5dbus5 deb libs optional
+ libqt5gui5 deb libs optional
+ libqt5network5 deb libs optional
+ libqt5opengl5 deb libs optional
+ libqt5opengl5-dev deb libdevel optional
+ libqt5printsupport5 deb libs optional
+ libqt5sql5 deb libs optional
+ libqt5sql5-mysql deb libs optional
+ libqt5sql5-odbc deb libs optional
+ libqt5sql5-psql deb libs optional
+ libqt5sql5-sqlite deb libs optional
+ libqt5sql5-tds deb libs optional
+ libqt5test5 deb libs optional
+ libqt5widgets5 deb libs optional
+ libqt5xml5 deb libs optional
+ qt5-default deb libs optional
+ qt5-qmake deb devel optional
+ qtbase5-dbg deb debug extra
+ qtbase5-dev deb libdevel optional
+ qtbase5-dev-tools deb devel optional
+ qtbase5-dev-tools-dbg deb debug extra
+ qtbase5-doc-html deb doc extra
+ qtbase5-examples deb x11 optional
+ qtbase5-examples-dbg deb debug extra
+ qtbase5-private-dev deb libdevel optional
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtbase-opensource-src
+Files: 
+ f3ae8fe92ab2a7a5e45d546c9bee7a9f 4313 qtbase-opensource-src_5.3.1+dfsg-3.dsc
+ e1619f0ae44c920e81e74393fb83a69a 55190308 qtbase-opensource-src_5.3.1+dfsg.orig.tar.xz
+ 7c9f1024cbabbb9778274f2fbb83dd47 254755 qtbase-opensource-src_5.3.1+dfsg-3.debian.tar.gz
+Checksums-Sha1: 
+ a20d96eb2aea746ea07bf4db8402896ce04f1d82 4313 qtbase-opensource-src_5.3.1+dfsg-3.dsc
+ 37227a4c66f34616dbe592c105487bccff37c870 55190308 qtbase-opensource-src_5.3.1+dfsg.orig.tar.xz
+ d89a0eb60c5c3e717d10551f4ee77a793cb29b87 254755 qtbase-opensource-src_5.3.1+dfsg-3.debian.tar.gz
+Checksums-Sha256: 
+ b396472fb4155d1a495030d31bb4dfcb0f2cc08079c64c7222f41d61b30ddb12 4313 qtbase-opensource-src_5.3.1+dfsg-3.dsc
+ 314a1efec5f7ffa6df48d2fdc0a143b109dd59a76e0899aea0f5fd0bdbe7d1e0 55190308 qtbase-opensource-src_5.3.1+dfsg.orig.tar.xz
+ 51ce233b1508614c96169dfa5c07159075bb642a4230ad13b4cb1378a4043c5d 254755 qtbase-opensource-src_5.3.1+dfsg-3.debian.tar.gz
+
+Package: qtconnectivity-opensource-src
+Format: 3.0 (quilt)
+Binary: libqt5bluetooth5, qml-module-qtbluetooth, libqt5nfc5, qml-module-qtnfc, qtconnectivity5-dev, qtconnectivity5-examples, qtconnectivity5-dbg
+Architecture: any
+Version: 5.3.1-1
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Felix Geyer <fgeyer@debian.org>, Timo Jyrinki <timo@debian.org>, Dmitry Shachnev <mitya57@gmail.com>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtconnectivity.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtconnectivity.git
+Build-Depends: debhelper (>= 9.0.0), pkg-kde-tools, qtbase5-dev (>= 5.3.1+dfsg-2~), qtdeclarative5-private-dev (>= 5.3.1~)
+Package-List:
+ libqt5bluetooth5 deb libs optional
+ libqt5nfc5 deb libs optional
+ qml-module-qtbluetooth deb libs optional
+ qml-module-qtnfc deb libs optional
+ qtconnectivity5-dbg deb debug extra
+ qtconnectivity5-dev deb libdevel optional
+ qtconnectivity5-examples deb x11 optional
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtconnectivity-opensource-src
+Files: 
+ f3dd0ab936e2fc94da7bb7f677dad34f 2375 qtconnectivity-opensource-src_5.3.1-1.dsc
+ 033cf8279d4f958c93b9336d239a1635 2179660 qtconnectivity-opensource-src_5.3.1.orig.tar.xz
+ aa8b38cd3119be000a123940ace288c3 10556 qtconnectivity-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha1: 
+ 22aba05b30ccc148c2a70af8de4d0c2ed9b46449 2375 qtconnectivity-opensource-src_5.3.1-1.dsc
+ 0cdc4342a1894f9e36652aacdde367d62ee190bb 2179660 qtconnectivity-opensource-src_5.3.1.orig.tar.xz
+ df9b5c62d1054db518720abc13393aec0539bb18 10556 qtconnectivity-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha256: 
+ cca26232349186c3699166924cd3a8ed7af4be779dc6310c7e6fdce1c506f177 2375 qtconnectivity-opensource-src_5.3.1-1.dsc
+ 0c07e4682944078f75e4c02afe14dbf460291843ff9a7a80df075a3569d94a81 2179660 qtconnectivity-opensource-src_5.3.1.orig.tar.xz
+ 1802f831742f54dc5e3c4006a73ee98c69c1a4509e0661ccc2e434578ecf6df4 10556 qtconnectivity-opensource-src_5.3.1-1.debian.tar.gz
+
+Package: qtcreator
+Format: 3.0 (quilt)
+Binary: qtcreator, qtcreator-data, qtcreator-dbg, qtcreator-doc
+Architecture: any all
+Version: 3.1.2+dfsg-3
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Adam Majer <adamm@zombino.com>, Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
+Homepage: http://qt-project.org/wiki/Category:Tools::QtCreator
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtcreator.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtcreator.git
+Build-Depends: debhelper (>= 9), libbotan1.10-dev, libicu-dev, libjs-jquery, libqt5opengl5-dev (>= 5.3.1+dfsg-2~), libqt5sql5-sqlite (>= 5.3.1+dfsg-2~), libqt5webkit5-dev (>= 5.3.1+dfsg~), libqt5x11extras5-dev (>= 5.3.1~), libx11-dev, pkg-config, qml-module-qtquick2 (>= 5.3.1~), qtbase5-dev (>= 5.3.1+dfsg-2~), qtbase5-private-dev (>= 5.3.1+dfsg-2~), qtdeclarative5-dev (>= 5.3.1~), qtdeclarative5-private-dev (>= 5.3.1~), qtquick1-5-dev (>= 5.3.1~), qtquick1-5-private-dev (>= 5.3.1~), qtscript5-dev (>= 5.3.1~), qtscript5-private-dev (>= 5.3.1~), qttools5-dev (>= 5.3.1~), qttools5-dev-tools (>= 5.3.1~), qttools5-private-dev (>= 5.3.1~), qtxmlpatterns5-dev-tools (>= 5.3.1~)
+Package-List:
+ qtcreator deb devel optional
+ qtcreator-data deb devel optional
+ qtcreator-dbg deb debug extra
+ qtcreator-doc deb doc optional
+Priority: optional
+Section: devel
+Directory: pool/universe/q/qtcreator
+Files: 
+ e59a9d8022b8b1cfe29a21f92f77e45f 2554 qtcreator_3.1.2+dfsg-3.dsc
+ 5e9596b1e15429409c6635b1a10a7d72 17459576 qtcreator_3.1.2+dfsg.orig.tar.xz
+ 3b6c0a8f5731d23b6c47f2361ed11cc4 15818 qtcreator_3.1.2+dfsg-3.debian.tar.gz
+Checksums-Sha1: 
+ e74eeae4a0b0898433efa171d78957277a3c4957 2554 qtcreator_3.1.2+dfsg-3.dsc
+ 1ba3038a1bc94a689f14de514b0811552c534e47 17459576 qtcreator_3.1.2+dfsg.orig.tar.xz
+ 838018150590e86c98b1d705a0fcb4ccdc2daf26 15818 qtcreator_3.1.2+dfsg-3.debian.tar.gz
+Checksums-Sha256: 
+ 57002f741d6229f5d7b72bc93841cea5600b6b41ebb53263450b9957fb96a749 2554 qtcreator_3.1.2+dfsg-3.dsc
+ 8c7396a621530f11639cd48f327d71acd51398e9c0c3e3103876e5e79684a6dd 17459576 qtcreator_3.1.2+dfsg.orig.tar.xz
+ b57d26704a84c8a4482cb5443d2c297ecc5974241ea0b6999ba1d14b2694653e 15818 qtcreator_3.1.2+dfsg-3.debian.tar.gz
+
+Package: qtdeclarative-opensource-src
+Format: 3.0 (quilt)
+Binary: libqt5qml5, libqt5quick5, libqt5quickparticles5, libqt5quicktest5, libqt5quickwidgets5, qml-module-qt-labs-folderlistmodel, qml-module-qtquick-localstorage, qml-module-qtqml-models2, qml-model-qtqml-models2, qml-module-qtquick-particles2, qml-module-qtquick2, qml-module-qt-labs-settings, qml-module-qttest, qml-module-qtquick-window2, qml-module-qtquick-xmllistmodel, qtdeclarative5-dev, qtdeclarative5-private-dev, qtdeclarative5-dev-tools, qmlscene, qml, qtdeclarative5-examples, qtdeclarative5-dbg, qtdeclarative5-doc-html
+Architecture: any all
+Version: 5.3.1-3
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Timo Jyrinki <timo@debian.org>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtdeclarative.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtdeclarative.git
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1), libqt5xmlpatterns5-private-dev (>= 5.3.1~), pkg-kde-tools (>= 0.15.12~), python, qtbase5-private-dev (>= 5.3.1+dfsg-2~)
+Package-List:
+ libqt5qml5 deb libs optional
+ libqt5quick5 deb libs optional
+ libqt5quickparticles5 deb libs optional
+ libqt5quicktest5 deb libs optional
+ libqt5quickwidgets5 deb libs optional
+ qml deb devel optional
+ qml-model-qtqml-models2 deb oldlibs optional
+ qml-module-qt-labs-folderlistmodel deb libs optional
+ qml-module-qt-labs-settings deb libs optional
+ qml-module-qtqml-models2 deb libs optional
+ qml-module-qtquick-localstorage deb libs optional
+ qml-module-qtquick-particles2 deb libs optional
+ qml-module-qtquick-window2 deb libs optional
+ qml-module-qtquick-xmllistmodel deb libs optional
+ qml-module-qtquick2 deb libs optional
+ qml-module-qttest deb libs optional
+ qmlscene deb devel optional
+ qtdeclarative5-dbg deb debug extra
+ qtdeclarative5-dev deb libdevel optional
+ qtdeclarative5-dev-tools deb devel optional
+ qtdeclarative5-doc-html deb doc extra
+ qtdeclarative5-examples deb x11 optional
+ qtdeclarative5-private-dev deb libdevel optional
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtdeclarative-opensource-src
+Files: 
+ 600bc4cbce7370c946fe480d5d090d27 3494 qtdeclarative-opensource-src_5.3.1-3.dsc
+ 0ec4806e838c703ff0feed1ca3714492 17983340 qtdeclarative-opensource-src_5.3.1.orig.tar.xz
+ 82a1cb90b6614066cf79702fe16d34a0 84614 qtdeclarative-opensource-src_5.3.1-3.debian.tar.gz
+Checksums-Sha1: 
+ b39b8cbaaa51c4326b01cf12ca9878c62cf32496 3494 qtdeclarative-opensource-src_5.3.1-3.dsc
+ bfe0b538c24a38210ce4a20639be636cde4ab765 17983340 qtdeclarative-opensource-src_5.3.1.orig.tar.xz
+ ba67d93b7d9b459ebaabf5015c4ce785180bd415 84614 qtdeclarative-opensource-src_5.3.1-3.debian.tar.gz
+Checksums-Sha256: 
+ 3e04787ae85fbc66f7f1e9f54ede7cd5034f212903500e342ca1d9af38cd46fd 3494 qtdeclarative-opensource-src_5.3.1-3.dsc
+ e0f95c30a6506f982abc06e3f0fb36ebd5417f4f65146b037b903b7179c3a77b 17983340 qtdeclarative-opensource-src_5.3.1.orig.tar.xz
+ d0f1bf2c7b714d233be567d5485b88a22f575bb7c68388a4119b3d81d1533630 84614 qtdeclarative-opensource-src_5.3.1-3.debian.tar.gz
+
+Package: qtdoc-opensource-src
+Format: 3.0 (quilt)
+Binary: qt5-doc, qt5-doc-html
+Architecture: all
+Version: 5.3.1-1
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Timo Jyrinki <timo@debian.org>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtdoc.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtdoc.git
+Build-Depends: debhelper (>= 9), libqt5sql5-sqlite, qtbase5-dev (>= 5.3.0~), qtbase5-dev-tools (>= 5.3.0~), qtbase5-doc-html, qtdeclarative5-doc-html, qtgraphicaleffects5-doc-html, qtmultimedia5-doc-html, qtpositioning5-doc-html, qtquickcontrols5-doc-html, qtscript5-doc-html, qtsensors5-doc-html, qtserialport5-doc-html, qtsvg5-doc-html, qttools5-dev-tools (>= 5.3.0~), qttools5-doc-html (>= 5.3.0~), qtwebkit5-doc-html, qtwebkit5-examples-doc-html, qtx11extras5-doc-html, qtxmlpatterns5-doc-html
+Package-List:
+ qt5-doc deb doc optional
+ qt5-doc-html deb doc optional
+Priority: optional
+Section: doc
+Directory: pool/universe/q/qtdoc-opensource-src
+Files: 
+ 88c1ccf9416eca5ab42eb795de30716f 2331 qtdoc-opensource-src_5.3.1-1.dsc
+ 4bb1b5176b82433a2afde47a36fd1b0a 16666264 qtdoc-opensource-src_5.3.1.orig.tar.xz
+ ea57f38db9f0cd71cca60f49238b1b63 5331 qtdoc-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha1: 
+ 70ce40011602f1ed2dca987a871ce8081ad5f8ba 2331 qtdoc-opensource-src_5.3.1-1.dsc
+ 75bf9990c24aa0f984f9b6ce03102cd19d4a001f 16666264 qtdoc-opensource-src_5.3.1.orig.tar.xz
+ ae9c19a575e734bca850618866929ca6c9777860 5331 qtdoc-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha256: 
+ 37160b6edc9f4291e9bfe4c454c9741afacbb1da792ce17076c062cedeac3ea3 2331 qtdoc-opensource-src_5.3.1-1.dsc
+ 7c3c15ff3d8939e5d00e032d3d6708202502434197a210ccbb518aff82b584a2 16666264 qtdoc-opensource-src_5.3.1.orig.tar.xz
+ f1a110a84f1e6f2fa121b43b00ed22e66c534f2a7f0290fdccb44cdcf53f653c 5331 qtdoc-opensource-src_5.3.1-1.debian.tar.gz
+
+Package: qtgraphicaleffects-opensource-src
+Format: 3.0 (quilt)
+Binary: qml-module-qtgraphicaleffects, qtgraphicaleffects5-doc, qtgraphicaleffects5-doc-html
+Architecture: any all
+Version: 5.3.1-1
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Timo Jyrinki <timo@debian.org>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtgraphicaleffects.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtgraphicaleffects.git
+Build-Depends: dbus, debhelper (>= 9), dpkg-dev (>= 1.16.1), pkg-kde-tools, qml-module-qtquick2, qtbase5-private-dev (>= 5.3.1+dfsg-2~), qtdeclarative5-private-dev (>= 5.3.1~), xauth, xvfb
+Build-Depends-Indep: libqt5sql5-sqlite, qttools5-dev-tools (>= 5.3.1~)
+Package-List:
+ qml-module-qtgraphicaleffects deb libs optional
+ qtgraphicaleffects5-doc deb doc extra
+ qtgraphicaleffects5-doc-html deb doc extra
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtgraphicaleffects-opensource-src
+Files: 
+ fec03bb203d54a8684df9bf1898d1a4d 2362 qtgraphicaleffects-opensource-src_5.3.1-1.dsc
+ 4c52dc349e6821fdfdcec39210335539 14888972 qtgraphicaleffects-opensource-src_5.3.1.orig.tar.xz
+ 3325bd0118ddafe82201edfc8eaa0b75 4920 qtgraphicaleffects-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha1: 
+ 3b246bf080616995806b73f9b6766172951ae377 2362 qtgraphicaleffects-opensource-src_5.3.1-1.dsc
+ 6813239fa236b2233d916aab0c164f2393953a0f 14888972 qtgraphicaleffects-opensource-src_5.3.1.orig.tar.xz
+ 64a9e63613495edcd390295cece0447d717e76ad 4920 qtgraphicaleffects-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha256: 
+ 4b5013954ef497e5e0aa1705866fc431ab869efea57cbf7d61e68ef5a6cc3530 2362 qtgraphicaleffects-opensource-src_5.3.1-1.dsc
+ b949cb7790fa48b72b506bff7ce8abbd4bed65101cd0a496ac139fb245772191 14888972 qtgraphicaleffects-opensource-src_5.3.1.orig.tar.xz
+ 52065d978779d40b18c3af8744a39cc6961c042f21e7a81d14e3f04443f6ceb0 4920 qtgraphicaleffects-opensource-src_5.3.1-1.debian.tar.gz
+
+Package: qtimageformats-opensource-src
+Format: 3.0 (quilt)
+Binary: qt5-image-formats-plugins
+Architecture: any
+Version: 5.3.1-1
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Timo Jyrinki <timo@debian.org>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtimageformats.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtimageformats.git
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1), libjasper-dev, libmng-dev, libtiff-dev, libwebp-dev (>= 0.4.0-4~), pkg-kde-tools, qtbase5-private-dev (>= 5.3.1+dfsg-2~), xauth, xvfb
+Package-List:
+ qt5-image-formats-plugins deb libs optional
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtimageformats-opensource-src
+Files: 
+ a2b442168a4b75c37ab652f0a7c8588f 2102 qtimageformats-opensource-src_5.3.1-1.dsc
+ 9377249299088551667d38d3ad7ba2a5 2115884 qtimageformats-opensource-src_5.3.1.orig.tar.xz
+ 38fe0331deb19d7e76a12b1d201208c1 6569 qtimageformats-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha1: 
+ d8aca28045550126ebf1fb35941771c7084746ee 2102 qtimageformats-opensource-src_5.3.1-1.dsc
+ 5319b1ea1a80f27c2d835c75f711a8e02b5cfc28 2115884 qtimageformats-opensource-src_5.3.1.orig.tar.xz
+ 7f9330d4e5308a6ea33be12e5fbafa9ae6aa575e 6569 qtimageformats-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha256: 
+ acfc87583659ed6a3fdbedd0b4dc29cc4353b0494271813a2c10b296ea058739 2102 qtimageformats-opensource-src_5.3.1-1.dsc
+ 14bf099990d23725408aeb06ea1634d0f334edd87d505c730bdf74aed5d07223 2115884 qtimageformats-opensource-src_5.3.1.orig.tar.xz
+ 4663f2dd3aaa78a237a0741bc9bdfc0837234e40dea4fd056406db5abf410226 6569 qtimageformats-opensource-src_5.3.1-1.debian.tar.gz
+
+Package: qtlocation-opensource-src
+Format: 3.0 (quilt)
+Binary: libqt5positioning5, libqt5positioning5-plugins, qml-module-qtpositioning, qtpositioning5-dev, qtpositioning5-examples, qtpositioning5-dbg, qtpositioning5-doc, qtpositioning5-doc-html
+Architecture: any all
+Version: 5.3.1-1
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Timo Jyrinki <timo@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Dmitry Shachnev <mitya57@gmail.com>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtlocation.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtlocation.git
+Build-Depends: dbus, debhelper (>= 9.0.0), geoclue, geoclue-hostip, geoclue-localnet, geoclue-nominatim, libgconf2-dev, libgeoclue-dev, libqt5opengl5-dev (>= 5.3.1+dfsg-2~), pkg-kde-tools, qtbase5-private-dev (>= 5.3.1+dfsg-2~), qtdeclarative5-private-dev (>= 5.3.1~), xauth, xvfb
+Build-Depends-Indep: libqt5sql5-sqlite (>= 5.3.1+dfsg-2~), qttools5-dev-tools (>= 5.3.1~)
+Package-List:
+ libqt5positioning5 deb libs optional
+ libqt5positioning5-plugins deb libs optional
+ qml-module-qtpositioning deb libs optional
+ qtpositioning5-dbg deb debug extra
+ qtpositioning5-dev deb libdevel optional
+ qtpositioning5-doc deb doc extra
+ qtpositioning5-doc-html deb doc extra
+ qtpositioning5-examples deb x11 optional
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtlocation-opensource-src
+Files: 
+ e98c71c6208c30e0a84381ca9d5971e0 2589 qtlocation-opensource-src_5.3.1-1.dsc
+ 9b2dedcdc3339b4c63ee8e5441cca623 3311508 qtlocation-opensource-src_5.3.1.orig.tar.xz
+ b115f6e6a792471eff572c7e895fb28e 10099 qtlocation-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha1: 
+ 90f5cfc3cb36e55291190eb3c5756c7d0fc7f863 2589 qtlocation-opensource-src_5.3.1-1.dsc
+ ba99b423c22b7c0ad68c6909ccf6a3387427ff32 3311508 qtlocation-opensource-src_5.3.1.orig.tar.xz
+ a08b028a5f64c33bc84d3f52328935c42c5f9683 10099 qtlocation-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha256: 
+ 5b8bd72ce2f9ada94f37df44f80b53dc55ce9c45dfb87c09aea26b10d2edd1ea 2589 qtlocation-opensource-src_5.3.1-1.dsc
+ 97057750ff0d757dc7d95b312511ad6ebd9b9686355ee548e411c5300af2af97 3311508 qtlocation-opensource-src_5.3.1.orig.tar.xz
+ 79d366e7d3765804a0e91197f3be4ddcae7101e0eb682e2f5ad87ce3b020845c 10099 qtlocation-opensource-src_5.3.1-1.debian.tar.gz
+
+Package: qtmultimedia-opensource-src
+Format: 3.0 (quilt)
+Binary: libqt5multimedia5, libqt5multimedia5-plugins, libqt5multimediaquick-p5, libqt5multimediawidgets5, qml-module-qtmultimedia, qml-module-qtaudioengine, libqgsttools-p1, qtmultimedia5-examples, qtmultimedia5-dev, qtmultimedia5-dbg, qtmultimedia5-doc, qtmultimedia5-doc-html
+Architecture: any all
+Version: 5.3.1-2
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Timo Jyrinki <timo@debian.org>
+Homepage: https://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtmultimedia.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtmultimedia.git
+Build-Depends: debhelper (>= 9.0.0), libasound2-dev [linux-any], libgstreamer-plugins-base0.10-dev, libgstreamer0.10-dev, libopenal-dev, libpulse-dev, libqt5opengl5-dev (>= 5.3.1+dfsg-2~), pkg-kde-tools, qtbase5-dev (>= 5.3.1+dfsg-2~), qtbase5-private-dev (>= 5.3.1+dfsg-2~), qtdeclarative5-private-dev (>= 5.3.1~), zlib1g-dev
+Build-Depends-Indep: libqt5sql5-sqlite (>= 5.3.1+dfsg-2~), qttools5-dev-tools (>= 5.3.1~)
+Package-List:
+ libqgsttools-p1 deb libs optional
+ libqt5multimedia5 deb libs optional
+ libqt5multimedia5-plugins deb libs optional
+ libqt5multimediaquick-p5 deb libs optional
+ libqt5multimediawidgets5 deb libs optional
+ qml-module-qtaudioengine deb libs optional
+ qml-module-qtmultimedia deb libs optional
+ qtmultimedia5-dbg deb debug extra
+ qtmultimedia5-dev deb libdevel optional
+ qtmultimedia5-doc deb doc optional
+ qtmultimedia5-doc-html deb doc optional
+ qtmultimedia5-examples deb x11 optional
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtmultimedia-opensource-src
+Files: 
+ 3f3c39922e316d0531c6440a61ce5d92 2995 qtmultimedia-opensource-src_5.3.1-2.dsc
+ 6e214434918ed1e191baa018e1880405 3284568 qtmultimedia-opensource-src_5.3.1.orig.tar.xz
+ e21347d299e82da80f191af818481514 10048 qtmultimedia-opensource-src_5.3.1-2.debian.tar.gz
+Checksums-Sha1: 
+ 767be6271cd1d5e1a3e42e72fd1e0113a4751b42 2995 qtmultimedia-opensource-src_5.3.1-2.dsc
+ 45cb564ffc3dba25407478de93095a3423bdc966 3284568 qtmultimedia-opensource-src_5.3.1.orig.tar.xz
+ 2787b08f1f93d904afd4398d55035b0d66284d5a 10048 qtmultimedia-opensource-src_5.3.1-2.debian.tar.gz
+Checksums-Sha256: 
+ 1f7e7e68a81be5a47654ed9176cb7ca31e3523f9a1def28a0c16b6437b40aba2 2995 qtmultimedia-opensource-src_5.3.1-2.dsc
+ 600cccb2d469459eb65d10a653b4061a2181f0a6bdadc834a34f226091e52745 3284568 qtmultimedia-opensource-src_5.3.1.orig.tar.xz
+ b6372087325ede5b2fb32d3507cf9b8155660c1767496dce99beccaca76c92b7 10048 qtmultimedia-opensource-src_5.3.1-2.debian.tar.gz
+
+Package: qtquick1-opensource-src
+Format: 3.0 (quilt)
+Binary: libqt5declarative5, qtquick1-qmltooling-plugins, qtquick1-qml-plugins, qtquick1-5-dev-tools, qtquick1-5-dev, qtquick1-5-private-dev, qtquick1-5-examples, qtquick1-5-dbg
+Architecture: any
+Version: 5.3.1-1
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Timo Jyrinki <timo@debian.org>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtquick1.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtquick1.git
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1), libgstreamer-plugins-base0.10-dev, libgstreamer0.10-dev, libicu-dev, libqt5opengl5-dev (>= 5.3.1+dfsg-2~), libqt5webkit5-dev (>= 5.3.1+dfsg~), libsqlite3-dev, libxml2-dev, libxslt1-dev, pkg-kde-tools, qtbase5-private-dev (>= 5.3.1+dfsg-1~), qtdeclarative5-private-dev (>= 5.3.1~), qtscript5-private-dev (>= 5.3.1~)
+Package-List:
+ libqt5declarative5 deb libs optional
+ qtquick1-5-dbg deb debug extra
+ qtquick1-5-dev deb libdevel optional
+ qtquick1-5-dev-tools deb libdevel optional
+ qtquick1-5-examples deb x11 optional
+ qtquick1-5-private-dev deb libdevel optional
+ qtquick1-qml-plugins deb libs optional
+ qtquick1-qmltooling-plugins deb libs optional
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtquick1-opensource-src
+Files: 
+ 314b9d8e9dab6e471fec366e39976563 2656 qtquick1-opensource-src_5.3.1-1.dsc
+ be06903ad33b6292c41056eb9b6fc3d4 17531420 qtquick1-opensource-src_5.3.1.orig.tar.xz
+ 893cfcc8bbbd949bfd0eaeed576558cb 23440 qtquick1-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha1: 
+ 0855b2a8fa00b757a1b007d96d266795499e65f7 2656 qtquick1-opensource-src_5.3.1-1.dsc
+ 23a93897732b65af59f1dbcbe0193e1abb4b04f8 17531420 qtquick1-opensource-src_5.3.1.orig.tar.xz
+ a32759a78814186482e147a0d422e1b4af4776da 23440 qtquick1-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha256: 
+ 69662ba4e4f5c65cc655dc2fdc51501fd6a07e29d46844d9b795e7461432e929 2656 qtquick1-opensource-src_5.3.1-1.dsc
+ 6d8eda363e32842a5adf46782f2ecb07cb07a023a2c8c1525f5e5e7084007727 17531420 qtquick1-opensource-src_5.3.1.orig.tar.xz
+ 1caff754210e164811ce65f648803f88855cb8ecc282824aebf36fd88e91da5c 23440 qtquick1-opensource-src_5.3.1-1.debian.tar.gz
+
+Package: qtquickcontrols-opensource-src
+Format: 3.0 (quilt)
+Binary: qml-module-qtquick-controls, qml-module-qtquick-dialogs, qml-module-qtquick-layouts, qml-module-qtquick-privatewidgets, qtquickcontrols5-examples, qtquickcontrols5-doc, qtquickcontrols5-doc-html
+Architecture: any all
+Version: 5.3.1-1
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Timo Jyrinki <timo@debian.org>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtquickcontrols.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtquickcontrols.git
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1), pkg-kde-tools, qtbase5-private-dev (>= 5.3.1+dfsg-2~), qtdeclarative5-private-dev (>= 5.3.1~)
+Build-Depends-Indep: libqt5sql5-sqlite (>= 5.3.1+dfsg-2~), qtbase5-doc-html (>= 5.3.1+dfsg-2~), qtdeclarative5-doc-html (>= 5.3.1~), qttools5-dev-tools (>= 5.3.1~)
+Package-List:
+ qml-module-qtquick-controls deb libs optional
+ qml-module-qtquick-dialogs deb libs optional
+ qml-module-qtquick-layouts deb libdevel optional
+ qml-module-qtquick-privatewidgets deb libs optional
+ qtquickcontrols5-doc deb doc extra
+ qtquickcontrols5-doc-html deb doc extra
+ qtquickcontrols5-examples deb x11 optional
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtquickcontrols-opensource-src
+Files: 
+ ca9c5e71f4f1020e781822349eecdb2a 2667 qtquickcontrols-opensource-src_5.3.1-1.dsc
+ 7dfc37fe8200c4f8b8fb0df6bbc37dc9 746660 qtquickcontrols-opensource-src_5.3.1.orig.tar.xz
+ e01088102ba5b5786a348d108a45cfbc 5727 qtquickcontrols-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha1: 
+ 202a9a94a9e2257a6a6461c2fb07ffe33e8fab0f 2667 qtquickcontrols-opensource-src_5.3.1-1.dsc
+ 0ae1da34761fccf0d9c122a76ff6caf8fdf551e0 746660 qtquickcontrols-opensource-src_5.3.1.orig.tar.xz
+ d4f39c98fa9a594b1fd1d851d9e0d344c8933409 5727 qtquickcontrols-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha256: 
+ f0d076764bb11c9130b4c310a719fe601a45e770921b0ebb9dcff9e4e8ddccf7 2667 qtquickcontrols-opensource-src_5.3.1-1.dsc
+ 9dd5f40bbe316e429e5bb233532daa0bec0f9bcccc25bb80b483142c61bbef68 746660 qtquickcontrols-opensource-src_5.3.1.orig.tar.xz
+ 3c9588d0d43eae50b9ae28e59a337c2a19924d02b06927c32d241d8993bfe6ff 5727 qtquickcontrols-opensource-src_5.3.1-1.debian.tar.gz
+
+Package: qtscript-opensource-src
+Format: 3.0 (quilt)
+Binary: libqt5script5, libqt5scripttools5, qtscript5-dev, qtscript5-private-dev, qtscript5-examples, qtscript5-dbg, qtscript5-doc-html
+Architecture: any all
+Version: 5.3.1+dfsg-3
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Timo Jyrinki <timo@debian.org>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtscript.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtscript.git
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1), pkg-kde-tools (>= 0.15.8~), qtbase5-private-dev (>= 5.3.1+dfsg-2~), xauth, xvfb
+Package-List:
+ libqt5script5 deb libs optional
+ libqt5scripttools5 deb libs optional
+ qtscript5-dbg deb debug extra
+ qtscript5-dev deb libdevel optional
+ qtscript5-doc-html deb doc extra
+ qtscript5-examples deb x11 optional
+ qtscript5-private-dev deb libdevel optional
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtscript-opensource-src
+Files: 
+ 9d160e1dd740e39e7080af216b8cc33e 2347 qtscript-opensource-src_5.3.1+dfsg-3.dsc
+ 51b0b7b67fde1b732bf92b73917f30d0 2608008 qtscript-opensource-src_5.3.1+dfsg.orig.tar.xz
+ edc9af26ca53789fe9a68c148a4dd9c0 17235 qtscript-opensource-src_5.3.1+dfsg-3.debian.tar.gz
+Checksums-Sha1: 
+ 3d92e67885111a2c37a9ec4d72744f19539d7508 2347 qtscript-opensource-src_5.3.1+dfsg-3.dsc
+ b7b7731d591cad9eb192736083f006a4cc70655e 2608008 qtscript-opensource-src_5.3.1+dfsg.orig.tar.xz
+ 383a03fe0794beeadee0a49d459e9ee41f5200b2 17235 qtscript-opensource-src_5.3.1+dfsg-3.debian.tar.gz
+Checksums-Sha256: 
+ 795426a246eb13e0c5005af44bce58353c07a9c1af858ffe250a81760c053195 2347 qtscript-opensource-src_5.3.1+dfsg-3.dsc
+ c3cd37e163df0fcfec205f549e3e55ea2ae22891371c85faaff97c269598806f 2608008 qtscript-opensource-src_5.3.1+dfsg.orig.tar.xz
+ a89460095bb64711ecb7f0608c5a4f474893d83199bf075463947566aaf7a458 17235 qtscript-opensource-src_5.3.1+dfsg-3.debian.tar.gz
+
+Package: qtsensors-opensource-src
+Format: 3.0 (quilt)
+Binary: libqt5sensors5, qml-module-qtsensors, libqt5sensors5-dev, qtsensors5-examples, qtsensors5-dbg, qtsensors5-doc, qtsensors5-doc-html
+Architecture: any all
+Version: 5.3.1+dfsg-1
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Timo Jyrinki <timo@debian.org>, Dmitry Shachnev <mitya57@gmail.com>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtsensors.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtsensors.git
+Build-Depends: debhelper (>= 9.0.0), pkg-kde-tools, qtbase5-private-dev (>= 5.3.1+dfsg-2~), qtdeclarative5-private-dev (>= 5.3.1~), xauth, xvfb
+Build-Depends-Indep: libqt5sql5-sqlite (>= 5.3.1+dfsg-2~), qttools5-dev-tools (>= 5.3.1~)
+Package-List:
+ libqt5sensors5 deb libs optional
+ libqt5sensors5-dev deb libdevel optional
+ qml-module-qtsensors deb libs optional
+ qtsensors5-dbg deb debug extra
+ qtsensors5-doc deb doc extra
+ qtsensors5-doc-html deb doc extra
+ qtsensors5-examples deb x11 optional
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtsensors-opensource-src
+Files: 
+ 029d76efb402f02642d5249e676155e3 2482 qtsensors-opensource-src_5.3.1+dfsg-1.dsc
+ ba9252b6b51f1e007c5516b723ae708a 2108172 qtsensors-opensource-src_5.3.1+dfsg.orig.tar.xz
+ 86662fc908d9e221391f0b8c5764fd7a 12108 qtsensors-opensource-src_5.3.1+dfsg-1.debian.tar.gz
+Checksums-Sha1: 
+ 23e1ce9eaf71c0598213b246cbf6eeadaecc498b 2482 qtsensors-opensource-src_5.3.1+dfsg-1.dsc
+ fca0605b7b549f7a9694b7fd0ee1f320acbdbdc4 2108172 qtsensors-opensource-src_5.3.1+dfsg.orig.tar.xz
+ b1c63cd501c4c4188b3a0ae1ee271306cd72c504 12108 qtsensors-opensource-src_5.3.1+dfsg-1.debian.tar.gz
+Checksums-Sha256: 
+ 318cf5413f8ae1c924028192853729ee25abe9c5f7166872b5ca62538c12d17a 2482 qtsensors-opensource-src_5.3.1+dfsg-1.dsc
+ 51b371a2b4d98e93532988821bf3c1f1d7ef7dddd4403f5bcd44bc4c484032a7 2108172 qtsensors-opensource-src_5.3.1+dfsg.orig.tar.xz
+ 3803c980e1b936df64c49bee15d63f005377d5f16c61b90cf1674c4a5744a297 12108 qtsensors-opensource-src_5.3.1+dfsg-1.debian.tar.gz
+
+Package: qtserialport-opensource-src
+Format: 3.0 (quilt)
+Binary: libqt5serialport5, libqt5serialport5-dev, qtserialport5-dbg, qtserialport5-doc, qtserialport5-doc-html
+Architecture: any all
+Version: 5.3.1-1
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Felix Geyer <fgeyer@debian.org>, Timo Jyrinki <timo@debian.org>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtserialport.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtserialport.git
+Build-Depends: debhelper (>= 9), libudev-dev [linux-any], pkg-kde-tools, qtbase5-dev (>= 5.3.1+dfsg-2~)
+Build-Depends-Indep: libqt5sql5-sqlite (>= 5.3.1+dfsg-2~), qttools5-dev-tools (>= 5.3.1~)
+Package-List:
+ libqt5serialport5 deb libs optional
+ libqt5serialport5-dev deb libdevel optional
+ qtserialport5-dbg deb debug extra
+ qtserialport5-doc deb doc extra
+ qtserialport5-doc-html deb doc extra
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtserialport-opensource-src
+Files: 
+ a2c3b20986f7482d79cf80d32496b6ac 2333 qtserialport-opensource-src_5.3.1-1.dsc
+ 480c7747f646c15ad390603e433c46c6 259460 qtserialport-opensource-src_5.3.1.orig.tar.xz
+ e89b9f4d9067652ef93761d58ebdf1b9 6294 qtserialport-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha1: 
+ a484b0ead684b8a79b0fa7107c87acdd0f0b20f7 2333 qtserialport-opensource-src_5.3.1-1.dsc
+ e7b2ec44e406d41578a18fa79fffe6fb360bdd43 259460 qtserialport-opensource-src_5.3.1.orig.tar.xz
+ 7460e0feb049f255509c57bd9ad5dac9f97a3070 6294 qtserialport-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha256: 
+ af58e5d37c85385599e3a181a8681ee7a8bb109d390e5f60e73c6172349aa4f5 2333 qtserialport-opensource-src_5.3.1-1.dsc
+ b5e350a732c6b1625bd546a406be11507ac531ed647604c38d49e6667035791f 259460 qtserialport-opensource-src_5.3.1.orig.tar.xz
+ efb2a9f35558d9fb072cd05b2b6323c22b8ca92ad4afcbbd1516203723f704e4 6294 qtserialport-opensource-src_5.3.1-1.debian.tar.gz
+
+Package: qtsvg-opensource-src
+Format: 3.0 (quilt)
+Binary: libqt5svg5, libqt5svg5-dev, libqt5svg5-private-dev, qtsvg5-examples, qtsvg5-dbg, qtsvg5-doc, qtsvg5-doc-html
+Architecture: any all
+Version: 5.3.1-1
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Felix Geyer <fgeyer@debian.org>, Timo Jyrinki <timo@debian.org>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtsvg.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtsvg.git
+Build-Depends: dbus, debhelper (>= 9), libqt5opengl5-dev (>= 5.3.1+dfsg-2~), pkg-kde-tools, qtbase5-dev (>= 5.3.1+dfsg-2~), qtbase5-private-dev (>= 5.3.1+dfsg-2~), xauth, xvfb, zlib1g-dev
+Build-Depends-Indep: libqt5sql5-sqlite (>= 5.3.1+dfsg-2~), qttools5-dev-tools (>= 5.3.1~)
+Package-List:
+ libqt5svg5 deb libs optional
+ libqt5svg5-dev deb libdevel optional
+ libqt5svg5-private-dev deb libdevel optional
+ qtsvg5-dbg deb debug extra
+ qtsvg5-doc deb doc extra
+ qtsvg5-doc-html deb doc extra
+ qtsvg5-examples deb x11 optional
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtsvg-opensource-src
+Files: 
+ f577dbac99acfebd89e71c1a15601dbe 2418 qtsvg-opensource-src_5.3.1-1.dsc
+ b15ec3d284f7d225eb12c4619336761b 1768628 qtsvg-opensource-src_5.3.1.orig.tar.xz
+ d581272ade3d65fe067b9898613d329d 8819 qtsvg-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha1: 
+ 811b7e3d9b249cbd819841a1d7ca1380fcc31815 2418 qtsvg-opensource-src_5.3.1-1.dsc
+ 50fd645fd7b201488082be26c758ecb64a452e74 1768628 qtsvg-opensource-src_5.3.1.orig.tar.xz
+ ba3d1f133a7bbcffba90ef0d4c7469e2ddb7785f 8819 qtsvg-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha256: 
+ 11b2254db448a904afd9c568bf84a09015077c5731393ba43ebc8dccfa509ad5 2418 qtsvg-opensource-src_5.3.1-1.dsc
+ 74b6d406fe06ff90f4945df6e481ef88b7d8ab88f65db53889de523164f8cdb7 1768628 qtsvg-opensource-src_5.3.1.orig.tar.xz
+ 88ca70934b7d024458fef38891d1e85a21ebeae5cc292ee5e09282ae26a1c0b2 8819 qtsvg-opensource-src_5.3.1-1.debian.tar.gz
+
+Package: qttools-opensource-src
+Format: 3.0 (quilt)
+Binary: libqt5clucene5, libqt5designer5, libqt5designercomponents5, qdbus-qt5, libqt5help5, qttools5-dev, qttools5-private-dev, qttools5-dev-tools, qttools5-examples, qttools5-dbg, qttools5-examples-dbg, qtbase5-doc, qtdeclarative5-doc, qtscript5-doc, qttools5-doc, qttools5-doc-html, qtxmlpatterns5-doc, qtwebkit5-doc
+Architecture: any all
+Version: 5.3.1-1
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Felix Geyer <fgeyer@debian.org>, Timo Jyrinki <timo@debian.org>, Dmitry Shachnev <mitya57@gmail.com>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qttools.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qttools.git
+Build-Depends: debhelper (>= 9), libqt5opengl5-dev (>= 5.3.1+dfsg-2~), libqt5sql5-sqlite (>= 5.3.1+dfsg-2~), libqt5webkit5-dev (>= 5.3.1+dfsg~), pkg-kde-tools, qtbase5-private-dev (>= 5.3.1+dfsg-2~), qtdeclarative5-private-dev (>= 5.3.1-1~), zlib1g-dev
+Build-Depends-Indep: qtbase5-doc-html (>= 5.3.1+dfsg-2~), qtdeclarative5-doc-html (>= 5.3.1~), qtscript5-doc-html (>= 5.3.1~), qtwebkit5-doc-html (>= 5.3.1+dfsg~), qtxmlpatterns5-doc-html (>= 5.3.1~)
+Package-List:
+ libqt5clucene5 deb libs optional
+ libqt5designer5 deb libs optional
+ libqt5designercomponents5 deb libs optional
+ libqt5help5 deb libs optional
+ qdbus-qt5 deb utils optional
+ qtbase5-doc deb doc extra
+ qtdeclarative5-doc deb doc extra
+ qtscript5-doc deb doc extra
+ qttools5-dbg deb debug extra
+ qttools5-dev deb libdevel optional
+ qttools5-dev-tools deb devel optional
+ qttools5-doc deb doc extra
+ qttools5-doc-html deb doc extra
+ qttools5-examples deb x11 optional
+ qttools5-examples-dbg deb debug extra
+ qttools5-private-dev deb libdevel optional
+ qtwebkit5-doc deb doc extra
+ qtxmlpatterns5-doc deb doc extra
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qttools-opensource-src
+Files: 
+ 85425122a82cffd9da83ea89665a5c35 3223 qttools-opensource-src_5.3.1-1.dsc
+ 5cb5abb55bb00f09e2aa74856829fd08 9093940 qttools-opensource-src_5.3.1.orig.tar.xz
+ 3fe6d8fc2f6113c1c4e704c630bbac46 59161 qttools-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha1: 
+ 0cfdbdfae2d4860d0908dd7c80fa9ff033f6884a 3223 qttools-opensource-src_5.3.1-1.dsc
+ 6862073e545fc8e71f354ad74524cc5bd02db41b 9093940 qttools-opensource-src_5.3.1.orig.tar.xz
+ a774cbf2801eac59c219913c4f87517500369c05 59161 qttools-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha256: 
+ 78297459a6892ecc23e318e994cf273280a1f56d4a8c0945efb71bc5705cd646 3223 qttools-opensource-src_5.3.1-1.dsc
+ dbf878923681100414047b2a7e7f40b75a43aa9af786318cfb9f8c91d9a111b0 9093940 qttools-opensource-src_5.3.1.orig.tar.xz
+ de4e242797e9dd82c0011495b80a23b0e4ad02b84befa9d4c337d1bcb2d531a3 59161 qttools-opensource-src_5.3.1-1.debian.tar.gz
+
+Package: qttranslations-opensource-src
+Format: 3.0 (quilt)
+Binary: qttranslations5-l10n
+Architecture: all
+Version: 5.3.1-1
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Dmitry Shachnev <mitya57@gmail.com>, Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Felix Geyer <fgeyer@debian.org>, Timo Jyrinki <timo@debian.org>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qttranslations.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qttranslations.git
+Build-Depends: debhelper (>= 9), qt5-qmake (>= 5.3.1+dfsg-2~), qttools5-dev-tools (>= 5.3.1~)
+Package-List:
+ qttranslations5-l10n deb localization optional
+Priority: optional
+Section: localization
+Directory: pool/universe/q/qttranslations-opensource-src
+Files: 
+ 6d404dde85727669ff823e82d4ee8003 2065 qttranslations-opensource-src_5.3.1-1.dsc
+ a56e3b3294ff8b923655b4b3131ff4b5 1061872 qttranslations-opensource-src_5.3.1.orig.tar.xz
+ 8ef8ded7941c576b9622b8351087a983 2972 qttranslations-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha1: 
+ a3638b885c04d189c2847f2b1558a084ce9a6c2b 2065 qttranslations-opensource-src_5.3.1-1.dsc
+ 709132a188d4cbeb83c01b76e3261ea42d0c5029 1061872 qttranslations-opensource-src_5.3.1.orig.tar.xz
+ b0310a9bcc77b1bdbd4ece06bc2893c6847774eb 2972 qttranslations-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha256: 
+ 04a8891a6faa09beeed3e7d51ffed255cdea3c49196c89df34c6fae79d29c207 2065 qttranslations-opensource-src_5.3.1-1.dsc
+ 5f288615e5eef73d4446ed501836476050a533f1b186649d6608628e4f370f73 1061872 qttranslations-opensource-src_5.3.1.orig.tar.xz
+ 06816ef7cc1164e70caebd4409610d5d51088a22b8371541522f758de54b6103 2972 qttranslations-opensource-src_5.3.1-1.debian.tar.gz
+
+Package: qtwebkit-opensource-src
+Format: 3.0 (quilt)
+Binary: libqt5webkit5-dev, libqt5webkit5, qml-module-qtwebkit, libqt5webkit5-dbg, qtwebkit5-doc-html
+Architecture: any all
+Version: 5.3.1+dfsg-2
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Timo Jyrinki <timo@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
+Homepage: http://trac.webkit.org/wiki/QtWebKit
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qt5webkit.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qt5webkit.git
+Build-Depends: bison, chrpath, debhelper (>= 9.0.0), flex, gperf, libfontconfig1-dev, libgl1-mesa-dev [!armel !armhf] | libgl-dev [!armel !armhf], libgles2-mesa-dev [armel armhf] | libgles2-dev [armel armhf], libglib2.0-dev, libglu1-mesa-dev [!armel !armhf] | libglu-dev [!armel !armhf], libgstreamer-plugins-base0.10-dev, libgstreamer0.10-dev, libicu-dev, libjpeg-dev, libpng-dev, libqt5opengl5-dev (>= 5.3.1+dfsg~), libqt5xmlpatterns5-private-dev (>= 5.3.1~), libsqlite3-dev, libwebp-dev, libxcomposite-dev, libxml2-dev, libxrender-dev, libxslt1-dev, mesa-common-dev, pkg-config, pkg-kde-tools (>= 0.6.4), python-minimal, python2.7, qtbase5-private-dev (>= 5.3.1+dfsg-2~), qtdeclarative5-private-dev (>= 5.3.1~), qtscript5-private-dev (>= 5.3.1+dfsg-2~), ruby
+Package-List:
+ libqt5webkit5 deb libs optional
+ libqt5webkit5-dbg deb debug extra
+ libqt5webkit5-dev deb libdevel optional
+ qml-module-qtwebkit deb libs optional
+ qtwebkit5-doc-html deb doc extra
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtwebkit-opensource-src
+Files: 
+ d51fa11286dfc5eac8168f199d8e23bb 2785 qtwebkit-opensource-src_5.3.1+dfsg-2.dsc
+ 27e35b3d07b7a58408375132b59cf4ac 35185508 qtwebkit-opensource-src_5.3.1+dfsg.orig.tar.xz
+ 930acb998fb9054741805fe1a12260ac 115365 qtwebkit-opensource-src_5.3.1+dfsg-2.debian.tar.gz
+Checksums-Sha1: 
+ bc0ee9c9bac993611a284a942324f261a7a97237 2785 qtwebkit-opensource-src_5.3.1+dfsg-2.dsc
+ 57dcb062207b76a31a3157c75916af6e5ed3b648 35185508 qtwebkit-opensource-src_5.3.1+dfsg.orig.tar.xz
+ 616a4d08d09f7005a8e3e170b8f9839e4a1c3cc0 115365 qtwebkit-opensource-src_5.3.1+dfsg-2.debian.tar.gz
+Checksums-Sha256: 
+ dcef28203644b6ee91e6883db2454c279d8ac5db49df6633f5f7f38b36293f4c 2785 qtwebkit-opensource-src_5.3.1+dfsg-2.dsc
+ 9f8ce4f71c5d2887aa6a633872024a47f40f7f873fb3698c3174b1ef53a70a62 35185508 qtwebkit-opensource-src_5.3.1+dfsg.orig.tar.xz
+ 7e3220b5cec84c9b995b50bae162a982f7dabf86313022e1f1f4243539f9f8ee 115365 qtwebkit-opensource-src_5.3.1+dfsg-2.debian.tar.gz
+
+Package: qtx11extras-opensource-src
+Format: 3.0 (quilt)
+Binary: libqt5x11extras5, libqt5x11extras5-dev, qtx11extras5-dbg, qtx11extras5-doc, qtx11extras5-doc-html
+Architecture: any all
+Version: 5.3.1-1
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Felix Geyer <fgeyer@debian.org>, Timo Jyrinki <timo@debian.org>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtx11extras.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtx11extras.git
+Build-Depends: debhelper (>= 9), pkg-kde-tools, qtbase5-dev (>= 5.3.1+dfsg-2~), qtbase5-private-dev (>= 5.3.1+dfsg-2~)
+Build-Depends-Indep: libqt5sql5-sqlite (>= 5.3.1+dfsg-2~), qttools5-dev-tools (>= 5.3.1~)
+Package-List:
+ libqt5x11extras5 deb libs optional
+ libqt5x11extras5-dev deb libdevel optional
+ qtx11extras5-dbg deb debug extra
+ qtx11extras5-doc deb doc extra
+ qtx11extras5-doc-html deb doc extra
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtx11extras-opensource-src
+Files: 
+ 44c5788b1caa6ea335e97577bcc7d841 2326 qtx11extras-opensource-src_5.3.1-1.dsc
+ 28a509174a04cd9eda812a270a494c4b 33536 qtx11extras-opensource-src_5.3.1.orig.tar.xz
+ 018ddf2ddaa06596cd4ff6a4ecaba37e 4758 qtx11extras-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha1: 
+ 70745b1dd4a818594ecbc44170ec52e1ec657d34 2326 qtx11extras-opensource-src_5.3.1-1.dsc
+ d3149ea2b69a524593a59820f00bc27e146662f7 33536 qtx11extras-opensource-src_5.3.1.orig.tar.xz
+ 6d7cdba87f990bb45dad4a9ab1a88f513912769b 4758 qtx11extras-opensource-src_5.3.1-1.debian.tar.gz
+Checksums-Sha256: 
+ c588eb5a834c665bd97a5a183dd0415e81e5275f53554db3a6579d19ed744f86 2326 qtx11extras-opensource-src_5.3.1-1.dsc
+ b832a0c847efb6bb0da68c23788b24f6775220da773e98dc02f1df99dfe24ae5 33536 qtx11extras-opensource-src_5.3.1.orig.tar.xz
+ 0a6efafe26a3326b403370fa1a8c3037b135156c2862fc1d218fe94891e05121 4758 qtx11extras-opensource-src_5.3.1-1.debian.tar.gz
+
+Package: qtxmlpatterns-opensource-src
+Format: 3.0 (quilt)
+Binary: libqt5xmlpatterns5, libqt5xmlpatterns5-dev, libqt5xmlpatterns5-private-dev, qtxmlpatterns5-dev-tools, qtxmlpatterns5-examples, qtxmlpatterns5-dbg, qtxmlpatterns5-doc-html
+Architecture: any all
+Version: 5.3.1-3
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>, Pino Toscano <pino@debian.org>, Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>, Timo Jyrinki <timo@debian.org>, Dmitry Shachnev <mitya57@gmail.com>
+Homepage: http://qt-project.org/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtxmlpatterns.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtxmlpatterns.git
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1), pkg-kde-tools, qtbase5-private-dev (>= 5.3.1+dfsg-2~)
+Package-List:
+ libqt5xmlpatterns5 deb libs optional
+ libqt5xmlpatterns5-dev deb libdevel optional
+ libqt5xmlpatterns5-private-dev deb libdevel optional
+ qtxmlpatterns5-dbg deb debug extra
+ qtxmlpatterns5-dev-tools deb devel optional
+ qtxmlpatterns5-doc-html deb doc extra
+ qtxmlpatterns5-examples deb x11 optional
+Priority: optional
+Section: libs
+Directory: pool/universe/q/qtxmlpatterns-opensource-src
+Files: 
+ 53d1d1076885fe7fc5bd2e0cab1406cb 2457 qtxmlpatterns-opensource-src_5.3.1-3.dsc
+ c880f8ed4ffccf4c435420c7876c3adc 1325200 qtxmlpatterns-opensource-src_5.3.1.orig.tar.xz
+ d5c002e1ac18a5a087641c3de030b815 13077 qtxmlpatterns-opensource-src_5.3.1-3.debian.tar.gz
+Checksums-Sha1: 
+ f76e77b21b49d8613d9e1e6274f779a8fd40ad32 2457 qtxmlpatterns-opensource-src_5.3.1-3.dsc
+ 054506842a9cd9dbc5328e182a8d2f84cb3f4c75 1325200 qtxmlpatterns-opensource-src_5.3.1.orig.tar.xz
+ f498bc9c60ec3b78b5785b9fbd0403660f0a5d23 13077 qtxmlpatterns-opensource-src_5.3.1-3.debian.tar.gz
+Checksums-Sha256: 
+ 54eea50fb78b3222cf09332e4b46bf33169abdf3c39fc5172ee77a85351a40c2 2457 qtxmlpatterns-opensource-src_5.3.1-3.dsc
+ f36e5810a1fb25ceaea55ff245aa82e93d85bbbca43028a012c157be38ef576a 1325200 qtxmlpatterns-opensource-src_5.3.1.orig.tar.xz
+ 976bef2a1d43c54b993dde04009661dbf5f0c4e23723334ed4035dfa497e90d3 13077 qtxmlpatterns-opensource-src_5.3.1-3.debian.tar.gz
+
+Package: scite
+Binary: scite
+Version: 3.42-0ubuntu3~trusty
+Section: editors
+Maintainer: pasgui (lgp203.free.fr) <lgp203@free.fr>
+Build-Depends: debhelper (>= 9), libgtk2.0-dev, libglib2.0-dev, quilt
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/s/scite
+Files:
+ 1fe2e2235ce56f55e1d8bbe2c2a46b0c 2237518 scite_3.42.orig.tar.gz
+ 58555c6154ebade8fb8c425a2a120238 7026 scite_3.42-0ubuntu3~trusty.debian.tar.gz
+ 71084cae9578151e90c39fd987e8f823 1126 scite_3.42-0ubuntu3~trusty.dsc
+Checksums-Sha1:
+ 4211e859b22055c94214b57e25abbc46d7fc6229 2237518 scite_3.42.orig.tar.gz
+ 47b49775ec92aea9b8964278e54e8cd347243e76 7026 scite_3.42-0ubuntu3~trusty.debian.tar.gz
+ 3a88c4e421f9e727a8f944c8532ddaf658e9ad01 1126 scite_3.42-0ubuntu3~trusty.dsc
+Checksums-Sha256:
+ 48baa3fd75fc8738800f1049c3ea2efb899a7d902fd485fecdad72e6d8d3b8ae 2237518 scite_3.42.orig.tar.gz
+ faf8cc26530608b880342231d3864dcf7b368af8c76fff6df92f68885b0ef328 7026 scite_3.42-0ubuntu3~trusty.debian.tar.gz
+ e2f89db59245442ca68066d100d0fcf9fa1a79920c075b129ed8f8eb97de350a 1126 scite_3.42-0ubuntu3~trusty.dsc
+Package-List: scite deb editors optional
+Original-Maintainer: Michael Vogt <mvo@debian.org>
+
+Package: selene
+Binary: selene
+Version: 2.5.2~185~ubuntu14.04.1
+Section: video
+Maintainer: Tony George <tony.george.kol@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac, libgtk-3-dev, libgee-dev, libjson-glib-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (native)
+Directory: pool/universe/s/selene
+Files:
+ fb4fcfe0497dd759fd872b4839f93fbf 264779 selene_2.5.2~185~ubuntu14.04.1.tar.gz
+ b44af50ee031ee1a7fa892dd0b20fa94 709 selene_2.5.2~185~ubuntu14.04.1.dsc
+Checksums-Sha1:
+ 1f0b5ca6b95ae79adc7f9429321b97a570ad8901 264779 selene_2.5.2~185~ubuntu14.04.1.tar.gz
+ 761d45ab498007076424b475d9f38ef0070a4bd4 709 selene_2.5.2~185~ubuntu14.04.1.dsc
+Checksums-Sha256:
+ a1548a80d2937c30bcf03960a33096bade40f5dfda4f871410068457c49c3da4 264779 selene_2.5.2~185~ubuntu14.04.1.tar.gz
+ bdf712e7f18a39be31253ce596552dab9ba961aa1813909ffff36c35432b1268 709 selene_2.5.2~185~ubuntu14.04.1.dsc
+Homepage: http://teejeetech.blogspot.in/p/selene-media-encoder.html
+Package-List: selene deb video extra
+
+Package: simplescreenrecorder
+Binary: simplescreenrecorder
+Version: 0.3.3-1~ppa1~trusty1
+Section: video
+Maintainer: Maarten Baert (v2) <maarten-baert@hotmail.com>
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.0), build-essential, pkg-config, libx11-dev, libxext-dev, libxfixes-dev, qt4-qmake, libqt4-dev, libavformat-dev, libavcodec-dev, libavutil-dev, libswscale-dev, libasound2-dev, libpulse-dev, libjack-dev, libxi-dev
+Architecture: i386 amd64
+Standards-Version: 3.9.2
+Format: 1.0
+Directory: pool/universe/s/simplescreenrecorder
+Files:
+ f14455bff019af0ea14f21d798d68210 1567019 simplescreenrecorder_0.3.3-1~ppa1~trusty1.tar.gz
+ f6f0a653b27fc4406e3d7af3a0d67e4d 1910 simplescreenrecorder_0.3.3-1~ppa1~trusty1.dsc
+Checksums-Sha1:
+ fd2939389a559edd7a2c5b9970f52fd897d4ee7c 1567019 simplescreenrecorder_0.3.3-1~ppa1~trusty1.tar.gz
+ acb5a6cd0e5c066f4ff96ce6a1c68886600215df 1910 simplescreenrecorder_0.3.3-1~ppa1~trusty1.dsc
+Checksums-Sha256:
+ e6e163dbf0552c092227d92272e20a8e4f5da11094c5fc2ef53b6f6b80ac116f 1567019 simplescreenrecorder_0.3.3-1~ppa1~trusty1.tar.gz
+ d4adc7de590cdbff220aed7efb1a20ca0a2bc1266754964fe8af8c37d92e18f5 1910 simplescreenrecorder_0.3.3-1~ppa1~trusty1.dsc
+Homepage: http://www.maartenbaert.be/simplescreenrecorder/
+Package-List: simplescreenrecorder deb video optional
+Vcs-Git: git://github.com/MaartenBaert/ssr.git
+Vcs-Browser: https://github.com/MaartenBaert/ssr
+
+Package: simplescreenrecorder-lib
+Binary: simplescreenrecorder-lib
+Version: 0.3.3-1~ppa1~trusty1
+Section: video
+Maintainer: Maarten Baert (v2) <maarten-baert@hotmail.com>
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.0), build-essential, pkg-config, libx11-dev, libxext-dev, libxfixes-dev, libgl1-mesa-dev, libglu1-mesa-dev
+Architecture: i386 amd64
+Standards-Version: 3.9.2
+Format: 1.0
+Directory: pool/universe/s/simplescreenrecorder-lib
+Files:
+ 8dcc378cd8595b1c9e4a06b41b51056e 1567088 simplescreenrecorder-lib_0.3.3-1~ppa1~trusty1.tar.gz
+ 9ae51b59633fa46c91924aa8b189a067 1828 simplescreenrecorder-lib_0.3.3-1~ppa1~trusty1.dsc
+Checksums-Sha1:
+ 1c925f871a86b7ccbe23fda4258184435c58e61a 1567088 simplescreenrecorder-lib_0.3.3-1~ppa1~trusty1.tar.gz
+ fc0ebc1f57b5c21316da429d7dca4a2618a287e4 1828 simplescreenrecorder-lib_0.3.3-1~ppa1~trusty1.dsc
+Checksums-Sha256:
+ 5cdf2629b4207fcc533c7091378f6a1df3abf9e183d481330f7cac64518c5e2e 1567088 simplescreenrecorder-lib_0.3.3-1~ppa1~trusty1.tar.gz
+ e5efcc29a1a47c5ae9be826d4370f3dc78404e1d79099b8ebb0810865ed1b0de 1828 simplescreenrecorder-lib_0.3.3-1~ppa1~trusty1.dsc
+Homepage: http://www.maartenbaert.be/simplescreenrecorder/
+Package-List: simplescreenrecorder-lib deb video optional
+Vcs-Git: git://github.com/MaartenBaert/ssr.git
+Vcs-Browser: https://github.com/MaartenBaert/ssr
+
+Package: sip4
+Format: 3.0 (quilt)
+Binary: python-sip, python-sip-dbg, python-sip-dev, sip-dev, sip-dbg, python-sip-doc, python3-sip, python3-sip-dev, python3-sip-dbg
+Architecture: any all
+Version: 4.16.2+dfsg-1
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Torsten Marek <shlomme@debian.org>, Michael Casadevall <mcasadevall@debian.org>, Scott Kitterman <scott@kitterman.com>, Dmitry Shachnev <mitya57@gmail.com>
+Homepage: http://www.riverbankcomputing.co.uk/software/sip/
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/viewvc/python-modules/packages/sip4/trunk/
+Vcs-Svn: svn://anonscm.debian.org/python-modules/packages/sip4/trunk/
+Build-Depends: dpkg-dev (>= 1.16.1~), debhelper (>= 7), python-all-dev (>= 2.7.2-5~), python-all-dbg, python3-all-dev (>= 3.3.2-5~), python3-all-dbg, python-sphinx (>= 1.0.7+dfsg), flex
+Package-List:
+ python-sip deb python optional
+ python-sip-dbg deb debug extra
+ python-sip-dev deb python optional
+ python-sip-doc deb doc optional
+ python3-sip deb python optional
+ python3-sip-dbg deb debug extra
+ python3-sip-dev deb python optional
+ sip-dbg deb debug extra
+ sip-dev deb python optional
+Priority: optional
+Section: devel
+Directory: pool/universe/s/sip4
+Files: 
+ 038affa07f29c1288e3b6250f313735a 2281 sip4_4.16.2+dfsg-1.dsc
+ 84f4beb371f311449dd588ab36ac6361 521270 sip4_4.16.2+dfsg.orig.tar.gz
+ f4300699fac3e7f4fcae6c82593ba465 19007 sip4_4.16.2+dfsg-1.debian.tar.gz
+Checksums-Sha1: 
+ 11e6f687a203df15d83678472ea9e36023fb7ceb 2281 sip4_4.16.2+dfsg-1.dsc
+ d0eacb2569a9797655b301e3466fca64c56b842d 521270 sip4_4.16.2+dfsg.orig.tar.gz
+ 90ae669b861821f86e805617cbdca8e0dae64eb4 19007 sip4_4.16.2+dfsg-1.debian.tar.gz
+Checksums-Sha256: 
+ be18034af22280c44ecac50294fa80dc73e1db6ea2f139e8ec2ade867bf76c20 2281 sip4_4.16.2+dfsg-1.dsc
+ 11856f38d718244d558453eec5c8b4e946ef68e91e3acc6446178f73d4df614b 521270 sip4_4.16.2+dfsg.orig.tar.gz
+ c5b5b7ffe07623ab94e02ceb96a3c0bcdf8c37b45b4015a015029a487636b231 19007 sip4_4.16.2+dfsg-1.debian.tar.gz
+
+Package: syncdrive
+Binary: syncdrive
+Version: 0.9-1b~trusty~NoobsLab.com
+Section: gnome
+Maintainer: david <david.tavares@icloud.com>
+Build-Depends: debhelper (>= 7)
+Architecture: all
+Standards-Version: 3.9.4
+Format: 1.0
+Directory: pool/universe/s/syncdrive
+Files:
+ 3e7ebeca41907ddc47461dd834a619f0 568168 syncdrive_0.9-1b~trusty~NoobsLab.com.tar.gz
+ ef2dbd408cde0f57b4798a62923a975b 1157 syncdrive_0.9-1b~trusty~NoobsLab.com.dsc
+Checksums-Sha1:
+ 9b505e4f5b13df58b8922d5729de4810423cb1d8 568168 syncdrive_0.9-1b~trusty~NoobsLab.com.tar.gz
+ 5489082e2fdc662f2f2941a101ac26c665203b1f 1157 syncdrive_0.9-1b~trusty~NoobsLab.com.dsc
+Checksums-Sha256:
+ 68a24b4fbd9dcf6e61c90d0220ccf63364d5bd18186540f8fecffa6bf4eed445 568168 syncdrive_0.9-1b~trusty~NoobsLab.com.tar.gz
+ 64489d38dcc25a81ee693c590f5519c8c29ee6fe1aead5bcab60814291742cfa 1157 syncdrive_0.9-1b~trusty~NoobsLab.com.dsc
+Homepage: http://www.NoobsLab.com
+Package-List: syncdrive deb gnome extra
+
+Package: timeshift
+Binary: timeshift
+Version: 1.7.2~174~ubuntu14.04.1
+Section: utils
+Maintainer: Tony George <tony.george.kol@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac, libgtk-3-dev, libgee-dev, libgudev-1.0-dev, libjson-glib-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (native)
+Directory: pool/universe/t/timeshift
+Files:
+ b551bd8fb052c65f0a3fb6c8c3d3aa41 167661 timeshift_1.7.2~174~ubuntu14.04.1.tar.gz
+ 2427af06eee25d34c95828c9368c1aea 718 timeshift_1.7.2~174~ubuntu14.04.1.dsc
+Checksums-Sha1:
+ 24bc803e3cd634929db260dc2dd3fa674f7b0dfa 167661 timeshift_1.7.2~174~ubuntu14.04.1.tar.gz
+ 3c658c0740848bd23664a62b830e0f0d1bbcab9e 718 timeshift_1.7.2~174~ubuntu14.04.1.dsc
+Checksums-Sha256:
+ f1f4aba730c288a5a080125f8b0430c5d7841b263878c1305e7504198920a32c 167661 timeshift_1.7.2~174~ubuntu14.04.1.tar.gz
+ b24bdf559d68fd6ecc1cdaacb6020183d47e1b9066346f5fce0cbb3ac0c2a650 718 timeshift_1.7.2~174~ubuntu14.04.1.dsc
+Homepage: http://teejeetech.blogspot.in/
+Package-List: timeshift deb utils extra
+
+Package: timeshift-btrfs
+Binary: timeshift-btrfs
+Version: 1.1~13~ubuntu14.04.1
+Section: utils
+Maintainer: Tony George <tony.george.kol@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac, libgtk-3-dev, libgee-dev, libgudev-1.0-dev, libjson-glib-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (native)
+Directory: pool/universe/t/timeshift-btrfs
+Files:
+ 9debbd853912da5997bb3a222216e088 120964 timeshift-btrfs_1.1~13~ubuntu14.04.1.tar.gz
+ 31d29bc2926c8baa7e501446fa9aa6eb 742 timeshift-btrfs_1.1~13~ubuntu14.04.1.dsc
+Checksums-Sha1:
+ b34804b2eab3a31066466ef645069dfff625038c 120964 timeshift-btrfs_1.1~13~ubuntu14.04.1.tar.gz
+ f378cf50cb70822a6785d4d5fe6106149813f798 742 timeshift-btrfs_1.1~13~ubuntu14.04.1.dsc
+Checksums-Sha256:
+ 040935aeabc7910f17a317a2eebf0ab5197ef71ccf8b84ec40d434fb02635587 120964 timeshift-btrfs_1.1~13~ubuntu14.04.1.tar.gz
+ 078e380bd0370af5ce5591a13a64d2bc09eee6913e26f4ea1ab0dffb142c719e 742 timeshift-btrfs_1.1~13~ubuntu14.04.1.dsc
+Homepage: http://teejeetech.blogspot.in/
+Package-List: timeshift-btrfs deb utils extra
+
+Package: tlp
+Binary: tlp, tlp-rdw
+Version: 0.6-1~trusty
+Section: utils
+Maintainer: Thomas Koch <linrunner@gmx.net>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/t/tlp
+Files:
+ 42ec22509b2d2e49ca08df6f8510dcc5 55001 tlp_0.6.orig.tar.gz
+ beecf770fe4f5b8dd9e90526a84a8ad9 3341 tlp_0.6-1~trusty.debian.tar.gz
+ 339caa200f649e2214dc15a2454c4718 1176 tlp_0.6-1~trusty.dsc
+Checksums-Sha1:
+ 8be8032c1e4da7886f16d50a98786419f01d0ef3 55001 tlp_0.6.orig.tar.gz
+ a79e5095f5520181d487af43546db313a064b913 3341 tlp_0.6-1~trusty.debian.tar.gz
+ 8ed115b1cb2d015bba0090b6d3069e6cd070f475 1176 tlp_0.6-1~trusty.dsc
+Checksums-Sha256:
+ 30e4790ca53c03c2673f87f6cf2d1cf41bed956f3aaed191a4895ade2be784b6 55001 tlp_0.6.orig.tar.gz
+ 634dd770a3a67cc6061e51eda1a87c0f175a8d0442ed5743519fa0f89ef65dba 3341 tlp_0.6-1~trusty.debian.tar.gz
+ a07a2823eed270815821a822e7212c88ba123454e6af21e00f93c992937bac3f 1176 tlp_0.6-1~trusty.dsc
+Homepage: http://linrunner.de/tlp
+Package-List: tlp deb utils optional
+ tlp-rdw deb utils optional
+Vcs-Git: git://anonscm.debian.org/collab-maint/tlp.git
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/tlp.git
+
+Package: ttf-google-fonts
+Format: 3.0 (quilt)
+Binary: ttf-google-fonts
+Architecture: all
+Version: 0.0~git20140805-1
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: https://github.com/w0ng/googlefontdirectory
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ ttf-google-fonts deb universe/fonts optional
+Priority: optional
+Section: universe/fonts
+Directory: pool/universe/t/ttf-google-fonts
+Files: 
+ 4ee5843989b57870e9b7223f77e543c7 1547 ttf-google-fonts_0.0~git20140805-1.dsc
+ d7b4aa901da5d6708e9c2c18e9782db2 197881170 ttf-google-fonts_0.0~git20140805.orig.tar.gz
+ 38edb9084e863225e6d3d21db22caa38 1109 ttf-google-fonts_0.0~git20140805-1.debian.tar.gz
+Checksums-Sha1: 
+ b183a1fb9d4c45e02a495b9d788d35e622fc6b8d 1547 ttf-google-fonts_0.0~git20140805-1.dsc
+ 8f3e1778e85e5ec10b18753ef2d4f57c7ddf5e14 197881170 ttf-google-fonts_0.0~git20140805.orig.tar.gz
+ 233557dbc1441240f9f11fcc2605a09d8b7e42b9 1109 ttf-google-fonts_0.0~git20140805-1.debian.tar.gz
+Checksums-Sha256: 
+ 9392e12476b127272d2bf7fc3e23bfcd7c23d080ccb4f5a62b5da82b4afe19e3 1547 ttf-google-fonts_0.0~git20140805-1.dsc
+ 4d6af84d937951e85a765552efed27cdc2a50348ba3bee598241ead9bfaa77e2 197881170 ttf-google-fonts_0.0~git20140805.orig.tar.gz
+ 9aa2ba139cea891c2909b36f0fd2664aafc247c8e8b41d9535472444c66dbf2e 1109 ttf-google-fonts_0.0~git20140805-1.debian.tar.gz
+
+Package: vala-0.22
+Binary: valac-0.22, valac-0.22-vapi, vala-0.22-doc, libvala-0.22-0, libvala-0.22-dev, valac-0.22-dbg, libvala-0.22-0-dbg
+Version: 0.22.1-2ubuntu1~14.04~valateam0
+Section: devel
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7), dh-autoreconf, libglib2.0-dev (>= 2.26), bison (>= 2.3), autotools-dev, flex, gnome-pkg-tools, xsltproc, libdbus-1-dev, dbus-x11, lsb-release, libgirepository1.0-dev
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/universe/v/vala-0.22
+Files:
+ 5055d3f8f897ad1a77fd38887c85a92c 2690324 vala-0.22_0.22.1.orig.tar.xz
+ 7d2740f29d7be12f0971f41ce29c3c89 23184 vala-0.22_0.22.1-2ubuntu1~14.04~valateam0.debian.tar.xz
+ 480b828fc43b3475c4972911ce60da25 2806 vala-0.22_0.22.1-2ubuntu1~14.04~valateam0.dsc
+Checksums-Sha1:
+ 440b63356a94565a3f58b9e2218e3bb31f02879b 2690324 vala-0.22_0.22.1.orig.tar.xz
+ 54bdea1bff0b8f0e5d5c9300a469e33d9a0b54bc 23184 vala-0.22_0.22.1-2ubuntu1~14.04~valateam0.debian.tar.xz
+ f8de1a6b523e9a8ac284f7b0568ca35cc6c4f0e2 2806 vala-0.22_0.22.1-2ubuntu1~14.04~valateam0.dsc
+Checksums-Sha256:
+ 92c61b94a427f281ba2537b69135a3be23248b153268057d7195003dd6aba28c 2690324 vala-0.22_0.22.1.orig.tar.xz
+ f3718cfaf2f2bf1a80de66737a6c891431e5874340965ad221119bc0d26d79f2 23184 vala-0.22_0.22.1-2ubuntu1~14.04~valateam0.debian.tar.xz
+ 2a2b36d18e64e73f20fa44a7011d1945c40b194ac0d87042f1d0551e7cdf75d2 2806 vala-0.22_0.22.1-2ubuntu1~14.04~valateam0.dsc
+Homepage: http://live.gnome.org/Vala/
+Uploaders: Marc-Andre Lureau <marcandre.lureau@gmail.com>, Loic Minier <lool@dooz.org>, Sebastian Dröge <slomo@debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Sjoerd Simons <sjoerd@debian.org>, Sebastian Reichel <sre@debian.org>
+Package-List: libvala-0.22-0 deb libs optional arch=any
+ libvala-0.22-0-dbg deb debug extra arch=any
+ libvala-0.22-dev deb libdevel optional arch=any
+ vala-0.22-doc deb doc optional arch=all
+ valac-0.22 deb devel optional arch=any
+ valac-0.22-dbg deb debug extra arch=any
+ valac-0.22-vapi deb devel optional arch=all
+Vcs-Git: git://git.debian.org/git/pkg-vala/vala.git
+Vcs-Browser: http://git.debian.org/?p=pkg-vala/vala.git
+Original-Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.alioth.debian.org>
+
+Package: vala-0.24
+Binary: valac-0.24, valac-0.24-vapi, vala-0.24-doc, libvala-0.24-0, libvala-0.24-dev, valac-0.24-dbg, libvala-0.24-0-dbg
+Version: 0.24.0-6~14.04~valateam0
+Section: devel
+Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7), dh-autoreconf, libglib2.0-dev (>= 2.26), bison (>= 2.3), autotools-dev, flex, gnome-pkg-tools, xsltproc, libdbus-1-dev, dbus-x11, lsb-release, libgirepository1.0-dev
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/universe/v/vala-0.24
+Files:
+ beddeff9c06d3c278988b237da0e7401 2666032 vala-0.24_0.24.0.orig.tar.xz
+ 909bb938792e13eb8ffb3ee33c0d3d35 33352 vala-0.24_0.24.0-6~14.04~valateam0.debian.tar.xz
+ 0d5c9fd3ddd1de1672bf6785e6991357 2699 vala-0.24_0.24.0-6~14.04~valateam0.dsc
+Checksums-Sha1:
+ 33a71a21e12e80cf1f4e0aa3b6a6523ff38e92c8 2666032 vala-0.24_0.24.0.orig.tar.xz
+ 04f615cec45a72af8d54ea40755b5423663e4e3e 33352 vala-0.24_0.24.0-6~14.04~valateam0.debian.tar.xz
+ 54982c6b7241b57ac2157571b74552894af5629c 2699 vala-0.24_0.24.0-6~14.04~valateam0.dsc
+Checksums-Sha256:
+ 22a37c977512c19cd29c373eaaef96cb2c994795d491106f32387f3f9d1e899c 2666032 vala-0.24_0.24.0.orig.tar.xz
+ f098b3575a7d2ab5f8192a5a971feaa06072f9fb1af21a4311967cdf72b12fb7 33352 vala-0.24_0.24.0-6~14.04~valateam0.debian.tar.xz
+ 5b020a197d1e8ed29e3370bb9bf5e7c0c057ace00e1ffdb385e6bd41dd380047 2699 vala-0.24_0.24.0-6~14.04~valateam0.dsc
+Homepage: http://live.gnome.org/Vala/
+Uploaders: Marc-Andre Lureau <marcandre.lureau@gmail.com>, Loic Minier <lool@dooz.org>, Sebastian Dröge <slomo@debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Sjoerd Simons <sjoerd@debian.org>, Sebastian Reichel <sre@debian.org>
+Package-List: libvala-0.24-0 deb libs optional arch=any
+ libvala-0.24-0-dbg deb debug extra arch=any
+ libvala-0.24-dev deb libdevel optional arch=any
+ vala-0.24-doc deb doc optional arch=all
+ valac-0.24 deb devel optional arch=any
+ valac-0.24-dbg deb debug extra arch=any
+ valac-0.24-vapi deb devel optional arch=all
+Vcs-Git: git://git.debian.org/git/pkg-vala/vala.git
+Vcs-Browser: http://git.debian.org/?p=pkg-vala/vala.git
+
+Package: vala-0.26
+Binary: valac, valac-0.26, valac-0.26-vapi, vala-0.26-doc, libvala-0.26-0, libvala-0.26-dev, valac-0.26-dbg, libvala-0.26-0-dbg
+Version: 0.26.2-0ubuntu1~14.04~valateam0
+Section: devel
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7), dh-autoreconf, libglib2.0-dev (>= 2.26), bison (>= 2.3), autotools-dev, flex, gnome-pkg-tools, xsltproc, libdbus-1-dev, dbus-x11, lsb-release, libgirepository1.0-dev
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Directory: pool/universe/v/vala-0.26
+Files:
+ cb712cc5785e2133d58af9e54b2c79db 2682856 vala-0.26_0.26.2.orig.tar.xz
+ ee0e5028ae7bbd411e42cc43f33d2247 23568 vala-0.26_0.26.2-0ubuntu1~14.04~valateam0.debian.tar.xz
+ 82714cf1dbe51de12aef9f750eb0630d 2858 vala-0.26_0.26.2-0ubuntu1~14.04~valateam0.dsc
+Checksums-Sha1:
+ 538a2b1ea2ade3d706b1ef9759f83242618cb143 2682856 vala-0.26_0.26.2.orig.tar.xz
+ 6e73d25600a7fd30b184c1f6835fd4f4e6925fe4 23568 vala-0.26_0.26.2-0ubuntu1~14.04~valateam0.debian.tar.xz
+ 3b381afd96d31aeb6d17c9478d9a285a2361834d 2858 vala-0.26_0.26.2-0ubuntu1~14.04~valateam0.dsc
+Checksums-Sha256:
+ 37f13f430c56a93b6dac85239084681fd8f31c407d386809c43bc2f2836e03c4 2682856 vala-0.26_0.26.2.orig.tar.xz
+ 8c84540335879c5c737f01bcf25f93a943394440352a2e34d9f2c6e878af1a23 23568 vala-0.26_0.26.2-0ubuntu1~14.04~valateam0.debian.tar.xz
+ ba4bc45be614177a123c30f36b79a189b204e40e2f3484fdd37bd24ceca03e8c 2858 vala-0.26_0.26.2-0ubuntu1~14.04~valateam0.dsc
+Homepage: https://wiki.gnome.org/Projects/Vala/
+Uploaders: Marc-Andre Lureau <marcandre.lureau@gmail.com>, Loic Minier <lool@dooz.org>, Sebastian Dröge <slomo@debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Sjoerd Simons <sjoerd@debian.org>, Sebastian Reichel <sre@debian.org>
+Package-List: libvala-0.26-0 deb libs optional arch=any
+ libvala-0.26-0-dbg deb debug extra arch=any
+ libvala-0.26-dev deb libdevel optional arch=any
+ vala-0.26-doc deb doc optional arch=all
+ valac deb devel optional arch=all
+ valac-0.26 deb devel optional arch=any
+ valac-0.26-dbg deb debug extra arch=any
+ valac-0.26-vapi deb devel optional arch=all
+Vcs-Git: git://git.debian.org/git/pkg-vala/vala.git
+Vcs-Browser: http://git.debian.org/?p=pkg-vala/vala.git
+Original-Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.alioth.debian.org>
+
+Package: vala-0.28
+Binary: valac-0.28, valac-0.28-vapi, vala-0.28-doc, libvala-0.28-0, libvala-0.28-dev, valac-0.28-dbg, libvala-0.28-0-dbg
+Version: 0.27.1-0ubuntu1~14.04~valateam0
+Section: devel
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7), dh-autoreconf, libglib2.0-dev (>= 2.26), bison (>= 2.3), autotools-dev, flex, gnome-pkg-tools, xsltproc, libdbus-1-dev, dbus-x11, lsb-release, libgirepository1.0-dev
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Directory: pool/universe/v/vala-0.28
+Files:
+ 27302efb557d4a6bf634eb6444d90be8 2715920 vala-0.28_0.27.1.orig.tar.xz
+ 4eace649164f4a5ccb51155417f9bf3f 23452 vala-0.28_0.27.1-0ubuntu1~14.04~valateam0.debian.tar.xz
+ 2903c0b92431689db6829969b2573e6f 2816 vala-0.28_0.27.1-0ubuntu1~14.04~valateam0.dsc
+Checksums-Sha1:
+ ac301066a1f2b52007e974ea4816a9755b882c92 2715920 vala-0.28_0.27.1.orig.tar.xz
+ 71814c8f912f2e6018848aa87a53ff1f3fdc42b3 23452 vala-0.28_0.27.1-0ubuntu1~14.04~valateam0.debian.tar.xz
+ 360a37cb0d7fd24841f40048f2a53b48568f56e3 2816 vala-0.28_0.27.1-0ubuntu1~14.04~valateam0.dsc
+Checksums-Sha256:
+ 0bce939c011c34478da840f869b3c24d02e8f1c92691c587c1fe289a5533cd77 2715920 vala-0.28_0.27.1.orig.tar.xz
+ f655bd795be807cd0ff385918fb8a7a71e80315e364b5c627aa0fcbd9aa2c6a3 23452 vala-0.28_0.27.1-0ubuntu1~14.04~valateam0.debian.tar.xz
+ f0e74d1d4ef39600c27399c9ef96e3963fc3ec6b9199f53a5160e86da888708a 2816 vala-0.28_0.27.1-0ubuntu1~14.04~valateam0.dsc
+Homepage: https://wiki.gnome.org/Projects/Vala/
+Uploaders: Marc-Andre Lureau <marcandre.lureau@gmail.com>, Loic Minier <lool@dooz.org>, Sebastian Dröge <slomo@debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Sjoerd Simons <sjoerd@debian.org>, Sebastian Reichel <sre@debian.org>
+Package-List: libvala-0.28-0 deb libs optional arch=any
+ libvala-0.28-0-dbg deb debug extra arch=any
+ libvala-0.28-dev deb libdevel optional arch=any
+ vala-0.28-doc deb doc optional arch=all
+ valac-0.28 deb devel optional arch=any
+ valac-0.28-dbg deb debug extra arch=any
+ valac-0.28-vapi deb devel optional arch=all
+Vcs-Git: git://git.debian.org/git/pkg-vala/vala.git
+Vcs-Browser: http://git.debian.org/?p=pkg-vala/vala.git
+Original-Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.alioth.debian.org>
+
+Package: valadoc
+Binary: valadoc, libvaladoc3, libvaladoc-data, libvaladoc-dev
+Version: 0.23.2~git20140923.9e10ee13-0ubuntu1~14.04~valateam0
+Section: devel
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 9~), dh-autoreconf (>= 4), libgee-0.8-dev (>= 0.8), libglib2.0-dev (>= 2.24.0), libgraphviz-dev (>= 2.16), libgtk2.0-dev (>= 2.10.0), libvala-0.24-dev, valac-0.24, libvala-0.26-dev, valac-0.26, libvala-0.28-dev, valac-0.28
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Directory: pool/universe/v/valadoc
+Files:
+ 77fed9cd516073138322cb64bc5d4319 362772 valadoc_0.23.2~git20140923.9e10ee13.orig.tar.xz
+ 6b69f1f540b66e1cbff188ecd65b62df 9324 valadoc_0.23.2~git20140923.9e10ee13-0ubuntu1~14.04~valateam0.debian.tar.xz
+ 67bcac1966aa6729a4e96459709cde9d 2522 valadoc_0.23.2~git20140923.9e10ee13-0ubuntu1~14.04~valateam0.dsc
+Checksums-Sha1:
+ 8acd12d11d480f11a579d5eab0b806ca564693cc 362772 valadoc_0.23.2~git20140923.9e10ee13.orig.tar.xz
+ 1eb1ccbe245c3b613dad567f40c95eaa2b2807ea 9324 valadoc_0.23.2~git20140923.9e10ee13-0ubuntu1~14.04~valateam0.debian.tar.xz
+ d0aab83703b1d6b2e6a2e53063957d0bd5237cc2 2522 valadoc_0.23.2~git20140923.9e10ee13-0ubuntu1~14.04~valateam0.dsc
+Checksums-Sha256:
+ 816629e8750340e2952fa5962688efa8b832dd235cdae68008a5d31dd77165cd 362772 valadoc_0.23.2~git20140923.9e10ee13.orig.tar.xz
+ b11178f5d607be099a73740da50465d1fc028bdd2dfd4f1230882667de6cee45 9324 valadoc_0.23.2~git20140923.9e10ee13-0ubuntu1~14.04~valateam0.debian.tar.xz
+ 09282bb87e5aeacdbac93aeaeb3b46e4a4ffbf35246133d212e05fb7b0e0e1b6 2522 valadoc_0.23.2~git20140923.9e10ee13-0ubuntu1~14.04~valateam0.dsc
+Homepage: http://www.valadoc.org
+Package-List: libvaladoc-data deb misc extra arch=all
+ libvaladoc-dev deb libdevel extra arch=any
+ libvaladoc3 deb libs extra arch=any
+ valadoc deb devel extra arch=any
+Vcs-Git: git://anonscm.debian.org/pkg-vala/valadoc.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-vala/valadoc.git;a=summary
+Original-Maintainer: Sebastian Reichel <sre@debian.org>
+
+Package: vdpauinfo
+Binary: vdpauinfo
+Version: 0.9-0ubuntu0~ppa0~trusty
+Section: x11
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), autoconf, automake, pkg-config, libvdpau-dev (>= 0.9)
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/v/vdpauinfo
+Files:
+ f48e7ce838146021a138592ca9bdffc8 87887 vdpauinfo_0.9.orig.tar.gz
+ 6c91e2055a80ac660f546ba6f88efae6 2172 vdpauinfo_0.9-0ubuntu0~ppa0~trusty.debian.tar.xz
+ 3700e17a2f0f61e51be9bbb828040ef9 2039 vdpauinfo_0.9-0ubuntu0~ppa0~trusty.dsc
+Checksums-Sha1:
+ e98a41b355e4729889d9f21874d8cc5c6da2ebaf 87887 vdpauinfo_0.9.orig.tar.gz
+ 81a115118cff008f09322ac8c68b1b533a61c98f 2172 vdpauinfo_0.9-0ubuntu0~ppa0~trusty.debian.tar.xz
+ bac0d6ddcf5352ac88ae2d7ea3056e9c1954cd66 2039 vdpauinfo_0.9-0ubuntu0~ppa0~trusty.dsc
+Checksums-Sha256:
+ a040fe3682db4cb6076179185a68559a62b908cd01f0aee086838eaf2923c8e3 87887 vdpauinfo_0.9.orig.tar.gz
+ 7e13e6274ef5091f633df545abca36d142ef7e7131f0fcfc89486614b326d26a 2172 vdpauinfo_0.9-0ubuntu0~ppa0~trusty.debian.tar.xz
+ c8da8a9da16b70a8bd09481362ad14489f1ae218811993ba74f437cd5f9247bd 2039 vdpauinfo_0.9-0ubuntu0~ppa0~trusty.dsc
+Homepage: http://cgit.freedesktop.org/~aplattner/vdpauinfo
+Uploaders: Andreas Beckmann <anbe@debian.org>,
+Package-List: vdpauinfo deb x11 extra arch=any
+Vcs-Git: git://anonscm.debian.org/pkg-nvidia/vdpauinfo.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-nvidia/vdpauinfo.git
+
+Package: virtualgl
+Binary: virtualgl, virtualgl-libs, virtualgl-libs-ia32, virtualgl-dbg, virtualgl-libs-dbg
+Version: 2.3.3-1~trustyppa1
+Section: utils
+Maintainer: The Bumblebee Project <bumblebee@lists.launchpad.net>
+Build-Depends: debhelper (>= 9), cmake (>= 2.8), libjpeg-turbo8-dev, libturbojpeg, libx11-dev, libxext-dev, libgl1-mesa-dev, libglu1-mesa-dev, libxv-dev
+Architecture: i386 amd64
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/v/virtualgl
+Files:
+ abd9ceba4a2332c420164666b438f49e 2549896 virtualgl_2.3.3.orig.tar.gz
+ 3920b7cfc6c3d9813c4a129e1d130d4a 3769 virtualgl_2.3.3-1~trustyppa1.debian.tar.gz
+ 03de39b965b69369082ef06edcfff797 1921 virtualgl_2.3.3-1~trustyppa1.dsc
+Checksums-Sha1:
+ 793c86df790d0b137b4686597a8f42f6cd97ff48 2549896 virtualgl_2.3.3.orig.tar.gz
+ 6608ba5877e94ee475245f5922f8773b533856e8 3769 virtualgl_2.3.3-1~trustyppa1.debian.tar.gz
+ a7688198713b5db3972437452950683433670eda 1921 virtualgl_2.3.3-1~trustyppa1.dsc
+Checksums-Sha256:
+ cf90680e46ab8cbf79884b7fcd9724aa3694478aa7d3bcfe07942b1def2ba199 2549896 virtualgl_2.3.3.orig.tar.gz
+ b026e7407ab0d520224b6672ab9303c85868d928c75844dcf3708488a27ec0c5 3769 virtualgl_2.3.3-1~trustyppa1.debian.tar.gz
+ e6ceb804d96c48528db768bda221be35ffb097a1e0117c4aae1454fd3df48991 1921 virtualgl_2.3.3-1~trustyppa1.dsc
+Homepage: http://www.virtualgl.org/
+Uploaders: Peter Lekensteyn <lekensteyn@gmail.com>, Bruno Pagani <bruno.n.pagani@gmail.com>
+Package-List: virtualgl deb utils extra
+ virtualgl-dbg deb debug extra
+ virtualgl-libs deb utils extra
+ virtualgl-libs-dbg deb debug extra
+ virtualgl-libs-ia32 deb utils extra
+Vcs-Browser: http://virtualgl.svn.sourceforge.net/viewvc/virtualgl/vgl/
+
+Package: wine-gecko2.21
+Binary: wine-gecko2.21
+Version: 2.21-0ubuntu1~ppa1~precise1
+Section: otherosfs
+Maintainer: Scott Ritchie <scottritchie@ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Architecture: i386 amd64
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/universe/w/wine-gecko2.21
+Files:
+ 8cf6bd7112ad8b6ac50b27c3951469ce 103750765 wine-gecko2.21_2.21.orig.tar.bz2
+ 15bb8f915768db88721bd223f2b5b354 42356709 wine-gecko2.21_2.21-0ubuntu1~ppa1~precise1.debian.tar.gz
+ 179254565ca1c30af73730fe7f641bec 1225 wine-gecko2.21_2.21-0ubuntu1~ppa1~precise1.dsc
+Checksums-Sha1:
+ f8f3be7941b6714b6b30453083baaaf0dfc4eea7 103750765 wine-gecko2.21_2.21.orig.tar.bz2
+ fe4e34f6f4207a5cd63a913c10069ca0a46ff927 42356709 wine-gecko2.21_2.21-0ubuntu1~ppa1~precise1.debian.tar.gz
+ a77e55709ba3a7f26731d442041b323e3ad9ebfc 1225 wine-gecko2.21_2.21-0ubuntu1~ppa1~precise1.dsc
+Checksums-Sha256:
+ c617fc43f4a94cc12208918d2e12cd089753f581abe24d8aca991f73fd7a534a 103750765 wine-gecko2.21_2.21.orig.tar.bz2
+ 304d42531acf6518be766e24905878df5d76bcd0ebc9db94e5d1f20ff7fab9b7 42356709 wine-gecko2.21_2.21-0ubuntu1~ppa1~precise1.debian.tar.gz
+ a3e5c55c486bee7281ae944d77e27e26fa280c0880fd2074d39cda91a9c7b2be 1225 wine-gecko2.21_2.21-0ubuntu1~ppa1~precise1.dsc
+Homepage: http://www.winehq.org/
+Package-List: wine-gecko2.21 deb otherosfs optional
+
+Package: wine-gecko2.24
+Binary: wine-gecko2.24
+Version: 2.24-0ubuntu1~ppa1
+Section: otherosfs
+Maintainer: Scott Ritchie <scottritchie@ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Architecture: i386 amd64
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/universe/w/wine-gecko2.24
+Files:
+ 6da468ee801a881f6e20c28d4de57672 117791911 wine-gecko2.24_2.24.orig.tar.bz2
+ 4e390d7958173309a9a09f429ee46f90 45810562 wine-gecko2.24_2.24-0ubuntu1~ppa1.debian.tar.gz
+ cf7c433a3765c7056b810eafcdda7acb 1189 wine-gecko2.24_2.24-0ubuntu1~ppa1.dsc
+Checksums-Sha1:
+ 4d5ed0e6be1cdd78ee7674133f5119c0ced75025 117791911 wine-gecko2.24_2.24.orig.tar.bz2
+ 59349a3f643cb12444bbf5e5866645afe28d98bd 45810562 wine-gecko2.24_2.24-0ubuntu1~ppa1.debian.tar.gz
+ 82fc304b6dccbede03e21074f34c5cf5498d1d28 1189 wine-gecko2.24_2.24-0ubuntu1~ppa1.dsc
+Checksums-Sha256:
+ 5ee45181b83d02de5f6ad6c5a75fe4eecb586377bd4f3c30c64690bf68854a3d 117791911 wine-gecko2.24_2.24.orig.tar.bz2
+ b4826fd7f898937d9ef5d519c36bd78641cd0e6616c8c9be5cf1f4702ea2300a 45810562 wine-gecko2.24_2.24-0ubuntu1~ppa1.debian.tar.gz
+ dd4de8113aa7af54eca9eae72ee667163cd6c5438544b9b9ffc3781a60f9f833 1189 wine-gecko2.24_2.24-0ubuntu1~ppa1.dsc
+Homepage: http://www.winehq.org/
+Package-List: wine-gecko2.24 deb otherosfs optional
+
+Package: wine-gecko2.34
+Binary: wine-gecko2.34
+Version: 2.34-0ubuntu1~ppa1
+Section: otherosfs
+Maintainer: Scott Ritchie <scottritchie@ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Architecture: i386 amd64
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/universe/w/wine-gecko2.34
+Files:
+ 2a48b7abae0684e7280883c25a298ebd 161528125 wine-gecko2.34_2.34.orig.tar.bz2
+ 3668e34df674c58018d1b728a0929859 57851909 wine-gecko2.34_2.34-0ubuntu1~ppa1.debian.tar.gz
+ 5bde8dc1f2b9695a838162141a772749 1172 wine-gecko2.34_2.34-0ubuntu1~ppa1.dsc
+Checksums-Sha1:
+ 4e99de65b1a110e933f9d72a5cc71aed566b65ae 161528125 wine-gecko2.34_2.34.orig.tar.bz2
+ 6b5f1bf830cd88b73957136bf8e514d0d4066d0c 57851909 wine-gecko2.34_2.34-0ubuntu1~ppa1.debian.tar.gz
+ 1baa7eb576478b69dc39369ea3bd1bcf554ccc49 1172 wine-gecko2.34_2.34-0ubuntu1~ppa1.dsc
+Checksums-Sha256:
+ 2262a355bc1fe10c8039f0dd4b582d9b4dd55cf0b3d08aa8ef9f01cd2c2cc814 161528125 wine-gecko2.34_2.34.orig.tar.bz2
+ 873878c19235e0ad4da62d804ae15bf3bc3919ec1fbbaad7ef5c80197117037f 57851909 wine-gecko2.34_2.34-0ubuntu1~ppa1.debian.tar.gz
+ 4c5bf4c9f1502235998176e5f0a7d5a9993f9e62a6a2a337e7f0a8f6a7042682 1172 wine-gecko2.34_2.34-0ubuntu1~ppa1.dsc
+Homepage: http://www.winehq.org/
+Package-List: wine-gecko2.34 deb otherosfs optional
+
+Package: wine-mono0.0.8
+Binary: wine-mono0.0.8
+Version: 0.0.8-0ubuntu1~ppa2
+Section: otherosfs
+Maintainer: Scott Ritchie <scottritchie@ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/universe/w/wine-mono0.0.8
+Files:
+ 5300eafb47b9258643581bcdf675f61f 69361074 wine-mono0.0.8_0.0.8.orig.tar.gz
+ 88a862e69c0c4d09278132c2f9ad7eb5 46572206 wine-mono0.0.8_0.0.8-0ubuntu1~ppa2.debian.tar.gz
+ ef2bfe3c32e84eef3b4e4ff357911498 1183 wine-mono0.0.8_0.0.8-0ubuntu1~ppa2.dsc
+Checksums-Sha1:
+ 4b97ddc0c19e4ad5aa2eb16a596b1cb660ba69fb 69361074 wine-mono0.0.8_0.0.8.orig.tar.gz
+ 00863d834693e2a68aba808c51f0003f5170fde1 46572206 wine-mono0.0.8_0.0.8-0ubuntu1~ppa2.debian.tar.gz
+ 1aa09a75377f0f17aa0db5af9fb0ff1adf8dcff6 1183 wine-mono0.0.8_0.0.8-0ubuntu1~ppa2.dsc
+Checksums-Sha256:
+ bbd0427b105873a944e2be58721b99751ce3019402de1e2b3660a2b9d113e789 69361074 wine-mono0.0.8_0.0.8.orig.tar.gz
+ 0a8681c79aef6246096a14f8bca1a7221fc7db0f1d11c78e8eee562802e2a621 46572206 wine-mono0.0.8_0.0.8-0ubuntu1~ppa2.debian.tar.gz
+ 0fadcf19ae7bfd2b4f6d25b6498cdf75ee6818266de09f061d4816bc65af8c72 1183 wine-mono0.0.8_0.0.8-0ubuntu1~ppa2.dsc
+Homepage: http://www.winehq.org/
+Package-List: wine-mono0.0.8 deb otherosfs optional
+
+Package: wine-mono4.5.0
+Binary: wine-mono4.5.0
+Version: 4.5.0-0ubuntu1~ppa1
+Section: otherosfs
+Maintainer: Scott Ritchie <scottritchie@ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/universe/w/wine-mono4.5.0
+Files:
+ 50752e7b8abf033208af28b4c741e1fe 113080537 wine-mono4.5.0_4.5.0.orig.tar.gz
+ a5df0fc89c2f5e96a06e525054c04faf 52052400 wine-mono4.5.0_4.5.0-0ubuntu1~ppa1.debian.tar.gz
+ e1e15796b72e424eafbd7ebf97e16780 1186 wine-mono4.5.0_4.5.0-0ubuntu1~ppa1.dsc
+Checksums-Sha1:
+ 2f67d5cf056b62c8167d9b18f5535e49f6568fe8 113080537 wine-mono4.5.0_4.5.0.orig.tar.gz
+ 1968e4bd681d2900abbb9b2d716ae10da7ad4b07 52052400 wine-mono4.5.0_4.5.0-0ubuntu1~ppa1.debian.tar.gz
+ 9819bc867dff183a59a6b5057d6d3025414953b7 1186 wine-mono4.5.0_4.5.0-0ubuntu1~ppa1.dsc
+Checksums-Sha256:
+ 569383ff2f938007cc5c9c6801721cfa487c3c90e64dd3f4613bf6234646691d 113080537 wine-mono4.5.0_4.5.0.orig.tar.gz
+ 70067a32ebd8e1b02aa52e8d0721b7f1eff6646c0f4c429bf57feac8efe145c8 52052400 wine-mono4.5.0_4.5.0-0ubuntu1~ppa1.debian.tar.gz
+ bb76295b97a0ec355012845876d001409bd8fda91692d2a8330d8c8637c35a57 1186 wine-mono4.5.0_4.5.0-0ubuntu1~ppa1.dsc
+Homepage: http://www.winehq.org/
+Package-List: wine-mono4.5.0 deb otherosfs optional
+
+Package: wine-mono4.5.2
+Binary: wine-mono4.5.2
+Version: 4.5.2-0ubuntu1~ppa1
+Section: otherosfs
+Maintainer: Scott Ritchie <scottritchie@ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/universe/w/wine-mono4.5.2
+Files:
+ 10a69a641881490bdfee48b2e4fdf63d 113079862 wine-mono4.5.2_4.5.2.orig.tar.gz
+ 6aef6ce7d6e6edbd173c5b4d2df92ddf 52052403 wine-mono4.5.2_4.5.2-0ubuntu1~ppa1.debian.tar.gz
+ 89dedd22af0b2dae87c8621cde11c6b1 1186 wine-mono4.5.2_4.5.2-0ubuntu1~ppa1.dsc
+Checksums-Sha1:
+ 36d25bac650f2c3172adc74f41bcf5a30b0fd4f9 113079862 wine-mono4.5.2_4.5.2.orig.tar.gz
+ 064390a4f8cbb18eb495b16112fbc2a4b61cede2 52052403 wine-mono4.5.2_4.5.2-0ubuntu1~ppa1.debian.tar.gz
+ f986f664b67fed6f00307ed169fee24bea966f69 1186 wine-mono4.5.2_4.5.2-0ubuntu1~ppa1.dsc
+Checksums-Sha256:
+ 3ec4ac90ad9677b0c4faa51e216ea07eec9ad17b19f981782c31ad5b5707a1b1 113079862 wine-mono4.5.2_4.5.2.orig.tar.gz
+ 0f0f9da7571a648808be759451ad65dbf9f49d71bdd87142b4d99c247618bdd6 52052403 wine-mono4.5.2_4.5.2-0ubuntu1~ppa1.debian.tar.gz
+ 1b5ee1d77c2a21a3f9756fa6f13d12f3733fe4bda79da90cf6fa5f2516c925b3 1186 wine-mono4.5.2_4.5.2-0ubuntu1~ppa1.dsc
+Homepage: http://www.winehq.org/
+Package-List: wine-mono4.5.2 deb otherosfs optional
+
+Package: wine-mono4.5.4
+Binary: wine-mono4.5.4
+Version: 4.5.4-0ubuntu1~ppa1
+Section: otherosfs
+Maintainer: Scott Ritchie <scottritchie@ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/w/wine-mono4.5.4
+Files:
+ 66941777fe98c6e72351a081ab4d2c09 111840221 wine-mono4.5.4_4.5.4.orig.tar.gz
+ fee7d43f22e27afbef6f3bfd8a1cdc0f 53281555 wine-mono4.5.4_4.5.4-0ubuntu1~ppa1.debian.tar.gz
+ 41d040b53887e8c7dceaee3b8bdc7da4 1180 wine-mono4.5.4_4.5.4-0ubuntu1~ppa1.dsc
+Checksums-Sha1:
+ 42ee77f997c2275d6259f4c7de5afdcbe1fbf397 111840221 wine-mono4.5.4_4.5.4.orig.tar.gz
+ 7ac8e2c25a5972500df1c4ac4d2ece8e58ba18b7 53281555 wine-mono4.5.4_4.5.4-0ubuntu1~ppa1.debian.tar.gz
+ 44fac64953b001d953a090bf483c7c551bc91e8a 1180 wine-mono4.5.4_4.5.4-0ubuntu1~ppa1.dsc
+Checksums-Sha256:
+ 9aa7f75392ac8a0ba53d5bdbac564d1ff5442a131f15d35b1d6f1a78fca21fcc 111840221 wine-mono4.5.4_4.5.4.orig.tar.gz
+ 339e32072e9b8aa79c2f7686453df3698f9de37e81a8dee57b8a1d113f723bc5 53281555 wine-mono4.5.4_4.5.4-0ubuntu1~ppa1.debian.tar.gz
+ 1a1341d54e3079755a124274bdaa63d9d556a1f76c41c0117b7976aa9db1a5f2 1180 wine-mono4.5.4_4.5.4-0ubuntu1~ppa1.dsc
+Homepage: http://www.winehq.org/
+Package-List: wine-mono4.5.4 deb multiverse/otherosfs optional
+
+Package: wine1.7
+Binary: wine1.7-i386, wine1.7-amd64, wine1.7, wine1.7-dev, wine1.7-dbg, wine
+Version: 1:1.7.34-0ubuntu1~ppa1
+Section: otherosfs
+Maintainer: Scott Ritchie <scottritchie@ubuntu.com>
+Build-Depends: autotools-dev, bison, debhelper (>= 9), desktop-file-utils, docbook-to-man, docbook-utils, docbook-xsl, flex, fontforge, gettext, libasound2-dev, libcapi20-dev, libcups2-dev, libdbus-1-dev, libfontconfig1-dev | libfontconfig-dev, libfreetype6-dev, libgif-dev, libgl1-mesa-dev | libgl-dev, libglu1-mesa-dev | libglu-dev, libgnutls-dev, libgphoto2-dev | libgphoto2-6-dev | libgphoto2-2-dev, libgsm1-dev, libgstreamer-plugins-base0.10-dev, libgstreamer0.10-dev, libjpeg-dev, liblcms2-dev, libldap2-dev, libmpg123-dev, libncurses5-dev | libncurses-dev, libopenal-dev, libosmesa6-dev, libpcap0.8-dev, libpng12-dev, libpulse-dev, libsane-dev, libtiff5-dev | libtiff4-dev | libtiff-dev, libv4l-dev, libx11-dev, libxcomposite-dev, libxcursor-dev, libxext-dev, libxi-dev, libxinerama-dev, libxml2-dev, libxrandr-dev, libxrender-dev, libxslt1-dev, libxt-dev, libxxf86vm-dev, linux-kernel-headers, ocl-icd-opencl-dev, oss4-dev, prelink, valgrind, unixodbc-dev, x11proto-xinerama-dev
+Architecture: i386 amd64
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/universe/w/wine1.7
+Files:
+ f74f89b7d96074f0ebffae8e8fc4460d 21956792 wine1.7_1.7.34.orig.tar.bz2
+ 270411689d6badf51d35a0cd5ab8472a 195123 wine1.7_1.7.34-0ubuntu1~ppa1.debian.tar.gz
+ 4e827a3dff99b005371e7ec992b39ef7 2938 wine1.7_1.7.34-0ubuntu1~ppa1.dsc
+Checksums-Sha1:
+ 1c8981df189421a26c447ef6a2da4f8f0a874653 21956792 wine1.7_1.7.34.orig.tar.bz2
+ e187c2db87f3c181286c6fe6ff23c1b1ed6cf9bb 195123 wine1.7_1.7.34-0ubuntu1~ppa1.debian.tar.gz
+ 41e75d9faba71a6ef8b2e46dc9ccec5aee292b72 2938 wine1.7_1.7.34-0ubuntu1~ppa1.dsc
+Checksums-Sha256:
+ 4d5a3b25450fb232aa9d0d0dd859b7d50b8ffb6180f24aefb6eb4e400d32330b 21956792 wine1.7_1.7.34.orig.tar.bz2
+ b081621e0d9f033a0887281c58ddc881bf76ad64ad74f5b97fb71b797f0d2c31 195123 wine1.7_1.7.34-0ubuntu1~ppa1.debian.tar.gz
+ fd4cebfff53e0f44ba507164dcf2724c698bcdbbab1020beaca667fddc6a6944 2938 wine1.7_1.7.34-0ubuntu1~ppa1.dsc
+Homepage: http://www.winehq.org/
+Package-List: wine deb metapackages extra
+ wine1.7 deb otherosfs optional
+ wine1.7-amd64 deb otherosfs optional
+ wine1.7-dbg deb debug extra
+ wine1.7-dev deb libdevel optional
+ wine1.7-i386 deb otherosfs optional
+
+Package: winetricks
+Binary: winetricks
+Version: 0.0+20130707~precise1~ppa1
+Section: otherosfs
+Maintainer: Scott Ritchie <scottritchie@ubuntu.com>
+Build-Depends: debhelper (>= 7.0.50~)
+Architecture: i386 amd64
+Standards-Version: 3.9.2
+Format: 3.0 (native)
+Directory: pool/universe/w/winetricks
+Files:
+ f3ad0727eb2dd44eb0fe36f9610455a3 151359 winetricks_0.0+20130707~precise1~ppa1.tar.gz
+ eb59e9e5e10555723f317caac51ae9e5 873 winetricks_0.0+20130707~precise1~ppa1.dsc
+Checksums-Sha1:
+ 38aa523e5f0eed79572f3088624d13ee75e7b7f7 151359 winetricks_0.0+20130707~precise1~ppa1.tar.gz
+ f512fda0bb51a6387ffd3ed47c34cd0ca644ed7e 873 winetricks_0.0+20130707~precise1~ppa1.dsc
+Checksums-Sha256:
+ 3ed0f6bdc9faf106dd8fedecd95e53aa156c6774a10bb8c7c5d673c77c3892c7 151359 winetricks_0.0+20130707~precise1~ppa1.tar.gz
+ 5525cd061940676838a33a53fcd027d026e473e666041bc58f7ef4ddcf821344 873 winetricks_0.0+20130707~precise1~ppa1.dsc
+Package-List: winetricks deb otherosfs optional
+
+Package: wiznote
+Binary: wiznote
+Version: 2.1.15.1
+Section: graphics
+Maintainer: lxn <lxn@wiz.cn>
+Build-Depends: debhelper (>= 9), cmake (>= 2.8), libqt4-dev (>= 4.8), libqtwebkit-dev, zlib1g-dev
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (native)
+Directory: pool/universe/w/wiznote
+Files:
+ 144dca316d681bcf2fe42931856faf91 9797451 wiznote_2.1.15.1.tar.gz
+ ac53b081e31e86e61cde4b9a9b3c6319 1123 wiznote_2.1.15.1.dsc
+Checksums-Sha1:
+ ba236df7e441fd8f8a3d34a5d36ccfbfa7002836 9797451 wiznote_2.1.15.1.tar.gz
+ 8a434cf2a5b8b551618a41927ad8ccf9e71d2e35 1123 wiznote_2.1.15.1.dsc
+Checksums-Sha256:
+ 5ccf0680ce537763cc50aaa352c93f41adacda4455b8e4cbf3beddad5dece284 9797451 wiznote_2.1.15.1.tar.gz
+ cba21ab133e8e4e86fae4d86d59a476e0c16bf5d4db4d5f16ac3b5df5068c4d8 1123 wiznote_2.1.15.1.dsc
+Homepage: http://www.wiznote.com
+Package-List: wiznote deb graphics standard
+

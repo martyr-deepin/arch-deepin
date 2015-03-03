@@ -1,0 +1,2472 @@
+Package: accounts-qml-module
+Format: 1.0
+Binary: qtdeclarative5-accounts-plugin, accounts-qml-module-doc
+Architecture: any all
+Version: 0.4+14.04.20140801-deepin1
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Homepage: https://launchpad.net/accounts-qml-module
+Standards-Version: 3.9.3
+Vcs-Bzr: https://code.launchpad.net/~online-accounts/accounts-qml-module/trunk
+Build-Depends: dbus-test-runner, debhelper (>= 9), libaccounts-qt5-dev (>= 1.10), libsignon-qt5-dev (>= 8.50), pkg-config, qtdeclarative5-dev, qtdeclarative5-dev-tools, qml-module-qtquick2, qtchooser, qt5-qmake, xvfb
+Package-List:
+ accounts-qml-module-doc deb doc optional
+ qtdeclarative5-accounts-plugin deb libs optional
+Priority: optional
+Section: libs
+Directory: pool/main/a/accounts-qml-module
+Files: 
+ 7407600bc8c72d399f8065d3777fe24b 1595 accounts-qml-module_0.4+14.04.20140801-deepin1.dsc
+ 330ca7b09dc41f8dbfd399c7990036b5 54897 accounts-qml-module_0.4+14.04.20140801-deepin1.tar.gz
+Checksums-Sha1: 
+ b4a8cc905e25dbef940aeea8cb796a15ec95e134 1595 accounts-qml-module_0.4+14.04.20140801-deepin1.dsc
+ 9c110c83b360077c75b1a9d1f76fd6b2b8bb7a91 54897 accounts-qml-module_0.4+14.04.20140801-deepin1.tar.gz
+Checksums-Sha256: 
+ c9d41b28c5831b1621935d7dcbcb6595211c0e2682716b81325c9afc80d647e2 1595 accounts-qml-module_0.4+14.04.20140801-deepin1.dsc
+ b38cb5deff76ce8efaf9f3db69663cb16cb343a6ca83aa8a442ef23459cf0bc0 54897 accounts-qml-module_0.4+14.04.20140801-deepin1.tar.gz
+
+Package: acpid
+Format: 1.0
+Binary: acpid, kacpimon
+Architecture: linux-any
+Version: 1:2.0.21-3
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Uploaders: Michael Meskes <meskes@debian.org>, Loic Minier <lool@dooz.org>
+Homepage: http://www.tedfelix.com/linux/acpid-netlink.html
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-acpi/acpid.git
+Vcs-Git: git://anonscm.debian.org/pkg-acpi/acpid.git
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.15.7)
+Package-List:
+ acpid deb admin optional
+ kacpimon deb utils extra
+Priority: optional
+Section: admin
+Directory: pool/main/a/acpid
+Files: 
+ 5b11fd01183e283e73a3bface68a451c 1693 acpid_2.0.21-3.dsc
+ 01bdfaf10c347725fb5650f178c3157d 206817 acpid_2.0.21.orig.tar.gz
+ ae589b3c960596da61946cd38cae379d 22845 acpid_2.0.21-3.diff.gz
+Checksums-Sha1: 
+ 6d4ad555f5597db4e801a226d782ee8a155f2988 1693 acpid_2.0.21-3.dsc
+ baa6a440419e0659a04f2e91f6e84827e07d78fb 206817 acpid_2.0.21.orig.tar.gz
+ 71c372bbbc82bd022761ec731141065f289b5836 22845 acpid_2.0.21-3.diff.gz
+Checksums-Sha256: 
+ 55653f06d81050ecac054783f6200b1b869ec1942676294f952866da975bb924 1693 acpid_2.0.21-3.dsc
+ cd5aaba12b2b8ca0bbb36c5334fce346c28e8b49592f39b15784be06423491be 206817 acpid_2.0.21.orig.tar.gz
+ d4bc34e1d18f85b18a32965bfe6231c54724913267e12d9820f1ebabc51ca1cd 22845 acpid_2.0.21-3.diff.gz
+Original-Maintainer: Debian Acpi Team <pkg-acpi-devel@lists.alioth.debian.org>
+
+Package: android-sdk-2.3
+Format: 3.0 (quilt)
+Binary: android-sdk-2.3
+Architecture: all
+Version: 0.1-1
+Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ android-sdk-2.3 deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/a/android-sdk-2.3
+Files: 
+ 6a26bf85427761371ab1b3f9d53b935d 1419 android-sdk-2.3_0.1-1.dsc
+ 2a3b1221f71fd347a6ab8871da2666b4 212431973 android-sdk-2.3_0.1.orig.tar.gz
+ ff094daf505947a8a8bdd096da8c93c5 2004 android-sdk-2.3_0.1-1.debian.tar.gz
+Checksums-Sha1: 
+ a31c251d54286bc4c71f691f41480d2e334a5a5f 1419 android-sdk-2.3_0.1-1.dsc
+ 9d9aa7ed51f4b806175d184f384f21c269dfca93 212431973 android-sdk-2.3_0.1.orig.tar.gz
+ 0686dc53fddd47407061463270bf06edf1356ea2 2004 android-sdk-2.3_0.1-1.debian.tar.gz
+Checksums-Sha256: 
+ ffb184f955915b2843021af8bf99840e1d4fd7b72897d02c03dd9bf71bfa02a4 1419 android-sdk-2.3_0.1-1.dsc
+ 3269019c3dca9cb0b13f0da266718a52c143d7d4ca543613fd4ee7e01f212427 212431973 android-sdk-2.3_0.1.orig.tar.gz
+ 6ae96134614e2caf8d0f1c18bf95a8d944519f934e85b95bcf53cf25737af820 2004 android-sdk-2.3_0.1-1.debian.tar.gz
+
+Package: android-sdk-4.0
+Format: 3.0 (quilt)
+Binary: android-sdk-4.0
+Architecture: all
+Version: 0.1-1
+Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ android-sdk-4.0 deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/a/android-sdk-4.0
+Files: 
+ 4fb33aac53c9105ccfbf55f7f2964273 1419 android-sdk-4.0_0.1-1.dsc
+ 21762ab543088576f895fca71e82f1c8 275862399 android-sdk-4.0_0.1.orig.tar.gz
+ 75cb05b4d5673ac8fa4a6734eba3a16c 2024 android-sdk-4.0_0.1-1.debian.tar.gz
+Checksums-Sha1: 
+ 2e2498fae5af4215c4dc33462ea7af3da35267cb 1419 android-sdk-4.0_0.1-1.dsc
+ 2f154d26e52524ccf996b30becf6bbbfdf3f4712 275862399 android-sdk-4.0_0.1.orig.tar.gz
+ b947ba84113b938048be0aa0d4438d34ad5def68 2024 android-sdk-4.0_0.1-1.debian.tar.gz
+Checksums-Sha256: 
+ b4a7b540d77e7a24c300526a78614bd5cb03221b4037c2379ea0e0c445ed25ff 1419 android-sdk-4.0_0.1-1.dsc
+ 9ab8ef7e4a84f17d65e63d7f2bfa334bb127cd117cfad22a63c861ccbdb74a51 275862399 android-sdk-4.0_0.1.orig.tar.gz
+ 3d7039f1724d39f7b316508266086064f0fd85f89aab6663c006189197cbf77a 2024 android-sdk-4.0_0.1-1.debian.tar.gz
+
+Package: android-sdk-common
+Format: 3.0 (quilt)
+Binary: android-sdk-common-bin, android-sdk-common
+Architecture: i386 amd64
+Version: 0.2-3
+Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ android-sdk-common deb devel extra
+ android-sdk-common-bin deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/a/android-sdk-common
+Files: 
+ e71bfdea370f02ac44c1a963dbe1f7b4 1500 android-sdk-common_0.2-3.dsc
+ f61a0b737cd0d52999fd34d55caa01d5 127310242 android-sdk-common_0.2.orig.tar.gz
+ cc28fb5cedc82a1cb704d0bd1adc7a91 2427 android-sdk-common_0.2-3.debian.tar.gz
+Checksums-Sha1: 
+ aa0f4d81b83045d244c0f279a78aac7067cf21fd 1500 android-sdk-common_0.2-3.dsc
+ 531cadbea95a458482b740ff6d3d9a2d8bfdca27 127310242 android-sdk-common_0.2.orig.tar.gz
+ 9ce2d49d704104a1e2f667eeb209bc0c02d62dd8 2427 android-sdk-common_0.2-3.debian.tar.gz
+Checksums-Sha256: 
+ e3ae008fff444fe584c89b853ed62d71e69aa8f2c7da4a246c1c3c875d070631 1500 android-sdk-common_0.2-3.dsc
+ b57294575bade90da13ebbacd3630bd704bf758c9f926a7f7a212e4d4a097c27 127310242 android-sdk-common_0.2.orig.tar.gz
+ 1bb0e0ae615c4567b137da33bdb153f4d359306665318a3a2dde681f80940066 2427 android-sdk-common_0.2-3.debian.tar.gz
+
+Package: aptdaemon
+Format: 3.0 (quilt)
+Binary: aptdaemon, python3-aptdaemon, python-aptdaemon, python3-aptdaemon.test, aptdaemon-data, python3-aptdaemon.pkcompat, python3-aptdaemon.gtk3widgets, python-aptdaemon.gtk3widgets
+Architecture: all
+Version: 1.1.1+bzr980-1
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Homepage: https://launchpad.net/aptdaemon
+Standards-Version: 3.9.4
+Vcs-Browser: https://code.launchpad.net/~aptdaemon-developers/aptdaemon/ubuntu-utopic
+Vcs-Bzr: lp:~aptdaemon-developers/aptdaemon/ubuntu-utopic
+Build-Depends: debhelper (>= 7.3), debconf-i18n, dbus, lintian, dh-translations, python-all, python-setuptools, python-distutils-extra, python-nose, python3-all, python3-setuptools, python3-distutils-extra, python3-nose, gir1.2-glib-2.0, gir1.2-gtk-3.0, gir1.2-packagekitglib-1.0 (>= 0.8.9), gir1.2-vte-2.90, python3-apt (>= 0.8.5~ubuntu1), python3-defer (>= 1.0.6), python3-dbus, python3-gi, python3-mock, python3-pkg-resources, python-apt (>= 0.8.5~ubuntu1), python-defer (>= 1.0.6), python-dbus, python-gi, python-mock, python-pkg-resources, iso-codes, pep8, xauth, xvfb
+Package-List:
+ aptdaemon deb admin extra
+ aptdaemon-data deb admin extra
+ python-aptdaemon deb python extra
+ python-aptdaemon.gtk3widgets deb python extra
+ python3-aptdaemon deb python extra
+ python3-aptdaemon.gtk3widgets deb python extra
+ python3-aptdaemon.pkcompat deb python extra
+ python3-aptdaemon.test deb python extra
+Priority: extra
+Section: admin
+Directory: pool/main/a/aptdaemon
+Files: 
+ 955966dbb82dd423d8f2e0717db2c7ef 2813 aptdaemon_1.1.1+bzr980-1.dsc
+ cdba131757f3c6a23fd3a6ebb2afc6b4 1278592 aptdaemon_1.1.1+bzr980.orig.tar.gz
+ a48c4e95df65e9bafb4b411bb3a4124f 24934 aptdaemon_1.1.1+bzr980-1.debian.tar.gz
+Checksums-Sha1: 
+ 476d5ad08643e52f958887ec71e0a00abdcaa281 2813 aptdaemon_1.1.1+bzr980-1.dsc
+ 118539d86e6ba292f99ee104df750ac3a6e25dfa 1278592 aptdaemon_1.1.1+bzr980.orig.tar.gz
+ 80e3722a1dd4021fcd88d21adc6e09dfe285449f 24934 aptdaemon_1.1.1+bzr980-1.debian.tar.gz
+Checksums-Sha256: 
+ 16cd59255e4352c7f794a1408b6d3761bf8bc117ac6589a681c9d464126a61b8 2813 aptdaemon_1.1.1+bzr980-1.dsc
+ 905a97ece492c3a6ab5caae26a6304ef91f4db8a1e2529b7ac37e8d514d4b365 1278592 aptdaemon_1.1.1+bzr980.orig.tar.gz
+ 5273c761b9fbf54945cd1528dde1c13818443b756526184d31733ad2033d4590 24934 aptdaemon_1.1.1+bzr980-1.debian.tar.gz
+Original-Maintainer: Julian Andres Klode <jak@debian.org>
+Original-Vcs-Browser: http://bzr.debian.org/loggerhead/apt/aptdaemon/debian-sid
+Original-Vcs-Bzr: nosmart+http://bzr.debian.org/bzr/apt/aptdaemon/debian-sid
+Testsuite: autopkgtest
+
+Package: dbus-factory
+Format: 3.0 (native)
+Binary: dde-go-dbus-factory, dde-qml-dbus-factory
+Architecture: any
+Version: 0.0.2+20141226160557~7e89f03592
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), golang-go, golang-dlib-dev, dbus-generator, qt5-qmake, qt5-default, qtdeclarative5-dev, libqt5webkit5-dev, python
+Package-List:
+ dde-go-dbus-factory deb devel extra
+ dde-qml-dbus-factory deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/d/dbus-factory
+Files: 
+ 10754c7c55071c91a382b1ea7951fe23 1414 dbus-factory_0.0.2+20141226160557~7e89f03592.dsc
+ 43cc38c47333f0372f49854441edd2fd 108430 dbus-factory_0.0.2+20141226160557~7e89f03592.tar.gz
+Checksums-Sha1: 
+ db0202ea0d1c5ddebd835fe846027e97b0f07002 1414 dbus-factory_0.0.2+20141226160557~7e89f03592.dsc
+ 739949efb7a0e78a3a6e0f84251bc1a2a75c6499 108430 dbus-factory_0.0.2+20141226160557~7e89f03592.tar.gz
+Checksums-Sha256: 
+ 7632c5a874e6e3bb8aa6d3b750109f4ec04d62995f8584abf12863f81e16ca51 1414 dbus-factory_0.0.2+20141226160557~7e89f03592.dsc
+ cb8cb6aa76b94fc6a647d4361bf02793c05a217f87ad23b76e0e5f0211dfe01e 108430 dbus-factory_0.0.2+20141226160557~7e89f03592.tar.gz
+
+Package: dbus-generator
+Format: 3.0 (native)
+Binary: dbus-generator
+Architecture: any
+Version: 0.0.3+20141120163131~84ee26c38d
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), golang-go, dh-golang, golang-dlib-dev, golang-gocheck-dev, qt5-default, qt5-qmake, qtdeclarative5-dev
+Package-List:
+ dbus-generator deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/d/dbus-generator
+Files: 
+ b1034c18a77ab0d43aac01235d16ddb8 1337 dbus-generator_0.0.3+20141120163131~84ee26c38d.dsc
+ 44bc8765c1661f26976369da5091b4e5 32068 dbus-generator_0.0.3+20141120163131~84ee26c38d.tar.gz
+Checksums-Sha1: 
+ 95be5561ce73f3df02623a70f9c96f41bbc340c9 1337 dbus-generator_0.0.3+20141120163131~84ee26c38d.dsc
+ 5c35e3d3cea3674ae7ce5dcd6900e2a391b134fd 32068 dbus-generator_0.0.3+20141120163131~84ee26c38d.tar.gz
+Checksums-Sha256: 
+ f3b4c71b26da10fb6b0ec4a4643fee01c549594536df77c15fde84796182c383 1337 dbus-generator_0.0.3+20141120163131~84ee26c38d.dsc
+ 01784933c01b87f1e1ce26b2299eac6b2023abd4832e032684b07166998b4954 32068 dbus-generator_0.0.3+20141120163131~84ee26c38d.tar.gz
+
+Package: dde-account-faces
+Format: 1.0
+Binary: dde-account-faces
+Architecture: all
+Version: 1.0.7-1~trusty
+Maintainer: lilongyu <leaeasy@gmail.com>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8)
+Package-List:
+ dde-account-faces deb deepin optional
+Priority: optional
+Section: deepin
+Directory: pool/main/d/dde-account-faces
+Files: 
+ 92c16cb0504e7d30873d411aeeff1371 1126 dde-account-faces_1.0.7-1~trusty.dsc
+ a5059f284df22b23f7799fd4a7f94bae 1166723 dde-account-faces_1.0.7-1~trusty.tar.gz
+Checksums-Sha1: 
+ ebe20bfd1b5138fe5774ad157a05bd7cdec0f5ef 1126 dde-account-faces_1.0.7-1~trusty.dsc
+ 5f77ab4bf68a4de1547eedd6471680fd3f58d9c1 1166723 dde-account-faces_1.0.7-1~trusty.tar.gz
+Checksums-Sha256: 
+ daabe691541f73bda046e94db1257f877f212c40ae7fa7ce9f2f2ef783240acd 1126 dde-account-faces_1.0.7-1~trusty.dsc
+ 4dad343c3573ee7bdbfdf3c42371c530b53ec1b02f7642936844428690018066 1166723 dde-account-faces_1.0.7-1~trusty.tar.gz
+
+Package: dde-api
+Format: 3.0 (native)
+Binary: dde-api
+Architecture: any
+Version: 0.0.2+20150107093816~d93500c16a
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), golang-go, golang-dlib-dev, golang-xgb-dev, golang-xgbutil-dev, libxi-dev, libcanberra-dev
+Package-List:
+ dde-api deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/d/dde-api
+Files: 
+ 1b11b0d1d88f49fe4315becd3a71053c 1287 dde-api_0.0.2+20150107093816~d93500c16a.dsc
+ f134ca98b188ac2a56ba8eb88d4ff305 774245 dde-api_0.0.2+20150107093816~d93500c16a.tar.gz
+Checksums-Sha1: 
+ fd86c6d59f3ee7413476473e1f5f1e03b38a6218 1287 dde-api_0.0.2+20150107093816~d93500c16a.dsc
+ 3a07ac6e44ca94e335b6d22b9d9bc2ec8698aaef 774245 dde-api_0.0.2+20150107093816~d93500c16a.tar.gz
+Checksums-Sha256: 
+ e1753fc212d40e6ed76c0d8b3b6c04c6b20edd9b420826471dcad05705d8c766 1287 dde-api_0.0.2+20150107093816~d93500c16a.dsc
+ 7a45f0c64513c9be7e7795fcb58c1c3eb694e6a1a6a36fb6037281e1dc72e813 774245 dde-api_0.0.2+20150107093816~d93500c16a.tar.gz
+
+Package: dde-control-center
+Format: 3.0 (native)
+Binary: dde-control-center
+Architecture: any
+Version: 0.1+20150211150410~6b5195ef53
+Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
+Homepage: http://gitcafe.com/Deepin/dde-control-center.git
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), pkg-config, libx11-dev, libxtst-dev, qt5-qmake, qt5-default, qtdeclarative5-dev, libqt5webkit5-dev, libgtk2.0-dev, deepin-gettext-tools
+Package-List:
+ dde-control-center deb admin optional
+Priority: optional
+Section: admin
+Directory: pool/main/d/dde-control-center
+Files: 
+ b1ea7560486f8494cd7ad540d1d58f3d 1409 dde-control-center_0.1+20150211150410~6b5195ef53.dsc
+ 2d159788ad9a9cbecf6b09b245aa8ae9 3511870 dde-control-center_0.1+20150211150410~6b5195ef53.tar.gz
+Checksums-Sha1: 
+ 2ccc8fdb04e71f12012b3dc06912b4313c60d238 1409 dde-control-center_0.1+20150211150410~6b5195ef53.dsc
+ 7c80d56ddc8d2220de398db27a9869260e437704 3511870 dde-control-center_0.1+20150211150410~6b5195ef53.tar.gz
+Checksums-Sha256: 
+ fa3227c391bb7ff3d24b8f24f2bff20ef1f14158becd2c0244f5cc9ae19662c2 1409 dde-control-center_0.1+20150211150410~6b5195ef53.dsc
+ 89ce5952e15f2cebf5f8465ff26e7df788c025e62e4eb29f15d4d08f6e772207 3511870 dde-control-center_0.1+20150211150410~6b5195ef53.tar.gz
+
+Package: dde-daemon
+Format: 3.0 (native)
+Binary: dde-daemon
+Architecture: any
+Version: 0.0.1+20150209101554~660a820a61
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), dde-go-dbus-factory, golang-dlib-dev, golang-xgb-dev, golang-xgbutil-dev, golang-go, golang-fsnotify-dev, golang-go-sqlite3-dev, golang-gocheck-dev, libmetacity-dev, libudev-dev, libglib2.0-dev, libgtk-3-dev, libgtk2.0-dev, libxi-dev, libx11-dev, libxkbfile-dev, libxtst-dev, libxfixes-dev, libxcursor-dev, upower, libfontconfig1-dev
+Package-List:
+ dde-daemon deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/d/dde-daemon
+Files: 
+ 7dffd63c9b27eee37cce648aeba1bc80 1551 dde-daemon_0.0.1+20150209101554~660a820a61.dsc
+ 6eda4a3bc68e04781c0b751392ce4e26 7550540 dde-daemon_0.0.1+20150209101554~660a820a61.tar.gz
+Checksums-Sha1: 
+ d4067ae12ccbaca8ddbd15b9c9cb92f69c761a71 1551 dde-daemon_0.0.1+20150209101554~660a820a61.dsc
+ 56a94bda5552acda9ae35382a87db823176cb5fd 7550540 dde-daemon_0.0.1+20150209101554~660a820a61.tar.gz
+Checksums-Sha256: 
+ ff48dc0b2f78575c198c5991f15b59e11743eae8ae501112edb2a0ca55541e22 1551 dde-daemon_0.0.1+20150209101554~660a820a61.dsc
+ db271a63dc972c41a29bbbb6a30af897c4f7efe28e8ad3dbac37e061c508dd2c 7550540 dde-daemon_0.0.1+20150209101554~660a820a61.tar.gz
+
+Package: dde-daemon-gsd-input
+Format: 3.0 (native)
+Binary: dde-daemon-gsd-input
+Architecture: any
+Version: 0.0-1~git20140410
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.0.0), libx11-dev, libgtk-3-dev, libglib2.0-dev, libgnome-desktop-3-dev, libxi-dev, libxkbfile-dev
+Package-List:
+ dde-daemon-gsd-input deb libs extra
+Priority: extra
+Section: libs
+Directory: pool/main/d/dde-daemon-gsd-input
+Files: 
+ ca4681b0c649ec631153e8e924ae41db 1310 dde-daemon-gsd-input_0.0-1~git20140410.dsc
+ 89305c2f63dd033f7c835cdb08500703 44589 dde-daemon-gsd-input_0.0-1~git20140410.tar.gz
+Checksums-Sha1: 
+ 2723be810c81b909b37899eae2d31512b942c334 1310 dde-daemon-gsd-input_0.0-1~git20140410.dsc
+ 14d7b7880ccefcdf47569a2826e918bee60cf1dd 44589 dde-daemon-gsd-input_0.0-1~git20140410.tar.gz
+Checksums-Sha256: 
+ 7522d3e406c74c81dc5f45eefa58a36bf6197c455b8745f417ded990128fc16d 1310 dde-daemon-gsd-input_0.0-1~git20140410.dsc
+ 8a9eb2e03950393f5193c4b490d239b57906933917dbcaf075f329aa0a5347f2 44589 dde-daemon-gsd-input_0.0-1~git20140410.tar.gz
+
+Package: dde-dock-applets
+Format: 3.0 (native)
+Binary: dde-dock-applets
+Architecture: any
+Version: 0.0.4+20150212175159~4a7021531e
+Maintainer: Mellon Xie <xielingyun@linuxdeepin.com>
+Homepage: https://gitcafe.com/Deepin/dde-dock-applets
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9.0.0), pkg-config, libx11-dev, libxtst-dev, qt5-qmake, qt5-default, qtdeclarative5-dev, libqt5webkit5-dev, deepin-gettext-tools, libgtk2.0-dev
+Package-List:
+ dde-dock-applets deb admin optional
+Priority: optional
+Section: admin
+Directory: pool/main/d/dde-dock-applets
+Files: 
+ 5d412442e057fac44b2366ad37f702ac 1399 dde-dock-applets_0.0.4+20150212175159~4a7021531e.dsc
+ ac2c54328b9e941beca975210972bed9 105933 dde-dock-applets_0.0.4+20150212175159~4a7021531e.tar.gz
+Checksums-Sha1: 
+ 0e597a33cdfe48a7cb158ccc213362dc826d67d9 1399 dde-dock-applets_0.0.4+20150212175159~4a7021531e.dsc
+ 3e1b7f8dd0f4164f0a66a6b59b229b03280ff3e0 105933 dde-dock-applets_0.0.4+20150212175159~4a7021531e.tar.gz
+Checksums-Sha256: 
+ 1c9a42f6b79b4258163d9a2234150e3ca53eccfd9a20b35eaf562f8d9aa93818 1399 dde-dock-applets_0.0.4+20150212175159~4a7021531e.dsc
+ 36773a670e3c0b74aad437eef644ab10a1b908e32df65fb8f650395723c415b8 105933 dde-dock-applets_0.0.4+20150212175159~4a7021531e.tar.gz
+
+Package: dde-meta
+Format: 3.0 (native)
+Binary: dde-meta-base, dde-meta-core, dde-meta-utils, dde-meta-multimedia, dde-meta-artwork, dde-meta-graphics, dde-meta-network, dde-meta-misc, dde-meta-misc-hooks, dde-meta-zh-hans, dde-meta-zh-hant, dde-meta-en
+Architecture: all
+Version: 0.2.43~trusty
+Maintainer: LinuxDeepin Project <linuxdeepin@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ dde-meta-artwork deb metapackages extra
+ dde-meta-base deb metapackages extra
+ dde-meta-core deb metapackages extra
+ dde-meta-en deb metapackages extra
+ dde-meta-graphics deb metapackages extra
+ dde-meta-misc deb metapackages extra
+ dde-meta-misc-hooks deb metapackages extra
+ dde-meta-multimedia deb metapackages extra
+ dde-meta-network deb metapackages extra
+ dde-meta-utils deb metapackages extra
+ dde-meta-zh-hans deb metapackages extra
+ dde-meta-zh-hant deb metapackages extra
+Priority: extra
+Section: metapackages
+Directory: pool/main/d/dde-meta
+Files: 
+ 0e8ae826a6d4227745a10e1eb01bdeeb 1780 dde-meta_0.2.43~trusty.dsc
+ 447d7a0579581861fd3cc421b956eb7f 6589 dde-meta_0.2.43~trusty.tar.gz
+Checksums-Sha1: 
+ 6b168ec56ec0aac4d5a71ca1b2b1d25b5c620bd0 1780 dde-meta_0.2.43~trusty.dsc
+ ec2f41df7c5f206b851e11088469464e5214d70f 6589 dde-meta_0.2.43~trusty.tar.gz
+Checksums-Sha256: 
+ a502ba2afff51659609d0de4a85e094d6ac3887c670a0a64bc43394fd3cafc8a 1780 dde-meta_0.2.43~trusty.dsc
+ 18a74c01cd56d90cc29d3432110691396d7e1af0d115ba87b65181ce858b17a9 6589 dde-meta_0.2.43~trusty.tar.gz
+
+Package: deepin-artwork
+Format: 1.0
+Binary: deepin-artwork
+Architecture: all
+Version: 2014-4
+Maintainer: Zhang Cheng <zhangcheng@linuxdeepin.com>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8)
+Package-List:
+ deepin-artwork deb deepin optional
+Priority: optional
+Section: deepin
+Directory: pool/main/d/deepin-artwork
+Files: 
+ 10141c27359aca934bfee70fb6236ad9 1088 deepin-artwork_2014-4.dsc
+ 5fb45ca6c4dfdcfb9f2edfaf30395692 6883511 deepin-artwork_2014-4.tar.gz
+Checksums-Sha1: 
+ c7d2b1db7bfaf45e6a7990d7647c60b90fed138f 1088 deepin-artwork_2014-4.dsc
+ 1c02f97c2a600f1031ea62d1b4442638415e4d79 6883511 deepin-artwork_2014-4.tar.gz
+Checksums-Sha256: 
+ 00f5c537262402c6af59bd8522e502d6ee8d2baec2c74e4c7b8e4a6de1385d72 1088 deepin-artwork_2014-4.dsc
+ 2741f79faac75540277972bacd26f8d39211fd3862180508657965db195cb6ec 6883511 deepin-artwork_2014-4.tar.gz
+
+Package: deepin-artwork-icontheme-pack
+Format: 3.0 (native)
+Binary: flattr-icon-theme, deepin-artwork-icontheme-pack
+Architecture: all
+Version: 0.0+2014120406
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com/
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ deepin-artwork-icontheme-pack deb misc extra
+ flattr-icon-theme deb misc extra
+Priority: extra
+Section: misc
+Directory: pool/main/d/deepin-artwork-icontheme-pack
+Files: 
+ a048643329049ada5d0bcae3963272d2 1325 deepin-artwork-icontheme-pack_0.0+2014120406.dsc
+ 70156eaa9d44c75e1c48b9d5faf7d950 120911984 deepin-artwork-icontheme-pack_0.0+2014120406.tar.gz
+Checksums-Sha1: 
+ bc626c6412f03433cd34f33a500f4bd05f6ccc4b 1325 deepin-artwork-icontheme-pack_0.0+2014120406.dsc
+ a1e73ed2143c27b0693cd4c62971d80b46e3fd08 120911984 deepin-artwork-icontheme-pack_0.0+2014120406.tar.gz
+Checksums-Sha256: 
+ f8e55a2dd924774911ce7746d77efddad8ef341f03ccb2d39586d046000e18ec 1325 deepin-artwork-icontheme-pack_0.0+2014120406.dsc
+ 12a9887ed69a3a5ecc7f66eb76457019e0d36f6e0ee5906e646c147eb283073e 120911984 deepin-artwork-icontheme-pack_0.0+2014120406.tar.gz
+
+Package: deepin-artwork-themes
+Format: 1.0
+Binary: deepin-artwork-themes
+Architecture: all
+Version: 14.04.3+20141204110221~5bf78d7f42
+Maintainer: leaeasy <leaeasy@gmail.com>
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 8), python
+Package-List:
+ deepin-artwork-themes deb deepin optional
+Priority: optional
+Section: deepin
+Directory: pool/main/d/deepin-artwork-themes
+Files: 
+ 193dc11f7c75d6a2ff8bc261a081df84 1236 deepin-artwork-themes_14.04.3+20141204110221~5bf78d7f42.dsc
+ dc564e5af63f074485faa05ebb50665a 12081172 deepin-artwork-themes_14.04.3+20141204110221~5bf78d7f42.tar.gz
+Checksums-Sha1: 
+ ba1c607a31e394f613f8bf3b097692f196a59890 1236 deepin-artwork-themes_14.04.3+20141204110221~5bf78d7f42.dsc
+ 32670dafbbbb630d09fa7763a6d7c0eeb5f9fe7f 12081172 deepin-artwork-themes_14.04.3+20141204110221~5bf78d7f42.tar.gz
+Checksums-Sha256: 
+ 1a4454a86bea85e9884981ac2f931097063260948706cdd7e43d82666f3d4546 1236 deepin-artwork-themes_14.04.3+20141204110221~5bf78d7f42.dsc
+ ea51f533ff14552c06218b7e32637a908b1051106458f9e2a8f40449da764cb0 12081172 deepin-artwork-themes_14.04.3+20141204110221~5bf78d7f42.tar.gz
+
+Package: deepin-boot-maker
+Format: 3.0 (native)
+Binary: deepin-boot-maker
+Architecture: any
+Version: 1.0+20150108104023~2d0aedf1e0
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com/
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 9), qt5-default, qt5-qmake, qttools5-dev-tools
+Package-List:
+ deepin-boot-maker deb misc extra
+Priority: extra
+Section: misc
+Directory: pool/main/d/deepin-boot-maker
+Files: 
+ 3267cb67e468b462df17661a6a7e80f5 1294 deepin-boot-maker_1.0+20150108104023~2d0aedf1e0.dsc
+ 2ee2efcc5cbd7428546f723eed478ed6 3783255 deepin-boot-maker_1.0+20150108104023~2d0aedf1e0.tar.gz
+Checksums-Sha1: 
+ 16e7fd3c0d163365d88538ee50d9d90062bba680 1294 deepin-boot-maker_1.0+20150108104023~2d0aedf1e0.dsc
+ 83fc43d5a5fb10faf41bfed9677068e56b357338 3783255 deepin-boot-maker_1.0+20150108104023~2d0aedf1e0.tar.gz
+Checksums-Sha256: 
+ bc8441b824e3741b5b99d5657035ae344b07ed9625395f3b90fbdc7483a5806d 1294 deepin-boot-maker_1.0+20150108104023~2d0aedf1e0.dsc
+ 8ae0327b6f4678e449485e940c8cc960aa7dfc1be821fde55a4a6219f501fd46 3783255 deepin-boot-maker_1.0+20150108104023~2d0aedf1e0.tar.gz
+
+Package: deepin-bug-reporter
+Format: 3.0 (native)
+Binary: deepin-bug-reporter
+Architecture: all
+Version: 1+20141029130135~d2afb454d7
+Maintainer: 宋文武 <songwenwu@linuxdeepin.com>
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9)
+Package-List:
+ deepin-bug-reporter deb utils optional
+Priority: optional
+Section: utils
+Directory: pool/main/d/deepin-bug-reporter
+Files: 
+ 0abd73c641e6aa6895260f84a56a3e9d 1198 deepin-bug-reporter_1+20141029130135~d2afb454d7.dsc
+ 65c347f9f67d8da69c82910621f7bb7c 6407 deepin-bug-reporter_1+20141029130135~d2afb454d7.tar.gz
+Checksums-Sha1: 
+ dd0349a3b0b3e8c97f1a4ab20ef28f81d1fc5227 1198 deepin-bug-reporter_1+20141029130135~d2afb454d7.dsc
+ 08c966a80020af7154d4ee0ee3814c523783f09a 6407 deepin-bug-reporter_1+20141029130135~d2afb454d7.tar.gz
+Checksums-Sha256: 
+ cb781218737663c785accd126a6378f5c04e862893749205af246f78dad1e975 1198 deepin-bug-reporter_1+20141029130135~d2afb454d7.dsc
+ 86934cdca4978b64d93d489782eef11467feec69fbba949ef29dbfeb38d0f9f8 6407 deepin-bug-reporter_1+20141029130135~d2afb454d7.tar.gz
+
+Package: deepin-cursor-theme
+Format: 1.0
+Binary: deepin-cursor-theme
+Architecture: all
+Version: 2014~4-2
+Maintainer: leaeasy <leaeasy@gmail.com>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8)
+Package-List:
+ deepin-cursor-theme deb deepin optional
+Priority: optional
+Section: deepin
+Directory: pool/main/d/deepin-cursor-theme
+Files: 
+ 807a44f985f38c01a24097b1dc0015aa 1110 deepin-cursor-theme_2014~4-2.dsc
+ dd40eabcd98d529eef29fcaff2dd96c4 307086 deepin-cursor-theme_2014~4-2.tar.gz
+Checksums-Sha1: 
+ a792a300afcfb4dce812a4d2112f440f71ebc80c 1110 deepin-cursor-theme_2014~4-2.dsc
+ 80eee5f7ceed6abe770f20b201b6f87eb12fb901 307086 deepin-cursor-theme_2014~4-2.tar.gz
+Checksums-Sha256: 
+ db427428ed4cded8b8376abf87fcde2a4b73b74dfba1caae8670b2b971ae9507 1110 deepin-cursor-theme_2014~4-2.dsc
+ 8e1f395f784771d09858d016eb539e7027d1ccb5132841a7cd54f038943f67c0 307086 deepin-cursor-theme_2014~4-2.tar.gz
+
+Package: deepin-default-gsettings
+Format: 3.0 (native)
+Binary: deepin-default-gsettings
+Architecture: all
+Version: 0.2+20141216171821~2cf686e3fa
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: https://github.com/linuxdeepin/default-gsettings.git
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ deepin-default-gsettings deb admin optional
+Priority: optional
+Section: admin
+Directory: pool/main/d/deepin-default-gsettings
+Files: 
+ 0a1e67c754f3a4430fdadd18e17b6a5d 1316 deepin-default-gsettings_0.2+20141216171821~2cf686e3fa.dsc
+ 39e26ab732348550cc4d33e73b2de5c5 5116 deepin-default-gsettings_0.2+20141216171821~2cf686e3fa.tar.gz
+Checksums-Sha1: 
+ d614b22c0134e3d4a7acfa06470cdc987804c691 1316 deepin-default-gsettings_0.2+20141216171821~2cf686e3fa.dsc
+ 1608d1e08272334ad755107b099572a1d5e37c63 5116 deepin-default-gsettings_0.2+20141216171821~2cf686e3fa.tar.gz
+Checksums-Sha256: 
+ 50d9893e2cc76ea6f05099388db08a3d19bf76537f90cec6d2c465d60a5ba5e9 1316 deepin-default-gsettings_0.2+20141216171821~2cf686e3fa.dsc
+ 0cce133851f4b46512637f2528a57281b3e0d571cbf636b0f0fa117e58fc8d9c 5116 deepin-default-gsettings_0.2+20141216171821~2cf686e3fa.tar.gz
+
+Package: deepin-default-settings
+Format: 1.0
+Binary: deepin-default-settings, deepin-default-settings-tuning
+Architecture: all
+Version: 2014~12-35~trusty
+Maintainer: Zhang Cheng <zhangcheng@linuxdeepin.com>
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.1.3~), ubuntu-defaults-builder (>= 0.22~)
+Package-List: 
+ deepin-default-settings deb admin optional
+ deepin-default-settings-tuning deb admin optional
+Priority: optional
+Section: admin
+Directory: pool/main/d/deepin-default-settings
+Files: 
+ 783c0195678e5528b51dae21f99349e0 771 deepin-default-settings_2014~12-35~trusty.dsc
+ 1f55a955b36b659b289a302ab75b9768 2013588 deepin-default-settings_2014~12-35~trusty.tar.gz
+Checksums-Sha1: 
+ 1bab83dce767ef44185edb4c75ff46f9a43e3110 771 deepin-default-settings_2014~12-35~trusty.dsc
+ 371c7b71e2174da2558370c1b9e777b49479e880 2013588 deepin-default-settings_2014~12-35~trusty.tar.gz
+Checksums-Sha256: 
+ 7a61c69d96f2132b4ade4909c24a5a35a3016428c5ccf91266d6ee0155026b88 771 deepin-default-settings_2014~12-35~trusty.dsc
+ 3d4e470fa5e757ebd3ae1b1928b60a461e63d48c9e87396e5ea0abe33ca24b0c 2013588 deepin-default-settings_2014~12-35~trusty.tar.gz
+
+Package: deepin-desktop-environment
+Format: 3.0 (native)
+Binary: deepin-desktop-environment, dde-workspace
+Architecture: any
+Version: 2.1+20150202093855~5b89873137
+Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), cmake, coffeescript, golang-dlib-dev, golang-gettext-go-dev, golang-go, libdeepin-webkit-3.0-0, libgail-3-dev, libgstreamer-plugins-base0.10-dev, libgdk-pixbuf2.0-dev, libglib2.0-dev, libgtk-3-dev, liblightdm-gobject-1-dev | liblightdm-gobject-dev, libsqlite3-dev, libwebkitgtk-3.0-dev, libxtst-dev, pkg-config, python
+Package-List:
+ dde-workspace deb utils extra
+ deepin-desktop-environment deb utils extra
+Priority: extra
+Section: utils
+Directory: pool/main/d/deepin-desktop-environment
+Files: 
+ 65c51a26821e3be0c121070dbc7a99fc 1661 deepin-desktop-environment_2.1+20150202093855~5b89873137.dsc
+ 68ae109826891b4c2f6e7bb82a6daf5f 7654652 deepin-desktop-environment_2.1+20150202093855~5b89873137.tar.gz
+Checksums-Sha1: 
+ 98aef009b422836a1449004928789a27241de802 1661 deepin-desktop-environment_2.1+20150202093855~5b89873137.dsc
+ be13b885ea7c81bf2b68c43a3a0c46c11c62f66a 7654652 deepin-desktop-environment_2.1+20150202093855~5b89873137.tar.gz
+Checksums-Sha256: 
+ f947492c469d106a7b6dd4bb0b7c55da69cfaac1dbf8ede137518cb8eede0b32 1661 deepin-desktop-environment_2.1+20150202093855~5b89873137.dsc
+ 5dbb5972e4920e0ebbf5f7128846ef8f2bfac52fa53673c360b4c261bc081ec1 7654652 deepin-desktop-environment_2.1+20150202093855~5b89873137.tar.gz
+
+Package: deepin-download-service
+Format: 3.0 (native)
+Binary: deepin-download-service
+Architecture: any
+Version: 0.2+20141216200333~cf1c52338c
+Maintainer: 宋文武 <songwenwu@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), golang-go, golang-dlib-dev, dde-go-dbus-factory
+Package-List:
+ deepin-download-service deb devel optional
+Priority: optional
+Section: devel
+Directory: pool/main/d/deepin-download-service
+Files: 
+ da4c6e18a8dda868d08c4708d4bf9746 1319 deepin-download-service_0.2+20141216200333~cf1c52338c.dsc
+ ece6542a157db1f8b25a01b39f521a53 44705 deepin-download-service_0.2+20141216200333~cf1c52338c.tar.gz
+Checksums-Sha1: 
+ 232a2c7108a9a0f70a2872f82fc9427c2cf03c30 1319 deepin-download-service_0.2+20141216200333~cf1c52338c.dsc
+ 02dac0c94e1e2824d4d1feeeed428a5f760defce 44705 deepin-download-service_0.2+20141216200333~cf1c52338c.tar.gz
+Checksums-Sha256: 
+ 9e1cd8fe3657a1d9076f493fdee8d68321ca20f4db41ce3994eb55012d9a7e26 1319 deepin-download-service_0.2+20141216200333~cf1c52338c.dsc
+ 8327c908dd5d712e875342ebd7578a0c21ce925cc87d5bd64cb02a2152ec6e15 44705 deepin-download-service_0.2+20141216200333~cf1c52338c.tar.gz
+
+Package: deepin-emacs
+Format: 3.0 (native)
+Binary: deepin-emacs
+Architecture: any
+Version: 2.0.1+20150119154558~c59343b47a
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: https://github.com/linuxdeepin/deepin-emacs
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.0.0), autoconf, dh-autoreconf, texinfo, libxaw7-dev, libxpm-dev, libpng12-dev, libjpeg-dev, libtiff5-dev, libgif-dev, libgpm-dev, libasound2-dev, libncurses5-dev, libdbus-1-dev, libgtk-3-dev, libm17n-dev, libotf-dev, xaw3dg-dev, liblockfile-dev, imagemagick, sharutils, silversearcher-ag
+Package-List:
+ deepin-emacs deb editors optional
+Priority: optional
+Section: editors
+Directory: pool/main/d/deepin-emacs
+Files: 
+ 8c8428b5e96f089ffd1f16a83df252cc 1540 deepin-emacs_2.0.1+20150119154558~c59343b47a.dsc
+ 88ea6fdde8a97b813c9319bc7cf16971 52098113 deepin-emacs_2.0.1+20150119154558~c59343b47a.tar.gz
+Checksums-Sha1: 
+ 096fb19310a78d44164af438a27e5afd90d55ce5 1540 deepin-emacs_2.0.1+20150119154558~c59343b47a.dsc
+ e270cc40791c13be46e750958075b7ccecd763a8 52098113 deepin-emacs_2.0.1+20150119154558~c59343b47a.tar.gz
+Checksums-Sha256: 
+ 5a7b0c1da9241033c55adc99f975443ae95aa9908b835ab9533995836bd6899a 1540 deepin-emacs_2.0.1+20150119154558~c59343b47a.dsc
+ ad17cf495e2f67c9ea73da98c9d1eea48e97a1c5b7c826a7250665802ccdf388 52098113 deepin-emacs_2.0.1+20150119154558~c59343b47a.tar.gz
+
+Package: deepin-emacs-common
+Format: 3.0 (native)
+Binary: deepin-emacs-common
+Architecture: all
+Version: 2.0.1+20150119161645~c59343b47a
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: https://github.com/linuxdeepin/deepin-emacs
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ deepin-emacs-common deb editors optional
+Priority: optional
+Section: editors
+Directory: pool/main/d/deepin-emacs-common
+Files: 
+ 34e1b32ca732e5f6d702ece9503eaacf 1299 deepin-emacs-common_2.0.1+20150119161645~c59343b47a.dsc
+ 6d5d256c6fb6e5c29d4e27d1a0626125 52470838 deepin-emacs-common_2.0.1+20150119161645~c59343b47a.tar.gz
+Checksums-Sha1: 
+ cccdd0216571327fd166a5ecbf422cbd0a033536 1299 deepin-emacs-common_2.0.1+20150119161645~c59343b47a.dsc
+ 92323198d97eea7f2fd386238752417dac5a808b 52470838 deepin-emacs-common_2.0.1+20150119161645~c59343b47a.tar.gz
+Checksums-Sha256: 
+ 0e303bae00e6a9cd68a74e09c3f93adf63f8d2dfdd8cec31a286e07e4a6562ca 1299 deepin-emacs-common_2.0.1+20150119161645~c59343b47a.dsc
+ 63a3978487060a1d056fe24a78786ec75ed9c77cca9f604b5ff56b706f4cd258 52470838 deepin-emacs-common_2.0.1+20150119161645~c59343b47a.tar.gz
+
+Package: deepin-firefox-addons
+Format: 1.0
+Binary: deepin-firefox-addons
+Architecture: all
+Version: 1.0.3-1
+Maintainer: Leng Ganghua <hiweed@gmail.com>
+Standards-Version: 3.7.2
+Build-Depends: debhelper (>= 5)
+Package-List:
+ deepin-firefox-addons deb admin optional
+Priority: optional
+Section: admin
+Directory: pool/main/d/deepin-firefox-addons
+Files: 
+ 134a973844066010bfa80231efff971d 1121 deepin-firefox-addons_1.0.3-1.dsc
+ 5d8b6fa3b9c0f97253ac065a5cc850f6 340867 deepin-firefox-addons_1.0.3-1.tar.gz
+Checksums-Sha1: 
+ 4c71e28b38e7e33b2e38f5d7077b3edba083311f 1121 deepin-firefox-addons_1.0.3-1.dsc
+ 624540988ea86198842759ac22200cdfb6d4ec24 340867 deepin-firefox-addons_1.0.3-1.tar.gz
+Checksums-Sha256: 
+ 9605a6f1dc44e6f18811a36ccb7160b042ba6cb2c69add6cc919d24a89dbc5eb 1121 deepin-firefox-addons_1.0.3-1.dsc
+ 869891ae4f0ba28ed4c0cc018c4b9118709678970e47cf7c37c349e31d457dda 340867 deepin-firefox-addons_1.0.3-1.tar.gz
+
+Package: deepin-game-center
+Format: 3.0 (native)
+Binary: deepin-game-center
+Architecture: all
+Version: 1.0.1+20141230144448~4e7bbbfda6
+Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
+Homepage: https://github.com/manateelazycat/deepin-software-center
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), python (>= 2.6.3~)
+Package-List:
+ deepin-game-center deb admin optional
+Priority: optional
+Section: admin
+Directory: pool/main/d/deepin-game-center
+Files: 
+ c9585e4dc7837cd0240fb11e1524c2d7 1312 deepin-game-center_1.0.1+20141230144448~4e7bbbfda6.dsc
+ 965676351aa1870a9f73d345450ecd2d 9169217 deepin-game-center_1.0.1+20141230144448~4e7bbbfda6.tar.gz
+Checksums-Sha1: 
+ 0feafea6016b9fd29bd6167db4044d1a0baf2993 1312 deepin-game-center_1.0.1+20141230144448~4e7bbbfda6.dsc
+ e6635aa378ac5c0ea8adb0ad435a3a27ccb52d09 9169217 deepin-game-center_1.0.1+20141230144448~4e7bbbfda6.tar.gz
+Checksums-Sha256: 
+ cdfb4652b6830e4e1a8be53f424b3c8aebc588d15819a9f00f619a3815011fa0 1312 deepin-game-center_1.0.1+20141230144448~4e7bbbfda6.dsc
+ cefa9548840757af0fa6c07b98924de2a9860327d85b0d86f4cca710ff8f8a3f 9169217 deepin-game-center_1.0.1+20141230144448~4e7bbbfda6.tar.gz
+
+Package: deepin-gettext-tools
+Format: 3.0 (native)
+Binary: deepin-gettext-tools
+Architecture: any
+Version: 0.0.1+20141216200739~6ba50ecb9c
+Maintainer: 宋文武 <songwenwu@linuxdeepin.com>
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), qt5-default, qt5-qmake, qtbase5-private-dev, qtdeclarative5-private-dev
+Package-List:
+ deepin-gettext-tools deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/d/deepin-gettext-tools
+Files: 
+ 78b3be5b16e8013641bf079fcdc98e10 1299 deepin-gettext-tools_0.0.1+20141216200739~6ba50ecb9c.dsc
+ 8fd90c32ddc3bd6022fede4aa76fa7c4 1146622 deepin-gettext-tools_0.0.1+20141216200739~6ba50ecb9c.tar.gz
+Checksums-Sha1: 
+ c924b081a3d6c864f7e41d980df7a38ca2ae4305 1299 deepin-gettext-tools_0.0.1+20141216200739~6ba50ecb9c.dsc
+ e7b352c88e2790c6c9bb5fad21ea36aa11873c59 1146622 deepin-gettext-tools_0.0.1+20141216200739~6ba50ecb9c.tar.gz
+Checksums-Sha256: 
+ c60008b12a752dae2a7fc68accf591c3324874b609d9fc734f2c21443e54ad7f 1299 deepin-gettext-tools_0.0.1+20141216200739~6ba50ecb9c.dsc
+ 3ab3dab041ac8902e6ca50c1282fea2deec794cdd208972dbc56f4f5eaba539b 1146622 deepin-gettext-tools_0.0.1+20141216200739~6ba50ecb9c.tar.gz
+
+Package: deepin-gsettings
+Format: 3.0 (native)
+Binary: python-deepin-gsettings
+Architecture: any
+Version: 0.1+git20131206094009~a64de3ac19
+Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), python-dev, libglib2.0-dev, python-setuptools
+Package-List:
+ python-deepin-gsettings deb libs extra
+Priority: extra
+Section: libs
+Directory: pool/main/d/deepin-gsettings
+Files: 
+ f57c3393780d6d898785c6815b28687c 1302 deepin-gsettings_0.1+git20131206094009~a64de3ac19.dsc
+ b0400cafb677048e4401641c10efdc5d 7269 deepin-gsettings_0.1+git20131206094009~a64de3ac19.tar.gz
+Checksums-Sha1: 
+ 03f0d56ce85841260a890efcbdde09cde07bca76 1302 deepin-gsettings_0.1+git20131206094009~a64de3ac19.dsc
+ e6802e489e77b5ffab45c94de7b02429e875c3a1 7269 deepin-gsettings_0.1+git20131206094009~a64de3ac19.tar.gz
+Checksums-Sha256: 
+ 6296a308bc59a85a897273f713d48cfd3a1318c03efd4cf9aac51b26ac2667af 1302 deepin-gsettings_0.1+git20131206094009~a64de3ac19.dsc
+ 39225381934750aed1f768702c6c58307954eb329b617facb64f067d17a25e26 7269 deepin-gsettings_0.1+git20131206094009~a64de3ac19.tar.gz
+
+Package: deepin-gtk-theme
+Format: 3.0 (native)
+Binary: deepin-gtk-theme
+Architecture: all
+Version: 14.07+20141223164347~1b5a54ef99
+Maintainer: leaeasy <leaeasy@gmail.com>
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9)
+Package-List:
+ deepin-gtk-theme deb gnome optional
+Priority: optional
+Section: gnome
+Directory: pool/main/d/deepin-gtk-theme
+Files: 
+ 91c090988163d628fc554cede73f577b 1195 deepin-gtk-theme_14.07+20141223164347~1b5a54ef99.dsc
+ 5fb70706ad4c84d07ad711c66e3a9065 2777824 deepin-gtk-theme_14.07+20141223164347~1b5a54ef99.tar.gz
+Checksums-Sha1: 
+ a81504ae0e002d2ab33fc2108d9870eb303b8327 1195 deepin-gtk-theme_14.07+20141223164347~1b5a54ef99.dsc
+ 5d481ce196ac30b3d11b24299e2e711871bb4d02 2777824 deepin-gtk-theme_14.07+20141223164347~1b5a54ef99.tar.gz
+Checksums-Sha256: 
+ ea9642ec94be89b9f299ce33fcbe68fb11ab70ca8c4acbc1c8dd198d4eab90a6 1195 deepin-gtk-theme_14.07+20141223164347~1b5a54ef99.dsc
+ f5ff3f7ffbd795328dbc3640247012e7568c2474810e5b0e0ad9f0d6d1733789 2777824 deepin-gtk-theme_14.07+20141223164347~1b5a54ef99.tar.gz
+
+Package: deepin-icon-theme
+Format: 3.0 (native)
+Binary: deepin-icon-theme
+Architecture: all
+Version: 13.06.13+20150114160019~dff58a2dad
+Maintainer: Zhang Cheng <zhangcheng@linuxdeepin.com>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9), python, inkscape
+Package-List:
+ deepin-icon-theme deb x11 optional
+Priority: optional
+Section: x11
+Directory: pool/main/d/deepin-icon-theme
+Files: 
+ 6e65ab78ae6caea2638ecd49913b6737 1242 deepin-icon-theme_13.06.13+20150114160019~dff58a2dad.dsc
+ ae31984cf33509186ef27914ae30ba95 3615317 deepin-icon-theme_13.06.13+20150114160019~dff58a2dad.tar.gz
+Checksums-Sha1: 
+ 3af1647a384ae2049cfaf0a55148e38a2696be9c 1242 deepin-icon-theme_13.06.13+20150114160019~dff58a2dad.dsc
+ bdab96c82a87c2a5f2d4843534647b06445bf805 3615317 deepin-icon-theme_13.06.13+20150114160019~dff58a2dad.tar.gz
+Checksums-Sha256: 
+ c93ee35cd03d28ebe14b6367d4c0e80c8c471acda091e044cc7f10f0e7e8e970 1242 deepin-icon-theme_13.06.13+20150114160019~dff58a2dad.dsc
+ f897855958c5cd8bdc5660965d4771e2927d0b1269a476256928967e6de6e042 3615317 deepin-icon-theme_13.06.13+20150114160019~dff58a2dad.tar.gz
+
+Package: deepin-icon-theme-v2013
+Format: 1.0
+Binary: deepin-icon-theme-v2013
+Architecture: all
+Version: 1.0-1
+Maintainer: Zhang Cheng <zhangcheng@linuxdeepin.com>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8)
+Package-List:
+ deepin-icon-theme-v2013 deb deepin optional
+Priority: optional
+Section: deepin
+Directory: pool/main/d/deepin-icon-theme-v2013
+Files: 
+ 76975eaad8cd44790b136dafc26289cd 1141 deepin-icon-theme-v2013_1.0-1.dsc
+ 99f607144dfd93c1675ed226ab15967f 14275038 deepin-icon-theme-v2013_1.0-1.tar.gz
+Checksums-Sha1: 
+ 3304d6f062765a866e6ee10a7f2d8c637c60d6e5 1141 deepin-icon-theme-v2013_1.0-1.dsc
+ 510d00c99f8cbe8aa6f4ac1064206323f1dce6a0 14275038 deepin-icon-theme-v2013_1.0-1.tar.gz
+Checksums-Sha256: 
+ c41f691f13e091751e70aafbd0552c8c4daee2ae63079b02c356cc592335b5fa 1141 deepin-icon-theme-v2013_1.0-1.dsc
+ 99f559bd62fdd70fd917229111c2eb654ca9b48da47ac8833f722c256a454030 14275038 deepin-icon-theme-v2013_1.0-1.tar.gz
+
+Package: deepin-installer
+Format: 3.0 (native)
+Binary: deepin-installer
+Architecture: any
+Version: 1.1+20150108103117~7d59f1aa46
+Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), cmake, coffeescript, golang-go, golang-dlib-dev, libdbus-glib-1-dev, libdeepin-webkit-3.0-0, libgail-3-dev, libgdk-pixbuf2.0-dev, libgeoclue-dev, libglib2.0-dev, libgstreamer-plugins-base0.10-dev, libgtk-3-dev, libicu-dev, liblightdm-gobject-1-dev | lightdm-gobject-dev, libparted-dev, libsqlite3-dev, libwebkitgtk-3.0-dev, libxklavier-dev, pkg-config, python
+Package-List:
+ deepin-installer deb utils extra
+Priority: extra
+Section: utils
+Directory: pool/main/d/deepin-installer
+Files: 
+ 17296145eff5013b013342d11822eebc 1600 deepin-installer_1.1+20150108103117~7d59f1aa46.dsc
+ 068007d59980dd1faf22eabfb7065c17 4864150 deepin-installer_1.1+20150108103117~7d59f1aa46.tar.gz
+Checksums-Sha1: 
+ 5ad04fffeda8198d5b917aac0fca0fdb780a211c 1600 deepin-installer_1.1+20150108103117~7d59f1aa46.dsc
+ 144858d61c93346e50a4c3ea70f0114d3d847226 4864150 deepin-installer_1.1+20150108103117~7d59f1aa46.tar.gz
+Checksums-Sha256: 
+ e58c781255fa5ef035e22c67fd065e5e36e09f850d43200bcc390821c470a854 1600 deepin-installer_1.1+20150108103117~7d59f1aa46.dsc
+ 08dcb388d102b2b5d09178a06b9bdb771ab4a063fae5f6c9676681672c752833 4864150 deepin-installer_1.1+20150108103117~7d59f1aa46.tar.gz
+
+Package: deepin-media-player
+Format: 3.0 (native)
+Binary: deepin-media-player
+Architecture: all
+Version: 1.1+20140703161214~6ac6ea0a8b
+Maintainer: Li Longyu <leaeasy@gmail.com>
+Homepage: http://www.linuxdeepin.com/
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), python
+Package-List:
+ deepin-media-player deb sound extra
+Priority: extra
+Section: sound
+Directory: pool/main/d/deepin-media-player
+Files: 
+ a92429a2d4bf85ab5c4498763509917e 1257 deepin-media-player_1.1+20140703161214~6ac6ea0a8b.dsc
+ 3a3be8ca910e22135a1ba32f985d4940 13062171 deepin-media-player_1.1+20140703161214~6ac6ea0a8b.tar.gz
+Checksums-Sha1: 
+ 5b141fdd258f7cec3cf49cf44e3a42371cd86f5f 1257 deepin-media-player_1.1+20140703161214~6ac6ea0a8b.dsc
+ 91cf5f18f3f5be787f6703a2007edf6a15de6b05 13062171 deepin-media-player_1.1+20140703161214~6ac6ea0a8b.tar.gz
+Checksums-Sha256: 
+ b9b5e4dda14e5c4b89fc72796c1437e1d859a9b399a9d30d053a21e2220c8c3e 1257 deepin-media-player_1.1+20140703161214~6ac6ea0a8b.dsc
+ 6988949977f01ab49a3ed441564aed858ee4434ee20c560d2cbd624cc7a3334b 13062171 deepin-media-player_1.1+20140703161214~6ac6ea0a8b.tar.gz
+
+Package: deepin-menu
+Format: 3.0 (native)
+Binary: deepin-menu
+Architecture: any
+Version: 1.1+20141216195521~1247e3bd11
+Maintainer: Li Longyu <leaeasy@gmail.com>
+Homepage: https://github.com/linuxdeepin/deepin-menu
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), python (>= 2.7), python-dev (>= 2.7), python-setuptools, qt5-qmake, qt5-default, qtdeclarative5-dev, libqt5x11extras5-dev
+Package-List:
+ deepin-menu deb libdevel extra
+Priority: extra
+Section: libs
+Directory: pool/main/d/deepin-menu
+Files: 
+ f9bd27e5a6474c0206169403809d9c37 1333 deepin-menu_1.1+20141216195521~1247e3bd11.dsc
+ 03aed9cb5d08718e49365180b747dea7 21486 deepin-menu_1.1+20141216195521~1247e3bd11.tar.gz
+Checksums-Sha1: 
+ 1b132c5871816739da5bb59dbc75ee90e5b35985 1333 deepin-menu_1.1+20141216195521~1247e3bd11.dsc
+ 61f07e8a43d5dd7aabd87d1955f51b16b9aa0c92 21486 deepin-menu_1.1+20141216195521~1247e3bd11.tar.gz
+Checksums-Sha256: 
+ 1bbe29c43085b3098ffcfb206cc612c62276859a508b07110591fd7c89122bdf 1333 deepin-menu_1.1+20141216195521~1247e3bd11.dsc
+ 87c09a081be514788d6ff03fab53b10cfdb86461da52f4aa29872652b9eddbf7 21486 deepin-menu_1.1+20141216195521~1247e3bd11.tar.gz
+
+Package: deepin-movie
+Format: 3.0 (native)
+Binary: deepin-movie
+Architecture: all
+Version: 2.2.1+20150302100500~ac72c0aa16
+Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), python, deepin-gettext-tools
+Package-List:
+ deepin-movie deb misc extra
+Priority: extra
+Section: misc
+Directory: pool/main/d/deepin-movie
+Files: 
+ 85879cc7010ab837be82de07e18da02c 1245 deepin-movie_2.2.1+20150302100500~ac72c0aa16.dsc
+ ed72911c87ed7e5e0abeec4e2c490dcf 270161 deepin-movie_2.2.1+20150302100500~ac72c0aa16.tar.gz
+Checksums-Sha1: 
+ 36f374a8265382c657a49b1a2d096ac5e0ff804d 1245 deepin-movie_2.2.1+20150302100500~ac72c0aa16.dsc
+ 0bdb18fed4873a60f38e7693bd5a875bcda05500 270161 deepin-movie_2.2.1+20150302100500~ac72c0aa16.tar.gz
+Checksums-Sha256: 
+ ebcc71796ecfef3272cbecfce4e91501bf3e8c0cf978ea51a5a0bed9d5b1f058 1245 deepin-movie_2.2.1+20150302100500~ac72c0aa16.dsc
+ 6feedf12ff8e8080d44ec27f0f24dc320ecf15d226ae3654c121b72c34637bd1 270161 deepin-movie_2.2.1+20150302100500~ac72c0aa16.tar.gz
+
+Package: deepin-music-player
+Format: 3.0 (native)
+Binary: deepin-music-player
+Architecture: all
+Version: 1.1+20150204093722~081154cf7b
+Maintainer: Li Longyu <leaeasy@gmail.com>
+Homepage: http://www.linuxdeepin.com/
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), python
+Package-List:
+ deepin-music-player deb sound extra
+Priority: extra
+Section: sound
+Directory: pool/main/d/deepin-music-player
+Files: 
+ 104bb8c8ae512ddaf279e6c01a77bc6c 1257 deepin-music-player_1.1+20150204093722~081154cf7b.dsc
+ 6002cc1bf1fa43bb53b464c31b4ecd45 17853938 deepin-music-player_1.1+20150204093722~081154cf7b.tar.gz
+Checksums-Sha1: 
+ 0d9c5efc1268fc4673984728f10c7ec8236c037a 1257 deepin-music-player_1.1+20150204093722~081154cf7b.dsc
+ d739e77d1e2db85ac7a86f399da1bb7bd21f70a4 17853938 deepin-music-player_1.1+20150204093722~081154cf7b.tar.gz
+Checksums-Sha256: 
+ 125a2e6acef65a2e96d62a29c26ac8b6573070d60aced1522fb84002378207d3 1257 deepin-music-player_1.1+20150204093722~081154cf7b.dsc
+ ac8cf7b151a387c6ed3bfbfb9e6e4c92fee75c89d62124f6a38fb9d3ba7ff9af 17853938 deepin-music-player_1.1+20150204093722~081154cf7b.tar.gz
+
+Package: deepin-notifications
+Format: 3.0 (native)
+Binary: deepin-notifications
+Architecture: any
+Version: 0.3+20150228132017~b75929e665
+Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), qt5-default, qtdeclarative5-dev
+Package-List:
+ deepin-notifications deb misc extra
+Priority: extra
+Section: misc
+Directory: pool/main/d/deepin-notifications
+Files: 
+ 5e5213c61e533b40be20534f8e7ab960 1285 deepin-notifications_0.3+20150228132017~b75929e665.dsc
+ 7e38c150f2cf62f79713b5c261298850 29971 deepin-notifications_0.3+20150228132017~b75929e665.tar.gz
+Checksums-Sha1: 
+ 2d257c4af415108219d18357382f7a055da0d70f 1285 deepin-notifications_0.3+20150228132017~b75929e665.dsc
+ a422e00b186bb3a6b0760f836b073539fb06c046 29971 deepin-notifications_0.3+20150228132017~b75929e665.tar.gz
+Checksums-Sha256: 
+ 17a7e4c5379af736b19e478fd562c441162ca0db92d0db4b941241647cdfd7de 1285 deepin-notifications_0.3+20150228132017~b75929e665.dsc
+ daac4adc903a09e1c9b4dd1692ec2f3e9e3f6d63277db9ab5a36200b08f8ac6b 29971 deepin-notifications_0.3+20150228132017~b75929e665.tar.gz
+
+Package: deepin-os-upgrader
+Format: 3.0 (native)
+Binary: deepin-os-upgrader
+Architecture: all
+Version: 0.0.0+20150109112633~5fa05ddb2b
+Maintainer: DEEPIN <deepin@linuxdeepin.com>
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9)
+Package-List:
+ deepin-os-upgrader deb misc optional
+Priority: optional
+Section: misc
+Directory: pool/main/d/deepin-os-upgrader
+Files: 
+ d96565f2958705c40d6718a63d89d6dd 1201 deepin-os-upgrader_0.0.0+20150109112633~5fa05ddb2b.dsc
+ 51ef8725447e840c8b80410408115393 2019 deepin-os-upgrader_0.0.0+20150109112633~5fa05ddb2b.tar.gz
+Checksums-Sha1: 
+ 72107b4fee9ca70cdd0ea20d8fa151fde0822ffb 1201 deepin-os-upgrader_0.0.0+20150109112633~5fa05ddb2b.dsc
+ e272bbf7d55740d4d7b22ca8bd113f8d089040a2 2019 deepin-os-upgrader_0.0.0+20150109112633~5fa05ddb2b.tar.gz
+Checksums-Sha256: 
+ f6bbca3fbde35b840c5c9eff33c7b5b55dfefcc8001c56906eabba11d010e748 1201 deepin-os-upgrader_0.0.0+20150109112633~5fa05ddb2b.dsc
+ 1e173a0abce89ee4056a826c467c4b491680c9bb6784cf0e5d18f4313e34f9a1 2019 deepin-os-upgrader_0.0.0+20150109112633~5fa05ddb2b.tar.gz
+
+Package: deepin-qml-widgets
+Format: 3.0 (native)
+Binary: deepin-qml-widgets
+Architecture: any
+Version: 0.0.2+20150203171526~feb6d6ad2f
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), qt5-qmake, qt5-default, qtdeclarative5-dev (>= 5.3.1~), libqt5webkit5-dev (>= 5.3.1+dfsg~), libqt5x11extras5-dev, libqt5opengl5-dev, pkg-config, libxcomposite-dev, libxcb-damage0-dev, deepin-gettext-tools
+Package-List:
+ deepin-qml-widgets deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/d/deepin-qml-widgets
+Files: 
+ e0471da886a5dc7952217123fd17208d 1467 deepin-qml-widgets_0.0.2+20150203171526~feb6d6ad2f.dsc
+ 5a623bd8cfeaceb80a162bddd1543764 114683 deepin-qml-widgets_0.0.2+20150203171526~feb6d6ad2f.tar.gz
+Checksums-Sha1: 
+ 78373ca92b970136dfe43b6d5c1e5e1e9078ab7c 1467 deepin-qml-widgets_0.0.2+20150203171526~feb6d6ad2f.dsc
+ d1381d1710d2f8d09878aa682c7aa29172a948ce 114683 deepin-qml-widgets_0.0.2+20150203171526~feb6d6ad2f.tar.gz
+Checksums-Sha256: 
+ fc4f2e490f4c5ccc0b0e7f642ad6a6270c096f785f37697f8cd33c315f2e7cda 1467 deepin-qml-widgets_0.0.2+20150203171526~feb6d6ad2f.dsc
+ eafadf1a7ca22999a9f682b95ddf4f15d00e52a085de2af41cbb755c7694f69e 114683 deepin-qml-widgets_0.0.2+20150203171526~feb6d6ad2f.tar.gz
+
+Package: deepin-sample-music
+Format: 3.0 (native)
+Binary: deepin-sample-music
+Architecture: all
+Version: 14.12.6
+Maintainer: pkg-builder <pkg-builder@packages.linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com/
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ deepin-sample-music deb misc extra arch=all
+Priority: extra
+Section: misc
+Directory: pool/main/d/deepin-sample-music
+Files: 
+ e3c2df5d0bad02e0f830ab2228b66a9e 648 deepin-sample-music_14.12.6.dsc
+ a3e4e2ca818f854ff50abc69bb693b29 31675588 deepin-sample-music_14.12.6.tar.xz
+Checksums-Sha1: 
+ f79518c3cd33ae310dc8c578e1e5713967bb68d3 648 deepin-sample-music_14.12.6.dsc
+ 04bb3021cbc7639866dca5e943dc2e688c597c33 31675588 deepin-sample-music_14.12.6.tar.xz
+Checksums-Sha256: 
+ bd20e7de1e4cb112649a8b4634b3275b62dbad30a2c61817e71ee3ca9edfab86 648 deepin-sample-music_14.12.6.dsc
+ a8601f64ef89ed496fa0fbebffe9bea58a51d082a63bd2682f67796186d4f546 31675588 deepin-sample-music_14.12.6.tar.xz
+
+Package: deepin-screenshot
+Format: 3.0 (native)
+Binary: deepin-screenshot
+Architecture: all
+Version: 2.1+20141230110557~a5861179f5
+Maintainer: Zhang Cheng <zhangcheng@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com/
+Standards-Version: 3.9.2
+Vcs-Git: git://github.com/linuxdeepin-packages/deepin-scrot.git
+Build-Depends: debhelper (>= 8.0.0), python (>= 2.6.6-3~), python-epydoc
+Package-List:
+ deepin-screenshot deb gnome optional
+Priority: optional
+Section: gnome
+Directory: pool/main/d/deepin-screenshot
+Files: 
+ c003f2fecb6caf985f5cd52bd50897cd 1346 deepin-screenshot_2.1+20141230110557~a5861179f5.dsc
+ d673633119b48a6d5af89ad99eb02b9e 195135 deepin-screenshot_2.1+20141230110557~a5861179f5.tar.gz
+Checksums-Sha1: 
+ c3bd73ca1cd13553ed57044d97042f6174c332dd 1346 deepin-screenshot_2.1+20141230110557~a5861179f5.dsc
+ 6c565589b2afa017e56a62e0eab50eca7fb76629 195135 deepin-screenshot_2.1+20141230110557~a5861179f5.tar.gz
+Checksums-Sha256: 
+ bdfb9008f996a7852f9ff2622667eb56c3a9a514a2eb27232ddf02a0dd5d3c53 1346 deepin-screenshot_2.1+20141230110557~a5861179f5.dsc
+ 3e5fdcafd6c9f503aae8520f8904123a53c2ad8cab0fb74bd7522a043c7a6c98 195135 deepin-screenshot_2.1+20141230110557~a5861179f5.tar.gz
+
+Package: deepin-session-fastup
+Format: 3.0 (quilt)
+Binary: deepin-session-fastup
+Architecture: all
+Version: 0.0.1-2
+Maintainer: Deepin Testing Packages <testing@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ deepin-session-fastup deb admin extra
+Priority: extra
+Section: admin
+Directory: pool/main/d/deepin-session-fastup
+Files: 
+ d1a1a6de137aad09f2911c7a969e3b0d 1474 deepin-session-fastup_0.0.1-2.dsc
+ 24101bbec58800d9e61c5cba372e6299 112 deepin-session-fastup_0.0.1.orig.tar.gz
+ 50c01ec46c4724ce90351d4d9122a7ab 1989 deepin-session-fastup_0.0.1-2.debian.tar.gz
+Checksums-Sha1: 
+ 7bd28e7ac7ed797ab14ee6399037495f51fcb801 1474 deepin-session-fastup_0.0.1-2.dsc
+ d4543bdfd075f65b37e34546cddaa5208e56bcb2 112 deepin-session-fastup_0.0.1.orig.tar.gz
+ 7174002176dbf64799c64d17fac031f0d622a80f 1989 deepin-session-fastup_0.0.1-2.debian.tar.gz
+Checksums-Sha256: 
+ 75e65f67cd92aa4ffe8a1bb1b8d619611210dcf4ecf5ff816ab4b31d0b6ec4bb 1474 deepin-session-fastup_0.0.1-2.dsc
+ c04407e053ddf6de5d4ef592596c335075004c6a437435cd055f4fa13390dc73 112 deepin-session-fastup_0.0.1.orig.tar.gz
+ 5b85018cf86830e5afa7d76b50dfce27b3a248994fea515999127549cca13375 1989 deepin-session-fastup_0.0.1-2.debian.tar.gz
+
+Package: deepin-sleep-sixty
+Format: 3.0 (native)
+Binary: deepin-sleep-sixty
+Architecture: all
+Version: 0.1-3
+Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Homepage: http://packages.linuxdeepin.com/
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ deepin-sleep-sixty deb admin extra
+Priority: extra
+Section: admin
+Directory: pool/main/d/deepin-sleep-sixty
+Files: 
+ dd561b81e47b94d623b161688163debe 1155 deepin-sleep-sixty_0.1-3.dsc
+ 73fc7691bdf902a441b87f28997cc52d 2151 deepin-sleep-sixty_0.1-3.tar.gz
+Checksums-Sha1: 
+ 7c900220540dc103e005fc9296a2491182300502 1155 deepin-sleep-sixty_0.1-3.dsc
+ 2c85b174aa4e4e2d8b5a12be639f1327a2736fa9 2151 deepin-sleep-sixty_0.1-3.tar.gz
+Checksums-Sha256: 
+ 9c576f841dbd94138ac484175a0df0b37376e5112337f231a50fbc6e53fa7ed7 1155 deepin-sleep-sixty_0.1-3.dsc
+ 14fb12065b6aed63388e91dcf4b2434b917e12f1b9157db608523c2089c3f873 2151 deepin-sleep-sixty_0.1-3.tar.gz
+
+Package: deepin-software-center
+Format: 3.0 (native)
+Binary: deepin-software-center
+Architecture: all
+Version: 3.0.1+20150205093406~fb0a497d57
+Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
+Homepage: https://github.com/manateelazycat/deepin-software-center
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), python (>= 2.6.3~)
+Package-List:
+ deepin-software-center deb admin optional
+Priority: optional
+Section: admin
+Directory: pool/main/d/deepin-software-center
+Files: 
+ f76b7a58c6668b88a87299476c511a9b 1339 deepin-software-center_3.0.1+20150205093406~fb0a497d57.dsc
+ fd551b51de20fb7a965cc1035b8e8b39 18490602 deepin-software-center_3.0.1+20150205093406~fb0a497d57.tar.gz
+Checksums-Sha1: 
+ 336e84eb8b732856c81d016b45863b087bb789d6 1339 deepin-software-center_3.0.1+20150205093406~fb0a497d57.dsc
+ 69262bfaeb919b79d7e2b00df875047ec94298ee 18490602 deepin-software-center_3.0.1+20150205093406~fb0a497d57.tar.gz
+Checksums-Sha256: 
+ f27f153c9cbcb39d0f76d7c6dcc9da6e0d8b4df621b63e5c3f9fcf7b36bbf261 1339 deepin-software-center_3.0.1+20150205093406~fb0a497d57.dsc
+ 1fbeb5c0e8929959ef6c0a3882aa734848366652e65727ff05a5135b7e808e1e 18490602 deepin-software-center_3.0.1+20150205093406~fb0a497d57.tar.gz
+
+Package: deepin-software-center-data
+Format: 3.0 (native)
+Binary: deepin-software-center-data
+Architecture: all
+Version: 3.0.1+20141230125726~0565641e10
+Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
+Homepage: https://github.com/manateelazycat/deepin-software-center
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), python (>= 2.6.3~)
+Package-List:
+ deepin-software-center-data deb admin optional
+Priority: optional
+Section: admin
+Directory: pool/main/d/deepin-software-center-data
+Files: 
+ 117e9e02fe1ea9b7f9f020b6dd5a63c3 1369 deepin-software-center-data_3.0.1+20141230125726~0565641e10.dsc
+ 607185fbe77f5f70e6553add14d57014 30928267 deepin-software-center-data_3.0.1+20141230125726~0565641e10.tar.gz
+Checksums-Sha1: 
+ 6d2f921d9cbddcaacf8efabdf59c945c28ed083d 1369 deepin-software-center-data_3.0.1+20141230125726~0565641e10.dsc
+ 4089a816aa012ea235aa9cc53ebc24f8cb5dbccd 30928267 deepin-software-center-data_3.0.1+20141230125726~0565641e10.tar.gz
+Checksums-Sha256: 
+ 2ef28e2130cf2c00cb303b5181178b9dfa3a8254c53ec1416859e9bff57c11b9 1369 deepin-software-center-data_3.0.1+20141230125726~0565641e10.dsc
+ fc7eabb81539b6a2149392c0957df6f6160b9536b8fc0a8b3f2aaf3cfeb81596 30928267 deepin-software-center-data_3.0.1+20141230125726~0565641e10.tar.gz
+
+Package: deepin-speech
+Format: 3.0 (native)
+Binary: deepin-speech
+Architecture: any
+Version: 0.0.7-1+git20131206095852~af71713fc5
+Maintainer: Deepin Testing Packages <testing@linuxdeepin.com>
+Homepage: https://github.com/jouyouyun/record_recog
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), libwnck-3-dev, libasound2-dev, libx11-dev, libxtst-dev, libxmu-dev, libdbus-1-dev, libjsoncpp-dev, libdbus-glib-1-dev, cmake, libsqlite3-dev, libpulse-dev, libgstreamer0.10-dev
+Package-List:
+ deepin-speech deb sound extra
+Priority: extra
+Section: sound
+Directory: pool/main/d/deepin-speech
+Files: 
+ 1ea1e4af05e50189cfa25a23c26629a1 1447 deepin-speech_0.0.7-1+git20131206095852~af71713fc5.dsc
+ 0bfba9cabc010d8304482961291245a1 657494 deepin-speech_0.0.7-1+git20131206095852~af71713fc5.tar.gz
+Checksums-Sha1: 
+ 31b8541f112d06570872fb0bdf3992c7304734a6 1447 deepin-speech_0.0.7-1+git20131206095852~af71713fc5.dsc
+ d44ecb7f80e93105f009614ead2fc4dcdfc7832b 657494 deepin-speech_0.0.7-1+git20131206095852~af71713fc5.tar.gz
+Checksums-Sha256: 
+ fd139c8351608affece9d4dfb3d4a486b42d58862e86b22dc9f722d64145e1ad 1447 deepin-speech_0.0.7-1+git20131206095852~af71713fc5.dsc
+ 1a7b0ba04ab26e38898a800c6ae08e2155561642d4d41e0c0b1f116beca162f6 657494 deepin-speech_0.0.7-1+git20131206095852~af71713fc5.tar.gz
+
+Package: deepin-terminal
+Format: 3.0 (native)
+Binary: deepin-terminal
+Architecture: all
+Version: 1.1+20141230110750~bc441b7aae
+Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com/
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), python
+Package-List:
+ deepin-terminal deb utils extra
+Priority: extra
+Section: utils
+Directory: pool/main/d/deepin-terminal
+Files: 
+ 2a48c6e07a22b64a060e0fe96b2562d8 1242 deepin-terminal_1.1+20141230110750~bc441b7aae.dsc
+ 4e7151a8961b89faa5e2ffd23e3e7dab 964754 deepin-terminal_1.1+20141230110750~bc441b7aae.tar.gz
+Checksums-Sha1: 
+ 472df194d5945ae3d1b94a99335bfa799f098268 1242 deepin-terminal_1.1+20141230110750~bc441b7aae.dsc
+ 2cea4c70aa9ac35bbb8e4dab47cde9b2f1792deb 964754 deepin-terminal_1.1+20141230110750~bc441b7aae.tar.gz
+Checksums-Sha256: 
+ 44b07d766e7697590e7ba4b4ec1f5973f16e97dd97634429fa9919fd67fb8506 1242 deepin-terminal_1.1+20141230110750~bc441b7aae.dsc
+ e8f756064def8b69a2e3c63f8cb0e1070082da997862ee0ecaa2b5b84be1d1e7 964754 deepin-terminal_1.1+20141230110750~bc441b7aae.tar.gz
+
+Package: deepin-translator
+Format: 3.0 (native)
+Binary: deepin-translator
+Architecture: all
+Version: 1.0.1+20141230150008~bb3e3581c3
+Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
+Homepage: https://github.com/manateelazycat/deepin-translator
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), python (>= 2.6.3~)
+Package-List:
+ deepin-translator deb education optional
+Priority: optional
+Section: education
+Directory: pool/main/d/deepin-translator
+Files: 
+ 30f7a367917eb4dcd78bbedc33ec35bd 1298 deepin-translator_1.0.1+20141230150008~bb3e3581c3.dsc
+ 3a5deaf346e1535f5c430ba54a7cb0ed 641025 deepin-translator_1.0.1+20141230150008~bb3e3581c3.tar.gz
+Checksums-Sha1: 
+ 1afe1f51fa5439582c2acc1824675d33128c6906 1298 deepin-translator_1.0.1+20141230150008~bb3e3581c3.dsc
+ dedd9e108aa46407b722824bd9512cb6b5489c03 641025 deepin-translator_1.0.1+20141230150008~bb3e3581c3.tar.gz
+Checksums-Sha256: 
+ 2166d0c0d6decfa802eabed86e160af13acc7108a8c99049730b5abefbca4864 1298 deepin-translator_1.0.1+20141230150008~bb3e3581c3.dsc
+ 90d0d272fe6d08b9e0039d29bbdac1eb2b45524240975deae19a8669deffaf5f 641025 deepin-translator_1.0.1+20141230150008~bb3e3581c3.tar.gz
+
+Package: deepin-ui
+Format: 3.0 (native)
+Binary: deepin-ui
+Architecture: all
+Version: 1.1+20141229194712~5a86faec50
+Maintainer: Li Longyu <leaeasy@gmail.com>
+Homepage: http://www.linuxdeepin.com/
+Standards-Version: 3.9.5
+Vcs-Browser: https://github.com/manateelazycat/deepin-ui.git
+Vcs-Git: git://github.com/manateelazycat/deepin-ui.git
+Build-Depends: debhelper (>= 9), dh-python, python, deepin-gettext-tools, python-setuptools
+Package-List:
+ deepin-ui deb libdevel extra
+Priority: extra
+Section: libs
+Directory: pool/main/d/deepin-ui
+Files: 
+ c3e96cb87bbd11b16f0802f4c149cd48 1364 deepin-ui_1.1+20141229194712~5a86faec50.dsc
+ 0e4ce6de1076ab6618c417480e787bb8 10568028 deepin-ui_1.1+20141229194712~5a86faec50.tar.gz
+Checksums-Sha1: 
+ 5874c240bc38a0caac2e374d38ce228e6208e78c 1364 deepin-ui_1.1+20141229194712~5a86faec50.dsc
+ 7e54eab7b2718809714116db55d5eba80b5ca3bc 10568028 deepin-ui_1.1+20141229194712~5a86faec50.tar.gz
+Checksums-Sha256: 
+ de6bb67e826817940cdfca30ff40ab1d1797cc0810edccee9fa7ee479d97bbb9 1364 deepin-ui_1.1+20141229194712~5a86faec50.dsc
+ 3829f85b4b888d36fac9f9d9180e6d2453e3f3fcdcc02f1051503d4ba100decc 10568028 deepin-ui_1.1+20141229194712~5a86faec50.tar.gz
+
+Package: deepin-user-manual
+Format: 3.0 (native)
+Binary: deepin-user-manual
+Architecture: all
+Version: 1.0+git20131206100813~1a99425fff
+Maintainer: Zhang Cheng <zhangcheng@linuxdeepin.com>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ deepin-user-manual deb doc optional
+Priority: optional
+Section: doc
+Directory: pool/main/d/deepin-user-manual
+Files: 
+ 8edd5a827faa841e9b2f62f81b55ba76 1229 deepin-user-manual_1.0+git20131206100813~1a99425fff.dsc
+ 5a15cd592a764aba7af8472c49438829 27117678 deepin-user-manual_1.0+git20131206100813~1a99425fff.tar.gz
+Checksums-Sha1: 
+ 53514779ea9f99766cbd6f0b7c60811d3f4cadf2 1229 deepin-user-manual_1.0+git20131206100813~1a99425fff.dsc
+ e33aca7bc112b064b0c3f5f02b6aad24be026a2d 27117678 deepin-user-manual_1.0+git20131206100813~1a99425fff.tar.gz
+Checksums-Sha256: 
+ 09627c491459050e0a1379eb07a0c84ec564ae3c5c6c2a0f176a280753715f14 1229 deepin-user-manual_1.0+git20131206100813~1a99425fff.dsc
+ 2e382dd45acb6cf3f2189c7d1fca68a5de46d3d3c1b0adc04776da42a5f385b8 27117678 deepin-user-manual_1.0+git20131206100813~1a99425fff.tar.gz
+
+Package: deepin-user-manuals
+Format: 3.0 (quilt)
+Binary: deepin-user-manuals, deepin-user-manuals-zhcn
+Architecture: all
+Version: 14.12-2
+Maintainer: pkg-builder <pkg-builder@packages.linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com/
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ deepin-user-manuals deb doc extra
+ deepin-user-manuals-zhcn deb doc extra
+Priority: extra
+Section: doc
+Directory: pool/main/d/deepin-user-manuals
+Files: 
+ eb3e3af2f1bb38f4daa2ab4414003da3 1534 deepin-user-manuals_14.12-2.dsc
+ c1ca931221dc8097182c3aa702c6daea 32122824 deepin-user-manuals_14.12.orig.tar.xz
+ 36ac42aac308dcfecc25d816be725d5d 885 deepin-user-manuals_14.12-2.debian.tar.gz
+Checksums-Sha1: 
+ 0b31c328ba6829ef35ae54bb505152d20d8d7b51 1534 deepin-user-manuals_14.12-2.dsc
+ d91c77aea2b655a89761df666bb042f47494e2fb 32122824 deepin-user-manuals_14.12.orig.tar.xz
+ 483b0ef5aee5c5ebf1c1efb0a914d5c04229f171 885 deepin-user-manuals_14.12-2.debian.tar.gz
+Checksums-Sha256: 
+ 447ccf391ce400d534d833fefb297394a6939b7bfe55466fe38600959e8b4ac2 1534 deepin-user-manuals_14.12-2.dsc
+ db5ff60f0cf5744ef106a184c72df4d0bf125e3572da15fe6a25df58d62eedf1 32122824 deepin-user-manuals_14.12.orig.tar.xz
+ 19644bf71aae44af950e9344774d2be7bdadf8911e0c4b0d9c2393ce96e38d5b 885 deepin-user-manuals_14.12-2.debian.tar.gz
+
+Package: deepin-utils
+Format: 3.0 (native)
+Binary: python-deepin-utils
+Architecture: any
+Version: 0.0.2+20140703165416~8aaf2a6f00
+Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
+Homepage: http://www.linuxdeepin.com/
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), python-dev (>= 2.7), python-cairo-dev, libcairo2-dev, libgtk2.0-dev, python-setuptools, python-gtk2-dev, libwebkitgtk-dev
+Package-List:
+ python-deepin-utils deb libs extra
+Priority: extra
+Section: libs
+Directory: pool/main/d/deepin-utils
+Files: 
+ e0c44aa43c5729f61f26de1d5f33cab7 1354 deepin-utils_0.0.2+20140703165416~8aaf2a6f00.dsc
+ b22f040e268fd4cc8fa2c7a1b34cbe8f 15477 deepin-utils_0.0.2+20140703165416~8aaf2a6f00.tar.gz
+Checksums-Sha1: 
+ b9117cb22cd488c7da227178efa9f179b4a425a9 1354 deepin-utils_0.0.2+20140703165416~8aaf2a6f00.dsc
+ c14c5b70e918dcc2594de0143b669bace9b642bd 15477 deepin-utils_0.0.2+20140703165416~8aaf2a6f00.tar.gz
+Checksums-Sha256: 
+ f8beea634865ed53da92c6d78c378ae486255cbbd434c4ee7be21dcbd1cee016 1354 deepin-utils_0.0.2+20140703165416~8aaf2a6f00.dsc
+ 823380c71cba9d3ccb7815e6c445d0c2e4955d88164551c3e3c4ba7d084cf51b 15477 deepin-utils_0.0.2+20140703165416~8aaf2a6f00.tar.gz
+
+Package: deepin-wallpapers
+Format: 1.0
+Binary: deepin-default-wallpapers, deepin-extra-wallpapers
+Architecture: all
+Version: 13.06+git20131206101221~777c24a929
+Maintainer: leaeasy <leaeasy@gmail.com>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8)
+Package-List:
+ deepin-default-wallpapers deb deepin optional
+ deepin-extra-wallpapers deb deepin optional
+Priority: optional
+Section: deepin
+Directory: pool/main/d/deepin-wallpapers
+Files: 
+ 822f3b9a741418f868dbba84be36aac7 1297 deepin-wallpapers_13.06+git20131206101221~777c24a929.dsc
+ 6624604e10ab1cf71378425d0ccebc61 118722966 deepin-wallpapers_13.06+git20131206101221~777c24a929.tar.gz
+Checksums-Sha1: 
+ f4c101f9880326f45a0adcef9598e381cb0a686d 1297 deepin-wallpapers_13.06+git20131206101221~777c24a929.dsc
+ f0fd072bb51409638c3bbe866835035cb48b035f 118722966 deepin-wallpapers_13.06+git20131206101221~777c24a929.tar.gz
+Checksums-Sha256: 
+ 6d053018ca358c117a6dab0bb268296ed948b701232c0be53ee8d3ccf3c17b19 1297 deepin-wallpapers_13.06+git20131206101221~777c24a929.dsc
+ b48ad9be11fce58d005b5da6f532aa70d3a681cebb9eb1bb1338342255ab9b22 118722966 deepin-wallpapers_13.06+git20131206101221~777c24a929.tar.gz
+
+Package: deepin-webapps
+Format: 3.0 (native)
+Binary: deepin-webapps-kuwo-music, deepin-webapps-dbank-online-storage, deepin-webapps-youdao-note, deepin-webapps-chainrxn, deepin-webapps-doit-im, deepin-webapps-microsoft-skydrive, deepin-webapps-baidu-map, deepin-webapps-douban, deepin-webapps-ttpod, deepin-webapps-kugou-music, deepin-webapps-kingsoft-fast-docs, deepin-webapps-xiami-music, deepin-webapps-cargo-bridge, deepin-webapps-sina-weibo, deepin-webapps-pirateslovedaisies, deepin-webapps-kingsoft-online-storage, deepin-webapps-baidu-music, deepin-webapps-baidu-online-storage, deepin-webapps-paulrouget, deepin-webapps-towerim, deepin-webapps-fetion, deepin-webapps-baidu-hi, deepin-webapps-12306
+Architecture: all
+Version: 0.7
+Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ deepin-webapps-12306 deb web extra arch=all
+ deepin-webapps-baidu-hi deb web extra arch=all
+ deepin-webapps-baidu-map deb web extra arch=all
+ deepin-webapps-baidu-music deb web extra arch=all
+ deepin-webapps-baidu-online-storage deb web extra arch=all
+ deepin-webapps-cargo-bridge deb web extra arch=all
+ deepin-webapps-chainrxn deb web extra arch=all
+ deepin-webapps-dbank-online-storage deb web extra arch=all
+ deepin-webapps-doit-im deb web extra arch=all
+ deepin-webapps-douban deb web extra arch=all
+ deepin-webapps-fetion deb web extra arch=all
+ deepin-webapps-kingsoft-fast-docs deb web extra arch=all
+ deepin-webapps-kingsoft-online-storage deb web extra arch=all
+ deepin-webapps-kugou-music deb web extra arch=all
+ deepin-webapps-kuwo-music deb web extra arch=all
+ deepin-webapps-microsoft-skydrive deb web extra arch=all
+ deepin-webapps-paulrouget deb web extra arch=all
+ deepin-webapps-pirateslovedaisies deb web extra arch=all
+ deepin-webapps-sina-weibo deb web extra arch=all
+ deepin-webapps-towerim deb web extra arch=all
+ deepin-webapps-ttpod deb web extra arch=all
+ deepin-webapps-xiami-music deb web extra arch=all
+ deepin-webapps-youdao-note deb web extra arch=all
+Priority: extra
+Section: web
+Directory: pool/main/d/deepin-webapps
+Files: 
+ 6a815bba971033ea4ead303e37a36860 2335 deepin-webapps_0.7.dsc
+ bb80a6a4ebb24b3c9670afa7c99942f5 123808 deepin-webapps_0.7.tar.xz
+Checksums-Sha1: 
+ ba89630d2055d9eb109d33adb0db53537d7eb164 2335 deepin-webapps_0.7.dsc
+ 11c64dafe1dfab24ca62882c5c64c1bd91e2f0bb 123808 deepin-webapps_0.7.tar.xz
+Checksums-Sha256: 
+ 022aaf3588f2f2d56e9c5384a3d72332163ea3c8bfdc92303fd1743b443c2221 2335 deepin-webapps_0.7.dsc
+ 2abd5f7beb96a05ea6c43214b58439b5a20af3103c6da02136e1d88defce46f3 123808 deepin-webapps_0.7.tar.xz
+
+Package: deepin-webkit
+Format: 3.0 (native)
+Binary: libdeepin-webkit-3.0-0
+Architecture: any
+Version: 1.8.2.2+20141124213858~2494240496
+Maintainer: snyh <xiabin@linuxdeepin.com>
+Uploaders: Mike Hommey <glandium@debian.org>, Gustavo Noronha Silva <kov@debian.org>
+Homepage: http://webkitgtk.org/
+Standards-Version: 3.9.2
+Vcs-Browser: http://git.debian.org/?p=pkg-webkit/webkit.git
+Vcs-Git: git://git.debian.org/git/pkg-webkit/webkit.git
+Build-Depends: build-essential, gawk, chrpath, debhelper (>= 5.0), libglib2.0-dev (>= 2.31.2), libgtk2.0-dev (>= 2.24.3), gir1.2-gtk-2.0, libgtk-3-dev, gir1.2-gtk-3.0 (>= 3.0.0), libpango1.0-dev (>= 1.21), libicu-dev, libxslt-dev, libsoup2.4-dev (>= 2.37.2.1), gir1.2-soup-2.4, libsqlite3-dev, gperf, bison27, flex, libjpeg-dev, libpng12-dev, libxt-dev, autotools-dev, libgstreamer-plugins-base0.10-dev, libenchant-dev, gtk-doc-tools, libgail-dev, libgail-3-dev, libgeoclue-dev, gobject-introspection (>= 0.9.12-4), libgirepository1.0-dev (>= 0.9.12-4)
+Build-Conflicts: gir-repository-dev
+Package-List:
+ libdeepin-webkit-3.0-0 deb libs optional
+Priority: optional
+Section: web
+Directory: pool/main/d/deepin-webkit
+Files: 
+ f749bc524f17257355cd73dacd23c255 2093 deepin-webkit_1.8.2.2+20141124213858~2494240496.dsc
+ 83f458544fd3ba93463d59ae0a5eb642 12122881 deepin-webkit_1.8.2.2+20141124213858~2494240496.tar.gz
+Checksums-Sha1: 
+ a80c9f5dd9225076fad0b5c55a1150333f90c05e 2093 deepin-webkit_1.8.2.2+20141124213858~2494240496.dsc
+ 8982472bf3ffc47d3d1e942bb1d880092454fe23 12122881 deepin-webkit_1.8.2.2+20141124213858~2494240496.tar.gz
+Checksums-Sha256: 
+ 7f5033f2b9f11fe1f844c04f490ac4015792b3a9b6bfb5dced790c711bef6296 2093 deepin-webkit_1.8.2.2+20141124213858~2494240496.dsc
+ ffc3472c9098384b6c2c6f4f8a4f8a477acf317053b5c0880a639100fc8ad8ee 12122881 deepin-webkit_1.8.2.2+20141124213858~2494240496.tar.gz
+Original-Maintainer: Debian WebKit Maintainers <pkg-webkit-maintainers@lists.alioth.debian.org>
+
+Package: deepin-xrandr
+Format: 3.0 (native)
+Binary: python-deepin-xrandr
+Architecture: any
+Version: 0.1+git20131206101353~1ef723fab0
+Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), python-dev, libglib2.0-dev, python-setuptools, libxrandr-dev
+Package-List:
+ python-deepin-xrandr deb libs extra
+Priority: extra
+Section: libs
+Directory: pool/main/d/deepin-xrandr
+Files: 
+ f32dce81449c1044d0f786e5e31e727b 1302 deepin-xrandr_0.1+git20131206101353~1ef723fab0.dsc
+ 8aeaf548632c6aeaed13278605963397 26976 deepin-xrandr_0.1+git20131206101353~1ef723fab0.tar.gz
+Checksums-Sha1: 
+ 126d99e5bf67f0cd72e6eb7a4ee6218443560093 1302 deepin-xrandr_0.1+git20131206101353~1ef723fab0.dsc
+ e3c2fcd2214fe4782651ac36097cb196333ef23f 26976 deepin-xrandr_0.1+git20131206101353~1ef723fab0.tar.gz
+Checksums-Sha256: 
+ cd825868500c0f7f8c247071c405c3e8fa351fd8a4b90abc0531faf26c96d258 1302 deepin-xrandr_0.1+git20131206101353~1ef723fab0.dsc
+ eb4ac7311113f34f70854ec13d05875bc2f1c435ded60f36e3f0bf2dec4b352d 26976 deepin-xrandr_0.1+git20131206101353~1ef723fab0.tar.gz
+
+Package: deepin-xsession-settings
+Format: 1.0
+Binary: deepin-xsession-settings
+Architecture: all
+Version: 1.0-7
+Maintainer: LinuxDeepin Project <linuxdeepin@linuxdeepin.com>
+Standards-Version: 3.9.1
+Build-Depends: debhelper (>= 7)
+Package-List:
+ deepin-xsession-settings deb x11 optional
+Priority: optional
+Section: x11
+Directory: pool/main/d/deepin-xsession-settings
+Files: 
+ 102a59a7210e0534e310107e49c3ce24 1141 deepin-xsession-settings_1.0-7.dsc
+ dc395f33490b68b8cbdcb74beecc1766 3277 deepin-xsession-settings_1.0-7.tar.gz
+Checksums-Sha1: 
+ 4cc882b2fcda38aca08578864ceb0a394a8ef5c3 1141 deepin-xsession-settings_1.0-7.dsc
+ 16b6cdd0e1ec74526c0f05057343c4a5cbba050c 3277 deepin-xsession-settings_1.0-7.tar.gz
+Checksums-Sha256: 
+ 2585d33ca097ed611c03eb3e0b4796350109fb3a26315a9f8dfa7c64a8d5b43f 1141 deepin-xsession-settings_1.0-7.dsc
+ ca027615fe77b1d2340821f95e776193e1562b3b4e204f0161c6585d0067cab6 3277 deepin-xsession-settings_1.0-7.tar.gz
+
+Package: dh-golang
+Format: 3.0 (native)
+Binary: dh-golang
+Architecture: all
+Version: 1.6-1
+Maintainer: Michael Stapelberg <stapelberg@debian.org>
+Standards-Version: 3.9.4
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/dh-golang.git;a=summary
+Vcs-Git: git://anonscm.debian.org/collab-maint/dh-golang.git
+Build-Depends: debhelper (>= 8.0.0), libmodule-install-perl
+Package-List:
+ dh-golang deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/d/dh-golang
+Files: 
+ ea77b67d9b7078852cb11de80225bfa6 1227 dh-golang_1.6-1.dsc
+ d6a07c2a900e6a3674efb7eeb175712d 6242 dh-golang_1.6-1.tar.gz
+Checksums-Sha1: 
+ 9b4797fa8077923f04605213affe88b2d7ae8c2c 1227 dh-golang_1.6-1.dsc
+ 72df894d6b48853b7f8ddc0888d22c40be891b25 6242 dh-golang_1.6-1.tar.gz
+Checksums-Sha256: 
+ 1dd23ea1ef31f3220afce4025c4bb2bf110849f0251a55e3e7753e61dc4a5435 1227 dh-golang_1.6-1.dsc
+ 7f5f865260f4c933cc099ac7008ca924536924b1f2ad89b0f6b1178807a47ec5 6242 dh-golang_1.6-1.tar.gz
+
+Package: dolphin-emu
+Format: 3.0 (quilt)
+Binary: dolphin-emu
+Architecture: any
+Version: 4.0.2-1
+Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Homepage: https://dolphin-emu.org/
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.0.0), cmake, libfreetype6-dev, libglib2.0-dev, libasound2-dev, libpulse-dev, libopenal-dev, libxi-dev, libavcodec-dev, libavformat-dev, libswscale-dev, libavutil-dev, portaudio19-dev, libsdl2-dev, libusb-1.0-0-dev, libsfml-dev, libminiupnpc-dev, libsoil-dev, libgtk2.0-dev
+Package-List:
+ dolphin-emu deb games optional
+Priority: optional
+Section: games
+Directory: pool/main/d/dolphin-emu
+Files: 
+ 6f618dcce51abf027492b147df35f39c 1646 dolphin-emu_4.0.2-1.dsc
+ c12a5f4194897ad46c8437ca0b87ee43 17593168 dolphin-emu_4.0.2.orig.tar.xz
+ 8cbdc3a7318d03df41cf95b59b8185c3 2020 dolphin-emu_4.0.2-1.debian.tar.gz
+Checksums-Sha1: 
+ 2fe80d31a150f9b226ff6eb328745f8116b19a6f 1646 dolphin-emu_4.0.2-1.dsc
+ 443891be59270c33928ce4ac3bbc283195959475 17593168 dolphin-emu_4.0.2.orig.tar.xz
+ 8db9d87c3dceb8d047afebf4b3c2bdcf0f1af957 2020 dolphin-emu_4.0.2-1.debian.tar.gz
+Checksums-Sha256: 
+ 0f24e6368f3d0500364f7b9c238e96f002ffddeacec578dfc7ad92e3a92a4a61 1646 dolphin-emu_4.0.2-1.dsc
+ 4c4a898d3f66dc775559176aa48d5eed2450dddce5199a97e01477473280c750 17593168 dolphin-emu_4.0.2.orig.tar.xz
+ 606fc3f0aa1fbd19b89141ac8ae2f0012092a15ebc33972780174116591e48f9 2020 dolphin-emu_4.0.2-1.debian.tar.gz
+
+Package: dtk-widget
+Format: 3.0 (native)
+Binary: libdtk-widget, libdtk-widget-dev, libdtk-widget-dbg, python-libdtk-widget
+Architecture: any
+Version: 0.5+git20131206101523~8759cb0fb5
+Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
+Homepage: http://www.linuxdeepin.com/
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), gtk-doc-tools, gobject-introspection, autotools-dev, libglib2.0-dev, libgtk2.0-dev, libgdk-pixbuf2.0-dev, python-setuptools, python-dev, python-gobject-2-dev, python-gtk2-dev, libdtk-widget-dev
+Package-List:
+ libdtk-widget deb libsdevel optional
+ libdtk-widget-dbg deb debug optional
+ libdtk-widget-dev deb libsdevel optional
+ python-libdtk-widget deb libsdevel optional
+Priority: optional
+Section: libs
+Directory: pool/main/d/dtk-widget
+Files: 
+ 85e49d0bd846b1f9234f27e9871669e7 1603 dtk-widget_0.5+git20131206101523~8759cb0fb5.dsc
+ 41b46cb3074a7721c02e1d03ea0b913e 38238 dtk-widget_0.5+git20131206101523~8759cb0fb5.tar.gz
+Checksums-Sha1: 
+ cdd1a87c53cccc72c32e7a796695415ce7280081 1603 dtk-widget_0.5+git20131206101523~8759cb0fb5.dsc
+ b7c35e1d60a0ba9d794426501c8ebd20deccaadd 38238 dtk-widget_0.5+git20131206101523~8759cb0fb5.tar.gz
+Checksums-Sha256: 
+ 0fc11e21a1813540122981e85d543f2c22a248b62e9966b8dfb27cb64f3ac836 1603 dtk-widget_0.5+git20131206101523~8759cb0fb5.dsc
+ 64107aeda458e702b7c496065e178999b12533e4ff3f636d4e28798d86c80982 38238 dtk-widget_0.5+git20131206101523~8759cb0fb5.tar.gz
+
+Package: eclipse-adt
+Format: 3.0 (quilt)
+Binary: eclipse-adt
+Architecture: all
+Version: 23.0.0-1
+Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ eclipse-adt deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/e/eclipse-adt
+Files: 
+ 98f3c439aae7db322609ef31150a3c37 1384 eclipse-adt_23.0.0-1.dsc
+ 2967332f416008322a23101b680b49c9 15178568 eclipse-adt_23.0.0.orig.tar.xz
+ 4d2f77855fa7ea2fadb173dee8eeb59b 2140 eclipse-adt_23.0.0-1.debian.tar.gz
+Checksums-Sha1: 
+ 0960e5a6c50438d568768b14c4f32599a7684b73 1384 eclipse-adt_23.0.0-1.dsc
+ 78676f193f9c5382ead76a1c3412a1d00b9cf729 15178568 eclipse-adt_23.0.0.orig.tar.xz
+ ce52a15d8882abcaef4f85df6016c99a4bdbab50 2140 eclipse-adt_23.0.0-1.debian.tar.gz
+Checksums-Sha256: 
+ d0ed363cdd5a3b964068fe9b96c6b661b271864f28124fc30d1bb5420b1ecbf6 1384 eclipse-adt_23.0.0-1.dsc
+ 1cbde35d88148c83ee30bffac139418238266f23210770a4e3de598f08e52c92 15178568 eclipse-adt_23.0.0.orig.tar.xz
+ 7a77f4627b0020af7a763bea10afe31ee55755db3a233a7443f040f7980295d2 2140 eclipse-adt_23.0.0-1.debian.tar.gz
+
+Package: emacs24
+Format: 3.0 (quilt)
+Binary: emacs24-lucid, emacs24-lucid-dbg, emacs24-nox, emacs24-nox-dbg, emacs24, emacs24-dbg, emacs24-bin-common, emacs24-common, emacs24-el
+Architecture: any all
+Version: 24.4+1-4.2
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Homepage: http://www.gnu.org/software/emacs/
+Standards-Version: 3.7.2
+Build-Depends: bsd-mailx | mailx, libncurses5-dev, texinfo, liblockfile-dev, librsvg2-dev, libgif-dev | libungif4-dev, libtiff-dev | libtiff-dev, xaw3dg-dev, libpng-dev, libjpeg-dev, libm17n-dev, libotf-dev, libgpm-dev [linux-any], libdbus-1-dev, autoconf, automake, autotools-dev, dpkg-dev (>> 1.10.0), quilt (>= 0.42), debhelper (>= 9), libxaw7-dev, sharutils, imagemagick, libgtk-3-dev, libgnutls28-dev, libxml2-dev, libselinux1-dev [linux-any], libmagick++-dev, libgconf2-dev, libasound2-dev [!hurd-i386 !kfreebsd-i386 !kfreebsd-amd64], libacl1-dev, zlib1g-dev
+Package-List:
+ emacs24 deb editors optional
+ emacs24-bin-common deb editors optional
+ emacs24-common deb editors optional
+ emacs24-dbg deb debug extra
+ emacs24-el deb editors optional
+ emacs24-lucid deb editors optional
+ emacs24-lucid-dbg deb debug extra
+ emacs24-nox deb editors optional
+ emacs24-nox-dbg deb debug extra
+Priority: optional
+Section: editors
+Directory: pool/main/e/emacs24
+Files: 
+ 877c702469978d6cca74aa2cf147f726 2319 emacs24_24.4+1-4.2.dsc
+ 0eaa10a7ee3e955e214e90157aab3b3d 24395968 emacs24_24.4+1.orig.tar.bz2
+ 8fd7ffae08201237ded77c665571df4d 51120 emacs24_24.4+1-4.2.debian.tar.gz
+Checksums-Sha1: 
+ c665d306f6baf95fffb2c70ee63b6e77134d1f09 2319 emacs24_24.4+1-4.2.dsc
+ b73323c62f01f42ddf6c57eada1a4f58cf0806e1 24395968 emacs24_24.4+1.orig.tar.bz2
+ 25581a7a6aed675b5f77fe167fd7cce29b4c2650 51120 emacs24_24.4+1-4.2.debian.tar.gz
+Checksums-Sha256: 
+ 97adedc45501cebac2ac92d344aaea61e295a15e6d14e41fb9b212278502988c 2319 emacs24_24.4+1-4.2.dsc
+ 09e5338b55fce7155c457ab22ab1f6e7e702cf10593f87601c06e51a7f39ad8d 24395968 emacs24_24.4+1.orig.tar.bz2
+ cf800e15baa4461bd0ede29999c085a3db4304acb931a564226d7cb484e205c9 51120 emacs24_24.4+1-4.2.debian.tar.gz
+
+Package: emacsen-common
+Format: 3.0 (native)
+Binary: emacsen-common
+Architecture: all
+Version: 2.0.8+nmu1
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Standards-Version: 3.6.2
+Build-Depends: debhelper (>= 8)
+Package-List:
+ emacsen-common deb editors optional
+Priority: optional
+Section: editors
+Directory: pool/main/e/emacsen-common
+Files: 
+ 5b251ea21ead9ed91deecc7ad9b8eda8 1103 emacsen-common_2.0.8+nmu1.dsc
+ 0195e59898761baf52896087c7a847fb 19731 emacsen-common_2.0.8+nmu1.tar.gz
+Checksums-Sha1: 
+ 018d3688f11de8ced3eb5c4a9c25391aa9d7b1be 1103 emacsen-common_2.0.8+nmu1.dsc
+ 0c5f16d1f3599d1754d0f1121d1d718daf601386 19731 emacsen-common_2.0.8+nmu1.tar.gz
+Checksums-Sha256: 
+ b0a2d97c781624f65727ca0c921244a8048ff636a30c3c6d9988bb6cd60ff330 1103 emacsen-common_2.0.8+nmu1.dsc
+ 733a4174316848c5eed076f518aed822598477de61a5c55c23e683547caebc56 19731 emacsen-common_2.0.8+nmu1.tar.gz
+
+Package: eog
+Format: 3.0 (quilt)
+Binary: eog, eog-dbg, eog-dev
+Architecture: any all
+Version: 3.10.2-1
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Uploaders: Andreas Henriksson <andreas@fatal.se>, Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Jeremy Bicha <jbicha@ubuntu.com>, Michael Biebl <biebl@debian.org>
+Homepage: http://projects.gnome.org/eog
+Standards-Version: 3.9.4
+Vcs-Bzr: http://code.launchpad.net/~ubuntu-desktop/eog/ubuntu
+Build-Depends: cdbs (>= 0.4.41), debhelper (>= 8), dh-autoreconf, autotools-dev, gnome-pkg-tools (>= 0.10), gtk-doc-tools (>= 1.9), intltool (>= 0.40.0), pkg-config, libgtk-3-dev (>= 3.7.8), libgdk-pixbuf2.0-dev (>= 2.19.1), libglib2.0-dev (>= 2.31.0), libgnome-desktop-3-dev (>= 2.91.2), libgrip-dev (>= 0.3.0), gnome-icon-theme (>= 2.19.1), shared-mime-info (>= 0.20), gsettings-desktop-schemas-dev (>= 2.91.92), libpeas-dev (>= 0.7.4), yelp-tools, zlib1g-dev, libexif-dev (>= 0.6.14), liblcms2-dev, libexempi-dev (>= 1.99.5), libjpeg-dev, librsvg2-dev (>= 2.36.2), libxml2-dev (>= 2.0), libx11-dev, libatk1.0-dev (>= 1.32.0-2~), gobject-introspection (>= 0.9.12-4~), libgirepository1.0-dev (>= 0.9.12)
+Build-Depends-Indep: libgdk-pixbuf2.0-doc, libglib2.0-doc, libgtk-3-doc
+Package-List:
+ eog deb gnome optional
+ eog-dbg deb debug extra
+ eog-dev deb gnome optional
+Priority: optional
+Section: gnome
+Directory: pool/main/e/eog
+Files: 
+ 40789a1ab1c7e2439838a7f8b935bfc9 2507 eog_3.10.2-1.dsc
+ 2805026e43e444b7006d9b2657a5b9ec 3543424 eog_3.10.2.orig.tar.xz
+ a427879da4088c53b35a3f0c745aa75d 21368 eog_3.10.2-1.debian.tar.gz
+Checksums-Sha1: 
+ b6ee3939e54097f5b54116bd5f827822fd43742d 2507 eog_3.10.2-1.dsc
+ 88ff88559f27adef4a9cd16cefca36aac8cc0350 3543424 eog_3.10.2.orig.tar.xz
+ e1654f233fc00c300aab3595b4431957c2315fcd 21368 eog_3.10.2-1.debian.tar.gz
+Checksums-Sha256: 
+ d96b2bbe63b5e22c8f0e7a8612c04a82be96627f9440750f4d2385537ca2ea8a 2507 eog_3.10.2-1.dsc
+ 5ccc98609ca666420719383cc7d9b44335bbc0aacf048e38036d1f946ce54763 3543424 eog_3.10.2.orig.tar.xz
+ 047b3b4f4db000fccce3222e5028b30b7b4e8e504e833ccf0ab7dbc1295c7b42 21368 eog_3.10.2-1.debian.tar.gz
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: golang
+Format: 3.0 (quilt)
+Binary: golang-go, golang-src, golang-doc, golang, golang-mode, kate-syntax-go, vim-syntax-go, golang-go-linux-amd64, golang-go-linux-arm, golang-go-linux-386, golang-go-freebsd-amd64, golang-go-freebsd-arm, golang-go-freebsd-386, golang-go-windows-amd64, golang-go-windows-386, golang-go-darwin-amd64, golang-go-darwin-386, golang-go-netbsd-amd64, golang-go-netbsd-386
+Architecture: i386 amd64 armel armhf all
+Version: 2:1.3.3-2
+Maintainer: Michael Stapelberg <stapelberg@debian.org>
+Homepage: http://golang.org/
+Standards-Version: 3.9.3
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-golang/golang.git
+Vcs-Git: git://anonscm.debian.org/pkg-golang/golang.git
+Build-Depends: debhelper (>= 7.4.10), bison, ed, mawk | awk, perl, netbase
+Build-Depends-Indep: po-debconf
+Package-List:
+ golang deb devel optional
+ golang-doc deb doc optional
+ golang-go deb devel optional
+ golang-go-darwin-386 deb devel optional
+ golang-go-darwin-amd64 deb devel optional
+ golang-go-freebsd-386 deb devel optional
+ golang-go-freebsd-amd64 deb devel optional
+ golang-go-freebsd-arm deb devel optional
+ golang-go-linux-386 deb devel optional
+ golang-go-linux-amd64 deb devel optional
+ golang-go-linux-arm deb devel optional
+ golang-go-netbsd-386 deb devel optional
+ golang-go-netbsd-amd64 deb devel optional
+ golang-go-windows-386 deb devel optional
+ golang-go-windows-amd64 deb devel optional
+ golang-mode deb devel optional
+ golang-src deb devel optional
+ kate-syntax-go deb devel optional
+ vim-syntax-go deb devel optional
+Priority: optional
+Section: devel
+Directory: pool/main/g/golang
+Files: 
+ 81312d66416c2602b324635748aec3d0 2615 golang_1.3.3-2.dsc
+ 9e04f33fc887a0c8166b792d64a80263 7743964 golang_1.3.3.orig.tar.xz
+ 2c128591c40dc1e6e1c834803a030ec6 46625 golang_1.3.3-2.debian.tar.gz
+Checksums-Sha1: 
+ 360c1348d04574c9e00ceeda4706fd69177dd461 2615 golang_1.3.3-2.dsc
+ 7abf3a194dbc08e58385b3d96ebaa1db01427072 7743964 golang_1.3.3.orig.tar.xz
+ ff3b16e11b2d56c39787cc99b0114ca8ab41ffc0 46625 golang_1.3.3-2.debian.tar.gz
+Checksums-Sha256: 
+ 7e6d957b2509941e58322accf2b038314bac4e98ed758f52bf8ce2e19f135311 2615 golang_1.3.3-2.dsc
+ 4a99da684947b945318c8da750cd6ffc9c5c58ddc517ee195931ace91b455cf3 7743964 golang_1.3.3.orig.tar.xz
+ 05aa172f02c7b0f559cedca5d0b3158c19394707a51db096bb576478a114a4dc 46625 golang_1.3.3-2.debian.tar.gz
+
+Package: golang-fsnotify
+Format: 3.0 (quilt)
+Binary: golang-fsnotify-dev
+Architecture: all
+Version: 0.0~git201400902-1
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: https://github.com/howeyc/fsnotify.git
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), dh-golang, golang-go
+Package-List:
+ golang-fsnotify-dev deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/g/golang-fsnotify
+Files: 
+ 569a69ca21e527135d6f9c37227c0fad 1525 golang-fsnotify_0.0~git201400902-1.dsc
+ 8c537e43f80a21b6e8bbc905a788373e 18032 golang-fsnotify_0.0~git201400902.orig.tar.xz
+ 66c04b5d8a95e6edf8c18fc1a615e07a 2286 golang-fsnotify_0.0~git201400902-1.debian.tar.gz
+Checksums-Sha1: 
+ 6e1d24a6ef3f530b7fea1e7002337f89b435cda4 1525 golang-fsnotify_0.0~git201400902-1.dsc
+ d53bc8e3e6595edbc99224b11fd2e1c89c42ce63 18032 golang-fsnotify_0.0~git201400902.orig.tar.xz
+ c5088a902ed711f8d4f8af8126bd7a07a5b3891f 2286 golang-fsnotify_0.0~git201400902-1.debian.tar.gz
+Checksums-Sha256: 
+ 98db47f6945b4820ef132439364e12fc12de393031396e73493f89a4d17a2652 1525 golang-fsnotify_0.0~git201400902-1.dsc
+ 671ccaba18c5d9a2681e53ac86cc4fe83912b8db5f5c57146bb91b8ccf3c66af 18032 golang-fsnotify_0.0~git201400902.orig.tar.xz
+ 501f8ceef6d4b2011d5e266d1bd5aa634f436c41cc35dd585621e7047f9c7989 2286 golang-fsnotify_0.0~git201400902-1.debian.tar.gz
+
+Package: golang-gettext-go
+Format: 3.0 (quilt)
+Binary: golang-gettext-go-dev
+Architecture: all
+Version: 0.0~git20140808-1
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: https://github.com/chai2010/gettext-go
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), dh-golang, golang-go
+Package-List:
+ golang-gettext-go-dev deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/g/golang-gettext-go
+Files: 
+ 915dc630dea34668fde0463efa3e4044 1539 golang-gettext-go_0.0~git20140808-1.dsc
+ 1c031dad90c390796085d6380d5c5ef1 502052 golang-gettext-go_0.0~git20140808.orig.tar.xz
+ 4999be8fbfc1f7cf456e668ce2245024 2287 golang-gettext-go_0.0~git20140808-1.debian.tar.gz
+Checksums-Sha1: 
+ 2d688f90e53dc0c6c9b68527d883b8064a44109f 1539 golang-gettext-go_0.0~git20140808-1.dsc
+ f66fde691d2e03e43bb4df37b9767b2262cad187 502052 golang-gettext-go_0.0~git20140808.orig.tar.xz
+ 91fe5b4cac0667c4f859af52007b3de523cb9903 2287 golang-gettext-go_0.0~git20140808-1.debian.tar.gz
+Checksums-Sha256: 
+ 0324a80ff3884ed2e98b7ba6252d9193dbf15741eab72e8dfad095a8f6e0f8bf 1539 golang-gettext-go_0.0~git20140808-1.dsc
+ 7ee643e8a548d1891afa944b130e38dea5426bbc7befa8872a1f384d2c979ded 502052 golang-gettext-go_0.0~git20140808.orig.tar.xz
+ b263ddc1d38d119342b3a9db6e858cae1159e0d1d35dfc609de301c978876702 2287 golang-gettext-go_0.0~git20140808-1.debian.tar.gz
+
+Package: golang-go-sqlite3
+Format: 3.0 (quilt)
+Binary: golang-go-sqlite3-dev
+Architecture: all
+Version: 0.0~git20140913-1
+Maintainer: 宋文武 <songwenwu@linuxdeepin.com>
+Homepage: https://github.com/mattn/go-sqlite3
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), golang-go, dh-golang, libsqlite3-dev
+Package-List:
+ golang-go-sqlite3-dev deb devel extra arch=all
+Priority: extra
+Section: devel
+Directory: pool/main/g/golang-go-sqlite3
+Files: 
+ dc5901c4de56726a82664df5d6c301f1 1893 golang-go-sqlite3_0.0~git20140913-1.dsc
+ af36bd7147bc7e7a8d1b68a574085955 1486635 golang-go-sqlite3_0.0~git20140913.orig.tar.gz
+ 4b84f8402cedddbcf1ada8444b10ec3e 2232 golang-go-sqlite3_0.0~git20140913-1.debian.tar.xz
+Checksums-Sha1: 
+ b2356a2b8bad4cc71459bd7de1fb4f964f5fdc1d 1893 golang-go-sqlite3_0.0~git20140913-1.dsc
+ 13deb6e51210e180cbe379904d3de8f5532d867c 1486635 golang-go-sqlite3_0.0~git20140913.orig.tar.gz
+ efa37b10d90f389080313c9fbccf0395638143e0 2232 golang-go-sqlite3_0.0~git20140913-1.debian.tar.xz
+Checksums-Sha256: 
+ 62b4a4e85d0338de85f1942f1321be957aa1d00ffd5c4b01530d004d73c4a707 1893 golang-go-sqlite3_0.0~git20140913-1.dsc
+ cf94e68389be7f450aa3067735aec9714dd2a69d7be0667548e35580d95497da 1486635 golang-go-sqlite3_0.0~git20140913.orig.tar.gz
+ da13594921a16f21347d7aebade202af1c56109504a8bafec00412b014cba0dd 2232 golang-go-sqlite3_0.0~git20140913-1.debian.tar.xz
+
+Package: golang-gocheck
+Format: 3.0 (quilt)
+Binary: golang-gocheck-dev
+Architecture: all
+Version: 0.0~bzr20131118+85-6
+Maintainer: Sergio Schvezov <sergio.schvezov@canonical.com>
+Homepage: http://labix.org/gocheck
+Standards-Version: 3.9.4
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-go/packages/golang-gocheck.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-go/packages/golang-gocheck.git
+Build-Depends: debhelper (>= 9), dh-golang, golang-go (>= 2:1.3~rc1)
+Package-List:
+ golang-gocheck-dev deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/g/golang-gocheck
+Files: 
+ 3894d1daf94741a705c95c939d4931d9 1708 golang-gocheck_0.0~bzr20131118+85-6.dsc
+ d4bba82084653c41b21df305d3d43fb6 28374 golang-gocheck_0.0~bzr20131118+85.orig.tar.gz
+ c62979d6ad47b4137a8f4b1fd553f4ec 3319 golang-gocheck_0.0~bzr20131118+85-6.debian.tar.gz
+Checksums-Sha1: 
+ b089313a52554fd21f718b04366ad925860ece9f 1708 golang-gocheck_0.0~bzr20131118+85-6.dsc
+ d1fd44f547973a4af129a8f04f3dcdbe204af57d 28374 golang-gocheck_0.0~bzr20131118+85.orig.tar.gz
+ 9beb19a7da603c2584ef8e3d8ee6be980bdc5e54 3319 golang-gocheck_0.0~bzr20131118+85-6.debian.tar.gz
+Checksums-Sha256: 
+ 65cc0bd3629cdf6c95ab1ca6e0064d6676de34a3b2fcbddef645280054d454e7 1708 golang-gocheck_0.0~bzr20131118+85-6.dsc
+ 71ba0752af3cd04a42a95ef68c098d251430281c8461272df259d52d6092f7da 28374 golang-gocheck_0.0~bzr20131118+85.orig.tar.gz
+ 3a50e3d0c4ccb9397f13c30a6f057187c419e3b362c6b90767ed0bec049108fc 3319 golang-gocheck_0.0~bzr20131118+85-6.debian.tar.gz
+
+Package: golang-goconvey-dev
+Format: 3.0 (quilt)
+Binary: golang-goconvey-dev
+Architecture: all
+Version: 1.5.0-1
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: https://github.com/chai2010/gettext-go
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), dh-golang, golang-go
+Package-List:
+ golang-goconvey-dev deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/g/golang-goconvey-dev
+Files: 
+ 80ffe36c537649cdf0706380addf474c 1499 golang-goconvey-dev_1.5.0-1.dsc
+ bda2da140285c1638f358c04232f3493 1259694 golang-goconvey-dev_1.5.0.orig.tar.gz
+ 9ece3b3fc31eb27f3d75f3776700f1a8 1190 golang-goconvey-dev_1.5.0-1.debian.tar.gz
+Checksums-Sha1: 
+ ce2d3800a20ecda213fbd5b4647fd6e85003bb7c 1499 golang-goconvey-dev_1.5.0-1.dsc
+ 8c7946246e363fc1428bb34a9f39a8b24a07ea37 1259694 golang-goconvey-dev_1.5.0.orig.tar.gz
+ a5acce8da47cf91e03981d25f57512ad44d6772a 1190 golang-goconvey-dev_1.5.0-1.debian.tar.gz
+Checksums-Sha256: 
+ 8dd6bbf3bc959199792b826814d1cf7bf7c775e3b816d73157eb9eea14ff7f7b 1499 golang-goconvey-dev_1.5.0-1.dsc
+ e7d57f4cc8490940d2e8b284ec91c7c8a2ac2d63344a0c92ae90f670efb46d44 1259694 golang-goconvey-dev_1.5.0.orig.tar.gz
+ f46a20e29d69b16e5467ab97b21c2204fa3e912ad3f3f82271668c6a812c130c 1190 golang-goconvey-dev_1.5.0-1.debian.tar.gz
+
+Package: golang-graphics-go
+Format: 3.0 (quilt)
+Binary: golang-graphics-go-dev
+Architecture: all
+Version: 0.0~git20140903-1
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: https://code.google.com/p/graphics-go
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), golang-go, dh-golang
+Package-List:
+ golang-graphics-go-dev deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/g/golang-graphics-go
+Files: 
+ e121e17cffe9bb561ccaa0eb73bd639f 1550 golang-graphics-go_0.0~git20140903-1.dsc
+ 29feae46d2632cdb9c8ea6befad4c7fb 1863348 golang-graphics-go_0.0~git20140903.orig.tar.xz
+ a4ed401f6731b73e6f5380e944f470a1 2316 golang-graphics-go_0.0~git20140903-1.debian.tar.gz
+Checksums-Sha1: 
+ 72682d3499038b8146cf9bba6bb929fc427fb98b 1550 golang-graphics-go_0.0~git20140903-1.dsc
+ d688dadce9970823e4ce4d31b3349330f0f0ac95 1863348 golang-graphics-go_0.0~git20140903.orig.tar.xz
+ ee742ed635e71ca71bdf5f77bc8b37fb1cd51458 2316 golang-graphics-go_0.0~git20140903-1.debian.tar.gz
+Checksums-Sha256: 
+ 33dcaaa3066f4407482979063872d4295f7c935003786f986a8bf874c03b7ca4 1550 golang-graphics-go_0.0~git20140903-1.dsc
+ ae9471645f94a0ed070c5695ad087cff3de1bb01ba40f56ad786c6de75e06218 1863348 golang-graphics-go_0.0~git20140903.orig.tar.xz
+ 39bcdd95450613974f2215d57289fb6113d4321ead0ddfb09aa757b4c8319ad6 2316 golang-graphics-go_0.0~git20140903-1.debian.tar.gz
+
+Package: golang-jamslam-freetype-go
+Format: 3.0 (quilt)
+Binary: golang-jamslam-freetype-go-dev
+Architecture: all
+Version: 0.0~git20140903-1
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: https://code.google.com/r/jamslam-freetype-go/
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), golang-go, dh-golang
+Package-List:
+ golang-jamslam-freetype-go-dev deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/g/golang-jamslam-freetype-go
+Files: 
+ e1930cb61f5762b54ed297d92505a22d 1628 golang-jamslam-freetype-go_0.0~git20140903-1.dsc
+ f1c020c0ab0a6f29b84641142fed1ced 262728 golang-jamslam-freetype-go_0.0~git20140903.orig.tar.xz
+ 5f10e78bdbae940fe812b03848471d02 1965 golang-jamslam-freetype-go_0.0~git20140903-1.debian.tar.gz
+Checksums-Sha1: 
+ 8e00b8aa821d0f9f75ccea270627fba9f47a0c8e 1628 golang-jamslam-freetype-go_0.0~git20140903-1.dsc
+ 65faf24a8731db171ce5a6606d8a5b4b8ff29a2d 262728 golang-jamslam-freetype-go_0.0~git20140903.orig.tar.xz
+ 0922d0bb32f3a88863e0e4fe2f0bfcf513a200e3 1965 golang-jamslam-freetype-go_0.0~git20140903-1.debian.tar.gz
+Checksums-Sha256: 
+ fe7d2008a962fac3491734cd5e2cc444c980624c1d47c932b97c6effa2d8143a 1628 golang-jamslam-freetype-go_0.0~git20140903-1.dsc
+ a3ad9e97f29038c6c4fb27014a3355b246395949c8a46cedac40b9a79b29f121 262728 golang-jamslam-freetype-go_0.0~git20140903.orig.tar.xz
+ a728b738e4f17b134394ec4bf341ffc57097c7b902bea9b59f290e478c842f7a 1965 golang-jamslam-freetype-go_0.0~git20140903-1.debian.tar.gz
+
+Package: golang-sqlite3
+Format: 3.0 (quilt)
+Binary: golang-sqlite3-dev
+Architecture: all
+Version: 0.0~git2014090312-1
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: https://github.com/mattn/go-sqlite3
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 9.0.0), golang-go, dh-golang, libsqlite3-dev
+Package-List:
+ golang-sqlite3-dev deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/g/golang-sqlite3
+Files: 
+ ddf7ed1dd651f872117061f7392999d3 1563 golang-sqlite3_0.0~git2014090312-1.dsc
+ 7ef8d7aff613f2153f4b5fe471b50981 4257428 golang-sqlite3_0.0~git2014090312.orig.tar.xz
+ f697b78088937d2b98e82b47be5df8e1 2218 golang-sqlite3_0.0~git2014090312-1.debian.tar.gz
+Checksums-Sha1: 
+ e0685fa66161c6d58af44d05b51d90d91d715e88 1563 golang-sqlite3_0.0~git2014090312-1.dsc
+ 0ffeb7bae4b8216000b52a59694ccbd73e59fb79 4257428 golang-sqlite3_0.0~git2014090312.orig.tar.xz
+ 4942322bc885cbe1e7a3d8c8e822bcf428282c84 2218 golang-sqlite3_0.0~git2014090312-1.debian.tar.gz
+Checksums-Sha256: 
+ 12206a609bbf8b40789f8e76f85ddc64ac3e7bff947ab1026eebba31fcdba068 1563 golang-sqlite3_0.0~git2014090312-1.dsc
+ 6ea0bf947cc275faf13b6588626a9f8dd248a167f715654c93217d3be4421cc1 4257428 golang-sqlite3_0.0~git2014090312.orig.tar.xz
+ f07d67eea7e3f4695e8271479fe88b2a73243ef4a6f42632062b79b52a9ccf00 2218 golang-sqlite3_0.0~git2014090312-1.debian.tar.gz
+
+Package: golang-xgb
+Format: 3.0 (quilt)
+Binary: golang-xgb-dev
+Architecture: all
+Version: 0.0~git20140510-1
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: https://github.com/BurntSushi/xgb
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), golang-go, dh-golang, xcb-proto
+Package-List:
+ golang-xgb-dev deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/g/golang-xgb
+Files: 
+ 18b1b7933f8480c068944b4d39481f83 1485 golang-xgb_0.0~git20140510-1.dsc
+ 2dab8cbbc5e7d1ae8ec7a1782ed609e8 2052072 golang-xgb_0.0~git20140510.orig.tar.xz
+ 1e92f19de26211ac804a5655ac358e2b 2613 golang-xgb_0.0~git20140510-1.debian.tar.gz
+Checksums-Sha1: 
+ 948c57423428ae7ef0604a2266225ce539ff4994 1485 golang-xgb_0.0~git20140510-1.dsc
+ 4476b9a981dad60bcb39937b9d911b6cee226f7d 2052072 golang-xgb_0.0~git20140510.orig.tar.xz
+ f8ca0d980a9e76bac60ac6cc45e2b54ac64f7e2d 2613 golang-xgb_0.0~git20140510-1.debian.tar.gz
+Checksums-Sha256: 
+ a10f41d5b1144bb9548b0f800faac627e318918f1a1690cf67573defab227a18 1485 golang-xgb_0.0~git20140510-1.dsc
+ 36a267803598531443cdbc65a321f215924c98687b42b3bc28ef4e4bda0ce2e9 2052072 golang-xgb_0.0~git20140510.orig.tar.xz
+ fda9508f0a1c956613b5eb8183eec23a15c5d8006abda279abe12b7ff465dc9d 2613 golang-xgb_0.0~git20140510-1.debian.tar.gz
+
+Package: golang-xgbutil
+Format: 3.0 (quilt)
+Binary: golang-xgbutil-dev
+Architecture: all
+Version: 1~git20140610
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: https://github.com/BurntSushi/xgb
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), dh-golang, golang-go, xcb-proto, golang-xgb-dev, golang-graphics-go-dev, golang-jamslam-freetype-go-dev
+Package-List:
+ golang-xgbutil-dev deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/g/golang-xgbutil
+Files: 
+ c2824d89109ed4d96cf36018311c3c06 1571 golang-xgbutil_1~git20140610.dsc
+ 78bedb160de6ede1cee45cd0dd63d9e8 1078620 golang-xgbutil_1~git20140610.orig.tar.xz
+ 2380d6a16716ded3cd31a2728a1abb90 2251 golang-xgbutil_1~git20140610.debian.tar.gz
+Checksums-Sha1: 
+ 38bbf68b10b3a5e54618c5d92aca85f7651c6f5d 1571 golang-xgbutil_1~git20140610.dsc
+ d8c9161f1544d131c9c4cbae319512b75627deb9 1078620 golang-xgbutil_1~git20140610.orig.tar.xz
+ 340a5407ed3af6ef652f41f5d828ac1ebede160a 2251 golang-xgbutil_1~git20140610.debian.tar.gz
+Checksums-Sha256: 
+ 1d2d6b84abb02dddea781516c7dfe97bd32c81a3224d8707d98d0b3335d9d806 1571 golang-xgbutil_1~git20140610.dsc
+ cdabe369dc467421394e7e795dbc0722d8d589068c84348f0da17cfcc576c74d 1078620 golang-xgbutil_1~git20140610.orig.tar.xz
+ b24d10335655b925f03446c118f36f793b4c5149dcea746cbe3bd0bf6e833a17 2251 golang-xgbutil_1~git20140610.debian.tar.gz
+
+Package: gstreamer0.10-ffmpeg
+Format: 3.0 (quilt)
+Binary: gstreamer0.10-ffmpeg, gstreamer0.10-ffmpeg-dbg
+Architecture: any
+Version: 0.10.13-7~trusty
+Maintainer: Maintainers of GStreamer packages <pkg-gstreamer-maintainers@lists.alioth.debian.org>
+Uploaders: Loic Minier <lool@dooz.org>, Sebastian Dröge <slomo@debian.org>, Sjoerd Simons <sjoerd@debian.org>
+Standards-Version: 3.8.4
+Build-Depends: debhelper (>= 8.1.3), cdbs (>= 0.4.93), dpkg-dev (>= 1.15.1), autotools-dev, zlib1g-dev, libglib2.0-dev (>= 2.4.0), pkg-config (>= 0.11.0), libgstreamer0.10-dev (>= 0.10.36), libgstreamer-plugins-base0.10-dev (>= 0.10.36), liborc-0.4-dev (>= 1:0.4.6), gstreamer-tools (>= 0.10.36), libbz2-dev, yasm
+Package-List:
+ gstreamer0.10-ffmpeg deb libs optional
+ gstreamer0.10-ffmpeg-dbg deb debug extra
+Priority: optional
+Section: libs
+Directory: pool/main/g/gstreamer0.10-ffmpeg
+Files: 
+ 1f1b57ebee29bc93f5540bcea2660ed7 1983 gstreamer0.10-ffmpeg_0.10.13-7~trusty.dsc
+ 7f5beacaf1312db2db30a026b36888c4 4784059 gstreamer0.10-ffmpeg_0.10.13.orig.tar.bz2
+ cc93112d576901054cdc017da8f7bf09 11871 gstreamer0.10-ffmpeg_0.10.13-7~trusty.debian.tar.gz
+Checksums-Sha1: 
+ 7a3e7f344c072ad0bf6736403b7f53f6ac808865 1983 gstreamer0.10-ffmpeg_0.10.13-7~trusty.dsc
+ 8de5c848638c16c6c6c14ce3b22eecd61ddeed44 4784059 gstreamer0.10-ffmpeg_0.10.13.orig.tar.bz2
+ a434bdcc1894a7117f83125490a7e67f92d4ee00 11871 gstreamer0.10-ffmpeg_0.10.13-7~trusty.debian.tar.gz
+Checksums-Sha256: 
+ cc41122f07d0014483067205331c336f7487d60d6cdfd679d6f5b08777e460da 1983 gstreamer0.10-ffmpeg_0.10.13-7~trusty.dsc
+ 76fca05b08e00134e3cb92fa347507f42cbd48ddb08ed3343a912def187fbb62 4784059 gstreamer0.10-ffmpeg_0.10.13.orig.tar.bz2
+ 5d084389bb52b52bc92815259671bfbb5a830df60d008447b77a346e11e7599a 11871 gstreamer0.10-ffmpeg_0.10.13-7~trusty.debian.tar.gz
+
+Package: python-deepin-lunar
+Format: 3.0 (quilt)
+Binary: python-deepin-lunar
+Architecture: any
+Version: 0.3.2-6
+Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
+Homepage: http://www.linuxdeepin.com/
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), python-dev, python-setuptools, autotools-dev, python-gobject-2-dev, libglib2.0-dev, python-gtk2-dev, libdlunar-calendar-dev, libdtk-widget-dev, libdlunar-date-dev
+Package-List:
+ python-deepin-lunar deb libs extra
+Priority: extra
+Section: libs
+Directory: pool/main/p/python-deepin-lunar
+Files: 
+ edb4e6a5ceb722850f2c5c92ca7f04c2 1615 python-deepin-lunar_0.3.2-6.dsc
+ f6de0913246111c70ce5204fd6167298 4856 python-deepin-lunar_0.3.2.orig.tar.gz
+ fea580956fa3eea6d8e70b703df99e25 3186 python-deepin-lunar_0.3.2-6.debian.tar.gz
+Checksums-Sha1: 
+ d62d60b05512af5d719b448d74e886649a8d0d7b 1615 python-deepin-lunar_0.3.2-6.dsc
+ 53005dee559208bf3d996a5940617653c14fda64 4856 python-deepin-lunar_0.3.2.orig.tar.gz
+ bca6d466cf4ce71cb00d4f17f2674867fed412c9 3186 python-deepin-lunar_0.3.2-6.debian.tar.gz
+Checksums-Sha256: 
+ b9ef243305a82d72dd2c8a7adaef04eea3287bb5ee843455b02afcda786e5d7c 1615 python-deepin-lunar_0.3.2-6.dsc
+ c6b7757e754fc7ad252c8b56ee2287c810ebd6825fccb79530e43de642426078 4856 python-deepin-lunar_0.3.2.orig.tar.gz
+ 4955c6e00b372875adc0ae58fb0b0a2d735a89b0b9873d2aba414c26e4b857f6 3186 python-deepin-lunar_0.3.2-6.debian.tar.gz
+
+Package: python-deepin-storm
+Format: 3.0 (native)
+Binary: python-deepin-storm
+Architecture: all
+Version: 0.2+20140703162420~e6fe6aab1c
+Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
+Homepage: http://linuxdeepin.com/
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0), python, python-setuptools, intltool
+Package-List:
+ python-deepin-storm deb net extra
+Priority: extra
+Section: net
+Directory: pool/main/p/python-deepin-storm
+Files: 
+ 71f01af9ddd553d67c65cf4323d3da81 1283 python-deepin-storm_0.2+20140703162420~e6fe6aab1c.dsc
+ 6078264f8c0c8b0b813e78b35e4034d1 39481 python-deepin-storm_0.2+20140703162420~e6fe6aab1c.tar.gz
+Checksums-Sha1: 
+ e58c5bdcf6454b0c593d33674161a047026d14bb 1283 python-deepin-storm_0.2+20140703162420~e6fe6aab1c.dsc
+ 5b7f8ef288245c60845814fc0529843132a53746 39481 python-deepin-storm_0.2+20140703162420~e6fe6aab1c.tar.gz
+Checksums-Sha256: 
+ cefc9458fe683dc93c4cfcc8ae212782ab6d72e3ee3721c08a8948a007ff765e 1283 python-deepin-storm_0.2+20140703162420~e6fe6aab1c.dsc
+ 9eb5af80c739ab02d9434d71a52828b0193a96f38627a358be43e77696d6d2b1 39481 python-deepin-storm_0.2+20140703162420~e6fe6aab1c.tar.gz
+
+Package: python-epc
+Format: 3.0 (quilt)
+Binary: python-epc, python3-epc
+Architecture: all
+Version: 0.0.5-1
+Maintainer: leaeasy <leaeasy@gmail.com>
+Homepage: https://github.com/tkf/python-epc
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 7), dh-python, python-all, python3-all, python-setuptools, python3-setuptools, python-sexpdata, python3-sexpdata, python-nose, python3-nose
+Package-List:
+ python-epc deb python optional
+ python3-epc deb python optional
+Priority: optional
+Section: python
+Directory: pool/main/p/python-epc
+Files: 
+ ba7524f296d2d32852332cabea75072e 1552 python-epc_0.0.5-1.dsc
+ 1475e7f42c28a7790ec3400824064eb7 361352 python-epc_0.0.5.orig.tar.xz
+ 8038150bf06b9f8df9efad4ae499957d 1770 python-epc_0.0.5-1.debian.tar.gz
+Checksums-Sha1: 
+ 77a9692093b3f73da70469316130d83d6e9413b5 1552 python-epc_0.0.5-1.dsc
+ 2f1dfee553c0d813699ab33d3db87852efd9b2e1 361352 python-epc_0.0.5.orig.tar.xz
+ ac983e3b710e34e0995e89ff4e5b3db17e4aa12d 1770 python-epc_0.0.5-1.debian.tar.gz
+Checksums-Sha256: 
+ ab88249d2488e6d967ea650ea0fdf32a4fae3d7806be30d5a7c8733fd81decc1 1552 python-epc_0.0.5-1.dsc
+ 2bb12f064d9e3d0d0e3c0c7fa29fddeb0db7756d3950054ab90b697e3c6a0e7c 361352 python-epc_0.0.5.orig.tar.xz
+ 1c890e74839049a667dae1218c806d9c704214f314476fc15b8e46e13445345c 1770 python-epc_0.0.5-1.debian.tar.gz
+
+Package: python-javascriptcore
+Format: 3.0 (quilt)
+Binary: python-javascriptcore
+Architecture: any
+Version: 0.0003-deepin2
+Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Homepage: http://github.com/sumary/pyjavascriptcore.git
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 8.0.0), cython, libwebkitgtk-dev, python-dev, python-setuptools
+Package-List:
+ python-javascriptcore deb utils extra
+Priority: extra
+Section: utils
+Directory: pool/main/p/python-javascriptcore
+Files: 
+ 6eda943d88a8534e0691167e9786a033 1582 python-javascriptcore_0.0003-deepin2.dsc
+ b01b9e02c8babe38ef789e9904f6497f 92926 python-javascriptcore_0.0003.orig.tar.gz
+ 4147b89526d1a8b872ceebd04068b9d8 2090 python-javascriptcore_0.0003-deepin2.debian.tar.gz
+Checksums-Sha1: 
+ c5e3108d2ef9ed9cfb2f1f4a24e74bfe5901008b 1582 python-javascriptcore_0.0003-deepin2.dsc
+ 1be31e4e03b9de9100441cde8a85766566192b70 92926 python-javascriptcore_0.0003.orig.tar.gz
+ cd0372ad72071870de66809fa2e6fc680048b447 2090 python-javascriptcore_0.0003-deepin2.debian.tar.gz
+Checksums-Sha256: 
+ 6dfe979fcd47e727de352d496a70e7fc777b72e31f2a93291d2d107c70f00697 1582 python-javascriptcore_0.0003-deepin2.dsc
+ f65a0870584fe1c51b3d272d96d586ad3b8396315dbddb51264333a6ffd90d8c 92926 python-javascriptcore_0.0003.orig.tar.gz
+ 5b339434b7b307e51cdb6f8c1465753c1dad745255d62bceb6f4c2bae181b068 2090 python-javascriptcore_0.0003-deepin2.debian.tar.gz
+
+Package: python-jedi
+Format: 3.0 (quilt)
+Binary: python-jedi, python3-jedi, vim-python-jedi
+Architecture: all
+Version: 0.7.0-1
+Maintainer: Piotr Ożarowski <piotr@debian.org>
+Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Homepage: https://github.com/davidhalter/jedi
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 7), dh-python, python-all, python3-all, python-setuptools, python3-setuptools
+Package-List:
+ python-jedi deb python optional
+ python3-jedi deb python optional
+ vim-python-jedi deb python optional
+Priority: optional
+Section: python
+Directory: pool/main/p/python-jedi
+Files: 
+ eba94c0ee6684e9ff6b520c79d1e40c3 1911 python-jedi_0.7.0-1.dsc
+ 645f7d94035b33834fda83953aadf19f 17135 python-jedi_0.7.0.orig-vim.tar.gz
+ ca916813e05610e11810739e3fcc4882 204056 python-jedi_0.7.0.orig.tar.xz
+ feb8c933d5ee1c272cdd76eba1b23632 2446 python-jedi_0.7.0-1.debian.tar.gz
+Checksums-Sha1: 
+ 533497a8bdd395a8dfeb0e8ed819642a6bd2a615 1911 python-jedi_0.7.0-1.dsc
+ ee22f0278ce99b37777071c9e0b5ecff7ec3b58c 17135 python-jedi_0.7.0.orig-vim.tar.gz
+ 5834cb53e8c0d690b0dd5cf7636f2712159357c7 204056 python-jedi_0.7.0.orig.tar.xz
+ 78937c1c86ef7948fd7b0123f8cd92484a15e77d 2446 python-jedi_0.7.0-1.debian.tar.gz
+Checksums-Sha256: 
+ 8827c50ceb1580d1c848450cd5dc711d2cf44a1aaf8a1ae1df8c0aa25f76c39f 1911 python-jedi_0.7.0-1.dsc
+ c59610963ae9e09f893f7a30897da897dee0ded7ce96523d867e2c36e87c7afd 17135 python-jedi_0.7.0.orig-vim.tar.gz
+ 68fb1e817575d3e058da6968cade179585456928cb918d5ec7876b7d33fc8997 204056 python-jedi_0.7.0.orig.tar.xz
+ 1e1837fbaa5da1ec48078630ce90519402f067c8409f9881903f69996ab23caa 2446 python-jedi_0.7.0-1.debian.tar.gz
+
+Package: python-tesseract
+Format: 3.0 (native)
+Binary: python-tesseract
+Architecture: any
+Version: 0.8-1.9
+Maintainer: FreeToGo Nowhere <FreeToGo@gmail.com>
+Standards-Version: 3.9.3
+Build-Depends: autotools-dev, cdbs (>= 0.4.85~), debhelper (>= 7.0.1), dh-buildinfo, python-support, python-all-dev, python-setuptools, pkg-config, libopencv-dev, libtesseract-dev, libleptonica-dev, swig
+Package-List:
+ python-tesseract deb python optional
+Priority: optional
+Section: python
+Directory: pool/main/p/python-tesseract
+Files: 
+ ca66da2a21e5c21ef175ac9672959cb7 1285 python-tesseract_0.8-1.9.dsc
+ 37a37208df4545ebad5b54950bf3f905 30478467 python-tesseract_0.8-1.9.tar.gz
+Checksums-Sha1: 
+ f7094027cce177e6e93e5e2bbfef938cbf162c0b 1285 python-tesseract_0.8-1.9.dsc
+ 3c9370f7aa6e7795694fa663f2ba2ab77308df94 30478467 python-tesseract_0.8-1.9.tar.gz
+Checksums-Sha256: 
+ 0ad6fb5653dc57f0d161c41ea57c424dbe698bca9c7ac955b5936ed956a326fe 1285 python-tesseract_0.8-1.9.dsc
+ ebb3222ad6535432e7bb113b522b98c7d73ab4d1d205516fb36218a00716b002 30478467 python-tesseract_0.8-1.9.tar.gz
+
+Package: qml-dde-dock-applet
+Format: 3.0 (native)
+Binary: qml-dde-dock-applet
+Architecture: any
+Version: 0.0.2+20141121121230~e83aab51a8
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.0.0), qt5-qmake, qt5-default, qtdeclarative5-dev
+Package-List:
+ qml-dde-dock-applet deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/q/qml-dde-dock-applet
+Files: 
+ 654850d6b33fef11f4bd1e3bbb0eb0f5 1315 qml-dde-dock-applet_0.0.2+20141121121230~e83aab51a8.dsc
+ 456f5c8ee8626672dd6b40c3de462b9a 129246 qml-dde-dock-applet_0.0.2+20141121121230~e83aab51a8.tar.gz
+Checksums-Sha1: 
+ 19b2400a9587bd1a2ec2e1d793691181beb3c23d 1315 qml-dde-dock-applet_0.0.2+20141121121230~e83aab51a8.dsc
+ d5f5da844218f39ecbdbcaf9c60cce78f2a1ea07 129246 qml-dde-dock-applet_0.0.2+20141121121230~e83aab51a8.tar.gz
+Checksums-Sha256: 
+ 24c9aafe5e576f25f81577f3a2af5b3f89129fa6c4a16414e03a20509a3b4bda 1315 qml-dde-dock-applet_0.0.2+20141121121230~e83aab51a8.dsc
+ 0dd491f4162a2ae7ad071602281cf3308027dfb61f3ca21b326be70b02dac7fa 129246 qml-dde-dock-applet_0.0.2+20141121121230~e83aab51a8.tar.gz
+
+Package: qml-gettext-plugin
+Format: 3.0 (native)
+Binary: dde-qml-gettext-plugin
+Architecture: any
+Version: 0.0.3-1+git20140509084447~3a1d3d7002
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.0.0), qt5-qmake, qt5-default, qtdeclarative5-dev, clang, qtbase5-private-dev, qtdeclarative5-private-dev
+Package-List:
+ dde-qml-gettext-plugin deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/q/qml-gettext-plugin
+Files: 
+ a5b36611f89c7f4e4b0da75599197e54 1396 qml-gettext-plugin_0.0.3-1+git20140509084447~3a1d3d7002.dsc
+ 5210895329cba2859d120d413d3f870d 2287296 qml-gettext-plugin_0.0.3-1+git20140509084447~3a1d3d7002.tar.gz
+Checksums-Sha1: 
+ d99fb097a92ab25579db361581079c6e603f1688 1396 qml-gettext-plugin_0.0.3-1+git20140509084447~3a1d3d7002.dsc
+ d25d2a8297c37421993dd702b586ed5ca8d03033 2287296 qml-gettext-plugin_0.0.3-1+git20140509084447~3a1d3d7002.tar.gz
+Checksums-Sha256: 
+ 71d981ba6f1b63a4b9f5f5802a883988802585485bac44344db0ade24721a2d7 1396 qml-gettext-plugin_0.0.3-1+git20140509084447~3a1d3d7002.dsc
+ c143f53953789aff8bbf1a6caa173bae72f4d5562a30acf8c55b461a554adae0 2287296 qml-gettext-plugin_0.0.3-1+git20140509084447~3a1d3d7002.tar.gz
+
+Package: qtav
+Format: 3.0 (native)
+Binary: qtav-sdk, libqtav, libqtavwidgets, qtav-dev, qtav-private-dev, qml-module-qtav, qtav-players
+Architecture: any all
+Version: 1.4.2-deepin3
+Maintainer: Sou Bunnbu <iyzsong@gmail.com>
+Homepage: http://www.qtav.org
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), qt5-default, qt5-qmake, libqt5opengl5-dev, qtdeclarative5-dev, libass-dev, libavutil-dev, libavresample-dev, libavcodec-dev, libavformat-dev, libswscale-dev, libavfilter-dev, libopenal-dev, libxv-dev, libva-dev
+Package-List:
+ libqtav deb libs extra
+ libqtavwidgets deb libs extra
+ qml-module-qtav deb libs extra
+ qtav-dev deb libdevel extra
+ qtav-players deb video extra
+ qtav-private-dev deb libdevel extra
+ qtav-sdk deb misc extra
+Priority: extra
+Section: libs
+Directory: pool/main/q/qtav
+Files: 
+ 74c508cc7c37378c6349bf8e7c9dc7ee 1568 qtav_1.4.2-deepin3.dsc
+ 863cbf580500445a739c78b80bcab715 910675 qtav_1.4.2-deepin3.tar.gz
+Checksums-Sha1: 
+ 5cfedb92da34e78e7bc51af5e3d1faae110f1f12 1568 qtav_1.4.2-deepin3.dsc
+ 2ed6f6247c81afcb955c01d6c90af5d23a4721bb 910675 qtav_1.4.2-deepin3.tar.gz
+Checksums-Sha256: 
+ 75054004b36ea3a212b6f33d07bd84f0828a546a52bd93b64b1c903e21914022 1568 qtav_1.4.2-deepin3.dsc
+ bf88a384506e0a680e0a0a2cb7ce40b2a16c471b90fbd4ed74c65ad18c45a5ab 910675 qtav_1.4.2-deepin3.tar.gz
+
+Package: tlp
+Format: 3.0 (quilt)
+Binary: tlp, tlp-rdw
+Architecture: all
+Version: 0.6-2~trusty
+Maintainer: Thomas Koch <linrunner@gmx.net>
+Homepage: http://linrunner.de/tlp
+Standards-Version: 3.9.5
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/tlp.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/tlp.git
+Build-Depends: debhelper (>= 9)
+Package-List:
+ tlp deb utils optional
+ tlp-rdw deb utils optional
+Priority: optional
+Section: utils
+Directory: pool/main/t/tlp
+Files: 
+ 472d391948adde21f110d6fd73d03f81 1468 tlp_0.6-2~trusty.dsc
+ 42ec22509b2d2e49ca08df6f8510dcc5 55001 tlp_0.6.orig.tar.gz
+ 15929f1c5f2a16c2ba0c01da6747d12c 3839 tlp_0.6-2~trusty.debian.tar.gz
+Checksums-Sha1: 
+ 17a27caeedd8c7b7cc4e1b3d9c813c61766a672f 1468 tlp_0.6-2~trusty.dsc
+ 8be8032c1e4da7886f16d50a98786419f01d0ef3 55001 tlp_0.6.orig.tar.gz
+ 866580b2ca0d73fcbed8db804d36f616a9f2e23c 3839 tlp_0.6-2~trusty.debian.tar.gz
+Checksums-Sha256: 
+ bc86e882761925b6e9d4741ef5d4cbe19440b9bc741633bb5d27b76ea6ab7a65 1468 tlp_0.6-2~trusty.dsc
+ 30e4790ca53c03c2673f87f6cf2d1cf41bed956f3aaed191a4895ade2be784b6 55001 tlp_0.6.orig.tar.gz
+ fdfc319943b5b1365ac4921a3ac58e0b6c66100e1f1fa8fbfa586df8e17d1849 3839 tlp_0.6-2~trusty.debian.tar.gz
+
+Package: ttf-xhei
+Format: 3.0 (quilt)
+Binary: ttf-xhei-fonts
+Architecture: all
+Version: 20130505-9
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Uploaders: Simon Ochsenreither <simon@ochsenreither.de>
+Homepage: http://www.droidfonts.com/
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 9~)
+Package-List:
+ ttf-xhei-fonts deb oldlibs extra
+Priority: optional
+Section: fonts
+Directory: pool/main/t/ttf-xhei
+Files: 
+ 2d290413a71dc66482580970eb364f0e 1476 ttf-xhei_20130505-9.dsc
+ 60d1894d0211f873cc6e8fa46fb5cb44 29516474 ttf-xhei_20130505.orig.tar.gz
+ 2ed67ff8c4de99ba31331343713476a2 2337 ttf-xhei_20130505-9.debian.tar.gz
+Checksums-Sha1: 
+ cae014ac0acaa917c4808ea640ce5f532eb31100 1476 ttf-xhei_20130505-9.dsc
+ a3b711b483b88cb8404da64903d5d5242b57f17f 29516474 ttf-xhei_20130505.orig.tar.gz
+ 7b8ad5f5c4aab66ce4ebf15ad75f225256281459 2337 ttf-xhei_20130505-9.debian.tar.gz
+Checksums-Sha256: 
+ 691303e500d8b3aa61a713e5603a23fb94105397f5e05b84a0f2505687a8eafc 1476 ttf-xhei_20130505-9.dsc
+ 34904b34501549895bdf507c3e0acb4f0d95f85c974a7559d2466ab63d51e76f 29516474 ttf-xhei_20130505.orig.tar.gz
+ 9883c3a200c948e8b3406a740025a660c9bfa29934ff34b5b390c969bed7c5fb 2337 ttf-xhei_20130505-9.debian.tar.gz
+
+Package: tzdata
+Format: 3.0 (quilt)
+Binary: tzdata, tzdata-java
+Architecture: all
+Version: 2014e-1
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Uploaders: Clint Adams <clint@debian.org>, Aurelien Jarno <aurel32@debian.org>, Adam Conrad <adconrad@0c3.net>
+Homepage: http://www.iana.org/time-zones
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 5.0.0)
+Build-Depends-Indep: po-debconf, default-jre-headless, rdfind, symlinks
+Package-List:
+ tzdata deb libs required
+ tzdata-java deb java optional
+Priority: required
+Section: libs
+Directory: pool/main/t/tzdata
+Files: 
+ fdc1cd1e3218d29e0814ae363be32bfd 1669 tzdata_2014e-1.dsc
+ 8a49fdedd4e832da8e85f7f9bcaedc33 221587 tzdata_2014e.orig.tar.gz
+ 9c19334ef13f8700a124a40ffc0a341c 100740 tzdata_2014e-1.debian.tar.xz
+Checksums-Sha1: 
+ b824ea52308bbfb3c58b63c2131e809108adbd48 1669 tzdata_2014e-1.dsc
+ 724b0e19ba26316d7e1f6fee1ec5934fa31454ab 221587 tzdata_2014e.orig.tar.gz
+ 9a9b360dc3db37bef32f1c839cf6cd73810b9ea9 100740 tzdata_2014e-1.debian.tar.xz
+Checksums-Sha256: 
+ 493057613d02defde45bf8e355dee4a48d3304b8f53ddaf2b1f26b3434b45d0b 1669 tzdata_2014e-1.dsc
+ 08e243a79051f838d86ac1311a78b74047951302d448024e823b5b7aa71f86c5 221587 tzdata_2014e.orig.tar.gz
+ c030ee1070913a30b9e1ec411cd581cd4c51dbec0c02de91d6e12d7bcb5578b4 100740 tzdata_2014e-1.debian.tar.xz
+Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+
+Package: tzdata-l10n
+Format: 1.0
+Binary: tzdata-l10n
+Architecture: all
+Version: 2013i-5
+Maintainer: leaeasy <leaeasy@gmail.com>
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 8)
+Package-List:
+ tzdata-l10n deb admin extra
+Priority: extra
+Section: admin
+Directory: pool/main/t/tzdata-l10n
+Files: 
+ 8287498e36a38a1ed828588c0ce0bf90 1054 tzdata-l10n_2013i-5.dsc
+ 72e92b95073c05822a99ddc9b20fa018 263292 tzdata-l10n_2013i-5.tar.gz
+Checksums-Sha1: 
+ 99f5d640a4848ab83a2fef83d1618b526df6b339 1054 tzdata-l10n_2013i-5.dsc
+ 1258fd3a22a208f1bfdbd0011a68735d5471ce6a 263292 tzdata-l10n_2013i-5.tar.gz
+Checksums-Sha256: 
+ 9bef3e722cc36d5c3a0ac3c1974c6da81e5708e1a85170746fce12a507a61354 1054 tzdata-l10n_2013i-5.dsc
+ 83ae5d971650792ff0118046ec650e50df1aa498a974daa86e4cce74e105bcba 263292 tzdata-l10n_2013i-5.tar.gz
+
+Package: vte
+Format: 3.0 (quilt)
+Binary: libvte9, libvte9-udeb, libvte-dev, libvte-common, python-vte, libvte-doc
+Architecture: any all
+Version: 1:0.28.2-6deepin7~saucy
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Josselin Mouette <joss@debian.org>, Michael Biebl <biebl@debian.org>
+Standards-Version: 3.9.2
+Vcs-Bzr: http://code.launchpad.net/~ubuntu-desktop/vte/ubuntu
+Build-Depends: cdbs (>= 0.4.90), debhelper (>= 8), gnome-pkg-tools (>= 0.10), dh-autoreconf, libglib2.0-dev (>= 2.26.0), libcairo2-dev, libx11-dev, libgtk2.0-dev (>= 2.20.0), gobject-introspection (>= 0.9.12-4~), gettext, python-gtk2-dev, python-all-dev (>= 2.6.6-3~), libncurses5-dev, gtk-doc-tools, libpango1.0-dev (>= 1.22.0), intltool (>= 0.35)
+Build-Depends-Indep: libglib2.0-doc, libgtk2.0-doc, libatk1.0-doc
+Package-List:
+ libvte-common deb libs optional
+ libvte-dev deb libdevel optional
+ libvte-doc deb doc optional
+ libvte9 deb libs optional
+ libvte9-udeb udeb debian-installer extra
+ python-vte deb python optional
+Priority: optional
+Section: libs
+Directory: pool/main/v/vte
+Files: 
+ 1ab09bb02a8db6cac0557febdd459287 2297 vte_0.28.2-6deepin7~saucy.dsc
+ 1748ca6ca0569ea69b0fabcb4316ae50 2733688 vte_0.28.2.orig.tar.xz
+ 0625766a090e6a38c6b572f64ab28ea5 31504 vte_0.28.2-6deepin7~saucy.debian.tar.gz
+Checksums-Sha1: 
+ 375b86426861c7c9bae77d4f5cc3a386d8201021 2297 vte_0.28.2-6deepin7~saucy.dsc
+ 5c1d966db254daae89d7b106eae889e3adcb075a 2733688 vte_0.28.2.orig.tar.xz
+ 98c7a2f361c59259a00d5b8e683285e92445ab7e 31504 vte_0.28.2-6deepin7~saucy.debian.tar.gz
+Checksums-Sha256: 
+ 44f390fea99f6ea13ddda98ed16bf20f9d4b2935e6e81d305b608c4485361a58 2297 vte_0.28.2-6deepin7~saucy.dsc
+ ee52b91ecab31d0a64399896ce0c3515e579ea8ac212a00eb9b0895c58f001fe 2733688 vte_0.28.2.orig.tar.xz
+ b63a344541f0feebddac0232a8d7196d22d4819ec32cbd6cb39e33b2ba50e940 31504 vte_0.28.2-6deepin7~saucy.debian.tar.gz
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: warsow
+Format: 3.0 (quilt)
+Binary: warsow
+Architecture: all
+Version: 15-2
+Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Homepage: http://www.warsow.net/
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ warsow deb games optional
+Priority: optional
+Section: games
+Directory: pool/main/w/warsow
+Files: 
+ 31ce0213dfb08b176ed5972c1eec5676 1313 warsow_15-2.dsc
+ 96f8330b34b4531011571d3fade64bad 572591248 warsow_15.orig.tar.xz
+ 5b0f4f3cfb333d53435ddff1bf92eb25 4300 warsow_15-2.debian.tar.gz
+Checksums-Sha1: 
+ 50a93c7ea40ca2ba66ae49f41cd0f8b93b8f16f7 1313 warsow_15-2.dsc
+ 14a70d30258779ca8ccafcb2c1ccd50b14817d10 572591248 warsow_15.orig.tar.xz
+ e49e9ac6484f4113251e99c07ea8c444fc1d884c 4300 warsow_15-2.debian.tar.gz
+Checksums-Sha256: 
+ e96de5544a2502721933520e9b8ef8c012e1abda96f53f7ef8101e6ef4a14746 1313 warsow_15-2.dsc
+ 1d3ff33a980fec06e448f70a6614cc0fc2bb8ac27008b59e6fa2fad2ee01d47e 572591248 warsow_15.orig.tar.xz
+ 912cd06e67228e6ba87a024c936f2ca447553f02585c2ee1a7f443fcb23fb3d5 4300 warsow_15-2.debian.tar.gz
+
