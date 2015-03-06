@@ -3,7 +3,8 @@
 
 pkgname=deepin-pygtk
 _pkgname=pygtk
-pkgver=@PKGVER@
+pkgver=@PKGVER_FIXED@
+_pkgver=@PKGVER@
 pkgrel=6
 pkgdesc="Python bindings for the GTK widget set - with patches to fix memory leak for deepin-ui"
 arch=('i686' 'x86_64')
@@ -15,7 +16,7 @@ optdepends=('python2-numpy')
 
 source=("@SOURCE@"
         "python27.patch"
-        "${_mirror}/p/${_pkgname}/${_pkgname}_${pkgver}-4~saucy.debian.tar.gz")
+        "${_mirror}/p/${_pkgname}/${_pkgname}_${_pkgver}-4~saucy.debian.tar.gz")
 sha256sums=('@SHA256SUM@'
             '39a30456cba055a452bb55c74ef1ff2f5f7bfaad22855b4dd569ab009b56b682'
             '7a70c1f680ee7c4cb326dad86c73a5473c8111deb92e43b6527c8dba03fa9544')
@@ -26,9 +27,9 @@ prepare() {
 
   # unzip patches
   cd "$srcdir/"
-  tar -xf ${_pkgname}_${pkgver}-4~saucy.debian.tar.gz
+  tar -xf ${_pkgname}_${_pkgver}-4~saucy.debian.tar.gz
 
-  cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${_pkgver}"
   # apply python27 patch
   # https://bugzilla.gnome.org/show_bug.cgi?id=623965
   patch -Np1 -i "${srcdir}/python27.patch"
@@ -44,13 +45,13 @@ prepare() {
 }
 
 build() {
-  cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${_pkgver}"
   PYTHON=/usr/bin/python2 ./configure --prefix=/usr
   make
 }
 
 package() {
-  cd "${srcdir}/${_pkgname}-${pkgver}"
+  cd "${srcdir}/${_pkgname}-${_pkgver}"
   make DESTDIR="${pkgdir}" install
   install -m644 gtk/gtk-extrafuncs.defs "${pkgdir}/usr/share/pygtk/2.0/defs/"
   sed -i -e 's#env python$#env python2#' "${pkgdir}"/usr/lib/pygtk/2.0/{,demos/}*.py

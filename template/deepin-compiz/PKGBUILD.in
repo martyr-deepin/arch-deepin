@@ -4,11 +4,11 @@
 # Contributor: Iven Hsu <ivenvd AT gmail>
 # Contributor: Nathan Hulse <nat.hulse@gmail.com>
 
-_pkgname=compiz
-_mainver=0.9.99
 pkgname=deepin-compiz
+_pkgname=compiz
+pkgver=@PKGVER_FIXED@
 _pkgver=@PKGVER@
-pkgver=@PKGVER@
+_mainver=0.9.99
 pkgrel=1
 epoch=1
 pkgdesc='A forked compiz for Linux Deepin desktop environment'
@@ -66,7 +66,7 @@ build() {
         -DUSE_GCONF=OFF \
         -DUSE_GSETTINGS=ON \
         -DCOMPIZ_DEFAULT_PLUGINS="ccp"
-  
+
   make
 }
 

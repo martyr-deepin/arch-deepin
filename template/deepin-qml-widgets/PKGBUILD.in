@@ -2,7 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-qml-widgets
-pkgver=@PKGVER@
+pkgver=@PKGVER_FIXED@
+_pkgver=@PKGVER@
 pkgrel=1
 pkgdesc='Deepin QML widgets'
 arch=('i686' 'x86_64')
@@ -19,13 +20,13 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 build(){
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   qmake && make
 }
 
 package() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   make INSTALL_ROOT="${pkgdir}" install
 }

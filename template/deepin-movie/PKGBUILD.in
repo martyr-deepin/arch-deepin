@@ -2,7 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-movie
-pkgver=@PKGVER@
+pkgver=@PKGVER_FIXED@
+_pkgver=@PKGVER@
 pkgrel=1
 pkgdesc='deepin movie for linuxdeepin desktop environment'
 arch=('any')
@@ -15,7 +16,7 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 prepare() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   sed 's\python\python2\' -i Makefile
 
@@ -24,7 +25,7 @@ prepare() {
 }
 
 build() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   make
 }
@@ -37,7 +38,7 @@ package() {
            'dde-go-dbus-factory' 'deepin-menu' 'deepin-qml-widgets' 'deepin-ui'
            'desktop-file-utils' 'enca' 'mediainfo' 'qtav')
 
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   make DESTDIR="${pkgdir}" install
 }

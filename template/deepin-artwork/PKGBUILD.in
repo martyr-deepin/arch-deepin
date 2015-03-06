@@ -2,7 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-artwork
-pkgver=@PKGVER@
+pkgver=@PKGVER_FIXED@
+_pkgver=@PKGVER@
 pkgrel=1
 pkgdesc='Deepin artwork themes (sounds)'
 arch=('any')
@@ -13,9 +14,9 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 package() {
-  cd "$srcdir"
+  # TODO
+  cd "${srcdir}/${pkgname}-2014"
 
-  ar xv ${pkgname}_${pkgver}-4_all.deb
-  tar -C "$pkgdir" -xvzf data.tar.gz
-  rm -rf "${pkgdir}"/usr/share/doc
+  install -dm755 "${pkgdir}"/usr/share
+  cp -r usr/share/{pixmaps,sounds} "${pkgdir}"
 }

@@ -3,7 +3,8 @@
 
 _pkgname=deepin-webkit
 pkgname=libdeepin-webkit
-pkgver=@PKGVER@
+pkgver=@PKGVER_FIXED@
+_pkgver=@PKGVER@
 pkgrel=1
 pkgdesc='A fork of webkit-gtk for Linux Deepin desktop eviroment'
 arch=('i686' 'x86_64')
@@ -27,13 +28,13 @@ sha256sums=('@SHA256SUM@'
             '7a5fbc735dcda90faeafb26778a741ebe1a5fcf0cfb44de5369db42aa60561df')
 
 prepare(){
-  cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${_pkgver}"
 
   patch -p1 -i "${srcdir}"/webkit-gtk-1.8.2-bison-2.6.patch
 }
 
 build() {
-  cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${_pkgver}"
 
   export CFLAGS="$CFLAGS -Wall -Wl,--as-needed"
   export LDFLAGS="$LDFLAGS -Wl,--no-keep-memory"
@@ -47,7 +48,7 @@ build() {
 }
 
 package() {
-  cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${_pkgver}"
 
   make DESTDIR="$pkgdir" install
 

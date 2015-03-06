@@ -2,7 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-gettext-tools
-pkgver=@PKGVER@
+pkgver=@PKGVER_FIXED@
+_pkgver=@PKGVER@
 pkgrel=1
 pkgdesc='Deepin Internationalization utilities'
 arch=('any')
@@ -13,7 +14,7 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 prepare() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   # fix python version
   find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
@@ -22,7 +23,7 @@ prepare() {
 package() {
   depends=('gettext' 'python2')
 
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   install -dm755 "${pkgdir}"/usr/{bin,lib/deepin-gettext-tools}
   install -m755 src/generate_mo.py "${pkgdir}"/usr/lib/deepin-gettext-tools/

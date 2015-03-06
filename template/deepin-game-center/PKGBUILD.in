@@ -2,7 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-game-center
-pkgver=@PKGVER@
+pkgver=@PKGVER_FIXED@
+_pkgver=@PKGVER@
 pkgrel=1
 pkgdesc="Game center for Linuxdeepin"
 arch=('any')
@@ -20,7 +21,7 @@ prepare() {
 }
 
 build() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   make
 }
@@ -28,7 +29,7 @@ build() {
 package() {
   depends=('deepin-ui' 'flashplugin' 'hicolor-icon-theme' 'python2-scipy' 'python2-jswebkit')
 
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   make DESTDIR="${pkgdir}" PREFIX="/usr" install
 }

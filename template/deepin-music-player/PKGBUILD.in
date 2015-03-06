@@ -2,7 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-music-player
-pkgver=@PKGVER@
+pkgver=@PKGVER_FIXED@
+_pkgver=@PKGVER@
 pkgrel=1
 pkgdesc='Awesome music player with brilliant and tweakful UI Deepin-UI based.'
 arch=('any')
@@ -20,7 +21,7 @@ prepare() {
 }
 
 build() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   make
 }
@@ -32,7 +33,7 @@ package() {
            'python2-dbus' 'sonata' 'cddb-py' 'python2-scipy' 'python2-pycurl'
            'python2-xlib' 'python2-keybinder2' 'deepin-ui' 'desktop-file-utils')
 
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   make DESTDIR="${pkgdir}" PREFIX="/usr" install
 }

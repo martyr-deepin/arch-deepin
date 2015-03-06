@@ -2,7 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-screenshot
-pkgver=@PKGVER@
+pkgver=@PKGVER_FIXED@
+_pkgver=@PKGVER@
 pkgrel=1
 pkgdesc="Easy-to-use screenshot tool for linuxdeepin desktop environment"
 arch=('any')
@@ -21,7 +22,7 @@ _easycp () {
 }
 
 prepare() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   # fix python version
   find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
@@ -31,7 +32,7 @@ package() {
   depends=('python2' 'gconf' 'python2-xlib' 'python2-wnck' 'python2-xdg'
            'python2-scipy' 'python2-pycurl' 'deepin-ui')
 
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   # TODO: waiting for Makefile
   _easycp "${pkgdir}"/usr/share/deepin-screenshot/ src

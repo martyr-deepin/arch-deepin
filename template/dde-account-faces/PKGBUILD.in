@@ -2,7 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-account-faces
-pkgver=@PKGVER@
+pkgver=@PKGVER_FIXED@
+_pkgver=@PKGVER@
 pkgrel=1
 pkgdesc='Deepin Account face Images'
 arch=('any')
@@ -14,8 +15,8 @@ sha256sums=('@SHA256SUM@')
 
 package() {
   depends=('accountsservice')
-  
-  cd "${pkgname}-${pkgver}"
+
+  cd "${pkgname}-${_pkgver}"
 
   install -dm 755 "${pkgdir}"/var/lib/AccountsService/icons
   install -m 644 *.png "${pkgdir}"/var/lib/AccountsService/icons/

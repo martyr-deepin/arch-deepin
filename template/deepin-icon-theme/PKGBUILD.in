@@ -2,7 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-icon-theme
-pkgver=@PKGVER@
+pkgver=@PKGVER_FIXED@
+_pkgver=@PKGVER@
 pkgrel=1
 pkgdesc="This package is DeepinIconTheme which inherits the faenza-icon-theme."
 arch=('any')
@@ -16,13 +17,13 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 prepare() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   sed 's\python\python2\' -i Makefile
 }
 
 build() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   make
 }
@@ -30,7 +31,7 @@ build() {
 package() {
   depends=('flattr-icon-theme' 'deepin-cursor-theme' 'gtk-update-icon-cache')
 
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   make DESTDIR="$pkgdir" install
 }
