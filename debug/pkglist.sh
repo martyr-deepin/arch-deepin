@@ -66,7 +66,6 @@ pkglist_deepin=(
 )
 
 pkglist_archlinux=(
-    dbus-generator
     dde-account-faces
     dde-api
     dde-control-center
@@ -79,6 +78,7 @@ pkglist_archlinux=(
     deepin-artwork-themes
     deepin-compiz
     deepin-cursor-theme
+    deepin-dbus-generator
     deepin-default-gsettings
     deepin-gettext-tools
     deepin-gtk-theme
@@ -93,9 +93,9 @@ pkglist_archlinux=(
     deepin-screenshot
     deepin-terminal
     deepin-ui
-    deepin-vte-plus
+    deepin-vte
     go-dlib
-    grub-themes-deepin
+    grub-theme-deepin
     libdeepin-webkit
     lightdm-deepin-greeter
     python2-deepin-gsettings

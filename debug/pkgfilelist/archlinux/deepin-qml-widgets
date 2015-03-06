@@ -36,6 +36,7 @@
 /usr/lib/qt/qml/Deepin/Widgets/DGridView.qml
 /usr/lib/qt/qml/Deepin/Widgets/DGroupBox.qml
 /usr/lib/qt/qml/Deepin/Widgets/DImageButton.qml
+/usr/lib/qt/qml/Deepin/Widgets/DImageCheckBox.qml
 /usr/lib/qt/qml/Deepin/Widgets/DImageCheckButton.qml
 /usr/lib/qt/qml/Deepin/Widgets/DInputActions.qml
 /usr/lib/qt/qml/Deepin/Widgets/DInputDialog.qml

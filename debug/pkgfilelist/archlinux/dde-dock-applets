@@ -179,9 +179,15 @@
 /usr/share/locale/af_ZA
 /usr/share/locale/af_ZA/LC_MESSAGES
 /usr/share/locale/af_ZA/LC_MESSAGES/dde-dock-applet.mo
+/usr/share/locale/ar
+/usr/share/locale/ar/LC_MESSAGES
+/usr/share/locale/ar/LC_MESSAGES/dde-dock-applet.mo
 /usr/share/locale/bg
 /usr/share/locale/bg/LC_MESSAGES
 /usr/share/locale/bg/LC_MESSAGES/dde-dock-applet.mo
+/usr/share/locale/ca
+/usr/share/locale/ca/LC_MESSAGES
+/usr/share/locale/ca/LC_MESSAGES/dde-dock-applet.mo
 /usr/share/locale/cs
 /usr/share/locale/cs/LC_MESSAGES
 /usr/share/locale/cs/LC_MESSAGES/dde-dock-applet.mo
@@ -239,6 +245,9 @@
 /usr/share/locale/pt_BR/LC_MESSAGES/dde-dock-applet.mo
 /usr/share/locale/pt/LC_MESSAGES
 /usr/share/locale/pt/LC_MESSAGES/dde-dock-applet.mo
+/usr/share/locale/ro
+/usr/share/locale/ro/LC_MESSAGES
+/usr/share/locale/ro/LC_MESSAGES/dde-dock-applet.mo
 /usr/share/locale/ru
 /usr/share/locale/ru/LC_MESSAGES
 /usr/share/locale/ru/LC_MESSAGES/dde-dock-applet.mo

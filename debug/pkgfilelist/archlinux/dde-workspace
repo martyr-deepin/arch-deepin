@@ -19,6 +19,8 @@
 /usr/share/applications
 /usr/share/applications/dde-desktop.desktop
 /usr/share/applications/deepin-dock.desktop
+/usr/share/backgrounds
+/usr/share/backgrounds/default_background.jpg
 /usr/share/dbus-1
 /usr/share/dbus-1/services
 /usr/share/dbus-1/services/com.deepin.dde.launcher.service
@@ -524,6 +526,9 @@
 /usr/share/locale/bg
 /usr/share/locale/bg/LC_MESSAGES
 /usr/share/locale/bg/LC_MESSAGES/DDE.mo
+/usr/share/locale/ca
+/usr/share/locale/ca/LC_MESSAGES
+/usr/share/locale/ca/LC_MESSAGES/DDE.mo
 /usr/share/locale/cs
 /usr/share/locale/cs/LC_MESSAGES
 /usr/share/locale/cs/LC_MESSAGES/DDE.mo
@@ -611,6 +616,9 @@
 /usr/share/locale/ms
 /usr/share/locale/ms/LC_MESSAGES
 /usr/share/locale/ms/LC_MESSAGES/DDE.mo
+/usr/share/locale/nb
+/usr/share/locale/nb/LC_MESSAGES
+/usr/share/locale/nb/LC_MESSAGES/DDE.mo
 /usr/share/locale/nl
 /usr/share/locale/nl/LC_MESSAGES
 /usr/share/locale/nl/LC_MESSAGES/DDE.mo

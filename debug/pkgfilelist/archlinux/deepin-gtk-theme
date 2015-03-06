@@ -1,10 +1,3 @@
-/etc
-/etc/gtk-2.0
-/etc/gtk-2.0/gtkrc
-/etc/gtk-2.0/gtkrc/gtkrc-2.0
-/etc/gtk-3.0
-/etc/gtk-3.0/gtkrc
-/etc/gtk-3.0/gtkrc/gtkrc-3.0
 /usr
 /usr/share
 /usr/share/themes
@@ -603,7 +596,6 @@
 /usr/share/themes/Deepin/unity/unmaximize_unfocused_prelight.png
 /usr/share/themes/Deepin/unity/unmaximize_unfocused_pressed.png
 /usr/share/themes/Deepin/xfwm4
-/usr/share/themes/Deepin/xfwm4/.gitignore
 /usr/share/themes/Deepin/xfwm4/Makefile
 /usr/share/themes/Deepin/xfwm4/README
 /usr/share/themes/Deepin/xfwm4/srcimg
