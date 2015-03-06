@@ -39,6 +39,7 @@ do_update_pkg() {
   msg "update package: ${pkgname}"
   case "${pkgname}" in
     "deepin-vte") gen_template_multi_sources "${pkgname}" 1 2 || return 1;;
+    "deepin-pygtk") gen_template_multi_sources "${pkgname}" 1 2 || return 1;;
     *) gen_template "${pkgname}" || return 1;;
   esac
   update_package_state "${pkgname}" "${pkg_version}"
@@ -124,11 +125,12 @@ aur_upload() {
 }
 do_aur_upload() {
   local pkgname="${1}"
+  local pkgdir="${aurdir}/${pkgname}"
 
   # generate a new package source
-  (cd "${pkgbuilddir}/${pkgname}"; mkaurball -f) || return 1
+  (cd "${pkgdir}"; mkaurball -f) || return 1
 
-  local pkgsrc="$(ls --format=single-column --sort=time "${pkgname}"/*.src.tar.gz | head -1)"
+  local pkgsrc="$(ls --format=single-column --sort=time "${pkgdir}"/*.src.tar.gz | head -1)"
   local upcmd="$(printf "${aur_upload_cmd}" "${pkgsrc}")"
   printf "Uploading package source to AUR: %s...\n" "${pkgsrc}"
   printf "Upload command: %s\n" "${upcmd}"
@@ -203,7 +205,13 @@ pkgs=()
 if [ "${arg_package}" ]; then
     pkgs=("${arg_package}")
 else
-  pkgs=($(get_all_packages))
+  if [ "${arg_makepkg}" ]; then
+      pkgs=($(find "${pkgbuilddir}"/* -maxdepth 0 -exec basename '{}' ';'))
+  elif [ "${arg_aur_upload}" ]; then
+      pkgs=($(find "${aurdir}"/* -maxdepth 0 -exec basename '{}' ';'))
+  else
+    pkgs=($(get_all_packages))
+  fi
 fi
 
 for p in "${pkgs[@]}"; do

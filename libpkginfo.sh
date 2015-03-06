@@ -64,6 +64,8 @@ get_pkginfo() {
   pkg_version_fixed="${pkg_version}"
   # remove special deepin version format, such as '-6deepin7'
   pkg_version_fixed="$(echo ${pkg_version_fixed} | sed 's/-[0-9]\?deepin[0-9]\?//')"
+  # reduce data time length
+  pkg_version_fixed="$(echo ${pkg_version_fixed} | sed 's/\(20[0-9]\{6\}\)[0-9]\{6\}/\1/')"
   pkg_version_fixed="${pkg_version_fixed%~trusty}" # remove suffix "~trusty"
   pkg_version_fixed="${pkg_version_fixed%~saucy}"  # remove suffix "~saucy"
   pkg_version_fixed="${pkg_version_fixed/\~/.}"    # replace "~" with "."

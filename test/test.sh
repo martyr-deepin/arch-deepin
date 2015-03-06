@@ -27,7 +27,7 @@ test_get_pkginfo() {
   get_pkginfo "dde-daemon"
   check "${pkg_name}" "dde-daemon"
   check "${pkg_version}" "0.0.1+20150209101554~660a820a61"
-  check "${pkg_version_fixed}" "0.0.1.20150209101554.660a820a61"
+  check "${pkg_version_fixed}" "0.0.1.20150209.660a820a61"
   check "${pkg_directory}" "pool/main/d/dde-daemon"
   check "${pkg_file}" "dde-daemon_0.0.1+20150209101554~660a820a61.tar.gz"
   check "${pkg_fileurl}" "http://packages.linuxdeepin.com/deepin/pool/main/d/dde-daemon/dde-daemon_0.0.1+20150209101554~660a820a61.tar.gz"
@@ -62,11 +62,6 @@ test_get_pkginfo_multiple_sources() {
 }
 
 test_get_pkginfo_fixed_version() {
-  get_pkginfo "compiz"
-  check "${pkg_version}" "0.9.99-5+git20140707164843~2e85d002e7"
-  check "${pkg_version_fixed}" "0.9.99.5.git20140707164843.2e85d002e7"
-
-
   get_pkginfo "dde-account-faces"
   check "${pkg_version}" "1.0.7-1~trusty"
   check "${pkg_version_fixed}" "1.0.7.1"
@@ -77,11 +72,11 @@ test_get_pkginfo_fixed_version() {
 
   get_pkginfo "deepin-artwork-themes"
   check "${pkg_version}" "14.04.3+20141204110221~5bf78d7f42"
-  check "${pkg_version_fixed}" "14.04.3.20141204110221.5bf78d7f42"
+  check "${pkg_version_fixed}" "14.04.3.20141204.5bf78d7f42"
 
   get_pkginfo "deepin-bug-reporter"
   check "${pkg_version}" "1+20141029130135~d2afb454d7"
-  check "${pkg_version_fixed}" "1.20141029130135.d2afb454d7"
+  check "${pkg_version_fixed}" "1.20141029.d2afb454d7"
 
   get_pkginfo "deepin-cursor-theme"
   check "${pkg_version}" "2014~4-2"

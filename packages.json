@@ -2,199 +2,199 @@
   {
     "Name": "dde-account-faces",
     "OriginRepoDir": "dde-account-faces",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "1.0.7-1~trusty"
   },
   {
     "Name": "dde-api",
     "OriginRepoDir": "dde-api",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.0.2+20150107093816~d93500c16a"
   },
   {
     "Name": "dde-control-center",
     "OriginRepoDir": "dde-control-center",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.1+20150211150410~6b5195ef53"
   },
   {
     "Name": "dde-daemon",
     "OriginRepoDir": "dde-daemon",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.0.1+20150209101554~660a820a61"
   },
   {
     "Name": "dde-dock-applets",
     "OriginRepoDir": "dde-dock-applets",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.0.4+20150212175159~4a7021531e"
   },
   {
     "Name": "dde-workspace",
     "OriginRepoDir": "deepin-desktop-environment",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "2.1+20150202093855~5b89873137"
   },
   {
     "Name": "deepin-artwork",
     "OriginRepoDir": "deepin-artwork",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "2014-4"
   },
   {
     "Name": "deepin-artwork-themes",
     "OriginRepoDir": "deepin-artwork-themes",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "14.04.3+20141204110221~5bf78d7f42"
   },
   {
     "Name": "deepin-compiz",
     "OriginRepoDir": "compiz",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.9.99-5+git20140707164843~2e85d002e7"
   },
   {
     "Name": "deepin-cursor-theme",
     "OriginRepoDir": "deepin-cursor-theme",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "2014~4-2"
   },
   {
     "Name": "deepin-dbus-factory",
     "OriginRepoDir": "dbus-factory",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.0.2+20141226160557~7e89f03592"
   },
   {
     "Name": "deepin-dbus-generator",
     "OriginRepoDir": "dbus-generator",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.0.3+20141120163131~84ee26c38d"
   },
   {
     "Name": "deepin-default-gsettings",
     "OriginRepoDir": "deepin-default-gsettings",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.2+20141216171821~2cf686e3fa"
   },
   {
     "Name": "deepin-game-center",
     "OriginRepoDir": "deepin-game-center",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "1.0.1+20141230144448~4e7bbbfda6"
   },
   {
     "Name": "deepin-gettext-tools",
     "OriginRepoDir": "deepin-gettext-tools",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.0.1+20141216200739~6ba50ecb9c"
   },
   {
     "Name": "python2-deepin-gsettings",
     "OriginRepoDir": "deepin-gsettings",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.1+git20131206094009~a64de3ac19"
   },
   {
     "Name": "deepin-gtk-theme",
     "OriginRepoDir": "deepin-gtk-theme",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "14.07+20141223164347~1b5a54ef99"
   },
   {
     "Name": "deepin-icon-theme",
     "OriginRepoDir": "deepin-icon-theme",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "13.06.13+20150114160019~dff58a2dad"
   },
   {
     "Name": "deepin-menu",
     "OriginRepoDir": "deepin-menu",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "1.1+20141216195521~1247e3bd11"
   },
   {
     "Name": "deepin-movie",
     "OriginRepoDir": "deepin-movie",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "2.2+20150211132515~f8f651edba"
   },
   {
     "Name": "deepin-music-player",
     "OriginRepoDir": "deepin-music-player",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "1.1+20150204093722~081154cf7b"
   },
   {
     "Name": "deepin-notifications",
     "OriginRepoDir": "deepin-notifications",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.3+20141216180805~a93d61767c"
   },
   {
     "Name": "deepin-pygtk",
     "OriginRepoDir": "pygtk",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "2.24.0-4~saucy"
   },
   {
     "Name": "deepin-qml-widgets",
     "OriginRepoDir": "deepin-qml-widgets",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.0.2+20150203171526~feb6d6ad2f"
   },
   {
     "Name": "deepin-screenshot",
     "OriginRepoDir": "deepin-screenshot",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "2.1+20141230110557~a5861179f5"
   },
   {
     "Name": "deepin-terminal",
     "OriginRepoDir": "deepin-terminal",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "1.1+20141230110750~bc441b7aae"
   },
   {
     "Name": "deepin-ui",
     "OriginRepoDir": "deepin-ui",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "1.1+20141229194712~5a86faec50"
   },
   {
     "Name": "deepin-utils",
     "OriginRepoDir": "deepin-utils",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.0.2+20140703165416~8aaf2a6f00"
   },
   {
     "Name": "deepin-vte",
     "OriginRepoDir": "vte",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.28.2-6deepin7~saucy"
   },
   {
     "Name": "go-dlib",
-    "OriginRepoDir": "golang-dlib-dev",
-    "Updated": false,
-    "LastVersion": ""
+    "OriginRepoDir": "go-dlib",
+    "Updated": true,
+    "LastVersion": "0.0.4+20150108105637~88ae48d3c8"
   },
   {
     "Name": "grub-theme-deepin",
     "OriginRepoDir": "grub-themes-deepin",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.5-9"
   },
   {
     "Name": "libdeepin-webkit",
     "OriginRepoDir": "deepin-webkit",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "1.8.2.2+20141124213858~2494240496"
   },
   {
     "Name": "startdde",
     "OriginRepoDir": "startdde",
-    "Updated": false,
-    "LastVersion": ""
+    "Updated": true,
+    "LastVersion": "0.1+20141230181929~b99e7b174d"
   }
 ]
