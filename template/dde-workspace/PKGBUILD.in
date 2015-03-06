@@ -68,4 +68,5 @@ package_lightdm-deepin-greeter() {
   cd "${srcdir}"/${_pkgname}-${pkgver}-greeter/build/app/greeter
 
   make install DESTDIR="${pkgdir}"
+  chmod 0700 "${pkgdir}"/var/lib/polkit-1
 }
