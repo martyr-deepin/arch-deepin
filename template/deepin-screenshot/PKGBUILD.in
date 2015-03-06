@@ -47,9 +47,9 @@ package() {
 
   # remove .po
   find "${pkgdir}" -name '*.po' -exec rm \{} \;
-  find "${pkgdir}" -name '*.pot' -exec rm \{} \;
+find "${pkgdir}" -name '*.pot' -exec rm \{} \;
 }
 
-# Local Variables:
-# sh-basic-offset: 2
-# End:
+ # Local Variables:
+ # sh-basic-offset: 2
+ # End:

@@ -17,10 +17,10 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 package() {
-	depends=('grub')
+  depends=('grub')
 
-	cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${pkgver}"
 
-	install -dm755 "${pkgdir}"/boot/grub/themes
-	cp -rf deepin-grub2-themes/deepin "${pkgdir}"/boot/grub/themes/
+  install -dm755 "${pkgdir}"/boot/grub/themes
+  cp -rf deepin-grub2-themes/deepin "${pkgdir}"/boot/grub/themes/
 }

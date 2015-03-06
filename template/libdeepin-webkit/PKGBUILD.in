@@ -11,7 +11,7 @@ url="http://www.linuxdeepin.com/"
 license=('LGPL' 'GPL' 'BSD' 'custom')
 groups=('deepin')
 depends=('geoclue' 'libxt' 'libxslt' 'sqlite' 'libsoup' 'enchant'
-         'libgl' 'gtk3'	'gstreamer0.10-base-plugins' 'libsecret'
+         'libgl' 'gtk3' 'gstreamer0.10-base-plugins' 'libsecret'
          'libwebp' 'harfbuzz-icu')
 makedepends=('gtk2' 'gperf' 'gobject-introspection' 'python2' 'mesa'
              'gtk-doc' 'gawk' 'chrpath' 'bison' 'perl' 'flex')
@@ -20,37 +20,37 @@ provides=('deepin-webkit')
 replaces=('deepin-webkit')
 options=(!libtool !emptydirs)
 source=("@SOURCE@"
-		"webkit-gtk-1.8.2-bison-2.6.patch"
-		"DerivedSources.tar.gz")
+        "webkit-gtk-1.8.2-bison-2.6.patch"
+        "DerivedSources.tar.gz")
 sha256sums=('@SHA256SUM@'
-			'cea36d9a955e4f5c2cd2fe2037ff63067217596e88cbbaa1da2ecc7546d3cd44'
-			'7a5fbc735dcda90faeafb26778a741ebe1a5fcf0cfb44de5369db42aa60561df')
+            'cea36d9a955e4f5c2cd2fe2037ff63067217596e88cbbaa1da2ecc7546d3cd44'
+            '7a5fbc735dcda90faeafb26778a741ebe1a5fcf0cfb44de5369db42aa60561df')
 
 prepare(){
-	cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${pkgver}"
 
-	patch -p1 -i "${srcdir}"/webkit-gtk-1.8.2-bison-2.6.patch
+  patch -p1 -i "${srcdir}"/webkit-gtk-1.8.2-bison-2.6.patch
 }
 
 build() {
-	cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${pkgver}"
 
-	export CFLAGS="$CFLAGS -Wall -Wl,--as-needed"
-	export LDFLAGS="$LDFLAGS -Wl,--no-keep-memory"
+  export CFLAGS="$CFLAGS -Wall -Wl,--as-needed"
+  export LDFLAGS="$LDFLAGS -Wl,--no-keep-memory"
 
-	PYTHON=/usr/bin/python2 ./configure \
-		--prefix=/usr \
-		--disable-silent-rules \
-		--with-gtk=3.0 \
-		--disable-webgl
-	make
+  PYTHON=/usr/bin/python2 ./configure \
+        --prefix=/usr \
+        --disable-silent-rules \
+        --with-gtk=3.0 \
+        --disable-webgl
+  make
 }
 
 package() {
-	cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${pkgver}"
 
-	make DESTDIR="$pkgdir" install
+  make DESTDIR="$pkgdir" install
 
-	rm -rf "$pkgdir"/usr/{bin,include,share}
-	mv "${pkgdir}"/usr/lib/pkgconfig/webkitgtk-3.0.pc "${pkgdir}"/usr/lib/pkgconfig/deepin-webkit-3.0.pc
+  rm -rf "$pkgdir"/usr/{bin,include,share}
+  mv "${pkgdir}"/usr/lib/pkgconfig/webkitgtk-3.0.pc "${pkgdir}"/usr/lib/pkgconfig/deepin-webkit-3.0.pc
 }

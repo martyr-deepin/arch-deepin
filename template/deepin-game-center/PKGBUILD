@@ -16,20 +16,20 @@ source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
 sha256sums=('cefa9548840757af0fa6c07b98924de2a9860327d85b0d86f4cca710ff8f8a3f')
 
 prepare() {
-	# fix python version
-	find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  # fix python version
+  find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build() {
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	make
+  make
 }
 
 package() {
-	depends=('deepin-ui' 'flashplugin' 'hicolor-icon-theme' 'python2-scipy' 'python2-jswebkit')
+  depends=('deepin-ui' 'flashplugin' 'hicolor-icon-theme' 'python2-scipy' 'python2-jswebkit')
 
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	make DESTDIR="${pkgdir}" PREFIX="/usr" install
+  make DESTDIR="${pkgdir}" PREFIX="/usr" install
 }

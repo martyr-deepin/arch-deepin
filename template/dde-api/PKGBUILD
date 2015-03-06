@@ -10,7 +10,7 @@ url="https://gitcafe.com/Deepin/dde-api"
 license=('GPL3')
 depends=('glib2' 'gdk-pixbuf2' 'gtk3' 'libcanberra' 'libxi' 'rfkill')
 makedepends=('go' 'go-dlib' 'go-xgb' 'go-xgbutil'
-			 'go-fsnotify' 'dde-go-dbus-factory')
+             'go-fsnotify' 'dde-go-dbus-factory')
 groups=('deepin')
 options=(staticlibs)
 _mirror="https://ftp.fau.de/deepin/pool/main"

@@ -9,7 +9,7 @@ arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-control-center"
 license=('GPL3')
 depends=('dde-daemon' 'deepin-qml-widgets' 'dde-qml-dbus-factory'
-		 'qt5-svg' 'qt5-declarative' 'qt5-graphicaleffects' 'qt5-quickcontrols')
+         'qt5-svg' 'qt5-declarative' 'qt5-graphicaleffects' 'qt5-quickcontrols')
 makedepends=('deepin-gettext-tools' 'qt5-tools')
 groups=('deepin')
 options=(staticlibs)
@@ -17,22 +17,22 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 prepare() {
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	# fix python version
-	find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  # fix python version
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build(){
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	make
+  make
 }
 
 package() {
-	depends+=('deepin-artwork-themes' 'dde-account-faces')
+  depends+=('deepin-artwork-themes' 'dde-account-faces')
 
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	make DESTDIR="${pkgdir}" install
+  make DESTDIR="${pkgdir}" install
 }

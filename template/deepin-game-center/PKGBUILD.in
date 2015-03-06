@@ -15,20 +15,20 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 prepare() {
-	# fix python version
-	find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  # fix python version
+  find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build() {
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	make
+  make
 }
 
 package() {
-	depends=('deepin-ui' 'flashplugin' 'hicolor-icon-theme' 'python2-scipy' 'python2-jswebkit')
+  depends=('deepin-ui' 'flashplugin' 'hicolor-icon-theme' 'python2-scipy' 'python2-jswebkit')
 
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	make DESTDIR="${pkgdir}" PREFIX="/usr" install
+  make DESTDIR="${pkgdir}" PREFIX="/usr" install
 }

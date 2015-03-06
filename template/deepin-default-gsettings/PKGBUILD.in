@@ -11,22 +11,22 @@ url="https://gitcafe.com/Deepin/default-gsettings"
 license=('GPL3')
 install="${pkgname}.install"
 source=("@SOURCE@"
-		'arch-fix.patch')
+        'arch-fix.patch')
 sha256sums=('@SHA256SUM@'
-			'544d96c73c5d26a5a7d33cf27daec62e199f2c0e9f2094253baae48c3aa0784a')
+            '544d96c73c5d26a5a7d33cf27daec62e199f2c0e9f2094253baae48c3aa0784a')
 
 prepare() {
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	cat *.override >> gsettings-override
-	patch -p0 -i "${srcdir}/arch-fix.patch"
+  cat *.override >> gsettings-override
+  patch -p0 -i "${srcdir}/arch-fix.patch"
 }
 
 package() {
-	depends=('deepin-gtk-theme' 'deepin-icon-theme')
+  depends=('deepin-gtk-theme' 'deepin-icon-theme')
 
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	install -dm 755 "${pkgdir}"/usr/share/glib-2.0/schemas
-	install -m 644 gsettings-override "${pkgdir}"/usr/share/glib-2.0/schemas/99_${pkgname}.gschema.override
+  install -dm 755 "${pkgdir}"/usr/share/glib-2.0/schemas
+  install -m 644 gsettings-override "${pkgdir}"/usr/share/glib-2.0/schemas/99_${pkgname}.gschema.override
 }

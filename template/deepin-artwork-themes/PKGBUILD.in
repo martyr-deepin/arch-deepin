@@ -14,19 +14,19 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 prepare() {
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	# fix python version
-	find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  # fix python version
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 package() {
-	depends=('deepin-icon-theme')
+  depends=('deepin-icon-theme')
 
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	python2 convert.py
+  python2 convert.py
 
-	install -dm 755 "${pkgdir}"/usr/share/personalization
-	cp -R {preview,themes,thumbnail} "${pkgdir}"/usr/share/personalization/
+  install -dm 755 "${pkgdir}"/usr/share/personalization
+  cp -R {preview,themes,thumbnail} "${pkgdir}"/usr/share/personalization/
 }

@@ -19,23 +19,23 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 prepare() {
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	# fix python version
-	find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  # fix python version
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build(){
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	python2 setup.py build
-	(cd dtk/tools; python2 generate_mo.py)
+  python2 setup.py build
+  (cd dtk/tools; python2 generate_mo.py)
 }
 
 package() {
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	python2 setup.py install --root="${pkgdir}" --optimize=1
-	install -dm 755 "${pkgdir}"/usr/share/locale
-	cp -r dtk/locale/mo/* "${pkgdir}"/usr/share/locale/
+  python2 setup.py install --root="${pkgdir}" --optimize=1
+  install -dm 755 "${pkgdir}"/usr/share/locale
+  cp -r dtk/locale/mo/* "${pkgdir}"/usr/share/locale/
 }

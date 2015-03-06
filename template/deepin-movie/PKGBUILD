@@ -16,29 +16,29 @@ source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
 sha256sums=('4bb5e3ed1f1c346090cb11081916e10a3ef7d2277c3330d768bf49d63eefe385')
 
 prepare() {
-    cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-    sed 's\python\python2\' -i Makefile
+  sed 's\python\python2\' -i Makefile
 
-    # fix python version
-    find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  # fix python version
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build() {
-    cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-    make
+  make
 }
 
 package() {
-    depends=('qt5-declarative' 'qt5-quickcontrols' 'qt5-multimedia' 'qt5-webkit'
-             'qt5-graphicaleffects' 'qt5-imageformats' 'qt5-systems'
-             'python2-ass' 'python2-magic' 'python2-peewee' 'python2-pyqt5'
-             'python2-pysrt' 'python2-setproctitle' 'python2-xpybutil'
-             'dde-go-dbus-factory' 'deepin-menu' 'deepin-qml-widgets' 'deepin-ui'
-             'desktop-file-utils' 'enca' 'mediainfo' 'qtav')
+  depends=('qt5-declarative' 'qt5-quickcontrols' 'qt5-multimedia' 'qt5-webkit'
+           'qt5-graphicaleffects' 'qt5-imageformats' 'qt5-systems'
+           'python2-ass' 'python2-magic' 'python2-peewee' 'python2-pyqt5'
+           'python2-pysrt' 'python2-setproctitle' 'python2-xpybutil'
+           'dde-go-dbus-factory' 'deepin-menu' 'deepin-qml-widgets' 'deepin-ui'
+           'desktop-file-utils' 'enca' 'mediainfo' 'qtav')
 
-    cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-    make DESTDIR="${pkgdir}" install
+  make DESTDIR="${pkgdir}" install
 }

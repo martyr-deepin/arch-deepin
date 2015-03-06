@@ -17,16 +17,16 @@ _gobuild_dir="${pkgname}-build"
 _gopkg="pkg.linuxdeepin.com/lib"
 
 prepare() {
-	mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
-	cp -r "${pkgname}-${pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
-	rm -rf "${_gobuild_dir}"/src/"${_gopkg}"/debian
+  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+  cp -r "${pkgname}-${pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
+  rm -rf "${_gobuild_dir}"/src/"${_gopkg}"/debian
 }
 
 package() {
-	depends=('go' 'go-xgb' 'go-gocheck' 'go-fsnotify' 'go-goconvey'
-			 'gtk3' 'gdk-pixbuf2' 'libpulse' 'gdk-pixbuf2' 'glib2')
+  depends=('go' 'go-xgb' 'go-gocheck' 'go-fsnotify' 'go-goconvey'
+           'gtk3' 'gdk-pixbuf2' 'libpulse' 'gdk-pixbuf2' 'glib2')
 
-	install -d "${pkgdir}"/usr/lib/go/site/src
-	cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src
-	find "${pkgdir}"/usr/lib/go/site/src -type d -name 'testdata' | xargs rm -rf
+  install -d "${pkgdir}"/usr/lib/go/site/src
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src
+  find "${pkgdir}"/usr/lib/go/site/src -type d -name 'testdata' | xargs rm -rf
 }

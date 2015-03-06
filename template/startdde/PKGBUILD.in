@@ -10,8 +10,8 @@ url="https://gitcafe.com/Deepin/startdde"
 license=('GPL3')
 depends=('dde-daemon' 'dde-workspace' 'deepin-compiz' 'libdeepin-webkit' 'cairo')
 makedepends=('cmake' 'coffee-script' 'python2' 'webkitgtk' 'go' 'sqlite'
-			 'go-dlib' 'dde-go-dbus-factory' 'go-fsnotify' 'go-xgbutil'
-			 'gstreamer0.10-base-plugins')
+             'go-dlib' 'dde-go-dbus-factory' 'go-fsnotify' 'go-xgbutil'
+             'gstreamer0.10-base-plugins')
 groups=('deepin')
 options=(staticlibs)
 conflicts=('deepin-session')
@@ -19,16 +19,16 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 build() {
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	# TODO: remove this after deepin 2014.2 released
-	sed '13s|GOPATH=/usr/share/gocode|GOPATH="/usr/lib/go:${GOPATH}"|' -i Makefile || die "sed failed"
+  # TODO: remove this after deepin 2014.2 released
+  sed '13s|GOPATH=/usr/share/gocode|GOPATH="/usr/lib/go:${GOPATH}"|' -i Makefile || die "sed failed"
 
-	make GOPATH="/usr/lib/go/site"
+  make GOPATH="/usr/lib/go/site"
 }
 
 package() {
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	make DESTDIR="${pkgdir}" install
+  make DESTDIR="${pkgdir}" install
 }

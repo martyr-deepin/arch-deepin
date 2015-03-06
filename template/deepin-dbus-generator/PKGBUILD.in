@@ -19,12 +19,12 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 build(){
-	cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${pkgver}"
 
-	mkdir -pv out
-	GOPATH="/usr/lib/go/site" go build -o out/dbus-generator
+  mkdir -pv out
+  GOPATH="/usr/lib/go/site" go build -o out/dbus-generator
 }
 
 package() {
-	install -Dm 755 "${_pkgname}-${pkgver}"/out/dbus-generator "${pkgdir}"/usr/bin/dbus-generator
+  install -Dm 755 "${_pkgname}-${pkgver}"/out/dbus-generator "${pkgdir}"/usr/bin/dbus-generator
 }

@@ -20,19 +20,19 @@ source=("${_mirror}/d/${_pkgname}/${_pkgname}_${pkgver}.tar.gz")
 sha256sums=('39225381934750aed1f768702c6c58307954eb329b617facb64f067d17a25e26')
 
 prepare() {
-	cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${pkgver}"
 
-	# fix python version
-	find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  # fix python version
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build(){
-	cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${pkgver}"
 
-	python2 setup.py build
+  python2 setup.py build
 }
 package() {
-	cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${pkgver}"
 
-	python2 setup.py install --root="$pkgdir" --optimize=1
+  python2 setup.py install --root="$pkgdir" --optimize=1
 }

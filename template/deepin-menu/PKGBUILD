@@ -16,33 +16,33 @@ source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
 sha256sums=('87c09a081be514788d6ff03fab53b10cfdb86461da52f4aa29872652b9eddbf7')
 
 prepare() {
-    cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-    # fix python version
-    find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  # fix python version
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build() {
-    cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-    python2 setup.py build
-    qmake && make
+  python2 setup.py build
+  qmake && make
 }
 
 package() {
-    cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-    python2 setup.py install --root="${pkgdir}" --optimize=1
+  python2 setup.py install --root="${pkgdir}" --optimize=1
 
-    make INSTALL_ROOT="$pkgdir" install
+  make INSTALL_ROOT="$pkgdir" install
 
-    #install -dm 755 "${pkgdir}"/usr/share/pyshared
-    install -dm 755 "${pkgdir}"/usr/share/dbus-1/services/
-    install -dm 755 "${pkgdir}"/etc/xdg/autostart/
+  #install -dm 755 "${pkgdir}"/usr/share/pyshared
+  install -dm 755 "${pkgdir}"/usr/share/dbus-1/services/
+  install -dm 755 "${pkgdir}"/etc/xdg/autostart/
 
-    mv "${pkgdir}"/usr/deepin_menu "${pkgdir}"/usr/share/pyshared
-    chmod +x "${pkgdir}"/usr/share/pyshared/menu.py
+  mv "${pkgdir}"/usr/deepin_menu "${pkgdir}"/usr/share/pyshared
+  chmod +x "${pkgdir}"/usr/share/pyshared/menu.py
 
-    install -m 644 *.service "${pkgdir}"/usr/share/dbus-1/services/
-    install -m 644 *.desktop "${pkgdir}"/etc/xdg/autostart/
+  install -m 644 *.service "${pkgdir}"/usr/share/dbus-1/services/
+  install -m 644 *.desktop "${pkgdir}"/etc/xdg/autostart/
 }

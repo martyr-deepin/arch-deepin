@@ -14,21 +14,21 @@ source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
 sha256sums=('3ab3dab041ac8902e6ca50c1282fea2deec794cdd208972dbc56f4f5eaba539b')
 
 prepare() {
-    cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-    # fix python version
-    find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  # fix python version
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 package() {
-    depends=('gettext' 'python2')
+  depends=('gettext' 'python2')
 
-    cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-    install -dm755 "${pkgdir}"/usr/{bin,lib/deepin-gettext-tools}
-    install -m755 src/generate_mo.py "${pkgdir}"/usr/lib/deepin-gettext-tools/
-    install -m755 src/update_pot.py "${pkgdir}"/usr/lib/deepin-gettext-tools/
-    install -m644 src/blank.py "${pkgdir}"/usr/lib/deepin-gettext-tools/
-    ln -s /usr/lib/deepin-gettext-tools/generate_mo.py "${pkgdir}"/usr/bin/deepin-generate-mo
-    ln -s /usr/lib/deepin-gettext-tools/update_pot.py "${pkgdir}"/usr/bin/deepin-update-pot
+  install -dm755 "${pkgdir}"/usr/{bin,lib/deepin-gettext-tools}
+  install -m755 src/generate_mo.py "${pkgdir}"/usr/lib/deepin-gettext-tools/
+  install -m755 src/update_pot.py "${pkgdir}"/usr/lib/deepin-gettext-tools/
+  install -m644 src/blank.py "${pkgdir}"/usr/lib/deepin-gettext-tools/
+  ln -s /usr/lib/deepin-gettext-tools/generate_mo.py "${pkgdir}"/usr/bin/deepin-generate-mo
+  ln -s /usr/lib/deepin-gettext-tools/update_pot.py "${pkgdir}"/usr/bin/deepin-update-pot
 }

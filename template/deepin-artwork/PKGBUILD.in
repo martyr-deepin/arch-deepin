@@ -13,9 +13,9 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 package() {
-	cd "$srcdir"
+  cd "$srcdir"
 
-	ar xv ${pkgname}_${pkgver}-4_all.deb
-	tar -C "$pkgdir" -xvzf data.tar.gz
-	rm -rf "${pkgdir}"/usr/share/doc
+  ar xv ${pkgname}_${pkgver}-4_all.deb
+  tar -C "$pkgdir" -xvzf data.tar.gz
+  rm -rf "${pkgdir}"/usr/share/doc
 }

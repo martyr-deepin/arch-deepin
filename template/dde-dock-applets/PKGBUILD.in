@@ -16,15 +16,15 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 build() {
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	make
+  make
 }
 
 package() {
-	depends+=('deepin-artwork-themes')
+  depends+=('deepin-artwork-themes')
 
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	make DESTDIR="${pkgdir}" install
+  make DESTDIR="${pkgdir}" install
 }

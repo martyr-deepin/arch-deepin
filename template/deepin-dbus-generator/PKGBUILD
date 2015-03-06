@@ -20,12 +20,12 @@ source=("${_mirror}/d/${_pkgname}/${_pkgname}_${pkgver}.tar.gz")
 sha256sums=('01784933c01b87f1e1ce26b2299eac6b2023abd4832e032684b07166998b4954')
 
 build(){
-	cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${pkgver}"
 
-	mkdir -pv out
-	GOPATH="/usr/lib/go/site" go build -o out/dbus-generator
+  mkdir -pv out
+  GOPATH="/usr/lib/go/site" go build -o out/dbus-generator
 }
 
 package() {
-	install -Dm 755 "${_pkgname}-${pkgver}"/out/dbus-generator "${pkgdir}"/usr/bin/dbus-generator
+  install -Dm 755 "${_pkgname}-${pkgver}"/out/dbus-generator "${pkgdir}"/usr/bin/dbus-generator
 }

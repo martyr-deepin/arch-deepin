@@ -16,21 +16,21 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 prepare() {
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	sed 's\python\python2\' -i Makefile
+  sed 's\python\python2\' -i Makefile
 }
 
 build() {
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	make
+  make
 }
 
 package() {
-	depends=('flattr-icon-theme' 'deepin-cursor-theme' 'gtk-update-icon-cache')
+  depends=('flattr-icon-theme' 'deepin-cursor-theme' 'gtk-update-icon-cache')
 
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	make DESTDIR="$pkgdir" install
+  make DESTDIR="$pkgdir" install
 }
