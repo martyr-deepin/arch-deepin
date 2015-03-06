@@ -4,17 +4,19 @@
   <package name="chrpath" state=" " />
   <package name="coffee-script" state=" " />
   <package name="cython" state=" " />
-  <package name="dbus-factory" state=" " />
   <package name="dde-account-faces" state=" " />
   <package name="dde-api" state=" " />
   <package name="dde-control-center" state=" " />
   <package name="dde-daemon" state=" " />
+  <package name="dde-dock-applets" state=" " />
+  <package name="dde-workspace" state=" " />
   <package name="deepin-artwork" state=" " />
   <package name="deepin-artwork-themes" state=" " />
+  <package name="deepin-compiz" state=" " />
   <package name="deepin-cursor-theme" state=" " />
   <package name="deepin-default-gsettings" state=" " />
   <package name="deepin-game-center" state=" " />
-  <package name="deepin-gsettings" state=" " />
+  <package name="deepin-gettext-tools" state=" " />
   <package name="deepin-gtk-theme" state=" " />
   <package name="deepin-icon-theme" state=" " />
   <package name="deepin-menu" state=" " />
@@ -23,61 +25,59 @@
   <package name="deepin-notifications" state=" " />
   <package name="deepin-pygtk" state=" " />
   <package name="deepin-qml-widgets" state=" " />
+  <package name="deepin-screenshot" state=" " />
   <package name="deepin-terminal" state=" " />
+  <package name="deepin-translator" state=" " />
   <package name="deepin-ui" state=" " />
   <package name="deepin-utils" state=" " />
-  <package name="deepin-vte-plus" state=" " />
+  <package name="ffmpeg" state=" " />
+  <package name="flattr-icon-theme" state=" " />
   <package name="go" state=" " />
   <package name="go-dlib" state=" " />
+  <package name="go-fsnotify" state=" " />
+  <package name="go-gettext-go" state=" " />
+  <package name="go-git" state=" " />
+  <package name="go-gocheck" state=" " />
+  <package name="go-goconvey" state=" " />
+  <package name="go-graphics-go" state=" " />
+  <package name="go-jamslam-freetype-go" state=" " />
+  <package name="go-sqlite3" state=" " />
   <package name="go-xgb" state=" " />
   <package name="go-xgbutil" state=" " />
+  <package name="hardening-wrapper" state=" " />
+  <package name="libdeepin-webkit" state=" " />
   <package name="libmediainfo" state=" " />
+  <package name="libunwind" state=" " />
   <package name="libzen" state=" " />
   <package name="lightdm" state=" " />
   <package name="mediainfo" state=" " />
   <package name="metacity-ubuntu" state=" " />
   <package name="nodejs" state=" " />
   <package name="nodejs-mkdirp" state=" " />
+  <package name="polkit-gnome" state=" " />
   <package name="python-pillow" state=" " />
   <package name="python-scipy" state=" " />
   <package name="python2-ass" state=" " />
+  <package name="python2-deepin-gsettings" state=" " />
   <package name="python2-jswebkit" state=" " />
   <package name="python2-keybinder2" state=" " />
+  <package name="python2-peewee" state=" " />
   <package name="python2-pyquery" state=" " />
   <package name="python2-pysrt" state=" " />
   <package name="python2-setproctitle" state=" " />
   <package name="python2-tesseract" state=" " />
   <package name="python2-xlib" state=" " />
   <package name="python2-xpyb" state=" " />
+  <package name="python2-xpybutil" state=" " />
+  <package name="pywebkitgtk" state=" " />
   <package name="qt5-systems" state=" " />
+  <package name="qtav" state=" " />
   <package name="startdde" state=" " />
   <package name="underscorejs" state=" " />
   <package name="xcur2png" state=" " />
-  <package name="deepin-compiz" state=" " />
-  <package name="grub-themes-deepin" state=" " />
-  <package name="polkit-gnome" state=" " />
-  <package name="dbus-generator" state=" " />
-  <package name="deepin-screenshot" state=" " />
-  <package name="go-sqlite3" state=" " />
-  <package name="go-jamslam-freetype-go" state=" " />
-  <package name="go-graphics-go" state=" " />
-  <package name="go-gocheck" state=" " />
-  <package name="go-gettext-go" state=" " />
-  <package name="go-fsnotify" state=" " />
-  <package name="libdeepin-webkit" state=" " />
-  <package name="dde-workspace" state=" " />
-  <package name="deepin-translator" state=" " />
-  <package name="deepin-gettext-tools" state=" " />
-  <package name="dde-dock-applets" state=" " />
-  <package name="flattr-icon-theme" state=" " />
-  <package name="python2-xpybutil" state=" " />
-  <package name="qtav" state=" " />
-  <package name="ffmpeg" state=" " />
-  <package name="go-git" state=" " />
   <package name="xdotool" state=" " />
-  <package name="go-goconvey" state=" " />
-  <package name="hardening-wrapper" state=" " />
-  <package name="libunwind" state=" " />
-  <package name="python2-peewee" state=" " />
-  <package name="pywebkitgtk" state=" " />
+  <package name="deepin-dbus-factory" state=" " />
+  <package name="deepin-dbus-generator" state=" " />
+  <package name="grub-theme-deepin" state=" " />
+  <package name="deepin-vte" state=" " />
 </project>
