@@ -10,7 +10,7 @@ arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/deepin-utils"
 groups=('deepin')
 depends=('deepin-pygtk' 'python2-cairo' 'freetype2' 'webkitgtk2'
-		 'python2-xlib' 'pywebkitgtk')
+         'python2-xlib' 'pywebkitgtk')
 makedepends=('python2-setuptools')
 license=('GPL3')
 provides=('deepin-utils')
@@ -21,20 +21,20 @@ source=("${_mirror}/d/${_pkgname}/${_pkgname}_${pkgver}.tar.gz")
 sha256sums=('823380c71cba9d3ccb7815e6c445d0c2e4955d88164551c3e3c4ba7d084cf51b')
 
 prepare() {
-	cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${pkgver}"
 
-	# fix python version
-	find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  # fix python version
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build() {
-	cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${pkgver}"
 
-	python2 setup.py build
+  python2 setup.py build
 }
 
 package() {
-	cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${pkgver}"
 
-	python2 setup.py install --root="$pkgdir" --optimize=1
+  python2 setup.py install --root="$pkgdir" --optimize=1
 }

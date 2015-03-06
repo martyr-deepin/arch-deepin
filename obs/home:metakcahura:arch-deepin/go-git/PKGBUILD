@@ -95,9 +95,9 @@ check() {
 
   export GOOS=linux
   if [ "$CARCH" == 'x86_64' ]; then
-    export GOARCH=amd64
+      export GOARCH=amd64
   elif [ "$CARCH" == 'i686' ]; then
-    export GOARCH=386
+      export GOARCH=386
   fi
 
   export GOROOT="$srcdir/$pkgname"
@@ -117,10 +117,10 @@ package() {
   install -Dm755 "$srcdir/godoc" "$pkgdir/usr/bin/godoc"
 
   install -Dm644 LICENSE \
-    "$pkgdir/usr/share/licenses/go/LICENSE"
+          "$pkgdir/usr/share/licenses/go/LICENSE"
 
   mkdir -p \
-    "$pkgdir/"{etc/profile.d,usr/{share/go,lib/go,lib/go/src,lib/go/site/src}}
+        "$pkgdir/"{etc/profile.d,usr/{share/go,lib/go,lib/go/src,lib/go/site/src}}
 
   cp -r doc misc -t "$pkgdir/usr/share/go"
   ln -s /usr/share/go/doc "$pkgdir/usr/lib/go/doc"

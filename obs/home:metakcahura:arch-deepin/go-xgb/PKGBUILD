@@ -17,22 +17,22 @@ _gobuild_dir="${pkgname}-build"
 _gopkg="github.com/BurntSushi/xgb"
 
 prepare() {
-    mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
-    cp -r "${srcdir}"/{bigreq,composite,damage,dpms,dri2,examples,ge,glx,randr,record,render,res,screensaver,shape,shm,xcmisc,xevie,xf86dri,xf86vidmode,xfixes,xgbgen,xinerama,xprint,xproto,xselinux,xtest,xvmc,xv,*.go} "${_gobuild_dir}"/src/"${_gopkg}"/
+  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+  cp -r "${srcdir}"/{bigreq,composite,damage,dpms,dri2,examples,ge,glx,randr,record,render,res,screensaver,shape,shm,xcmisc,xevie,xf86dri,xf86vidmode,xfixes,xgbgen,xinerama,xprint,xproto,xselinux,xtest,xvmc,xv,*.go} "${_gobuild_dir}"/src/"${_gopkg}"/
 }
 
 #build() {
-    # generate xcb code
-    #cd "${srcdir}"/go-xgb-build/src/github.com/BurntSushi/xgb && make
+# generate xcb code
+#cd "${srcdir}"/go-xgb-build/src/github.com/BurntSushi/xgb && make
 
-    #GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
-    #GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/{bigreq,composite,damage,dpms,dri2,ge,glx,randr,record,render,screensaver,shape,shm,xcmisc,xevie,xf86dri,xf86vidmode,xfixes,xinerama,xprint,xproto,xselinux,xtest,xv,xvmc}
+#GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
+#GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/{bigreq,composite,damage,dpms,dri2,ge,glx,randr,record,render,screensaver,shape,shm,xcmisc,xevie,xf86dri,xf86vidmode,xfixes,xinerama,xprint,xproto,xselinux,xtest,xv,xvmc}
 #}
 
 package() {
-    depends=('go' 'xcb-proto')
+  depends=('go' 'xcb-proto')
 
-    mkdir -p "${pkgdir}"/usr/lib/go/site/src
-    cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
-    #cp -r "${_gobuild_dir}"/pkg/* "${pkgdir}"/usr/lib/go/site/pkg/
+  mkdir -p "${pkgdir}"/usr/lib/go/site/src
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
+  #cp -r "${_gobuild_dir}"/pkg/* "${pkgdir}"/usr/lib/go/site/pkg/
 }

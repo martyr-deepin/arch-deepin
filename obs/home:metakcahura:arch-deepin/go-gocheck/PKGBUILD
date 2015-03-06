@@ -20,19 +20,19 @@ _gobuild_dir="${_pkgname}-build"
 _gopkg="launchpad.net/gocheck"
 
 prepare() {
-	cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${pkgver}"
 
-	# apply patches
-	patchdir="${srcdir}"/debian/patches
-	for f in $(< "${patchdir}"/series); do
-	echo "==> patching: ${f##*/}"
-	# ignore error if patch again
-	patch -Np1 -i $patchdir/$f || echo '==> patch error: ${f##*/}'
-	done
+  # apply patches
+  patchdir="${srcdir}"/debian/patches
+  for f in $(< "${patchdir}"/series); do
+    echo "==> patching: ${f##*/}"
+    # ignore error if patch again
+    patch -Np1 -i $patchdir/$f || echo '==> patch error: ${f##*/}'
+  done
 
-	cd "${srcdir}"
-	mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
-	cp -r "${_pkgname}-${pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
+  cd "${srcdir}"
+  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+  cp -r "${_pkgname}-${pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
 }
 
 #build() {
@@ -40,8 +40,8 @@ prepare() {
 #}
 
 package() {
-	depends=('go')
+  depends=('go')
 
-	mkdir -p "${pkgdir}"/usr/lib/go/site/src
-	cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
+  mkdir -p "${pkgdir}"/usr/lib/go/site/src
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
 }

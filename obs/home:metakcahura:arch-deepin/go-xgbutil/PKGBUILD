@@ -17,19 +17,19 @@ _gobuild_dir="${pkgname}-build"
 _gopkg="github.com/BurntSushi/xgbutil"
 
 prepare() {
-	mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
-	cp -r "${srcdir}"/{ewmh,gopher,icccm,keybind,motif,mousebind,xcursor,xevent,xgraphics,xinerama,xprop,xrect,xwindow,*.go} "${_gobuild_dir}"/src/"${_gopkg}"/
+  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+  cp -r "${srcdir}"/{ewmh,gopher,icccm,keybind,motif,mousebind,xcursor,xevent,xgraphics,xinerama,xprop,xrect,xwindow,*.go} "${_gobuild_dir}"/src/"${_gopkg}"/
 }
 
 #build() {
-#	GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
-#	GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/{ewmh,gopher,icccm,keybind,motif,mousebind,xcursor,xevent,xgraphics,xinerama,xprop,xrect,xwindow}
+#       GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"
+#       GOPATH="${srcdir}/${_gobuild_dir}" go install "${_gopkg}"/{ewmh,gopher,icccm,keybind,motif,mousebind,xcursor,xevent,xgraphics,xinerama,xprop,xrect,xwindow}
 #}
 
 package() {
-	depends=('go-xgb' 'go-graphics-go' 'go-jamslam-freetype-go')
+  depends=('go-xgb' 'go-graphics-go' 'go-jamslam-freetype-go')
 
-	mkdir -p "${pkgdir}"/usr/lib/go/site/src
-	cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
-	#cp -r "${_gobuild_dir}"/pkg/* "${pkgdir}"/usr/lib/go/site/pkg/
+  mkdir -p "${pkgdir}"/usr/lib/go/site/src
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
+  #cp -r "${_gobuild_dir}"/pkg/* "${pkgdir}"/usr/lib/go/site/pkg/
 }

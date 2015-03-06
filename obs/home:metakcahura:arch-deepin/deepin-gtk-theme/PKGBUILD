@@ -15,15 +15,15 @@ source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}_all.deb")
 sha256sums=('SKIP')
 
 package() {
-	depends=('gtk-engine-unico')
+  depends=('gtk-engine-unico')
 
-	cd "$srcdir"
+  cd "$srcdir"
 
-	ar xv ${pkgname}_${pkgver}_all.deb
-	tar -C "$pkgdir" -xvJf data.tar.xz
-	rm -rf "${pkgdir}"/usr/share/doc
+  ar xv ${pkgname}_${pkgver}_all.deb
+  tar -C "$pkgdir" -xvJf data.tar.xz
+  rm -rf "${pkgdir}"/usr/share/doc
 
-	# Change gtk-theme name
-	#sed -i 's/Deepin-Dark/Deepin/g' "$pkgdir/usr/share/themes/Deepin/index.theme"
-	#sed -i 's/Deepin/Deepin-Legacy/g' "$pkgdir/usr/share/themes/Deepin-Legacy/index.theme"
+  # Change gtk-theme name
+  #sed -i 's/Deepin-Dark/Deepin/g' "$pkgdir/usr/share/themes/Deepin/index.theme"
+  #sed -i 's/Deepin/Deepin-Legacy/g' "$pkgdir/usr/share/themes/Deepin-Legacy/index.theme"
 }

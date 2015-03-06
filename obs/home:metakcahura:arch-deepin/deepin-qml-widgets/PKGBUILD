@@ -10,7 +10,7 @@ url="https://gitcafe.com/Deepin/deepin-qml-widgets"
 license=('GPL3')
 groups=('deepin')
 depends=('qt5-multimedia' 'qt5-webkit' 'qt5-imageformats'
-		 'qt5-graphicaleffects' 'qt5-x11extras')
+         'qt5-graphicaleffects' 'qt5-x11extras')
 conflicts=('dde-qml-gettext-plugin')
 provides=('dde-qml-gettext-plugin')
 replaces=('dde-qml-gettext-plugin')
@@ -20,13 +20,13 @@ source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
 sha256sums=('eafadf1a7ca22999a9f682b95ddf4f15d00e52a085de2af41cbb755c7694f69e')
 
 build(){
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	qmake && make
+  qmake && make
 }
 
 package() {
-	cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
 
-	make INSTALL_ROOT="${pkgdir}" install
+  make INSTALL_ROOT="${pkgdir}" install
 }

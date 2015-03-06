@@ -19,20 +19,20 @@ _gobuild_dir="${_pkgname}-build"
 _gopkg="github.com/smartystreets/goconvey"
 
 prepare() {
-	mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
-	cp -r "${_pkgname}-${pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
+  mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
+  cp -r "${_pkgname}-${pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
 }
 
 build() {
-	GOPATH="${srcdir}/${_gobuild_dir}" go build -o "${srcdir}"/goconvey "${_gopkg}"
+  GOPATH="${srcdir}/${_gobuild_dir}" go build -o "${srcdir}"/goconvey "${_gopkg}"
 }
 
 package() {
-	install -d "${pkgdir}"/usr/{bin,lib/go/site/src}
-	install -m755 "${srcdir}"/goconvey "${pkgdir}"/usr/bin/goconvey
-	install -Dm644 "${srcdir}/${_pkgname}-${pkgver}"/LICENSE.md "${pkgdir}"/usr/share/licenses/goconvey/LICENSE
+  install -d "${pkgdir}"/usr/{bin,lib/go/site/src}
+  install -m755 "${srcdir}"/goconvey "${pkgdir}"/usr/bin/goconvey
+  install -Dm644 "${srcdir}/${_pkgname}-${pkgver}"/LICENSE.md "${pkgdir}"/usr/share/licenses/goconvey/LICENSE
 
-	cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
-	cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
-	rm -rf "${pkgdir}"/usr/lib/go/site/src/${_gopkg}/{debian,*.md}
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
+  cp -r "${_gobuild_dir}"/src/* "${pkgdir}"/usr/lib/go/site/src/
+  rm -rf "${pkgdir}"/usr/lib/go/site/src/${_gopkg}/{debian,*.md}
 }
