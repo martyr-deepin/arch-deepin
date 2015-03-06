@@ -3,7 +3,8 @@
 
 pkgname=python2-deepin-gsettings
 _pkgname=deepin-gsettings
-pkgver=0.1+git20131206094009~a64de3ac19
+pkgver=0.1.git20131206.a64de3ac19
+_pkgver=0.1+git20131206094009~a64de3ac19
 pkgrel=1
 pkgdesc='deepin gsettings python bindings'
 arch=('i686' 'x86_64')
@@ -15,24 +16,23 @@ license=('GPL3')
 provides=('deepin-gsettings')
 replaces=('deepin-gsettings')
 conflicts=('deepin-gsettings')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${_pkgname}/${_pkgname}_${pkgver}.tar.gz")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-gsettings/deepin-gsettings_0.1+git20131206094009~a64de3ac19.tar.gz")
 sha256sums=('39225381934750aed1f768702c6c58307954eb329b617facb64f067d17a25e26')
 
 prepare() {
-  cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${_pkgver}"
 
   # fix python version
   find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build(){
-  cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${_pkgver}"
 
   python2 setup.py build
 }
 package() {
-  cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${_pkgver}"
 
   python2 setup.py install --root="$pkgdir" --optimize=1
 }

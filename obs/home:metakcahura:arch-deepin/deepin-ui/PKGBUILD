@@ -2,7 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-ui
-pkgver=1.1+20141229194712~5a86faec50
+pkgver=1.1.20141229.5a86faec50
+_pkgver=1.1+20141229194712~5a86faec50
 pkgrel=1
 pkgdesc='UI toolkit for Linux Deepin'
 arch=('i686' 'x86_64')
@@ -15,26 +16,25 @@ depends=('python2-deepin-utils' 'python2-deepin-gsettings' 'deepin-pygtk'
 makedepends=('deepin-gettext-tools' 'python2-setuptools' 'webkitgtk')
 replaces=('deepin-ui-git')
 conflicts=('deepin-ui-git')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-ui/deepin-ui_1.1+20141229194712~5a86faec50.tar.gz")
 sha256sums=('3829f85b4b888d36fac9f9d9180e6d2453e3f3fcdcc02f1051503d4ba100decc')
 
 prepare() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   # fix python version
   find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build(){
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   python2 setup.py build
   (cd dtk/tools; python2 generate_mo.py)
 }
 
 package() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   python2 setup.py install --root="${pkgdir}" --optimize=1
   install -dm 755 "${pkgdir}"/usr/share/locale

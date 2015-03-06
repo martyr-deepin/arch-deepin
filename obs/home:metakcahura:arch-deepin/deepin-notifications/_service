@@ -1,7 +1,7 @@
 <services>
   <service name="download_url">
-    <param name="host">ftp.fau.de</param>
-    <param name="protocol">https</param>
+    <param name="host">packages.linuxdeepin.com</param>
+    <param name="protocol">http</param>
     <param name="path">/deepin/pool/main/d/deepin-notifications/deepin-notifications_0.3+20141216180805~a93d61767c.tar.gz</param>
   </service>
 </services>

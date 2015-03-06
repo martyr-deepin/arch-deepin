@@ -1,7 +1,7 @@
 <services>
   <service name="download_url">
-    <param name="host">ftp.fau.de</param>
-    <param name="protocol">https</param>
+    <param name="host">packages.linuxdeepin.com</param>
+    <param name="protocol">http</param>
     <param name="path">/deepin/pool/main/d/deepin-gettext-tools/deepin-gettext-tools_0.0.1+20141216200739~6ba50ecb9c.tar.gz</param>
   </service>
 </services>

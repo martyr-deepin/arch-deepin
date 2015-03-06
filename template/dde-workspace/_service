@@ -1,7 +1,7 @@
 <services>
   <service name="download_url">
-    <param name="host">ftp.fau.de</param>
-    <param name="protocol">https</param>
+    <param name="host">packages.linuxdeepin.com</param>
+    <param name="protocol">http</param>
     <param name="path">/deepin/pool/main/d/deepin-desktop-environment/deepin-desktop-environment_2.1+20150202093855~5b89873137.tar.gz</param>
   </service>
 </services>

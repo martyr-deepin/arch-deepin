@@ -1,7 +1,7 @@
 <services>
   <service name="download_url">
-    <param name="host">ftp.fau.de</param>
-    <param name="protocol">https</param>
+    <param name="host">packages.linuxdeepin.com</param>
+    <param name="protocol">http</param>
     <param name="path">/deepin/pool/main/s/startdde/startdde_0.1+20141230181929~b99e7b174d.tar.gz</param>
   </service>
 </services>

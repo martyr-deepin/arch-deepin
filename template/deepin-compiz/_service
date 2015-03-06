@@ -1,7 +1,7 @@
 <services>
   <service name="download_url">
-    <param name="host">ftp.fau.de</param>
-    <param name="protocol">https</param>
+    <param name="host">packages.linuxdeepin.com</param>
+    <param name="protocol">http</param>
     <param name="path">/deepin/pool/main/c/compiz/compiz_0.9.99-5+git20140707164843~2e85d002e7.tar.gz</param>
   </service>
 </services>

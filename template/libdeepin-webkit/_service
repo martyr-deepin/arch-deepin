@@ -1,7 +1,7 @@
 <services>
   <service name="download_url">
-    <param name="host">ftp.fau.de</param>
-    <param name="protocol">https</param>
+    <param name="host">packages.linuxdeepin.com</param>
+    <param name="protocol">http</param>
     <param name="path">/deepin/pool/main/d/deepin-webkit/deepin-webkit_1.8.2.2+20141124213858~2494240496.tar.gz</param>
   </service>
 </services>

@@ -2,7 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-movie
-pkgver=2.2+20150211132515~f8f651edba
+pkgver=2.2.20150211.f8f651edba
+_pkgver=2.2+20150211132515~f8f651edba
 pkgrel=1
 pkgdesc='deepin movie for linuxdeepin desktop environment'
 arch=('any')
@@ -11,12 +12,11 @@ license=('GPL3')
 makedepends=('python2-sip' 'deepin-gettext-tools')
 groups=('deepin-extra')
 install="${pkgname}.install"
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-movie/deepin-movie_2.2+20150211132515~f8f651edba.tar.gz")
 sha256sums=('4bb5e3ed1f1c346090cb11081916e10a3ef7d2277c3330d768bf49d63eefe385')
 
 prepare() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   sed 's\python\python2\' -i Makefile
 
@@ -25,7 +25,7 @@ prepare() {
 }
 
 build() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   make
 }
@@ -38,7 +38,7 @@ package() {
            'dde-go-dbus-factory' 'deepin-menu' 'deepin-qml-widgets' 'deepin-ui'
            'desktop-file-utils' 'enca' 'mediainfo' 'qtav')
 
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   make DESTDIR="${pkgdir}" install
 }

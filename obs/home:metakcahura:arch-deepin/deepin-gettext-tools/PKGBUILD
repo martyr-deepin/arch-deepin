@@ -2,19 +2,19 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-gettext-tools
-pkgver=0.0.1+20141216200739~6ba50ecb9c
+pkgver=0.0.1.20141216.6ba50ecb9c
+_pkgver=0.0.1+20141216200739~6ba50ecb9c
 pkgrel=1
 pkgdesc='Deepin Internationalization utilities'
 arch=('any')
 url="https://gitcafe.com/Deepin/deepin-gettext-tools"
 license=('GPL3')
 groups=('deepin-dev')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/d/${pkgname}/${pkgname}_${pkgver}.tar.gz")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-gettext-tools/deepin-gettext-tools_0.0.1+20141216200739~6ba50ecb9c.tar.gz")
 sha256sums=('3ab3dab041ac8902e6ca50c1282fea2deec794cdd208972dbc56f4f5eaba539b')
 
 prepare() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   # fix python version
   find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
@@ -23,7 +23,7 @@ prepare() {
 package() {
   depends=('gettext' 'python2')
 
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   install -dm755 "${pkgdir}"/usr/{bin,lib/deepin-gettext-tools}
   install -m755 src/generate_mo.py "${pkgdir}"/usr/lib/deepin-gettext-tools/

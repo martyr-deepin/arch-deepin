@@ -3,8 +3,9 @@
 
 pkgname=grub-theme-deepin
 _pkgname=grub-themes-deepin
-pkgver=0.5
-pkgrel=9
+pkgver=0.5.9
+_pkgver=0.5-9
+pkgrel=1
 pkgdesc='Grub2 themes from Linux Deepin'
 arch=('any')
 url="http://www.linuxdeepin.com/"
@@ -13,14 +14,13 @@ provides=('grub-themes-deepin')
 conflicts=('grub-themes-deepin')
 replaces=('grub-themes-deepin')
 groups=('deepin')
-_mirror="https://ftp.fau.de/deepin/pool/universe"
-source=("${_mirror}/g/${_pkgname}/${_pkgname}_${pkgver}-${pkgrel}.tar.gz")
+source=("http://packages.linuxdeepin.com/deepin/pool/universe/g/grub-themes-deepin/grub-themes-deepin_0.5-9.tar.gz")
 sha256sums=('9c951864d49f58a253bc310342ec8d23fd78aa1683188a79a91e3f979091f842')
 
 package() {
   depends=('grub')
 
-  cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${_pkgver}"
 
   install -dm755 "${pkgdir}"/boot/grub/themes
   cp -rf deepin-grub2-themes/deepin "${pkgdir}"/boot/grub/themes/

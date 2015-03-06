@@ -257,7 +257,7 @@ Vcs-Browser: https://github.com/Bumblebee-Project/Bumblebee
 
 Package: codeblocks
 Binary: codeblocks, codeblocks-common, libcodeblocks0, codeblocks-dbg, codeblocks-contrib, codeblocks-libwxcontrib0, codeblocks-contrib-common, codeblocks-contrib-dbg, codeblocks-dev, codeblocks-headers, codeblocks-wxcontrib-dev, codeblocks-wxcontrib-headers, libwxsmithlib0, libwxsmithlib0-dev, wxsmith-dev, wxsmith-headers
-Version: 13.12svn10122-0ubuntu1~trusty
+Version: 13.12svn10120-0ubuntu1~trusty
 Section: x11
 Maintainer: pasgui <lgp203@free.fr>
 Build-Depends: debhelper (>= 9), cdbs, automake (>= 1.9), libtool (>= 1.4), libwxgtk2.8-dev, wx-common, zip, libbz2-dev, zlib1g-dev, libgtk2.0-dev, libgamin-dev, libstdc++6-4.3-dev | libstdc++6-4.4-dev | libstdc++6-4.5-dev | libstdc++6-4.6-dev, libboost1.40-dev | libboost-dev (>= 1.40), libhunspell-dev, libfontconfig1-dev, libglib2.0-dev
@@ -266,17 +266,17 @@ Standards-Version: 3.9.5
 Format: 3.0 (quilt)
 Directory: pool/universe/c/codeblocks
 Files:
- b9ca7ffd7fdb63a4595a77bf894dabbb 17777820 codeblocks_13.12svn10122.orig.tar.gz
- 002827c34e6ef632e9a9605edba6e414 71748 codeblocks_13.12svn10122-0ubuntu1~trusty.debian.tar.gz
- 4492784ac00ef3d1a4bf4f7c54983f45 2419 codeblocks_13.12svn10122-0ubuntu1~trusty.dsc
+ ec94cb696c896718b19530c3f539f5a9 17776229 codeblocks_13.12svn10120.orig.tar.gz
+ b7686ccb86c05da7fab4856855c61c45 71721 codeblocks_13.12svn10120-0ubuntu1~trusty.debian.tar.gz
+ ee8d26c7b27bfa409e23e57db788f842 2419 codeblocks_13.12svn10120-0ubuntu1~trusty.dsc
 Checksums-Sha1:
- 651dd379bdd919430fb573a5435b1f3f0f6fa90a 17777820 codeblocks_13.12svn10122.orig.tar.gz
- 51e66111142029b78eb79661acc3babf46f85f61 71748 codeblocks_13.12svn10122-0ubuntu1~trusty.debian.tar.gz
- 63626680dde08cc2f1d251737ce1f22601e8d3e1 2419 codeblocks_13.12svn10122-0ubuntu1~trusty.dsc
+ 5151bbc60a804b6f4286935b426b4f3fbd680af1 17776229 codeblocks_13.12svn10120.orig.tar.gz
+ 2bbf541c0d472d95a8e89e56f2f72bfed5fdc6b5 71721 codeblocks_13.12svn10120-0ubuntu1~trusty.debian.tar.gz
+ 3db6e80650c3dee61ace86980de12a70e186ac66 2419 codeblocks_13.12svn10120-0ubuntu1~trusty.dsc
 Checksums-Sha256:
- 082e8b7dae15dbf81a105202232b74e8f4daec99a29bf1cf20a22745e98d6215 17777820 codeblocks_13.12svn10122.orig.tar.gz
- a57e442ec26ba72e6264f9ed6c06da597fca6ba6e30bc05b3eddc3ca5286ed5f 71748 codeblocks_13.12svn10122-0ubuntu1~trusty.debian.tar.gz
- 9de583365797b411a6e455ae0ced8c5c4114e002f270f57474b53a68c2b43757 2419 codeblocks_13.12svn10122-0ubuntu1~trusty.dsc
+ 9f585f01050c29f0a83595399b7eb2e7604db7755575bc6efeae56c93bd771d1 17776229 codeblocks_13.12svn10120.orig.tar.gz
+ cc91f7d04efa6dd3033b4656cfde512781a3bd0c938c679d353379d7f51aebe8 71721 codeblocks_13.12svn10120-0ubuntu1~trusty.debian.tar.gz
+ 85e6c67b1bc0445c606769719dbb14fa09968515fca86aaba98c3da871f3cddc 2419 codeblocks_13.12svn10120-0ubuntu1~trusty.dsc
 Homepage: http://www.codeblocks.org
 Package-List: codeblocks deb x11 optional
  codeblocks-common deb x11 optional
@@ -955,7 +955,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-nvidia/libvdpau.git
 
 Package: lwqq
 Binary: liblwqq0, liblwqq-dev, liblwqq-dbg
-Version: 0.4.2+git201502262350.b9387e8-1~lainme~trusty
+Version: 0.4.1+git201502082345.47eb91b-1~lainme~trusty
 Section: net
 Maintainer: lainme <lainme993@gmail.com>
 Build-Depends: debhelper (>= 7), cdbs, cmake, pkg-config, libcurl4-openssl-dev | libcurl4-nss-dev | libcurl4-gnutls-dev, libsqlite3-dev, libev-dev, libmozjs-17.0-dev | libmozjs185-dev, zlib1g-dev
@@ -964,17 +964,17 @@ Standards-Version: 3.9.3
 Format: 3.0 (quilt)
 Directory: pool/universe/l/lwqq
 Files:
- 2e0c3db5a5bdf7e87967cc7b01d659d0 177137 lwqq_0.4.2+git201502262350.b9387e8.orig.tar.gz
- 0fcefc13257529fc8b65024932fa9215 4075 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.debian.tar.gz
- 3a624ec290c719a1b9e79a202d391e7f 2119 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.dsc
+ ee01211c61e1b0dcab0ea56b519e934e 176247 lwqq_0.4.1+git201502082345.47eb91b.orig.tar.gz
+ 5139981651fb2a311293483ab33da5d8 3960 lwqq_0.4.1+git201502082345.47eb91b-1~lainme~trusty.debian.tar.gz
+ 420891cc9c04ee8fadda677e9fb32beb 2119 lwqq_0.4.1+git201502082345.47eb91b-1~lainme~trusty.dsc
 Checksums-Sha1:
- 82f4455179e9601ea663dcca50a4feb854d40716 177137 lwqq_0.4.2+git201502262350.b9387e8.orig.tar.gz
- 2eadff18b9f3c958fb151d748914fd3967740115 4075 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.debian.tar.gz
- 7cfc6faeef8f12acb004625fceef0f090afc30e4 2119 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.dsc
+ f844f5c29512b83a5126a150378871b87e6d0885 176247 lwqq_0.4.1+git201502082345.47eb91b.orig.tar.gz
+ 2d53ef7196a2e7fa0238ac8780e53eb6da5827ba 3960 lwqq_0.4.1+git201502082345.47eb91b-1~lainme~trusty.debian.tar.gz
+ 5d08b0645138e518f5e5a62d03891b32105d1246 2119 lwqq_0.4.1+git201502082345.47eb91b-1~lainme~trusty.dsc
 Checksums-Sha256:
- ad5a9f972ffd9a3cedee7a0a9dcfde7ba8a489ea6c2154a6d41c633466a592bb 177137 lwqq_0.4.2+git201502262350.b9387e8.orig.tar.gz
- 60eeeac46ad3028f7b8c4f3b5295cc4d9a6afa70deff69785962d28fc6236659 4075 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.debian.tar.gz
- 22791f80e804174f8874315818835f326376ae78cc7185341fd8b42c3c2b37dd 2119 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.dsc
+ 8d70fc348d67e748d12d9884905f46c3843f0d57d34130778f5ef83f9d330574 176247 lwqq_0.4.1+git201502082345.47eb91b.orig.tar.gz
+ 6134892c8d47f55535e321e227629b9f7a48b95e4e85e60a126c2c216592b3e6 3960 lwqq_0.4.1+git201502082345.47eb91b-1~lainme~trusty.debian.tar.gz
+ d7228246f68c2fa65f48427587646f6264c37f5ae86051820f796cfaf3b4c4a9 2119 lwqq_0.4.1+git201502082345.47eb91b-1~lainme~trusty.dsc
 Homepage: https://github.com/xiehuc/lwqq
 Package-List: liblwqq-dbg deb debug extra
  liblwqq-dev deb libdevel extra
@@ -1242,7 +1242,7 @@ Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
 
 Package: nvidia-graphics-drivers-346
 Binary: nvidia-346, nvidia-346-dev, libcuda1-346, nvidia-libopencl1-346, nvidia-opencl-icd-346, nvidia-346-uvm, nvidia-319, nvidia-319-dev
-Version: 346.47-100ubuntu100~ppa0~trusty
+Version: 346.35-100ubuntu100~ppa0~trusty
 Section: misc
 Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Build-Depends: debhelper (>= 8.0.0), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, libc6, libxvmc1, dh-modaliases, libxv1
@@ -1251,14 +1251,14 @@ Standards-Version: 3.8.0
 Format: 1.0
 Directory: pool/universe/n/nvidia-graphics-drivers-346
 Files:
- cd9cc62eac884fa72569ad1f643c1c85 82155011 nvidia-graphics-drivers-346_346.47-100ubuntu100~ppa0~trusty.tar.gz
- 7f8d112676c887a4d0190a52bae60e25 2404 nvidia-graphics-drivers-346_346.47-100ubuntu100~ppa0~trusty.dsc
+ 11a2760667c12e96914839a9e32bd378 81473655 nvidia-graphics-drivers-346_346.35-100ubuntu100~ppa0~trusty.tar.gz
+ 3b0f8d9d2eb3d767a5a51a0594cbb922 2404 nvidia-graphics-drivers-346_346.35-100ubuntu100~ppa0~trusty.dsc
 Checksums-Sha1:
- 4ff28081bc24988b40ec84090b4f5d533c8262aa 82155011 nvidia-graphics-drivers-346_346.47-100ubuntu100~ppa0~trusty.tar.gz
- f5913cea456165dc9d0c884a1fba4d781c5d4bba 2404 nvidia-graphics-drivers-346_346.47-100ubuntu100~ppa0~trusty.dsc
+ 90ad789c571263005cbd3c8f9bd64ad0a32a92e7 81473655 nvidia-graphics-drivers-346_346.35-100ubuntu100~ppa0~trusty.tar.gz
+ 2e244d3028beebd95ae54c99e2e0c76b6e35c503 2404 nvidia-graphics-drivers-346_346.35-100ubuntu100~ppa0~trusty.dsc
 Checksums-Sha256:
- 043ea482022258d5beb46766cef5b21055615feaa0d14be53c4f13fa42e518ee 82155011 nvidia-graphics-drivers-346_346.47-100ubuntu100~ppa0~trusty.tar.gz
- 79c7fbba65b13a2081182e43b5bb68731d67dc03dce23788b202371a7b8638f4 2404 nvidia-graphics-drivers-346_346.47-100ubuntu100~ppa0~trusty.dsc
+ 1b08b59f7f8cf557610c6ea9bcfe1c51f9eaba116c839e7937c0a9ea2913337d 81473655 nvidia-graphics-drivers-346_346.35-100ubuntu100~ppa0~trusty.tar.gz
+ 458e7205554fa732a7374b42a1e2a1326be9ee2d6579f58b7fa9e2de6a02de7a 2404 nvidia-graphics-drivers-346_346.35-100ubuntu100~ppa0~trusty.dsc
 Package-List: libcuda1-346 deb restricted/misc optional arch=i386,amd64
  nvidia-319 deb restricted/misc optional arch=i386,amd64
  nvidia-319-dev deb restricted/misc optional arch=i386,amd64
@@ -1272,7 +1272,7 @@ Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
 
 Package: nvidia-settings
 Binary: nvidia-settings, nvidia-settings-319, nvidia-settings-319-updates, nvidia-settings-313-updates, nvidia-settings-310, nvidia-settings-310-updates, nvidia-settings-304, nvidia-settings-304-updates, nvidia-settings-experimental-304, nvidia-settings-updates
-Version: 346.47-100ubuntu100~ppa0~trusty
+Version: 346.35-100ubuntu100~ppa0~trusty
 Section: x11
 Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
 Build-Depends: debhelper (>= 7), m4, libgtk2.0-dev, libgtk-3-dev, libxext-dev, xutils-dev, libxrandr-dev, libgl1-mesa-dev | libgl-dev, libxxf86vm-dev, libxv-dev, libvdpau-dev, quilt, libjansson-dev
@@ -1281,14 +1281,14 @@ Standards-Version: 3.8.0
 Format: 1.0
 Directory: pool/universe/n/nvidia-settings
 Files:
- 46e8aeb1a1f5b13591963c580c929bcd 1957013 nvidia-settings_346.47-100ubuntu100~ppa0~trusty.tar.gz
- fb6eeeb376263cc617e43b6231f110c7 2817 nvidia-settings_346.47-100ubuntu100~ppa0~trusty.dsc
+ dc4d66a94dc9172d2476bb68932915e6 1959073 nvidia-settings_346.35-100ubuntu100~ppa0~trusty.tar.gz
+ 0d7e3fe82e88161232c3897e3c6b2b00 2817 nvidia-settings_346.35-100ubuntu100~ppa0~trusty.dsc
 Checksums-Sha1:
- 6f9144d2fb764bbb94648c18a6e42169d4c3e042 1957013 nvidia-settings_346.47-100ubuntu100~ppa0~trusty.tar.gz
- 3cd826f516ac536ec478e89dc304602d27f3563a 2817 nvidia-settings_346.47-100ubuntu100~ppa0~trusty.dsc
+ a7bc567f9b5edcfa3a7402d48458cad9df58b53d 1959073 nvidia-settings_346.35-100ubuntu100~ppa0~trusty.tar.gz
+ 143e8b94ebbc98853e14f3a147970905346347c5 2817 nvidia-settings_346.35-100ubuntu100~ppa0~trusty.dsc
 Checksums-Sha256:
- 9421cddce4258be6a94c3e2d1afd42d7bd2d69704d2640e027994d642e27c0a0 1957013 nvidia-settings_346.47-100ubuntu100~ppa0~trusty.tar.gz
- c30e5aeba2fcfca3c3f590a57b2c560a1951dcea48de533663173a458c1613d9 2817 nvidia-settings_346.47-100ubuntu100~ppa0~trusty.dsc
+ 16f42542cc98c2ff2ff7de7e34baae60bfccf05a823624b5a6f894061115724c 1959073 nvidia-settings_346.35-100ubuntu100~ppa0~trusty.tar.gz
+ d2311b031707ffddcc34ff387d367ff0d38ae859c32bc70362da433e0b5eb57f 2817 nvidia-settings_346.35-100ubuntu100~ppa0~trusty.dsc
 Uploaders: Randall Donald <rdonald@debian.org>
 Package-List: nvidia-settings deb contrib/x11 optional arch=i386,amd64
  nvidia-settings-304 deb contrib/x11 optional arch=i386,amd64
@@ -1347,29 +1347,29 @@ Checksums-Sha256:
 
 Package: pidgin-lwqq
 Binary: pidgin-lwqq, pidgin-lwqq-dbg
-Version: 0.4.2+git201502271631.17d115f-1~lainme~trusty
+Version: 0.4.1+git201502081006.a0fa8bf-1~lainme~trusty
 Section: net
 Maintainer: lainme <lainme993@gmail.com>
-Build-Depends: debhelper (>= 7), cdbs, cmake, pkg-config, libglib2.0-dev, libpurple-dev, liblwqq-dev (>= 0.4.2)
+Build-Depends: debhelper (>= 7), cdbs, cmake, pkg-config, libglib2.0-dev, libpurple-dev, liblwqq-dev (>= 0.4.1+git201502081028.6606519)
 Architecture: any
 Standards-Version: 3.9.3
 Format: 3.0 (quilt)
 Directory: pool/universe/p/pidgin-lwqq
 Files:
- 1fb0502cbfa09bf4b9d6faff500457b4 1956099 pidgin-lwqq_0.4.2+git201502271631.17d115f.orig.tar.gz
- 8b251afa8bf8511e81dcfe51eec152f6 3220 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.debian.tar.gz
- edcfe13135388a02a8b8933e80d27e29 2063 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.dsc
+ 7f2c1ed80f445abce5552a8f9b707829 1953155 pidgin-lwqq_0.4.1+git201502081006.a0fa8bf.orig.tar.gz
+ 4c3305b3e21877cba811239fec293572 2980 pidgin-lwqq_0.4.1+git201502081006.a0fa8bf-1~lainme~trusty.debian.tar.xz
+ 21bbb410b3b742bdd4211113e9caf495 2101 pidgin-lwqq_0.4.1+git201502081006.a0fa8bf-1~lainme~trusty.dsc
 Checksums-Sha1:
- 3b0b1abeceea376ed0b45289931d1b9f828b351c 1956099 pidgin-lwqq_0.4.2+git201502271631.17d115f.orig.tar.gz
- cd05eb6c5f27c0c36d7c92806cc18d1e6ca54a19 3220 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.debian.tar.gz
- 7bb559df46074652f19523bd51750bb09f4f02e8 2063 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.dsc
+ 5bbc01a6cb85e18762198c325461674f2f4e5bb7 1953155 pidgin-lwqq_0.4.1+git201502081006.a0fa8bf.orig.tar.gz
+ d5855b3567e44d69b4e11c7f26e87b57aec1e8a0 2980 pidgin-lwqq_0.4.1+git201502081006.a0fa8bf-1~lainme~trusty.debian.tar.xz
+ e8df54bc3f56230b958f31f450b771a5a03a34da 2101 pidgin-lwqq_0.4.1+git201502081006.a0fa8bf-1~lainme~trusty.dsc
 Checksums-Sha256:
- bcbc590042bab89ee262d57c6f41e81ce006a654063a38fccd401d885beeddf8 1956099 pidgin-lwqq_0.4.2+git201502271631.17d115f.orig.tar.gz
- 677421cf3cf058f0559e337844e3ee8afaa3f0779c9fa453325aff3e4dd253bb 3220 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.debian.tar.gz
- 220bcb822f43a8cbd59e64b4a614131e82517dda09a3d787c59acb9635ce73f1 2063 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.dsc
+ c807d510b5f4fb74e3da5bb9a9aed46677eb811b89fd14df806b6c6e38da64b5 1953155 pidgin-lwqq_0.4.1+git201502081006.a0fa8bf.orig.tar.gz
+ 8a206affb1e3df21b650ea5bb671d9f73fd3b4119d49eca82838793c34c0dc48 2980 pidgin-lwqq_0.4.1+git201502081006.a0fa8bf-1~lainme~trusty.debian.tar.xz
+ cc9399eaeedc518b2dc50e2cea4c5551618ca44390c738ac594d8890d9ed3aab 2101 pidgin-lwqq_0.4.1+git201502081006.a0fa8bf-1~lainme~trusty.dsc
 Homepage: https://github.com/xiehuc/pidgin-lwqq
-Package-List: pidgin-lwqq deb net extra
- pidgin-lwqq-dbg deb debug extra
+Package-List: pidgin-lwqq deb net extra arch=any
+ pidgin-lwqq-dbg deb debug extra arch=any
 
 Package: pidgin-lwqq-unstable
 Binary: pidgin-lwqq-unstable, pidgin-lwqq-unstable-dbg

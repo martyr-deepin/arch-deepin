@@ -2083,6 +2083,40 @@ Checksums-Sha256:
  76fca05b08e00134e3cb92fa347507f42cbd48ddb08ed3343a912def187fbb62 4784059 gstreamer0.10-ffmpeg_0.10.13.orig.tar.bz2
  5d084389bb52b52bc92815259671bfbb5a830df60d008447b77a346e11e7599a 11871 gstreamer0.10-ffmpeg_0.10.13-7~trusty.debian.tar.gz
 
+Package: pygtk
+Format: 3.0 (quilt)
+Binary: python-gtk2, python-gtk2-dbg, python-gtk2-dev, python-glade2, python-gtk2-doc
+Architecture: any all
+Version: 2.24.0-4~saucy
+Maintainer: Sebastien Bacher <seb128@debian.org>
+Uploaders: Torsten Landschoff <torsten@debian.org>, Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Josselin Mouette <joss@debian.org>, Laurent Bigonville <bigon@debian.org>, Martin Pitt <mpitt@debian.org>
+Homepage: http://www.pygtk.org/
+Standards-Version: 3.9.2
+Vcs-Browser: http://svn.debian.org/viewsvn/pkg-gnome/desktop/unstable/pygtk/
+Vcs-Svn: svn://svn.debian.org/svn/pkg-gnome/desktop/unstable/pygtk/
+Build-Depends: debhelper (>= 8), gnome-pkg-tools (>= 0.10), cdbs, autotools-dev, xvfb (>= 2:1.6.0), xauth, xfonts-base, python-all-dev (>= 2.6.6-3~), python-all-dbg, libgtk2.0-dev (>= 2.18.0), libglib2.0-dev (>= 2.8.0), libpango1.0-dev (>= 1.21.4), libatk1.0-dev (>= 1.12.0), libglade2-dev (>= 2.5.0), python-numpy-dbg (>= 1:1.4.1-4~), python-cairo-dev (>= 1.0.2), python-cairo-dbg (>= 1.0.2), python-gobject-dev (>= 2.21.3), python-gobject-dbg (>= 2.21.3), xsltproc, docbook-xsl, gnome-icon-theme
+Package-List:
+ python-glade2 deb python optional
+ python-gtk2 deb python optional
+ python-gtk2-dbg deb debug extra
+ python-gtk2-dev deb python optional
+ python-gtk2-doc deb doc optional
+Priority: optional
+Section: python
+Directory: pool/main/p/pygtk
+Files: 
+ 26b8b094e51fdca7eb20215dd4cac580 2465 pygtk_2.24.0-4~saucy.dsc
+ d27c7f245a9e027f6b6cd9acb7468e36 3234341 pygtk_2.24.0.orig.tar.gz
+ 996dbf3f9080c6703c7f79d1b6e48ef9 16830 pygtk_2.24.0-4~saucy.debian.tar.gz
+Checksums-Sha1: 
+ 6d573ccb7bc83fa03149bd1fe6a0ed0ffdf69ead 2465 pygtk_2.24.0-4~saucy.dsc
+ 95fce378c45e8d5aceb9640bd75ec2c7f4132880 3234341 pygtk_2.24.0.orig.tar.gz
+ 677cc519cc8dcb09c192bb2345d0c632b736a903 16830 pygtk_2.24.0-4~saucy.debian.tar.gz
+Checksums-Sha256: 
+ ad76af7779c08c1773455a757734388d872cf776d7a9850de463700626b745f1 2465 pygtk_2.24.0-4~saucy.dsc
+ 6e3e54fa6e65a69ac60bd58cb2e60a57f3346ac52efe995f3d10b6c38c972fd8 3234341 pygtk_2.24.0.orig.tar.gz
+ 7a70c1f680ee7c4cb326dad86c73a5473c8111deb92e43b6527c8dba03fa9544 16830 pygtk_2.24.0-4~saucy.debian.tar.gz
+
 Package: python-deepin-lunar
 Format: 3.0 (quilt)
 Binary: python-deepin-lunar

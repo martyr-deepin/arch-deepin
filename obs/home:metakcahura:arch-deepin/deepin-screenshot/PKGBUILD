@@ -2,7 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-screenshot
-pkgver=2.1.20140703.08a5dde
+pkgver=2.1.20141230.a5861179f5
+_pkgver=2.1+20141230110557~a5861179f5
 pkgrel=1
 pkgdesc="Easy-to-use screenshot tool for linuxdeepin desktop environment"
 arch=('any')
@@ -10,8 +11,8 @@ url="https://gitcafe.com/Deepin/deepin-screenshot"
 license=('GPL3')
 groups=('deepin-extra')
 install="${pkgname}.install"
-source=("${pkgname}-${pkgver}.tar.xz")
-sha256sums=('SKIP')
+source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-screenshot/deepin-screenshot_2.1+20141230110557~a5861179f5.tar.gz")
+sha256sums=('3e5fdcafd6c9f503aae8520f8904123a53c2ad8cab0fb74bd7522a043c7a6c98')
 
 # Usage: _easycp dest files...
 _easycp () {
@@ -21,7 +22,7 @@ _easycp () {
 }
 
 prepare() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   # fix python version
   find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
@@ -31,7 +32,7 @@ package() {
   depends=('python2' 'gconf' 'python2-xlib' 'python2-wnck' 'python2-xdg'
            'python2-scipy' 'python2-pycurl' 'deepin-ui')
 
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   # TODO: waiting for Makefile
   _easycp "${pkgdir}"/usr/share/deepin-screenshot/ src

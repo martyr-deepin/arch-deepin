@@ -1,7 +1,7 @@
 <services>
   <service name="download_url">
-    <param name="host">ftp.fau.de</param>
-    <param name="protocol">https</param>
+    <param name="host">packages.linuxdeepin.com</param>
+    <param name="protocol">http</param>
     <param name="path">/deepin/pool/main/g/go-dlib/go-dlib_0.0.4+20150108105637~88ae48d3c8.tar.gz</param>
   </service>
 </services>

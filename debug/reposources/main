@@ -656,7 +656,7 @@ Package: dae
 Format: 3.0 (native)
 Binary: python3-dae
 Architecture: all
-Version: 1.0.0+20150228174134~a6758edb75
+Version: 1.0.0+20150203160542~a6758edb75
 Maintainer: Sou Bunnbu <iyzsong@gmail.com>
 Homepage: https://gitcafe.com/Deepin/dae/
 Standards-Version: 3.9.5
@@ -667,14 +667,14 @@ Priority: optional
 Section: python
 Directory: pool/main/d/dae
 Files: 
- 4050ae19342a0be1aab851070c77151c 1213 dae_1.0.0+20150228174134~a6758edb75.dsc
- a434820a4122417689edcfe1ea5beb37 24452 dae_1.0.0+20150228174134~a6758edb75.tar.gz
+ b8c38ec2f600ad18a6b01fe2e055c88a 1213 dae_1.0.0+20150203160542~a6758edb75.dsc
+ ecefc6e54458d0f10ef8e01180d6e02b 24277 dae_1.0.0+20150203160542~a6758edb75.tar.gz
 Checksums-Sha1: 
- 881eb9fdc6f65f326f59502c93f18403615d19a8 1213 dae_1.0.0+20150228174134~a6758edb75.dsc
- 44e477b3057a2a24126d00001cf6a116bf9a8ac4 24452 dae_1.0.0+20150228174134~a6758edb75.tar.gz
+ e765f0e694aa7e2d0fa2a37809281937e3935ec0 1213 dae_1.0.0+20150203160542~a6758edb75.dsc
+ f8cc1d71903086000b120b3acf97000e8fdcadab 24277 dae_1.0.0+20150203160542~a6758edb75.tar.gz
 Checksums-Sha256: 
- 3c9fbdbf97aab9fb009b54264b2cee5a38cb775e538ad5cefddb9982449854b9 1213 dae_1.0.0+20150228174134~a6758edb75.dsc
- 73e56e96e6b0f1937cdbe55cd215a4c9c8ffcff0fc743bef57cfb263c00fa975 24452 dae_1.0.0+20150228174134~a6758edb75.tar.gz
+ a92df0cccb4661dfd959452cbcbecb4c79fbbade60ebdf81e13eaae1e9aff71f 1213 dae_1.0.0+20150203160542~a6758edb75.dsc
+ 429e2519bef4c4c26f5a0d57de99eabfc61154c26316b168bdb6315453ccaeb4 24277 dae_1.0.0+20150203160542~a6758edb75.tar.gz
 
 Package: dbus-factory
 Format: 3.0 (native)
@@ -1428,7 +1428,7 @@ Package: deepin-movie
 Format: 3.0 (native)
 Binary: deepin-movie
 Architecture: all
-Version: 2.2.1+20150302100500~ac72c0aa16
+Version: 2.2+20150211132515~f8f651edba
 Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
 Homepage: http://www.linuxdeepin.com
 Standards-Version: 3.9.5
@@ -1439,14 +1439,14 @@ Priority: extra
 Section: misc
 Directory: pool/main/d/deepin-movie
 Files: 
- 85879cc7010ab837be82de07e18da02c 1245 deepin-movie_2.2.1+20150302100500~ac72c0aa16.dsc
- ed72911c87ed7e5e0abeec4e2c490dcf 270161 deepin-movie_2.2.1+20150302100500~ac72c0aa16.tar.gz
+ d622a83dd93501b8e4ab49529e430be4 1237 deepin-movie_2.2+20150211132515~f8f651edba.dsc
+ 0e475ccdd878d1ae2f6b7098144da13c 269964 deepin-movie_2.2+20150211132515~f8f651edba.tar.gz
 Checksums-Sha1: 
- 36f374a8265382c657a49b1a2d096ac5e0ff804d 1245 deepin-movie_2.2.1+20150302100500~ac72c0aa16.dsc
- 0bdb18fed4873a60f38e7693bd5a875bcda05500 270161 deepin-movie_2.2.1+20150302100500~ac72c0aa16.tar.gz
+ 74edd1c122d67ab5cab895dc5f363629fe403a43 1237 deepin-movie_2.2+20150211132515~f8f651edba.dsc
+ e1e71bee2aea1782ea77818f01cfe48f43664ff5 269964 deepin-movie_2.2+20150211132515~f8f651edba.tar.gz
 Checksums-Sha256: 
- ebcc71796ecfef3272cbecfce4e91501bf3e8c0cf978ea51a5a0bed9d5b1f058 1245 deepin-movie_2.2.1+20150302100500~ac72c0aa16.dsc
- 6feedf12ff8e8080d44ec27f0f24dc320ecf15d226ae3654c121b72c34637bd1 270161 deepin-movie_2.2.1+20150302100500~ac72c0aa16.tar.gz
+ fddcc0a221531d98a3b2d7e26027b6bec74ef7ad2a7c8f9f2f255a60718725eb 1237 deepin-movie_2.2+20150211132515~f8f651edba.dsc
+ 4bb5e3ed1f1c346090cb11081916e10a3ef7d2277c3330d768bf49d63eefe385 269964 deepin-movie_2.2+20150211132515~f8f651edba.tar.gz
 
 Package: deepin-music-player
 Format: 3.0 (native)
@@ -1476,7 +1476,7 @@ Package: deepin-notifications
 Format: 3.0 (native)
 Binary: deepin-notifications
 Architecture: any
-Version: 0.3+20150228132017~b75929e665
+Version: 0.3+20141216180805~a93d61767c
 Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
 Homepage: http://www.linuxdeepin.com
 Standards-Version: 3.9.5
@@ -1487,14 +1487,14 @@ Priority: extra
 Section: misc
 Directory: pool/main/d/deepin-notifications
 Files: 
- 5e5213c61e533b40be20534f8e7ab960 1285 deepin-notifications_0.3+20150228132017~b75929e665.dsc
- 7e38c150f2cf62f79713b5c261298850 29971 deepin-notifications_0.3+20150228132017~b75929e665.tar.gz
+ 2f7a51519f11c991c70011d806ec66cc 1285 deepin-notifications_0.3+20141216180805~a93d61767c.dsc
+ d153b51dd5a9720ab66508e0309ea617 30199 deepin-notifications_0.3+20141216180805~a93d61767c.tar.gz
 Checksums-Sha1: 
- 2d257c4af415108219d18357382f7a055da0d70f 1285 deepin-notifications_0.3+20150228132017~b75929e665.dsc
- a422e00b186bb3a6b0760f836b073539fb06c046 29971 deepin-notifications_0.3+20150228132017~b75929e665.tar.gz
+ 256e37723bc6dc41cc23f6c271681713abce846c 1285 deepin-notifications_0.3+20141216180805~a93d61767c.dsc
+ 91e05ad504a7fbfc7897d890e04ecc73a3fdc0ec 30199 deepin-notifications_0.3+20141216180805~a93d61767c.tar.gz
 Checksums-Sha256: 
- 17a7e4c5379af736b19e478fd562c441162ca0db92d0db4b941241647cdfd7de 1285 deepin-notifications_0.3+20150228132017~b75929e665.dsc
- daac4adc903a09e1c9b4dd1692ec2f3e9e3f6d63277db9ab5a36200b08f8ac6b 29971 deepin-notifications_0.3+20150228132017~b75929e665.tar.gz
+ 3f4438e0b3beda30bf9b74109132724e2de85a71ee3dc8e6ebe815bc49087e03 1285 deepin-notifications_0.3+20141216180805~a93d61767c.dsc
+ 79e34f468591630b10ad7b88d084c64aa265680d1c1597068b29fbdde028e0b5 30199 deepin-notifications_0.3+20141216180805~a93d61767c.tar.gz
 
 Package: deepin-os-upgrader
 Format: 3.0 (native)
@@ -2852,7 +2852,7 @@ Package: go-dlib
 Format: 3.0 (native)
 Binary: golang-dlib-dev
 Architecture: all
-Version: 0.0.4+20150227094412~8e9523b66a
+Version: 0.0.4+20150108105637~88ae48d3c8
 Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
 Homepage: http://www.linuxdeepin.com
 Standards-Version: 3.9.5
@@ -2863,14 +2863,14 @@ Priority: extra
 Section: devel
 Directory: pool/main/g/go-dlib
 Files: 
- 51a7fb629a7409ea72304c66d419b144 1336 go-dlib_0.0.4+20150227094412~8e9523b66a.dsc
- e34c686cef4f027775be66f3bf95bba5 1809691 go-dlib_0.0.4+20150227094412~8e9523b66a.tar.gz
+ d5da694ce11958dc0d6244a27d5d7b2a 1336 go-dlib_0.0.4+20150108105637~88ae48d3c8.dsc
+ 8bc48fdf68a5f4bd91399c95a6a3f876 1808290 go-dlib_0.0.4+20150108105637~88ae48d3c8.tar.gz
 Checksums-Sha1: 
- f60a220ed646674e8ca3438324accbc584e2c02d 1336 go-dlib_0.0.4+20150227094412~8e9523b66a.dsc
- 328754636ed51d67ddd9c498d78fb8b25039536d 1809691 go-dlib_0.0.4+20150227094412~8e9523b66a.tar.gz
+ 0d3f847381ad2f47ff65aefd4136a984cf12a3c9 1336 go-dlib_0.0.4+20150108105637~88ae48d3c8.dsc
+ 6843983aa3644d3f8d2eb82de976492685990b46 1808290 go-dlib_0.0.4+20150108105637~88ae48d3c8.tar.gz
 Checksums-Sha256: 
- 9adc775a776ec28b679409ce1b6844aa600169834850eea3c587138c34cafa13 1336 go-dlib_0.0.4+20150227094412~8e9523b66a.dsc
- 622a76b47f7e2b242870e578accfa34b568903dc3cbfbc94e6196b61c28f3b19 1809691 go-dlib_0.0.4+20150227094412~8e9523b66a.tar.gz
+ d3b5884850c4aac1101eea36fa46fd3982a7d0cbbaf120f067bc49928b2dd7f8 1336 go-dlib_0.0.4+20150108105637~88ae48d3c8.dsc
+ 307abef63fd1a13831ef3587e154d35a657536feae924f29e36101b8ac82cfc9 1808290 go-dlib_0.0.4+20150108105637~88ae48d3c8.tar.gz
 
 Package: go-dlib-dbus-proxyer
 Format: 3.0 (native)
