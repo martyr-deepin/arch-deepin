@@ -178,6 +178,33 @@ Original-Vcs-Browser: http://bzr.debian.org/loggerhead/apt/aptdaemon/debian-sid
 Original-Vcs-Bzr: nosmart+http://bzr.debian.org/bzr/apt/aptdaemon/debian-sid
 Testsuite: autopkgtest
 
+Package: compiz
+Format: 3.0 (native)
+Binary: compiz, compiz-dev
+Architecture: any
+Version: 1:0.9.99-5+git20140707164843~2e85d002e7
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Uploaders: David Nusinow <dnusinow@debian.org>, Sean Finney <seanius@debian.org>, Cyril Brulebois <kibi@debian.org>
+Standards-Version: 3.9.3
+Vcs-Bzr: https://code.launchpad.net/+branch/ubuntu/compiz
+Build-Depends: cmake (>= 2.6), debhelper (>= 9~), dh-translations, intltool, libtool, pkg-config, quilt (>= 0.40), libcairo2-dev, libdbus-glib-1-dev, libgl1-mesa-dev (>= 6.5.1) [!armhf !armel] | libgl-dev [!armhf !armel], libegl1-mesa-dev [armhf armel], libgles2-mesa-dev [armhf armel], libboost1.49-dev, libboost-serialization1.49-dev, libglib2.0-dev, libglibmm-2.4-dev, libgtk2.0-dev, libgtk-3-dev, libice-dev (>= 1:1.0.1), libmetacity-dev (>= 1:2.30.3-0ubuntu3), libpango1.0-dev, libpng12-dev | libpng-dev, librsvg2-dev, libsm-dev (>= 1:1.0.1), libwnck-dev, libx11-dev, libxcomposite-dev (>= 1:0.3-2), libxext-dev, libxdamage-dev (>= 1:1.0.3), libxfixes-dev (>= 1:4.0.1), libxinerama-dev, libxml-parser-perl, libxrandr-dev (>= 2:1.1.0.2), libxrender-dev (>= 1:0.9.1), libxcursor-dev, libxml2-dev, libxslt1-dev, xsltproc, libstartup-notification0-dev (>= 0.7), x11proto-gl-dev (>= 1.4.8), libglu1-mesa-dev [!armhf !armel], libjpeg8-dev, libnotify-dev, libx11-xcb-dev, libprotobuf-dev, protobuf-compiler, python-all-dev, python-pyrex, gnome-control-center-dev, gsettings-desktop-schemas-dev
+Package-List: 
+ compiz deb x11 optional
+ compiz-dev deb x11 optional
+Priority: optional
+Section: x11
+Directory: pool/main/c/compiz
+Files: 
+ dc7c6340eb25d76fe17c518e76d5fde0 1997 compiz_0.9.99-5+git20140707164843~2e85d002e7.dsc
+ 4ec66e79bc5d76fbdb5996003aea08b3 3398866 compiz_0.9.99-5+git20140707164843~2e85d002e7.tar.gz
+Checksums-Sha1: 
+ 1363e07d46767aeb3e392b2ca1f6a27404e1763c 1997 compiz_0.9.99-5+git20140707164843~2e85d002e7.dsc
+ ded5cb7f736433f108cf4ab2b157eb490f8f493d 3398866 compiz_0.9.99-5+git20140707164843~2e85d002e7.tar.gz
+Checksums-Sha256: 
+ 225c0f7a0868da664f29d44c9e10703fb2f6a623a3a68f8a4762ae328830c696 1997 compiz_0.9.99-5+git20140707164843~2e85d002e7.dsc
+ 4077a2f9d86da2781a48e90651b7a52482c6c2d4ac8e60b37d91208f4b9a4250 3398866 compiz_0.9.99-5+git20140707164843~2e85d002e7.tar.gz
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
 Package: dbus-factory
 Format: 3.0 (native)
 Binary: dde-go-dbus-factory, dde-qml-dbus-factory
