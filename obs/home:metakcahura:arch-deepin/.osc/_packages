@@ -28,8 +28,6 @@
   <package name="deepin-screenshot" state=" " />
   <package name="deepin-terminal" state=" " />
   <package name="deepin-translator" state=" " />
-  <package name="deepin-ui" state=" " />
-  <package name="deepin-utils" state=" " />
   <package name="ffmpeg" state=" " />
   <package name="flattr-icon-theme" state=" " />
   <package name="go" state=" " />
@@ -80,4 +78,6 @@
   <package name="deepin-dbus-generator" state=" " />
   <package name="grub-theme-deepin" state=" " />
   <package name="deepin-vte" state=" " />
+  <package name="python2-deepin-ui" state=" " />
+  <package name="python2-deepin-utils" state=" " />
 </project>

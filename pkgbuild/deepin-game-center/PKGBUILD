@@ -27,7 +27,7 @@ build() {
 }
 
 package() {
-  depends=('deepin-ui' 'flashplugin' 'hicolor-icon-theme' 'python2-scipy' 'python2-jswebkit')
+  depends=('python2-deepin-ui' 'flashplugin' 'hicolor-icon-theme' 'python2-scipy' 'python2-jswebkit')
 
   cd "${pkgname}-${_pkgver}"
 

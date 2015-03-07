@@ -182,14 +182,14 @@
     "LastVersionFixed": "1.1.20141230110750"
   },
   {
-    "Name": "deepin-ui",
+    "Name": "python2-deepin-ui",
     "OriginRepoDir": "deepin-ui",
     "Updated": true,
     "LastVersion": "1.1+20141229194712~5a86faec50",
     "LastVersionFixed": "1.1.20141229194712"
   },
   {
-    "Name": "deepin-utils",
+    "Name": "python2-deepin-utils",
     "OriginRepoDir": "deepin-utils",
     "Updated": true,
     "LastVersion": "0.0.2+20140703165416~8aaf2a6f00",

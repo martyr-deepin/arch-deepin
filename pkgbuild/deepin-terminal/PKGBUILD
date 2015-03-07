@@ -27,7 +27,7 @@ build() {
 }
 
 package() {
-  depends+=('deepin-ui' 'gtk-update-icon-cache')
+  depends+=('python2-deepin-ui' 'gtk-update-icon-cache')
 
   cd "${pkgname}-${_pkgver}"
 

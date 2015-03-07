@@ -35,7 +35,7 @@ package() {
            'qt5-graphicaleffects' 'qt5-imageformats' 'qt5-systems'
            'python2-ass' 'python2-magic' 'python2-peewee' 'python2-pyqt5'
            'python2-pysrt' 'python2-setproctitle' 'python2-xpybutil'
-           'dde-go-dbus-factory' 'deepin-menu' 'deepin-qml-widgets' 'deepin-ui'
+           'dde-go-dbus-factory' 'deepin-menu' 'deepin-qml-widgets' 'python2-deepin-ui'
            'desktop-file-utils' 'enca' 'mediainfo' 'qtav')
 
   cd "${pkgname}-${_pkgver}"

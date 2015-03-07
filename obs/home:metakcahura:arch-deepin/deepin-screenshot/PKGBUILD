@@ -30,7 +30,7 @@ prepare() {
 
 package() {
   depends=('python2' 'gconf' 'python2-xlib' 'python2-wnck' 'python2-xdg'
-           'python2-scipy' 'python2-pycurl' 'deepin-ui')
+           'python2-scipy' 'python2-pycurl' 'python2-deepin-ui')
 
   cd "${pkgname}-${_pkgver}"
 

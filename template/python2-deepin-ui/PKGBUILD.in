@@ -1,7 +1,8 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-pkgname=deepin-ui
+pkgname=python2-deepin-ui
+_pkgname=deepin-ui
 pkgver=@PKGVER_FIXED@
 _pkgver=@PKGVER_SRC@
 pkgrel=1
@@ -14,27 +15,28 @@ depends=('python2-deepin-utils' 'python2-deepin-gsettings' 'deepin-pygtk'
          'python2-scipy' 'glib2' 'python2-cairo' 'python2-imaging'
          'python2-xlib' 'pywebkitgtk' 'libsoup')
 makedepends=('deepin-gettext-tools' 'python2-setuptools' 'webkitgtk')
-replaces=('deepin-ui-git')
-conflicts=('deepin-ui-git')
+provides=('deepin-ui')
+replaces=('deepin-ui' 'deepin-ui-git')
+conflicts=('deepin-ui' 'deepin-ui-git')
 source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 prepare() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_pkgname}-${_pkgver}"
 
   # fix python version
   find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build(){
-  cd "${pkgname}-${_pkgver}"
+  cd "${_pkgname}-${_pkgver}"
 
   python2 setup.py build
   (cd dtk/tools; python2 generate_mo.py)
 }
 
 package() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_pkgname}-${_pkgver}"
 
   python2 setup.py install --root="${pkgdir}" --optimize=1
   install -dm 755 "${pkgdir}"/usr/share/locale
