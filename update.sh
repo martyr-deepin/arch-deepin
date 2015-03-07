@@ -157,15 +157,15 @@ show_usage() {
   cat <<EOF
 ${appname} [options]
 options:
-    -p, --package
+    --package, -p
         only update target package
-    --force-updated
+    --mark-updated, -U
         mark all package updated
-    --ignore-reposources
+    --no-download-reposources, -S
         do not download repo sources this time
-    --makepkg
+    --makepkg, -m
         run makepkg for updated packages
-    --aur-upload
+    --aur-upload, -a
         upload updated packages to aur
     -h, --help
         show this message
@@ -176,8 +176,8 @@ EOF
 # arguments
 arg_show_usage=
 arg_package=
-arg_force_updated=
-arg_ignore_reposources=
+arg_mark_updated=
+arg_no_download_reposources=
 arg_makepkg=
 arg_aur_upload=
 
@@ -185,10 +185,10 @@ while [ $# -gt 0 ]; do
   case "${1}" in
     -h|--help) arg_show_usage=1; break;;
     -p|--package) arg_package="${2}"; shift; shift;;
-    --force-updated) arg_force_updated=1; shift;;
-    --ignore-reposources) arg_ignore_reposources=1; shift;;
-    --makepkg) arg_makepkg=1; shift;;
-    --aur-upload) arg_aur_upload=1; shift;;
+    -U|--mark-updated) arg_mark_updated=1; shift;;
+    -S|--no-download-reposources) arg_no_download_reposources=1; shift;;
+    -m|--makepkg) arg_makepkg=1; shift;;
+    -a|--aur-upload) arg_aur_upload=1; shift;;
     *) shift;;
   esac
 done
@@ -197,7 +197,7 @@ if [ "${arg_show_usage}" ]; then
     show_usage
 fi
 
-if [ ! "${arg_ignore_reposources}" ]; then
+if [ ! "${arg_no_download_reposources}" ]; then
     download_repo_sources
 fi
 
@@ -215,7 +215,7 @@ else
 fi
 
 for p in "${pkgs[@]}"; do
-  if [ "${arg_force_updated}" ]; then
+  if [ "${arg_mark_updated}" ]; then
       set_package_updated "${p}" true
   fi
 
@@ -233,7 +233,7 @@ for p in "${pkgs[@]}"; do
 
   # ensure package updated again for that it may be changed when
   # updating package state
-  if [ "${arg_force_updated}" ]; then
+  if [ "${arg_mark_updated}" ]; then
       set_package_updated "${p}" true
   fi
 done
