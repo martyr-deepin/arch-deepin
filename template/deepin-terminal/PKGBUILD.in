@@ -10,12 +10,15 @@ arch=('any')
 url="https://gitcafe.com/Deepin/deepin-terminal"
 license=('GPL3')
 depends=('deepin-vte' 'python2-dbus' 'python2-scipy')
+makedepends=('deepin-gettext-tools')
 groups=('deepin-extra')
 install="${pkgname}.install"
 source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 prepare(){
+  cd "${pkgname}-${_pkgver}"
+
   # fix python version
   find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
@@ -23,7 +26,7 @@ prepare(){
 build() {
   cd "${pkgname}-${_pkgver}"
 
-  make
+  deepin-generate-mo tools/locale_config.ini
 }
 
 package() {

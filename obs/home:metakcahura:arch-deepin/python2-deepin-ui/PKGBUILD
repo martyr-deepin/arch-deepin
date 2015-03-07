@@ -32,7 +32,7 @@ build(){
   cd "${_pkgname}-${_pkgver}"
 
   python2 setup.py build
-  (cd dtk/tools; python2 generate_mo.py)
+  deepin-generate-mo dtk/tools/locale_config.ini
 }
 
 package() {

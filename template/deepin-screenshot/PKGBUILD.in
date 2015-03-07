@@ -9,6 +9,7 @@ pkgdesc="Easy-to-use screenshot tool for linuxdeepin desktop environment"
 arch=('any')
 url="https://gitcafe.com/Deepin/deepin-screenshot"
 license=('GPL3')
+makedepends=('deepin-gettext-tools')
 groups=('deepin-extra')
 install="${pkgname}.install"
 source=("@SOURCE@")
@@ -25,7 +26,13 @@ prepare() {
   cd "${pkgname}-${_pkgver}"
 
   # fix python version
-  find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+}
+
+build() {
+  cd "${pkgname}-${_pkgver}"
+
+  deepin-generate-mo tools/locale_config.ini
 }
 
 package() {
@@ -34,7 +41,7 @@ package() {
 
   cd "${pkgname}-${_pkgver}"
 
-  # TODO: waiting for Makefile
+  # TODO waiting for new Makefile
   _easycp "${pkgdir}"/usr/share/deepin-screenshot/ src
   _easycp "${pkgdir}"/usr/share/deepin-screenshot/ theme
   _easycp "${pkgdir}"/usr/share/deepin-screenshot/ skin
@@ -47,8 +54,8 @@ package() {
   ln -s /usr/share/deepin-screenshot/src/screenshot.py "${pkgdir}"/usr/bin/deepin-screenshot
 
   # remove .po
-  find "${pkgdir}" -name '*.po' -exec rm \{} \;
-find "${pkgdir}" -name '*.pot' -exec rm \{} \;
+  find "${pkgdir}" -name '*.po' -exec rm '{}' ';'
+  find "${pkgdir}" -name '*.pot' -exec rm '{}' ';'
 }
 
  # Local Variables:

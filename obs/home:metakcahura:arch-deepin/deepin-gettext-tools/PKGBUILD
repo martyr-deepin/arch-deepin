@@ -18,6 +18,9 @@ prepare() {
 
   # fix python version
   find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+
+  # simple patch
+  sed -e '61s/sudo cp/cp/' -e '85s/sudo cp/cp/' -i src/generate_mo.py || die "sed failed"
 }
 
 package() {

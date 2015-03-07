@@ -421,3 +421,37 @@
 2015-03-07 23:11:15 makepkg: [BEGIN]
 2015-03-07 23:12:09 makepkg: [SUCCESS] python2-deepin-ui
 2015-03-07 23:12:15 makepkg: [SUCCESS] python2-deepin-utils
+
+2015-03-07 23:29:16 udpate-pkgbuild: [BEGIN]
+2015-03-07 23:29:16 update-pkgbuild: [SUCCESS] deepin-gettext-tools updated=false version=0.0.1+20141216200739~6ba50ecb9c
+2015-03-07 23:29:16 update-pkgbuild: [SUCCESS] deepin-music-player updated=false version=1.1+20150204093722~081154cf7b
+2015-03-07 23:29:17 update-pkgbuild: [SUCCESS] deepin-screenshot updated=false version=2.1+20141230110557~a5861179f5
+2015-03-07 23:29:17 update-pkgbuild: [FAILED] deeepin-terminal updated=false version=
+
+2015-03-07 23:29:22 udpate-pkgbuild: [BEGIN]
+2015-03-07 23:29:22 update-pkgbuild: [SUCCESS] deepin-gettext-tools updated=false version=0.0.1+20141216200739~6ba50ecb9c
+2015-03-07 23:29:22 update-pkgbuild: [SUCCESS] deepin-music-player updated=false version=1.1+20150204093722~081154cf7b
+2015-03-07 23:29:23 update-pkgbuild: [SUCCESS] deepin-screenshot updated=false version=2.1+20141230110557~a5861179f5
+2015-03-07 23:29:23 update-pkgbuild: [SUCCESS] deepin-terminal updated=false version=1.1+20141230110750~bc441b7aae
+2015-03-07 23:29:23 update-pkgbuild: [SUCCESS] python2-deepin-ui updated=false version=1.1+20141229194712~5a86faec50
+
+2015-03-07 23:29:26 makepkg: [BEGIN]
+2015-03-07 23:29:26 makepkg: [SUCCESS] deepin-gettext-tools
+2015-03-07 23:29:28 makepkg: [FAILED] deepin-music-player
+2015-03-07 23:29:30 makepkg: [SUCCESS] deepin-screenshot
+2015-03-07 23:29:30 makepkg: [FAILED] deepin-terminal
+2015-03-07 23:30:02 makepkg: [SUCCESS] python2-deepin-ui
+
+2015-03-07 23:47:18 udpate-pkgbuild: [BEGIN]
+2015-03-07 23:47:18 update-pkgbuild: [SUCCESS] deepin-gettext-tools updated=false version=0.0.1+20141216200739~6ba50ecb9c
+2015-03-07 23:47:18 update-pkgbuild: [SUCCESS] deepin-music-player updated=false version=1.1+20150204093722~081154cf7b
+2015-03-07 23:47:19 update-pkgbuild: [SUCCESS] deepin-screenshot updated=false version=2.1+20141230110557~a5861179f5
+2015-03-07 23:47:19 update-pkgbuild: [SUCCESS] deepin-terminal updated=false version=1.1+20141230110750~bc441b7aae
+2015-03-07 23:47:19 update-pkgbuild: [SUCCESS] python2-deepin-ui updated=false version=1.1+20141229194712~5a86faec50
+
+2015-03-07 23:47:22 makepkg: [BEGIN]
+2015-03-07 23:47:22 makepkg: [SUCCESS] deepin-gettext-tools
+2015-03-07 23:48:08 makepkg: [SUCCESS] deepin-music-player
+2015-03-07 23:48:12 makepkg: [SUCCESS] deepin-screenshot
+2015-03-07 23:48:16 makepkg: [SUCCESS] deepin-terminal
+2015-03-07 23:48:48 makepkg: [SUCCESS] python2-deepin-ui
