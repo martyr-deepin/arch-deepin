@@ -75,62 +75,62 @@ test_get_pkginfo_fixed_version() {
   get_pkginfo "compiz"
   check "${pkg_version}" "0.9.99-5+git20140707164843~2e85d002e7"
   check "${pkg_version_fixed}" "0.9.99.5.git20140707164843"
-  check "${pkg_version_src}" "0.9.99"
+  check "${pkg_srcdirname}" "compiz-0.9.99"
 
   get_pkginfo "dde-account-faces"
   check "${pkg_version}" "1.0.7-1~trusty"
   check "${pkg_version_fixed}" "1.0.7"
-  check "${pkg_version_src}" "1.0.7"
+  check "${pkg_srcdirname}" "dde-account-faces-1.0.7"
 
   get_pkginfo "deepin-artwork"
   check "${pkg_version}" "2014-4"
   check "${pkg_version_fixed}" "2014"
-  check "${pkg_version_src}" "2014"
+  check "${pkg_srcdirname}" "deepin-artwork-2014"
 
   get_pkginfo "deepin-artwork-themes"
   check "${pkg_version}" "14.04.3+20141204110221~5bf78d7f42"
   check "${pkg_version_fixed}" "14.04.3.20141204110221"
-  check "${pkg_version_src}" "14.04.3+20141204110221~5bf78d7f42"
+  check "${pkg_srcdirname}" "deepin-artwork-themes-14.04.3+20141204110221~5bf78d7f42"
 
   get_pkginfo "deepin-bug-reporter"
   check "${pkg_version}" "1+20141029130135~d2afb454d7"
   check "${pkg_version_fixed}" "1.20141029130135"
-  check "${pkg_version_src}" "1+20141029130135~d2afb454d7"
+  check "${pkg_srcdirname}" "deepin-bug-reporter-1+20141029130135~d2afb454d7"
 
   get_pkginfo "deepin-cursor-theme"
   check "${pkg_version}" "2014~4-2"
   check "${pkg_version_fixed}" "2014.4"
-  check "${pkg_version_src}" "2014~4"
+  check "${pkg_srcdirname}" "deepin-cursor-theme-2014~4"
 
   get_pkginfo "deepin-default-settings"
   check "${pkg_version}" "2014~12-35~trusty"
   check "${pkg_version_fixed}" "2014.12"
-  check "${pkg_version_src}" "2014~12"
+  check "${pkg_srcdirname}" "deepin-default-settings-2014~12"
 
   get_pkginfo "deepin-icon-theme-v2013"
   check "${pkg_version}" "1.0-1"
   check "${pkg_version_fixed}" "1.0"
-  check "${pkg_version_src}" "1.0"
+  check "${pkg_srcdirname}" "deepin-icon-theme-v2013-1.0"
 
   get_pkginfo "vte"
   check "${pkg_version}" "0.28.2-6deepin7~saucy"
   check "${pkg_version_fixed}" "0.28.2"
-  check "${pkg_version_src}" "0.28.2"
+  check "${pkg_srcdirname}" "vte-0.28.2"
 
   get_pkginfo "qtav"
   check "${pkg_version}" "1.4.2-deepin3"
   check "${pkg_version_fixed}" "1.4.2"
-  check "${pkg_version_src}" "1.4.2"
+  check "${pkg_srcdirname}" "qtav-1.4.2"
 
   get_pkginfo "golang-go-sqlite3"
   check "${pkg_version}" "0.0~git20140913-1"
   check "${pkg_version_fixed}" "0.0.git20140913"
-  check "${pkg_version_src}" "0.0~git20140913"
+  check "${pkg_srcdirname}" "golang-go-sqlite3-0.0~git20140913"
 
   get_pkginfo "golang-gocheck"
   check "${pkg_version}" "0.0~bzr20131118+85-6"
   check "${pkg_version_fixed}" "0.0.bzr20131118.85"
-  check "${pkg_version_src}" "0.0~bzr20131118+85"
+  check "${pkg_srcdirname}" "golang-gocheck-0.0~bzr20131118+85"
 }
 
 # simple test runner

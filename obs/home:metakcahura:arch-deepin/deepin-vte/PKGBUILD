@@ -4,7 +4,7 @@
 pkgname=deepin-vte
 _pkgname=vte
 pkgver=0.28.2
-_pkgver=0.28.2
+_srcdirname=vte-0.28.2
 pkgrel=8
 epoch=1
 pkgdesc="Virtual Terminal Emulator widget for use with GTK2 - with several patches"

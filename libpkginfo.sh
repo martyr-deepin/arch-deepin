@@ -48,7 +48,7 @@ download_repo_sources() {
 
 # output $pkg_version, $pkg_fileurl, $pkg_sha256sum, etc.
 get_pkginfo() {
-  unset pkg_name pkg_info pkg_directory pkg_version pkg_version_fixed pkg_version_src
+  unset pkg_name pkg_info pkg_directory pkg_version pkg_version_fixed pkg_srcdirname
   unset pkg_files pkg_fileurls pkg_sha256sums pkg_file pkg_fileurl pkg_sha256sum
   unset pkg_file_orig pkg_fileurl_orig pkg_sha256sum_orig
   unset pkg_file_debian pkg_fileurl_debian pkg_sha256sum_debian
@@ -63,8 +63,8 @@ get_pkginfo() {
   pkg_version=$(echo "${pkg_info}" | grep -m1 "^Version:" | awk '{print $2}')
   pkg_version="${pkg_version#*:}"           # remove prefix version like "1:"
 
-  # get package version in source directory
-  pkg_version_src="${pkg_version%-*}"       # remove suffix "-*"
+  # get source directory name in source archive
+  pkg_srcdirname="${pkg_name}-${pkg_version%-*}"
 
   # fix package version
   pkg_version_fixed="${pkg_version}"

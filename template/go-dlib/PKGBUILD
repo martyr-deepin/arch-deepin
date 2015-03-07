@@ -3,7 +3,7 @@
 
 pkgname=go-dlib
 pkgver=0.0.4.20150108105637
-_pkgver=0.0.4+20150108105637~88ae48d3c8
+_srcdirname=go-dlib-0.0.4+20150108105637~88ae48d3c8
 pkgrel=1
 pkgdesc='Go-lang bingdings for dlib'
 arch=('any')
@@ -18,7 +18,7 @@ _gopkg="pkg.linuxdeepin.com/lib"
 
 prepare() {
   mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
-  cp -r "${pkgname}-${_pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
+  cp -r "${_srcdirname}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
   rm -rf "${_gobuild_dir}"/src/"${_gopkg}"/debian
 }
 

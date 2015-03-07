@@ -3,7 +3,7 @@
 
 pkgname=deepin-gettext-tools
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=1
 pkgdesc='Deepin Internationalization utilities'
 arch=('any')
@@ -14,7 +14,7 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 prepare() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   # fix python version
   find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
@@ -26,7 +26,7 @@ prepare() {
 package() {
   depends=('gettext' 'python2')
 
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   install -dm755 "${pkgdir}"/usr/{bin,lib/deepin-gettext-tools}
   install -m755 src/generate_mo.py "${pkgdir}"/usr/lib/deepin-gettext-tools/

@@ -3,7 +3,7 @@
 
 pkgname=deepin-movie
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=1
 pkgdesc='deepin movie for linuxdeepin desktop environment'
 arch=('any')
@@ -16,7 +16,7 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 prepare() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   sed 's\python\python2\' -i Makefile
 
@@ -25,7 +25,7 @@ prepare() {
 }
 
 build() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   make
 }
@@ -38,7 +38,7 @@ package() {
            'dde-go-dbus-factory' 'deepin-menu' 'deepin-qml-widgets' 'python2-deepin-ui'
            'desktop-file-utils' 'enca' 'mediainfo' 'qtav')
 
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   make DESTDIR="${pkgdir}" install
 }

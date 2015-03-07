@@ -3,7 +3,7 @@
 
 pkgname=qtav
 pkgver=1.4.2
-_pkgver=1.4.2
+_srcdirname=qtav-1.4.2
 pkgrel=1
 pkgdesc="qt multimedia framework"
 arch=('i686' 'x86_64')
@@ -16,14 +16,14 @@ source=("http://packages.linuxdeepin.com/deepin/pool/main/q/qtav/qtav_1.4.2-deep
 sha256sums=('bf88a384506e0a680e0a0a2cb7ce40b2a16c471b90fbd4ed74c65ad18c45a5ab')
 
 build(){
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   qmake
   make PREFIX=/usr
 }
 
 package() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   make INSTALL_ROOT="${pkgdir}" install
 }

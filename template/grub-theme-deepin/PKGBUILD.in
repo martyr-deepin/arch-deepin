@@ -2,9 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=grub-theme-deepin
-_pkgname=grub-themes-deepin
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=1
 pkgdesc='Grub2 themes from Linux Deepin'
 arch=('any')
@@ -20,7 +19,7 @@ sha256sums=('@SHA256SUM@')
 package() {
   depends=('grub')
 
-  cd "${_pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   install -dm755 "${pkgdir}"/boot/grub/themes
   cp -rf deepin-grub2-themes/deepin "${pkgdir}"/boot/grub/themes/

@@ -2,9 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=python2-deepin-gsettings
-_pkgname=deepin-gsettings
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=1
 pkgdesc='deepin gsettings python bindings'
 arch=('i686' 'x86_64')
@@ -20,19 +19,19 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 prepare() {
-  cd "${_pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   # fix python version
   find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build(){
-  cd "${_pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   python2 setup.py build
 }
 package() {
-  cd "${_pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   python2 setup.py install --root="$pkgdir" --optimize=1
 }

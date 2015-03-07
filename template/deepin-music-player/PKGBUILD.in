@@ -3,7 +3,7 @@
 
 pkgname=deepin-music-player
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=1
 pkgdesc='Awesome music player with brilliant and tweakful UI Deepin-UI based.'
 arch=('any')
@@ -17,14 +17,14 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 prepare() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   # fix python version
   find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   deepin-generate-mo tools/locale_config.ini
 }
@@ -36,7 +36,7 @@ package() {
            'python2-dbus' 'sonata' 'cddb-py' 'python2-scipy' 'python2-pycurl'
            'python2-xlib' 'python2-keybinder2' 'python2-deepin-ui' 'desktop-file-utils')
 
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   make DESTDIR="${pkgdir}" PREFIX="/usr" install
 }

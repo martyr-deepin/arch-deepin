@@ -3,7 +3,7 @@
 
 pkgname=deepin-gtk-theme
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=1
 pkgdesc="Deepin GTK Theme."
 arch=('any')
@@ -17,7 +17,7 @@ sha256sums=('@SHA256SUM@')
 package() {
   depends=('gtk-engine-unico')
 
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   install -dm0755 "${pkgdir}"/usr/share/themes
   cp -r Deepin "${pkgdir}"/usr/share/themes/Deepin-Legacy

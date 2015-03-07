@@ -3,7 +3,7 @@
 
 pkgname=deepin-artwork
 pkgver=2014
-_pkgver=2014
+_srcdirname=deepin-artwork-2014
 pkgrel=1
 pkgdesc='Deepin artwork themes (sounds)'
 arch=('any')
@@ -14,7 +14,7 @@ source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-artwork/deepi
 sha256sums=('2741f79faac75540277972bacd26f8d39211fd3862180508657965db195cb6ec')
 
 package() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   install -dm755 "${pkgdir}"/usr/share
   cp -r usr/share/{pixmaps,sounds} "${pkgdir}"

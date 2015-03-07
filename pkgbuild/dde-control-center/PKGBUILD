@@ -3,7 +3,7 @@
 
 pkgname=dde-control-center
 pkgver=0.1.20150211150410
-_pkgver=0.1+20150211150410~6b5195ef53
+_srcdirname=dde-control-center-0.1+20150211150410~6b5195ef53
 pkgrel=1
 pkgdesc="New control center for linux deepin"
 arch=('i686' 'x86_64')
@@ -18,14 +18,14 @@ source=("http://packages.linuxdeepin.com/deepin/pool/main/d/dde-control-center/d
 sha256sums=('89ce5952e15f2cebf5f8465ff26e7df788c025e62e4eb29f15d4d08f6e772207')
 
 prepare() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   # fix python version
   find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build(){
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   make
 }
@@ -33,7 +33,7 @@ build(){
 package() {
   depends+=('deepin-artwork-themes' 'dde-account-faces')
 
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   make DESTDIR="${pkgdir}" install
 }

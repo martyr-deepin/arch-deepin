@@ -2,9 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-pygtk
-_pkgname=pygtk
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=6
 pkgdesc="Python bindings for the GTK widget set - with patches to fix memory leak for deepin-ui"
 arch=('i686' 'x86_64')
@@ -21,11 +20,11 @@ source=("@SOURCE_ORIG@"
 sha256sums=('@SHA256SUM_ORIG@'
             '@SHA256SUM_DEBIAN@'
             '39a30456cba055a452bb55c74ef1ff2f5f7bfaad22855b4dd569ab009b56b682')
-provides=("${_pkgname}=2.24.0")
-conflicts=("${_pkgname}")
+provides=("pygtk=2.24.0")
+conflicts=("pygtk")
 
 prepare() {
-  cd "${_pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   # apply python27 patch
   # https://bugzilla.gnome.org/show_bug.cgi?id=623965
@@ -42,13 +41,13 @@ prepare() {
 }
 
 build() {
-  cd "${_pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
   PYTHON=/usr/bin/python2 ./configure --prefix=/usr
   make
 }
 
 package() {
-  cd "${srcdir}/${_pkgname}-${_pkgver}"
+  cd "${srcdir}/${_srcdirname}"
   make DESTDIR="${pkgdir}" install
   install -m644 gtk/gtk-extrafuncs.defs "${pkgdir}/usr/share/pygtk/2.0/defs/"
   sed -i -e 's#env python$#env python2#' "${pkgdir}"/usr/lib/pygtk/2.0/{,demos/}*.py

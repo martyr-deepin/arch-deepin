@@ -3,7 +3,7 @@
 
 pkgname=dde-api
 pkgver=0.0.2.20150107093816
-_pkgver=0.0.2+20150107093816~d93500c16a
+_srcdirname=dde-api-0.0.2+20150107093816~d93500c16a
 pkgrel=1
 pkgdesc='Go-lang bingdings for dde-daemon'
 arch=('i686' 'x86_64')
@@ -18,13 +18,13 @@ source=("http://packages.linuxdeepin.com/deepin/pool/main/d/dde-api/dde-api_0.0.
 sha256sums=('7a45f0c64513c9be7e7795fcb58c1c3eb694e6a1a6a36fb6037281e1dc72e813')
 
 build(){
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   make GOPATH="/usr/lib/go/site"
 }
 
 package() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   make DESTDIR="${pkgdir}" install
 }

@@ -2,9 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-dbus-generator
-_pkgname=dbus-generator
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=1
 pkgdesc='Convert dbus interfaces to go-lang or qml wrapper code'
 arch=('i686' 'x86_64')
@@ -20,12 +19,12 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 build(){
-  cd "${_pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   mkdir -pv out
   GOPATH="/usr/lib/go/site" go build -o out/dbus-generator
 }
 
 package() {
-  install -Dm 755 "${_pkgname}-${_pkgver}"/out/dbus-generator "${pkgdir}"/usr/bin/dbus-generator
+  install -Dm 755 "${_srcdirname}"/out/dbus-generator "${pkgdir}"/usr/bin/dbus-generator
 }

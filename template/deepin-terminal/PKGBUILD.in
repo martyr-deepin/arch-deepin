@@ -3,7 +3,7 @@
 
 pkgname=deepin-terminal
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=1
 pkgdesc='Awesome terminal for Linux Deepin'
 arch=('any')
@@ -17,14 +17,14 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 prepare(){
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   # fix python version
   find "${srcdir}" -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   deepin-generate-mo tools/locale_config.ini
 }
@@ -32,7 +32,7 @@ build() {
 package() {
   depends+=('python2-deepin-ui' 'gtk-update-icon-cache')
 
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   make DESTDIR="${pkgdir}" PREFIX="/usr" install
 }

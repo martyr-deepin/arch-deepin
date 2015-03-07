@@ -3,7 +3,7 @@
 
 pkgname=deepin-artwork
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=1
 pkgdesc='Deepin artwork themes (sounds)'
 arch=('any')
@@ -14,7 +14,7 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 package() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   install -dm755 "${pkgdir}"/usr/share
   cp -r usr/share/{pixmaps,sounds} "${pkgdir}"

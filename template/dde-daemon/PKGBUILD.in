@@ -3,7 +3,7 @@
 
 pkgname=dde-daemon
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=1
 pkgdesc='Go-lang bingdings for dde-daemon'
 arch=('i686' 'x86_64')
@@ -26,7 +26,7 @@ sha256sums=('@SHA256SUM@'
             'SKIP')
 
 prepare() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   # TODO: a temporary solution by disable datatime module of
   # dde-session-daemon to avoid build issue for go1.4/i686
@@ -36,13 +36,13 @@ prepare() {
 }
 
 build() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   make GOPATH="/usr/lib/go/site"
 }
 
 package() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   make DESTDIR="${pkgdir}" install
 }

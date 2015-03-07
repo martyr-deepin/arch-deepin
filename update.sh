@@ -56,7 +56,7 @@ gen_template() {
     cd "${templatedir}/${pkgname}"
     sed -e "s=@PKGVER@=${pkg_version}=g" \
         -e "s=@PKGVER_FIXED@=${pkg_version_fixed}=g" \
-        -e "s=@PKGVER_SRC@=${pkg_version_src}=g" \
+        -e "s=@SRCDIRNAME@=${pkg_srcdirname}=g" \
         -e "s=@SOURCE@=${pkg_fileurl}=g" \
         -e "s=@SOURCE_ORIG@=${pkg_fileurl_orig}=g" \
         -e "s=@SOURCE_DEBIAN@=${pkg_fileurl_debian}=g" \

@@ -3,7 +3,7 @@
 
 pkgname=deepin-screenshot
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=1
 pkgdesc="Easy-to-use screenshot tool for linuxdeepin desktop environment"
 arch=('any')
@@ -23,14 +23,14 @@ _easycp () {
 }
 
 prepare() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   # fix python version
   find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   deepin-generate-mo tools/locale_config.ini
 }
@@ -39,7 +39,7 @@ package() {
   depends=('python2' 'gconf' 'python2-xlib' 'python2-wnck' 'python2-xdg'
            'python2-scipy' 'python2-pycurl' 'python2-deepin-ui')
 
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   # TODO waiting for new Makefile
   _easycp "${pkgdir}"/usr/share/deepin-screenshot/ src

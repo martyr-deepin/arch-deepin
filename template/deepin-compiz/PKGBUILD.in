@@ -5,9 +5,8 @@
 # Contributor: Nathan Hulse <nat.hulse@gmail.com>
 
 pkgname=deepin-compiz
-_pkgname=compiz
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=1
 epoch=1
 pkgdesc='A forked compiz for Linux Deepin desktop environment'
@@ -37,7 +36,7 @@ sha256sums=('@SHA256SUM@'
             '9b041e3ca5fe54984d064bab9c3c8fa623e8c0e752129c53c578922a48582845')
 
 prepare() {
-  cd "${_pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   export PYTHON="/usr/bin/python2"
 
@@ -48,7 +47,7 @@ prepare() {
 }
 
 build() {
-  cd "${_pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   [[ -d build ]] && rm -rvf build/
   mkdir build/
@@ -70,7 +69,7 @@ build() {
 }
 
 package() {
-  cd "${_pkgname}-${_pkgver}/build"
+  cd "${_srcdirname}/build"
 
   make DESTDIR="${pkgdir}" install
 
@@ -94,7 +93,7 @@ package() {
   fi
 
   # Setup xsession profile for deepin compiz
-  cd "${srcdir}/${_pkgname}-${_pkgver}"
+  cd "${srcdir}/${_srcdirname}"
   install -dm755 "${pkgdir}"/etc/X11/Xsession.d/
   install -m644 debian/65compiz_profile-on-session "${pkgdir}"/etc/X11/Xsession.d/
 }

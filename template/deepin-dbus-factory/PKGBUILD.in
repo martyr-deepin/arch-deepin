@@ -6,7 +6,7 @@ _pkgbase=dbus-factory
 pkgname=('dde-go-dbus-factory'
          'dde-qml-dbus-factory')
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=1
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dbus-factory"

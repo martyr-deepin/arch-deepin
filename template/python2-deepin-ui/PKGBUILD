@@ -2,9 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=python2-deepin-ui
-_pkgname=deepin-ui
 pkgver=1.1.20141229194712
-_pkgver=1.1+20141229194712~5a86faec50
+_srcdirname=deepin-ui-1.1+20141229194712~5a86faec50
 pkgrel=1
 pkgdesc='UI toolkit for Linux Deepin'
 arch=('i686' 'x86_64')
@@ -22,21 +21,21 @@ source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-ui/deepin-ui_
 sha256sums=('3829f85b4b888d36fac9f9d9180e6d2453e3f3fcdcc02f1051503d4ba100decc')
 
 prepare() {
-  cd "${_pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   # fix python version
   find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build(){
-  cd "${_pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   python2 setup.py build
   deepin-generate-mo dtk/tools/locale_config.ini
 }
 
 package() {
-  cd "${_pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   python2 setup.py install --root="${pkgdir}" --optimize=1
   install -dm 755 "${pkgdir}"/usr/share/locale

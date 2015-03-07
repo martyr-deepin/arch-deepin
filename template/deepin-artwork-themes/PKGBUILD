@@ -3,7 +3,7 @@
 
 pkgname=deepin-artwork-themes
 pkgver=14.04.3.20141204110221
-_pkgver=14.04.3+20141204110221~5bf78d7f42
+_srcdirname=deepin-artwork-themes-14.04.3+20141204110221~5bf78d7f42
 pkgrel=1
 pkgdesc='Deepin artwork themes'
 arch=('any')
@@ -15,7 +15,7 @@ source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-artwork-theme
 sha256sums=('ea51f533ff14552c06218b7e32637a908b1051106458f9e2a8f40449da764cb0')
 
 prepare() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   # fix python version
   find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
@@ -24,7 +24,7 @@ prepare() {
 package() {
   depends=('deepin-icon-theme')
 
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   python2 convert.py
 

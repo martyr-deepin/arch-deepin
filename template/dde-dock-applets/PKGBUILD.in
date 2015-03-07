@@ -3,7 +3,7 @@
 
 pkgname=dde-dock-applets
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=1
 pkgdesc="New control center for linux deepin"
 arch=('i686' 'x86_64')
@@ -17,7 +17,7 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 build() {
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   make
 }
@@ -25,7 +25,7 @@ build() {
 package() {
   depends+=('deepin-artwork-themes')
 
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   make DESTDIR="${pkgdir}" install
 }

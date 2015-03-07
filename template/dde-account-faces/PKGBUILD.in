@@ -3,7 +3,7 @@
 
 pkgname=dde-account-faces
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER_SRC@
+_srcdirname=@SRCDIRNAME@
 pkgrel=1
 pkgdesc='Deepin Account face Images'
 arch=('any')
@@ -16,7 +16,7 @@ sha256sums=('@SHA256SUM@')
 package() {
   depends=('accountsservice')
 
-  cd "${pkgname}-${_pkgver}"
+  cd "${_srcdirname}"
 
   install -dm 755 "${pkgdir}"/var/lib/AccountsService/icons
   install -m 644 *.png "${pkgdir}"/var/lib/AccountsService/icons/
