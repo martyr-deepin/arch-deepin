@@ -14,12 +14,12 @@ groups=('deepin')
 depends=('libglade' 'python2-cairo' 'pygobject')
 optdepends=('python2-numpy')
 
-source=("@SOURCE1@"
-        "@SOURCE2@"
+source=("@SOURCE_ORIG@"
+        "@SOURCE_DEBIAN@"
         "python27.patch"
         )
-sha256sums=('@SHA256SUM1@'
-            '@SHA256SUM2@'
+sha256sums=('@SHA256SUM_ORIG@'
+            '@SHA256SUM_DEBIAN@'
             '39a30456cba055a452bb55c74ef1ff2f5f7bfaad22855b4dd569ab009b56b682')
 provides=("${_pkgname}=2.24.0")
 conflicts=("${_pkgname}")

@@ -1735,6 +1735,30 @@ Checksums-Sha256:
  047b3b4f4db000fccce3222e5028b30b7b4e8e504e833ccf0ab7dbc1295c7b42 21368 eog_3.10.2-1.debian.tar.gz
 Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 
+Package: go-dlib
+Format: 3.0 (native)
+Binary: golang-dlib-dev
+Architecture: all
+Version: 0.0.4+20150108105637~88ae48d3c8
+Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), dh-golang, golang-go, golang-xgb-dev, golang-fsnotify-dev, golang-gocheck-dev, golang-goconvey-dev, libpulse-dev, libgtk-3-dev
+Package-List:
+ golang-dlib-dev deb devel extra
+Priority: extra
+Section: devel
+Directory: pool/main/g/go-dlib
+Files: 
+ d5da694ce11958dc0d6244a27d5d7b2a 1336 go-dlib_0.0.4+20150108105637~88ae48d3c8.dsc
+ 8bc48fdf68a5f4bd91399c95a6a3f876 1808290 go-dlib_0.0.4+20150108105637~88ae48d3c8.tar.gz
+Checksums-Sha1: 
+ 0d3f847381ad2f47ff65aefd4136a984cf12a3c9 1336 go-dlib_0.0.4+20150108105637~88ae48d3c8.dsc
+ 6843983aa3644d3f8d2eb82de976492685990b46 1808290 go-dlib_0.0.4+20150108105637~88ae48d3c8.tar.gz
+Checksums-Sha256: 
+ d3b5884850c4aac1101eea36fa46fd3982a7d0cbbaf120f067bc49928b2dd7f8 1336 go-dlib_0.0.4+20150108105637~88ae48d3c8.dsc
+ 307abef63fd1a13831ef3587e154d35a657536feae924f29e36101b8ac82cfc9 1808290 go-dlib_0.0.4+20150108105637~88ae48d3c8.tar.gz
+
 Package: golang
 Format: 3.0 (quilt)
 Binary: golang-go, golang-src, golang-doc, golang, golang-mode, kate-syntax-go, vim-syntax-go, golang-go-linux-amd64, golang-go-linux-arm, golang-go-linux-386, golang-go-freebsd-amd64, golang-go-freebsd-arm, golang-go-freebsd-386, golang-go-windows-amd64, golang-go-windows-386, golang-go-darwin-amd64, golang-go-darwin-386, golang-go-netbsd-amd64, golang-go-netbsd-386

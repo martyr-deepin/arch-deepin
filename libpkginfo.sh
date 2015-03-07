@@ -50,7 +50,9 @@ download_repo_sources() {
 get_pkginfo() {
   unset pkg_name pkg_info pkg_directory pkg_version pkg_version_fixed
   unset pkg_files pkg_fileurls pkg_sha256sums pkg_file pkg_fileurl pkg_sha256sum
-  unset obs_host obs_protocol obs_path
+  unset pkg_file_orig pkg_fileurl_orig pkg_sha256sum_orig
+  unset pkg_file_debian pkg_fileurl_debian pkg_sha256sum_debian
+  unset obs_host obs_protocol obs_path obs_path_orig obs_path_debian
   pkg_name="${1}"
   pkg_info=$(grep_block "Package: ${pkg_name}\n" "${local_sources[@]}")
   if [ -z "${pkg_info}" ]; then
@@ -85,6 +87,24 @@ get_pkginfo() {
   pkg_fileurl="${mirror}/${fileurl_prefix}/${pkg_directory}/${pkg_file}"
   pkg_sha256sum=$(echo "${pkg_info}" | awk 'BEGIN{output=0} /: /{output=0} /Checksums-Sha256: /{output=1} NF==3{if(output){print}}' | grep "${pkg_file}" | awk '{print $1}')
 
+  # get special source files' information if exists
+  local i=0
+  for f in "${pkg_files[@]}"; do
+    case "${f}" in
+      *orig.tar*)
+        pkg_file_orig="${f}"
+        pkg_fileurl_orig="${pkg_fileurls[$i]}"
+        pkg_sha256sum_orig="${pkg_sha256sums[$i]}"
+        ;;
+      *debian.tar*)
+        pkg_file_debian="${f}"
+        pkg_fileurl_debian="${pkg_fileurls[$i]}"
+        pkg_sha256sum_debian="${pkg_sha256sums[$i]}"
+        ;;
+    esac
+    ((i++))
+  done
+
   # split host, protocol and path from fileurl, used for _service in OBS
   obs_host="${mirror#*://}"
   obs_protocol="${mirror%://*}"
@@ -93,4 +113,6 @@ get_pkginfo() {
   for f in "${pkg_files[@]}"; do
     obs_paths+=("/${fileurl_prefix}/${pkg_directory}/${f}")
   done
+  obs_path_orig="/${fileurl_prefix}/${pkg_directory}/${pkg_file_orig}"
+  obs_path_debian="/${fileurl_prefix}/${pkg_directory}/${pkg_file_debian}"
 }

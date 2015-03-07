@@ -18,10 +18,10 @@ provides=('vte=0.28.2' 'deepin-vte-plus')
 conflicts=('vte' 'deepin-vte-plus')
 replaces=('deepin-vte-plus')
 options=('!libtool' '!emptydirs')
-source=("@SOURCE1@"
-        "@SOURCE2@")
-sha256sums=('@SHA256SUM1@'
-            '@SHA256SUM2@')
+source=("@SOURCE_ORIG@"
+        "@SOURCE_DEBIAN@")
+sha256sums=('@SHA256SUM_ORIG@'
+            '@SHA256SUM_DEBIAN@')
 
 prepare() {
   patchdir="${srcdir}"/debian/patches

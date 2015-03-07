@@ -35,6 +35,7 @@ test_get_pkginfo() {
   check "${obs_host}" "packages.linuxdeepin.com"
   check "${obs_protocol}" "http"
   check "${obs_path}" "/deepin/pool/main/d/dde-daemon/dde-daemon_0.0.1+20150209101554~660a820a61.tar.gz"
+
 }
 
 test_get_pkginfo_multiple_sources() {
@@ -59,6 +60,15 @@ test_get_pkginfo_multiple_sources() {
   check "${obs_paths[0]}" "/deepin/pool/main/v/vte/vte_0.28.2-6deepin7~saucy.dsc"
   check "${obs_paths[1]}" "/deepin/pool/main/v/vte/vte_0.28.2.orig.tar.xz"
   check "${obs_paths[2]}" "/deepin/pool/main/v/vte/vte_0.28.2-6deepin7~saucy.debian.tar.gz"
+  check ""
+  check "${pkg_file_orig}" "vte_0.28.2.orig.tar.xz"
+  check "${pkg_file_debian}" "vte_0.28.2-6deepin7~saucy.debian.tar.gz"
+  check "${pkg_fileurl_orig}" "http://packages.linuxdeepin.com/deepin/pool/main/v/vte/vte_0.28.2.orig.tar.xz"
+  check "${pkg_fileurl_debian}" "http://packages.linuxdeepin.com/deepin/pool/main/v/vte/vte_0.28.2-6deepin7~saucy.debian.tar.gz"
+  check "${pkg_sha256sum_orig}" "ee52b91ecab31d0a64399896ce0c3515e579ea8ac212a00eb9b0895c58f001fe"
+  check "${pkg_sha256sum_debian}" "b63a344541f0feebddac0232a8d7196d22d4819ec32cbd6cb39e33b2ba50e940"
+  check "${obs_path_orig}" "/deepin/pool/main/v/vte/vte_0.28.2.orig.tar.xz"
+  check "${obs_path_debian}" "/deepin/pool/main/v/vte/vte_0.28.2-6deepin7~saucy.debian.tar.gz"
 }
 
 test_get_pkginfo_fixed_version() {
@@ -93,6 +103,18 @@ test_get_pkginfo_fixed_version() {
   get_pkginfo "vte"
   check "${pkg_version}" "0.28.2-6deepin7~saucy"
   check "${pkg_version_fixed}" "0.28.2"
+
+  get_pkginfo "qtav"
+  check "${pkg_version}" "1.4.2-deepin3"
+  check "${pkg_version_fixed}" "1.4.2"
+
+  get_pkginfo "golang-go-sqlite3"
+  check "${pkg_version}" "0.0~git20140913-1"
+  check "${pkg_version_fixed}" "0.0.git20140913.1"
+
+  get_pkginfo "golang-gocheck"
+  check "${pkg_version}" "0.0~bzr20131118+85-6"
+  check "${pkg_version_fixed}" "0.0.bzr20131118.85.6"
 }
 
 # simple test runner

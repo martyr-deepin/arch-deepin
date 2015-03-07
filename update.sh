@@ -38,8 +38,6 @@ do_update_pkg() {
   local pkgname="${1}"
   msg "update package: ${pkgname}"
   case "${pkgname}" in
-    "deepin-vte") gen_template_multi_sources "${pkgname}" 1 2 || return 1;;
-    "deepin-pygtk") gen_template_multi_sources "${pkgname}" 1 2 || return 1;;
     *) gen_template "${pkgname}" || return 1;;
   esac
   update_package_state "${pkgname}" "${pkg_version}" "${pkg_version_fixed}"
@@ -59,11 +57,19 @@ gen_template() {
     sed -e "s=@PKGVER@=${pkg_version}=g" \
         -e "s=@PKGVER_FIXED@=${pkg_version_fixed}=g" \
         -e "s=@SOURCE@=${pkg_fileurl}=g" \
-        -e "s=@SHA256SUM@=${pkg_sha256sum}=g" "${pkgbuild_in}" > PKGBUILD
+        -e "s=@SOURCE_ORIG@=${pkg_fileurl_orig}=g" \
+        -e "s=@SOURCE_DEBIAN@=${pkg_fileurl_debian}=g" \
+        -e "s=@SHA256SUM@=${pkg_sha256sum}=g" \
+        -e "s=@SHA256SUM_ORIG@=${pkg_sha256sum_orig}=g" \
+        -e "s=@SHA256SUM_DEBIAN@=${pkg_sha256sum_debian}=g" \
+        "${pkgbuild_in}" > PKGBUILD
     if [ -f "${service_in}" ]; then
         sed -e "s=@HOST@=${obs_host}=g" \
             -e "s=@PROTOCOL@=${obs_protocol}=g" \
-            -e "s=@PATH@=${obs_path}=g" "${service_in}" > _service
+            -e "s=@PATH@=${obs_path}=g" \
+            -e "s=@PATH_ORIG@=${obs_path_orig}=g" \
+            -e "s=@PATH_DEBIAN@=${obs_path_debian}=g" \
+            "${service_in}" > _service
     fi
   )
 }
