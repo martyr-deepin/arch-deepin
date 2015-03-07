@@ -500,3 +500,25 @@
 2015-03-08 00:04:24 update-pkgbuild: [SUCCESS] go-xgb updated=false version=0.0~git20140510-1
 2015-03-08 00:04:24 update-pkgbuild: [SUCCESS] go-xgbutil updated=false version=1~git20140610
 2015-03-08 00:04:24 update-pkgbuild: [SUCCESS] qtav updated=false version=1.4.2-deepin3
+
+2015-03-08 00:06:09 makepkg: [BEGIN]
+2015-03-08 00:06:22 makepkg: [SUCCESS] deepin-game-center
+2015-03-08 00:06:23 makepkg: [SUCCESS] deepin-gettext-tools
+2015-03-08 00:07:10 makepkg: [SUCCESS] deepin-music-player
+2015-03-08 00:07:41 makepkg: [SUCCESS] deepin-pygtk
+2015-03-08 00:07:44 makepkg: [SUCCESS] deepin-screenshot
+2015-03-08 00:07:48 makepkg: [SUCCESS] deepin-terminal
+2015-03-08 00:08:27 makepkg: [SUCCESS] deepin-vte
+2015-03-08 00:09:00 makepkg: [SUCCESS] python2-deepin-ui
+2015-03-08 00:09:02 makepkg: [SUCCESS] python2-deepin-utils
+
+2015-03-08 00:09:19 aur-upload: [BEGIN]
+2015-03-08 00:09:24 aur-upload: [SUCCESS] deepin-game-center
+2015-03-08 00:09:29 aur-upload: [SUCCESS] deepin-gettext-tools
+2015-03-08 00:09:34 aur-upload: [SUCCESS] deepin-music-player
+2015-03-08 00:09:39 aur-upload: [SUCCESS] deepin-pygtk
+2015-03-08 00:09:44 aur-upload: [SUCCESS] deepin-screenshot
+2015-03-08 00:09:49 aur-upload: [SUCCESS] deepin-terminal
+2015-03-08 00:09:55 aur-upload: [SUCCESS] deepin-vte
+2015-03-08 00:10:00 aur-upload: [SUCCESS] python2-deepin-ui
+2015-03-08 00:10:06 aur-upload: [SUCCESS] python2-deepin-utils
