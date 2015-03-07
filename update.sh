@@ -45,7 +45,7 @@ do_update_pkg() {
 
 gen_template() {
   local pkgname="${1}"
-  get_pkginfo "$(get_package_originrepodir ${pkgname})"
+  get_pkginfo "$(get_package_originrepodir ${pkgname})" || return 1
   msg2 "pkg_version: ${pkg_version}"
   msg2 "pkg_version_fixed: ${pkg_version_fixed}"
   msg2 "pkg_directory: ${pkg_directory}"

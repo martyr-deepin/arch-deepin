@@ -229,5 +229,75 @@
     "Updated": true,
     "LastVersion": "0.1+20141230181929~b99e7b174d",
     "LastVersionFixed": "0.1.20141230181929"
+  },
+  {
+    "Name": "go-fsnotify",
+    "OriginRepoDir": "golang-fsnotify",
+    "Updated": true,
+    "LastVersion": "0.0~git201400902-1",
+    "LastVersionFixed": "0.0.git201400902.1"
+  },
+  {
+    "Name": "go-gettext-go",
+    "OriginRepoDir": "golang-gettext-go",
+    "Updated": true,
+    "LastVersion": "0.0~git20140808-1",
+    "LastVersionFixed": "0.0.git20140808.1"
+  },
+  {
+    "Name": "go-gocheck",
+    "OriginRepoDir": "golang-gocheck",
+    "Updated": true,
+    "LastVersion": "0.0~bzr20131118+85-6",
+    "LastVersionFixed": "0.0.bzr20131118.85.6"
+  },
+  {
+    "Name": "go-goconvey",
+    "OriginRepoDir": "golang-goconvey-dev",
+    "Updated": true,
+    "LastVersion": "1.5.0-1",
+    "LastVersionFixed": "1.5.0.1"
+  },
+  {
+    "Name": "go-graphics-go",
+    "OriginRepoDir": "golang-graphics-go",
+    "Updated": true,
+    "LastVersion": "0.0~git20140903-1",
+    "LastVersionFixed": "0.0.git20140903.1"
+  },
+  {
+    "Name": "go-jamslam-freetype-go",
+    "OriginRepoDir": "golang-jamslam-freetype-go",
+    "Updated": true,
+    "LastVersion": "0.0~git20140903-1",
+    "LastVersionFixed": "0.0.git20140903.1"
+  },
+  {
+    "Name": "go-sqlite3",
+    "OriginRepoDir": "golang-go-sqlite3",
+    "Updated": true,
+    "LastVersion": "0.0~git20140913-1",
+    "LastVersionFixed": "0.0.git20140913.1"
+  },
+  {
+    "Name": "go-xgb",
+    "OriginRepoDir": "golang-xgb",
+    "Updated": true,
+    "LastVersion": "0.0~git20140510-1",
+    "LastVersionFixed": "0.0.git20140510.1"
+  },
+  {
+    "Name": "go-xgbutil",
+    "OriginRepoDir": "golang-xgbutil",
+    "Updated": true,
+    "LastVersion": "1~git20140610",
+    "LastVersionFixed": "1.git20140610"
+  },
+  {
+    "Name": "qtav",
+    "OriginRepoDir": "qtav",
+    "Updated": true,
+    "LastVersion": "1.4.2-deepin3",
+    "LastVersionFixed": "1.4.2"
   }
 ]

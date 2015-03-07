@@ -57,6 +57,7 @@ get_pkginfo() {
   pkg_info=$(grep_block "Package: ${pkg_name}\n" "${local_sources[@]}")
   if [ -z "${pkg_info}" ]; then
       error "get pkginfo failed: ${pkg_name}"
+      return 1
   fi
   pkg_directory=$(echo "${pkg_info}" | grep -m1 "^Directory:" | awk '{print $2}')
   pkg_version=$(echo "${pkg_info}" | grep -m1 "^Version:" | awk '{print $2}')
