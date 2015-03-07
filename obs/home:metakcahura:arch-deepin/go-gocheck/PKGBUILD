@@ -3,16 +3,15 @@
 
 _pkgname=golang-gocheck
 pkgname=go-gocheck
-pkgver=0.0~bzr20131118+85
+pkgver=0.0.bzr20131118.85.6
 pkgrel=8
 pkgdesc='Richer testing framework for Go libraries and applications to use'
 arch=('any')
 url="http://labix.org/gocheck"
 license=('BSD')
 replaces=('golang-gocheck')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/g/${_pkgname}/${_pkgname}_${pkgver}.orig.tar.gz"
-        "${_mirror}/g/${_pkgname}/${_pkgname}_${pkgver}-6.debian.tar.gz")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/g/golang-gocheck/golang-gocheck_0.0~bzr20131118+85.orig.tar.gz"
+        "http://packages.linuxdeepin.com/deepin/pool/main/g/golang-gocheck/golang-gocheck_0.0~bzr20131118+85-6.debian.tar.gz")
 sha256sums=('71ba0752af3cd04a42a95ef68c098d251430281c8461272df259d52d6092f7da'
             '3a50e3d0c4ccb9397f13c30a6f057187c419e3b362c6b90767ed0bec049108fc')
 

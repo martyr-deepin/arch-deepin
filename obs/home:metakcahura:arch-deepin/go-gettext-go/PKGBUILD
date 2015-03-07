@@ -3,15 +3,14 @@
 
 _pkgname=golang-gettext-go
 pkgname=go-gettext-go
-pkgver=0.0~git20140808
+pkgver=0.0.git20140808.1
 pkgrel=1
 pkgdesc="This package provides GNU gettext support."
 arch=('any')
 url="https://code.google.com/p/gettext-go/"
 license=('GPL2')
 replaces=('golang-gettext-go')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/g/${_pkgname}/${_pkgname}_${pkgver}.orig.tar.xz")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/g/golang-gettext-go/golang-gettext-go_0.0~git20140808.orig.tar.xz")
 sha256sums=('7ee643e8a548d1891afa944b130e38dea5426bbc7befa8872a1f384d2c979ded')
 
 _gobuild_dir="${_pkgname}-build"

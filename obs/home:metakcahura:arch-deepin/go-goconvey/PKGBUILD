@@ -3,7 +3,7 @@
 
 _pkgname=golang-goconvey-dev
 pkgname=go-goconvey
-pkgver=1.5.0
+pkgver=1.5.0.1
 pkgrel=1
 pkgdesc='Go testing in the browser.'
 arch=('any')
@@ -11,8 +11,7 @@ url="https://github.com/smartystreets/goconvey"
 license=('custom')
 makedepends=('go')
 #options=('!strip' 'staticlibs')
-_mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/g/${_pkgname}/${_pkgname}_${pkgver}.orig.tar.gz")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/g/golang-goconvey-dev/golang-goconvey-dev_1.5.0.orig.tar.gz")
 sha256sums=('e7d57f4cc8490940d2e8b284ec91c7c8a2ac2d63344a0c92ae90f670efb46d44')
 
 _gobuild_dir="${_pkgname}-build"

@@ -1,7 +1,7 @@
 <services>
   <service name="download_url">
-    <param name="host">ftp.fau.de</param>
-    <param name="protocol">https</param>
-    <param name="path">/deepin/pool/main/g/golang-sqlite3/golang-sqlite3_0.0~git2014090312.orig.tar.xz</param>
+    <param name="host">packages.linuxdeepin.com</param>
+    <param name="protocol">http</param>
+    <param name="path">/deepin/pool/main/g/golang-go-sqlite3/golang-go-sqlite3_0.0~git20140913.orig.tar.gz</param>
   </service>
 </services>

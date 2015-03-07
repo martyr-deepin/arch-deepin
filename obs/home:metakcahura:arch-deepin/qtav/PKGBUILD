@@ -11,7 +11,7 @@ license=('GPL')
 depends=('qt5-base' 'ffmpeg')
 makedepends=('qt5-tools')
 _mirror="https://ftp.fau.de/deepin/pool/main"
-source=("${_mirror}/q/${pkgname}/${pkgname}_${pkgver}-deepin3.tar.gz")
+source=("http://packages.linuxdeepin.com/deepin/pool/main/q/qtav/qtav_1.4.2-deepin3.tar.gz")
 sha256sums=('bf88a384506e0a680e0a0a2cb7ce40b2a16c471b90fbd4ed74c65ad18c45a5ab')
 
 build(){
