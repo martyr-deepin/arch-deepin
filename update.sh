@@ -165,6 +165,8 @@ ${appname} [options]
 options:
     --package, -p
         only update target package
+    --no-package, -n
+        ignore target package
     --mark-updated, -U
         mark all package updated
     --no-download-reposources, -S
@@ -181,7 +183,8 @@ EOF
 
 # arguments
 arg_show_usage=
-arg_package=
+arg_packages=()
+arg_no_packages=()
 arg_mark_updated=
 arg_no_download_reposources=
 arg_makepkg=
@@ -190,7 +193,8 @@ arg_aur_upload=
 while [ $# -gt 0 ]; do
   case "${1}" in
     -h|--help) arg_show_usage=1; break;;
-    -p|--package) arg_package="${2}"; shift; shift;;
+    -p|--package) arg_packages+=("${2}"); shift; shift;;
+    -n|--no-package) arg_no_packages+=("${2}"); shift; shift;;
     -U|--mark-updated) arg_mark_updated=1; shift;;
     -S|--no-download-reposources) arg_no_download_reposources=1; shift;;
     -m|--makepkg) arg_makepkg=1; shift;;
@@ -208,8 +212,8 @@ if [ ! "${arg_no_download_reposources}" ]; then
 fi
 
 pkgs=()
-if [ "${arg_package}" ]; then
-    pkgs=("${arg_package}")
+if [ "${#arg_packages[@]}" -gt 0 ]; then
+    pkgs=("${arg_packages[@]}")
 else
   if [ "${arg_makepkg}" ]; then
       pkgs=($(find "${pkgbuilddir}"/* -maxdepth 0 -exec basename '{}' ';'))
@@ -219,6 +223,16 @@ else
     pkgs=($(get_all_packages))
   fi
 fi
+for no_pkg in "${arg_no_packages[@]}"; do
+  i=0
+  for p in "${pkgs[@]}"; do
+    if [ "${p}" = "${no_pkg}" ]; then
+        unset pkgs[$i]
+        break
+    fi
+    ((i+=1))
+  done
+done
 
 if [ "${arg_makepkg}" ]; then
     log_begin "makepkg"
