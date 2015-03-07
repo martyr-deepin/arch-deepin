@@ -26,9 +26,9 @@ sha256sums=('@SHA256SUM_ORIG@'
 prepare() {
   patchdir="${srcdir}"/debian/patches
   for f in $(< "${patchdir}"/series); do
-    echo "==> patching: ${f##*/}"
+    msg "patching: ${f##*/}"
     # ignore error if patch again
-    patch -Np1 -i "${patchdir}/${f}" || echo "==> patch error: ${f##*/}"
+    patch -Np1 -i "${patchdir}/${f}" || msg "patch error: ${f##*/}"
   done
 }
 
