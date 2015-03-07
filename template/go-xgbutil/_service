@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">ftp.fau.de</param>
+    <param name="protocol">https</param>
+    <param name="path">/deepin/pool/main/g/golang-xgbutil/golang-xgbutil_1~git20140610.orig.tar.xz</param>
+  </service>
+</services>

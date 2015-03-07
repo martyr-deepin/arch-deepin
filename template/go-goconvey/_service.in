@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">@OBS_HOST@</param>
+    <param name="protocol">@OBS_PROTOCOL@</param>
+    <param name="path">@OBS_PATH_ORIG@</param>
+  </service>
+</services>

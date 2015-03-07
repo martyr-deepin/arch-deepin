@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">ftp.fau.de</param>
+    <param name="protocol">https</param>
+    <param name="path">/deepin/pool/main/q/qtav/qtav_1.4.2-deepin3.tar.gz</param>
+  </service>
+</services>
