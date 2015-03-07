@@ -3,7 +3,7 @@
 
 pkgname=deepin-screenshot
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER@
+_pkgver=@PKGVER_SRC@
 pkgrel=1
 pkgdesc="Easy-to-use screenshot tool for linuxdeepin desktop environment"
 arch=('any')

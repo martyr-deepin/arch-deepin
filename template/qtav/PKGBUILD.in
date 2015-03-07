@@ -3,6 +3,7 @@
 
 pkgname=qtav
 pkgver=@PKGVER_FIXED@
+_pkgver=@PKGVER_SRC@
 pkgrel=1
 pkgdesc="qt multimedia framework"
 arch=('i686' 'x86_64')
@@ -15,14 +16,14 @@ source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
 build(){
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   qmake
   make PREFIX=/usr
 }
 
 package() {
-  cd "${pkgname}-${pkgver}"
+  cd "${pkgname}-${_pkgver}"
 
   make INSTALL_ROOT="${pkgdir}" install
 }

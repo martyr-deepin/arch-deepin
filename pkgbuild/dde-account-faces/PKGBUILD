@@ -2,8 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-account-faces
-pkgver=1.0.7.1
-_pkgver=1.0.7-1~trusty
+pkgver=1.0.7
+_pkgver=1.0.7
 pkgrel=1
 pkgdesc='Deepin Account face Images'
 arch=('any')

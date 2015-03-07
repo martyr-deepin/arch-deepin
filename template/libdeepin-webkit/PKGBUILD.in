@@ -1,10 +1,10 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-_pkgname=deepin-webkit
 pkgname=libdeepin-webkit
+_pkgname=deepin-webkit
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER@
+_pkgver=@PKGVER_SRC@
 pkgrel=1
 pkgdesc='A fork of webkit-gtk for Linux Deepin desktop eviroment'
 arch=('i686' 'x86_64')

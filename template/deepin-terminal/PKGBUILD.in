@@ -3,7 +3,7 @@
 
 pkgname=deepin-terminal
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER@
+_pkgver=@PKGVER_SRC@
 pkgrel=1
 pkgdesc='Awesome terminal for Linux Deepin'
 arch=('any')

@@ -3,7 +3,8 @@
 
 _pkgname=golang-gocheck
 pkgname=go-gocheck
-pkgver=0.0.bzr20131118.85.6
+pkgver=0.0.bzr20131118.85
+_pkgver=0.0~bzr20131118+85
 pkgrel=8
 pkgdesc='Richer testing framework for Go libraries and applications to use'
 arch=('any')
@@ -15,11 +16,11 @@ source=("http://packages.linuxdeepin.com/deepin/pool/main/g/golang-gocheck/golan
 sha256sums=('71ba0752af3cd04a42a95ef68c098d251430281c8461272df259d52d6092f7da'
             '3a50e3d0c4ccb9397f13c30a6f057187c419e3b362c6b90767ed0bec049108fc')
 
-_gobuild_dir="${_pkgname}-build"
+_gobuild_dir="${pkgname}-build"
 _gopkg="launchpad.net/gocheck"
 
 prepare() {
-  cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${_pkgver}"
 
   # apply patches
   patchdir="${srcdir}"/debian/patches
@@ -31,7 +32,7 @@ prepare() {
 
   cd "${srcdir}"
   mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
-  cp -r "${_pkgname}-${pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
+  cp -r "${_pkgname}-${_pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
 }
 
 #build() {

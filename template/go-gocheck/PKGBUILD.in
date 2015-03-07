@@ -4,6 +4,7 @@
 _pkgname=golang-gocheck
 pkgname=go-gocheck
 pkgver=@PKGVER_FIXED@
+_pkgver=@PKGVER_SRC@
 pkgrel=8
 pkgdesc='Richer testing framework for Go libraries and applications to use'
 arch=('any')
@@ -15,11 +16,11 @@ source=("@SOURCE_ORIG@"
 sha256sums=('@SHA256SUM_ORIG@'
             '@SHA256SUM_DEBIAN@')
 
-_gobuild_dir="${_pkgname}-build"
+_gobuild_dir="${pkgname}-build"
 _gopkg="launchpad.net/gocheck"
 
 prepare() {
-  cd "${_pkgname}-${pkgver}"
+  cd "${_pkgname}-${_pkgver}"
 
   # apply patches
   patchdir="${srcdir}"/debian/patches
@@ -31,7 +32,7 @@ prepare() {
 
   cd "${srcdir}"
   mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
-  cp -r "${_pkgname}-${pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
+  cp -r "${_pkgname}-${_pkgver}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
 }
 
 #build() {

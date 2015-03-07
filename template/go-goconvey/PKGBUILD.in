@@ -14,7 +14,7 @@ makedepends=('go')
 source=("@SOURCE_ORIG@")
 sha256sums=('@SHA256SUM_ORIG@')
 
-_gobuild_dir="${_pkgname}-build"
+_gobuild_dir="${pkgname}-build"
 _gopkg="github.com/smartystreets/goconvey"
 
 prepare() {

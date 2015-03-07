@@ -4,7 +4,7 @@
 pkgname=deepin-vte
 _pkgname=vte
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER@
+_pkgver=@PKGVER_SRC@
 pkgrel=8
 epoch=1
 pkgdesc="Virtual Terminal Emulator widget for use with GTK2 - with several patches"
@@ -28,7 +28,7 @@ prepare() {
   for f in $(< "${patchdir}"/series); do
     echo "==> patching: ${f##*/}"
     # ignore error if patch again
-    patch -Np1 -i "${patchdir}"/$f || echo '==> patch error: ${f##*/}'
+    patch -Np1 -i "${patchdir}/${f}" || echo "==> patch error: ${f##*/}"
   done
 }
 

@@ -4,7 +4,7 @@
 pkgname=python2-deepin-utils
 _pkgname=deepin-utils
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER@
+_pkgver=@PKGVER_SRC@
 pkgrel=1
 pkgdesc='Basic utils for all project in Linux Deepin.'
 arch=('i686' 'x86_64')

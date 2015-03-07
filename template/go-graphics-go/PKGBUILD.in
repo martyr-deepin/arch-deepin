@@ -13,7 +13,7 @@ replaces=('golang-graphics-go')
 source=("@SOURCE_ORIG@")
 sha256sums=('@SHA256SUM_ORIG@')
 
-_gobuild_dir="${_pkgname}-build"
+_gobuild_dir="${pkgname}-build"
 _gopkg="code.google.com/p/graphics-go/graphics"
 
 prepare() {

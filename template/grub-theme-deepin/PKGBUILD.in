@@ -4,7 +4,7 @@
 pkgname=grub-theme-deepin
 _pkgname=grub-themes-deepin
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER@
+_pkgver=@PKGVER_SRC@
 pkgrel=1
 pkgdesc='Grub2 themes from Linux Deepin'
 arch=('any')

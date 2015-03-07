@@ -3,7 +3,7 @@
 
 pkgname=deepin-movie
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER@
+_pkgver=@PKGVER_SRC@
 pkgrel=1
 pkgdesc='deepin movie for linuxdeepin desktop environment'
 arch=('any')

@@ -1,9 +1,8 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-_pkgname=golang-gettext-go
 pkgname=go-gettext-go
-pkgver=0.0.git20140808.1
+pkgver=0.0.git20140808
 pkgrel=1
 pkgdesc="This package provides GNU gettext support."
 arch=('any')
@@ -13,7 +12,7 @@ replaces=('golang-gettext-go')
 source=("http://packages.linuxdeepin.com/deepin/pool/main/g/golang-gettext-go/golang-gettext-go_0.0~git20140808.orig.tar.xz")
 sha256sums=('7ee643e8a548d1891afa944b130e38dea5426bbc7befa8872a1f384d2c979ded')
 
-_gobuild_dir="${_pkgname}-build"
+_gobuild_dir="${pkgname}-build"
 _gopkg="github.com/chai2010/gettext-go"
 
 prepare() {

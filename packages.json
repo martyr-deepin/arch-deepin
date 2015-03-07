@@ -4,7 +4,7 @@
     "OriginRepoDir": "dde-account-faces",
     "Updated": true,
     "LastVersion": "1.0.7-1~trusty",
-    "LastVersionFixed": "1.0.7.1"
+    "LastVersionFixed": "1.0.7"
   },
   {
     "Name": "dde-api",
@@ -46,7 +46,7 @@
     "OriginRepoDir": "deepin-artwork",
     "Updated": true,
     "LastVersion": "2014-4",
-    "LastVersionFixed": "2014.4"
+    "LastVersionFixed": "2014"
   },
   {
     "Name": "deepin-artwork-themes",
@@ -67,7 +67,7 @@
     "OriginRepoDir": "deepin-cursor-theme",
     "Updated": true,
     "LastVersion": "2014~4-2",
-    "LastVersionFixed": "2014.4.2"
+    "LastVersionFixed": "2014.4"
   },
   {
     "Name": "deepin-dbus-factory",
@@ -158,7 +158,7 @@
     "OriginRepoDir": "pygtk",
     "Updated": true,
     "LastVersion": "2.24.0-4~saucy",
-    "LastVersionFixed": "2.24.0.4"
+    "LastVersionFixed": "2.24.0"
   },
   {
     "Name": "deepin-qml-widgets",
@@ -214,7 +214,7 @@
     "OriginRepoDir": "grub-themes-deepin",
     "Updated": true,
     "LastVersion": "0.5-9",
-    "LastVersionFixed": "0.5.9"
+    "LastVersionFixed": "0.5"
   },
   {
     "Name": "libdeepin-webkit",
@@ -235,56 +235,56 @@
     "OriginRepoDir": "golang-fsnotify",
     "Updated": true,
     "LastVersion": "0.0~git201400902-1",
-    "LastVersionFixed": "0.0.git201400902.1"
+    "LastVersionFixed": "0.0.git201400902"
   },
   {
     "Name": "go-gettext-go",
     "OriginRepoDir": "golang-gettext-go",
     "Updated": true,
     "LastVersion": "0.0~git20140808-1",
-    "LastVersionFixed": "0.0.git20140808.1"
+    "LastVersionFixed": "0.0.git20140808"
   },
   {
     "Name": "go-gocheck",
     "OriginRepoDir": "golang-gocheck",
     "Updated": true,
     "LastVersion": "0.0~bzr20131118+85-6",
-    "LastVersionFixed": "0.0.bzr20131118.85.6"
+    "LastVersionFixed": "0.0.bzr20131118.85"
   },
   {
     "Name": "go-goconvey",
     "OriginRepoDir": "golang-goconvey-dev",
     "Updated": true,
     "LastVersion": "1.5.0-1",
-    "LastVersionFixed": "1.5.0.1"
+    "LastVersionFixed": "1.5.0"
   },
   {
     "Name": "go-graphics-go",
     "OriginRepoDir": "golang-graphics-go",
     "Updated": true,
     "LastVersion": "0.0~git20140903-1",
-    "LastVersionFixed": "0.0.git20140903.1"
+    "LastVersionFixed": "0.0.git20140903"
   },
   {
     "Name": "go-jamslam-freetype-go",
     "OriginRepoDir": "golang-jamslam-freetype-go",
     "Updated": true,
     "LastVersion": "0.0~git20140903-1",
-    "LastVersionFixed": "0.0.git20140903.1"
+    "LastVersionFixed": "0.0.git20140903"
   },
   {
     "Name": "go-sqlite3",
     "OriginRepoDir": "golang-go-sqlite3",
     "Updated": true,
     "LastVersion": "0.0~git20140913-1",
-    "LastVersionFixed": "0.0.git20140913.1"
+    "LastVersionFixed": "0.0.git20140913"
   },
   {
     "Name": "go-xgb",
     "OriginRepoDir": "golang-xgb",
     "Updated": true,
     "LastVersion": "0.0~git20140510-1",
-    "LastVersionFixed": "0.0.git20140510.1"
+    "LastVersionFixed": "0.0.git20140510"
   },
   {
     "Name": "go-xgbutil",

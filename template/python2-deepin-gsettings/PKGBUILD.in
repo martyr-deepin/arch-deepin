@@ -4,7 +4,7 @@
 pkgname=python2-deepin-gsettings
 _pkgname=deepin-gsettings
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER@
+_pkgver=@PKGVER_SRC@
 pkgrel=1
 pkgdesc='deepin gsettings python bindings'
 arch=('i686' 'x86_64')

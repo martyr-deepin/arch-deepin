@@ -1,8 +1,8 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-_pkgname=deepin-webkit
 pkgname=libdeepin-webkit
+_pkgname=deepin-webkit
 pkgver=1.8.2.2.20141124213858
 _pkgver=1.8.2.2+20141124213858~2494240496
 pkgrel=1

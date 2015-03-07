@@ -88,3 +88,287 @@
 2015-03-07 17:15:58 update-pkgbuild: [SUCCESS] go-xgb updated=false version=0.0~git20140510-1
 2015-03-07 17:15:58 update-pkgbuild: [SUCCESS] go-xgbutil updated=false version=1~git20140610
 2015-03-07 17:15:58 update-pkgbuild: [SUCCESS] qtav updated=false version=1.4.2-deepin3
+
+2015-03-07 20:25:56 makepkg: [BEGIN]
+2015-03-07 20:26:03 makepkg: [FAILED] dde-account-faces
+2015-03-07 20:28:49 makepkg: [SUCCESS] dde-api
+2015-03-07 20:29:29 makepkg: [SUCCESS] dde-control-center
+2015-03-07 20:33:44 makepkg: [SUCCESS] dde-daemon
+2015-03-07 20:33:59 makepkg: [SUCCESS] dde-dock-applets
+2015-03-07 20:34:01 makepkg: [FAILED] dde-workspace
+2015-03-07 20:34:12 makepkg: [SUCCESS] deepin-artwork
+2015-03-07 20:34:34 makepkg: [SUCCESS] deepin-artwork-themes
+2015-03-07 20:41:55 makepkg: [SUCCESS] deepin-compiz
+2015-03-07 20:42:00 makepkg: [FAILED] deepin-cursor-theme
+2015-03-07 20:48:48 makepkg: [SUCCESS] deepin-dbus-factory
+2015-03-07 20:48:52 makepkg: [SUCCESS] deepin-dbus-generator
+2015-03-07 20:48:53 makepkg: [SUCCESS] deepin-default-gsettings
+2015-03-07 20:49:05 makepkg: [SUCCESS] deepin-game-center
+2015-03-07 20:49:07 makepkg: [SUCCESS] deepin-gettext-tools
+2015-03-07 20:49:16 makepkg: [SUCCESS] deepin-gtk-theme
+2015-03-07 20:49:16 makepkg: [FAILED] deepin-icon-theme
+2015-03-07 20:49:57 makepkg: [SUCCESS] deepin-menu
+2015-03-07 20:50:01 makepkg: [SUCCESS] deepin-movie
+2015-03-07 20:51:38 makepkg: [SUCCESS] deepin-music-player
+2015-03-07 20:51:58 makepkg: [SUCCESS] deepin-notifications
+2015-03-07 20:51:58 makepkg: [FAILED] deepin-pygtk
+2015-03-07 20:52:42 makepkg: [SUCCESS] deepin-qml-widgets
+2015-03-07 20:52:44 makepkg: [SUCCESS] deepin-screenshot
+2015-03-07 20:52:49 makepkg: [SUCCESS] deepin-terminal
+2015-03-07 20:53:23 makepkg: [SUCCESS] deepin-ui
+2015-03-07 20:53:29 makepkg: [SUCCESS] deepin-utils
+2015-03-07 20:54:09 makepkg: [SUCCESS] deepin-vte
+2015-03-07 20:54:16 makepkg: [SUCCESS] go-dlib
+2015-03-07 20:54:17 makepkg: [SUCCESS] go-fsnotify
+2015-03-07 20:54:19 makepkg: [SUCCESS] go-gettext-go
+2015-03-07 20:54:19 makepkg: [FAILED] go-gocheck
+2015-03-07 20:54:20 makepkg: [FAILED] go-goconvey
+2015-03-07 20:54:23 makepkg: [SUCCESS] go-graphics-go
+2015-03-07 20:54:24 makepkg: [SUCCESS] go-jamslam-freetype-go
+2015-03-07 20:54:27 makepkg: [FAILED] go-sqlite3
+2015-03-07 20:54:31 makepkg: [SUCCESS] go-xgb
+2015-03-07 20:54:35 makepkg: [SUCCESS] go-xgbutil
+2015-03-07 20:54:40 makepkg: [FAILED] grub-theme-deepin
+
+2015-03-07 21:06:05 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:06:11 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:06:14 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:06:22 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:06:26 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:06:45 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:07:01 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:10:36 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:11:25 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:11:41 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:14:08 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:14:11 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:14:20 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:14:27 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:14:32 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:14:37 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:15:29 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:15:31 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:15:37 udpate-pkgbuild: [BEGIN]
+
+2015-03-07 21:15:59 makepkg: [BEGIN]
+
+2015-03-07 21:16:06 makepkg: [BEGIN]
+
+2015-03-07 21:16:14 makepkg: [BEGIN]
+
+2015-03-07 21:43:31 udpate-pkgbuild: [BEGIN]
+2015-03-07 21:43:31 update-pkgbuild: [SUCCESS] dde-account-faces updated=false version=1.0.7-1~trusty
+2015-03-07 21:43:31 update-pkgbuild: [SUCCESS] dde-api updated=false version=0.0.2+20150107093816~d93500c16a
+2015-03-07 21:43:31 update-pkgbuild: [SUCCESS] dde-control-center updated=false version=0.1+20150211150410~6b5195ef53
+2015-03-07 21:43:31 update-pkgbuild: [SUCCESS] dde-daemon updated=false version=0.0.1+20150209101554~660a820a61
+2015-03-07 21:43:31 update-pkgbuild: [SUCCESS] dde-dock-applets updated=false version=0.0.4+20150212175159~4a7021531e
+2015-03-07 21:43:32 update-pkgbuild: [SUCCESS] dde-workspace updated=false version=2.1+20150202093855~5b89873137
+2015-03-07 21:43:32 update-pkgbuild: [SUCCESS] deepin-artwork updated=false version=2014-4
+2015-03-07 21:43:32 update-pkgbuild: [SUCCESS] deepin-artwork-themes updated=false version=14.04.3+20141204110221~5bf78d7f42
+2015-03-07 21:43:32 update-pkgbuild: [SUCCESS] deepin-compiz updated=false version=0.9.99-5+git20140707164843~2e85d002e7
+2015-03-07 21:43:32 update-pkgbuild: [SUCCESS] deepin-cursor-theme updated=false version=2014~4-2
+2015-03-07 21:43:32 update-pkgbuild: [SUCCESS] deepin-dbus-factory updated=false version=0.0.2+20141226160557~7e89f03592
+2015-03-07 21:43:32 update-pkgbuild: [SUCCESS] deepin-dbus-generator updated=false version=0.0.3+20141120163131~84ee26c38d
+2015-03-07 21:43:32 update-pkgbuild: [SUCCESS] deepin-default-gsettings updated=false version=0.2+20141216171821~2cf686e3fa
+2015-03-07 21:43:32 update-pkgbuild: [SUCCESS] deepin-game-center updated=false version=1.0.1+20141230144448~4e7bbbfda6
+2015-03-07 21:43:33 update-pkgbuild: [SUCCESS] deepin-gettext-tools updated=false version=0.0.1+20141216200739~6ba50ecb9c
+2015-03-07 21:43:33 update-pkgbuild: [SUCCESS] python2-deepin-gsettings updated=false version=0.1+git20131206094009~a64de3ac19
+2015-03-07 21:43:33 update-pkgbuild: [SUCCESS] deepin-gtk-theme updated=false version=14.07+20141223164347~1b5a54ef99
+2015-03-07 21:43:33 update-pkgbuild: [SUCCESS] deepin-icon-theme updated=false version=13.06.13+20150114160019~dff58a2dad
+2015-03-07 21:43:33 update-pkgbuild: [SUCCESS] deepin-menu updated=false version=1.1+20141216195521~1247e3bd11
+2015-03-07 21:43:33 update-pkgbuild: [SUCCESS] deepin-movie updated=false version=2.2+20150211132515~f8f651edba
+2015-03-07 21:43:33 update-pkgbuild: [SUCCESS] deepin-music-player updated=false version=1.1+20150204093722~081154cf7b
+2015-03-07 21:43:33 update-pkgbuild: [SUCCESS] deepin-notifications updated=false version=0.3+20141216180805~a93d61767c
+2015-03-07 21:43:33 update-pkgbuild: [SUCCESS] deepin-pygtk updated=false version=2.24.0-4~saucy
+2015-03-07 21:43:33 update-pkgbuild: [SUCCESS] deepin-qml-widgets updated=false version=0.0.2+20150203171526~feb6d6ad2f
+2015-03-07 21:43:34 update-pkgbuild: [SUCCESS] deepin-screenshot updated=false version=2.1+20141230110557~a5861179f5
+2015-03-07 21:43:34 update-pkgbuild: [SUCCESS] deepin-terminal updated=false version=1.1+20141230110750~bc441b7aae
+2015-03-07 21:43:34 update-pkgbuild: [SUCCESS] deepin-ui updated=false version=1.1+20141229194712~5a86faec50
+2015-03-07 21:43:34 update-pkgbuild: [SUCCESS] deepin-utils updated=false version=0.0.2+20140703165416~8aaf2a6f00
+2015-03-07 21:43:34 update-pkgbuild: [SUCCESS] deepin-vte updated=false version=0.28.2-6deepin7~saucy
+2015-03-07 21:43:34 update-pkgbuild: [SUCCESS] go-dlib updated=false version=0.0.4+20150108105637~88ae48d3c8
+2015-03-07 21:43:34 update-pkgbuild: [SUCCESS] grub-theme-deepin updated=false version=0.5-9
+2015-03-07 21:43:34 update-pkgbuild: [SUCCESS] libdeepin-webkit updated=false version=1.8.2.2+20141124213858~2494240496
+2015-03-07 21:43:34 update-pkgbuild: [SUCCESS] startdde updated=false version=0.1+20141230181929~b99e7b174d
+2015-03-07 21:43:35 update-pkgbuild: [SUCCESS] go-fsnotify updated=false version=0.0~git201400902-1
+2015-03-07 21:43:35 update-pkgbuild: [SUCCESS] go-gettext-go updated=false version=0.0~git20140808-1
+2015-03-07 21:43:35 update-pkgbuild: [SUCCESS] go-gocheck updated=false version=0.0~bzr20131118+85-6
+2015-03-07 21:43:35 update-pkgbuild: [SUCCESS] go-goconvey updated=false version=1.5.0-1
+2015-03-07 21:43:35 update-pkgbuild: [SUCCESS] go-graphics-go updated=false version=0.0~git20140903-1
+2015-03-07 21:43:35 update-pkgbuild: [SUCCESS] go-jamslam-freetype-go updated=false version=0.0~git20140903-1
+2015-03-07 21:43:35 update-pkgbuild: [SUCCESS] go-sqlite3 updated=false version=0.0~git20140913-1
+2015-03-07 21:43:35 update-pkgbuild: [SUCCESS] go-xgb updated=false version=0.0~git20140510-1
+2015-03-07 21:43:35 update-pkgbuild: [SUCCESS] go-xgbutil updated=false version=1~git20140610
+2015-03-07 21:43:36 update-pkgbuild: [SUCCESS] qtav updated=false version=1.4.2-deepin3
+
+2015-03-07 21:49:40 udpate-pkgbuild: [BEGIN]
+2015-03-07 21:49:40 update-pkgbuild: [SUCCESS] dde-account-faces updated=false version=1.0.7-1~trusty
+2015-03-07 21:49:41 update-pkgbuild: [SUCCESS] dde-api updated=false version=0.0.2+20150107093816~d93500c16a
+2015-03-07 21:49:41 update-pkgbuild: [SUCCESS] dde-control-center updated=false version=0.1+20150211150410~6b5195ef53
+2015-03-07 21:49:41 update-pkgbuild: [SUCCESS] dde-daemon updated=false version=0.0.1+20150209101554~660a820a61
+2015-03-07 21:49:41 update-pkgbuild: [SUCCESS] dde-dock-applets updated=false version=0.0.4+20150212175159~4a7021531e
+2015-03-07 21:49:41 update-pkgbuild: [SUCCESS] dde-workspace updated=false version=2.1+20150202093855~5b89873137
+2015-03-07 21:49:41 update-pkgbuild: [SUCCESS] deepin-artwork updated=false version=2014-4
+2015-03-07 21:49:41 update-pkgbuild: [SUCCESS] deepin-artwork-themes updated=false version=14.04.3+20141204110221~5bf78d7f42
+2015-03-07 21:49:41 update-pkgbuild: [SUCCESS] deepin-compiz updated=false version=0.9.99-5+git20140707164843~2e85d002e7
+2015-03-07 21:49:41 update-pkgbuild: [SUCCESS] deepin-cursor-theme updated=false version=2014~4-2
+2015-03-07 21:49:42 update-pkgbuild: [SUCCESS] deepin-dbus-factory updated=false version=0.0.2+20141226160557~7e89f03592
+2015-03-07 21:49:42 update-pkgbuild: [SUCCESS] deepin-dbus-generator updated=false version=0.0.3+20141120163131~84ee26c38d
+2015-03-07 21:49:42 update-pkgbuild: [SUCCESS] deepin-default-gsettings updated=false version=0.2+20141216171821~2cf686e3fa
+2015-03-07 21:49:42 update-pkgbuild: [SUCCESS] deepin-game-center updated=false version=1.0.1+20141230144448~4e7bbbfda6
+2015-03-07 21:49:42 update-pkgbuild: [SUCCESS] deepin-gettext-tools updated=false version=0.0.1+20141216200739~6ba50ecb9c
+2015-03-07 21:49:42 update-pkgbuild: [SUCCESS] python2-deepin-gsettings updated=false version=0.1+git20131206094009~a64de3ac19
+2015-03-07 21:49:42 update-pkgbuild: [SUCCESS] deepin-gtk-theme updated=false version=14.07+20141223164347~1b5a54ef99
+2015-03-07 21:49:42 update-pkgbuild: [SUCCESS] deepin-icon-theme updated=false version=13.06.13+20150114160019~dff58a2dad
+2015-03-07 21:49:42 update-pkgbuild: [SUCCESS] deepin-menu updated=false version=1.1+20141216195521~1247e3bd11
+2015-03-07 21:49:42 update-pkgbuild: [SUCCESS] deepin-movie updated=false version=2.2+20150211132515~f8f651edba
+2015-03-07 21:49:43 update-pkgbuild: [SUCCESS] deepin-music-player updated=false version=1.1+20150204093722~081154cf7b
+2015-03-07 21:49:43 update-pkgbuild: [SUCCESS] deepin-notifications updated=false version=0.3+20141216180805~a93d61767c
+2015-03-07 21:49:43 update-pkgbuild: [SUCCESS] deepin-pygtk updated=false version=2.24.0-4~saucy
+2015-03-07 21:49:43 update-pkgbuild: [SUCCESS] deepin-qml-widgets updated=false version=0.0.2+20150203171526~feb6d6ad2f
+2015-03-07 21:49:43 update-pkgbuild: [SUCCESS] deepin-screenshot updated=false version=2.1+20141230110557~a5861179f5
+2015-03-07 21:49:43 update-pkgbuild: [SUCCESS] deepin-terminal updated=false version=1.1+20141230110750~bc441b7aae
+2015-03-07 21:49:43 update-pkgbuild: [SUCCESS] deepin-ui updated=false version=1.1+20141229194712~5a86faec50
+2015-03-07 21:49:43 update-pkgbuild: [SUCCESS] deepin-utils updated=false version=0.0.2+20140703165416~8aaf2a6f00
+2015-03-07 21:49:43 update-pkgbuild: [SUCCESS] deepin-vte updated=false version=0.28.2-6deepin7~saucy
+2015-03-07 21:49:43 update-pkgbuild: [SUCCESS] go-dlib updated=false version=0.0.4+20150108105637~88ae48d3c8
+2015-03-07 21:49:44 update-pkgbuild: [SUCCESS] grub-theme-deepin updated=false version=0.5-9
+2015-03-07 21:49:44 update-pkgbuild: [SUCCESS] libdeepin-webkit updated=false version=1.8.2.2+20141124213858~2494240496
+2015-03-07 21:49:44 update-pkgbuild: [SUCCESS] startdde updated=false version=0.1+20141230181929~b99e7b174d
+2015-03-07 21:49:44 update-pkgbuild: [SUCCESS] go-fsnotify updated=false version=0.0~git201400902-1
+2015-03-07 21:49:44 update-pkgbuild: [SUCCESS] go-gettext-go updated=false version=0.0~git20140808-1
+2015-03-07 21:49:44 update-pkgbuild: [SUCCESS] go-gocheck updated=false version=0.0~bzr20131118+85-6
+2015-03-07 21:49:44 update-pkgbuild: [SUCCESS] go-goconvey updated=false version=1.5.0-1
+2015-03-07 21:49:44 update-pkgbuild: [SUCCESS] go-graphics-go updated=false version=0.0~git20140903-1
+2015-03-07 21:49:44 update-pkgbuild: [SUCCESS] go-jamslam-freetype-go updated=false version=0.0~git20140903-1
+2015-03-07 21:49:45 update-pkgbuild: [SUCCESS] go-sqlite3 updated=false version=0.0~git20140913-1
+2015-03-07 21:49:45 update-pkgbuild: [SUCCESS] go-xgb updated=false version=0.0~git20140510-1
+2015-03-07 21:49:45 update-pkgbuild: [SUCCESS] go-xgbutil updated=false version=1~git20140610
+2015-03-07 21:49:45 update-pkgbuild: [SUCCESS] qtav updated=false version=1.4.2-deepin3
+
+2015-03-07 21:51:47 makepkg: [BEGIN]
+2015-03-07 21:51:47 makepkg: [FAILED] dde-account-faces
+2015-03-07 21:51:47 makepkg: [FAILED] deepin-cursor-theme
+2015-03-07 21:52:05 makepkg: [SUCCESS] deepin-icon-theme
+2015-03-07 21:53:23 makepkg: [SUCCESS] deepin-pygtk
+
+2015-03-07 21:55:16 udpate-pkgbuild: [BEGIN]
+2015-03-07 21:55:16 update-pkgbuild: [SUCCESS] dde-account-faces updated=false version=1.0.7-1~trusty
+2015-03-07 21:55:16 update-pkgbuild: [SUCCESS] deepin-cursor-theme updated=false version=2014~4-2
+
+2015-03-07 21:55:25 makepkg: [BEGIN]
+2015-03-07 21:55:26 makepkg: [SUCCESS] dde-account-faces
+2015-03-07 21:55:26 makepkg: [FAILED] deepin-cursor-theme
+
+2015-03-07 21:56:23 udpate-pkgbuild: [BEGIN]
+2015-03-07 21:56:23 update-pkgbuild: [SUCCESS] dde-account-faces updated=false version=1.0.7-1~trusty
+2015-03-07 21:56:23 update-pkgbuild: [SUCCESS] deepin-cursor-theme updated=false version=2014~4-2
+
+2015-03-07 21:56:25 makepkg: [BEGIN]
+2015-03-07 21:56:25 makepkg: [SUCCESS] dde-account-faces
+2015-03-07 21:56:26 makepkg: [FAILED] deepin-cursor-theme
+
+2015-03-07 21:57:52 udpate-pkgbuild: [BEGIN]
+2015-03-07 21:57:52 update-pkgbuild: [SUCCESS] dde-account-faces updated=false version=1.0.7-1~trusty
+2015-03-07 21:57:52 update-pkgbuild: [SUCCESS] deepin-cursor-theme updated=false version=2014~4-2
+
+2015-03-07 21:57:53 makepkg: [BEGIN]
+2015-03-07 21:57:53 makepkg: [SUCCESS] dde-account-faces
+2015-03-07 21:57:55 makepkg: [SUCCESS] deepin-cursor-theme
+
+2015-03-07 21:59:43 makepkg: [BEGIN]
+2015-03-07 21:59:43 makepkg: [FAILED] go-gocheck
+
+2015-03-07 21:59:45 udpate-pkgbuild: [BEGIN]
+2015-03-07 21:59:45 update-pkgbuild: [SUCCESS] go-gocheck updated=false version=0.0~bzr20131118+85-6
+
+2015-03-07 21:59:46 makepkg: [BEGIN]
+2015-03-07 21:59:46 makepkg: [FAILED] go-gocheck
+
+2015-03-07 22:30:11 udpate-pkgbuild: [BEGIN]
+2015-03-07 22:30:11 update-pkgbuild: [SUCCESS] dde-account-faces updated=false version=1.0.7-1~trusty
+2015-03-07 22:30:11 update-pkgbuild: [SUCCESS] dde-api updated=false version=0.0.2+20150107093816~d93500c16a
+2015-03-07 22:30:11 update-pkgbuild: [SUCCESS] dde-control-center updated=false version=0.1+20150211150410~6b5195ef53
+2015-03-07 22:30:11 update-pkgbuild: [SUCCESS] dde-daemon updated=false version=0.0.1+20150209101554~660a820a61
+2015-03-07 22:30:11 update-pkgbuild: [SUCCESS] dde-dock-applets updated=false version=0.0.4+20150212175159~4a7021531e
+2015-03-07 22:30:12 update-pkgbuild: [SUCCESS] dde-workspace updated=false version=2.1+20150202093855~5b89873137
+2015-03-07 22:30:12 update-pkgbuild: [SUCCESS] deepin-artwork updated=false version=2014-4
+2015-03-07 22:30:12 update-pkgbuild: [SUCCESS] deepin-artwork-themes updated=false version=14.04.3+20141204110221~5bf78d7f42
+2015-03-07 22:30:12 update-pkgbuild: [SUCCESS] deepin-compiz updated=false version=0.9.99-5+git20140707164843~2e85d002e7
+2015-03-07 22:30:12 update-pkgbuild: [SUCCESS] deepin-cursor-theme updated=false version=2014~4-2
+2015-03-07 22:30:12 update-pkgbuild: [SUCCESS] deepin-dbus-factory updated=false version=0.0.2+20141226160557~7e89f03592
+2015-03-07 22:30:12 update-pkgbuild: [SUCCESS] deepin-dbus-generator updated=false version=0.0.3+20141120163131~84ee26c38d
+2015-03-07 22:30:12 update-pkgbuild: [SUCCESS] deepin-default-gsettings updated=false version=0.2+20141216171821~2cf686e3fa
+2015-03-07 22:30:12 update-pkgbuild: [SUCCESS] deepin-game-center updated=false version=1.0.1+20141230144448~4e7bbbfda6
+2015-03-07 22:30:13 update-pkgbuild: [SUCCESS] deepin-gettext-tools updated=false version=0.0.1+20141216200739~6ba50ecb9c
+2015-03-07 22:30:13 update-pkgbuild: [SUCCESS] python2-deepin-gsettings updated=false version=0.1+git20131206094009~a64de3ac19
+2015-03-07 22:30:13 update-pkgbuild: [SUCCESS] deepin-gtk-theme updated=false version=14.07+20141223164347~1b5a54ef99
+2015-03-07 22:30:13 update-pkgbuild: [SUCCESS] deepin-icon-theme updated=false version=13.06.13+20150114160019~dff58a2dad
+2015-03-07 22:30:13 update-pkgbuild: [SUCCESS] deepin-menu updated=false version=1.1+20141216195521~1247e3bd11
+2015-03-07 22:30:13 update-pkgbuild: [SUCCESS] deepin-movie updated=false version=2.2+20150211132515~f8f651edba
+2015-03-07 22:30:13 update-pkgbuild: [SUCCESS] deepin-music-player updated=false version=1.1+20150204093722~081154cf7b
+2015-03-07 22:30:13 update-pkgbuild: [SUCCESS] deepin-notifications updated=false version=0.3+20141216180805~a93d61767c
+2015-03-07 22:30:13 update-pkgbuild: [SUCCESS] deepin-pygtk updated=false version=2.24.0-4~saucy
+2015-03-07 22:30:14 update-pkgbuild: [SUCCESS] deepin-qml-widgets updated=false version=0.0.2+20150203171526~feb6d6ad2f
+2015-03-07 22:30:14 update-pkgbuild: [SUCCESS] deepin-screenshot updated=false version=2.1+20141230110557~a5861179f5
+2015-03-07 22:30:14 update-pkgbuild: [SUCCESS] deepin-terminal updated=false version=1.1+20141230110750~bc441b7aae
+2015-03-07 22:30:14 update-pkgbuild: [SUCCESS] deepin-ui updated=false version=1.1+20141229194712~5a86faec50
+2015-03-07 22:30:14 update-pkgbuild: [SUCCESS] deepin-utils updated=false version=0.0.2+20140703165416~8aaf2a6f00
+2015-03-07 22:30:14 update-pkgbuild: [SUCCESS] deepin-vte updated=false version=0.28.2-6deepin7~saucy
+2015-03-07 22:30:14 update-pkgbuild: [SUCCESS] go-dlib updated=false version=0.0.4+20150108105637~88ae48d3c8
+2015-03-07 22:30:14 update-pkgbuild: [SUCCESS] grub-theme-deepin updated=false version=0.5-9
+2015-03-07 22:30:14 update-pkgbuild: [SUCCESS] libdeepin-webkit updated=false version=1.8.2.2+20141124213858~2494240496
+2015-03-07 22:30:14 update-pkgbuild: [SUCCESS] startdde updated=false version=0.1+20141230181929~b99e7b174d
+2015-03-07 22:30:15 update-pkgbuild: [SUCCESS] go-fsnotify updated=false version=0.0~git201400902-1
+2015-03-07 22:30:15 update-pkgbuild: [SUCCESS] go-gettext-go updated=false version=0.0~git20140808-1
+2015-03-07 22:30:15 update-pkgbuild: [SUCCESS] go-gocheck updated=false version=0.0~bzr20131118+85-6
+2015-03-07 22:30:15 update-pkgbuild: [SUCCESS] go-goconvey updated=false version=1.5.0-1
+2015-03-07 22:30:15 update-pkgbuild: [SUCCESS] go-graphics-go updated=false version=0.0~git20140903-1
+2015-03-07 22:30:15 update-pkgbuild: [SUCCESS] go-jamslam-freetype-go updated=false version=0.0~git20140903-1
+2015-03-07 22:30:15 update-pkgbuild: [SUCCESS] go-sqlite3 updated=false version=0.0~git20140913-1
+2015-03-07 22:30:15 update-pkgbuild: [SUCCESS] go-xgb updated=false version=0.0~git20140510-1
+2015-03-07 22:30:15 update-pkgbuild: [SUCCESS] go-xgbutil updated=false version=1~git20140610
+2015-03-07 22:30:15 update-pkgbuild: [SUCCESS] qtav updated=false version=1.4.2-deepin3
+
+2015-03-07 22:30:56 makepkg: [BEGIN]
+2015-03-07 22:30:57 makepkg: [SUCCESS] go-gocheck
+
+2015-03-07 22:31:22 udpate-pkgbuild: [BEGIN]
+2015-03-07 22:31:22 update-pkgbuild: [SUCCESS] go-goconvey updated=false version=1.5.0-1
+2015-03-07 22:31:22 update-pkgbuild: [SUCCESS] go-sqlite3 updated=false version=0.0~git20140913-1
+2015-03-07 22:31:22 update-pkgbuild: [FAILED] grub-theme-deepin--makepkg updated=false version=
+
+2015-03-07 22:31:28 makepkg: [BEGIN]
+2015-03-07 22:31:39 makepkg: [SUCCESS] go-goconvey
+2015-03-07 22:31:39 makepkg: [FAILED] go-sqlite3
+2015-03-07 22:31:41 makepkg: [SUCCESS] grub-theme-deepin
+
+2015-03-07 22:34:07 udpate-pkgbuild: [BEGIN]
+2015-03-07 22:34:08 update-pkgbuild: [SUCCESS] go-sqlite3 updated=false version=0.0~git20140913-1
+
+2015-03-07 22:34:09 makepkg: [BEGIN]
+2015-03-07 22:34:09 makepkg: [FAILED] go-sqlite3
+
+2015-03-07 22:35:16 udpate-pkgbuild: [BEGIN]
+2015-03-07 22:35:16 update-pkgbuild: [SUCCESS] go-sqlite3 updated=false version=0.0~git20140913-1
+
+2015-03-07 22:35:17 makepkg: [BEGIN]
+2015-03-07 22:35:21 makepkg: [SUCCESS] go-sqlite3

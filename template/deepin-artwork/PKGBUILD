@@ -2,8 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-artwork
-pkgver=2014.4
-_pkgver=2014-4
+pkgver=2014
+_pkgver=2014
 pkgrel=1
 pkgdesc='Deepin artwork themes (sounds)'
 arch=('any')
@@ -14,8 +14,7 @@ source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-artwork/deepi
 sha256sums=('2741f79faac75540277972bacd26f8d39211fd3862180508657965db195cb6ec')
 
 package() {
-  # TODO
-  cd "${srcdir}/${pkgname}-2014"
+  cd "${pkgname}-${_pkgver}"
 
   install -dm755 "${pkgdir}"/usr/share
   cp -r usr/share/{pixmaps,sounds} "${pkgdir}"

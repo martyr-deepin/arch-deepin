@@ -1,7 +1,6 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
-_pkgname=golang-fsnotify
 pkgname=go-fsnotify
 pkgver=@PKGVER_FIXED@
 pkgrel=1
@@ -13,7 +12,7 @@ replaces=('golang-fsnotify')
 source=("@SOURCE_ORIG@")
 sha256sums=('@SHA256SUM_ORIG@')
 
-_gobuild_dir="${_pkgname}-build"
+_gobuild_dir="${pkgname}-build"
 _gopkg="github.com/howeyc/fsnotify"
 
 prepare() {

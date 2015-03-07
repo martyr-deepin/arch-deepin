@@ -4,7 +4,7 @@
 pkgname=deepin-pygtk
 _pkgname=pygtk
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER@
+_pkgver=@PKGVER_SRC@
 pkgrel=6
 pkgdesc="Python bindings for the GTK widget set - with patches to fix memory leak for deepin-ui"
 arch=('i686' 'x86_64')
@@ -25,22 +25,18 @@ provides=("${_pkgname}=2.24.0")
 conflicts=("${_pkgname}")
 
 prepare() {
-
-  # unzip patches
-  cd "$srcdir/"
-  tar -xf ${_pkgname}_${_pkgver}-4~saucy.debian.tar.gz
-
   cd "${_pkgname}-${_pkgver}"
+
   # apply python27 patch
   # https://bugzilla.gnome.org/show_bug.cgi?id=623965
   patch -Np1 -i "${srcdir}/python27.patch"
 
   # apply deepin patches
-  patchdir=${srcdir}/debian/patches
-  for f in $(< ${patchdir}/series); do
+  patchdir="${srcdir}"/debian/patches
+  for f in $(< "${patchdir}"/series); do
     echo "==> patching: ${f##*/}"
     # ignore error if patch again
-    patch -Np1 -i ${patchdir}/${f} || echo '==> patch error: ${f##*/}'
+    patch -Np1 -i "${patchdir}/${f}" || echo "==> patch error: ${f##*/}"
   done
 
 }

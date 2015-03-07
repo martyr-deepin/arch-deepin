@@ -3,7 +3,7 @@
 
 pkgname=startdde
 pkgver=@PKGVER_FIXED@
-_pkgver=@PKGVER@
+_pkgver=@PKGVER_SRC@
 pkgrel=1
 pkgdesc="starter of deepin desktop environment"
 arch=('i686' 'x86_64')
