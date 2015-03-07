@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-ui
-pkgver=1.1.20141229.5a86faec50
+pkgver=1.1.20141229194712
 _pkgver=1.1+20141229194712~5a86faec50
 pkgrel=1
 pkgdesc='UI toolkit for Linux Deepin'

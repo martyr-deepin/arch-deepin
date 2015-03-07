@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-dock-applets
-pkgver=0.0.4.20150212.4a7021531e
+pkgver=0.0.4.20150212175159
 _pkgver=0.0.4+20150212175159~4a7021531e
 pkgrel=1
 pkgdesc="New control center for linux deepin"

@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-icon-theme
-pkgver=13.06.13.20150114.dff58a2dad
+pkgver=13.06.13.20150114160019
 _pkgver=13.06.13+20150114160019~dff58a2dad
 pkgrel=1
 pkgdesc="This package is DeepinIconTheme which inherits the faenza-icon-theme."

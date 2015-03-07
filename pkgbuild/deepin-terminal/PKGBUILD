@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-terminal
-pkgver=1.1.20141230.bc441b7aae
+pkgver=1.1.20141230110750
 _pkgver=1.1+20141230110750~bc441b7aae
 pkgrel=1
 pkgdesc='Awesome terminal for Linux Deepin'

@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-menu
-pkgver=1.1.20141216.1247e3bd11
+pkgver=1.1.20141216195521
 _pkgver=1.1+20141216195521~1247e3bd11
 pkgrel=1
 pkgdesc="Deepin menu service for building beautiful menus."

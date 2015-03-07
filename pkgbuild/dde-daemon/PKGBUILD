@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-daemon
-pkgver=0.0.1.20150209.660a820a61
+pkgver=0.0.1.20150209101554
 _pkgver=0.0.1+20150209101554~660a820a61
 pkgrel=1
 pkgdesc='Go-lang bingdings for dde-daemon'

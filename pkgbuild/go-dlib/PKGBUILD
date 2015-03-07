@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=go-dlib
-pkgver=0.0.4.20150108.88ae48d3c8
+pkgver=0.0.4.20150108105637
 _pkgver=0.0.4+20150108105637~88ae48d3c8
 pkgrel=1
 pkgdesc='Go-lang bingdings for dlib'

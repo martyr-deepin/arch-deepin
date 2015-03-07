@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-default-gsettings
-pkgver=0.2.20141216.2cf686e3fa
+pkgver=0.2.20141216171821
 _pkgver=0.2+20141216171821~2cf686e3fa
 pkgrel=1
 pkgdesc='deepin default settings of gsettings'

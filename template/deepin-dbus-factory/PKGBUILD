@@ -5,7 +5,7 @@ pkgbase=deepin-dbus-factory
 _pkgbase=dbus-factory
 pkgname=('dde-go-dbus-factory'
          'dde-qml-dbus-factory')
-pkgver=0.0.2.20141226.7e89f03592
+pkgver=0.0.2.20141226160557
 _pkgver=0.0.2+20141226160557~7e89f03592
 pkgrel=1
 arch=('i686' 'x86_64')

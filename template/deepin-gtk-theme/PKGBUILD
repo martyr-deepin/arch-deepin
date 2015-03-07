@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-gtk-theme
-pkgver=14.07.20141223.1b5a54ef99
+pkgver=14.07.20141223164347
 _pkgver=14.07+20141223164347~1b5a54ef99
 pkgrel=1
 pkgdesc="Deepin GTK Theme."

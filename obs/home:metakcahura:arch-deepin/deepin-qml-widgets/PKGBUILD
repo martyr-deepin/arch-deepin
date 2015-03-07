@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-qml-widgets
-pkgver=0.0.2.20150203.feb6d6ad2f
+pkgver=0.0.2.20150203171526
 _pkgver=0.0.2+20150203171526~feb6d6ad2f
 pkgrel=1
 pkgdesc='Deepin QML widgets'

@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-notifications
-pkgver=0.3.20141216.a93d61767c
+pkgver=0.3.20141216180805
 _pkgver=0.3+20141216180805~a93d61767c
 pkgrel=1
 pkgdesc="System notifications for linuxdeepin desktop environment."

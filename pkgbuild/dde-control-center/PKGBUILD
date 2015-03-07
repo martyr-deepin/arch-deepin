@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-control-center
-pkgver=0.1.20150211.6b5195ef53
+pkgver=0.1.20150211150410
 _pkgver=0.1+20150211150410~6b5195ef53
 pkgrel=1
 pkgdesc="New control center for linux deepin"

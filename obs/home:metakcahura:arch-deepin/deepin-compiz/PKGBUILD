@@ -6,7 +6,7 @@
 
 pkgname=deepin-compiz
 _pkgname=compiz
-pkgver=0.9.99.5.git20140707.2e85d002e7
+pkgver=0.9.99.5.git20140707164843
 _pkgver=0.9.99-5+git20140707164843~2e85d002e7
 _mainver=0.9.99
 pkgrel=1
