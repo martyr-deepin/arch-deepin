@@ -38,9 +38,9 @@ ensure_service_in_exists() {
     cd "${tpldir}"
     if [ ! -f _service.in ]; then
         cp -vf _service _service.in
-        sed -i -e 's/"host">[^<]*/"host">@OBS_HOST@/' \
-        -e 's/"protocol">[^<]*/"protocol">@OBS_PROTOCOL@/' \
-        -e 's/"path">[^<]*/"path">@OBS_PATH@/' \
+        sed -i -e 's/"host">[^<]*/"host">@HOST@/' \
+        -e 's/"protocol">[^<]*/"protocol">@PROTOCOL@/' \
+        -e 's/"path">[^<]*/"path">@PATH@/' \
              _service.in
     fi
   )

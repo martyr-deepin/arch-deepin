@@ -1,12 +1,12 @@
 <services>
   <service name="download_url">
-    <param name="host">@OBS_HOST@</param>
-    <param name="protocol">@OBS_PROTOCOL@</param>
-    <param name="path">@OBS_PATH1@</param>
+    <param name="host">@HOST@</param>
+    <param name="protocol">@PROTOCOL@</param>
+    <param name="path">@PATH_ORIG@</param>
   </service>
   <service name="download_url">
-    <param name="host">@OBS_HOST@</param>
-    <param name="protocol">@OBS_PROTOCOL@</param>
-    <param name="path">@OBS_PATH2@</param>
+    <param name="host">@HOST@</param>
+    <param name="protocol">@PROTOCOL@</param>
+    <param name="path">@PATH_DEBIAN@</param>
   </service>
 </services>
