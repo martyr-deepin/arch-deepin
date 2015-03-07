@@ -15,29 +15,29 @@
 
 # Show messages
 plain() {
-  local mesg=$1; shift
-  printf "${BOLD}    ${mesg}${ALL_OFF}\n" "$@" >&2
+  local mesg=${1}; shift
+  printf "${BOLD}    ${mesg}${ALL_OFF}\n" "${@}" >&2
 }
 msg() {
-  local mesg=$1; shift
-  printf "${GREEN}==>${ALL_OFF}${BOLD} ${mesg}${ALL_OFF}\n" "$@" >&2
+  local mesg=${1}; shift
+  printf "${GREEN}==>${ALL_OFF}${BOLD} ${mesg}${ALL_OFF}\n" "${@}" >&2
 }
 msg2() {
-  local mesg=$1; shift
-  printf "${BLUE}  ->${ALL_OFF}${BOLD} ${mesg}${ALL_OFF}\n" "$@" >&2
+  local mesg=${1}; shift
+  printf "${BLUE}  ->${ALL_OFF}${BOLD} ${mesg}${ALL_OFF}\n" "${@}" >&2
 }
 warning() {
   if [ -z "${IGNORE_WARN}" ]; then
-      local mesg=$1; shift
-      printf "${YELLOW}==> $(gettext "WARNING:")${ALL_OFF}${BOLD} ${mesg}${ALL_OFF}\n" "$@" >&2
+      local mesg=${1}; shift
+      printf "${YELLOW}==> $(gettext "WARNING:")${ALL_OFF}${BOLD} ${mesg}${ALL_OFF}\n" "${@}" >&2
   fi
 }
 error() {
-  local mesg=$1; shift
-  printf "${RED}==> $(gettext "ERROR:")${ALL_OFF}${BOLD} ${mesg}${ALL_OFF}\n" "$@" >&2
+  local mesg=${1}; shift
+  printf "${RED}==> $(gettext "ERROR:")${ALL_OFF}${BOLD} ${mesg}${ALL_OFF}\n" "${@}" >&2
 }
 abort() {
-  error "$@"
+  error "${@}"
   error "$(gettext "Aborting...")"
   exit 1
 }
@@ -67,28 +67,33 @@ setup_color_message
 
 # Log messages
 first_log="true"
+logfile="result.log"
 log() {
-  local logfile="${1}"; shift
+  local category="${1}"; shift
   local mesg="${1}"; shift
   if [ "${first_log}" = "true" ]; then
-      printf "${mesg}\n" "$@" >"${logfile}"
+      # add separate line
+      printf "\n" >> "${logfile}"
       first_log="false"
-  else
-    printf "${mesg}\n" "$@" >>"${logfile}"
   fi
+  printf "$(date '+%F %H:%M:%S') ${category}: ${mesg}\n" "${@}" >> "${logfile}"
+}
+log_begin() {
+  local category="${1}"; shift
+  log "${category}" "[BEGIN]"
 }
 log_success() {
-  local logfile="${1}"; shift
-  log "${logfile}" "[SUCCESS]  $@"
+  local category="${1}"; shift
+  log "${category}" "[SUCCESS] ${@}"
 }
 log_failed() {
-  local logfile="${1}"; shift
-  log "${logfile}" "[FAILED]   $@"
+  local category="${1}"; shift
+  log "${category}" "[FAILED] ${@}"
 }
 
 # Grep block
 grep_block() {
-  local keyword="$1"; shift
-  local files=$@
+  local keyword="${1}"; shift
+  local files=${@}
   awk -v keyword="${keyword}" 'BEGIN{RS="\n\n"} $0 ~ keyword{print ""; print; n++}' ${files}
 }

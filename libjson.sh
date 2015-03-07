@@ -23,6 +23,13 @@ get_package_originrepodir() {
   jq -r "map(select(.Name==\"${1}\")) | .[].OriginRepoDir" packages.json
 }
 
+get_package_updated_str() {
+  if get_package_updated "${1}"; then
+      echo "true"
+  else
+      echo "false"
+  fi
+}
 get_package_updated() {
   if [ "$(jq -r "map(select(.Name==\"${1}\")) | .[].Updated" packages.json)" = "true" ]; then
       return 0

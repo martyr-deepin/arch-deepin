@@ -25,9 +25,9 @@ source ./libjson.sh
 update_pkg() {
   local pkgname="${1}"
   if do_update_pkg "${pkgname}"; then
-      log_success "result_update.log" "${pkgname}"
+      log_success "update-pkgbuild" "${pkgname} updated=$(get_package_updated_str ${pkgname}) version=$(get_package_lastversion ${pkgname})"
   else
-    log_failed "result_update.log" "${pkgname}"
+    log_failed "update-pkgbuild" "${pkgname} updated=$(get_package_updated_str ${pkgname}) version=$(get_package_lastversion ${pkgname})"
   fi
   # copy files to release dir
   mkdir -p "${pkgbuilddir}/${pkgname}"
@@ -104,9 +104,9 @@ gen_template_multi_sources() {
 run_makepkg() {
   local pkgname="${1}"
   if do_run_makepkg "${pkgname}"; then
-      log_success "result_makepkg.log" "${pkgname}"
+      log_success "makepkg" "${pkgname}"
   else
-    log_failed "result_makepkg.log" "${pkgname}"
+    log_failed "makepkg" "${pkgname}"
   fi
 }
 do_run_makepkg() {
@@ -118,9 +118,9 @@ do_run_makepkg() {
 aur_upload() {
   local pkgname="${1}"
   if do_aur_upload "${pkgname}"; then
-      log_success "result_aur_upload.log" "${pkgname}"
+      log_success "aur-upload" "${pkgname}"
   else
-    log_failed "result_aur_upload.log" "${pkgname}"
+    log_failed "aur-upload" "${pkgname}"
   fi
 }
 do_aur_upload() {
@@ -214,9 +214,17 @@ else
   fi
 fi
 
+if [ "${arg_makepkg}" ]; then
+    log_begin "makepkg"
+elif [ "${arg_aur_upload}" ]; then
+    log_begin "aur-upload"
+else
+  log_begin "udpate-pkgbuild"
+fi
+
 for p in "${pkgs[@]}"; do
   if [ "${arg_mark_updated}" ]; then
-      set_package_updated "${p}" true
+      set_package_updated "${p}" "true"
   fi
 
   if [ "${arg_makepkg}" ]; then
@@ -234,7 +242,7 @@ for p in "${pkgs[@]}"; do
   # ensure package updated again for that it may be changed when
   # updating package state
   if [ "${arg_mark_updated}" ]; then
-      set_package_updated "${p}" true
+      set_package_updated "${p}" "true"
   fi
 done
 

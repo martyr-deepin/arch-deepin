@@ -1,0 +1,13 @@
+Mar  6 09:34:13 update-pkgbuild: [BEGIN]
+Mar  6 09:34:13 update-pkgbuild: [SUCCESS] deepin-game-center, updated true, version xxxx
+Mar  6 09:34:13 update-pkgbuild: [SUCCESS] deepin-music-player, updated true, version xxxx
+Mar  6 09:34:13 update-pkgbuild: [SUCCESS] deepin-screenshot, updated true, version xxxx
+Mar  6 09:34:13 update-pkgbuild: [SUCCESS] deepin-terminal, updated true, version xxxx
+Mar  6 09:34:13 update-pkgbuild: [SUCCESS] deepin-ui, updated true, version xxxx
+
+Mar  6 09:34:13 makepkg: [BEGIN]
+Mar  6 09:34:13 makepkg: [SUCCESS] deepin-game-center
+Mar  6 09:34:13 makepkg: [SUCCESS] deepin-music-player
+
+Mar  6 09:34:13 aur-upload: [BEGIN]
+Mar  6 09:34:13 aur-upload: [SUCCESS] deepin-screenshot
