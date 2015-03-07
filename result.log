@@ -33,3 +33,13 @@
 2015-03-07 15:14:01 update-pkgbuild: [SUCCESS] grub-theme-deepin updated=false version=0.5-9
 2015-03-07 15:14:01 update-pkgbuild: [SUCCESS] libdeepin-webkit updated=false version=1.8.2.2+20141124213858~2494240496
 2015-03-07 15:14:01 update-pkgbuild: [SUCCESS] startdde updated=false version=0.1+20141230181929~b99e7b174d
+
+2015-03-07 15:15:00 aur-upload: [BEGIN]
+2015-03-07 15:15:07 aur-upload: [SUCCESS] deepin-game-center
+2015-03-07 15:15:11 aur-upload: [SUCCESS] deepin-music-player
+2015-03-07 15:15:17 aur-upload: [SUCCESS] deepin-pygtk
+2015-03-07 15:15:21 aur-upload: [SUCCESS] deepin-screenshot
+2015-03-07 15:15:25 aur-upload: [SUCCESS] deepin-terminal
+2015-03-07 15:15:30 aur-upload: [SUCCESS] deepin-ui
+2015-03-07 15:15:35 aur-upload: [SUCCESS] deepin-utils
+2015-03-07 15:15:39 aur-upload: [SUCCESS] deepin-vte
