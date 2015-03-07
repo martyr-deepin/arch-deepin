@@ -65,7 +65,7 @@ get_pkginfo() {
   # remove special deepin version format, such as '-6deepin7'
   pkg_version_fixed="$(echo ${pkg_version_fixed} | sed 's/-[0-9]\?deepin[0-9]\?//')"
   # remove git commit hash
-  pkg_version_fixed="$(echo ${pkg_version_fixed} | sed 's/~[0-9a-z]\{10\}//')"
+  pkg_version_fixed="$(echo ${pkg_version_fixed} | sed 's/~[0-9a-f]\{10\}//')"
   pkg_version_fixed="${pkg_version_fixed%~trusty}" # remove suffix "~trusty"
   pkg_version_fixed="${pkg_version_fixed%~saucy}"  # remove suffix "~saucy"
   pkg_version_fixed="${pkg_version_fixed/\~/.}"    # replace "~" with "."

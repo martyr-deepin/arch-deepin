@@ -42,7 +42,7 @@ do_update_pkg() {
     "deepin-pygtk") gen_template_multi_sources "${pkgname}" 1 2 || return 1;;
     *) gen_template "${pkgname}" || return 1;;
   esac
-  update_package_state "${pkgname}" "${pkg_version}"
+  update_package_state "${pkgname}" "${pkg_version}" "${pkg_version_fixed}"
 }
 
 gen_template() {
