@@ -36,6 +36,12 @@ repositories, more information to see [HACKING.md](HACKING.md).
 
 # Troubleshooting
 
+  - Report package downgrading warning when updating
+  
+    Packages version format have been adjusted for that we do not use
+    source git repositories right now. To fix this problem, just run
+    `pacman -Syuu`.
+  
   - Install deepin packages failed, report `Maximum file size
     exceeded` or `invalid or corrupted package (checksum)`
   
