@@ -567,3 +567,9 @@
 2015-03-08 00:43:19 update-pkgbuild: [SUCCESS] go-xgb updated=false version=0.0~git20140510-1
 2015-03-08 00:43:20 update-pkgbuild: [SUCCESS] go-xgbutil updated=false version=1~git20140610
 2015-03-08 00:43:20 update-pkgbuild: [SUCCESS] qtav updated=false version=1.4.2-deepin3
+
+2015-03-09 08:39:38 udpate-pkgbuild: [BEGIN]
+2015-03-09 08:39:38 update-pkgbuild: [SUCCESS] deepin-dbus-factory updated=false version=0.0.2+20141226160557~7e89f03592
+
+2015-03-09 08:40:59 udpate-pkgbuild: [BEGIN]
+2015-03-09 08:40:59 update-pkgbuild: [SUCCESS] deepin-dbus-factory updated=false version=0.0.2+20141226160557~7e89f03592
