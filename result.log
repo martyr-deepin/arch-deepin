@@ -573,3 +573,6 @@
 
 2015-03-09 08:40:59 udpate-pkgbuild: [BEGIN]
 2015-03-09 08:40:59 update-pkgbuild: [SUCCESS] deepin-dbus-factory updated=false version=0.0.2+20141226160557~7e89f03592
+
+2015-03-09 13:39:23 aur-upload: [BEGIN]
+2015-03-09 13:39:33 aur-upload: [SUCCESS] python2-deepin-gsettings
