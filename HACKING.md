@@ -45,3 +45,6 @@ Here is the full usage:
         -h, --help
             show this message
 
+# Run tests
+
+    (cd test/; ./test.sh)
