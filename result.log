@@ -576,3 +576,9 @@
 
 2015-03-09 13:39:23 aur-upload: [BEGIN]
 2015-03-09 13:39:33 aur-upload: [SUCCESS] python2-deepin-gsettings
+
+2015-03-10 08:57:19 udpate-pkgbuild: [BEGIN]
+2015-03-10 08:57:19 update-pkgbuild: [SUCCESS] dde-daemon updated=false version=0.0.1+20150209101554~660a820a61
+
+2015-03-10 08:57:44 udpate-pkgbuild: [BEGIN]
+2015-03-10 08:57:44 update-pkgbuild: [SUCCESS] dde-daemon updated=false version=0.0.1+20150209101554~660a820a61
