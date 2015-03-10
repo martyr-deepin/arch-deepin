@@ -17,5 +17,5 @@ package() {
   cd "${_srcdirname}"
 
   install -dm755 "${pkgdir}"/usr/share
-  cp -r usr/share/{pixmaps,sounds} "${pkgdir}"
+  cp -r usr/share/{pixmaps,sounds} "${pkgdir}"/usr/share/
 }

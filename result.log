@@ -592,3 +592,9 @@
 
 2015-03-10 14:37:51 udpate-pkgbuild: [BEGIN]
 2015-03-10 14:37:51 update-pkgbuild: [SUCCESS] dde-daemon updated=false version=0.0.1+20150209101554~660a820a61
+
+2015-03-10 15:30:22 udpate-pkgbuild: [BEGIN]
+2015-03-10 15:30:22 update-pkgbuild: [SUCCESS] deepin-artwork updated=false version=2014-4
+
+2015-03-10 15:30:32 makepkg: [BEGIN]
+2015-03-10 15:30:33 makepkg: [SUCCESS] deepin-artwork
