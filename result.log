@@ -586,3 +586,9 @@
 2015-03-10 09:01:51 aur-upload: [BEGIN]
 2015-03-10 09:01:58 aur-upload: [SUCCESS] deepin-pygtk
 2015-03-10 09:02:02 aur-upload: [SUCCESS] deepin-vte
+
+2015-03-10 14:37:42 udpate-pkgbuild: [BEGIN]
+2015-03-10 14:37:43 update-pkgbuild: [FAILED] deepin-daemon updated=false version=
+
+2015-03-10 14:37:51 udpate-pkgbuild: [BEGIN]
+2015-03-10 14:37:51 update-pkgbuild: [SUCCESS] dde-daemon updated=false version=0.0.1+20150209101554~660a820a61
