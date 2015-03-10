@@ -80,4 +80,5 @@
   <package name="deepin-vte" state=" " />
   <package name="python2-deepin-ui" state=" " />
   <package name="python2-deepin-utils" state=" " />
+  <package name="lsb-release" state=" " />
 </project>
