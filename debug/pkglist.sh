@@ -92,7 +92,6 @@ pkglist_archlinux=(
     deepin-qml-widgets
     deepin-screenshot
     deepin-terminal
-    deepin-ui
     deepin-vte
     go-dlib
     grub-theme-deepin
@@ -101,6 +100,7 @@ pkglist_archlinux=(
     python2-deepin-gsettings
     python2-deepin-storm
     python2-deepin-utils
+    python2-deepin-ui
     python2-deepin-xrandr
     startdde
 )

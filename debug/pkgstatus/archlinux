@@ -23,7 +23,7 @@ Validated By   : SHA256 Sum
 
 
 Name           : dde-api
-Version        : 0.0.2+20150107093816~d93500c16a-1
+Version        : 0.0.2.20150107093816-1
 Description    : Go-lang bingdings for dde-daemon
 Architecture   : x86_64
 URL            : https://gitcafe.com/Deepin/dde-api
@@ -38,15 +38,15 @@ Conflicts With : None
 Replaces       : None
 Installed Size :  30.60 MiB
 Packager       : Unknown Packager
-Build Date     : Fri 06 Mar 2015 11:04:35 AM CST
-Install Date   : Fri 06 Mar 2015 08:39:28 PM CST
+Build Date     : Mon 09 Mar 2015 08:55:52 AM CST
+Install Date   : Mon 09 Mar 2015 10:11:17 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
 Name           : dde-control-center
-Version        : 0.1+20150211150410~6b5195ef53-1
+Version        : 0.1.20150211150410-1
 Description    : New control center for linux deepin
 Architecture   : x86_64
 URL            : https://gitcafe.com/Deepin/dde-control-center
@@ -61,22 +61,22 @@ Conflicts With : None
 Replaces       : None
 Installed Size :   5.24 MiB
 Packager       : Unknown Packager
-Build Date     : Fri 06 Mar 2015 11:45:45 AM CST
-Install Date   : Fri 06 Mar 2015 08:39:46 PM CST
+Build Date     : Mon 09 Mar 2015 09:11:54 AM CST
+Install Date   : Mon 09 Mar 2015 10:11:23 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
 Name           : dde-daemon
-Version        : 0.0.1+20150209101554~660a820a61-1
+Version        : 0.0.1.20150209101554-1
 Description    : Go-lang bingdings for dde-daemon
 Architecture   : x86_64
 URL            : https://gitcafe.com/Deepin/dde-daemon
 Licenses       : GPL3
 Groups         : deepin
 Provides       : None
-Depends On     : dde-api  grub-theme-deepin  cairo  libcanberra  dbus  libdeepin-webkit  gtk3  glib2  gdk-pixbuf2  gstreamer0.10  libsystemd  acpid  libpulse  xcur2png  upower  bluez  polkit-gnome  metacity-ubuntu  network-manager-applet  xdotool
+Depends On     : dde-api  grub-theme-deepin  cairo  libcanberra  dbus  libdeepin-webkit  gtk3  glib2  gdk-pixbuf2  gstreamer0.10  libsystemd  acpid  libpulse  xcur2png  upower  bluez  polkit-gnome  metacity-ubuntu  network-manager-applet  xdotool  iso-codes  mobile-broadband-provider-info
 Optional Deps  : None
 Required By    : dde-control-center  dde-dock-applets  startdde
 Optional For   : None
@@ -84,15 +84,15 @@ Conflicts With : dde-daemon-gsd-input
 Replaces       : None
 Installed Size :  57.33 MiB
 Packager       : Unknown Packager
-Build Date     : Fri 06 Mar 2015 11:16:03 AM CST
-Install Date   : Fri 06 Mar 2015 08:39:30 PM CST
+Build Date     : Mon 09 Mar 2015 09:04:37 AM CST
+Install Date   : Mon 09 Mar 2015 10:11:19 AM CST
 Install Reason : Explicitly installed
 Install Script : Yes
 Validated By   : SHA256 Sum
 
 
 Name           : dde-dock-applets
-Version        : 0.0.4+20150129143814~7c87fbdc84-1
+Version        : 0.0.4.20150212175159-1
 Description    : New control center for linux deepin
 Architecture   : x86_64
 URL            : https://gitcafe.com/Deepin/dde-dock-applets
@@ -105,17 +105,17 @@ Required By    : None
 Optional For   : None
 Conflicts With : None
 Replaces       : None
-Installed Size : 792.00 KiB
+Installed Size : 795.00 KiB
 Packager       : Unknown Packager
-Build Date     : Fri 06 Mar 2015 11:56:27 AM CST
-Install Date   : Fri 06 Mar 2015 08:39:46 PM CST
+Build Date     : Sun 08 Mar 2015 05:58:13 PM CST
+Install Date   : Mon 09 Mar 2015 08:53:59 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
 Name           : dde-go-dbus-factory
-Version        : 0.0.2+20141226160557~7e89f03592-1
+Version        : 0.0.2.20141226160557-1
 Description    : Go-lang DBus factory for DDE
 Architecture   : x86_64
 URL            : https://github.com/linuxdeepin/dbus-factory
@@ -130,15 +130,15 @@ Conflicts With : None
 Replaces       : None
 Installed Size : 1794.00 KiB
 Packager       : Unknown Packager
-Build Date     : Fri 06 Mar 2015 10:49:03 AM CST
-Install Date   : Fri 06 Mar 2015 08:39:46 PM CST
+Build Date     : Mon 09 Mar 2015 08:49:30 AM CST
+Install Date   : Mon 09 Mar 2015 10:11:25 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
 Name           : dde-qml-dbus-factory
-Version        : 0.0.2+20141226160557~7e89f03592-1
+Version        : 0.0.2.20141226160557-1
 Description    : QML DBus factory for DDE
 Architecture   : x86_64
 URL            : https://github.com/linuxdeepin/dbus-factory
@@ -159,15 +159,15 @@ Conflicts With : None
 Replaces       : None
 Installed Size :  11.76 MiB
 Packager       : Unknown Packager
-Build Date     : Fri 06 Mar 2015 10:49:06 AM CST
-Install Date   : Fri 06 Mar 2015 08:39:30 PM CST
+Build Date     : Mon 09 Mar 2015 08:49:32 AM CST
+Install Date   : Mon 09 Mar 2015 10:11:22 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
 Name           : dde-workspace
-Version        : 2.1+20150202093855~5b89873137-1
+Version        : 2.1.20150202093855-1
 Description    : Linux Deepin desktop environment.
 Architecture   : x86_64
 URL            : https://gitcafe.com/Deepin/dde-workspace
@@ -182,15 +182,15 @@ Conflicts With : None
 Replaces       : deepin-desktop-environment  deepin-workspace
 Installed Size :  14.27 MiB
 Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 06:48:54 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:47 PM CST
+Build Date     : Sun 08 Mar 2015 03:27:04 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:42 AM CST
 Install Reason : Explicitly installed
 Install Script : Yes
 Validated By   : SHA256 Sum
 
 
 Name           : deepin-artwork
-Version        : 2014-4
+Version        : 2014-1
 Description    : Deepin artwork themes (sounds)
 Architecture   : any
 URL            : http://www.linuxdeepin.com/
@@ -205,15 +205,15 @@ Conflicts With : None
 Replaces       : None
 Installed Size : 1283.00 KiB
 Packager       : Unknown Packager
-Build Date     : Mon 22 Dec 2014 06:41:35 AM CST
-Install Date   : Fri 26 Dec 2014 03:15:10 PM CST
+Build Date     : Sun 08 Mar 2015 01:28:17 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:42 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
 Name           : deepin-artwork-themes
-Version        : 14.04.3+20141204110221~5bf78d7f42-1
+Version        : 14.04.3.20141204110221-1
 Description    : Deepin artwork themes
 Architecture   : any
 URL            : https://gitcafe.com/Deepin/deepin-artwork-themes
@@ -228,15 +228,15 @@ Conflicts With : None
 Replaces       : None
 Installed Size :  11.84 MiB
 Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 05:20:34 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:46 PM CST
+Build Date     : Sun 08 Mar 2015 03:07:19 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:23 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
 Name           : deepin-compiz
-Version        : 1:0.9.99+git20140707164843~2e85d002e7-1
+Version        : 1:0.9.99.5.git20140707164843-1
 Description    : A forked compiz for Linux Deepin desktop environment
 Architecture   : x86_64
 URL            : https://gitcafe.com/Deepin/deepin-compiz
@@ -251,15 +251,15 @@ Conflicts With : compiz-bzr  compiz-core  compiz-fusion-plugins-main  compiz-fus
 Replaces       : compiz-bzr  compiz-core  compiz-fusion-plugins-main  compiz-fusion-plugins-extra  compiz-decorator-gtk  compiz-decorator-kde  libcompizconfig  compizconfig-python  compizconfig-backend-gconf  compiz-bcop  ccsm
 Installed Size :  16.42 MiB
 Packager       : Unknown Packager
-Build Date     : Mon 02 Mar 2015 12:17:49 AM CST
-Install Date   : Fri 06 Mar 2015 06:22:48 PM CST
+Build Date     : Sun 08 Mar 2015 02:28:49 PM CST
+Install Date   : Mon 09 Mar 2015 08:53:59 AM CST
 Install Reason : Explicitly installed
 Install Script : Yes
 Validated By   : SHA256 Sum
 
 
 Name           : deepin-cursor-theme
-Version        : 2014.4-2
+Version        : 2014.4-1
 Description    : Cursor theme from Linux Deepin
 Architecture   : any
 URL            : http://www.linuxdeepin.com/
@@ -274,16 +274,38 @@ Conflicts With : None
 Replaces       : None
 Installed Size :   3.14 MiB
 Packager       : Unknown Packager
-Build Date     : Sun 31 Aug 2014 06:10:56 PM CST
-Install Date   : Mon 01 Sep 2014 06:20:03 PM CST
+Build Date     : Sun 08 Mar 2015 03:36:05 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:22 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
+Name           : deepin-dbus-generator
+Version        : 0.0.3.20141120163131-1
+Description    : Convert dbus interfaces to go-lang or qml wrapper code
+Architecture   : x86_64
+URL            : https://gitcafe.com/Deepin/go-dbus-generator
+Licenses       : GPL3
+Groups         : deepin-dev
+Provides       : dbus-generator
+Depends On     : None
+Optional Deps  : None
+Required By    : None
+Optional For   : None
+Conflicts With : dbus-generator  go-dlib<=0.0.2  go-dlib-dbus-proxyer
+Replaces       : dbus-generator
+Installed Size :   3.58 MiB
+Packager       : Unknown Packager
+Build Date     : Sun 08 Mar 2015 01:53:48 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:43 AM CST
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : SHA256 Sum
+
 
 Name           : deepin-default-gsettings
-Version        : 0.2+20141216171821~2cf686e3fa-1
+Version        : 0.2.20141216171821-1
 Description    : deepin default settings of gsettings
 Architecture   : any
 URL            : https://gitcafe.com/Deepin/default-gsettings
@@ -298,15 +320,15 @@ Conflicts With : None
 Replaces       : None
 Installed Size :  27.00 KiB
 Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 05:23:56 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:47 PM CST
+Build Date     : Sun 08 Mar 2015 03:31:48 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:43 AM CST
 Install Reason : Explicitly installed
 Install Script : Yes
 Validated By   : SHA256 Sum
 
 
 Name           : deepin-gettext-tools
-Version        : 0.0.1+20141216200739~6ba50ecb9c-1
+Version        : 0.0.1.20141216200739-1
 Description    : Deepin Internationalization utilities
 Architecture   : any
 URL            : https://gitcafe.com/Deepin/deepin-gettext-tools
@@ -321,15 +343,15 @@ Conflicts With : None
 Replaces       : None
 Installed Size :  28.00 KiB
 Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 12:20:43 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:47 PM CST
+Build Date     : Sun 08 Mar 2015 11:23:34 AM CST
+Install Date   : Mon 09 Mar 2015 10:11:43 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
 Name           : deepin-gtk-theme
-Version        : 14.07+20141223164347~1b5a54ef99-1
+Version        : 14.07.20141223164347-1
 Description    : Deepin GTK Theme.
 Architecture   : any
 URL            : https://gitcafe.com/Deepin/deepin-gtk-theme
@@ -342,17 +364,17 @@ Required By    : deepin-default-gsettings
 Optional For   : None
 Conflicts With : None
 Replaces       : None
-Installed Size :   2.38 MiB
+Installed Size :   2.39 MiB
 Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 05:47:46 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:47 PM CST
+Build Date     : Sun 08 Mar 2015 03:12:17 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:43 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
 Name           : deepin-icon-theme
-Version        : 13.06.13+20150114160019~dff58a2dad-1
+Version        : 13.06.13.20150114160019-1
 Description    : This package is DeepinIconTheme which inherits the faenza-icon-theme.
 Architecture   : any
 URL            : https://gitcafe.com/Deepin/deepin-icon-theme
@@ -367,8 +389,8 @@ Conflicts With : None
 Replaces       : None
 Installed Size :   7.04 MiB
 Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 05:55:45 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:45 PM CST
+Build Date     : Sun 08 Mar 2015 03:37:36 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:22 AM CST
 Install Reason : Explicitly installed
 Install Script : Yes
 Validated By   : SHA256 Sum
@@ -398,7 +420,7 @@ Validated By   : SHA256 Sum
 
 
 Name           : deepin-menu
-Version        : 1.1+20141216195521~1247e3bd11-1
+Version        : 1.1.20141216195521-1
 Description    : Deepin menu service for building beautiful menus.
 Architecture   : x86_64
 URL            : https://gitcafe.com/Deepin/deepin-menu
@@ -413,22 +435,22 @@ Conflicts With : None
 Replaces       : None
 Installed Size : 259.00 KiB
 Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 05:40:31 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:46 PM CST
+Build Date     : Sun 08 Mar 2015 01:38:09 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:25 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
 Name           : deepin-movie
-Version        : 2.2+20150211132515~f8f651edba-1
+Version        : 2.2.20150211132515-1
 Description    : deepin movie for linuxdeepin desktop environment
 Architecture   : any
 URL            : https://github.com/linuxdeepin/deepin-movie
 Licenses       : GPL3
 Groups         : deepin-extra
 Provides       : None
-Depends On     : qt5-declarative  qt5-quickcontrols  qt5-multimedia  qt5-webkit  qt5-graphicaleffects  qt5-imageformats  qt5-systems  python2-ass  python2-magic  python2-peewee  python2-pyqt5  python2-pysrt  python2-setproctitle  python2-xpybutil  dde-go-dbus-factory  deepin-menu  deepin-qml-widgets  deepin-ui  desktop-file-utils  enca  mediainfo  qtav
+Depends On     : qt5-declarative  qt5-quickcontrols  qt5-multimedia  qt5-webkit  qt5-graphicaleffects  qt5-imageformats  qt5-systems  python2-ass  python2-magic  python2-peewee  python2-pyqt5  python2-pysrt  python2-setproctitle  python2-xpybutil  dde-go-dbus-factory  deepin-menu  deepin-qml-widgets  python2-deepin-ui  desktop-file-utils  enca  mediainfo  qtav
 Optional Deps  : None
 Required By    : None
 Optional For   : None
@@ -436,22 +458,22 @@ Conflicts With : None
 Replaces       : None
 Installed Size : 1254.00 KiB
 Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 08:29:00 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:47 PM CST
+Build Date     : Sun 08 Mar 2015 05:01:01 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:43 AM CST
 Install Reason : Explicitly installed
 Install Script : Yes
 Validated By   : SHA256 Sum
 
 
 Name           : deepin-music-player
-Version        : 1.1+20150204093722~081154cf7b-1
+Version        : 1.1.20150204093722-1
 Description    : Awesome music player with brilliant and tweakful UI Deepin-UI based.
 Architecture   : any
 URL            : https://gitcafe.com/Deepin/deepin-music
 Licenses       : GPL3
 Groups         : deepin-extra
 Provides       : None
-Depends On     : gstreamer0.10-python  gstreamer0.10-bad-plugins  gstreamer0.10-good-plugins  gstreamer0.10-ugly-plugins  mutagen  python2-chardet  python2-pyquery  python2-cssselect  python2-dbus  sonata  cddb-py  python2-scipy  python2-pycurl  python2-xlib  python2-keybinder2  deepin-ui  desktop-file-utils
+Depends On     : gstreamer0.10-python  gstreamer0.10-bad-plugins  gstreamer0.10-good-plugins  gstreamer0.10-ugly-plugins  mutagen  python2-chardet  python2-pyquery  python2-cssselect  python2-dbus  sonata  cddb-py  python2-scipy  python2-pycurl  python2-xlib  python2-keybinder2  python2-deepin-ui  desktop-file-utils
 Optional Deps  : None
 Required By    : None
 Optional For   : None
@@ -459,15 +481,15 @@ Conflicts With : None
 Replaces       : None
 Installed Size :  32.59 MiB
 Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 06:12:13 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:49 PM CST
+Build Date     : Sun 08 Mar 2015 05:08:54 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:44 AM CST
 Install Reason : Explicitly installed
 Install Script : Yes
 Validated By   : SHA256 Sum
 
 
 Name           : deepin-notifications
-Version        : 0.3+20141216180805~a93d61767c-1
+Version        : 0.3.20141216180805-1
 Description    : System notifications for linuxdeepin desktop environment.
 Architecture   : x86_64
 URL            : https://gitcafe.com/Deepin/deepin-notifications
@@ -482,8 +504,8 @@ Conflicts With : notify-osd
 Replaces       : None
 Installed Size : 140.00 KiB
 Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 06:07:29 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:49 PM CST
+Build Date     : Sun 08 Mar 2015 03:40:24 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:44 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
@@ -499,7 +521,7 @@ Groups         : deepin
 Provides       : pygtk=2.24.0
 Depends On     : libglade  python2-cairo  pygobject
 Optional Deps  : python2-numpy [installed]
-Required By    : deepin-compiz  deepin-ui  gimp  kupfer  python2-bonobo  python2-deepin-utils  python2-gconf  python2-gnomecanvas  python2-gnomekeyring  python2-gtkhtml2  python2-gtop  python2-keybinder2  python2-libgnome  python2-notify  python2-wnck  pywebkitgtk  sonata
+Required By    : deepin-compiz  gimp  kupfer  python2-bonobo  python2-deepin-ui  python2-deepin-utils  python2-gconf  python2-gnomecanvas  python2-gnomekeyring  python2-gtkhtml2  python2-gtop  python2-keybinder2  python2-libgnome  python2-notify  python2-wnck  pywebkitgtk  sonata
 Optional For   : avahi  deluge  python2-matplotlib  python2-twisted  tint2
 Conflicts With : pygtk
 Replaces       : None
@@ -513,7 +535,7 @@ Validated By   : SHA256 Sum
 
 
 Name           : deepin-qml-widgets
-Version        : 0.0.2+20150203171526~feb6d6ad2f-1
+Version        : 0.0.2.20150203171526-1
 Description    : Deepin QML widgets
 Architecture   : x86_64
 URL            : https://gitcafe.com/Deepin/deepin-qml-widgets
@@ -528,45 +550,45 @@ Conflicts With : dde-qml-gettext-plugin
 Replaces       : dde-qml-gettext-plugin
 Installed Size : 594.00 KiB
 Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 01:24:09 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:30 PM CST
+Build Date     : Sun 08 Mar 2015 12:31:23 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:22 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
 Name           : deepin-screenshot
-Version        : 20141230.a586117-0
+Version        : 2.1.20141230110557-1
 Description    : Easy-to-use screenshot tool for linuxdeepin desktop environment
 Architecture   : any
 URL            : https://gitcafe.com/Deepin/deepin-screenshot
 Licenses       : GPL3
 Groups         : deepin-extra
 Provides       : None
-Depends On     : python2  gconf  python2-xlib  python2-wnck  python2-xdg  python2-scipy  python2-pycurl  deepin-ui
+Depends On     : python2  gconf  python2-xlib  python2-wnck  python2-xdg  python2-scipy  python2-pycurl  python2-deepin-ui
 Optional Deps  : None
 Required By    : None
 Optional For   : None
 Conflicts With : None
 Replaces       : None
-Installed Size : 727.00 KiB
+Installed Size : 1359.00 KiB
 Packager       : Unknown Packager
-Build Date     : Fri 02 Jan 2015 07:10:46 PM CST
-Install Date   : Sat 03 Jan 2015 03:27:59 PM CST
+Build Date     : Sun 08 Mar 2015 04:54:27 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:44 AM CST
 Install Reason : Explicitly installed
 Install Script : Yes
 Validated By   : SHA256 Sum
 
 
 Name           : deepin-terminal
-Version        : 1.1+20141230110750~bc441b7aae-1
+Version        : 1.1.20141230110750-1
 Description    : Awesome terminal for Linux Deepin
 Architecture   : any
 URL            : https://gitcafe.com/Deepin/deepin-terminal
 Licenses       : GPL3
 Groups         : deepin-extra
 Provides       : None
-Depends On     : deepin-vte  python2-dbus  python2-scipy  deepin-ui  gtk-update-icon-cache
+Depends On     : deepin-vte  python2-dbus  python2-scipy  python2-deepin-ui  gtk-update-icon-cache
 Optional Deps  : None
 Required By    : None
 Optional For   : None
@@ -574,33 +596,10 @@ Conflicts With : None
 Replaces       : None
 Installed Size :   3.01 MiB
 Packager       : Unknown Packager
-Build Date     : Fri 06 Mar 2015 11:40:18 AM CST
-Install Date   : Fri 06 Mar 2015 08:39:49 PM CST
+Build Date     : Sun 08 Mar 2015 06:27:11 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:44 AM CST
 Install Reason : Explicitly installed
 Install Script : Yes
-Validated By   : SHA256 Sum
-
-
-Name           : deepin-ui
-Version        : 1.1+20141229194712~5a86faec50-1
-Description    : UI toolkit for Linux Deepin
-Architecture   : x86_64
-URL            : https://gitcafe.com/Deepin/deepin-ui
-Licenses       : GPL3
-Groups         : deepin
-Provides       : None
-Depends On     : python2-deepin-utils  python2-deepin-gsettings  deepin-pygtk  python2-scipy  glib2  python2-cairo  python2-imaging  python2-xlib  pywebkitgtk  libsoup
-Optional Deps  : None
-Required By    : deepin-movie  deepin-music-player  deepin-screenshot  deepin-terminal
-Optional For   : None
-Conflicts With : deepin-ui-git
-Replaces       : deepin-ui-git
-Installed Size :  16.56 MiB
-Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 09:36:48 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:47 PM CST
-Install Reason : Installed as a dependency for another package
-Install Script : No
 Validated By   : SHA256 Sum
 
 
@@ -628,7 +627,7 @@ Validated By   : SHA256 Sum
 
 
 Name           : go-dlib
-Version        : 0.0.4+20150108105637~88ae48d3c8-1
+Version        : 0.0.4.20150108105637-1
 Description    : Go-lang bingdings for dlib
 Architecture   : any
 URL            : https://gitcafe.com/Deepin/go-lib
@@ -643,15 +642,15 @@ Conflicts With : None
 Replaces       : None
 Installed Size : 1682.00 KiB
 Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 12:08:34 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:50 PM CST
+Build Date     : Sun 08 Mar 2015 11:43:13 AM CST
+Install Date   : Mon 09 Mar 2015 10:11:45 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
 Name           : grub-theme-deepin
-Version        : 0.5-9
+Version        : 0.5-1
 Description    : Grub2 themes from Linux Deepin
 Architecture   : any
 URL            : http://www.linuxdeepin.com/
@@ -666,15 +665,15 @@ Conflicts With : grub-themes-deepin
 Replaces       : grub-themes-deepin
 Installed Size :   3.54 MiB
 Packager       : Unknown Packager
-Build Date     : Fri 06 Mar 2015 10:54:36 AM CST
-Install Date   : Fri 06 Mar 2015 06:24:38 PM CST
+Build Date     : Sun 08 Mar 2015 12:13:21 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:18 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
 Name           : libdeepin-webkit
-Version        : 1.8.2.2+20141124213858~2494240496-1
+Version        : 1.8.2.2.20141124213858-1
 Description    : A fork of webkit-gtk for Linux Deepin desktop eviroment
 Architecture   : x86_64
 URL            : http://www.linuxdeepin.com/
@@ -687,17 +686,17 @@ Required By    : dde-daemon  dde-workspace  lightdm-deepin-greeter  startdde
 Optional For   : None
 Conflicts With : None
 Replaces       : deepin-webkit
-Installed Size :  27.64 MiB
+Installed Size :  27.63 MiB
 Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 06:36:00 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:29 PM CST
+Build Date     : Sun 08 Mar 2015 03:03:34 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:18 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
 Name           : lightdm-deepin-greeter
-Version        : 2.1+20150202093855~5b89873137-1
+Version        : 2.1.20150202093855-1
 Description    : Lightdm greeter for Linux Deepin desktop environment.
 Architecture   : x86_64
 URL            : https://gitcafe.com/Deepin/dde-workspace
@@ -712,15 +711,15 @@ Conflicts With : None
 Replaces       : None
 Installed Size :   6.19 MiB
 Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 06:49:13 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:50 PM CST
+Build Date     : Sun 08 Mar 2015 03:27:27 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:45 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
 
 
 Name           : python2-deepin-gsettings
-Version        : 0.1+git20131206094009~a64de3ac19-1
+Version        : 0.1.git20131206094009-1
 Description    : deepin gsettings python bindings
 Architecture   : x86_64
 URL            : https://gitcafe.com/Deepin/deepin-gsettings
@@ -729,14 +728,14 @@ Groups         : deepin
 Provides       : deepin-gsettings
 Depends On     : python2-setuptools
 Optional Deps  : None
-Required By    : deepin-ui
+Required By    : python2-deepin-ui
 Optional For   : None
 Conflicts With : deepin-gsettings
 Replaces       : deepin-gsettings
 Installed Size :  45.00 KiB
 Packager       : Unknown Packager
-Build Date     : Fri 06 Mar 2015 09:45:29 AM CST
-Install Date   : Fri 06 Mar 2015 08:39:47 PM CST
+Build Date     : Sun 08 Mar 2015 01:44:25 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:43 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum
@@ -766,7 +765,7 @@ Validated By   : SHA256 Sum
 
 
 Name           : python2-deepin-utils
-Version        : 0.0.2+20140703165416~8aaf2a6f00-1
+Version        : 0.0.2.20140703165416-1
 Description    : Basic utils for all project in Linux Deepin.
 Architecture   : x86_64
 URL            : https://gitcafe.com/Deepin/deepin-utils
@@ -775,15 +774,38 @@ Groups         : deepin
 Provides       : deepin-utils
 Depends On     : deepin-pygtk  python2-cairo  freetype2  webkitgtk2  python2-xlib  pywebkitgtk
 Optional Deps  : None
-Required By    : deepin-ui
+Required By    : python2-deepin-ui
 Optional For   : None
 Conflicts With : deepin-utils  deepin-utils-git
 Replaces       : deepin-utils  deepin-utils-git
 Installed Size : 166.00 KiB
 Packager       : Unknown Packager
-Build Date     : Sun 01 Mar 2015 08:33:08 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:47 PM CST
+Build Date     : Sun 08 Mar 2015 02:48:46 PM CST
+Install Date   : Mon 09 Mar 2015 10:11:43 AM CST
 Install Reason : Explicitly installed
+Install Script : No
+Validated By   : SHA256 Sum
+
+
+Name           : python2-deepin-ui
+Version        : 1.1.20141229194712-1
+Description    : UI toolkit for Linux Deepin
+Architecture   : x86_64
+URL            : https://gitcafe.com/Deepin/deepin-ui
+Licenses       : GPL3
+Groups         : deepin
+Provides       : deepin-ui
+Depends On     : python2-deepin-utils  python2-deepin-gsettings  deepin-pygtk  python2-scipy  glib2  python2-cairo  python2-imaging  python2-xlib  pywebkitgtk  libsoup
+Optional Deps  : None
+Required By    : deepin-movie  deepin-music-player  deepin-screenshot  deepin-terminal
+Optional For   : None
+Conflicts With : deepin-ui  deepin-ui-git
+Replaces       : deepin-ui  deepin-ui-git
+Installed Size :  16.56 MiB
+Packager       : Unknown Packager
+Build Date     : Sun 08 Mar 2015 06:22:14 PM CST
+Install Date   : Mon 09 Mar 2015 08:54:04 AM CST
+Install Reason : Installed as a dependency for another package
 Install Script : No
 Validated By   : SHA256 Sum
 
@@ -812,7 +834,7 @@ Validated By   : SHA256 Sum
 
 
 Name           : startdde
-Version        : 0.1+20141230181929~b99e7b174d-1
+Version        : 0.1.20141230181929-1
 Description    : starter of deepin desktop environment
 Architecture   : x86_64
 URL            : https://gitcafe.com/Deepin/startdde
@@ -827,8 +849,8 @@ Conflicts With : deepin-session
 Replaces       : None
 Installed Size :   9.12 MiB
 Packager       : Unknown Packager
-Build Date     : Fri 06 Mar 2015 12:03:46 PM CST
-Install Date   : Fri 06 Mar 2015 08:39:50 PM CST
+Build Date     : Mon 09 Mar 2015 09:16:44 AM CST
+Install Date   : Mon 09 Mar 2015 10:11:45 AM CST
 Install Reason : Explicitly installed
 Install Script : No
 Validated By   : SHA256 Sum

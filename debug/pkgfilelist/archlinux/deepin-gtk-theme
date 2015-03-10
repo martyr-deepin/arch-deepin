@@ -386,6 +386,7 @@
 /usr/share/themes/Deepin/gtk-3.0/unity-greeter.css
 /usr/share/themes/Deepin/index.theme
 /usr/share/themes/Deepin-Legacy
+/usr/share/themes/Deepin-Legacy/.DS_Store
 /usr/share/themes/Deepin-Legacy/gtk-2.0
 /usr/share/themes/Deepin-Legacy/gtk-2.0/assets
 /usr/share/themes/Deepin-Legacy/gtk-2.0/assets/16-checkbox-checked-insensitive.png
