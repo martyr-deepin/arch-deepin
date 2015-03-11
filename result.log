@@ -598,3 +598,6 @@
 
 2015-03-10 15:30:32 makepkg: [BEGIN]
 2015-03-10 15:30:33 makepkg: [SUCCESS] deepin-artwork
+
+2015-03-11 08:56:12 udpate-pkgbuild: [BEGIN]
+2015-03-11 08:56:13 update-pkgbuild: [SUCCESS] libdeepin-webkit updated=false version=1.8.2.2+20141124213858~2494240496

@@ -20,13 +20,11 @@ provides=('deepin-webkit')
 replaces=('deepin-webkit')
 options=(!libtool !emptydirs)
 source=("@SOURCE@"
-        "webkit-gtk-1.8.2-bison-2.6.patch"
-        "DerivedSources.tar.gz")
+        "webkit-gtk-1.8.2-bison-2.6.patch")
 sha256sums=('@SHA256SUM@'
-            'cea36d9a955e4f5c2cd2fe2037ff63067217596e88cbbaa1da2ecc7546d3cd44'
-            '7a5fbc735dcda90faeafb26778a741ebe1a5fcf0cfb44de5369db42aa60561df')
+            'cea36d9a955e4f5c2cd2fe2037ff63067217596e88cbbaa1da2ecc7546d3cd44')
 
-prepare(){
+prepare() {
   cd "${_srcdirname}"
 
   patch -p1 -i "${srcdir}"/webkit-gtk-1.8.2-bison-2.6.patch
