@@ -601,3 +601,6 @@
 
 2015-03-11 08:56:12 udpate-pkgbuild: [BEGIN]
 2015-03-11 08:56:13 update-pkgbuild: [SUCCESS] libdeepin-webkit updated=false version=1.8.2.2+20141124213858~2494240496
+
+2015-03-11 10:50:35 udpate-pkgbuild: [BEGIN]
+2015-03-11 10:50:35 update-pkgbuild: [SUCCESS] deepin-compiz updated=false version=0.9.99-5+git20140707164843~2e85d002e7

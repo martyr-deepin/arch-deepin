@@ -17,7 +17,7 @@ groups=('deepin')
 depends=('gnome-settings-daemon' 'xorg-server' 'libxcomposite' 'startup-notification'
          'librsvg' 'dbus' 'mesa' 'libxslt' 'fuse' 'glibmm' 'libxrender' 'libwnck'
          'pygtk' 'desktop-file-utils' 'pyrex' 'protobuf' 'dconf' 'gtk2'
-         'metacity-ubuntu' 'gsettings-desktop-schemas')
+         'metacity-ubuntu<3.0' 'gsettings-desktop-schemas')
 makedepends=('gettext' 'intltool' 'cmake' 'boost' 'glu')
 optdepends=('gnome-control-center: GNOME Control Center')
 provides=('compiz=0.9')
