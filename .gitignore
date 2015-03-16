@@ -6,6 +6,7 @@ pkgbuild/**/*.pkg.tar.xz
 pkgbuild/**/*.tar.gz
 pkgbuild/**/*.deb
 pkgbuild/**/*.tar.xz
+pkgbuild/**/*.zip
 aur/**/__*
 obs/**/.osc
 obs/**/binaries
