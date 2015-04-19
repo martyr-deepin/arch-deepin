@@ -715,3 +715,6 @@
 
 2015-04-19 16:40:29 aur-upload: [BEGIN]
 2015-04-19 16:40:38 aur-upload: [SUCCESS] deepin-screenshot
+
+2015-04-19 18:25:17 udpate-pkgbuild: [BEGIN]
+2015-04-19 18:25:17 update-pkgbuild: [SUCCESS] libdeepin-webkit updated=false version=1.8.2.2+20141124213858~2494240496

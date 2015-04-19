@@ -219,7 +219,7 @@
   {
     "Name": "libdeepin-webkit",
     "OriginRepoDir": "deepin-webkit",
-    "Updated": false,
+    "Updated": true,
     "LastVersion": "1.8.2.2+20141124213858~2494240496",
     "LastVersionFixed": "1.8.2.2.20141124213858"
   },

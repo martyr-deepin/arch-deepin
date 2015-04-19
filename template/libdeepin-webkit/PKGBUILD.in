@@ -4,7 +4,7 @@
 pkgname=libdeepin-webkit
 pkgver=@PKGVER_FIXED@
 _srcdirname=@SRCDIRNAME@
-pkgrel=1
+pkgrel=2
 pkgdesc='A fork of webkit-gtk for Linux Deepin desktop eviroment'
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"
