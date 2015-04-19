@@ -706,3 +706,12 @@
 
 2015-04-20 00:07:47 aur-upload: [BEGIN]
 2015-04-20 00:08:02 aur-upload: [SUCCESS] deepin-screenshot
+
+2015-04-19 16:33:54 udpate-pkgbuild: [BEGIN]
+2015-04-19 16:33:54 update-pkgbuild: [SUCCESS] deepin-screenshot updated=false version=3.0+20150410165450~8775c7849a
+
+2015-04-19 16:37:06 udpate-pkgbuild: [BEGIN]
+2015-04-19 16:37:06 update-pkgbuild: [SUCCESS] deepin-screenshot updated=false version=3.0+20150410165450~8775c7849a
+
+2015-04-19 16:40:29 aur-upload: [BEGIN]
+2015-04-19 16:40:38 aur-upload: [SUCCESS] deepin-screenshot

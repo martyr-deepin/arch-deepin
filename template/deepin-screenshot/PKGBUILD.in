@@ -29,8 +29,8 @@ build() {
 }
 
 package() {
-  depends=('deepin-menu' 'deepin-qml-widgets' 'python2' 'python2-pyqt5'
-           'python-gtk2' 'python2-wnck' 'python2-xpybutil')
+  depends=('deepin-menu' 'deepin-qml-widgets' 'deepin-pygtk'
+           'python2' 'python2-pyqt5' 'python2-wnck' 'python2-xpybutil')
 
   cd "${_srcdirname}"
   make DESTDIR="${pkgdir}" install
