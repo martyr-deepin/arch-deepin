@@ -300,8 +300,8 @@ Checksums-Sha256:
 Package: sogoupinyin
 Format: 3.0 (native)
 Binary: sogoupinyin
-Architecture: amd64 i386
-Version: 1.2.0.0042deepin
+Architecture: any
+Version: 1.2.0.0048
 Maintainer: Ubuntu Kylin Team <ubuntukylin-members@lists.launchpad.net>
 Uploaders: Aron Xu <aron@debian.org>
 Homepage: http://pinyin.sogou.com/linux
@@ -313,14 +313,14 @@ Priority: optional
 Section: non-free/utils
 Directory: pool/non-free/s/sogoupinyin
 Files: 
- e2d4671adde2522307588ad957f96cda 1390 sogoupinyin_1.2.0.0042deepin.dsc
- 30176de81e92899707ed0584998cfd8d 37458800 sogoupinyin_1.2.0.0042deepin.tar.gz
+ fb9047d97381966868802ad86bc12374 1342 sogoupinyin_1.2.0.0048.dsc
+ e4c7296c3351505d7fb5314f19e95bbc 37453383 sogoupinyin_1.2.0.0048.tar.gz
 Checksums-Sha1: 
- e22a00c9b609cfbabfa7dc21c07607b69f29410e 1390 sogoupinyin_1.2.0.0042deepin.dsc
- 1729651f2b2052efc4464df4e9406fe3532dbb4c 37458800 sogoupinyin_1.2.0.0042deepin.tar.gz
+ 6a9c485516ebddd9d541393a6224fa95e98bfa90 1342 sogoupinyin_1.2.0.0048.dsc
+ ba8939ab294d0a4cd7524e115ecd538be79a689c 37453383 sogoupinyin_1.2.0.0048.tar.gz
 Checksums-Sha256: 
- 83beef0d85dbf757885380aeb52d47ffa43e92a8010541a02504e629fc320512 1390 sogoupinyin_1.2.0.0042deepin.dsc
- dd260e3448071a27993d120981d64c52db5dcdb9c079da546b165085c051f875 37458800 sogoupinyin_1.2.0.0042deepin.tar.gz
+ 65502e83bc9cc668302f4ff7325e3ada5f3e45589511eefe72fbf3be375f2043 1342 sogoupinyin_1.2.0.0048.dsc
+ e2b3339e710b9baf39e5a21dcd753a80cf991f85799d2d0d199809bd41c8b7a7 37453383 sogoupinyin_1.2.0.0048.tar.gz
 
 Package: sublime-text
 Format: 3.0 (quilt)

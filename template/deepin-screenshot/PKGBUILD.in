@@ -15,47 +15,25 @@ install="${pkgname}.install"
 source=("@SOURCE@")
 sha256sums=('@SHA256SUM@')
 
-# Usage: _easycp dest files...
-_easycp () {
-  local dest=$1; shift
-  mkdir -p "${dest}"
-  cp -R -t "${dest}" "$@"
-}
-
 prepare() {
   cd "${_srcdirname}"
 
   # fix python version
-  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  find src -type f | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build() {
   cd "${_srcdirname}"
 
-  deepin-generate-mo tools/locale_config.ini
+  make
 }
 
 package() {
-  depends=('python2' 'gconf' 'python2-xlib' 'python2-wnck' 'python2-xdg'
-           'python2-scipy' 'python2-pycurl' 'python2-deepin-ui')
+  depends=('deepin-menu' 'deepin-qml-widgets' 'python2' 'python2-pyqt5'
+           'python-gtk2' 'python2-wnck' 'python2-xpybutil')
 
   cd "${_srcdirname}"
-
-  # TODO waiting for new Makefile
-  _easycp "${pkgdir}"/usr/share/deepin-screenshot/ src
-  _easycp "${pkgdir}"/usr/share/deepin-screenshot/ theme
-  _easycp "${pkgdir}"/usr/share/deepin-screenshot/ skin
-  _easycp "${pkgdir}"/usr/share/ locale
-
-  mkdir -p "${pkgdir}"/usr/share/applications/
-  install -m 0644 debian/deepin-screenshot.desktop "${pkgdir}"/usr/share/applications/
-
-  mkdir -p "${pkgdir}"/usr/bin
-  ln -s /usr/share/deepin-screenshot/src/screenshot.py "${pkgdir}"/usr/bin/deepin-screenshot
-
-  # remove .po
-  find "${pkgdir}" -name '*.po' -exec rm '{}' ';'
-  find "${pkgdir}" -name '*.pot' -exec rm '{}' ';'
+  make DESTDIR="${pkgdir}" install
 }
 
  # Local Variables:

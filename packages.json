@@ -170,9 +170,9 @@
   {
     "Name": "deepin-screenshot",
     "OriginRepoDir": "deepin-screenshot",
-    "Updated": false,
-    "LastVersion": "2.1+20141230110557~a5861179f5",
-    "LastVersionFixed": "2.1.20141230110557"
+    "Updated": true,
+    "LastVersion": "3.0+20150410165450~8775c7849a",
+    "LastVersionFixed": "3.0.20150410165450"
   },
   {
     "Name": "deepin-terminal",

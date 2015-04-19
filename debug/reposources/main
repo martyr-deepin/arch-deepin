@@ -1376,6 +1376,34 @@ Checksums-Sha256:
  e58c781255fa5ef035e22c67fd065e5e36e09f850d43200bcc390821c470a854 1600 deepin-installer_1.1+20150108103117~7d59f1aa46.dsc
  08dcb388d102b2b5d09178a06b9bdb771ab4a063fae5f6c9676681672c752833 4864150 deepin-installer_1.1+20150108103117~7d59f1aa46.tar.gz
 
+Package: deepin-jockey
+Format: 1.0
+Binary: deepin-jockey-common, deepin-jockey-gtk, deepin-jockey-kde, dh-deepin-modaliases
+Architecture: all
+Version: 1.0.1-4
+Maintainer: leaeasy <leaeasy@gmail.com>
+Standards-Version: 3.9.1
+Vcs-Bzr: https://code.launchpad.net/~ubuntu-core-dev/jockey/ubuntu
+Build-Depends: debhelper (>= 7.0.50~), dh-translations, python-distutils-extra (>= 2.4), python (>= 2.7)
+Package-List:
+ deepin-jockey-common deb admin optional
+ deepin-jockey-gtk deb admin optional
+ deepin-jockey-kde deb admin optional
+ dh-deepin-modaliases deb admin optional
+Priority: optional
+Section: admin
+Directory: pool/main/d/deepin-jockey
+Files: 
+ 2795ede648f0c4e91c65adfc578a9980 1423 deepin-jockey_1.0.1-4.dsc
+ 5b4d0131749b0350300d95fc8d297614 433267 deepin-jockey_1.0.1-4.tar.gz
+Checksums-Sha1: 
+ 3339ede6c3ee3319fabaf03e7d42c7a23d70622c 1423 deepin-jockey_1.0.1-4.dsc
+ 6b8d11c3d9b582c66824ae02a9ead367fe475de7 433267 deepin-jockey_1.0.1-4.tar.gz
+Checksums-Sha256: 
+ 82460690d4152324be8f567496c34944a71bd4ead365e8520d4ecaee44df72d9 1423 deepin-jockey_1.0.1-4.dsc
+ d5e1abe37172f566d3b15ebb0a4696ebcc52ae84f52b0e6b59fbba7b3cd6b897 433267 deepin-jockey_1.0.1-4.tar.gz
+Python-Version: >= 2.7
+
 Package: deepin-media-player
 Format: 3.0 (native)
 Binary: deepin-media-player
@@ -1570,27 +1598,25 @@ Checksums-Sha256:
 Package: deepin-screenshot
 Format: 3.0 (native)
 Binary: deepin-screenshot
-Architecture: all
-Version: 2.1+20141230110557~a5861179f5
-Maintainer: Zhang Cheng <zhangcheng@linuxdeepin.com>
-Homepage: http://www.linuxdeepin.com/
-Standards-Version: 3.9.2
-Vcs-Git: git://github.com/linuxdeepin-packages/deepin-scrot.git
-Build-Depends: debhelper (>= 8.0.0), python (>= 2.6.6-3~), python-epydoc
+Architecture: any
+Version: 3.0+20150410165450~8775c7849a
+Maintainer: 宋文武 <songwenwu@linuxdeepin.com>
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), python, deepin-gettext-tools
 Package-List:
- deepin-screenshot deb gnome optional
-Priority: optional
-Section: gnome
+ deepin-screenshot deb misc extra
+Priority: extra
+Section: misc
 Directory: pool/main/d/deepin-screenshot
 Files: 
- c003f2fecb6caf985f5cd52bd50897cd 1346 deepin-screenshot_2.1+20141230110557~a5861179f5.dsc
- d673633119b48a6d5af89ad99eb02b9e 195135 deepin-screenshot_2.1+20141230110557~a5861179f5.tar.gz
+ db00584305d03ae219b9eb74ad72e482 1209 deepin-screenshot_3.0+20150410165450~8775c7849a.dsc
+ def456483e3c3ff7b313d910200b191b 120604 deepin-screenshot_3.0+20150410165450~8775c7849a.tar.gz
 Checksums-Sha1: 
- c3bd73ca1cd13553ed57044d97042f6174c332dd 1346 deepin-screenshot_2.1+20141230110557~a5861179f5.dsc
- 6c565589b2afa017e56a62e0eab50eca7fb76629 195135 deepin-screenshot_2.1+20141230110557~a5861179f5.tar.gz
+ d1ad01546ad6fbaaf9a5b7b057209fcfb045b230 1209 deepin-screenshot_3.0+20150410165450~8775c7849a.dsc
+ e0f835d84f486f4183e14a9ca9caf0cecc8cfdd6 120604 deepin-screenshot_3.0+20150410165450~8775c7849a.tar.gz
 Checksums-Sha256: 
- bdfb9008f996a7852f9ff2622667eb56c3a9a514a2eb27232ddf02a0dd5d3c53 1346 deepin-screenshot_2.1+20141230110557~a5861179f5.dsc
- 3e5fdcafd6c9f503aae8520f8904123a53c2ad8cab0fb74bd7522a043c7a6c98 195135 deepin-screenshot_2.1+20141230110557~a5861179f5.tar.gz
+ bbd05cf1c4d0a7d0cb1e52c46a5d3dc3118cc814f88f5be474fc32cd1cd9e489 1209 deepin-screenshot_3.0+20150410165450~8775c7849a.dsc
+ cc1f7de62a817145faaf3e8d4bb83eabae24404bc3f2ef499fb80cf9937d4e14 120604 deepin-screenshot_3.0+20150410165450~8775c7849a.tar.gz
 
 Package: deepin-session-fastup
 Format: 3.0 (quilt)
@@ -1642,6 +1668,30 @@ Checksums-Sha1:
 Checksums-Sha256: 
  9c576f841dbd94138ac484175a0df0b37376e5112337f231a50fbc6e53fa7ed7 1155 deepin-sleep-sixty_0.1-3.dsc
  14fb12065b6aed63388e91dcf4b2434b917e12f1b9157db608523c2089c3f873 2151 deepin-sleep-sixty_0.1-3.tar.gz
+
+Package: deepin-social-sharing
+Format: 3.0 (native)
+Binary: deepin-social-sharing
+Architecture: all
+Version: 1.0.0+20150413165613~8c48a0dde9
+Maintainer: 宋文武 <songwenwu@linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), python, deepin-gettext-tools
+Package-List:
+ deepin-social-sharing deb misc extra
+Priority: extra
+Section: misc
+Directory: pool/main/d/deepin-social-sharing
+Files: 
+ 68f346624652ba73705dc9bbfadac939 1275 deepin-social-sharing_1.0.0+20150413165613~8c48a0dde9.dsc
+ 4147d9dea9d64d25babf2408d9fee198 68321 deepin-social-sharing_1.0.0+20150413165613~8c48a0dde9.tar.gz
+Checksums-Sha1: 
+ 1f4f2eab1d986eb73c0e6a576f8ca2a721ff9cd0 1275 deepin-social-sharing_1.0.0+20150413165613~8c48a0dde9.dsc
+ e714e17dd8c629e8c20eab65f19f02c25f1b5da7 68321 deepin-social-sharing_1.0.0+20150413165613~8c48a0dde9.tar.gz
+Checksums-Sha256: 
+ 904811430ac8ec07652a27bcbea0e07baac690ae2154c83b9bbe4fa986edff45 1275 deepin-social-sharing_1.0.0+20150413165613~8c48a0dde9.dsc
+ d2654225f56912313bb9fce675d32bf9245044355c6f5aaf39ef67e8b489379d 68321 deepin-social-sharing_1.0.0+20150413165613~8c48a0dde9.tar.gz
 
 Package: deepin-software-center
 Format: 3.0 (native)
@@ -5659,6 +5709,33 @@ Checksums-Sha1:
 Checksums-Sha256: 
  019a23303f0852029bb06ebe080ed63d443da9566be23f6580df949758aefc49 1186 rtl-dkms_0.1-3.dsc
  40a807812305e36927ac920f445da158f51a799e9b625976b09fd2a56f12027e 1905914 rtl-dkms_0.1-3.tar.gz
+
+Package: seafile
+Format: 3.0 (quilt)
+Binary: seafile
+Architecture: any
+Version: 3.1.5-1
+Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
+Homepage: http://seafile.com
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9.0.0), python, libc6 (>= 2.7), libevent-2.0-5 (>= 2.0.10-stable), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.24.0), libjansson4 (>= 2.1), libqt4-dbus (>= 4:4.5.3), libqt4-network (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.7.0~beta1), libsqlite3-0 (>= 3.5.9), libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.1.1), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Package-List:
+ seafile deb net extra
+Priority: extra
+Section: net
+Directory: pool/main/s/seafile
+Files: 
+ f823c11dfe5e38433ff9cf8c390d3ad4 1692 seafile_3.1.5-1.dsc
+ 090563ba5fd206229d723f00e523cafd 2523484 seafile_3.1.5.orig.tar.xz
+ 67a2157d89dfa345af58cfc613ef5daa 2754 seafile_3.1.5-1.debian.tar.gz
+Checksums-Sha1: 
+ 192788e6e43eb98c8ae6c624ca9257f30c13abd0 1692 seafile_3.1.5-1.dsc
+ f4cdea7ef93237ab1824383fb830bc9878a0bc50 2523484 seafile_3.1.5.orig.tar.xz
+ f8dc16c377237cf1669ac6ce3ac5cae24676b6e7 2754 seafile_3.1.5-1.debian.tar.gz
+Checksums-Sha256: 
+ 7eb9b19789905862b04918b0f2c42896286ddd9b0cd80871d0c61a6097c9b418 1692 seafile_3.1.5-1.dsc
+ 542313c6a231ae47e7e8d108feab258f2d9c2ce7e59bd054d183e4be6eb4ae07 2523484 seafile_3.1.5.orig.tar.xz
+ b2809b543ddc3f70aee3795675c47ef1aebecb3ee5c592a95f868df16e9380ed 2754 seafile_3.1.5-1.debian.tar.gz
 
 Package: sexpdata
 Format: 3.0 (quilt)

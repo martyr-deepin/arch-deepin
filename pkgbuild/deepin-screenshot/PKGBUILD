@@ -2,8 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-screenshot
-pkgver=2.1.20141230110557
-_srcdirname=deepin-screenshot-2.1+20141230110557~a5861179f5
+pkgver=3.0.20150410165450
+_srcdirname=deepin-screenshot-3.0+20150410165450~8775c7849a
 pkgrel=1
 pkgdesc="Easy-to-use screenshot tool for linuxdeepin desktop environment"
 arch=('any')
@@ -12,50 +12,28 @@ license=('GPL3')
 makedepends=('deepin-gettext-tools')
 groups=('deepin-extra')
 install="${pkgname}.install"
-source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-screenshot/deepin-screenshot_2.1+20141230110557~a5861179f5.tar.gz")
-sha256sums=('3e5fdcafd6c9f503aae8520f8904123a53c2ad8cab0fb74bd7522a043c7a6c98')
-
-# Usage: _easycp dest files...
-_easycp () {
-  local dest=$1; shift
-  mkdir -p "${dest}"
-  cp -R -t "${dest}" "$@"
-}
+source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-screenshot/deepin-screenshot_3.0+20150410165450~8775c7849a.tar.gz")
+sha256sums=('cc1f7de62a817145faaf3e8d4bb83eabae24404bc3f2ef499fb80cf9937d4e14')
 
 prepare() {
   cd "${_srcdirname}"
 
   # fix python version
-  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+  find src -type f | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 build() {
   cd "${_srcdirname}"
 
-  deepin-generate-mo tools/locale_config.ini
+  make
 }
 
 package() {
-  depends=('python2' 'gconf' 'python2-xlib' 'python2-wnck' 'python2-xdg'
-           'python2-scipy' 'python2-pycurl' 'python2-deepin-ui')
+  depends=('deepin-menu' 'deepin-qml-widgets' 'python2' 'python2-pyqt5'
+           'python-gtk2' 'python2-wnck' 'python2-xpybutil')
 
   cd "${_srcdirname}"
-
-  # TODO waiting for new Makefile
-  _easycp "${pkgdir}"/usr/share/deepin-screenshot/ src
-  _easycp "${pkgdir}"/usr/share/deepin-screenshot/ theme
-  _easycp "${pkgdir}"/usr/share/deepin-screenshot/ skin
-  _easycp "${pkgdir}"/usr/share/ locale
-
-  mkdir -p "${pkgdir}"/usr/share/applications/
-  install -m 0644 debian/deepin-screenshot.desktop "${pkgdir}"/usr/share/applications/
-
-  mkdir -p "${pkgdir}"/usr/bin
-  ln -s /usr/share/deepin-screenshot/src/screenshot.py "${pkgdir}"/usr/bin/deepin-screenshot
-
-  # remove .po
-  find "${pkgdir}" -name '*.po' -exec rm '{}' ';'
-  find "${pkgdir}" -name '*.pot' -exec rm '{}' ';'
+  make DESTDIR="${pkgdir}" install
 }
 
  # Local Variables:
