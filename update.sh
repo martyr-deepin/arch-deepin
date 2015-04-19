@@ -125,9 +125,9 @@ do_run_makepkg() {
 aur_upload() {
   local pkgname="${1}"
   if do_aur_upload "${pkgname}"; then
-      log_success "aur-upload" "${pkgname}"
+      log_success "upload-aur" "${pkgname}"
   else
-    log_failed "aur-upload" "${pkgname}"
+    log_failed "upload-aur" "${pkgname}"
   fi
 }
 do_aur_upload() {
@@ -164,17 +164,17 @@ show_usage() {
   cat <<EOF
 ${appname} [options]
 options:
+    --no-download-reposources, -e
+        do not download repo sources, use the existing one
     --package, -p
         only update target package
     --no-package, -n
         ignore target package
-    --mark-updated, -U
+    --mark-updated, -m
         mark all package updated
-    --no-download-reposources, -S
-        do not download repo sources this time
-    --makepkg, -m
+    --makepkg, -M
         run makepkg for updated packages
-    --aur-upload, -a
+    --upload-aur, -u
         upload updated packages to aur
     -h, --help
         show this message
@@ -184,22 +184,22 @@ EOF
 
 # arguments
 arg_show_usage=
+arg_no_download_reposources=
 arg_packages=()
 arg_no_packages=()
 arg_mark_updated=
-arg_no_download_reposources=
 arg_makepkg=
-arg_aur_upload=
+arg_upload_aur=
 
 while [ $# -gt 0 ]; do
   case "${1}" in
     -h|--help) arg_show_usage=1; break;;
+    -e|--no-download-reposources) arg_no_download_reposources=1; shift;;
     -p|--package) arg_packages+=("${2}"); shift; shift;;
     -n|--no-package) arg_no_packages+=("${2}"); shift; shift;;
-    -U|--mark-updated) arg_mark_updated=1; shift;;
-    -S|--no-download-reposources) arg_no_download_reposources=1; shift;;
-    -m|--makepkg) arg_makepkg=1; shift;;
-    -a|--aur-upload) arg_aur_upload=1; shift;;
+    -m|--mark-updated) arg_mark_updated=1; shift;;
+    -M|--makepkg) arg_makepkg=1; shift;;
+    -u|--upload-aur) arg_upload_aur=1; shift;;
     *) shift;;
   esac
 done
@@ -218,7 +218,7 @@ if [ "${#arg_packages[@]}" -gt 0 ]; then
 else
   if [ "${arg_makepkg}" ]; then
       pkgs=($(find "${pkgbuilddir}"/* -maxdepth 0 -exec basename '{}' ';'))
-  elif [ "${arg_aur_upload}" ]; then
+  elif [ "${arg_upload_aur}" ]; then
       pkgs=($(find "${aurdir}"/* -maxdepth 0 -exec basename '{}' ';'))
   else
     pkgs=($(get_all_packages))
@@ -237,8 +237,8 @@ done
 
 if [ "${arg_makepkg}" ]; then
     log_begin "makepkg"
-elif [ "${arg_aur_upload}" ]; then
-    log_begin "aur-upload"
+elif [ "${arg_upload_aur}" ]; then
+    log_begin "upload-aur"
 else
   log_begin "udpate-pkgbuild"
 fi
@@ -252,7 +252,7 @@ for p in "${pkgs[@]}"; do
       if get_package_updated "${p}"; then
           run_makepkg "${p}"
       fi
-  elif [ "${arg_aur_upload}" ]; then
+  elif [ "${arg_upload_aur}" ]; then
       if get_package_updated "${p}"; then
           aur_upload "${p}"
       fi
