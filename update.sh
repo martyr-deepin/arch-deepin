@@ -167,11 +167,11 @@ options:
     --no-download-reposources, -e
         do not download repo sources, use the existing one
     --package, -p
-        only update target package
+        only update target package, could use multiple times
     --no-package, -n
-        ignore target package
+        ignore target package, could use multiple times
     --mark-updated, -m
-        mark all package updated
+        mark package(s) updated
     --makepkg, -M
         run makepkg for updated packages
     --upload-aur, -u

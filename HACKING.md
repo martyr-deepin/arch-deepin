@@ -26,21 +26,23 @@ Here are some examples:
 
 - upload packages to AUR
 
-   ./update.sh --aur-upload
+   ./update.sh --upload-aur
 
 Here is the full usage:
 
     update.sh [options]
     options:
+        --no-download-reposources, -e
+            do not download repo sources, use the existing one
         --package, -p
-            only update target package
-        --mark-updated, -U
-            mark all package updated
-        --no-download-reposources, -S
-            do not download repo sources this time
-        --makepkg, -m
+            only update target package, could use multiple times
+        --no-package, -n
+            ignore target package, could use multiple times
+        --mark-updated, -m
+            mark package(s) updated
+        --makepkg, -M
             run makepkg for updated packages
-        --aur-upload, -a
+        --upload-aur, -u
             upload updated packages to aur
         -h, --help
             show this message
