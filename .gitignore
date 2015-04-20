@@ -10,4 +10,7 @@ pkgbuild/**/*.zip
 aur/**/__*
 obs/**/.osc
 obs/**/binaries
+obs/**/pkg
+obs/**/src
+obs/**/*.tar.gz
 __*
