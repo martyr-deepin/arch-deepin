@@ -4,7 +4,7 @@
 pkgname=dde-daemon
 pkgver=@PKGVER_FIXED@
 _srcdirname=@SRCDIRNAME@
-pkgrel=1
+pkgrel=2
 pkgdesc='Go-lang bingdings for dde-daemon'
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-daemon"
@@ -12,7 +12,7 @@ license=('GPL3')
 depends=('dde-api' 'grub-theme-deepin' 'cairo' 'libcanberra' 'dbus'
          'libdeepin-webkit' 'gtk3' 'glib2' 'gdk-pixbuf2' 'gstreamer0.10'
          'libsystemd' 'acpid' 'libpulse' 'xcur2png' 'upower' 'bluez'
-         'polkit-gnome' 'metacity-ubuntu' 'network-manager-applet' 'xdotool'
+         'polkit-gnome' 'metacity-ubuntu' 'networkmanager' 'xdotool'
          'udisks2' 'lsb-release' 'iso-codes' 'mobile-broadband-provider-info')
 makedepends=('go' 'go-dlib' 'dde-go-dbus-factory' 'go-xgb' 'go-gocheck'
              'go-xgbutil' 'go-fsnotify' 'go-sqlite3' 'python2')
@@ -23,7 +23,7 @@ options=(staticlibs)
 source=("@SOURCE@"
         "fix-i686-compile.patch")
 sha256sums=('@SHA256SUM@'
-            'SKIP')
+            'f54fdefa940e88e7303bdfd11f2c4c353685947616e5cbb3085b92678df20e69')
 
 prepare() {
   cd "${_srcdirname}"

@@ -23,7 +23,7 @@
   {
     "Name": "dde-daemon",
     "OriginRepoDir": "dde-daemon",
-    "Updated": false,
+    "Updated": true,
     "LastVersion": "0.0.1+20150209101554~660a820a61",
     "LastVersionFixed": "0.0.1.20150209101554"
   },
