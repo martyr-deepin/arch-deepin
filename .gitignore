@@ -13,4 +13,5 @@ obs/**/binaries
 obs/**/pkg
 obs/**/src
 obs/**/*.tar.gz
+obs/**/__*
 __*

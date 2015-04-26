@@ -4,9 +4,9 @@
     <param name="url">https://go.googlesource.com/go</param>
     <param name="filename">go</param>
     <param name="package-meta">yes</param>
-    <param name="version">1.4.1</param>
+    <param name="version">1.4.2</param>
     <param name="versionprefix"></param>
-    <param name="revision">886b02d705ffb1be8b4974ac4c355d480a24e3ec</param>
+    <param name="revision">go1.4.2</param>
   </service>
   <service name="recompress">
     <param name="file">*.tar</param>

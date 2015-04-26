@@ -1,7 +1,7 @@
 <services>
   <service name="tar_scm">
     <param name="scm">git</param>
-    <param name="url">git://gitorious.org/qt/qtsystems</param>
+    <param name="url">git://code.qt.io/qt/qtsystems.git</param>
     <param name="revision">dev</param>
     <param name="filename">qt5-systems</param>
     <param name="versionprefix">5.4.0</param>
