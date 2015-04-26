@@ -814,3 +814,18 @@
 2015-04-26 14:48:01 update-pkgbuild: [SUCCESS] go-xgb updated=false version=0.0~git20140510-1
 2015-04-26 14:48:02 update-pkgbuild: [SUCCESS] go-xgbutil updated=false version=1~git20140610
 2015-04-26 14:48:02 update-pkgbuild: [SUCCESS] qtav updated=true version=2.0+20150424100710
+
+2015-04-26 19:17:20 udpate-pkgbuild: [BEGIN]
+2015-04-26 19:17:20 update-pkgbuild: [SUCCESS] deepin-menu updated=false version=1.1+20150415155150~faffe35053
+2015-04-26 19:17:21 update-pkgbuild: [SUCCESS] deepin-qml-widgets updated=false version=0.0.2+20150423102550~daef82ffb6
+
+2015-04-26 19:18:42 udpate-pkgbuild: [BEGIN]
+2015-04-26 19:18:43 update-pkgbuild: [SUCCESS] deepin-menu updated=false version=1.1+20150415155150~faffe35053
+2015-04-26 19:18:43 update-pkgbuild: [SUCCESS] deepin-qml-widgets updated=false version=0.0.2+20150423102550~daef82ffb6
+
+2015-04-26 19:19:40 upload-aur: [BEGIN]
+2015-04-26 19:19:49 upload-aur: [SUCCESS] deepin-menu
+2015-04-26 19:19:59 upload-aur: [SUCCESS] deepin-qml-widgets
+
+2015-04-26 19:22:28 upload-aur: [BEGIN]
+2015-04-26 19:22:39 upload-aur: [SUCCESS] deepin-screenshot
