@@ -23,7 +23,7 @@
   {
     "Name": "dde-daemon",
     "OriginRepoDir": "dde-daemon",
-    "Updated": true,
+    "Updated": false,
     "LastVersion": "0.0.1+20150209101554~660a820a61",
     "LastVersionFixed": "0.0.1.20150209101554"
   },
@@ -170,7 +170,7 @@
   {
     "Name": "deepin-screenshot",
     "OriginRepoDir": "deepin-screenshot",
-    "Updated": true,
+    "Updated": false,
     "LastVersion": "3.0+20150410165450~8775c7849a",
     "LastVersionFixed": "3.0.20150410165450"
   },
@@ -219,7 +219,7 @@
   {
     "Name": "libdeepin-webkit",
     "OriginRepoDir": "deepin-webkit",
-    "Updated": true,
+    "Updated": false,
     "LastVersion": "1.8.2.2+20141124213858~2494240496",
     "LastVersionFixed": "1.8.2.2.20141124213858"
   },
