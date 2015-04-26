@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">packages.linuxdeepin.com</param>
     <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/d/deepin-movie/deepin-movie_2.2+20150211132515~f8f651edba.tar.gz</param>
+    <param name="path">/deepin/pool/main/d/deepin-movie/deepin-movie_2.2.1+20150424170255~9759b316cf.tar.gz</param>
   </service>
 </services>

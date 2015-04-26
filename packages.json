@@ -16,30 +16,30 @@
   {
     "Name": "dde-control-center",
     "OriginRepoDir": "dde-control-center",
-    "Updated": false,
-    "LastVersion": "0.1+20150211150410~6b5195ef53",
-    "LastVersionFixed": "0.1.20150211150410"
+    "Updated": true,
+    "LastVersion": "0.1+20150413164707~6ec15a41de",
+    "LastVersionFixed": "0.1.20150413164707"
   },
   {
     "Name": "dde-daemon",
     "OriginRepoDir": "dde-daemon",
     "Updated": false,
-    "LastVersion": "0.0.1+20150209101554~660a820a61",
-    "LastVersionFixed": "0.0.1.20150209101554"
+    "LastVersion": "0.0.1+20150415132138~b7120bedfa",
+    "LastVersionFixed": "0.0.1.20150415132138"
   },
   {
     "Name": "dde-dock-applets",
     "OriginRepoDir": "dde-dock-applets",
-    "Updated": false,
-    "LastVersion": "0.0.4+20150212175159~4a7021531e",
-    "LastVersionFixed": "0.0.4.20150212175159"
+    "Updated": true,
+    "LastVersion": "0.0.4+20150414222121~22d474967c",
+    "LastVersionFixed": "0.0.4.20150414222121"
   },
   {
     "Name": "dde-workspace",
     "OriginRepoDir": "deepin-desktop-environment",
-    "Updated": false,
-    "LastVersion": "2.1+20150202093855~5b89873137",
-    "LastVersionFixed": "2.1.20150202093855"
+    "Updated": true,
+    "LastVersion": "2.1+20150413170547~9fbb0869bf",
+    "LastVersionFixed": "2.1.20150413170547"
   },
   {
     "Name": "deepin-artwork",
@@ -114,9 +114,9 @@
   {
     "Name": "deepin-gtk-theme",
     "OriginRepoDir": "deepin-gtk-theme",
-    "Updated": false,
-    "LastVersion": "14.07+20141223164347~1b5a54ef99",
-    "LastVersionFixed": "14.07.20141223164347"
+    "Updated": true,
+    "LastVersion": "14.07+20150327153743~2d420cb0b9",
+    "LastVersionFixed": "14.07.20150327153743"
   },
   {
     "Name": "deepin-icon-theme",
@@ -128,30 +128,30 @@
   {
     "Name": "deepin-menu",
     "OriginRepoDir": "deepin-menu",
-    "Updated": false,
-    "LastVersion": "1.1+20141216195521~1247e3bd11",
-    "LastVersionFixed": "1.1.20141216195521"
+    "Updated": true,
+    "LastVersion": "1.1+20150415155150~faffe35053",
+    "LastVersionFixed": "1.1.20150415155150"
   },
   {
     "Name": "deepin-movie",
     "OriginRepoDir": "deepin-movie",
-    "Updated": false,
-    "LastVersion": "2.2+20150211132515~f8f651edba",
-    "LastVersionFixed": "2.2.20150211132515"
+    "Updated": true,
+    "LastVersion": "2.2.1+20150424170255~9759b316cf",
+    "LastVersionFixed": "2.2.1.20150424170255"
   },
   {
     "Name": "deepin-music-player",
     "OriginRepoDir": "deepin-music-player",
-    "Updated": false,
-    "LastVersion": "1.1+20150204093722~081154cf7b",
-    "LastVersionFixed": "1.1.20150204093722"
+    "Updated": true,
+    "LastVersion": "1.1+20150413165956~fa225d345b",
+    "LastVersionFixed": "1.1.20150413165956"
   },
   {
     "Name": "deepin-notifications",
     "OriginRepoDir": "deepin-notifications",
-    "Updated": false,
-    "LastVersion": "0.3+20141216180805~a93d61767c",
-    "LastVersionFixed": "0.3.20141216180805"
+    "Updated": true,
+    "LastVersion": "0.3+20150311135741~2d222740e3",
+    "LastVersionFixed": "0.3.20150311135741"
   },
   {
     "Name": "deepin-pygtk",
@@ -163,16 +163,16 @@
   {
     "Name": "deepin-qml-widgets",
     "OriginRepoDir": "deepin-qml-widgets",
-    "Updated": false,
-    "LastVersion": "0.0.2+20150203171526~feb6d6ad2f",
-    "LastVersionFixed": "0.0.2.20150203171526"
+    "Updated": true,
+    "LastVersion": "0.0.2+20150423102550~daef82ffb6",
+    "LastVersionFixed": "0.0.2.20150423102550"
   },
   {
     "Name": "deepin-screenshot",
     "OriginRepoDir": "deepin-screenshot",
-    "Updated": false,
-    "LastVersion": "3.0+20150410165450~8775c7849a",
-    "LastVersionFixed": "3.0.20150410165450"
+    "Updated": true,
+    "LastVersion": "3.0+20150422133441~7bc9c8b83a",
+    "LastVersionFixed": "3.0.20150422133441"
   },
   {
     "Name": "deepin-terminal",
@@ -205,9 +205,9 @@
   {
     "Name": "go-dlib",
     "OriginRepoDir": "go-dlib",
-    "Updated": false,
-    "LastVersion": "0.0.4+20150108105637~88ae48d3c8",
-    "LastVersionFixed": "0.0.4.20150108105637"
+    "Updated": true,
+    "LastVersion": "0.0.4+20150227094412~8e9523b66a",
+    "LastVersionFixed": "0.0.4.20150227094412"
   },
   {
     "Name": "grub-theme-deepin",
@@ -296,8 +296,8 @@
   {
     "Name": "qtav",
     "OriginRepoDir": "qtav",
-    "Updated": false,
-    "LastVersion": "1.4.2-deepin3",
-    "LastVersionFixed": "1.4.2"
+    "Updated": true,
+    "LastVersion": "2.0+20150424100710",
+    "LastVersionFixed": "2.0.20150424100710"
   }
 ]

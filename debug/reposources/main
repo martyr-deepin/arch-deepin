@@ -182,25 +182,25 @@ Package: archon-integration
 Format: 3.0 (native)
 Binary: archon-integration
 Architecture: any
-Version: 0.0~20141117+nmu1
+Version: 0.0~2015041301
 Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
 Homepage: http://github.com/vladikoff
 Standards-Version: 3.9.4
 Build-Depends: debhelper (>= 8.0.0)
 Package-List:
- archon-integration deb utils extra arch=any
+ archon-integration deb utils extra
 Priority: extra
 Section: utils
 Directory: pool/main/a/archon-integration
 Files: 
- c001b7c3b3ea74e5a0eb3b1a38c02044 686 archon-integration_0.0~20141117+nmu1.dsc
- 4d0316c0681e4ea9129f0e8bf7c30b57 116343056 archon-integration_0.0~20141117+nmu1.tar.xz
+ cc7fdd9c2f13fa886fdad346e6051df3 1190 archon-integration_0.0~2015041301.dsc
+ 5a9d3f5775e113b64b84327a49ccb490 159355008 archon-integration_0.0~2015041301.tar.gz
 Checksums-Sha1: 
- 124d9e6b7e0082520970fdeeed26f83724c0b646 686 archon-integration_0.0~20141117+nmu1.dsc
- c5077f3d40b956087249fba5c4cadaca7ff2c4a5 116343056 archon-integration_0.0~20141117+nmu1.tar.xz
+ c76c97855456912e03268bfc27b4ee5f043f3bc4 1190 archon-integration_0.0~2015041301.dsc
+ 8849b0017dd9908f672c43e46139ef8e43383ebc 159355008 archon-integration_0.0~2015041301.tar.gz
 Checksums-Sha256: 
- 2a82a46a353fe5c312797f9dd45e57f92f39af8f608d89b96aa8649ffff19e35 686 archon-integration_0.0~20141117+nmu1.dsc
- 43a44c2ac1637fabc1b4408dd82e365c9a4149e4f83d26fbb0b81b1bb3a4f21e 116343056 archon-integration_0.0~20141117+nmu1.tar.xz
+ 44c599dba9834942743cef602126bde5598d9c4c51714b363b2c252979e57cf4 1190 archon-integration_0.0~2015041301.dsc
+ 67b0084d4ad2d1a06ee39f9f129fd1d75db8f2cef94b4d8784ce64b007f05c72 159355008 archon-integration_0.0~2015041301.tar.gz
 
 Package: atom
 Format: 3.0 (quilt)
@@ -317,7 +317,7 @@ Package: base-files
 Format: 3.0 (native)
 Binary: base-files, lsb-release-udeb
 Architecture: any all
-Version: 7.32
+Version: 7.33
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Standards-Version: 3.9.1
 Package-List:
@@ -327,14 +327,14 @@ Priority: required
 Section: admin
 Directory: pool/main/b/base-files
 Files: 
- 01ab3ab71a97ded2e34645afd6a3e0dc 1166 base-files_7.32.dsc
- 75df6cb96375fdaa9d2f67d15412076d 86645 base-files_7.32.tar.gz
+ ad458bd90705dbc8a36ef280843a3739 1149 base-files_7.33.dsc
+ 04458d4f5e0e75ca09ebc984379461c9 87108 base-files_7.33.tar.gz
 Checksums-Sha1: 
- 7a8c4e39a96d4a67be1ad397d0ba878a92742577 1166 base-files_7.32.dsc
- d601843f1e4456bc59ae0d08890fc911734b5a69 86645 base-files_7.32.tar.gz
+ 4650c772adcff12785be3c64e5a7d64566314db8 1149 base-files_7.33.dsc
+ bf8e8442e92d247d7b232d8ab121f033a5b0079c 87108 base-files_7.33.tar.gz
 Checksums-Sha256: 
- 8d59aadc14ff750ae1e21d435f16a5e68ec8d60564e47df4eec1b71a27d5cabc 1166 base-files_7.32.dsc
- 4a347a0adc0f7d05ec1c1a128c9fa253c7c51d379af47dc499d67d12a37bf71b 86645 base-files_7.32.tar.gz
+ 3f23bbbade7a89fd35cae63fe2684a91c56f31f568d416a84a131994b3d0e3d9 1149 base-files_7.33.dsc
+ 8a2686f12998391cbc4f19e90b3a75653d848dd43d95482aee0d7636096c182f 87108 base-files_7.33.tar.gz
 Original-Maintainer: Santiago Vila <sanvila@debian.org>
 
 Package: bcloud
@@ -656,7 +656,7 @@ Package: dae
 Format: 3.0 (native)
 Binary: python3-dae
 Architecture: all
-Version: 1.0.0+20150203160542~a6758edb75
+Version: 1.0.0+20150228174134~a6758edb75
 Maintainer: Sou Bunnbu <iyzsong@gmail.com>
 Homepage: https://gitcafe.com/Deepin/dae/
 Standards-Version: 3.9.5
@@ -667,14 +667,14 @@ Priority: optional
 Section: python
 Directory: pool/main/d/dae
 Files: 
- b8c38ec2f600ad18a6b01fe2e055c88a 1213 dae_1.0.0+20150203160542~a6758edb75.dsc
- ecefc6e54458d0f10ef8e01180d6e02b 24277 dae_1.0.0+20150203160542~a6758edb75.tar.gz
+ 4050ae19342a0be1aab851070c77151c 1213 dae_1.0.0+20150228174134~a6758edb75.dsc
+ a434820a4122417689edcfe1ea5beb37 24452 dae_1.0.0+20150228174134~a6758edb75.tar.gz
 Checksums-Sha1: 
- e765f0e694aa7e2d0fa2a37809281937e3935ec0 1213 dae_1.0.0+20150203160542~a6758edb75.dsc
- f8cc1d71903086000b120b3acf97000e8fdcadab 24277 dae_1.0.0+20150203160542~a6758edb75.tar.gz
+ 881eb9fdc6f65f326f59502c93f18403615d19a8 1213 dae_1.0.0+20150228174134~a6758edb75.dsc
+ 44e477b3057a2a24126d00001cf6a116bf9a8ac4 24452 dae_1.0.0+20150228174134~a6758edb75.tar.gz
 Checksums-Sha256: 
- a92df0cccb4661dfd959452cbcbecb4c79fbbade60ebdf81e13eaae1e9aff71f 1213 dae_1.0.0+20150203160542~a6758edb75.dsc
- 429e2519bef4c4c26f5a0d57de99eabfc61154c26316b168bdb6315453ccaeb4 24277 dae_1.0.0+20150203160542~a6758edb75.tar.gz
+ 3c9fbdbf97aab9fb009b54264b2cee5a38cb775e538ad5cefddb9982449854b9 1213 dae_1.0.0+20150228174134~a6758edb75.dsc
+ 73e56e96e6b0f1937cdbe55cd215a4c9c8ffcff0fc743bef57cfb263c00fa975 24452 dae_1.0.0+20150228174134~a6758edb75.tar.gz
 
 Package: dbus-factory
 Format: 3.0 (native)
@@ -776,7 +776,7 @@ Package: dde-control-center
 Format: 3.0 (native)
 Binary: dde-control-center
 Architecture: any
-Version: 0.1+20150211150410~6b5195ef53
+Version: 0.1+20150413164707~6ec15a41de
 Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
 Homepage: http://gitcafe.com/Deepin/dde-control-center.git
 Standards-Version: 3.9.5
@@ -787,38 +787,38 @@ Priority: optional
 Section: admin
 Directory: pool/main/d/dde-control-center
 Files: 
- b1ea7560486f8494cd7ad540d1d58f3d 1409 dde-control-center_0.1+20150211150410~6b5195ef53.dsc
- 2d159788ad9a9cbecf6b09b245aa8ae9 3511870 dde-control-center_0.1+20150211150410~6b5195ef53.tar.gz
+ d664b49c8726ca91fd08c80331876fdd 1392 dde-control-center_0.1+20150413164707~6ec15a41de.dsc
+ abee72f509c41e81fa328cc26927d464 3563146 dde-control-center_0.1+20150413164707~6ec15a41de.tar.gz
 Checksums-Sha1: 
- 2ccc8fdb04e71f12012b3dc06912b4313c60d238 1409 dde-control-center_0.1+20150211150410~6b5195ef53.dsc
- 7c80d56ddc8d2220de398db27a9869260e437704 3511870 dde-control-center_0.1+20150211150410~6b5195ef53.tar.gz
+ 73e07c88106040a79eeeaf2b638e0f40cc96bded 1392 dde-control-center_0.1+20150413164707~6ec15a41de.dsc
+ 2cb966295a40052f299d566e6fa3574855bc2a8b 3563146 dde-control-center_0.1+20150413164707~6ec15a41de.tar.gz
 Checksums-Sha256: 
- fa3227c391bb7ff3d24b8f24f2bff20ef1f14158becd2c0244f5cc9ae19662c2 1409 dde-control-center_0.1+20150211150410~6b5195ef53.dsc
- 89ce5952e15f2cebf5f8465ff26e7df788c025e62e4eb29f15d4d08f6e772207 3511870 dde-control-center_0.1+20150211150410~6b5195ef53.tar.gz
+ fa912a7559c403a816de37b177c51a20fbc04e03cb47ba437cd78775eaa12c2a 1392 dde-control-center_0.1+20150413164707~6ec15a41de.dsc
+ 729a2c722bb788094e485c92120304078fa14005b36d60d5011b8b49c4cbfcf6 3563146 dde-control-center_0.1+20150413164707~6ec15a41de.tar.gz
 
 Package: dde-daemon
 Format: 3.0 (native)
 Binary: dde-daemon
 Architecture: any
-Version: 0.0.1+20150209101554~660a820a61
+Version: 0.0.1+20150415132138~b7120bedfa
 Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
 Homepage: http://www.linuxdeepin.com
 Standards-Version: 3.9.5
-Build-Depends: debhelper (>= 9), dde-go-dbus-factory, golang-dlib-dev, golang-xgb-dev, golang-xgbutil-dev, golang-go, golang-fsnotify-dev, golang-go-sqlite3-dev, golang-gocheck-dev, libmetacity-dev, libudev-dev, libglib2.0-dev, libgtk-3-dev, libgtk2.0-dev, libxi-dev, libx11-dev, libxkbfile-dev, libxtst-dev, libxfixes-dev, libxcursor-dev, upower, libfontconfig1-dev
+Build-Depends: debhelper (>= 9), dde-go-dbus-factory, golang-dlib-dev, golang-xgb-dev, golang-xgbutil-dev, golang-go, golang-fsnotify-dev, golang-go-sqlite3-dev, golang-gocheck-dev, libmetacity-dev, libudev-dev, libglib2.0-dev, libgtk-3-dev, libgtk2.0-dev, libxi-dev, libx11-dev, libxkbfile-dev, libxtst-dev, libxfixes-dev, libxcursor-dev, libfontconfig1-dev
 Package-List:
  dde-daemon deb devel extra
 Priority: extra
 Section: devel
 Directory: pool/main/d/dde-daemon
 Files: 
- 7dffd63c9b27eee37cce648aeba1bc80 1551 dde-daemon_0.0.1+20150209101554~660a820a61.dsc
- 6eda4a3bc68e04781c0b751392ce4e26 7550540 dde-daemon_0.0.1+20150209101554~660a820a61.tar.gz
+ a1f2f97ca3cee0c1cfa82998328cfd56 1526 dde-daemon_0.0.1+20150415132138~b7120bedfa.dsc
+ e1b5400d06a572f57557d29281139212 7579870 dde-daemon_0.0.1+20150415132138~b7120bedfa.tar.gz
 Checksums-Sha1: 
- d4067ae12ccbaca8ddbd15b9c9cb92f69c761a71 1551 dde-daemon_0.0.1+20150209101554~660a820a61.dsc
- 56a94bda5552acda9ae35382a87db823176cb5fd 7550540 dde-daemon_0.0.1+20150209101554~660a820a61.tar.gz
+ 6735dddcb18a8e6301a561265af10b866b9c7e9c 1526 dde-daemon_0.0.1+20150415132138~b7120bedfa.dsc
+ 3cc2f66e7d9e627497fdd47900c67b3eced9f30a 7579870 dde-daemon_0.0.1+20150415132138~b7120bedfa.tar.gz
 Checksums-Sha256: 
- ff48dc0b2f78575c198c5991f15b59e11743eae8ae501112edb2a0ca55541e22 1551 dde-daemon_0.0.1+20150209101554~660a820a61.dsc
- db271a63dc972c41a29bbbb6a30af897c4f7efe28e8ad3dbac37e061c508dd2c 7550540 dde-daemon_0.0.1+20150209101554~660a820a61.tar.gz
+ c52e48d451852fb10e80c069234a1528597a2f333ca4fed1b361c468cf9df385 1526 dde-daemon_0.0.1+20150415132138~b7120bedfa.dsc
+ 62124a648331cd9a67678f4029a7e0c093ac5381aa50f44c3df8d5ad20576ab9 7579870 dde-daemon_0.0.1+20150415132138~b7120bedfa.tar.gz
 
 Package: dde-daemon-gsd-input
 Format: 3.0 (native)
@@ -848,7 +848,7 @@ Package: dde-dock-applets
 Format: 3.0 (native)
 Binary: dde-dock-applets
 Architecture: any
-Version: 0.0.4+20150212175159~4a7021531e
+Version: 0.0.4+20150414222121~22d474967c
 Maintainer: Mellon Xie <xielingyun@linuxdeepin.com>
 Homepage: https://gitcafe.com/Deepin/dde-dock-applets
 Standards-Version: 3.9.5
@@ -859,20 +859,20 @@ Priority: optional
 Section: admin
 Directory: pool/main/d/dde-dock-applets
 Files: 
- 5d412442e057fac44b2366ad37f702ac 1399 dde-dock-applets_0.0.4+20150212175159~4a7021531e.dsc
- ac2c54328b9e941beca975210972bed9 105933 dde-dock-applets_0.0.4+20150212175159~4a7021531e.tar.gz
+ 47b080ed553caff662e33d67a02b54bc 1382 dde-dock-applets_0.0.4+20150414222121~22d474967c.dsc
+ cccacd42488cc50434efd88a8b86b286 111484 dde-dock-applets_0.0.4+20150414222121~22d474967c.tar.gz
 Checksums-Sha1: 
- 0e597a33cdfe48a7cb158ccc213362dc826d67d9 1399 dde-dock-applets_0.0.4+20150212175159~4a7021531e.dsc
- 3e1b7f8dd0f4164f0a66a6b59b229b03280ff3e0 105933 dde-dock-applets_0.0.4+20150212175159~4a7021531e.tar.gz
+ 286603eb726810ec15ee9ad66e34f0057bb6e343 1382 dde-dock-applets_0.0.4+20150414222121~22d474967c.dsc
+ 548b5ac0c582cb2885cf1a650a746cf04e374958 111484 dde-dock-applets_0.0.4+20150414222121~22d474967c.tar.gz
 Checksums-Sha256: 
- 1c9a42f6b79b4258163d9a2234150e3ca53eccfd9a20b35eaf562f8d9aa93818 1399 dde-dock-applets_0.0.4+20150212175159~4a7021531e.dsc
- 36773a670e3c0b74aad437eef644ab10a1b908e32df65fb8f650395723c415b8 105933 dde-dock-applets_0.0.4+20150212175159~4a7021531e.tar.gz
+ a59817563e3651c64581fd0810b773640dabae3fc4596dfa68b3725b31b0004c 1382 dde-dock-applets_0.0.4+20150414222121~22d474967c.dsc
+ b77ecebe2559d77b2077a8acd65c9608737ff7503cbe50a286faf47a3718ecde 111484 dde-dock-applets_0.0.4+20150414222121~22d474967c.tar.gz
 
 Package: dde-meta
 Format: 3.0 (native)
 Binary: dde-meta-base, dde-meta-core, dde-meta-utils, dde-meta-multimedia, dde-meta-artwork, dde-meta-graphics, dde-meta-network, dde-meta-misc, dde-meta-misc-hooks, dde-meta-zh-hans, dde-meta-zh-hant, dde-meta-en
 Architecture: all
-Version: 0.2.43~trusty
+Version: 0.2.49~trusty
 Maintainer: LinuxDeepin Project <linuxdeepin@linuxdeepin.com>
 Homepage: http://www.linuxdeepin.com
 Standards-Version: 3.9.3
@@ -894,14 +894,14 @@ Priority: extra
 Section: metapackages
 Directory: pool/main/d/dde-meta
 Files: 
- 0e8ae826a6d4227745a10e1eb01bdeeb 1780 dde-meta_0.2.43~trusty.dsc
- 447d7a0579581861fd3cc421b956eb7f 6589 dde-meta_0.2.43~trusty.tar.gz
+ 3407927c769340cf9c94d3bd7e41e719 1763 dde-meta_0.2.49~trusty.dsc
+ 144cd87538a91400413d94ad6345817e 6802 dde-meta_0.2.49~trusty.tar.gz
 Checksums-Sha1: 
- 6b168ec56ec0aac4d5a71ca1b2b1d25b5c620bd0 1780 dde-meta_0.2.43~trusty.dsc
- ec2f41df7c5f206b851e11088469464e5214d70f 6589 dde-meta_0.2.43~trusty.tar.gz
+ 60ea1977c56af4659a78f94e5b1c241656c1e0c5 1763 dde-meta_0.2.49~trusty.dsc
+ e315d1cb84b388861cabf023e747dfd5731b4e0d 6802 dde-meta_0.2.49~trusty.tar.gz
 Checksums-Sha256: 
- a502ba2afff51659609d0de4a85e094d6ac3887c670a0a64bc43394fd3cafc8a 1780 dde-meta_0.2.43~trusty.dsc
- 18a74c01cd56d90cc29d3432110691396d7e1af0d115ba87b65181ce858b17a9 6589 dde-meta_0.2.43~trusty.tar.gz
+ 7e1a3a0008b720263cab5114a7fff346a606e70150c14607e470c9c639266354 1763 dde-meta_0.2.49~trusty.dsc
+ 1fea00d34c08844e70bf7fc42a9141cae32d00d864981a9233c253587ac9d98e 6802 dde-meta_0.2.49~trusty.tar.gz
 
 Package: deepin-artwork
 Format: 1.0
@@ -978,7 +978,7 @@ Package: deepin-boot-maker
 Format: 3.0 (native)
 Binary: deepin-boot-maker
 Architecture: any
-Version: 1.0+20150108104023~2d0aedf1e0
+Version: 1.0+20150327205338~50f10e037d
 Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
 Homepage: http://www.linuxdeepin.com/
 Standards-Version: 3.9.4
@@ -989,14 +989,14 @@ Priority: extra
 Section: misc
 Directory: pool/main/d/deepin-boot-maker
 Files: 
- 3267cb67e468b462df17661a6a7e80f5 1294 deepin-boot-maker_1.0+20150108104023~2d0aedf1e0.dsc
- 2ee2efcc5cbd7428546f723eed478ed6 3783255 deepin-boot-maker_1.0+20150108104023~2d0aedf1e0.tar.gz
+ b568cdf9701b3837112d7e62418a598a 1294 deepin-boot-maker_1.0+20150327205338~50f10e037d.dsc
+ 26294fe902bc384e7aea3cdf5e6d6327 2683752 deepin-boot-maker_1.0+20150327205338~50f10e037d.tar.gz
 Checksums-Sha1: 
- 16e7fd3c0d163365d88538ee50d9d90062bba680 1294 deepin-boot-maker_1.0+20150108104023~2d0aedf1e0.dsc
- 83fc43d5a5fb10faf41bfed9677068e56b357338 3783255 deepin-boot-maker_1.0+20150108104023~2d0aedf1e0.tar.gz
+ 82c39a253e23677c19e100297618992dfe6c9dab 1294 deepin-boot-maker_1.0+20150327205338~50f10e037d.dsc
+ 38a8178c6009d784e6e42e8b5efb281f8038be82 2683752 deepin-boot-maker_1.0+20150327205338~50f10e037d.tar.gz
 Checksums-Sha256: 
- bc8441b824e3741b5b99d5657035ae344b07ed9625395f3b90fbdc7483a5806d 1294 deepin-boot-maker_1.0+20150108104023~2d0aedf1e0.dsc
- 8ae0327b6f4678e449485e940c8cc960aa7dfc1be821fde55a4a6219f501fd46 3783255 deepin-boot-maker_1.0+20150108104023~2d0aedf1e0.tar.gz
+ e158963a2aae2c9ad33ffbf21a946a742292c842e2ae3ba96a2550a2219ccbcd 1294 deepin-boot-maker_1.0+20150327205338~50f10e037d.dsc
+ e2e4d718e68054d78a2914b514103d7ea0b0f0f72376024ace578b9a90f53d1b 2683752 deepin-boot-maker_1.0+20150327205338~50f10e037d.tar.gz
 
 Package: deepin-bug-reporter
 Format: 3.0 (native)
@@ -1072,31 +1072,31 @@ Package: deepin-default-settings
 Format: 1.0
 Binary: deepin-default-settings, deepin-default-settings-tuning
 Architecture: all
-Version: 2014~12-35~trusty
+Version: 2015.04.15~trusty
 Maintainer: Zhang Cheng <zhangcheng@linuxdeepin.com>
 Standards-Version: 3.9.4
 Build-Depends: debhelper (>= 8.1.3~), ubuntu-defaults-builder (>= 0.22~)
-Package-List: 
+Package-List:
  deepin-default-settings deb admin optional
  deepin-default-settings-tuning deb admin optional
 Priority: optional
 Section: admin
 Directory: pool/main/d/deepin-default-settings
 Files: 
- 783c0195678e5528b51dae21f99349e0 771 deepin-default-settings_2014~12-35~trusty.dsc
- 1f55a955b36b659b289a302ab75b9768 2013588 deepin-default-settings_2014~12-35~trusty.tar.gz
+ e9a30bb0a270bc60fc8d4eac0a186f2c 1289 deepin-default-settings_2015.04.15~trusty.dsc
+ 1bb07c47220c9bb1b894bc9591df100e 986793 deepin-default-settings_2015.04.15~trusty.tar.gz
 Checksums-Sha1: 
- 1bab83dce767ef44185edb4c75ff46f9a43e3110 771 deepin-default-settings_2014~12-35~trusty.dsc
- 371c7b71e2174da2558370c1b9e777b49479e880 2013588 deepin-default-settings_2014~12-35~trusty.tar.gz
+ 415b20ae2eb4095e81a3e5f285d110fd9de1134d 1289 deepin-default-settings_2015.04.15~trusty.dsc
+ c696d0da838d0eac41dea9de3389c5f75206f7b3 986793 deepin-default-settings_2015.04.15~trusty.tar.gz
 Checksums-Sha256: 
- 7a61c69d96f2132b4ade4909c24a5a35a3016428c5ccf91266d6ee0155026b88 771 deepin-default-settings_2014~12-35~trusty.dsc
- 3d4e470fa5e757ebd3ae1b1928b60a461e63d48c9e87396e5ea0abe33ca24b0c 2013588 deepin-default-settings_2014~12-35~trusty.tar.gz
+ 61e1c3b300bac12636aa19909a1ee4833257acb509651376dabd22785fa32e83 1289 deepin-default-settings_2015.04.15~trusty.dsc
+ 9fa58ff4966f65a6511eb97d8c434d87b10199af1301ef3f283cfa7bfb29c815 986793 deepin-default-settings_2015.04.15~trusty.tar.gz
 
 Package: deepin-desktop-environment
 Format: 3.0 (native)
 Binary: deepin-desktop-environment, dde-workspace
 Architecture: any
-Version: 2.1+20150202093855~5b89873137
+Version: 2.1+20150413170547~9fbb0869bf
 Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
 Homepage: http://www.linuxdeepin.com
 Standards-Version: 3.9.5
@@ -1108,14 +1108,14 @@ Priority: extra
 Section: utils
 Directory: pool/main/d/deepin-desktop-environment
 Files: 
- 65c51a26821e3be0c121070dbc7a99fc 1661 deepin-desktop-environment_2.1+20150202093855~5b89873137.dsc
- 68ae109826891b4c2f6e7bb82a6daf5f 7654652 deepin-desktop-environment_2.1+20150202093855~5b89873137.tar.gz
+ 550a763bd7a8ecce9b32a44e52ba736e 1644 deepin-desktop-environment_2.1+20150413170547~9fbb0869bf.dsc
+ 5b8867aad57d5f37e66cf4427a071df7 7660532 deepin-desktop-environment_2.1+20150413170547~9fbb0869bf.tar.gz
 Checksums-Sha1: 
- 98aef009b422836a1449004928789a27241de802 1661 deepin-desktop-environment_2.1+20150202093855~5b89873137.dsc
- be13b885ea7c81bf2b68c43a3a0c46c11c62f66a 7654652 deepin-desktop-environment_2.1+20150202093855~5b89873137.tar.gz
+ 95be76ff7c4e3987509fe0c8bd5c4f97fdc79548 1644 deepin-desktop-environment_2.1+20150413170547~9fbb0869bf.dsc
+ b505bdf0fe1707fa0269f6f892544909ccbffd99 7660532 deepin-desktop-environment_2.1+20150413170547~9fbb0869bf.tar.gz
 Checksums-Sha256: 
- f947492c469d106a7b6dd4bb0b7c55da69cfaac1dbf8ede137518cb8eede0b32 1661 deepin-desktop-environment_2.1+20150202093855~5b89873137.dsc
- 5dbb5972e4920e0ebbf5f7128846ef8f2bfac52fa53673c360b4c261bc081ec1 7654652 deepin-desktop-environment_2.1+20150202093855~5b89873137.tar.gz
+ 9bb5a64bbc0544bb1b44cc98bea18fde2d854b5959087b7021981e41ba28951d 1644 deepin-desktop-environment_2.1+20150413170547~9fbb0869bf.dsc
+ 7facfb617b9323339c39a6ef870244f1382494293678a86c06aa4a4ce9ab7221 7660532 deepin-desktop-environment_2.1+20150413170547~9fbb0869bf.tar.gz
 
 Package: deepin-download-service
 Format: 3.0 (native)
@@ -1287,7 +1287,7 @@ Package: deepin-gtk-theme
 Format: 3.0 (native)
 Binary: deepin-gtk-theme
 Architecture: all
-Version: 14.07+20141223164347~1b5a54ef99
+Version: 14.07+20150327153743~2d420cb0b9
 Maintainer: leaeasy <leaeasy@gmail.com>
 Standards-Version: 3.9.5
 Build-Depends: debhelper (>= 9)
@@ -1297,14 +1297,14 @@ Priority: optional
 Section: gnome
 Directory: pool/main/d/deepin-gtk-theme
 Files: 
- 91c090988163d628fc554cede73f577b 1195 deepin-gtk-theme_14.07+20141223164347~1b5a54ef99.dsc
- 5fb70706ad4c84d07ad711c66e3a9065 2777824 deepin-gtk-theme_14.07+20141223164347~1b5a54ef99.tar.gz
+ 37c05316918277f50d68a1f59b75472d 1192 deepin-gtk-theme_14.07+20150327153743~2d420cb0b9.dsc
+ 8a513a6b24ac272b78ca335ddf26a12c 496907 deepin-gtk-theme_14.07+20150327153743~2d420cb0b9.tar.gz
 Checksums-Sha1: 
- a81504ae0e002d2ab33fc2108d9870eb303b8327 1195 deepin-gtk-theme_14.07+20141223164347~1b5a54ef99.dsc
- 5d481ce196ac30b3d11b24299e2e711871bb4d02 2777824 deepin-gtk-theme_14.07+20141223164347~1b5a54ef99.tar.gz
+ 5ac9d197a5fc7a77e51d68fa7d6fb7ba0e558d8f 1192 deepin-gtk-theme_14.07+20150327153743~2d420cb0b9.dsc
+ 74be50be64154c46c071826212f5d84ea11823f2 496907 deepin-gtk-theme_14.07+20150327153743~2d420cb0b9.tar.gz
 Checksums-Sha256: 
- ea9642ec94be89b9f299ce33fcbe68fb11ab70ca8c4acbc1c8dd198d4eab90a6 1195 deepin-gtk-theme_14.07+20141223164347~1b5a54ef99.dsc
- f5ff3f7ffbd795328dbc3640247012e7568c2474810e5b0e0ad9f0d6d1733789 2777824 deepin-gtk-theme_14.07+20141223164347~1b5a54ef99.tar.gz
+ 24db0cb6b30312ae62afecaa71ed84b9b95b19f6ce12c34a226ef1ef300e219d 1192 deepin-gtk-theme_14.07+20150327153743~2d420cb0b9.dsc
+ 377695a4a91c7334259ff6283d39ae7c55c21032d43293b8c7a5298cd8706407 496907 deepin-gtk-theme_14.07+20150327153743~2d420cb0b9.tar.gz
 
 Package: deepin-icon-theme
 Format: 3.0 (native)
@@ -1356,7 +1356,7 @@ Package: deepin-installer
 Format: 3.0 (native)
 Binary: deepin-installer
 Architecture: any
-Version: 1.1+20150108103117~7d59f1aa46
+Version: 1.1+20150423163901~ec7c44bf6f
 Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
 Homepage: http://www.linuxdeepin.com
 Standards-Version: 3.9.2
@@ -1367,42 +1367,14 @@ Priority: extra
 Section: utils
 Directory: pool/main/d/deepin-installer
 Files: 
- 17296145eff5013b013342d11822eebc 1600 deepin-installer_1.1+20150108103117~7d59f1aa46.dsc
- 068007d59980dd1faf22eabfb7065c17 4864150 deepin-installer_1.1+20150108103117~7d59f1aa46.tar.gz
+ 4723587c6861ca72601cad9046c3b4bf 1583 deepin-installer_1.1+20150423163901~ec7c44bf6f.dsc
+ c3f3248212f705a5a6c66b8ef034008d 4879275 deepin-installer_1.1+20150423163901~ec7c44bf6f.tar.gz
 Checksums-Sha1: 
- 5ad04fffeda8198d5b917aac0fca0fdb780a211c 1600 deepin-installer_1.1+20150108103117~7d59f1aa46.dsc
- 144858d61c93346e50a4c3ea70f0114d3d847226 4864150 deepin-installer_1.1+20150108103117~7d59f1aa46.tar.gz
+ 86ec5824eb197e9a0ec04ca262cb1237c098fe26 1583 deepin-installer_1.1+20150423163901~ec7c44bf6f.dsc
+ 720d38d5d04a8912d9e54341598a2662f4122eb9 4879275 deepin-installer_1.1+20150423163901~ec7c44bf6f.tar.gz
 Checksums-Sha256: 
- e58c781255fa5ef035e22c67fd065e5e36e09f850d43200bcc390821c470a854 1600 deepin-installer_1.1+20150108103117~7d59f1aa46.dsc
- 08dcb388d102b2b5d09178a06b9bdb771ab4a063fae5f6c9676681672c752833 4864150 deepin-installer_1.1+20150108103117~7d59f1aa46.tar.gz
-
-Package: deepin-jockey
-Format: 1.0
-Binary: deepin-jockey-common, deepin-jockey-gtk, deepin-jockey-kde, dh-deepin-modaliases
-Architecture: all
-Version: 1.0.1-4
-Maintainer: leaeasy <leaeasy@gmail.com>
-Standards-Version: 3.9.1
-Vcs-Bzr: https://code.launchpad.net/~ubuntu-core-dev/jockey/ubuntu
-Build-Depends: debhelper (>= 7.0.50~), dh-translations, python-distutils-extra (>= 2.4), python (>= 2.7)
-Package-List:
- deepin-jockey-common deb admin optional
- deepin-jockey-gtk deb admin optional
- deepin-jockey-kde deb admin optional
- dh-deepin-modaliases deb admin optional
-Priority: optional
-Section: admin
-Directory: pool/main/d/deepin-jockey
-Files: 
- 2795ede648f0c4e91c65adfc578a9980 1423 deepin-jockey_1.0.1-4.dsc
- 5b4d0131749b0350300d95fc8d297614 433267 deepin-jockey_1.0.1-4.tar.gz
-Checksums-Sha1: 
- 3339ede6c3ee3319fabaf03e7d42c7a23d70622c 1423 deepin-jockey_1.0.1-4.dsc
- 6b8d11c3d9b582c66824ae02a9ead367fe475de7 433267 deepin-jockey_1.0.1-4.tar.gz
-Checksums-Sha256: 
- 82460690d4152324be8f567496c34944a71bd4ead365e8520d4ecaee44df72d9 1423 deepin-jockey_1.0.1-4.dsc
- d5e1abe37172f566d3b15ebb0a4696ebcc52ae84f52b0e6b59fbba7b3cd6b897 433267 deepin-jockey_1.0.1-4.tar.gz
-Python-Version: >= 2.7
+ f4a8b28e97d768e26bf5b06fd42c58665d70fa599580d6380fefc7207a0f48f0 1583 deepin-installer_1.1+20150423163901~ec7c44bf6f.dsc
+ a8ed90421cf4cf90ef93b8b8e38a922c1984ffd3aa5116b820b116f8fbf222c6 4879275 deepin-installer_1.1+20150423163901~ec7c44bf6f.tar.gz
 
 Package: deepin-media-player
 Format: 3.0 (native)
@@ -1432,7 +1404,7 @@ Package: deepin-menu
 Format: 3.0 (native)
 Binary: deepin-menu
 Architecture: any
-Version: 1.1+20141216195521~1247e3bd11
+Version: 1.1+20150415155150~faffe35053
 Maintainer: Li Longyu <leaeasy@gmail.com>
 Homepage: https://github.com/linuxdeepin/deepin-menu
 Standards-Version: 3.9.2
@@ -1443,20 +1415,20 @@ Priority: extra
 Section: libs
 Directory: pool/main/d/deepin-menu
 Files: 
- f9bd27e5a6474c0206169403809d9c37 1333 deepin-menu_1.1+20141216195521~1247e3bd11.dsc
- 03aed9cb5d08718e49365180b747dea7 21486 deepin-menu_1.1+20141216195521~1247e3bd11.tar.gz
+ 849f966144b579fe83aad9bd2b1f586d 1316 deepin-menu_1.1+20150415155150~faffe35053.dsc
+ b3fd8aa2193b63d8c4cc49a5be09f4d7 21664 deepin-menu_1.1+20150415155150~faffe35053.tar.gz
 Checksums-Sha1: 
- 1b132c5871816739da5bb59dbc75ee90e5b35985 1333 deepin-menu_1.1+20141216195521~1247e3bd11.dsc
- 61f07e8a43d5dd7aabd87d1955f51b16b9aa0c92 21486 deepin-menu_1.1+20141216195521~1247e3bd11.tar.gz
+ 027bdcfc097fd42117a80d0b70eff888fb24281f 1316 deepin-menu_1.1+20150415155150~faffe35053.dsc
+ dbdb4aadc3d3ee52be270a2229507cc4ab3e5764 21664 deepin-menu_1.1+20150415155150~faffe35053.tar.gz
 Checksums-Sha256: 
- 1bbe29c43085b3098ffcfb206cc612c62276859a508b07110591fd7c89122bdf 1333 deepin-menu_1.1+20141216195521~1247e3bd11.dsc
- 87c09a081be514788d6ff03fab53b10cfdb86461da52f4aa29872652b9eddbf7 21486 deepin-menu_1.1+20141216195521~1247e3bd11.tar.gz
+ 2ad7882a235f668dedb04c204f915e261172f513afb6c081f0d6b0be7797af20 1316 deepin-menu_1.1+20150415155150~faffe35053.dsc
+ 9e7e8c95d02543b1be339d53a2a77a6a0b3797d6d9d49e1abf41f65d95b2f8e1 21664 deepin-menu_1.1+20150415155150~faffe35053.tar.gz
 
 Package: deepin-movie
 Format: 3.0 (native)
 Binary: deepin-movie
 Architecture: all
-Version: 2.2+20150211132515~f8f651edba
+Version: 2.2.1+20150424170255~9759b316cf
 Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
 Homepage: http://www.linuxdeepin.com
 Standards-Version: 3.9.5
@@ -1467,20 +1439,20 @@ Priority: extra
 Section: misc
 Directory: pool/main/d/deepin-movie
 Files: 
- d622a83dd93501b8e4ab49529e430be4 1237 deepin-movie_2.2+20150211132515~f8f651edba.dsc
- 0e475ccdd878d1ae2f6b7098144da13c 269964 deepin-movie_2.2+20150211132515~f8f651edba.tar.gz
+ fab6d78fe1e82d02fb052342d953e83d 1228 deepin-movie_2.2.1+20150424170255~9759b316cf.dsc
+ a85eae3d04865e78aa4c098bc7905c73 288651 deepin-movie_2.2.1+20150424170255~9759b316cf.tar.gz
 Checksums-Sha1: 
- 74edd1c122d67ab5cab895dc5f363629fe403a43 1237 deepin-movie_2.2+20150211132515~f8f651edba.dsc
- e1e71bee2aea1782ea77818f01cfe48f43664ff5 269964 deepin-movie_2.2+20150211132515~f8f651edba.tar.gz
+ 4d13ec5e904b1676f892bb6af65bf80df121f83b 1228 deepin-movie_2.2.1+20150424170255~9759b316cf.dsc
+ f9b5ae01f39616ed57116293f9ff9ec30507887e 288651 deepin-movie_2.2.1+20150424170255~9759b316cf.tar.gz
 Checksums-Sha256: 
- fddcc0a221531d98a3b2d7e26027b6bec74ef7ad2a7c8f9f2f255a60718725eb 1237 deepin-movie_2.2+20150211132515~f8f651edba.dsc
- 4bb5e3ed1f1c346090cb11081916e10a3ef7d2277c3330d768bf49d63eefe385 269964 deepin-movie_2.2+20150211132515~f8f651edba.tar.gz
+ 7702309805e43a68547e02804932320c00dd9b8b3a4a1a5130cb913995f1be55 1228 deepin-movie_2.2.1+20150424170255~9759b316cf.dsc
+ e09307f687e46c9aa0b7914d5cbca08fae75c2bfc657cede69de2838223ffd66 288651 deepin-movie_2.2.1+20150424170255~9759b316cf.tar.gz
 
 Package: deepin-music-player
 Format: 3.0 (native)
 Binary: deepin-music-player
 Architecture: all
-Version: 1.1+20150204093722~081154cf7b
+Version: 1.1+20150413165956~fa225d345b
 Maintainer: Li Longyu <leaeasy@gmail.com>
 Homepage: http://www.linuxdeepin.com/
 Standards-Version: 3.9.2
@@ -1491,20 +1463,20 @@ Priority: extra
 Section: sound
 Directory: pool/main/d/deepin-music-player
 Files: 
- 104bb8c8ae512ddaf279e6c01a77bc6c 1257 deepin-music-player_1.1+20150204093722~081154cf7b.dsc
- 6002cc1bf1fa43bb53b464c31b4ecd45 17853938 deepin-music-player_1.1+20150204093722~081154cf7b.tar.gz
+ ff55a2e315ac194b3237d17d06d67bd3 1240 deepin-music-player_1.1+20150413165956~fa225d345b.dsc
+ db3ba68664e7045597da21df2601ece0 17873115 deepin-music-player_1.1+20150413165956~fa225d345b.tar.gz
 Checksums-Sha1: 
- 0d9c5efc1268fc4673984728f10c7ec8236c037a 1257 deepin-music-player_1.1+20150204093722~081154cf7b.dsc
- d739e77d1e2db85ac7a86f399da1bb7bd21f70a4 17853938 deepin-music-player_1.1+20150204093722~081154cf7b.tar.gz
+ c1a20333cf781e0c0ec978b4a96f509ee1a66725 1240 deepin-music-player_1.1+20150413165956~fa225d345b.dsc
+ d7821b4be3327f5f62d0101e3c42253ebfac9707 17873115 deepin-music-player_1.1+20150413165956~fa225d345b.tar.gz
 Checksums-Sha256: 
- 125a2e6acef65a2e96d62a29c26ac8b6573070d60aced1522fb84002378207d3 1257 deepin-music-player_1.1+20150204093722~081154cf7b.dsc
- ac8cf7b151a387c6ed3bfbfb9e6e4c92fee75c89d62124f6a38fb9d3ba7ff9af 17853938 deepin-music-player_1.1+20150204093722~081154cf7b.tar.gz
+ 2d7c3a675d9088d4bc544d480e49d3146d3c1e157916eeee716e9c96f4cad3cb 1240 deepin-music-player_1.1+20150413165956~fa225d345b.dsc
+ ff74ed6d7e574ce3fded5523429eafe172bb92f18acba1ef817960cd8c86b777 17873115 deepin-music-player_1.1+20150413165956~fa225d345b.tar.gz
 
 Package: deepin-notifications
 Format: 3.0 (native)
 Binary: deepin-notifications
 Architecture: any
-Version: 0.3+20141216180805~a93d61767c
+Version: 0.3+20150311135741~2d222740e3
 Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
 Homepage: http://www.linuxdeepin.com
 Standards-Version: 3.9.5
@@ -1515,20 +1487,20 @@ Priority: extra
 Section: misc
 Directory: pool/main/d/deepin-notifications
 Files: 
- 2f7a51519f11c991c70011d806ec66cc 1285 deepin-notifications_0.3+20141216180805~a93d61767c.dsc
- d153b51dd5a9720ab66508e0309ea617 30199 deepin-notifications_0.3+20141216180805~a93d61767c.tar.gz
+ 0664539bf83d6763a78909cbc38ea9dd 1285 deepin-notifications_0.3+20150311135741~2d222740e3.dsc
+ 436bc85884b65c09af57877faea8b3c8 30146 deepin-notifications_0.3+20150311135741~2d222740e3.tar.gz
 Checksums-Sha1: 
- 256e37723bc6dc41cc23f6c271681713abce846c 1285 deepin-notifications_0.3+20141216180805~a93d61767c.dsc
- 91e05ad504a7fbfc7897d890e04ecc73a3fdc0ec 30199 deepin-notifications_0.3+20141216180805~a93d61767c.tar.gz
+ 7180d12ac9954bdfa2b9a81ffdc0b2d4f472be97 1285 deepin-notifications_0.3+20150311135741~2d222740e3.dsc
+ 7ce1fe76ba9cb17723d2667ba378aea80f15f44b 30146 deepin-notifications_0.3+20150311135741~2d222740e3.tar.gz
 Checksums-Sha256: 
- 3f4438e0b3beda30bf9b74109132724e2de85a71ee3dc8e6ebe815bc49087e03 1285 deepin-notifications_0.3+20141216180805~a93d61767c.dsc
- 79e34f468591630b10ad7b88d084c64aa265680d1c1597068b29fbdde028e0b5 30199 deepin-notifications_0.3+20141216180805~a93d61767c.tar.gz
+ b6391fb256ebe8e50ba88914c07824cc5805166c9c264b359e27a5a1c2354d23 1285 deepin-notifications_0.3+20150311135741~2d222740e3.dsc
+ aec9737063710133fdcc4e1119c26695fe7444bce32c08456af90e75c06435ee 30146 deepin-notifications_0.3+20150311135741~2d222740e3.tar.gz
 
 Package: deepin-os-upgrader
 Format: 3.0 (native)
 Binary: deepin-os-upgrader
 Architecture: all
-Version: 0.0.0+20150109112633~5fa05ddb2b
+Version: 2014.3.6
 Maintainer: DEEPIN <deepin@linuxdeepin.com>
 Standards-Version: 3.9.5
 Build-Depends: debhelper (>= 9)
@@ -1538,20 +1510,20 @@ Priority: optional
 Section: misc
 Directory: pool/main/d/deepin-os-upgrader
 Files: 
- d96565f2958705c40d6718a63d89d6dd 1201 deepin-os-upgrader_0.0.0+20150109112633~5fa05ddb2b.dsc
- 51ef8725447e840c8b80410408115393 2019 deepin-os-upgrader_0.0.0+20150109112633~5fa05ddb2b.tar.gz
+ dd91a27e5e2e5c8e7a72be466faa577c 1092 deepin-os-upgrader_2014.3.6.dsc
+ 4c08c126402fe4cde4b5e2e4edd15262 1673 deepin-os-upgrader_2014.3.6.tar.gz
 Checksums-Sha1: 
- 72107b4fee9ca70cdd0ea20d8fa151fde0822ffb 1201 deepin-os-upgrader_0.0.0+20150109112633~5fa05ddb2b.dsc
- e272bbf7d55740d4d7b22ca8bd113f8d089040a2 2019 deepin-os-upgrader_0.0.0+20150109112633~5fa05ddb2b.tar.gz
+ 513802631ee04ab7c1ae578858307fe312721307 1092 deepin-os-upgrader_2014.3.6.dsc
+ f985eb46443f66ebc60d6932da8b63dc2e34af7f 1673 deepin-os-upgrader_2014.3.6.tar.gz
 Checksums-Sha256: 
- f6bbca3fbde35b840c5c9eff33c7b5b55dfefcc8001c56906eabba11d010e748 1201 deepin-os-upgrader_0.0.0+20150109112633~5fa05ddb2b.dsc
- 1e173a0abce89ee4056a826c467c4b491680c9bb6784cf0e5d18f4313e34f9a1 2019 deepin-os-upgrader_0.0.0+20150109112633~5fa05ddb2b.tar.gz
+ 640cd0c29c89187398cb984180cd62898aae0c5684d4b3688406c731b2091fa5 1092 deepin-os-upgrader_2014.3.6.dsc
+ 30f3f1b87d3179569feea2397837f5c5bad699c25e31e0d08006896c2c6899b3 1673 deepin-os-upgrader_2014.3.6.tar.gz
 
 Package: deepin-qml-widgets
 Format: 3.0 (native)
 Binary: deepin-qml-widgets
 Architecture: any
-Version: 0.0.2+20150203171526~feb6d6ad2f
+Version: 0.0.2+20150423102550~daef82ffb6
 Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
 Homepage: http://www.linuxdeepin.com
 Standards-Version: 3.9.5
@@ -1562,14 +1534,14 @@ Priority: extra
 Section: devel
 Directory: pool/main/d/deepin-qml-widgets
 Files: 
- e0471da886a5dc7952217123fd17208d 1467 deepin-qml-widgets_0.0.2+20150203171526~feb6d6ad2f.dsc
- 5a623bd8cfeaceb80a162bddd1543764 114683 deepin-qml-widgets_0.0.2+20150203171526~feb6d6ad2f.tar.gz
+ 2436a68ef8b947c814d9a9321093c657 1450 deepin-qml-widgets_0.0.2+20150423102550~daef82ffb6.dsc
+ 7d150645a09cae7a801a409bfb9a2ae6 120026 deepin-qml-widgets_0.0.2+20150423102550~daef82ffb6.tar.gz
 Checksums-Sha1: 
- 78373ca92b970136dfe43b6d5c1e5e1e9078ab7c 1467 deepin-qml-widgets_0.0.2+20150203171526~feb6d6ad2f.dsc
- d1381d1710d2f8d09878aa682c7aa29172a948ce 114683 deepin-qml-widgets_0.0.2+20150203171526~feb6d6ad2f.tar.gz
+ bbe4dcc8179d675deda339111db9e8a163789933 1450 deepin-qml-widgets_0.0.2+20150423102550~daef82ffb6.dsc
+ 061e8a11b9a7bad25d4e3e7b9833d90ba7447948 120026 deepin-qml-widgets_0.0.2+20150423102550~daef82ffb6.tar.gz
 Checksums-Sha256: 
- fc4f2e490f4c5ccc0b0e7f642ad6a6270c096f785f37697f8cd33c315f2e7cda 1467 deepin-qml-widgets_0.0.2+20150203171526~feb6d6ad2f.dsc
- eafadf1a7ca22999a9f682b95ddf4f15d00e52a085de2af41cbb755c7694f69e 114683 deepin-qml-widgets_0.0.2+20150203171526~feb6d6ad2f.tar.gz
+ 21fd3e1fdaf62c9299460749b0e69218b6e892e0fb7728aa05e032fb009c735e 1450 deepin-qml-widgets_0.0.2+20150423102550~daef82ffb6.dsc
+ 861340d0ca269f34cde2ddc2ed6262a4b966c269886f5d764686df8a3bc6e13d 120026 deepin-qml-widgets_0.0.2+20150423102550~daef82ffb6.tar.gz
 
 Package: deepin-sample-music
 Format: 3.0 (native)
@@ -1595,11 +1567,35 @@ Checksums-Sha256:
  bd20e7de1e4cb112649a8b4634b3275b62dbad30a2c61817e71ee3ca9edfab86 648 deepin-sample-music_14.12.6.dsc
  a8601f64ef89ed496fa0fbebffe9bea58a51d082a63bd2682f67796186d4f546 31675588 deepin-sample-music_14.12.6.tar.xz
 
+Package: deepin-samples
+Format: 3.0 (native)
+Binary: deepin-samples
+Architecture: all
+Version: 14.12.1
+Maintainer: pkg-builder <pkg-builder@packages.linuxdeepin.com>
+Homepage: http://www.linuxdeepin.com/
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ deepin-samples deb misc extra
+Priority: extra
+Section: misc
+Directory: pool/main/d/deepin-samples
+Files: 
+ d8bafb48578aae8958f9ebc6c4ecb935 1151 deepin-samples_14.12.1.dsc
+ 1fa568bf909e462ecc1c2c017df7f86d 31672416 deepin-samples_14.12.1.tar.gz
+Checksums-Sha1: 
+ 621e26e354d3432fb9090b83cfb812eba8e212bb 1151 deepin-samples_14.12.1.dsc
+ 41130a09a8d6c957e99ff01b927c4ec5bff9bf16 31672416 deepin-samples_14.12.1.tar.gz
+Checksums-Sha256: 
+ fee1e816d00bd35a9caaf09874022a7a004b2f5286d86d50aff5f8c666e6fb0f 1151 deepin-samples_14.12.1.dsc
+ 83895fc2bd8c493c89a5f3261d20e10c4ec67e520352cd8f7cf83ffa698595a9 31672416 deepin-samples_14.12.1.tar.gz
+
 Package: deepin-screenshot
 Format: 3.0 (native)
 Binary: deepin-screenshot
 Architecture: any
-Version: 3.0+20150410165450~8775c7849a
+Version: 3.0+20150422133441~7bc9c8b83a
 Maintainer: 宋文武 <songwenwu@linuxdeepin.com>
 Standards-Version: 3.9.5
 Build-Depends: debhelper (>= 9), python, deepin-gettext-tools
@@ -1609,14 +1605,14 @@ Priority: extra
 Section: misc
 Directory: pool/main/d/deepin-screenshot
 Files: 
- db00584305d03ae219b9eb74ad72e482 1209 deepin-screenshot_3.0+20150410165450~8775c7849a.dsc
- def456483e3c3ff7b313d910200b191b 120604 deepin-screenshot_3.0+20150410165450~8775c7849a.tar.gz
+ 3805fbe11b40e4ab64db9e43cc397ab1 1209 deepin-screenshot_3.0+20150422133441~7bc9c8b83a.dsc
+ 1b17dec6599b964f68ae2851e9053696 120648 deepin-screenshot_3.0+20150422133441~7bc9c8b83a.tar.gz
 Checksums-Sha1: 
- d1ad01546ad6fbaaf9a5b7b057209fcfb045b230 1209 deepin-screenshot_3.0+20150410165450~8775c7849a.dsc
- e0f835d84f486f4183e14a9ca9caf0cecc8cfdd6 120604 deepin-screenshot_3.0+20150410165450~8775c7849a.tar.gz
+ 0cf73ddbc14c766fb9682698832ea82e0ff6bf4b 1209 deepin-screenshot_3.0+20150422133441~7bc9c8b83a.dsc
+ 9a8ed3dadc107e9cbd7272e391ef29095900bc48 120648 deepin-screenshot_3.0+20150422133441~7bc9c8b83a.tar.gz
 Checksums-Sha256: 
- bbd05cf1c4d0a7d0cb1e52c46a5d3dc3118cc814f88f5be474fc32cd1cd9e489 1209 deepin-screenshot_3.0+20150410165450~8775c7849a.dsc
- cc1f7de62a817145faaf3e8d4bb83eabae24404bc3f2ef499fb80cf9937d4e14 120604 deepin-screenshot_3.0+20150410165450~8775c7849a.tar.gz
+ 17f7252fd752d7a83bd524714e296eb42f82ba9edd33cbaabdff6cfc29b30d5e 1209 deepin-screenshot_3.0+20150422133441~7bc9c8b83a.dsc
+ 4a75dcdbd8c8b57c16adb8c402aecf391c962ae1d9e107e945bbd99c1c989cca 120648 deepin-screenshot_3.0+20150422133441~7bc9c8b83a.tar.gz
 
 Package: deepin-session-fastup
 Format: 3.0 (quilt)
@@ -1697,7 +1693,7 @@ Package: deepin-software-center
 Format: 3.0 (native)
 Binary: deepin-software-center
 Architecture: all
-Version: 3.0.1+20150205093406~fb0a497d57
+Version: 3.0.1+20150414162001~1b81fab771
 Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
 Homepage: https://github.com/manateelazycat/deepin-software-center
 Standards-Version: 3.9.2
@@ -1708,20 +1704,20 @@ Priority: optional
 Section: admin
 Directory: pool/main/d/deepin-software-center
 Files: 
- f76b7a58c6668b88a87299476c511a9b 1339 deepin-software-center_3.0.1+20150205093406~fb0a497d57.dsc
- fd551b51de20fb7a965cc1035b8e8b39 18490602 deepin-software-center_3.0.1+20150205093406~fb0a497d57.tar.gz
+ aec4c3035fd175dfb7296d8fe8aeb630 1322 deepin-software-center_3.0.1+20150414162001~1b81fab771.dsc
+ 165f4734887ce331f083405c2fd34e02 18500004 deepin-software-center_3.0.1+20150414162001~1b81fab771.tar.gz
 Checksums-Sha1: 
- 336e84eb8b732856c81d016b45863b087bb789d6 1339 deepin-software-center_3.0.1+20150205093406~fb0a497d57.dsc
- 69262bfaeb919b79d7e2b00df875047ec94298ee 18490602 deepin-software-center_3.0.1+20150205093406~fb0a497d57.tar.gz
+ f6bb5f0b9ff7f3c949b93e881e352b4a0f1e7c09 1322 deepin-software-center_3.0.1+20150414162001~1b81fab771.dsc
+ 8b21cea9c2e16c63affd43d097b4088f97f348b1 18500004 deepin-software-center_3.0.1+20150414162001~1b81fab771.tar.gz
 Checksums-Sha256: 
- f27f153c9cbcb39d0f76d7c6dcc9da6e0d8b4df621b63e5c3f9fcf7b36bbf261 1339 deepin-software-center_3.0.1+20150205093406~fb0a497d57.dsc
- 1fbeb5c0e8929959ef6c0a3882aa734848366652e65727ff05a5135b7e808e1e 18490602 deepin-software-center_3.0.1+20150205093406~fb0a497d57.tar.gz
+ 89c64f0ab31075369acf0bcbf13919e65d8207ca7062c8651d1e76601e509dd7 1322 deepin-software-center_3.0.1+20150414162001~1b81fab771.dsc
+ e689d4c774194b7be169727498065f0b18dbcb1fa99cc4617c5e49c1edbed512 18500004 deepin-software-center_3.0.1+20150414162001~1b81fab771.tar.gz
 
 Package: deepin-software-center-data
 Format: 3.0 (native)
 Binary: deepin-software-center-data
 Architecture: all
-Version: 3.0.1+20141230125726~0565641e10
+Version: 3.0.1+20150411125432
 Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
 Homepage: https://github.com/manateelazycat/deepin-software-center
 Standards-Version: 3.9.2
@@ -1732,14 +1728,14 @@ Priority: optional
 Section: admin
 Directory: pool/main/d/deepin-software-center-data
 Files: 
- 117e9e02fe1ea9b7f9f020b6dd5a63c3 1369 deepin-software-center-data_3.0.1+20141230125726~0565641e10.dsc
- 607185fbe77f5f70e6553add14d57014 30928267 deepin-software-center-data_3.0.1+20141230125726~0565641e10.tar.gz
+ 5d3985698d618355d09bf484da4b2d22 1308 deepin-software-center-data_3.0.1+20150411125432.dsc
+ 6dc08e0003831451d7f441fc3be8d7ba 30454003 deepin-software-center-data_3.0.1+20150411125432.tar.gz
 Checksums-Sha1: 
- 6d2f921d9cbddcaacf8efabdf59c945c28ed083d 1369 deepin-software-center-data_3.0.1+20141230125726~0565641e10.dsc
- 4089a816aa012ea235aa9cc53ebc24f8cb5dbccd 30928267 deepin-software-center-data_3.0.1+20141230125726~0565641e10.tar.gz
+ c77ef82883673d890dcd5e7aca9bbb51b1398ac4 1308 deepin-software-center-data_3.0.1+20150411125432.dsc
+ c649a9dcd9856e18e7e12e69e1400d50c830e96c 30454003 deepin-software-center-data_3.0.1+20150411125432.tar.gz
 Checksums-Sha256: 
- 2ef28e2130cf2c00cb303b5181178b9dfa3a8254c53ec1416859e9bff57c11b9 1369 deepin-software-center-data_3.0.1+20141230125726~0565641e10.dsc
- fc7eabb81539b6a2149392c0957df6f6160b9536b8fc0a8b3f2aaf3cfeb81596 30928267 deepin-software-center-data_3.0.1+20141230125726~0565641e10.tar.gz
+ de6a8ed34e42c561ddd3b8b94a5a35b58d9cc1b253a7ad6ab12af7123d1a8b36 1308 deepin-software-center-data_3.0.1+20150411125432.dsc
+ 3fe04d88ffc686c0d15d5de544aca7b731de2c34e37519cc7ac3e1442b9c2461 30454003 deepin-software-center-data_3.0.1+20150411125432.tar.gz
 
 Package: deepin-speech
 Format: 3.0 (native)
@@ -2902,7 +2898,7 @@ Package: go-dlib
 Format: 3.0 (native)
 Binary: golang-dlib-dev
 Architecture: all
-Version: 0.0.4+20150108105637~88ae48d3c8
+Version: 0.0.4+20150227094412~8e9523b66a
 Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
 Homepage: http://www.linuxdeepin.com
 Standards-Version: 3.9.5
@@ -2913,14 +2909,14 @@ Priority: extra
 Section: devel
 Directory: pool/main/g/go-dlib
 Files: 
- d5da694ce11958dc0d6244a27d5d7b2a 1336 go-dlib_0.0.4+20150108105637~88ae48d3c8.dsc
- 8bc48fdf68a5f4bd91399c95a6a3f876 1808290 go-dlib_0.0.4+20150108105637~88ae48d3c8.tar.gz
+ 51a7fb629a7409ea72304c66d419b144 1336 go-dlib_0.0.4+20150227094412~8e9523b66a.dsc
+ e34c686cef4f027775be66f3bf95bba5 1809691 go-dlib_0.0.4+20150227094412~8e9523b66a.tar.gz
 Checksums-Sha1: 
- 0d3f847381ad2f47ff65aefd4136a984cf12a3c9 1336 go-dlib_0.0.4+20150108105637~88ae48d3c8.dsc
- 6843983aa3644d3f8d2eb82de976492685990b46 1808290 go-dlib_0.0.4+20150108105637~88ae48d3c8.tar.gz
+ f60a220ed646674e8ca3438324accbc584e2c02d 1336 go-dlib_0.0.4+20150227094412~8e9523b66a.dsc
+ 328754636ed51d67ddd9c498d78fb8b25039536d 1809691 go-dlib_0.0.4+20150227094412~8e9523b66a.tar.gz
 Checksums-Sha256: 
- d3b5884850c4aac1101eea36fa46fd3982a7d0cbbaf120f067bc49928b2dd7f8 1336 go-dlib_0.0.4+20150108105637~88ae48d3c8.dsc
- 307abef63fd1a13831ef3587e154d35a657536feae924f29e36101b8ac82cfc9 1808290 go-dlib_0.0.4+20150108105637~88ae48d3c8.tar.gz
+ 9adc775a776ec28b679409ce1b6844aa600169834850eea3c587138c34cafa13 1336 go-dlib_0.0.4+20150227094412~8e9523b66a.dsc
+ 622a76b47f7e2b242870e578accfa34b568903dc3cbfbc94e6196b61c28f3b19 1809691 go-dlib_0.0.4+20150227094412~8e9523b66a.tar.gz
 
 Package: go-dlib-dbus-proxyer
 Format: 3.0 (native)
@@ -3648,30 +3644,33 @@ Checksums-Sha256:
 
 Package: jieba
 Format: 3.0 (quilt)
-Binary: jieba
+Binary: jieba, jieba-dict, python-jieba, python3-jieba
 Architecture: all
-Version: 0.20-2~saucy
+Version: 0.36-1
 Maintainer: Yueqian Zhang <zhangyueqian@linuxdeepin.com>
 Homepage: http://pypi.python.org/pypi/jieba/
-Standards-Version: 3.9.3
-Build-Depends: debhelper (>= 8.0.0), python-setuptools
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), python-setuptools, python3-setuptools, dh-python, python-all, python3-all
 Package-List:
  jieba deb python extra
+ jieba-dict deb python extra
+ python-jieba deb python extra
+ python3-jieba deb python extra
 Priority: extra
 Section: python
 Directory: pool/main/j/jieba
 Files: 
- ea78fb15610a604cb1269d24d3a2f958 1382 jieba_0.20-2~saucy.dsc
- 81d9722c6bf80af956549037c8d21089 5283182 jieba_0.20.orig.tar.gz
- a10846d34bd65370e21cff4f389ae28b 2151 jieba_0.20-2~saucy.debian.tar.gz
+ 2a7964872b878c1149d019589ad90aee 1526 jieba_0.36-1.dsc
+ 886883bc91ef2056e9c1bcd1ee910009 8273012 jieba_0.36.orig.tar.xz
+ 7a7fcd4dd888af9ae3a95ba8aa6c3710 2435 jieba_0.36-1.debian.tar.gz
 Checksums-Sha1: 
- 9c23422775d849fe885defd72552c894a9e32706 1382 jieba_0.20-2~saucy.dsc
- 0ac933067eb56232cf9a3f83a5eafdf35e0ae5e0 5283182 jieba_0.20.orig.tar.gz
- 042bbcdb0f9183e5a4820a61f63868a6442cefa6 2151 jieba_0.20-2~saucy.debian.tar.gz
+ 5295338b7b334bf1e9920d6205fc959ed883b150 1526 jieba_0.36-1.dsc
+ 5ed41899c01a09c5beb06e49c67b2c46fed63460 8273012 jieba_0.36.orig.tar.xz
+ 03f499f02540b4b9b16c7bae1356561c9374fe6b 2435 jieba_0.36-1.debian.tar.gz
 Checksums-Sha256: 
- fb64326a415645e0e1f584398bcad156865b160165b84ccfb49f46eec46b640c 1382 jieba_0.20-2~saucy.dsc
- 65ec74920e76820e8a9bc8a6a3e86f7e93e2b669f645aa13f94788e971189346 5283182 jieba_0.20.orig.tar.gz
- 4544df8b777a16785274550852494a8803bc3a6e243b02f9ed13deb492f7f35c 2151 jieba_0.20-2~saucy.debian.tar.gz
+ bfbedb26a433cd72c2a761ed966dcda63ff5ee3d7c0a39b46c05f4771f2845d2 1526 jieba_0.36-1.dsc
+ 02434e6d53369e5d810907838656e2c7bd2de58a43bba9818a2bfdc9a6789956 8273012 jieba_0.36.orig.tar.xz
+ c696772d48fffd18e32909e1ee536e016dadf3d4aff338488c34034610ae93e3 2435 jieba_0.36-1.debian.tar.gz
 
 Package: kwplayer
 Format: 3.0 (quilt)
@@ -3937,7 +3936,7 @@ Package: libflashplugin
 Format: 1.0
 Binary: libflashplugin, kcm-flashplayer
 Architecture: any
-Version: 11.2.202.442~trusty
+Version: 11.2.202.457
 Maintainer: Li Longyu <leaeasy@gmail.com>
 Homepage: http://get.adobe.com/cn/flashplayer/
 Standards-Version: 3.9.2
@@ -3949,14 +3948,14 @@ Priority: optional
 Section: libs
 Directory: pool/main/libf/libflashplugin
 Files: 
- e3cf9d6147113fc1e104cabbe97173b2 1233 libflashplugin_11.2.202.442~trusty.dsc
- 820c7da5fa207068136b6fd8f730a78f 13963536 libflashplugin_11.2.202.442~trusty.tar.gz
+ d7ed4af967f9bb491cbe4047a41e6464 1188 libflashplugin_11.2.202.457.dsc
+ 86b081b5c44eb30232180e12697dc355 13976922 libflashplugin_11.2.202.457.tar.gz
 Checksums-Sha1: 
- 9e83c03d38fda7abb6af96104951796d317eabb3 1233 libflashplugin_11.2.202.442~trusty.dsc
- 3d8e14ca47c210aea753153d47a28fbafbc1aa44 13963536 libflashplugin_11.2.202.442~trusty.tar.gz
+ 2cc53f46b83fe899729b765bef7bd7d8e6427418 1188 libflashplugin_11.2.202.457.dsc
+ 14707424debfcb401961672caaec720115354596 13976922 libflashplugin_11.2.202.457.tar.gz
 Checksums-Sha256: 
- 734bebc16d9d69f6612dc255ad1d227b96902bae7c27ee28e5a103d105f09918 1233 libflashplugin_11.2.202.442~trusty.dsc
- 366c24c29a5b2f1f5d4f1facd8af29e898dfe62d23dc94f720fae1e9919db61c 13963536 libflashplugin_11.2.202.442~trusty.tar.gz
+ 0ba5093b2f0c74ddaf6dc6751389189f567be73710f0d730e343aca5ae01bec7 1188 libflashplugin_11.2.202.457.dsc
+ 81aadb7b40712d52bf3b68f63d9fb69f10fc2ad02a150c6c4ab538244432ea84 13976922 libflashplugin_11.2.202.457.tar.gz
 
 Package: libimobiledevice
 Format: 3.0 (quilt)
@@ -4759,6 +4758,41 @@ Checksums-Sha256:
  620a0a92eb9496e90160738e7a971c6aa8064a0375e3a7dd040f17a7f17f8521 2032 openal-soft_1.15.1-6.dsc
  0e29a162f0841ccb4135ce76e92e8a704589b680a85eddf76f898de5236eb056 253006 openal-soft_1.15.1.orig.tar.bz2
  9e6ef74ce633a527f265538058cb977234752bca006690437766014bd5e1098e 12226 openal-soft_1.15.1-6.debian.tar.gz
+
+Package: oxide-qt
+Format: 3.0 (quilt)
+Binary: liboxideqtcore0, liboxideqtquick0, liboxideqt-qmlplugin, oxideqt-dbg, oxideqt-codecs, oxideqt-codecs-dbg, oxideqt-codecs-extra, oxideqt-codecs-extra-dbg, oxideqt-chromedriver
+Architecture: any
+Version: 1.5.5-1deepin
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Homepage: https://launchpad.net/oxide
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 8.0.0), cmake, qt5-qmake, qt5-default, qtdeclarative5-dev, qtbase5-private-dev, qtdeclarative5-private-dev, qtpositioning5-dev, ninja-build, python, pkg-config, libglib2.0-dev, libnss3-dev, libpci-dev, libgcrypt11-dev, libdbus-1-dev, libudev-dev, libpulse-dev, libasound2-dev, libx11-dev, libxi-dev, libcap-dev, libdrm-dev, libfontconfig1-dev, libfreetype6-dev, libpango1.0-dev, libxext-dev, libxcomposite-dev, libxrender-dev, libkrb5-dev, libssl-dev, gperf, bison, xvfb, qml-module-qtquick2, qml-module-qttest, libcups2-dev, libexif-dev, libxcursor-dev, libxrandr-dev, libxtst-dev, libandroid-properties-dev [armhf]
+Package-List:
+ liboxideqt-qmlplugin deb libs extra
+ liboxideqtcore0 deb libs extra
+ liboxideqtquick0 deb libs extra
+ oxideqt-chromedriver deb misc extra
+ oxideqt-codecs deb libs extra
+ oxideqt-codecs-dbg deb debug extra
+ oxideqt-codecs-extra deb libs extra
+ oxideqt-codecs-extra-dbg deb debug extra
+ oxideqt-dbg deb debug extra
+Priority: extra
+Section: libs
+Directory: pool/main/o/oxide-qt
+Files: 
+ dad0a307cc6b52d136597ee9050a6a59 2478 oxide-qt_1.5.5-1deepin.dsc
+ 5e285e8d3a46716a632f85d542c7ad2e 368530720 oxide-qt_1.5.5.orig.tar.xz
+ f82e4e60ab8d8ba11d7a8c4e1ba85993 148600 oxide-qt_1.5.5-1deepin.debian.tar.gz
+Checksums-Sha1: 
+ 4e3aa36561597af0648b7ee24b8f2863d0067621 2478 oxide-qt_1.5.5-1deepin.dsc
+ 5a78b86a3fb15fd8a852f433907374884d58bdd1 368530720 oxide-qt_1.5.5.orig.tar.xz
+ 1f850fa4e03a6da7b5d2d584c33f95d706168636 148600 oxide-qt_1.5.5-1deepin.debian.tar.gz
+Checksums-Sha256: 
+ 8776f70c64bc92b871ac8be8680c5e1486a317d2fabc4407f46417398122e85c 2478 oxide-qt_1.5.5-1deepin.dsc
+ 2bda43974dae2719f710eac11ccb2f680fa9f384ad29c1b7b5a0d764b7dbebc1 368530720 oxide-qt_1.5.5.orig.tar.xz
+ 4cfcfc62b9322a72e5140ee1cab4897782a59a53bd059cdf566554740ced4078 148600 oxide-qt_1.5.5-1deepin.debian.tar.gz
 
 Package: p7zip
 Format: 1.0
@@ -5573,11 +5607,11 @@ Package: qtav
 Format: 3.0 (native)
 Binary: qtav-sdk, libqtav, libqtavwidgets, qtav-dev, qtav-private-dev, qml-module-qtav, qtav-players
 Architecture: any all
-Version: 1.4.2-deepin3
+Version: 2.0+20150424100710
 Maintainer: Sou Bunnbu <iyzsong@gmail.com>
 Homepage: http://www.qtav.org
 Standards-Version: 3.9.5
-Build-Depends: debhelper (>= 9), qt5-default, qt5-qmake, libqt5opengl5-dev, qtdeclarative5-dev, libass-dev, libavutil-dev, libavresample-dev, libavcodec-dev, libavformat-dev, libswscale-dev, libavfilter-dev, libopenal-dev, libxv-dev, libva-dev
+Build-Depends: debhelper (>= 9), qt5-qmake, libqt5opengl5-dev, qtdeclarative5-dev, libavutil-dev, libavresample-dev, libavcodec-dev, libavformat-dev, libass-dev, libswscale-dev, libavfilter-dev, libopenal-dev, libpulse-dev, libxv-dev, libva-dev
 Package-List:
  libqtav deb libs extra
  libqtavwidgets deb libs extra
@@ -5590,14 +5624,14 @@ Priority: extra
 Section: libs
 Directory: pool/main/q/qtav
 Files: 
- 74c508cc7c37378c6349bf8e7c9dc7ee 1568 qtav_1.4.2-deepin3.dsc
- 863cbf580500445a739c78b80bcab715 910675 qtav_1.4.2-deepin3.tar.gz
+ 839a46fa9cf32a1d78214a09cdb51cab 1572 qtav_2.0+20150424100710.dsc
+ 988274300f3eb1828f82141265901148 757087 qtav_2.0+20150424100710.tar.gz
 Checksums-Sha1: 
- 5cfedb92da34e78e7bc51af5e3d1faae110f1f12 1568 qtav_1.4.2-deepin3.dsc
- 2ed6f6247c81afcb955c01d6c90af5d23a4721bb 910675 qtav_1.4.2-deepin3.tar.gz
+ 7bc776c3a86cb51c95f18d9ad0d76aed47ed4305 1572 qtav_2.0+20150424100710.dsc
+ 3456e1410bb9e585ea301d1bb1be4c81beff2fc4 757087 qtav_2.0+20150424100710.tar.gz
 Checksums-Sha256: 
- 75054004b36ea3a212b6f33d07bd84f0828a546a52bd93b64b1c903e21914022 1568 qtav_1.4.2-deepin3.dsc
- bf88a384506e0a680e0a0a2cb7ce40b2a16c471b90fbd4ed74c65ad18c45a5ab 910675 qtav_1.4.2-deepin3.tar.gz
+ ba5421bc6653d42be5f9e5a08b673f06ea23e9dd7fed1951c24e15a3c3ce911e 1572 qtav_2.0+20150424100710.dsc
+ 01a90f08bba21e475bc0a75ba9826b21c85ff239fb445b2dde38a8c71c8ef879 757087 qtav_2.0+20150424100710.tar.gz
 
 Package: qtbase-opensource-src
 Format: 3.0 (quilt)
@@ -5709,33 +5743,6 @@ Checksums-Sha1:
 Checksums-Sha256: 
  019a23303f0852029bb06ebe080ed63d443da9566be23f6580df949758aefc49 1186 rtl-dkms_0.1-3.dsc
  40a807812305e36927ac920f445da158f51a799e9b625976b09fd2a56f12027e 1905914 rtl-dkms_0.1-3.tar.gz
-
-Package: seafile
-Format: 3.0 (quilt)
-Binary: seafile
-Architecture: any
-Version: 3.1.5-1
-Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
-Homepage: http://seafile.com
-Standards-Version: 3.9.5
-Build-Depends: debhelper (>= 9.0.0), python, libc6 (>= 2.7), libevent-2.0-5 (>= 2.0.10-stable), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.24.0), libjansson4 (>= 2.1), libqt4-dbus (>= 4:4.5.3), libqt4-network (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.7.0~beta1), libsqlite3-0 (>= 3.5.9), libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.1.1), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
-Package-List:
- seafile deb net extra
-Priority: extra
-Section: net
-Directory: pool/main/s/seafile
-Files: 
- f823c11dfe5e38433ff9cf8c390d3ad4 1692 seafile_3.1.5-1.dsc
- 090563ba5fd206229d723f00e523cafd 2523484 seafile_3.1.5.orig.tar.xz
- 67a2157d89dfa345af58cfc613ef5daa 2754 seafile_3.1.5-1.debian.tar.gz
-Checksums-Sha1: 
- 192788e6e43eb98c8ae6c624ca9257f30c13abd0 1692 seafile_3.1.5-1.dsc
- f4cdea7ef93237ab1824383fb830bc9878a0bc50 2523484 seafile_3.1.5.orig.tar.xz
- f8dc16c377237cf1669ac6ce3ac5cae24676b6e7 2754 seafile_3.1.5-1.debian.tar.gz
-Checksums-Sha256: 
- 7eb9b19789905862b04918b0f2c42896286ddd9b0cd80871d0c61a6097c9b418 1692 seafile_3.1.5-1.dsc
- 542313c6a231ae47e7e8d108feab258f2d9c2ce7e59bd054d183e4be6eb4ae07 2523484 seafile_3.1.5.orig.tar.xz
- b2809b543ddc3f70aee3795675c47ef1aebecb3ee5c592a95f868df16e9380ed 2754 seafile_3.1.5-1.debian.tar.gz
 
 Package: sexpdata
 Format: 3.0 (quilt)
@@ -6032,7 +6039,7 @@ Package: tzdata
 Format: 3.0 (quilt)
 Binary: tzdata, tzdata-java
 Architecture: all
-Version: 2014e-1
+Version: 2015b-1
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Uploaders: Clint Adams <clint@debian.org>, Aurelien Jarno <aurel32@debian.org>, Adam Conrad <adconrad@0c3.net>
 Homepage: http://www.iana.org/time-zones
@@ -6046,17 +6053,17 @@ Priority: required
 Section: libs
 Directory: pool/main/t/tzdata
 Files: 
- fdc1cd1e3218d29e0814ae363be32bfd 1669 tzdata_2014e-1.dsc
- 8a49fdedd4e832da8e85f7f9bcaedc33 221587 tzdata_2014e.orig.tar.gz
- 9c19334ef13f8700a124a40ffc0a341c 100740 tzdata_2014e-1.debian.tar.xz
+ 1096b2ad0bac4e10d2f2bc6126cb2ad6 1649 tzdata_2015b-1.dsc
+ 75571bb17c7b6be88a9f8872e45bc726 293482 tzdata_2015b.orig.tar.gz
+ 528c742ebada81e7ec9640d4a64b2e2d 99488 tzdata_2015b-1.debian.tar.xz
 Checksums-Sha1: 
- b824ea52308bbfb3c58b63c2131e809108adbd48 1669 tzdata_2014e-1.dsc
- 724b0e19ba26316d7e1f6fee1ec5934fa31454ab 221587 tzdata_2014e.orig.tar.gz
- 9a9b360dc3db37bef32f1c839cf6cd73810b9ea9 100740 tzdata_2014e-1.debian.tar.xz
+ 9e63745fab072692cace9add3e9fd53da4b2bf02 1649 tzdata_2015b-1.dsc
+ 1efd383ad6b43eeee95f603e3a6ea6ff4bd55b81 293482 tzdata_2015b.orig.tar.gz
+ fb718ce085d448b9ef60a7398054dc9a6f11c10d 99488 tzdata_2015b-1.debian.tar.xz
 Checksums-Sha256: 
- 493057613d02defde45bf8e355dee4a48d3304b8f53ddaf2b1f26b3434b45d0b 1669 tzdata_2014e-1.dsc
- 08e243a79051f838d86ac1311a78b74047951302d448024e823b5b7aa71f86c5 221587 tzdata_2014e.orig.tar.gz
- c030ee1070913a30b9e1ec411cd581cd4c51dbec0c02de91d6e12d7bcb5578b4 100740 tzdata_2014e-1.debian.tar.xz
+ d9636866c5f4d6efbc53aa4b1e046a8844e9f771a5126cbbefb84dc053ecbbab 1649 tzdata_2015b-1.dsc
+ 556ac1a5b3a371adc1ad4e77138f78ddd7f8ddd7bc2b52545924598c7dc8ad62 293482 tzdata_2015b.orig.tar.gz
+ 4d04387e3d93d4ea151d79945ebadfc27ef0a4e6824950357224672650db78eb 99488 tzdata_2015b-1.debian.tar.xz
 Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 
 Package: tzdata-l10n

@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">packages.linuxdeepin.com</param>
     <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/d/deepin-qml-widgets/deepin-qml-widgets_0.0.2+20150203171526~feb6d6ad2f.tar.gz</param>
+    <param name="path">/deepin/pool/main/d/deepin-qml-widgets/deepin-qml-widgets_0.0.2+20150423102550~daef82ffb6.tar.gz</param>
   </service>
 </services>

@@ -955,7 +955,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-nvidia/libvdpau.git
 
 Package: lwqq
 Binary: liblwqq0, liblwqq-dev, liblwqq-dbg
-Version: 0.4.2+git201502262350.b9387e8-1~lainme~trusty
+Version: 0.4.3+git201504170039.eeafe03-1~lainme~trusty
 Section: net
 Maintainer: lainme <lainme993@gmail.com>
 Build-Depends: debhelper (>= 7), cdbs, cmake, pkg-config, libcurl4-openssl-dev | libcurl4-nss-dev | libcurl4-gnutls-dev, libsqlite3-dev, libev-dev, libmozjs-17.0-dev | libmozjs185-dev, zlib1g-dev
@@ -964,17 +964,17 @@ Standards-Version: 3.9.3
 Format: 3.0 (quilt)
 Directory: pool/universe/l/lwqq
 Files:
- 2e0c3db5a5bdf7e87967cc7b01d659d0 177137 lwqq_0.4.2+git201502262350.b9387e8.orig.tar.gz
- 0fcefc13257529fc8b65024932fa9215 4075 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.debian.tar.gz
- 3a624ec290c719a1b9e79a202d391e7f 2119 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.dsc
+ 0a4f6d815e6c0ea6899ae523584d1d78 178149 lwqq_0.4.3+git201504170039.eeafe03.orig.tar.gz
+ cd28175734e33b36492d5d2234bf5fcb 4161 lwqq_0.4.3+git201504170039.eeafe03-1~lainme~trusty.debian.tar.gz
+ e91f5de680009a5c21be23b000d22f64 2119 lwqq_0.4.3+git201504170039.eeafe03-1~lainme~trusty.dsc
 Checksums-Sha1:
- 82f4455179e9601ea663dcca50a4feb854d40716 177137 lwqq_0.4.2+git201502262350.b9387e8.orig.tar.gz
- 2eadff18b9f3c958fb151d748914fd3967740115 4075 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.debian.tar.gz
- 7cfc6faeef8f12acb004625fceef0f090afc30e4 2119 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.dsc
+ 5026d254ced92b5a2a60c0e07ddafc09b0a3ac39 178149 lwqq_0.4.3+git201504170039.eeafe03.orig.tar.gz
+ 41cfcc3b15c09247ebca5297e36e8ebd2d2f585e 4161 lwqq_0.4.3+git201504170039.eeafe03-1~lainme~trusty.debian.tar.gz
+ 159e8cc0c3a1439ee9d50bb45425115707ba5f9a 2119 lwqq_0.4.3+git201504170039.eeafe03-1~lainme~trusty.dsc
 Checksums-Sha256:
- ad5a9f972ffd9a3cedee7a0a9dcfde7ba8a489ea6c2154a6d41c633466a592bb 177137 lwqq_0.4.2+git201502262350.b9387e8.orig.tar.gz
- 60eeeac46ad3028f7b8c4f3b5295cc4d9a6afa70deff69785962d28fc6236659 4075 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.debian.tar.gz
- 22791f80e804174f8874315818835f326376ae78cc7185341fd8b42c3c2b37dd 2119 lwqq_0.4.2+git201502262350.b9387e8-1~lainme~trusty.dsc
+ b364d5ff32f8716fd917387c58fb50ab9eba087d845d032b2110d9d428640439 178149 lwqq_0.4.3+git201504170039.eeafe03.orig.tar.gz
+ 8680c7c05efa441a1208ffd4a21430b50d74635b259cfc27d69e966b4970b84c 4161 lwqq_0.4.3+git201504170039.eeafe03-1~lainme~trusty.debian.tar.gz
+ a38aa3085055b0c2cecaca3282e67d986bc6770223a7ecba53a7a6a5dbd3c6b1 2119 lwqq_0.4.3+git201504170039.eeafe03-1~lainme~trusty.dsc
 Homepage: https://github.com/xiehuc/lwqq
 Package-List: liblwqq-dbg deb debug extra
  liblwqq-dev deb libdevel extra
@@ -1267,7 +1267,7 @@ Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
 
 Package: nvidia-graphics-drivers-349
 Binary: nvidia-349, nvidia-349-dev, libcuda1-349, nvidia-libopencl1-349, nvidia-opencl-icd-349, nvidia-349-uvm, nvidia-319, nvidia-319-dev
-Version: 349.12-100ubuntu100~ppa0~trusty
+Version: 349.16-100ubuntu100~ppa0~trusty
 Section: misc
 Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Build-Depends: debhelper (>= 8.0.0), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, libc6, libxvmc1, dh-modaliases, libxv1
@@ -1276,14 +1276,14 @@ Standards-Version: 3.8.0
 Format: 1.0
 Directory: pool/universe/n/nvidia-graphics-drivers-349
 Files:
- 8bbd475fce459ea73e45530083cc454e 86160821 nvidia-graphics-drivers-349_349.12-100ubuntu100~ppa0~trusty.tar.gz
- 9411aa3ece28155f0e518f799bf22634 2404 nvidia-graphics-drivers-349_349.12-100ubuntu100~ppa0~trusty.dsc
+ 3922d3531bbbfb3180c7f14e20d2b721 85523791 nvidia-graphics-drivers-349_349.16-100ubuntu100~ppa0~trusty.tar.gz
+ 02132bd3379c51819763b0dfe9c21f42 2404 nvidia-graphics-drivers-349_349.16-100ubuntu100~ppa0~trusty.dsc
 Checksums-Sha1:
- 05d2726b0125484f38501c1a46f027dd92b310e5 86160821 nvidia-graphics-drivers-349_349.12-100ubuntu100~ppa0~trusty.tar.gz
- 9927b0112e9d83d9c5391436346ed4752e497a2c 2404 nvidia-graphics-drivers-349_349.12-100ubuntu100~ppa0~trusty.dsc
+ ff110faf165bc8dd1bb9f7903e231306ba89e2b0 85523791 nvidia-graphics-drivers-349_349.16-100ubuntu100~ppa0~trusty.tar.gz
+ 4f37b798d83f70c21e55719674dbdf668e2aba9a 2404 nvidia-graphics-drivers-349_349.16-100ubuntu100~ppa0~trusty.dsc
 Checksums-Sha256:
- ef1712b21f67334901aa567e2930bf7b0ba6fe0fce5a615857ac7e71204e1472 86160821 nvidia-graphics-drivers-349_349.12-100ubuntu100~ppa0~trusty.tar.gz
- 77f1c282bf981713944382a4d68e03b8eeaee5cff302ce855b3c4f9d2ee6c128 2404 nvidia-graphics-drivers-349_349.12-100ubuntu100~ppa0~trusty.dsc
+ f36e1fae075e1a300154aaab2cb1e1e1baeb6e4a49c5890628841df61bb0dd1e 85523791 nvidia-graphics-drivers-349_349.16-100ubuntu100~ppa0~trusty.tar.gz
+ c422097a262f88fca405e476b6df531e1ce49be1b9f61464a37c8b793c53a903 2404 nvidia-graphics-drivers-349_349.16-100ubuntu100~ppa0~trusty.dsc
 Package-List: libcuda1-349 deb restricted/misc optional arch=i386,amd64
  nvidia-319 deb restricted/misc optional arch=i386,amd64
  nvidia-319-dev deb restricted/misc optional arch=i386,amd64
@@ -1372,7 +1372,7 @@ Checksums-Sha256:
 
 Package: pidgin-lwqq
 Binary: pidgin-lwqq, pidgin-lwqq-dbg
-Version: 0.4.2+git201502271631.17d115f-1~lainme~trusty
+Version: 0.4.3+git201504170014.2a9ca53-1~lainme~trusty
 Section: net
 Maintainer: lainme <lainme993@gmail.com>
 Build-Depends: debhelper (>= 7), cdbs, cmake, pkg-config, libglib2.0-dev, libpurple-dev, liblwqq-dev (>= 0.4.2)
@@ -1381,17 +1381,17 @@ Standards-Version: 3.9.3
 Format: 3.0 (quilt)
 Directory: pool/universe/p/pidgin-lwqq
 Files:
- 1fb0502cbfa09bf4b9d6faff500457b4 1956099 pidgin-lwqq_0.4.2+git201502271631.17d115f.orig.tar.gz
- 8b251afa8bf8511e81dcfe51eec152f6 3220 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.debian.tar.gz
- edcfe13135388a02a8b8933e80d27e29 2063 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.dsc
+ 5e2b9a98680691f48668fe60eee6bf70 1955943 pidgin-lwqq_0.4.3+git201504170014.2a9ca53.orig.tar.gz
+ b449667a7c4815eedf2259c6a4c67e9b 3364 pidgin-lwqq_0.4.3+git201504170014.2a9ca53-1~lainme~trusty.debian.tar.gz
+ c1241a1946434bd3da741ed92c73c464 2063 pidgin-lwqq_0.4.3+git201504170014.2a9ca53-1~lainme~trusty.dsc
 Checksums-Sha1:
- 3b0b1abeceea376ed0b45289931d1b9f828b351c 1956099 pidgin-lwqq_0.4.2+git201502271631.17d115f.orig.tar.gz
- cd05eb6c5f27c0c36d7c92806cc18d1e6ca54a19 3220 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.debian.tar.gz
- 7bb559df46074652f19523bd51750bb09f4f02e8 2063 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.dsc
+ c86bda5d9739b68faec063aa0be7ae4181f53e66 1955943 pidgin-lwqq_0.4.3+git201504170014.2a9ca53.orig.tar.gz
+ ea02b698ee387cc2187ac1f57c1f7db951f4e84b 3364 pidgin-lwqq_0.4.3+git201504170014.2a9ca53-1~lainme~trusty.debian.tar.gz
+ 8dd4836111bdf285c8981ac3d8e397010e802a2e 2063 pidgin-lwqq_0.4.3+git201504170014.2a9ca53-1~lainme~trusty.dsc
 Checksums-Sha256:
- bcbc590042bab89ee262d57c6f41e81ce006a654063a38fccd401d885beeddf8 1956099 pidgin-lwqq_0.4.2+git201502271631.17d115f.orig.tar.gz
- 677421cf3cf058f0559e337844e3ee8afaa3f0779c9fa453325aff3e4dd253bb 3220 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.debian.tar.gz
- 220bcb822f43a8cbd59e64b4a614131e82517dda09a3d787c59acb9635ce73f1 2063 pidgin-lwqq_0.4.2+git201502271631.17d115f-1~lainme~trusty.dsc
+ 98f992cadb374477a297b95c1d2ad33a795bd9021a1d3de93a8af5369cee7db4 1955943 pidgin-lwqq_0.4.3+git201504170014.2a9ca53.orig.tar.gz
+ 4d91f4dc1d345eb2e98ecb7653e0cb478dca145a2692745f329ac23884a25446 3364 pidgin-lwqq_0.4.3+git201504170014.2a9ca53-1~lainme~trusty.debian.tar.gz
+ 887cea2c01018d7d54d10986c2658b0e413b2b18b8b3dac64e277c7d952e6e43 2063 pidgin-lwqq_0.4.3+git201504170014.2a9ca53-1~lainme~trusty.dsc
 Homepage: https://github.com/xiehuc/pidgin-lwqq
 Package-List: pidgin-lwqq deb net extra
  pidgin-lwqq-dbg deb debug extra
@@ -2876,6 +2876,31 @@ Checksums-Sha256:
 Homepage: http://www.winehq.org/
 Package-List: wine-gecko2.34 deb otherosfs optional
 
+Package: wine-gecko2.36
+Binary: wine-gecko2.36
+Version: 2.36-0ubuntu1~ppa1
+Section: otherosfs
+Maintainer: Scott Ritchie <scottritchie@ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Architecture: i386 amd64
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/universe/w/wine-gecko2.36
+Files:
+ 60fbd58d4ce900474af79bcdf1ea5a53 176788064 wine-gecko2.36_2.36.orig.tar.bz2
+ 417dd0a237af430be3423389d1fe245b 60702778 wine-gecko2.36_2.36-0ubuntu1~ppa1.debian.tar.gz
+ fff3a88715315dc908aba36f01c19be9 1175 wine-gecko2.36_2.36-0ubuntu1~ppa1.dsc
+Checksums-Sha1:
+ 88719446cf728a898b554ec743f0b56932891ca5 176788064 wine-gecko2.36_2.36.orig.tar.bz2
+ 197ceafcac8f62445415d55f844c3ddd56f38c84 60702778 wine-gecko2.36_2.36-0ubuntu1~ppa1.debian.tar.gz
+ 939a85af393873e9825adbdbacb7708f144bbe57 1175 wine-gecko2.36_2.36-0ubuntu1~ppa1.dsc
+Checksums-Sha256:
+ 625fd3da0d10f715374e7f7fef491681c6a664ff4f75d726b73ff137d242625f 176788064 wine-gecko2.36_2.36.orig.tar.bz2
+ dfadbc140588ab9054c8af0c83f304dc8e9fe3674fe900cb88af221fcc3b1ab6 60702778 wine-gecko2.36_2.36-0ubuntu1~ppa1.debian.tar.gz
+ 79443fcb53edab7911f76b5feff4821fdf780aa9642d39b726912a5e3b61e399 1175 wine-gecko2.36_2.36-0ubuntu1~ppa1.dsc
+Homepage: http://www.winehq.org/
+Package-List: wine-gecko2.36 deb multiverse/otherosfs optional
+
 Package: wine-mono0.0.8
 Binary: wine-mono0.0.8
 Version: 0.0.8-0ubuntu1~ppa2
@@ -2975,6 +3000,31 @@ Checksums-Sha256:
  1a1341d54e3079755a124274bdaa63d9d556a1f76c41c0117b7976aa9db1a5f2 1180 wine-mono4.5.4_4.5.4-0ubuntu1~ppa1.dsc
 Homepage: http://www.winehq.org/
 Package-List: wine-mono4.5.4 deb multiverse/otherosfs optional
+
+Package: wine-mono4.5.6
+Binary: wine-mono4.5.6
+Version: 4.5.6-0ubuntu1~ppa1
+Section: otherosfs
+Maintainer: Scott Ritchie <scottritchie@ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/universe/w/wine-mono4.5.6
+Files:
+ f8f1e78bf3e454a9f4c88d7470642736 111848216 wine-mono4.5.6_4.5.6.orig.tar.gz
+ 74f768c5de3fcbbba1603419d134e226 53279578 wine-mono4.5.6_4.5.6-0ubuntu1~ppa1.debian.tar.gz
+ 9a97c14fc1008a4bdedd974e624ad60c 1172 wine-mono4.5.6_4.5.6-0ubuntu1~ppa1.dsc
+Checksums-Sha1:
+ 480d97561532d84fba999ae5835463f4784a8810 111848216 wine-mono4.5.6_4.5.6.orig.tar.gz
+ 66650e3c1e910e526ff3a583ea49ddfb24b63547 53279578 wine-mono4.5.6_4.5.6-0ubuntu1~ppa1.debian.tar.gz
+ 2dad581628ea5eccd95ef087ddf9cf2a9431c8c3 1172 wine-mono4.5.6_4.5.6-0ubuntu1~ppa1.dsc
+Checksums-Sha256:
+ cd91ec03dfc984c4101bfe5221f291da88de52ebf0c0efc87d5eb24875dde636 111848216 wine-mono4.5.6_4.5.6.orig.tar.gz
+ dc5e5183c8e4f3986c09308d7d2c72df62124dd55adca10450d1c89c7084c561 53279578 wine-mono4.5.6_4.5.6-0ubuntu1~ppa1.debian.tar.gz
+ 7724c8e21e9fcd9f541a237644861c9d319fdcf577aeecd1f2fe6159b22cbbfb 1172 wine-mono4.5.6_4.5.6-0ubuntu1~ppa1.dsc
+Homepage: http://www.winehq.org/
+Package-List: wine-mono4.5.6 deb multiverse/otherosfs optional
 
 Package: wine1.7
 Binary: wine1.7-i386, wine1.7-amd64, wine1.7, wine1.7-dev, wine1.7-dbg, wine
