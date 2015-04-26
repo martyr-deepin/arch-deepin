@@ -114,7 +114,7 @@
   {
     "Name": "deepin-gtk-theme",
     "OriginRepoDir": "deepin-gtk-theme",
-    "Updated": true,
+    "Updated": false,
     "LastVersion": "14.07+20150327153743~2d420cb0b9",
     "LastVersionFixed": "14.07.20150327153743"
   },

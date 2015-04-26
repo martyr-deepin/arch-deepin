@@ -829,3 +829,6 @@
 
 2015-04-26 19:22:28 upload-aur: [BEGIN]
 2015-04-26 19:22:39 upload-aur: [SUCCESS] deepin-screenshot
+
+2015-04-26 19:37:49 udpate-pkgbuild: [BEGIN]
+2015-04-26 19:37:49 update-pkgbuild: [SUCCESS] deepin-gtk-theme updated=false version=14.07+20150327153743~2d420cb0b9
