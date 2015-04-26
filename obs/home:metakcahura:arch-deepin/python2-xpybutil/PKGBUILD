@@ -1,9 +1,9 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com> 
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=python2-xpybutil
 _name=xpybutil
-pkgver=20120323
+pkgver=20150213
 pkgrel=1
 pkgdesc="A Python rendition of xcb-util. EWMH, ICCCM, key binding, Xinerama, etc..."
 arch=('any')
@@ -11,12 +11,14 @@ url="http://burntsushi.net/X11/xpybutil"
 license=('GPL')
 depends=('python2-xpyb')
 optdepends=('python2-pillow')
-conflicts=()
-source=("${_name}-${pkgver}.tar.xz")
+provides=('xpybutil')
+conflicts=('xpybutil')
+replaces=('xpybutil')
+source=("https://github.com/BurntSushi/xpybutil/archive/master.zip")
 md5sums=('SKIP')
 
 package() {
-  cd "${_name}-${pkgver}"
+  cd "${_name}-master"
 
-  python2 setup.py install --root=$pkgdir
+  python2 setup.py install --root="${pkgdir}"
 }
