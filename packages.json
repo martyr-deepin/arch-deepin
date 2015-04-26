@@ -292,12 +292,5 @@
     "Updated": false,
     "LastVersion": "1~git20140610",
     "LastVersionFixed": "1.git20140610"
-  },
-  {
-    "Name": "qtav",
-    "OriginRepoDir": "qtav",
-    "Updated": true,
-    "LastVersion": "2.0+20150424100710",
-    "LastVersionFixed": "2.0.20150424100710"
   }
 ]
