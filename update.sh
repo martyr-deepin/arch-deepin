@@ -144,6 +144,21 @@ do_aur_upload() {
   eval "${upcmd}" || return 1
 }
 
+###* Generate changelog
+gen_changelog() {
+  local content=
+  for p in $(get_all_packages); do
+    if get_package_updated "${p}"; then
+        content="${content}\n - Update ${p} to $(get_package_lastversionfixed ${p})"
+    fi
+  done
+  if [ "${content}" ]; then
+      content="Version $(date +'%Y%M%d')\n${content}\n\n"
+      (echo -e "${content}"; cat "${changlogfile}") > "${changlogfile}".bak
+      mv "${changlogfile}".bak "${changlogfile}"
+  fi
+}
+
 ###* Main
 # basic configuration
 set -e
@@ -159,6 +174,7 @@ obsdir="obs/home:metakcahura:arch-deepin"
 pkgbuild_in="PKGBUILD.in"
 service_in="_service.in"
 aur_upload_cmd="burp -v %s"
+changlogfile="CHANGELOG.md"
 
 show_usage() {
   cat <<EOF
@@ -179,7 +195,6 @@ options:
     -h, --help
         show this message
 EOF
-  exit 1
 }
 
 # arguments
@@ -190,6 +205,7 @@ arg_no_packages=()
 arg_mark_updated=
 arg_makepkg=
 arg_upload_aur=
+arg_update_pkgbuild=
 
 while [ $# -gt 0 ]; do
   case "${1}" in
@@ -206,6 +222,11 @@ done
 
 if [ "${arg_show_usage}" ]; then
     show_usage
+    exit 1
+fi
+
+if [ -z "${arg_makepkg}" -a -z "${arg_upload_aur}" ]; then
+    arg_update_pkgbuild=1
 fi
 
 if [ ! "${arg_no_download_reposources}" ]; then
@@ -258,6 +279,10 @@ for p in "${pkgs[@]}"; do
       set_package_updated "${p}" "true"
   fi
 done
+
+if [ "${arg_update_pkgbuild}" ]; then
+    gen_changelog
+fi
 
 # Local Variables:
 # mode: sh
