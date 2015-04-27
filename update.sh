@@ -235,14 +235,6 @@ for no_pkg in "${arg_no_packages[@]}"; do
   done
 done
 
-if [ "${arg_makepkg}" ]; then
-    log_begin "makepkg"
-elif [ "${arg_upload_aur}" ]; then
-    log_begin "upload-aur"
-else
-  log_begin "udpate-pkgbuild"
-fi
-
 for p in "${pkgs[@]}"; do
   if [ "${arg_mark_updated}" ]; then
       set_package_updated "${p}" "true"
