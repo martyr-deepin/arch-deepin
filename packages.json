@@ -16,7 +16,7 @@
   {
     "Name": "dde-control-center",
     "OriginRepoDir": "dde-control-center",
-    "Updated": true,
+    "Updated": false,
     "LastVersion": "0.1+20150413164707~6ec15a41de",
     "LastVersionFixed": "0.1.20150413164707"
   },
@@ -31,13 +31,13 @@
     "Name": "dde-dock-applets",
     "OriginRepoDir": "dde-dock-applets",
     "Updated": true,
-    "LastVersion": "0.0.4+20150414222121~22d474967c",
-    "LastVersionFixed": "0.0.4.20150414222121"
+    "LastVersion": "0.0.4+20150427095046~4311ed4614",
+    "LastVersionFixed": "0.0.4.20150427095046"
   },
   {
     "Name": "dde-workspace",
     "OriginRepoDir": "deepin-desktop-environment",
-    "Updated": true,
+    "Updated": false,
     "LastVersion": "2.1+20150413170547~9fbb0869bf",
     "LastVersionFixed": "2.1.20150413170547"
   },
@@ -128,21 +128,21 @@
   {
     "Name": "deepin-menu",
     "OriginRepoDir": "deepin-menu",
-    "Updated": true,
+    "Updated": false,
     "LastVersion": "1.1+20150415155150~faffe35053",
     "LastVersionFixed": "1.1.20150415155150"
   },
   {
     "Name": "deepin-movie",
     "OriginRepoDir": "deepin-movie",
-    "Updated": true,
+    "Updated": false,
     "LastVersion": "2.2.1+20150424170255~9759b316cf",
     "LastVersionFixed": "2.2.1.20150424170255"
   },
   {
     "Name": "deepin-music-player",
     "OriginRepoDir": "deepin-music-player",
-    "Updated": true,
+    "Updated": false,
     "LastVersion": "1.1+20150413165956~fa225d345b",
     "LastVersionFixed": "1.1.20150413165956"
   },
@@ -150,8 +150,8 @@
     "Name": "deepin-notifications",
     "OriginRepoDir": "deepin-notifications",
     "Updated": true,
-    "LastVersion": "0.3+20150311135741~2d222740e3",
-    "LastVersionFixed": "0.3.20150311135741"
+    "LastVersion": "0.3+20150427175348~b2f1890574",
+    "LastVersionFixed": "0.3.20150427175348"
   },
   {
     "Name": "deepin-pygtk",
@@ -163,7 +163,7 @@
   {
     "Name": "deepin-qml-widgets",
     "OriginRepoDir": "deepin-qml-widgets",
-    "Updated": true,
+    "Updated": false,
     "LastVersion": "0.0.2+20150423102550~daef82ffb6",
     "LastVersionFixed": "0.0.2.20150423102550"
   },
@@ -171,8 +171,8 @@
     "Name": "deepin-screenshot",
     "OriginRepoDir": "deepin-screenshot",
     "Updated": true,
-    "LastVersion": "3.0+20150422133441~7bc9c8b83a",
-    "LastVersionFixed": "3.0.20150422133441"
+    "LastVersion": "3.0+20150427130200~34d48c47e58",
+    "LastVersionFixed": "3.0.201504271302008"
   },
   {
     "Name": "deepin-terminal",
@@ -205,7 +205,7 @@
   {
     "Name": "go-dlib",
     "OriginRepoDir": "go-dlib",
-    "Updated": true,
+    "Updated": false,
     "LastVersion": "0.0.4+20150227094412~8e9523b66a",
     "LastVersionFixed": "0.0.4.20150227094412"
   },

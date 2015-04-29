@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">packages.linuxdeepin.com</param>
     <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/d/deepin-screenshot/deepin-screenshot_3.0+20150422133441~7bc9c8b83a.tar.gz</param>
+    <param name="path">/deepin/pool/main/d/deepin-screenshot/deepin-screenshot_3.0+20150427130200~34d48c47e58.tar.gz</param>
   </service>
 </services>

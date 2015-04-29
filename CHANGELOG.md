@@ -1,3 +1,10 @@
+Version 20154429
+
+ - Update dde-dock-applets to 0.0.4.20150427095046
+ - Update deepin-notifications to 0.3.20150427175348
+ - Update deepin-screenshot to 3.0.201504271302008
+
+
 Version 20152927
 
  - deepin-music-player bump version to 3.0, see more [here](http://planet.linuxdeepin.com/deepin-screenshot-v3-0-released-taking-screenshots-easily/)

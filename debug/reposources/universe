@@ -955,7 +955,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-nvidia/libvdpau.git
 
 Package: lwqq
 Binary: liblwqq0, liblwqq-dev, liblwqq-dbg
-Version: 0.4.3+git201504170039.eeafe03-1~lainme~trusty
+Version: 0.5.0+git201504242304.4257454-1~lainme~trusty
 Section: net
 Maintainer: lainme <lainme993@gmail.com>
 Build-Depends: debhelper (>= 7), cdbs, cmake, pkg-config, libcurl4-openssl-dev | libcurl4-nss-dev | libcurl4-gnutls-dev, libsqlite3-dev, libev-dev, libmozjs-17.0-dev | libmozjs185-dev, zlib1g-dev
@@ -964,17 +964,17 @@ Standards-Version: 3.9.3
 Format: 3.0 (quilt)
 Directory: pool/universe/l/lwqq
 Files:
- 0a4f6d815e6c0ea6899ae523584d1d78 178149 lwqq_0.4.3+git201504170039.eeafe03.orig.tar.gz
- cd28175734e33b36492d5d2234bf5fcb 4161 lwqq_0.4.3+git201504170039.eeafe03-1~lainme~trusty.debian.tar.gz
- e91f5de680009a5c21be23b000d22f64 2119 lwqq_0.4.3+git201504170039.eeafe03-1~lainme~trusty.dsc
+ 9a53c8bfac4faa8e1603d1b29d9cbfc1 181598 lwqq_0.5.0+git201504242304.4257454.orig.tar.gz
+ bcd5a62eb9415c7647ece79bc07938aa 4201 lwqq_0.5.0+git201504242304.4257454-1~lainme~trusty.debian.tar.gz
+ 928b11c2466458290c517365ae7dd3cd 2119 lwqq_0.5.0+git201504242304.4257454-1~lainme~trusty.dsc
 Checksums-Sha1:
- 5026d254ced92b5a2a60c0e07ddafc09b0a3ac39 178149 lwqq_0.4.3+git201504170039.eeafe03.orig.tar.gz
- 41cfcc3b15c09247ebca5297e36e8ebd2d2f585e 4161 lwqq_0.4.3+git201504170039.eeafe03-1~lainme~trusty.debian.tar.gz
- 159e8cc0c3a1439ee9d50bb45425115707ba5f9a 2119 lwqq_0.4.3+git201504170039.eeafe03-1~lainme~trusty.dsc
+ 170671c68e031d406e70fdc076ed0b547bc06501 181598 lwqq_0.5.0+git201504242304.4257454.orig.tar.gz
+ ba66aeabe918621bfc305fb9572a87548a841b02 4201 lwqq_0.5.0+git201504242304.4257454-1~lainme~trusty.debian.tar.gz
+ 65dff5d1f56ac2e0fb1b6a033e72445862612518 2119 lwqq_0.5.0+git201504242304.4257454-1~lainme~trusty.dsc
 Checksums-Sha256:
- b364d5ff32f8716fd917387c58fb50ab9eba087d845d032b2110d9d428640439 178149 lwqq_0.4.3+git201504170039.eeafe03.orig.tar.gz
- 8680c7c05efa441a1208ffd4a21430b50d74635b259cfc27d69e966b4970b84c 4161 lwqq_0.4.3+git201504170039.eeafe03-1~lainme~trusty.debian.tar.gz
- a38aa3085055b0c2cecaca3282e67d986bc6770223a7ecba53a7a6a5dbd3c6b1 2119 lwqq_0.4.3+git201504170039.eeafe03-1~lainme~trusty.dsc
+ a6ffe2614a250c9fb9c5942e668a56fc5f741946470ab365b542ad36903dfb86 181598 lwqq_0.5.0+git201504242304.4257454.orig.tar.gz
+ 02f4f9fcdaf399c7d254019229609d5ebcdd1237f23521ba1c3055964c97f70f 4201 lwqq_0.5.0+git201504242304.4257454-1~lainme~trusty.debian.tar.gz
+ 0f1dc99c2abe2f8436b2109b646667528bc29b2bba44bf442b410abd8eca41e9 2119 lwqq_0.5.0+git201504242304.4257454-1~lainme~trusty.dsc
 Homepage: https://github.com/xiehuc/lwqq
 Package-List: liblwqq-dbg deb debug extra
  liblwqq-dev deb libdevel extra
@@ -1181,7 +1181,7 @@ Package-List: monodevelop-debugger-gdb-5 deb cli-mono extra
 
 Package: nvidia-graphics-drivers-340
 Binary: nvidia-340, nvidia-340-dev, libcuda1-340, nvidia-libopencl1-340, nvidia-opencl-icd-340, nvidia-340-uvm
-Version: 340.76-100ubuntu100~ppa0~trusty
+Version: 340.76-100ubuntu100~ppa1~trusty0
 Section: misc
 Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Build-Depends: debhelper (>= 8.0.0), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, libc6, libxvmc1, dh-modaliases, libxv1
@@ -1190,14 +1190,14 @@ Standards-Version: 3.8.0
 Format: 1.0
 Directory: pool/universe/n/nvidia-graphics-drivers-340
 Files:
- a2950ca477ffca518afde27df80cff91 77444737 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa0~trusty.tar.gz
- 21ed13638f7980f576f6d73d3461a8e1 2263 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa0~trusty.dsc
+ 47dc307e0e3878a107a7c6314aababa6 77444869 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa1~trusty0.tar.gz
+ cfbec107f1d10029f30f435231eb61d4 2267 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa1~trusty0.dsc
 Checksums-Sha1:
- ebd833cd20ca4651b62f4f2bf8c3fe931b155660 77444737 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa0~trusty.tar.gz
- 50bd631c066e7dcd6d5a0699bdf6e4e0e82e722e 2263 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa0~trusty.dsc
+ 737747d3cc3d9211ece123bdb550a43f26835077 77444869 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa1~trusty0.tar.gz
+ 126820fb6f74afb78c521999ab940ed0d2be761f 2267 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa1~trusty0.dsc
 Checksums-Sha256:
- cb137f049d2f5e6bab5e00ca13292f088416da6bf29defe14e6af96472f5ec57 77444737 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa0~trusty.tar.gz
- 8b29d200ea38bf229c041e6eae537e446dff36b1ec0da78faf3e9a846e908eab 2263 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa0~trusty.dsc
+ 9c297f7cfb2e4cfc695e2fdf75f1bad4b79f7bd974c63b8351857db82cc0a74e 77444869 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa1~trusty0.tar.gz
+ 16ce64d25052a174326af964a1a2ea781a6e4c4d48fb51fa23756399ec466db9 2267 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa1~trusty0.dsc
 Package-List: libcuda1-340 deb restricted/misc optional arch=i386,amd64
  nvidia-340 deb restricted/misc optional arch=i386,amd64
  nvidia-340-dev deb restricted/misc optional arch=i386,amd64
@@ -1372,26 +1372,26 @@ Checksums-Sha256:
 
 Package: pidgin-lwqq
 Binary: pidgin-lwqq, pidgin-lwqq-dbg
-Version: 0.4.3+git201504170014.2a9ca53-1~lainme~trusty
+Version: 0.5.0+git201504242309.81a92de-1~lainme~trusty
 Section: net
 Maintainer: lainme <lainme993@gmail.com>
-Build-Depends: debhelper (>= 7), cdbs, cmake, pkg-config, libglib2.0-dev, libpurple-dev, liblwqq-dev (>= 0.4.2)
+Build-Depends: debhelper (>= 7), cdbs, cmake, pkg-config, libglib2.0-dev, libpurple-dev, liblwqq-dev (>= 0.5.0)
 Architecture: any
 Standards-Version: 3.9.3
 Format: 3.0 (quilt)
 Directory: pool/universe/p/pidgin-lwqq
 Files:
- 5e2b9a98680691f48668fe60eee6bf70 1955943 pidgin-lwqq_0.4.3+git201504170014.2a9ca53.orig.tar.gz
- b449667a7c4815eedf2259c6a4c67e9b 3364 pidgin-lwqq_0.4.3+git201504170014.2a9ca53-1~lainme~trusty.debian.tar.gz
- c1241a1946434bd3da741ed92c73c464 2063 pidgin-lwqq_0.4.3+git201504170014.2a9ca53-1~lainme~trusty.dsc
+ 83659abde4d9e7d86447cebdab1869d6 1958104 pidgin-lwqq_0.5.0+git201504242309.81a92de.orig.tar.gz
+ adabca82a9d611c40b2a119ebae85455 3449 pidgin-lwqq_0.5.0+git201504242309.81a92de-1~lainme~trusty.debian.tar.gz
+ d308e4386dd7b65c739a4fcf500b6f8c 2063 pidgin-lwqq_0.5.0+git201504242309.81a92de-1~lainme~trusty.dsc
 Checksums-Sha1:
- c86bda5d9739b68faec063aa0be7ae4181f53e66 1955943 pidgin-lwqq_0.4.3+git201504170014.2a9ca53.orig.tar.gz
- ea02b698ee387cc2187ac1f57c1f7db951f4e84b 3364 pidgin-lwqq_0.4.3+git201504170014.2a9ca53-1~lainme~trusty.debian.tar.gz
- 8dd4836111bdf285c8981ac3d8e397010e802a2e 2063 pidgin-lwqq_0.4.3+git201504170014.2a9ca53-1~lainme~trusty.dsc
+ b2270b59a5248ce420fe852c59f926c2a2e3587c 1958104 pidgin-lwqq_0.5.0+git201504242309.81a92de.orig.tar.gz
+ fadf7570feabc468df4bcef81fd6fd09f674cb57 3449 pidgin-lwqq_0.5.0+git201504242309.81a92de-1~lainme~trusty.debian.tar.gz
+ 340895a57b2a0d51efa5ce32580b48add0354cd6 2063 pidgin-lwqq_0.5.0+git201504242309.81a92de-1~lainme~trusty.dsc
 Checksums-Sha256:
- 98f992cadb374477a297b95c1d2ad33a795bd9021a1d3de93a8af5369cee7db4 1955943 pidgin-lwqq_0.4.3+git201504170014.2a9ca53.orig.tar.gz
- 4d91f4dc1d345eb2e98ecb7653e0cb478dca145a2692745f329ac23884a25446 3364 pidgin-lwqq_0.4.3+git201504170014.2a9ca53-1~lainme~trusty.debian.tar.gz
- 887cea2c01018d7d54d10986c2658b0e413b2b18b8b3dac64e277c7d952e6e43 2063 pidgin-lwqq_0.4.3+git201504170014.2a9ca53-1~lainme~trusty.dsc
+ 0399ca3eaeff7ddbcf8aa894bf7f134735373829931606b461537d6af097e3ad 1958104 pidgin-lwqq_0.5.0+git201504242309.81a92de.orig.tar.gz
+ fd1fd913e3738b565ff8a3e6f42e81a7134917fecd75a200ecbfcdbc1e3b5c47 3449 pidgin-lwqq_0.5.0+git201504242309.81a92de-1~lainme~trusty.debian.tar.gz
+ 96f5fc1bb39b2097da95cf887d312ae2a9efdfeb46d4e4c092e6b44f93b6160e 2063 pidgin-lwqq_0.5.0+git201504242309.81a92de-1~lainme~trusty.dsc
 Homepage: https://github.com/xiehuc/pidgin-lwqq
 Package-List: pidgin-lwqq deb net extra
  pidgin-lwqq-dbg deb debug extra

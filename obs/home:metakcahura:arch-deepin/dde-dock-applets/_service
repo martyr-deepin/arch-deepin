@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">packages.linuxdeepin.com</param>
     <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/d/dde-dock-applets/dde-dock-applets_0.0.4+20150414222121~22d474967c.tar.gz</param>
+    <param name="path">/deepin/pool/main/d/dde-dock-applets/dde-dock-applets_0.0.4+20150427095046~4311ed4614.tar.gz</param>
   </service>
 </services>

@@ -848,7 +848,7 @@ Package: dde-dock-applets
 Format: 3.0 (native)
 Binary: dde-dock-applets
 Architecture: any
-Version: 0.0.4+20150414222121~22d474967c
+Version: 0.0.4+20150427095046~4311ed4614
 Maintainer: Mellon Xie <xielingyun@linuxdeepin.com>
 Homepage: https://gitcafe.com/Deepin/dde-dock-applets
 Standards-Version: 3.9.5
@@ -859,14 +859,14 @@ Priority: optional
 Section: admin
 Directory: pool/main/d/dde-dock-applets
 Files: 
- 47b080ed553caff662e33d67a02b54bc 1382 dde-dock-applets_0.0.4+20150414222121~22d474967c.dsc
- cccacd42488cc50434efd88a8b86b286 111484 dde-dock-applets_0.0.4+20150414222121~22d474967c.tar.gz
+ d1565db76b4259b4589c88c396a8e18d 1382 dde-dock-applets_0.0.4+20150427095046~4311ed4614.dsc
+ 17e5048029d1b58189919312c81c00d7 111430 dde-dock-applets_0.0.4+20150427095046~4311ed4614.tar.gz
 Checksums-Sha1: 
- 286603eb726810ec15ee9ad66e34f0057bb6e343 1382 dde-dock-applets_0.0.4+20150414222121~22d474967c.dsc
- 548b5ac0c582cb2885cf1a650a746cf04e374958 111484 dde-dock-applets_0.0.4+20150414222121~22d474967c.tar.gz
+ 4590d4c726f851fd350b7381336d51e1ca8b2c8d 1382 dde-dock-applets_0.0.4+20150427095046~4311ed4614.dsc
+ ed692de02640bf82eea3c3dae2cf4ee2493ffa51 111430 dde-dock-applets_0.0.4+20150427095046~4311ed4614.tar.gz
 Checksums-Sha256: 
- a59817563e3651c64581fd0810b773640dabae3fc4596dfa68b3725b31b0004c 1382 dde-dock-applets_0.0.4+20150414222121~22d474967c.dsc
- b77ecebe2559d77b2077a8acd65c9608737ff7503cbe50a286faf47a3718ecde 111484 dde-dock-applets_0.0.4+20150414222121~22d474967c.tar.gz
+ 4488259dc26aafb3d74fa585976a5365680d685bd8ef9cf6ab5968d0165211f5 1382 dde-dock-applets_0.0.4+20150427095046~4311ed4614.dsc
+ 98181abdb23e4e4faddd3e11c24af1e0a4f06d77ff044e84807d0dc2a3e6e143 111430 dde-dock-applets_0.0.4+20150427095046~4311ed4614.tar.gz
 
 Package: dde-meta
 Format: 3.0 (native)
@@ -1356,7 +1356,7 @@ Package: deepin-installer
 Format: 3.0 (native)
 Binary: deepin-installer
 Architecture: any
-Version: 1.1+20150423163901~ec7c44bf6f
+Version: 1.1+20150427104605~e942da7bf1
 Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
 Homepage: http://www.linuxdeepin.com
 Standards-Version: 3.9.2
@@ -1367,14 +1367,14 @@ Priority: extra
 Section: utils
 Directory: pool/main/d/deepin-installer
 Files: 
- 4723587c6861ca72601cad9046c3b4bf 1583 deepin-installer_1.1+20150423163901~ec7c44bf6f.dsc
- c3f3248212f705a5a6c66b8ef034008d 4879275 deepin-installer_1.1+20150423163901~ec7c44bf6f.tar.gz
+ aeed20916dcabfb6ba59d04023d5112d 1583 deepin-installer_1.1+20150427104605~e942da7bf1.dsc
+ 3e8eda9d686ecd86d9e6a186e22295ee 4878859 deepin-installer_1.1+20150427104605~e942da7bf1.tar.gz
 Checksums-Sha1: 
- 86ec5824eb197e9a0ec04ca262cb1237c098fe26 1583 deepin-installer_1.1+20150423163901~ec7c44bf6f.dsc
- 720d38d5d04a8912d9e54341598a2662f4122eb9 4879275 deepin-installer_1.1+20150423163901~ec7c44bf6f.tar.gz
+ 4201f8bdbbe1a8eedf34ccc7b8fd6aba3d98a586 1583 deepin-installer_1.1+20150427104605~e942da7bf1.dsc
+ e3eaea3aff20e5bac9693a1976e06e3dbb57317b 4878859 deepin-installer_1.1+20150427104605~e942da7bf1.tar.gz
 Checksums-Sha256: 
- f4a8b28e97d768e26bf5b06fd42c58665d70fa599580d6380fefc7207a0f48f0 1583 deepin-installer_1.1+20150423163901~ec7c44bf6f.dsc
- a8ed90421cf4cf90ef93b8b8e38a922c1984ffd3aa5116b820b116f8fbf222c6 4879275 deepin-installer_1.1+20150423163901~ec7c44bf6f.tar.gz
+ 2455df476670dbf80d230800ac4313a0f78af71f9fde506286dabd24f94e6974 1583 deepin-installer_1.1+20150427104605~e942da7bf1.dsc
+ a77d1f54910e4063a1317b8fa479b38068bd14e4dfd847bdd3073b97abfc52c6 4878859 deepin-installer_1.1+20150427104605~e942da7bf1.tar.gz
 
 Package: deepin-media-player
 Format: 3.0 (native)
@@ -1476,7 +1476,7 @@ Package: deepin-notifications
 Format: 3.0 (native)
 Binary: deepin-notifications
 Architecture: any
-Version: 0.3+20150311135741~2d222740e3
+Version: 0.3+20150427175348~b2f1890574
 Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
 Homepage: http://www.linuxdeepin.com
 Standards-Version: 3.9.5
@@ -1487,14 +1487,14 @@ Priority: extra
 Section: misc
 Directory: pool/main/d/deepin-notifications
 Files: 
- 0664539bf83d6763a78909cbc38ea9dd 1285 deepin-notifications_0.3+20150311135741~2d222740e3.dsc
- 436bc85884b65c09af57877faea8b3c8 30146 deepin-notifications_0.3+20150311135741~2d222740e3.tar.gz
+ ab11bbde1e922925f2d195d79b790b98 1268 deepin-notifications_0.3+20150427175348~b2f1890574.dsc
+ 0ca6b3a93475ed670b8e1ae7319c7b0c 30208 deepin-notifications_0.3+20150427175348~b2f1890574.tar.gz
 Checksums-Sha1: 
- 7180d12ac9954bdfa2b9a81ffdc0b2d4f472be97 1285 deepin-notifications_0.3+20150311135741~2d222740e3.dsc
- 7ce1fe76ba9cb17723d2667ba378aea80f15f44b 30146 deepin-notifications_0.3+20150311135741~2d222740e3.tar.gz
+ 72df789bc5e461e21786ff94894fbc9513ea7b06 1268 deepin-notifications_0.3+20150427175348~b2f1890574.dsc
+ 0f7ca09525eb0a918ff02224f063e9071bd9f26b 30208 deepin-notifications_0.3+20150427175348~b2f1890574.tar.gz
 Checksums-Sha256: 
- b6391fb256ebe8e50ba88914c07824cc5805166c9c264b359e27a5a1c2354d23 1285 deepin-notifications_0.3+20150311135741~2d222740e3.dsc
- aec9737063710133fdcc4e1119c26695fe7444bce32c08456af90e75c06435ee 30146 deepin-notifications_0.3+20150311135741~2d222740e3.tar.gz
+ 70ec081159ec0328330c9e5cb7b03ab033bae744659df6debd9fe50716a7f3ab 1268 deepin-notifications_0.3+20150427175348~b2f1890574.dsc
+ ddaedfa3a186c58957507f1d8de40d495804b1b6e3576f314b4835846569c289 30208 deepin-notifications_0.3+20150427175348~b2f1890574.tar.gz
 
 Package: deepin-os-upgrader
 Format: 3.0 (native)
@@ -1595,7 +1595,7 @@ Package: deepin-screenshot
 Format: 3.0 (native)
 Binary: deepin-screenshot
 Architecture: any
-Version: 3.0+20150422133441~7bc9c8b83a
+Version: 3.0+20150427130200~34d48c47e58
 Maintainer: 宋文武 <songwenwu@linuxdeepin.com>
 Standards-Version: 3.9.5
 Build-Depends: debhelper (>= 9), python, deepin-gettext-tools
@@ -1605,14 +1605,14 @@ Priority: extra
 Section: misc
 Directory: pool/main/d/deepin-screenshot
 Files: 
- 3805fbe11b40e4ab64db9e43cc397ab1 1209 deepin-screenshot_3.0+20150422133441~7bc9c8b83a.dsc
- 1b17dec6599b964f68ae2851e9053696 120648 deepin-screenshot_3.0+20150422133441~7bc9c8b83a.tar.gz
+ 71bfe00e047c9dd689610ec6529358b5 1213 deepin-screenshot_3.0+20150427130200~34d48c47e58.dsc
+ a685103d57e560ca891ab66c1ce46b07 121998 deepin-screenshot_3.0+20150427130200~34d48c47e58.tar.gz
 Checksums-Sha1: 
- 0cf73ddbc14c766fb9682698832ea82e0ff6bf4b 1209 deepin-screenshot_3.0+20150422133441~7bc9c8b83a.dsc
- 9a8ed3dadc107e9cbd7272e391ef29095900bc48 120648 deepin-screenshot_3.0+20150422133441~7bc9c8b83a.tar.gz
+ 946f4abb4ccbe9010a626eb01dd37599d7972925 1213 deepin-screenshot_3.0+20150427130200~34d48c47e58.dsc
+ c335a52904e00c68d543881dda170e7aee5322b8 121998 deepin-screenshot_3.0+20150427130200~34d48c47e58.tar.gz
 Checksums-Sha256: 
- 17f7252fd752d7a83bd524714e296eb42f82ba9edd33cbaabdff6cfc29b30d5e 1209 deepin-screenshot_3.0+20150422133441~7bc9c8b83a.dsc
- 4a75dcdbd8c8b57c16adb8c402aecf391c962ae1d9e107e945bbd99c1c989cca 120648 deepin-screenshot_3.0+20150422133441~7bc9c8b83a.tar.gz
+ 0fbd0306039e207a6c94cc58d06e6f99c4d9d1bde2130d1df333bc3ab806a006 1213 deepin-screenshot_3.0+20150427130200~34d48c47e58.dsc
+ 845770eb7697f2025ebc55678f8a82240701171c6af2593bdb055c53c7b7c43e 121998 deepin-screenshot_3.0+20150427130200~34d48c47e58.tar.gz
 
 Package: deepin-session-fastup
 Format: 3.0 (quilt)
@@ -1693,7 +1693,7 @@ Package: deepin-software-center
 Format: 3.0 (native)
 Binary: deepin-software-center
 Architecture: all
-Version: 3.0.1+20150414162001~1b81fab771
+Version: 3.0.1+20150427175111~6606e4e26a
 Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
 Homepage: https://github.com/manateelazycat/deepin-software-center
 Standards-Version: 3.9.2
@@ -1704,20 +1704,20 @@ Priority: optional
 Section: admin
 Directory: pool/main/d/deepin-software-center
 Files: 
- aec4c3035fd175dfb7296d8fe8aeb630 1322 deepin-software-center_3.0.1+20150414162001~1b81fab771.dsc
- 165f4734887ce331f083405c2fd34e02 18500004 deepin-software-center_3.0.1+20150414162001~1b81fab771.tar.gz
+ 4f9441b6f192c831cbb574b6d22b8a01 1322 deepin-software-center_3.0.1+20150427175111~6606e4e26a.dsc
+ b598002208b500ba6e9da6840efb1439 18497904 deepin-software-center_3.0.1+20150427175111~6606e4e26a.tar.gz
 Checksums-Sha1: 
- f6bb5f0b9ff7f3c949b93e881e352b4a0f1e7c09 1322 deepin-software-center_3.0.1+20150414162001~1b81fab771.dsc
- 8b21cea9c2e16c63affd43d097b4088f97f348b1 18500004 deepin-software-center_3.0.1+20150414162001~1b81fab771.tar.gz
+ 66d774d7108c09539a21a858d456a9a35210819a 1322 deepin-software-center_3.0.1+20150427175111~6606e4e26a.dsc
+ 82a8690f9231620847168a112ca9773480a0a241 18497904 deepin-software-center_3.0.1+20150427175111~6606e4e26a.tar.gz
 Checksums-Sha256: 
- 89c64f0ab31075369acf0bcbf13919e65d8207ca7062c8651d1e76601e509dd7 1322 deepin-software-center_3.0.1+20150414162001~1b81fab771.dsc
- e689d4c774194b7be169727498065f0b18dbcb1fa99cc4617c5e49c1edbed512 18500004 deepin-software-center_3.0.1+20150414162001~1b81fab771.tar.gz
+ 7da8118e0ca1bc8d450c140d6b876a36897ac833f79c7d6f56933fc5cd1eb9fc 1322 deepin-software-center_3.0.1+20150427175111~6606e4e26a.dsc
+ c54c5e9d99bff73cb342b80078e872c73442969d06ba6df6998ecb6ab381145b 18497904 deepin-software-center_3.0.1+20150427175111~6606e4e26a.tar.gz
 
 Package: deepin-software-center-data
 Format: 3.0 (native)
 Binary: deepin-software-center-data
 Architecture: all
-Version: 3.0.1+20150411125432
+Version: 3.0.1+20150420125432
 Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
 Homepage: https://github.com/manateelazycat/deepin-software-center
 Standards-Version: 3.9.2
@@ -1728,14 +1728,14 @@ Priority: optional
 Section: admin
 Directory: pool/main/d/deepin-software-center-data
 Files: 
- 5d3985698d618355d09bf484da4b2d22 1308 deepin-software-center-data_3.0.1+20150411125432.dsc
- 6dc08e0003831451d7f441fc3be8d7ba 30454003 deepin-software-center-data_3.0.1+20150411125432.tar.gz
+ 64077b99117ca16db4fffa0c30c73b36 1308 deepin-software-center-data_3.0.1+20150420125432.dsc
+ 54332d469bfec59867ca65c9f1437f9f 33739676 deepin-software-center-data_3.0.1+20150420125432.tar.gz
 Checksums-Sha1: 
- c77ef82883673d890dcd5e7aca9bbb51b1398ac4 1308 deepin-software-center-data_3.0.1+20150411125432.dsc
- c649a9dcd9856e18e7e12e69e1400d50c830e96c 30454003 deepin-software-center-data_3.0.1+20150411125432.tar.gz
+ f50a6302ab52ae9ca88b140be73fc41b2832e310 1308 deepin-software-center-data_3.0.1+20150420125432.dsc
+ bb67a27d50cc143c0afa612fe40d2b8dbf936048 33739676 deepin-software-center-data_3.0.1+20150420125432.tar.gz
 Checksums-Sha256: 
- de6a8ed34e42c561ddd3b8b94a5a35b58d9cc1b253a7ad6ab12af7123d1a8b36 1308 deepin-software-center-data_3.0.1+20150411125432.dsc
- 3fe04d88ffc686c0d15d5de544aca7b731de2c34e37519cc7ac3e1442b9c2461 30454003 deepin-software-center-data_3.0.1+20150411125432.tar.gz
+ 7b6c113b61455781fc7778d0cd453ffa130aaf2608328d8ba45a670577a92607 1308 deepin-software-center-data_3.0.1+20150420125432.dsc
+ c4256c4dbf23f1e141b273d9e07c3127cd6ca108d169a5903f0e40602c648514 33739676 deepin-software-center-data_3.0.1+20150420125432.tar.gz
 
 Package: deepin-speech
 Format: 3.0 (native)
