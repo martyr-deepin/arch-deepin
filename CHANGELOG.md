@@ -1,3 +1,9 @@
+Version 20150510
+
+ - Fix qtav file conflicts issue, rename `/usr/lib/qt/bin/player`
+   to `/usr/lib/qt/bin/qtav-player`
+
+
 Version 20154429
 
  - Update dde-dock-applets to 0.0.4.20150427095046
