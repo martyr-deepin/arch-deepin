@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">ffmpeg.org</param>
     <param name="protocol">http</param>
-    <param name="path">/releases/ffmpeg-2.6.2.tar.bz2</param>
+    <param name="path">/releases/ffmpeg-2.6.3.tar.bz2</param>
   </service>
 </services>
