@@ -922,3 +922,5 @@
 2015-05-27 10:00:44 update-pkgbuild: [SUCCESS] go-sqlite3 updated=false version=0.0~git20140913-1
 2015-05-27 10:00:44 update-pkgbuild: [SUCCESS] go-xgb updated=false version=0.0~git20140510-1
 2015-05-27 10:00:45 update-pkgbuild: [SUCCESS] go-xgbutil updated=false version=1~git20140610
+
+2015-05-27 20:08:11 upload-aur: [SUCCESS] deepin-screenshot
