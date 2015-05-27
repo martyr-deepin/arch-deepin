@@ -46,23 +46,23 @@ Package-List: acpi-call-tools deb oldlibs extra
 
 Package: aptik
 Binary: aptik
-Version: 1.6.1~65~ubuntu14.04.1
+Version: 1.6.4~70~ubuntu14.04.1
 Section: utils
 Maintainer: Tony George <tony.george.kol@gmail.com>
-Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac, libgtk-3-dev, libgee-dev, libsoup2.4-dev, libjson-glib-dev
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac, libgtk-3-dev, libgee-dev, libjson-glib-dev
 Architecture: any
 Standards-Version: 3.9.3
 Format: 3.0 (native)
 Directory: pool/universe/a/aptik
 Files:
- 4e6c8da7a59c3501434233bf8d4ef0aa 266772 aptik_1.6.1~65~ubuntu14.04.1.tar.gz
- 104313a57f26ab083959a4567ce48607 688 aptik_1.6.1~65~ubuntu14.04.1.dsc
+ c65f519c6d4af76f01d8d9c92ca3b8eb 133270 aptik_1.6.4~70~ubuntu14.04.1.tar.gz
+ 904a6aa309d8e7ff1fa856a9b4bb414b 672 aptik_1.6.4~70~ubuntu14.04.1.dsc
 Checksums-Sha1:
- 4322e195c0b151eb30f010cfe42efb6a2bb4d7d3 266772 aptik_1.6.1~65~ubuntu14.04.1.tar.gz
- 11bc3ba025ee19fd7495574ab932fae0952f5f0f 688 aptik_1.6.1~65~ubuntu14.04.1.dsc
+ a3e29d307506055d8011bf05bc1a92496e953316 133270 aptik_1.6.4~70~ubuntu14.04.1.tar.gz
+ 83f3f62410bcbe3d69d511c26a7f7fe6e318698d 672 aptik_1.6.4~70~ubuntu14.04.1.dsc
 Checksums-Sha256:
- d3f02f6fc1a07115b051f08d761e6911ceb75dcc2d0a2c2ad2c59fc18ea54782 266772 aptik_1.6.1~65~ubuntu14.04.1.tar.gz
- 9c85765ee0aca588b2c21904a1e88bce0793bd3a525f66e01ee6216adf86719f 688 aptik_1.6.1~65~ubuntu14.04.1.dsc
+ 46b34ad5a75a772134a7d7750146aac7b0d89a5d9e15d5d98f3ad7a2861567c4 133270 aptik_1.6.4~70~ubuntu14.04.1.tar.gz
+ eed42df3b73f2f61785d5a751a58209803bf1362c59db1931fb99b18b4c79c8f 672 aptik_1.6.4~70~ubuntu14.04.1.dsc
 Homepage: http://teejeetech.blogspot.in/
 Package-List: aptik deb utils extra
 
@@ -3079,7 +3079,7 @@ Package-List: winetricks deb otherosfs optional
 
 Package: wiznote
 Binary: wiznote
-Version: 2.1.17
+Version: 2.1.18
 Section: graphics
 Maintainer: lxn <lxn@wiz.cn>
 Build-Depends: debhelper (>= 9), cmake (>= 2.8), libqt4-dev (>= 4.8), libqtwebkit-dev, zlib1g-dev
@@ -3088,14 +3088,14 @@ Standards-Version: 3.9.5
 Format: 3.0 (native)
 Directory: pool/universe/w/wiznote
 Files:
- 3cb3a55c33fd07b557c4fe9388e1fe73 9912291 wiznote_2.1.17.tar.gz
- 685d539d82e1872ad86e12ada077cd94 1115 wiznote_2.1.17.dsc
+ 1287d5ae1e4055b67fe6ce9448f2b25c 9948200 wiznote_2.1.18.tar.gz
+ 75e42ef63597cb41598dd5a2f3ffe4bd 1115 wiznote_2.1.18.dsc
 Checksums-Sha1:
- d266c818ee583083a08eb6f97884ac2cd804402f 9912291 wiznote_2.1.17.tar.gz
- f171a1148f2f8633aecb832c7882dfd747add134 1115 wiznote_2.1.17.dsc
+ 809d41bde89b8f138d74352ac4bdc52b6593aaaa 9948200 wiznote_2.1.18.tar.gz
+ 64a1f5f4232f3024966774b8b40a6ae4b7d7d956 1115 wiznote_2.1.18.dsc
 Checksums-Sha256:
- d8dcbd3beb4468db6e1c9daee17246a4cd7c44615e45e8b5ffd10adb6b2dadb0 9912291 wiznote_2.1.17.tar.gz
- 56b5d6f11aee9cb9611087b762e383dc1822f3776152bab4fd2f6b0880743411 1115 wiznote_2.1.17.dsc
+ 1dec086881352800629cae62c36eab319ffd0f17f225bcd611fd5e041d7df8db 9948200 wiznote_2.1.18.tar.gz
+ 0450c4acefe39627970271985d4c8e00d956b8475f8e02e8101df99d00d63687 1115 wiznote_2.1.18.dsc
 Homepage: http://www.wiznote.com
 Package-List: wiznote deb graphics standard
 

@@ -1,3 +1,11 @@
+Version 20150027
+
+ - Update dde-dock-applets to 0.0.4.20150521130615
+ - Update dde-workspace to 2.1.20150521160615
+ - Update deepin-movie to 2.2.1.20150512143336
+ - Update deepin-screenshot to 3.0.20150508154858
+
+
 Version 20150510
 
  - Fix qtav file conflicts issue, rename `/usr/lib/qt/bin/player`
