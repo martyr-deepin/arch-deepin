@@ -1,0 +1,34 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=deepin-wm
+pkgver=2014.2.r0.g2cd5c3c
+# TODO:
+# _srcdirname=deepin-wm-2014.2.r0.g2cd5c3c
+_srcdirname=deepin-wm
+pkgrel=1
+pkgdesc="Window manager for deepin, fork of gala"
+# TODO: arch arm
+arch=('i686' 'x86_64' 'armv7h')
+url="https://gitcafe.com/Deepin/deepin-wm"
+license=('GPL3')
+depends=('clutter-gtk' 'deepin-mutter' 'plank')
+makedepends=('gnome-common' 'intltool' 'vala')
+install="${pkgname}.install"
+options=(staticlibs)
+source=("https://gitcafe.com/Deepin/deepin-wm/archiveball/develop/tar.gz")
+sha256sums=('ef7a5221f2a0c7f27cc1d7a0ecca170622f28a323f7faa988dea2cf517c1b5')
+
+build() {
+  cd "${_srcdirname}"
+
+  ./autogen.sh --prefix=/usr \
+		       --disable-schemas-compile
+  make
+}
+
+package() {
+  cd "${_srcdirname}"
+
+  make DESTDIR="${pkgdir}" install
+}

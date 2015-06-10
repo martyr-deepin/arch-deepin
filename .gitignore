@@ -4,6 +4,7 @@ pkgbuild/**/pkg/
 pkgbuild/**/src/
 pkgbuild/**/*.pkg.tar.xz
 pkgbuild/**/*.tar.gz
+pkgbuild/**/*.gz
 pkgbuild/**/*.deb
 pkgbuild/**/*.tar.xz
 pkgbuild/**/*.zip

@@ -1,0 +1,39 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=deepin-mutter
+pkgver=3.14.4.r47.g6b8f377
+# TODO
+# _srcdirname=deepin-mutter-3.14.4.r47.g6b8f377
+_srcdirname=deepin-mutter
+pkgrel=1
+pkgdesc="Base window manager for deepin, fork of gnome mutter"
+# TODO: arch arm
+arch=('i686' 'x86_64' 'armv7h')
+url="https://gitcafe.com/Deepin/deepin-mutter"
+license=('GPL3')
+depends=('clutter' 'dconf' 'gobject-introspection' 'libcanberra' 'startup-notification' 'zenity')
+# TODO: gsettings dde-daemon
+makedepends=('intltool' 'gnome-doc-utils')
+groups=('deepin')
+install="${pkgname}.install"
+options=(staticlibs)
+source=("https://gitcafe.com/Deepin/deepin-mutter/archiveball/develop/tar.gz")
+sha256sums=('5585723a90c4ddb464aab056b8bbc9325565c214e60b9d88cd1eafee2bc1c898')
+
+build() {
+  cd "${_srcdirname}"
+
+  ./autogen.sh --prefix=/usr \
+		       --sysconfdir=/etc \
+		       --enable-gtk-doc \
+		       --disable-schemas-compile \
+		       --enable-compile-warnings=minimum
+  make
+}
+
+package() {
+  cd "${_srcdirname}"
+
+  make DESTDIR="${pkgdir}" install
+}
