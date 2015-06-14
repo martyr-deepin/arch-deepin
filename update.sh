@@ -153,7 +153,7 @@ gen_changelog() {
     fi
   done
   if [ "${content}" ]; then
-      content="Version $(date +'%Y%M%d')\n${content}\n\n"
+      content="Version $(date +'%Y%m%d')\n${content}\n\n"
       (echo -e "${content}"; cat "${changlogfile}") > "${changlogfile}".bak
       mv "${changlogfile}".bak "${changlogfile}"
   fi
