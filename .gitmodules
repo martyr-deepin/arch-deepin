@@ -1,0 +1,36 @@
+[submodule "deepin-game-center"]
+	path = deepin-game-center
+	url = ssh://aur@aur4.archlinux.org/deepin-game-center.git
+[submodule "deepin-gettext-tools"]
+	path = deepin-gettext-tools
+	url = ssh://aur@aur4.archlinux.org/deepin-gettext-tools.git
+[submodule "deepin-menu"]
+	path = deepin-menu
+	url = ssh://aur@aur4.archlinux.org/deepin-menu.git
+[submodule "deepin-music"]
+	path = deepin-music
+	url = ssh://aur@aur4.archlinux.org/deepin-music.git
+[submodule "deepin-pygtk"]
+	path = deepin-pygtk
+	url = ssh://aur@aur4.archlinux.org/deepin-pygtk.git
+[submodule "deepin-qml-widgets"]
+	path = deepin-qml-widgets
+	url = ssh://aur@aur4.archlinux.org/deepin-qml-widgets.git
+[submodule "deepin-screenshot"]
+	path = deepin-screenshot
+	url = ssh://aur@aur4.archlinux.org/deepin-screenshot.git
+[submodule "deepin-terminal"]
+	path = deepin-terminal
+	url = ssh://aur@aur4.archlinux.org/deepin-terminal.git
+[submodule "deepin-vte"]
+	path = deepin-vte
+	url = ssh://aur@aur4.archlinux.org/deepin-vte.git
+[submodule "python2-deepin-gsettings"]
+	path = python2-deepin-gsettings
+	url = ssh://aur@aur4.archlinux.org/python2-deepin-gsettings.git
+[submodule "python2-deepin-ui"]
+	path = python2-deepin-ui
+	url = ssh://aur@aur4.archlinux.org/python2-deepin-ui.git
+[submodule "python2-deepin-utils"]
+	path = python2-deepin-utils
+	url = ssh://aur@aur4.archlinux.org/python2-deepin-utils.git
