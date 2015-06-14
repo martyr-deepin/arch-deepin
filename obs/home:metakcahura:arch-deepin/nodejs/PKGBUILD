@@ -9,32 +9,20 @@
 # Contributor: TIanyi Cui <tianyicui@gmail.com>
 
 pkgname=nodejs
-pkgver=0.10.35
-_npmver=2.2.0
-_npmrev=6f2b726
-pkgrel=4
+pkgver=0.12.4
+pkgrel=1
 pkgdesc='Evented I/O for V8 javascript'
 arch=('i686' 'x86_64')
 url='http://nodejs.org/'
 license=('MIT')
-depends=('openssl')
-provides=('nodejs-node-gyp')
-makedepends=('python2' 'git' 'procps-ng')
-optdepends=('python2: for node-gyp')
-checkdepends=('curl')
-options=('!emptydirs')
-source=("http://nodejs.org/dist/v$pkgver/node-v$pkgver.tar.gz"
-        "npm-$_npmrev.tar.xz")
-sha256sums=('0043656bb1724cb09dbdc960a2fd6ee37d3badb2f9c75562b2d11235daa40a03'
-            'SKIP')
+depends=('openssl' 'zlib' 'icu') # 'libuv' 'v8' 'c-ares')
+makedepends=('python2' 'procps-ng')
+optdepends=('npm: nodejs package manager')
+source=("http://nodejs.org/dist/v$pkgver/node-v$pkgver.tar.gz")
+sha256sums=('3298d0997613a04ac64343e8316da134d04588132554ae402eb344e3369ec912')
 
 prepare() {
   cd node-v$pkgver
-
-  # We need newer version of npm to fix bugs
-  rm -r deps/npm
-  ln -s "$srcdir/npm-$_npmrev" deps/npm
-  #rm -r "$srcdir/npm-$_npmrev/.git"
 
   msg 'Fixing for python2 name'
   find -type f -exec sed \
@@ -51,19 +39,20 @@ build() {
   export PYTHON=python2
   ./configure \
     --prefix=/usr \
-    --shared-openssl
+    --with-intl=system-icu \
+    --without-npm \
+    --shared-openssl \
+    --shared-zlib
+    # --shared-libuv
+    # --shared-v8
+    # --shared-cares
 
   make
-
-  #cd ../npm-$_npmrev
-  #../node-v$pkgver/node cli.js install ronn marked
-  #PATH="$srcdir/node-v$pkgver:$PATH" make
-  #../node-v$pkgver/node cli.js uninstall ronn marked marked-man
 }
 
 check() {
   cd node-v$pkgver
-  #make test || warning "Tests failed"
+  make test || warning "Tests failed"
 }
 
 package() {
@@ -78,16 +67,6 @@ package() {
 
   install -D -m644 LICENSE \
     "$pkgdir"/usr/share/licenses/nodejs/LICENSE
-
-  #install -d "$pkgdir"/usr/share/man/{man1,man3,man5,man7}
-  #for _dir in man1 man3 man5 man7; do
-  #  cd "$pkgdir"/usr/lib/node_modules/npm/man/$_dir
-  #  for _file in *; do
-  #    ln -s /usr/lib/node_modules/npm/man/$_dir/$_file "$pkgdir"/usr/share/man/$_dir/
-  #  done
-  #done
-
-  ln -s /usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js "$pkgdir"/usr/bin/node-gyp
 }
 
 # vim:set ts=2 sw=2 et:

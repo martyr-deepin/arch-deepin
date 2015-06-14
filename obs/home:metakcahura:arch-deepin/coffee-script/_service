@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">github.com</param>
     <param name="protocol">https</param>
-    <param name="path">/jashkenas/coffee-script/archive/1.8.0.tar.gz</param>
+    <param name="path">/jashkenas/coffee-script/archive/1.9.3.tar.gz</param>
   </service>
 </services>

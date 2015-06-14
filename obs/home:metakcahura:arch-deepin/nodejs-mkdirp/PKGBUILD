@@ -1,24 +1,31 @@
-# Maintainer: aboe76 AT gmail DOT com>
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Contributor: aboe76 AT gmail DOT com>
 
 pkgname=nodejs-mkdirp
 _npmname=mkdirp
-pkgver=0.3.5
+pkgver=0.5.1
 pkgrel=1
 pkgdesc="Recursively mkdir, like mkdir -p, but in node.js"
 arch=('any')
-depends=('nodejs')
 url="https://github.com/substack/node-mkdirp"
 license=('MIT')
 provides=('nodejs-mkdirp')
-source=("https://github.com/substack/node-mkdirp/archive/0.3.5.tar.gz")
-sha256sums=('SKIP')
+source=("${url}/archive/${pkgver}.tar.gz")
+md5sums=('SKIP')
 
 package() {
-  local _npmdir="$pkgdir/usr/lib/node_modules/"
-  mkdir -p $_npmdir
-  cp -r "$srcdir/node-mkdirp-$pkgver" $pkgdir/usr/lib/node_modules/$_npmname
-  #cp -pr index.js $pkgdir/usr/lib/node_modules/$_npmname
-  #cp -pr package.json $pkgdir/usr/lib/node_modules/$_npmname
-  #cd $_npmdir
-  #npm install --user root -g --prefix "$pkgdir/usr" $_npmname@$pkgver
+	depends=('nodejs-minimist')
+
+	cd "node-$_npmname-$pkgver"
+
+	install -d "$pkgdir/usr/lib/node_modules/$_npmname"
+
+	cp -pr * "$pkgdir/usr/lib/node_modules/$_npmname"
+
+	install -D "LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+
+	install -d "$pkgdir/usr/bin"
+  	ln -s "/usr/lib/node_modules/$_npmname/bin/cmd.js" "$pkgdir/usr/bin/mkdirp"
+
+	rm -f "$pkgdir/usr/lib/node_modules/$_npmname/LICENSE"
 }

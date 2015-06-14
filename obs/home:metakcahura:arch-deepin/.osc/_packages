@@ -1,6 +1,5 @@
 <project name="home:metakcahura:arch-deepin">
   <package name="acpid" state=" " />
-  <package name="cddb-py" state=" " />
   <package name="chrpath" state=" " />
   <package name="coffee-script" state=" " />
   <package name="cython" state=" " />
@@ -29,7 +28,6 @@
   <package name="deepin-qml-widgets" state=" " />
   <package name="deepin-screenshot" state=" " />
   <package name="deepin-terminal" state=" " />
-  <package name="deepin-translator" state=" " />
   <package name="deepin-vte" state=" " />
   <package name="ffmpeg" state=" " />
   <package name="flattr-icon-theme" state=" " />
@@ -37,7 +35,6 @@
   <package name="go-dlib" state=" " />
   <package name="go-fsnotify" state=" " />
   <package name="go-gettext-go" state=" " />
-  <package name="go-git" state=" " />
   <package name="go-gocheck" state=" " />
   <package name="go-goconvey" state=" " />
   <package name="go-graphics-go" state=" " />
@@ -49,13 +46,10 @@
   <package name="hardening-wrapper" state=" " />
   <package name="jansson" state=" " />
   <package name="libdeepin-webkit" state=" " />
-  <package name="libmediainfo" state=" " />
   <package name="libnewt" state=" " />
   <package name="libunwind" state=" " />
-  <package name="libzen" state=" " />
   <package name="lightdm" state=" " />
   <package name="lsb-release" state=" " />
-  <package name="mediainfo" state=" " />
   <package name="metacity-ubuntu" state=" " />
   <package name="nodejs" state=" " />
   <package name="nodejs-mkdirp" state=" " />
@@ -72,7 +66,6 @@
   <package name="python2-pyquery" state=" " />
   <package name="python2-pysrt" state=" " />
   <package name="python2-setproctitle" state=" " />
-  <package name="python2-tesseract" state=" " />
   <package name="python2-xlib" state=" " />
   <package name="python2-xpyb" state=" " />
   <package name="python2-xpybutil" state=" " />
@@ -83,4 +76,6 @@
   <package name="underscorejs" state=" " />
   <package name="xcur2png" state=" " />
   <package name="xdotool" state=" " />
+  <package name="autoconf-archive" state=" " />
+  <package name="nodejs-minimist" state=" " />
 </project>

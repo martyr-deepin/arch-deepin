@@ -2,19 +2,6 @@
   <service name="download_url">
     <param name="host">nodejs.org</param>
     <param name="protocol">http</param>
-    <param name="path">/dist/v0.10.35/node-v0.10.35.tar.gz</param>
-  </service>
-  <service name="tar_scm">
-    <param name="scm">git</param>
-    <param name="url">git://github.com/npm/npm.git</param>
-    <param name="versionformat">%h</param>
-    <param name="revision">6f2b726</param>
-    <param name="package-meta"></param>
-    <param name="versionprefix"></param>
-    <param name="filename">npm</param>
-  </service>
-  <service name="recompress">
-    <param name="file">*.tar</param>
-    <param name="compression">xz</param>
+    <param name="path">/dist/v0.12.4/node-v0.12.4.tar.gz</param>
   </service>
 </services>

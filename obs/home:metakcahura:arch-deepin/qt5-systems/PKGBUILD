@@ -2,7 +2,7 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=qt5-systems
-pkgver=5.3.0.git20140128.aa651c7
+pkgver=5.4.0.20150402.37b614a
 pkgrel=1
 pkgdesc="A cross-platform application and UI framework (QtSystems)"
 groups=('qt' 'qt5')
