@@ -1,3 +1,10 @@
+Version 20150614
+
+ - Rename deepin-music-player to deepin-music
+ - Migrate deepin packages to aur4
+ - Sync obs
+
+
 Version 20150027
 
  - Update dde-dock-applets to 0.0.4.20150521130615
