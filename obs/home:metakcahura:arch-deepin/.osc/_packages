@@ -22,7 +22,6 @@
   <package name="deepin-icon-theme" state=" " />
   <package name="deepin-menu" state=" " />
   <package name="deepin-movie" state=" " />
-  <package name="deepin-music-player" state=" " />
   <package name="deepin-notifications" state=" " />
   <package name="deepin-pygtk" state=" " />
   <package name="deepin-qml-widgets" state=" " />
@@ -78,4 +77,5 @@
   <package name="xdotool" state=" " />
   <package name="autoconf-archive" state=" " />
   <package name="nodejs-minimist" state=" " />
+  <package name="deepin-music" state=" " />
 </project>

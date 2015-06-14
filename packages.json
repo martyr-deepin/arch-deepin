@@ -140,7 +140,7 @@
     "LastVersionFixed": "2.2.1.20150512143336"
   },
   {
-    "Name": "deepin-music-player",
+    "Name": "deepin-music",
     "OriginRepoDir": "deepin-music-player",
     "Updated": false,
     "LastVersion": "1.1+20150413165956~fa225d345b",
