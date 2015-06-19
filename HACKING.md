@@ -1,3 +1,9 @@
+# Initialize aur4 branch
+
+    git clone -b aur4 https://github.com/fasheng/arch-deepin.git __aur4
+    cd __aur4
+    git submodules update --init
+
 # About update.sh
 
 `update.sh` is a script that make updating deepin packages easily. It
