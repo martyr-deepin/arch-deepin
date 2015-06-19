@@ -5,13 +5,8 @@
 # Contributor: Paul Mattal <paul@archlinux.org>
 
 pkgname=ffmpeg
-<<<<<<< home:metakcahura:arch-deepin/ffmpeg/PKGBUILD.mine
-pkgver=2.6.3
-pkgrel=1
-=======
 pkgver=2.6.3
 pkgrel=2
->>>>>>> home:metakcahura:arch-deepin/ffmpeg/PKGBUILD.r7f04b9e591006e5c77c7269f35e9b8d3
 epoch=1
 pkgdesc='Complete and free Internet live audio and video broadcasting solution'
 arch=('i686' 'x86_64')
@@ -25,10 +20,6 @@ depends=(
       'libvorbisenc.so' 'libvorbis.so' 'libvpx.so' 'libx264.so' 'libx265.so'
 )
 makedepends=('libvdpau' 'yasm' 'hardening-wrapper')
-<<<<<<< home:metakcahura:arch-deepin/ffmpeg/PKGBUILD.mine
-source=(http://ffmpeg.org/releases/$pkgname-$pkgver.tar.bz2)
-md5sums=('e2cc3c209f91393d35ab58598e41cf22')
-=======
 source=(http://ffmpeg.org/releases/$pkgname-$pkgver.tar.bz2
         ffmpeg-2.6.3-lavd-xcbgrab-fix-comparison-with-screen-size.patch)
 md5sums=('e2cc3c209f91393d35ab58598e41cf22'
@@ -38,7 +29,6 @@ prepare() {
   cd $pkgname-$pkgver
   patch -p1 -i ../ffmpeg-2.6.3-lavd-xcbgrab-fix-comparison-with-screen-size.patch
 }
->>>>>>> home:metakcahura:arch-deepin/ffmpeg/PKGBUILD.r7f04b9e591006e5c77c7269f35e9b8d3
 
 build() {
   cd $pkgname-$pkgver
