@@ -41,6 +41,11 @@ do_update_pkg() {
     *) gen_template "${pkgname}" || return 1;;
   esac
   update_package_state "${pkgname}" "${pkg_version}" "${pkg_version_fixed}"
+
+  # reset pkgrel is package updated
+  if get_package_updated "${pkgname}"; then
+      sed -i 's/^pkgrel=.*$/pkgrel=1/' "${templatedir}/${pkgname}"/PKGBUILD
+  fi
 }
 
 gen_template() {
@@ -75,6 +80,7 @@ gen_template() {
   )
 }
 
+# TODO: refactor code
 gen_template_multi_sources() {
   local pkgname="${1}"; shift
   local fileindexes=("${@}")
