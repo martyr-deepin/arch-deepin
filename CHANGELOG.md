@@ -1,3 +1,10 @@
+Version 20150625
+
+ - Update deepin-pygtk, support numeric when compiling, change group
+   to `deepin-extra`
+ - Update deepin-ui, use `pygtk` instead of `deepin-pygtk` as depends
+
+
 Version 20150614
 
  - Rename deepin-music-player to deepin-music

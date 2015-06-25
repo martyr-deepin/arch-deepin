@@ -4,15 +4,17 @@
 pkgname=deepin-pygtk
 pkgver=@PKGVER_FIXED@
 _srcdirname=@SRCDIRNAME@
-pkgrel=6
+pkgrel=7
 pkgdesc="Python bindings for the GTK widget set - with patches to fix memory leak for deepin-ui"
 arch=('i686' 'x86_64')
 url="http://www.pygtk.org/"
 license=('LGPL')
-groups=('deepin')
+groups=('deepin-extra')
 depends=('libglade' 'python2-cairo' 'pygobject')
+makedepends=('python2-numpy' 'pygobject2-devel')
 optdepends=('python2-numpy')
-
+provides=("pygtk=2.24.0")
+conflicts=("pygtk")
 source=("@SOURCE_ORIG@"
         "@SOURCE_DEBIAN@"
         "python27.patch"
@@ -20,8 +22,6 @@ source=("@SOURCE_ORIG@"
 sha256sums=('@SHA256SUM_ORIG@'
             '@SHA256SUM_DEBIAN@'
             '39a30456cba055a452bb55c74ef1ff2f5f7bfaad22855b4dd569ab009b56b682')
-provides=("pygtk=2.24.0")
-conflicts=("pygtk")
 
 prepare() {
   cd "${_srcdirname}"
@@ -38,17 +38,20 @@ prepare() {
     patch -Np1 -i "${patchdir}/${f}" || msg "patch error: ${f##*/}"
   done
 
+  # fix python version
+  sed -i -e 's#env python$#env python2#' examples/pygtk-demo/{,demos/}*.py
 }
 
 build() {
   cd "${_srcdirname}"
+
   PYTHON=/usr/bin/python2 ./configure --prefix=/usr
   make
 }
 
 package() {
-  cd "${srcdir}/${_srcdirname}"
+  cd "${_srcdirname}"
+
   make DESTDIR="${pkgdir}" install
   install -m644 gtk/gtk-extrafuncs.defs "${pkgdir}/usr/share/pygtk/2.0/defs/"
-  sed -i -e 's#env python$#env python2#' "${pkgdir}"/usr/lib/pygtk/2.0/{,demos/}*.py
 }
