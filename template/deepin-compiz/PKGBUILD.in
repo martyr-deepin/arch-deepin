@@ -7,7 +7,7 @@
 pkgname=deepin-compiz
 pkgver=@PKGVER_FIXED@
 _srcdirname=@SRCDIRNAME@
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc='A forked compiz for Linux Deepin desktop environment'
 arch=('i686' 'x86_64')
@@ -63,7 +63,8 @@ build() {
         -DCOMPIZ_BUILD_TESTING=OFF \
         -DUSE_GCONF=OFF \
         -DUSE_GSETTINGS=ON \
-        -DCOMPIZ_DEFAULT_PLUGINS="ccp"
+        -DCOMPIZ_DEFAULT_PLUGINS="ccp" \
+        -DCOMPIZ_WERROR=FALSE
 
   make
 }

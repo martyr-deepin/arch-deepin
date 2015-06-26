@@ -942,3 +942,5 @@
 2015-06-26 18:38:00 upload-aur: [SUCCESS] python2-deepin-utils
 2015-06-26 18:38:08 upload-aur: [SUCCESS] deepin-screenshot
 2015-06-26 18:38:16 upload-aur: [SUCCESS] deepin-vte
+
+2015-06-26 19:29:54 update-pkgbuild: [SUCCESS] deepin-compiz updated=false version=0.9.99-5+git20140707164843~2e85d002e7

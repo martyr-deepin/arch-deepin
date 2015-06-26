@@ -1,3 +1,11 @@
+Version 20150626
+
+ - Fix deepin-compiz build issue
+ - Update deepin-screenshot, use `pygtk` instead of `deepin-pygtk` as depends
+ - Update deepin-vte, use `pygtk` instead of `deepin-pygtk` as depends
+ - Update python2-deepin-utils, use `pygtk` instead of `deepin-pygtk` as depends
+
+
 Version 20150625
 
  - Update deepin-pygtk, support numeric when compiling, change group
