@@ -938,3 +938,7 @@
 2015-06-26 18:26:33 update-pkgbuild: [SUCCESS] python2-deepin-utils updated=false version=0.0.2+20140703165416~8aaf2a6f00
 2015-06-26 18:26:33 update-pkgbuild: [SUCCESS] deepin-screenshot updated=false version=3.0+20150508154858~a5ed48140f
 2015-06-26 18:26:33 update-pkgbuild: [SUCCESS] deepin-vte updated=false version=0.28.2-6deepin7~saucy
+
+2015-06-26 18:38:00 upload-aur: [SUCCESS] python2-deepin-utils
+2015-06-26 18:38:08 upload-aur: [SUCCESS] deepin-screenshot
+2015-06-26 18:38:16 upload-aur: [SUCCESS] deepin-vte
