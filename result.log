@@ -930,3 +930,11 @@
 2015-06-25 09:07:12 update-pkgbuild: [SUCCESS] deepin-pygtk updated=false version=2.24.0-4~saucy
 
 2015-06-25 09:12:04 update-pkgbuild: [SUCCESS] python2-deepin-ui updated=false version=1.1+20141229194712~5a86faec50
+
+2015-06-26 18:26:12 upload-aur: [FAILED] python2-deepin-utils
+2015-06-26 18:26:12 upload-aur: [FAILED] deepin-screenshot
+2015-06-26 18:26:12 upload-aur: [FAILED] deepin-vte
+
+2015-06-26 18:26:33 update-pkgbuild: [SUCCESS] python2-deepin-utils updated=false version=0.0.2+20140703165416~8aaf2a6f00
+2015-06-26 18:26:33 update-pkgbuild: [SUCCESS] deepin-screenshot updated=false version=3.0+20150508154858~a5ed48140f
+2015-06-26 18:26:33 update-pkgbuild: [SUCCESS] deepin-vte updated=false version=0.28.2-6deepin7~saucy
