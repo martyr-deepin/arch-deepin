@@ -17,16 +17,22 @@
 
 source ./libhelper.sh
 
-mirror="http://packages.linuxdeepin.com"
+mirror="http://ftp5.gwdg.de"
+fileurl_prefix="/pub/linux/linuxdeepin/packages"
+
 # candidate mirrors
+# mirror="http://packages.linuxdeepin.com"
+# fileurl_prefix="/deepin"
+
 # "http://packages.linuxdeepin.com"
+# "http://ftp5.gwdg.de"
 # "http://mirrors.ustc.edu.cn"
 # "https://ftp.fau.de"
-fileurl_prefix="deepin"
+
 deepin_repo_sources=(
-  "${mirror}/${fileurl_prefix}/dists/trusty/main/source/Sources.gz"
-  "${mirror}/${fileurl_prefix}/dists/trusty/non-free/source/Sources.gz"
-  "${mirror}/${fileurl_prefix}/dists/trusty/universe/source/Sources.gz"
+  "${mirror}${fileurl_prefix}/dists/trusty/main/source/Sources.gz"
+  "${mirror}${fileurl_prefix}/dists/trusty/non-free/source/Sources.gz"
+  "${mirror}${fileurl_prefix}/dists/trusty/universe/source/Sources.gz"
 )
 local_sources=(
   "./debug/reposources/main"
@@ -73,20 +79,26 @@ get_pkginfo() {
   # remove git commit hash
   pkg_version_fixed="$(echo ${pkg_version_fixed} | sed 's/~[0-9a-f]\{10\}//')"
   pkg_version_fixed="${pkg_version_fixed%-*}"      # remove suffix "-*"
+  pkg_version_fixed="${pkg_version_fixed/git/}"    # remove "git"
   pkg_version_fixed="${pkg_version_fixed/\~/.}"    # replace "~" with "."
   pkg_version_fixed="${pkg_version_fixed/+/.}"     # replace "+" with "."
+
+  local version_prefix="$(get_package_versionprefix "${pkg_name}")"
+  if [ "${version_prefix}" ]; then
+    pkg_version_fixed="${version_prefix}.${pkg_version_fixed}"
+  fi
 
   # get all files' information
   pkg_files=($(echo "${pkg_info}" | awk 'BEGIN{output=0} /: /{output=0} /Files: /{output=1} NF==3{if(output){print}}' | awk '{print $3}'))
   pkg_fileurls=()
   for f in "${pkg_files[@]}"; do
-    pkg_fileurls+=("${mirror}/${fileurl_prefix}/${pkg_directory}/${f}")
+    pkg_fileurls+=("${mirror}${fileurl_prefix}/${pkg_directory}/${f}")
   done
   pkg_sha256sums=($(echo "${pkg_info}" | awk 'BEGIN{output=0} /: /{output=0} /Checksums-Sha256: /{output=1} NF==3{if(output){print}}' | awk '{print $1}'))
 
   # get the default source file's information
   pkg_file="${pkg_name}_${pkg_version}.tar.gz"
-  pkg_fileurl="${mirror}/${fileurl_prefix}/${pkg_directory}/${pkg_file}"
+  pkg_fileurl="${mirror}${fileurl_prefix}/${pkg_directory}/${pkg_file}"
   pkg_sha256sum=$(echo "${pkg_info}" | awk 'BEGIN{output=0} /: /{output=0} /Checksums-Sha256: /{output=1} NF==3{if(output){print}}' | grep "${pkg_file}" | awk '{print $1}')
 
   # get special source files' information if exists
@@ -110,11 +122,11 @@ get_pkginfo() {
   # split host, protocol and path from fileurl, used for _service in OBS
   obs_host="${mirror#*://}"
   obs_protocol="${mirror%://*}"
-  obs_path="/${fileurl_prefix}/${pkg_directory}/${pkg_file}"
+  obs_path="${fileurl_prefix}/${pkg_directory}/${pkg_file}"
   obs_paths=()
   for f in "${pkg_files[@]}"; do
-    obs_paths+=("/${fileurl_prefix}/${pkg_directory}/${f}")
+    obs_paths+=("${fileurl_prefix}/${pkg_directory}/${f}")
   done
-  obs_path_orig="/${fileurl_prefix}/${pkg_directory}/${pkg_file_orig}"
-  obs_path_debian="/${fileurl_prefix}/${pkg_directory}/${pkg_file_debian}"
+  obs_path_orig="${fileurl_prefix}/${pkg_directory}/${pkg_file_orig}"
+  obs_path_debian="${fileurl_prefix}/${pkg_directory}/${pkg_file_debian}"
 }

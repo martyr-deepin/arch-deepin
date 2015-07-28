@@ -3,6 +3,7 @@
     "Name": "dde-account-faces",
     "OriginRepoDir": "dde-account-faces",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "1.0.7-1~trusty",
     "LastVersionFixed": "1.0.7"
   },
@@ -10,6 +11,7 @@
     "Name": "dde-api",
     "OriginRepoDir": "dde-api",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0.2+20150107093816~d93500c16a",
     "LastVersionFixed": "0.0.2.20150107093816"
   },
@@ -17,6 +19,7 @@
     "Name": "dde-control-center",
     "OriginRepoDir": "dde-control-center",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.1+20150413164707~6ec15a41de",
     "LastVersionFixed": "0.1.20150413164707"
   },
@@ -24,6 +27,7 @@
     "Name": "dde-daemon",
     "OriginRepoDir": "dde-daemon",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0.1+20150415132138~b7120bedfa",
     "LastVersionFixed": "0.0.1.20150415132138"
   },
@@ -31,6 +35,7 @@
     "Name": "dde-dock-applets",
     "OriginRepoDir": "dde-dock-applets",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0.4+20150521130615",
     "LastVersionFixed": "0.0.4.20150521130615"
   },
@@ -38,6 +43,7 @@
     "Name": "dde-workspace",
     "OriginRepoDir": "deepin-desktop-environment",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "2.1+20150521160615",
     "LastVersionFixed": "2.1.20150521160615"
   },
@@ -45,6 +51,7 @@
     "Name": "deepin-artwork",
     "OriginRepoDir": "deepin-artwork",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "2014-4",
     "LastVersionFixed": "2014"
   },
@@ -52,6 +59,7 @@
     "Name": "deepin-artwork-themes",
     "OriginRepoDir": "deepin-artwork-themes",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "14.04.3+20141204110221~5bf78d7f42",
     "LastVersionFixed": "14.04.3.20141204110221"
   },
@@ -59,6 +67,7 @@
     "Name": "deepin-compiz",
     "OriginRepoDir": "compiz",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.9.99-5+git20140707164843~2e85d002e7",
     "LastVersionFixed": "0.9.99.5.git20140707164843"
   },
@@ -66,6 +75,7 @@
     "Name": "deepin-cursor-theme",
     "OriginRepoDir": "deepin-cursor-theme",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "2014~4-2",
     "LastVersionFixed": "2014.4"
   },
@@ -73,6 +83,7 @@
     "Name": "deepin-dbus-factory",
     "OriginRepoDir": "dbus-factory",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0.2+20141226160557~7e89f03592",
     "LastVersionFixed": "0.0.2.20141226160557"
   },
@@ -80,6 +91,7 @@
     "Name": "deepin-dbus-generator",
     "OriginRepoDir": "dbus-generator",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0.3+20141120163131~84ee26c38d",
     "LastVersionFixed": "0.0.3.20141120163131"
   },
@@ -87,6 +99,7 @@
     "Name": "deepin-default-gsettings",
     "OriginRepoDir": "deepin-default-gsettings",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.2+20141216171821~2cf686e3fa",
     "LastVersionFixed": "0.2.20141216171821"
   },
@@ -94,6 +107,7 @@
     "Name": "deepin-game-center",
     "OriginRepoDir": "deepin-game-center",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "1.0.1+20141230144448~4e7bbbfda6",
     "LastVersionFixed": "1.0.1.20141230144448"
   },
@@ -101,6 +115,7 @@
     "Name": "deepin-gettext-tools",
     "OriginRepoDir": "deepin-gettext-tools",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0.1+20141216200739~6ba50ecb9c",
     "LastVersionFixed": "0.0.1.20141216200739"
   },
@@ -108,6 +123,7 @@
     "Name": "python2-deepin-gsettings",
     "OriginRepoDir": "deepin-gsettings",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.1+git20131206094009~a64de3ac19",
     "LastVersionFixed": "0.1.git20131206094009"
   },
@@ -115,6 +131,7 @@
     "Name": "deepin-gtk-theme",
     "OriginRepoDir": "deepin-gtk-theme",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "14.07+20150327153743~2d420cb0b9",
     "LastVersionFixed": "14.07.20150327153743"
   },
@@ -122,6 +139,7 @@
     "Name": "deepin-icon-theme",
     "OriginRepoDir": "deepin-icon-theme",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "13.06.13+20150114160019~dff58a2dad",
     "LastVersionFixed": "13.06.13.20150114160019"
   },
@@ -129,6 +147,7 @@
     "Name": "deepin-menu",
     "OriginRepoDir": "deepin-menu",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "1.1+20150415155150~faffe35053",
     "LastVersionFixed": "1.1.20150415155150"
   },
@@ -136,6 +155,7 @@
     "Name": "deepin-movie",
     "OriginRepoDir": "deepin-movie",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "2.2.1+20150512143336~131ab9d6c9",
     "LastVersionFixed": "2.2.1.20150512143336"
   },
@@ -143,6 +163,7 @@
     "Name": "deepin-music",
     "OriginRepoDir": "deepin-music-player",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "1.1+20150413165956~fa225d345b",
     "LastVersionFixed": "1.1.20150413165956"
   },
@@ -150,6 +171,7 @@
     "Name": "deepin-notifications",
     "OriginRepoDir": "deepin-notifications",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.3+20150427175348~b2f1890574",
     "LastVersionFixed": "0.3.20150427175348"
   },
@@ -157,6 +179,7 @@
     "Name": "deepin-pygtk",
     "OriginRepoDir": "pygtk",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "2.24.0-4~saucy",
     "LastVersionFixed": "2.24.0"
   },
@@ -164,6 +187,7 @@
     "Name": "deepin-qml-widgets",
     "OriginRepoDir": "deepin-qml-widgets",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0.2+20150423102550~daef82ffb6",
     "LastVersionFixed": "0.0.2.20150423102550"
   },
@@ -171,6 +195,7 @@
     "Name": "deepin-screenshot",
     "OriginRepoDir": "deepin-screenshot",
     "Updated": false,
+    "VersionPrefix": "3.0",
     "LastVersion": "3.0+20150508154858~a5ed48140f",
     "LastVersionFixed": "3.0.20150508154858"
   },
@@ -178,6 +203,7 @@
     "Name": "deepin-terminal",
     "OriginRepoDir": "deepin-terminal",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "1.1+20141230110750~bc441b7aae",
     "LastVersionFixed": "1.1.20141230110750"
   },
@@ -185,6 +211,7 @@
     "Name": "python2-deepin-ui",
     "OriginRepoDir": "deepin-ui",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "1.1+20141229194712~5a86faec50",
     "LastVersionFixed": "1.1.20141229194712"
   },
@@ -192,6 +219,7 @@
     "Name": "python2-deepin-utils",
     "OriginRepoDir": "deepin-utils",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0.2+20140703165416~8aaf2a6f00",
     "LastVersionFixed": "0.0.2.20140703165416"
   },
@@ -199,6 +227,7 @@
     "Name": "deepin-vte",
     "OriginRepoDir": "vte",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.28.2-6deepin7~saucy",
     "LastVersionFixed": "0.28.2"
   },
@@ -206,6 +235,7 @@
     "Name": "go-dlib",
     "OriginRepoDir": "go-dlib",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0.4+20150227094412~8e9523b66a",
     "LastVersionFixed": "0.0.4.20150227094412"
   },
@@ -213,6 +243,7 @@
     "Name": "grub-theme-deepin",
     "OriginRepoDir": "grub-themes-deepin",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.5-9",
     "LastVersionFixed": "0.5"
   },
@@ -220,6 +251,7 @@
     "Name": "libdeepin-webkit",
     "OriginRepoDir": "deepin-webkit",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "1.8.2.2+20141124213858~2494240496",
     "LastVersionFixed": "1.8.2.2.20141124213858"
   },
@@ -227,6 +259,7 @@
     "Name": "startdde",
     "OriginRepoDir": "startdde",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.1+20141230181929~b99e7b174d",
     "LastVersionFixed": "0.1.20141230181929"
   },
@@ -234,6 +267,7 @@
     "Name": "go-fsnotify",
     "OriginRepoDir": "golang-fsnotify",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0~git201400902-1",
     "LastVersionFixed": "0.0.git201400902"
   },
@@ -241,6 +275,7 @@
     "Name": "go-gettext-go",
     "OriginRepoDir": "golang-gettext-go",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0~git20140808-1",
     "LastVersionFixed": "0.0.git20140808"
   },
@@ -248,6 +283,7 @@
     "Name": "go-gocheck",
     "OriginRepoDir": "golang-gocheck",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0~bzr20131118+85-6",
     "LastVersionFixed": "0.0.bzr20131118.85"
   },
@@ -255,6 +291,7 @@
     "Name": "go-goconvey",
     "OriginRepoDir": "golang-goconvey-dev",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "1.5.0-1",
     "LastVersionFixed": "1.5.0"
   },
@@ -262,6 +299,7 @@
     "Name": "go-graphics-go",
     "OriginRepoDir": "golang-graphics-go",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0~git20140903-1",
     "LastVersionFixed": "0.0.git20140903"
   },
@@ -269,6 +307,7 @@
     "Name": "go-jamslam-freetype-go",
     "OriginRepoDir": "golang-jamslam-freetype-go",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0~git20140903-1",
     "LastVersionFixed": "0.0.git20140903"
   },
@@ -276,6 +315,7 @@
     "Name": "go-sqlite3",
     "OriginRepoDir": "golang-go-sqlite3",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0~git20140913-1",
     "LastVersionFixed": "0.0.git20140913"
   },
@@ -283,6 +323,7 @@
     "Name": "go-xgb",
     "OriginRepoDir": "golang-xgb",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "0.0~git20140510-1",
     "LastVersionFixed": "0.0.git20140510"
   },
@@ -290,6 +331,7 @@
     "Name": "go-xgbutil",
     "OriginRepoDir": "golang-xgbutil",
     "Updated": false,
+    "VersionPrefix": "",
     "LastVersion": "1~git20140610",
     "LastVersionFixed": "1.git20140610"
   }

@@ -38,15 +38,19 @@ get_package_updated() {
   fi
 }
 set_package_updated() {
-  jq "map({Name, OriginRepoDir, Updated: (if .Name == \"${1}\" then ${2} else .Updated end), LastVersion, LastVersionFixed})" packages.json > __packages.json
+  jq "map({Name, OriginRepoDir, Updated: (if .Name == \"${1}\" then ${2} else .Updated end), VersionPrefix, LastVersion, LastVersionFixed})" packages.json > __packages.json
   mv -f __packages.json packages.json
+}
+
+get_package_versionprefix() {
+  jq -r "map(select(.Name==\"${1}\")) | .[].VersionPrefix" packages.json
 }
 
 get_package_lastversion() {
   jq -r "map(select(.Name==\"${1}\")) | .[].LastVersion" packages.json
 }
 set_package_lastversion() {
-  jq "map({Name, OriginRepoDir, Updated, LastVersion: (if .Name == \"${1}\" then \"${2}\" else .LastVersion end), LastVersionFixed})" packages.json > __packages.json
+  jq "map({Name, OriginRepoDir, Updated, VersionPrefix, LastVersion: (if .Name == \"${1}\" then \"${2}\" else .LastVersion end), LastVersionFixed})" packages.json > __packages.json
   mv -f __packages.json packages.json
 }
 
@@ -54,7 +58,7 @@ get_package_lastversionfixed() {
   jq -r "map(select(.Name==\"${1}\")) | .[].LastVersionFixed" packages.json
 }
 set_package_lastversionfixed() {
-  jq "map({Name, OriginRepoDir, Updated, LastVersion, LastVersionFixed: (if .Name == \"${1}\" then \"${2}\" else .LastVersionFixed end)})" packages.json > __packages.json
+  jq "map({Name, OriginRepoDir, Updated, VersionPrefix, LastVersion, LastVersionFixed: (if .Name == \"${1}\" then \"${2}\" else .LastVersionFixed end)})" packages.json > __packages.json
   mv -f __packages.json packages.json
 }
 
