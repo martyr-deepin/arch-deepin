@@ -4,7 +4,7 @@
 pkgname=deepin-notifications
 pkgver=@PKGVER_FIXED@
 _srcdirname=@SRCDIRNAME@
-pkgrel=1
+pkgrel=2
 pkgdesc="System notifications for linuxdeepin desktop environment."
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/deepin-notifications"
@@ -18,7 +18,7 @@ sha256sums=('@SHA256SUM@')
 build() {
   cd "${_srcdirname}"
 
-  qmake PREFIX=/usr
+  qmake-qt5 PREFIX=/usr
   make
 }
 

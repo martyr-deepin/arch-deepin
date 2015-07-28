@@ -4,7 +4,7 @@
 pkgname=deepin-qml-widgets
 pkgver=@PKGVER_FIXED@
 _srcdirname=@SRCDIRNAME@
-pkgrel=1
+pkgrel=2
 pkgdesc='Deepin QML widgets'
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/deepin-qml-widgets"
@@ -22,7 +22,7 @@ sha256sums=('@SHA256SUM@')
 build(){
   cd "${_srcdirname}"
 
-  qmake && make
+  qmake-qt5 && make
 }
 
 package() {

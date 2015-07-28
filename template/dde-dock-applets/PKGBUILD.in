@@ -4,7 +4,7 @@
 pkgname=dde-dock-applets
 pkgver=@PKGVER_FIXED@
 _srcdirname=@SRCDIRNAME@
-pkgrel=1
+pkgrel=3
 pkgdesc="New control center for linux deepin"
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-dock-applets"

@@ -4,7 +4,7 @@
 pkgname=dde-api
 pkgver=@PKGVER_FIXED@
 _srcdirname=@SRCDIRNAME@
-pkgrel=1
+pkgrel=2
 pkgdesc='Go-lang bingdings for dde-daemon'
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-api"

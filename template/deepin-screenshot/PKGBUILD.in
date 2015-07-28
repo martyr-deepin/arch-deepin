@@ -4,7 +4,7 @@
 pkgname=deepin-screenshot
 pkgver=@PKGVER_FIXED@
 _srcdirname=@SRCDIRNAME@
-pkgrel=2
+pkgrel=3
 pkgdesc="Easy-to-use screenshot tool for linuxdeepin desktop environment"
 arch=('any')
 url="https://gitcafe.com/Deepin/deepin-screenshot"

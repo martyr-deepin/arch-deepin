@@ -4,7 +4,7 @@
 pkgname=libdeepin-webkit
 pkgver=@PKGVER_FIXED@
 _srcdirname=@SRCDIRNAME@
-pkgrel=2
+pkgrel=3
 pkgdesc='A fork of webkit-gtk for Linux Deepin desktop eviroment'
 arch=('i686' 'x86_64')
 url="http://www.linuxdeepin.com/"
@@ -41,7 +41,7 @@ build() {
         --disable-silent-rules \
         --with-gtk=3.0 \
         --disable-webgl
-  make
+  make -j8
 }
 
 package() {

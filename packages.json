@@ -69,7 +69,7 @@
     "Updated": false,
     "VersionPrefix": "",
     "LastVersion": "0.9.99-5+git20140707164843~2e85d002e7",
-    "LastVersionFixed": "0.9.99.5.git20140707164843"
+    "LastVersionFixed": "0.9.99.5.20140707164843"
   },
   {
     "Name": "deepin-cursor-theme",
@@ -125,7 +125,7 @@
     "Updated": false,
     "VersionPrefix": "",
     "LastVersion": "0.1+git20131206094009~a64de3ac19",
-    "LastVersionFixed": "0.1.git20131206094009"
+    "LastVersionFixed": "0.1.20131206094009"
   },
   {
     "Name": "deepin-gtk-theme",
@@ -154,10 +154,10 @@
   {
     "Name": "deepin-movie",
     "OriginRepoDir": "deepin-movie",
-    "Updated": false,
+    "Updated": true,
     "VersionPrefix": "",
-    "LastVersion": "2.2.1+20150512143336~131ab9d6c9",
-    "LastVersionFixed": "2.2.1.20150512143336"
+    "LastVersion": "2.2.2+git20150616111111~0445b03b5f",
+    "LastVersionFixed": "2.2.2.20150616111111"
   },
   {
     "Name": "deepin-music",
@@ -196,8 +196,8 @@
     "OriginRepoDir": "deepin-screenshot",
     "Updated": false,
     "VersionPrefix": "3.0",
-    "LastVersion": "3.0+20150508154858~a5ed48140f",
-    "LastVersionFixed": "3.0.20150508154858"
+    "LastVersion": "14.12+git20150717162046~d869601900",
+    "LastVersionFixed": "3.0.14.12.20150717162046"
   },
   {
     "Name": "deepin-terminal",
@@ -269,7 +269,7 @@
     "Updated": false,
     "VersionPrefix": "",
     "LastVersion": "0.0~git201400902-1",
-    "LastVersionFixed": "0.0.git201400902"
+    "LastVersionFixed": "0.0.201400902"
   },
   {
     "Name": "go-gettext-go",
@@ -277,7 +277,7 @@
     "Updated": false,
     "VersionPrefix": "",
     "LastVersion": "0.0~git20140808-1",
-    "LastVersionFixed": "0.0.git20140808"
+    "LastVersionFixed": "0.0.20140808"
   },
   {
     "Name": "go-gocheck",
@@ -301,7 +301,7 @@
     "Updated": false,
     "VersionPrefix": "",
     "LastVersion": "0.0~git20140903-1",
-    "LastVersionFixed": "0.0.git20140903"
+    "LastVersionFixed": "0.0.20140903"
   },
   {
     "Name": "go-jamslam-freetype-go",
@@ -309,7 +309,7 @@
     "Updated": false,
     "VersionPrefix": "",
     "LastVersion": "0.0~git20140903-1",
-    "LastVersionFixed": "0.0.git20140903"
+    "LastVersionFixed": "0.0.20140903"
   },
   {
     "Name": "go-sqlite3",
@@ -317,7 +317,7 @@
     "Updated": false,
     "VersionPrefix": "",
     "LastVersion": "0.0~git20140913-1",
-    "LastVersionFixed": "0.0.git20140913"
+    "LastVersionFixed": "0.0.20140913"
   },
   {
     "Name": "go-xgb",
@@ -325,7 +325,7 @@
     "Updated": false,
     "VersionPrefix": "",
     "LastVersion": "0.0~git20140510-1",
-    "LastVersionFixed": "0.0.git20140510"
+    "LastVersionFixed": "0.0.20140510"
   },
   {
     "Name": "go-xgbutil",
@@ -333,6 +333,6 @@
     "Updated": false,
     "VersionPrefix": "",
     "LastVersion": "1~git20140610",
-    "LastVersionFixed": "1.git20140610"
+    "LastVersionFixed": "1.20140610"
   }
 ]

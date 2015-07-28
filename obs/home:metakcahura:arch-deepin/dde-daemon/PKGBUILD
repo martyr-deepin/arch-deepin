@@ -20,7 +20,7 @@ groups=('deepin')
 install="${pkgname}.install"
 conflicts=('dde-daemon-gsd-input')
 options=(staticlibs)
-source=("http://packages.linuxdeepin.com/deepin/pool/main/d/dde-daemon/dde-daemon_0.0.1+20150415132138~b7120bedfa.tar.gz"
+source=("http://ftp5.gwdg.de/pub/linux/linuxdeepin/packages/pool/main/d/dde-daemon/dde-daemon_0.0.1+20150415132138~b7120bedfa.tar.gz"
         "fix-i686-compile.patch")
 sha256sums=('62124a648331cd9a67678f4029a7e0c093ac5381aa50f44c3df8d5ad20576ab9'
             'f54fdefa940e88e7303bdfd11f2c4c353685947616e5cbb3085b92678df20e69')

@@ -1482,25 +1482,25 @@ Package: deepin-movie
 Format: 3.0 (native)
 Binary: deepin-movie
 Architecture: all
-Version: 2.2.1+20150512143336~131ab9d6c9
+Version: 2.2.2+git20150616111111~0445b03b5f
 Maintainer: Li Longyu (Ai Kotoba) <leaeasy@gmail.com>
 Homepage: http://www.linuxdeepin.com
 Standards-Version: 3.9.5
 Build-Depends: debhelper (>= 9), python, deepin-gettext-tools
-Package-List:
+Package-List: 
  deepin-movie deb misc extra
 Priority: extra
 Section: misc
 Directory: pool/main/d/deepin-movie
 Files: 
- 726ab5672b68be6bdf89a5505368f506 1231 deepin-movie_2.2.1+20150512143336~131ab9d6c9.dsc
- eac2a30eeac02850b4542e9757947cab 7083018 deepin-movie_2.2.1+20150512143336~131ab9d6c9.tar.gz
+ 7f69d090a9c25e84c1e27e9e838c8770 722 deepin-movie_2.2.2+git20150616111111~0445b03b5f.dsc
+ ba24f61e6823228bc316b9a09c19b715 4474792 deepin-movie_2.2.2+git20150616111111~0445b03b5f.tar.gz
 Checksums-Sha1: 
- 343bc412c2babda8aa4cc4e871e41c7e160c13ff 1231 deepin-movie_2.2.1+20150512143336~131ab9d6c9.dsc
- 207e0830b2bdac3f1ce4b2bc75381ba22a12cfde 7083018 deepin-movie_2.2.1+20150512143336~131ab9d6c9.tar.gz
+ c778d915cc999750f6dcba6cbd8ad80535a9d53d 722 deepin-movie_2.2.2+git20150616111111~0445b03b5f.dsc
+ 55ccccaaea78ce0cb8042d535c67166dd42b8a1f 4474792 deepin-movie_2.2.2+git20150616111111~0445b03b5f.tar.gz
 Checksums-Sha256: 
- ddf35b9e35c261b753f5c1a81acc5e19c168fc962ba6aaacd9a80d362b8b6796 1231 deepin-movie_2.2.1+20150512143336~131ab9d6c9.dsc
- 8e9e1cb3f099863ecb8949b3445320ad6c1a1c94f98852848d04abef16d05237 7083018 deepin-movie_2.2.1+20150512143336~131ab9d6c9.tar.gz
+ 55693f8a2a73e4c860df7f81870d92bbd6b31468d06fd612ccd17a9109f6e370 722 deepin-movie_2.2.2+git20150616111111~0445b03b5f.dsc
+ 827d222167bac6f98671added1fa93a642ac9302a599fe732b4b3983530651de 4474792 deepin-movie_2.2.2+git20150616111111~0445b03b5f.tar.gz
 
 Package: deepin-music-player
 Format: 3.0 (native)
@@ -1649,24 +1649,24 @@ Package: deepin-screenshot
 Format: 3.0 (native)
 Binary: deepin-screenshot
 Architecture: any
-Version: 3.0+20150508154858~a5ed48140f
+Version: 14.12+git20150717162046~d869601900
 Maintainer: 宋文武 <songwenwu@linuxdeepin.com>
 Standards-Version: 3.9.5
 Build-Depends: debhelper (>= 9), python, deepin-gettext-tools
-Package-List:
+Package-List: 
  deepin-screenshot deb misc extra
 Priority: extra
 Section: misc
 Directory: pool/main/d/deepin-screenshot
 Files: 
- cbe66aafc62e3ee09fd7fad654b6feda 1209 deepin-screenshot_3.0+20150508154858~a5ed48140f.dsc
- eff06c00283f4e7bb4d520fb9b31015f 125167 deepin-screenshot_3.0+20150508154858~a5ed48140f.tar.gz
+ 119bc23c7099cb81b8c2a28e27c20758 714 deepin-screenshot_14.12+git20150717162046~d869601900.dsc
+ a00fe33a6611951ffdef7d9a88083ec5 10450295 deepin-screenshot_14.12+git20150717162046~d869601900.tar.gz
 Checksums-Sha1: 
- daf9aef6bce609745d12d683e2a4fcdc614859aa 1209 deepin-screenshot_3.0+20150508154858~a5ed48140f.dsc
- ccf7b7b56cbabcdd89a1bcd77371b0cf3ea1217c 125167 deepin-screenshot_3.0+20150508154858~a5ed48140f.tar.gz
+ 1f56fc7b1e17be4aa65b766df711cb89aeff0449 714 deepin-screenshot_14.12+git20150717162046~d869601900.dsc
+ c9ccd88d0e6e08fa6ec9ff449fd0c3b143cfa8d2 10450295 deepin-screenshot_14.12+git20150717162046~d869601900.tar.gz
 Checksums-Sha256: 
- 69b32e49ca8e263e9eeae12194772dd48f307db69a527d2261c358d96ed7dc44 1209 deepin-screenshot_3.0+20150508154858~a5ed48140f.dsc
- be7b95af98b0830c107c20814e9ac25419defe951a211499ee7530b3d7d44e5a 125167 deepin-screenshot_3.0+20150508154858~a5ed48140f.tar.gz
+ f9f4a4b82421f4b4314dc6389c0d2fcb952954befafdc3924fb30377cbc3c800 714 deepin-screenshot_14.12+git20150717162046~d869601900.dsc
+ 0058f6aadcd17e8b40b3b6279fc40d9298b7c16950e4416a392cc1dd6443f75f 10450295 deepin-screenshot_14.12+git20150717162046~d869601900.tar.gz
 
 Package: deepin-session-fastup
 Format: 3.0 (quilt)
@@ -1723,25 +1723,25 @@ Package: deepin-social-sharing
 Format: 3.0 (native)
 Binary: deepin-social-sharing
 Architecture: all
-Version: 1.0.0+20150413165613~8c48a0dde9
+Version: 14.12+git20150717170710~7c4a668ba0
 Maintainer: 宋文武 <songwenwu@linuxdeepin.com>
 Homepage: http://www.linuxdeepin.com
 Standards-Version: 3.9.5
 Build-Depends: debhelper (>= 9), python, deepin-gettext-tools
-Package-List:
+Package-List: 
  deepin-social-sharing deb misc extra
 Priority: extra
 Section: misc
 Directory: pool/main/d/deepin-social-sharing
 Files: 
- 68f346624652ba73705dc9bbfadac939 1275 deepin-social-sharing_1.0.0+20150413165613~8c48a0dde9.dsc
- 4147d9dea9d64d25babf2408d9fee198 68321 deepin-social-sharing_1.0.0+20150413165613~8c48a0dde9.tar.gz
+ 8a52a43546c4533e8fff9c14dbbfb442 769 deepin-social-sharing_14.12+git20150717170710~7c4a668ba0.dsc
+ 164c13c55a7c90f0b881d975e8f58370 142034 deepin-social-sharing_14.12+git20150717170710~7c4a668ba0.tar.gz
 Checksums-Sha1: 
- 1f4f2eab1d986eb73c0e6a576f8ca2a721ff9cd0 1275 deepin-social-sharing_1.0.0+20150413165613~8c48a0dde9.dsc
- e714e17dd8c629e8c20eab65f19f02c25f1b5da7 68321 deepin-social-sharing_1.0.0+20150413165613~8c48a0dde9.tar.gz
+ d5d0265f58dba4f91011c097ea77c1eeccf19705 769 deepin-social-sharing_14.12+git20150717170710~7c4a668ba0.dsc
+ 5a786e27929820afa88fae05a9ed61397a358636 142034 deepin-social-sharing_14.12+git20150717170710~7c4a668ba0.tar.gz
 Checksums-Sha256: 
- 904811430ac8ec07652a27bcbea0e07baac690ae2154c83b9bbe4fa986edff45 1275 deepin-social-sharing_1.0.0+20150413165613~8c48a0dde9.dsc
- d2654225f56912313bb9fce675d32bf9245044355c6f5aaf39ef67e8b489379d 68321 deepin-social-sharing_1.0.0+20150413165613~8c48a0dde9.tar.gz
+ 47999ed47c3c5603e3f96c2b46d8cf38b958afed7ef2ddc4f5d9236a87a6dc06 769 deepin-social-sharing_14.12+git20150717170710~7c4a668ba0.dsc
+ a7ef3533a5a09178e9765cbd318b6410e1509a2f14aa9c414e7da885c5b42fe3 142034 deepin-social-sharing_14.12+git20150717170710~7c4a668ba0.tar.gz
 
 Package: deepin-software-center
 Format: 3.0 (native)

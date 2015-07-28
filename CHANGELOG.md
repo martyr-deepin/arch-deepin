@@ -1,3 +1,15 @@
+Version 20150728
+
+ - Sync obs packages
+ - Change mirror site to `http://ftp5.gwdg.de` to make obs works easily
+ - Update version format, remove `git` if exists, affected packages
+   are `deepin-compiz`, `go-fsnotify`, `go-gettext-go`,
+   `go-graphics-go`, `go-jamslam-freetype-go`, `go-sqlite3`, `go-xgb`,
+   `go-xgbutil`, `python2-deepin-gsettings`
+ - Update deepin-movie to 2.2.2.20150616111111
+ - Fix deepin-screenshot version to 3.0.14.12.20150717162046
+
+
 Version 20150626
 
  - Fix deepin-compiz build issue

@@ -3,7 +3,7 @@
 
 pkgname=go-gettext-go
 pkgver=@PKGVER_FIXED@
-pkgrel=1
+pkgrel=2
 pkgdesc="This package provides GNU gettext support."
 arch=('any')
 url="https://code.google.com/p/gettext-go/"

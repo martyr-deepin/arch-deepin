@@ -4,7 +4,7 @@
 pkgname=dde-dock-applets
 pkgver=0.0.4.20150521130615
 _srcdirname=dde-dock-applets-0.0.4+20150521130615
-pkgrel=1
+pkgrel=3
 pkgdesc="New control center for linux deepin"
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-dock-applets"
@@ -13,7 +13,7 @@ depends=('dde-daemon' 'dde-api' 'deepin-qml-widgets' 'dde-qml-dbus-factory'
          'gtk2' 'qt5-svg' 'qt5-declarative')
 makedepends=('deepin-gettext-tools' 'qt5-tools' 'python2')
 groups=('deepin')
-source=("http://packages.linuxdeepin.com/deepin/pool/main/d/dde-dock-applets/dde-dock-applets_0.0.4+20150521130615.tar.gz")
+source=("http://ftp5.gwdg.de/pub/linux/linuxdeepin/packages/pool/main/d/dde-dock-applets/dde-dock-applets_0.0.4+20150521130615.tar.gz")
 sha256sums=('4566d20973198ec34daf369ecefb5215b652ce44b9683289cb4f9e4785a5ec24')
 
 build() {

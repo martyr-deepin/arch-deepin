@@ -1,7 +1,7 @@
 <services>
   <service name="download_url">
-    <param name="host">packages.linuxdeepin.com</param>
+    <param name="host">ftp5.gwdg.de</param>
     <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/d/deepin-artwork-themes/deepin-artwork-themes_14.04.3+20141204110221~5bf78d7f42.tar.gz</param>
+    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/deepin-artwork-themes/deepin-artwork-themes_14.04.3+20141204110221~5bf78d7f42.tar.gz</param>
   </service>
 </services>

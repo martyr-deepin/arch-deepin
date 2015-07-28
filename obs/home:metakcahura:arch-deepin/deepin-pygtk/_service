@@ -1,12 +1,12 @@
 <services>
   <service name="download_url">
-    <param name="host">packages.linuxdeepin.com</param>
+    <param name="host">ftp5.gwdg.de</param>
     <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/p/pygtk/pygtk_2.24.0.orig.tar.gz</param>
+    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/p/pygtk/pygtk_2.24.0.orig.tar.gz</param>
   </service>
   <service name="download_url">
-    <param name="host">packages.linuxdeepin.com</param>
+    <param name="host">ftp5.gwdg.de</param>
     <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/p/pygtk/pygtk_2.24.0-4~saucy.debian.tar.gz</param>
+    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/p/pygtk/pygtk_2.24.0-4~saucy.debian.tar.gz</param>
   </service>
 </services>

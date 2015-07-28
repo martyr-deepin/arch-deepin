@@ -12,7 +12,7 @@ license=('GPL3')
 groups=('deepin')
 makedepends=('cmake' 'go' 'coffee-script' 'go-gettext-go' 'webkitgtk'
              'libdeepin-webkit' 'lightdm' 'cairo' 'dbus-glib' 'python2')
-source=("http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-desktop-environment/deepin-desktop-environment_2.1+20150521160615.tar.gz"
+source=("http://ftp5.gwdg.de/pub/linux/linuxdeepin/packages/pool/main/d/deepin-desktop-environment/deepin-desktop-environment_2.1+20150521160615.tar.gz"
         "default-display-manager")
 sha256sums=('20aa7a8df56f4be815a5525aa33685365998e9cc63a4dc94e1cd8bc7db85300f'
             '3667d6cce9a00f0b8c8bc27250b2ceaf421382d3b4e687a5bcea4c64292030df')

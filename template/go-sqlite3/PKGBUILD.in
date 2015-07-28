@@ -4,7 +4,7 @@
 pkgname=go-sqlite3
 pkgver=@PKGVER_FIXED@
 _srcdirname=@SRCDIRNAME@
-pkgrel=1
+pkgrel=2
 pkgdesc='File system notification for GO'
 arch=('any')
 url="https://github.com/mattn/go-sqlite3"
