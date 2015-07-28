@@ -4,7 +4,7 @@
 pkgname=deepin-menu
 pkgver=1.1.20150415155150
 _srcdirname=deepin-menu-1.1+20150415155150~faffe35053
-pkgrel=1
+pkgrel=2
 pkgdesc="Deepin menu service for building beautiful menus."
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/deepin-menu"
@@ -26,7 +26,7 @@ build() {
   cd "${_srcdirname}"
 
   python2 setup.py build
-  qmake && make
+  qmake-qt5 && make
 }
 
 package() {

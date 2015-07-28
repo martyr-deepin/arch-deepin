@@ -1,0 +1,27 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=gtk-engine-unico
+pkgver=1.0.3_r152
+pkgrel=1
+pkgdesc='Unico GTK3 theme engine'
+arch=('i686' 'x86_64')
+url='https://launchpad.net/unico'
+license=('GPL')
+depends=('gtk3')
+makedepends=('gnome-common')
+source=("${pkgname}-${pkgver}.tar.xz")
+md5sums=('SKIP')
+
+build() {
+	cd "${pkgname}-${pkgver}"
+
+	./autogen.sh --prefix=/usr --disable-static
+	make
+}
+
+package() {
+	cd "${pkgname}-${pkgver}"
+
+	make DESTDIR=${pkgdir} install
+}

@@ -1,7 +1,7 @@
 <services>
   <service name="download_url">
-    <param name="host">packages.linuxdeepin.com</param>
+    <param name="host">ftp5.gwdg.de</param>
     <param name="protocol">http</param>
-    <param name="path">/deepin/pool/main/d/deepin-notifications/deepin-notifications_0.3+20150427175348~b2f1890574.tar.gz</param>
+    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/deepin-notifications/deepin-notifications_0.3+20150427175348~b2f1890574.tar.gz</param>
   </service>
 </services>

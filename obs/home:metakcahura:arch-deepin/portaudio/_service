@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">www.portaudio.com</param>
+    <param name="protocol">http</param>
+    <param name="path">/archives/pa_stable_v19_20140130.tgz</param>
+  </service>
+</services>

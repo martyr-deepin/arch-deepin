@@ -78,4 +78,8 @@
   <package name="autoconf-archive" state=" " />
   <package name="nodejs-minimist" state=" " />
   <package name="deepin-music" state=" " />
+  <package name="deepin-social-sharing" state=" " />
+  <package name="gtk-engine-unico" state=" " />
+  <package name="metacity2" state=" " />
+  <package name="portaudio" state=" " />
 </project>

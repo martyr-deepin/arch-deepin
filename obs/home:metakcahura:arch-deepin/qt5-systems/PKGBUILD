@@ -3,7 +3,7 @@
 
 pkgname=qt5-systems
 pkgver=5.4.0.20150402.37b614a
-pkgrel=1
+pkgrel=2
 pkgdesc="A cross-platform application and UI framework (QtSystems)"
 groups=('qt' 'qt5')
 arch=('i686' 'x86_64')
@@ -27,7 +27,7 @@ build() {
   cd "${pkgname}-${pkgver}"
 
   mkdir -p build && cd build
-  qmake ..
+  qmake-qt5 ../qtsystems.pro
   make -j8
 }
 

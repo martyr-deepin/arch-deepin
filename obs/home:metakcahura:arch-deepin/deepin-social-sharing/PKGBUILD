@@ -1,0 +1,37 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=deepin-social-sharing
+pkgver=14.12.git20150717170710
+_srcdirname=${pkgname}-14.12+git20150717170710~7c4a668ba0
+pkgrel=1
+pkgdesc='System-wide social sharing service for Deepin!'
+arch=('any')
+url="https://gitcafe.com/Deepin/deepin-social-sharing"
+license=('GPL3')
+groups=('deepin-extra')
+makedepends=('deepin-gettext-tools')
+source=("http://packages.linuxdeepin.com/deepin/pool/main/d/${pkgname}/${pkgname}_14.12+git20150717170710~7c4a668ba0.tar.gz")
+sha256sums=('a7ef3533a5a09178e9765cbd318b6410e1509a2f14aa9c414e7da885c5b42fe3')
+
+prepare() {
+	cd "${_srcdirname}"
+
+	# fix python version
+	find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+}
+
+build(){
+	cd "${_srcdirname}"
+
+	make
+}
+
+package() {
+	depends=('deepin-qml-widgets' 'python2-pyqt5' 'python2-requests'
+        	 'python2-requests-oauthlib')
+
+	cd "${_srcdirname}"
+
+	make DESTDIR="${pkgdir}" install
+}

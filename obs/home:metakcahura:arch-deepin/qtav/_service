@@ -1,7 +1,36 @@
 <services>
-  <service name="download_url">
-    <param name="host">github.com</param>
-    <param name="protocol">https</param>
-    <param name="path">/wang-bin/QtAV/archive/v1.6.0.tar.gz</param>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/wang-bin/libchardet.git</param>
+    <param name="filename">libchardet</param>
+    <param name="version">git</param>
+    <param name="package-meta">yes</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/wang-bin/capi.git</param>
+    <param name="filename">capi</param>
+    <param name="version">git</param>
+    <param name="package-meta">yes</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/wang-bin/QtAV.git</param>
+    <param name="filename">qtav</param>
+    <param name="versionprefix">1.7.0</param>
+    <param name="versionformat">%cd.%h</param>
+    <param name="revision">68322f8</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
   </service>
 </services>

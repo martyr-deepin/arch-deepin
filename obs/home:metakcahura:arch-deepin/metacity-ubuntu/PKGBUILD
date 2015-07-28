@@ -3,9 +3,10 @@
 # Contributor: thn81 <root@scrat>
 
 pkgname=metacity-ubuntu
-_ubuntu_rel=0ubuntu4
-pkgver=2.34.13.${_ubuntu_rel}
-pkgrel=107
+_ubuntu_rel=0ubuntu4.1
+_pkgver=2.34.13
+pkgver=${_pkgver}.${_ubuntu_rel}
+pkgrel=2
 pkgdesc="A window manager for GNOME with Ubuntu's patches"
 arch=('i686' 'x86_64')
 url="http://www.gnome.org"
@@ -17,13 +18,13 @@ provides=("metacity=${pkgver}")
 conflicts=('metacity')
 options=('!emptydirs')
 install=metacity.install
-source=("http://ftp.gnome.org/pub/gnome/sources/${pkgname%-*}/${pkgver%.*.*}/${pkgname%-*}-${pkgver%.*}.tar.xz"
-        "https://launchpad.net/ubuntu/+archive/primary/+files/${pkgname%-*}_${pkgver%.*}-${_ubuntu_rel}.debian.tar.gz")
+source=("http://ftp.gnome.org/pub/gnome/sources/${pkgname%-*}/2.34/${pkgname%-*}-${_pkgver}.tar.xz"
+        "https://launchpad.net/ubuntu/+archive/primary/+files/${pkgname%-*}_${_pkgver}-${_ubuntu_rel}.debian.tar.gz")
 sha512sums=('4faa2dced43b1e89213a3ba3b672f660016eb0f45ff449168aab8269cd788d9f82a0067018ef90ca0bf4f274e660d09c721f7fb1d0e5808ee21b9f0778fb0769'
-            '65cb3ba9da2b94b7cc77a0f30c1764046d498e9b3b78d1c6197ad06782fd98f9be308e4001526af9c9f296bc997641bf63e4dd8e2d007c9a398a58a85de2b883')
+            '6123df3584618fa74fe55e73fbb84508967f43ca63365f8d9b1ceb60a0d18741fe6469ecd3ee4ee63d325133d3507692bde7a3612360895c3a3435ff3435a5b2')
 
 prepare() {
-  cd "${srcdir}/${pkgname%-*}-${pkgver%.*}"
+  cd "${srcdir}/${pkgname%-*}-${_pkgver}"
 
   # Apply Ubuntu patches
   for i in $(grep -v '#' "${srcdir}/debian/patches/series"); do
@@ -32,7 +33,7 @@ prepare() {
 }
 
 build() {
-  cd "${srcdir}/${pkgname%-*}-${pkgver%.*}"
+  cd "${srcdir}/${pkgname%-*}-${_pkgver}"
 
   ./configure \
     --prefix=/usr \
@@ -46,7 +47,7 @@ build() {
 }
 
 package() {
-  cd "${srcdir}/${pkgname%-*}-${pkgver%.*}"
+  cd "${srcdir}/${pkgname%-*}-${_pkgver}"
   make DESTDIR="${pkgdir}" install
 
   # Use language packs

@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">pypi.python.org</param>
     <param name="protocol">https</param>
-    <param name="path">/packages/source/p/peewee/peewee-2.6.1.tar.gz</param>
+    <param name="path">/packages/source/p/peewee/peewee-2.6.3.tar.gz</param>
   </service>
 </services>
