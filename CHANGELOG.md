@@ -1,6 +1,6 @@
 Version 20150907
 
- - Update deepin-movie to 2.2.2.20150616111111
+ - Fix startdde wallpaper update issue
 
 
 Version 20150728
