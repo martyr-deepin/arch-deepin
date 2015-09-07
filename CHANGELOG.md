@@ -1,3 +1,8 @@
+Version 20150907
+
+ - Update deepin-movie to 2.2.2.20150616111111
+
+
 Version 20150728
 
  - Sync obs packages

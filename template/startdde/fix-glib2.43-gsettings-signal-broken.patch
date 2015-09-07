@@ -1,0 +1,23 @@
+commit aac1975ca23b1946ee669f39ea1aa04338848bb3
+Author: jouyouyun <jouyouwen717@gmail.com>
+Date:   2015-06-09 17:44:45 +0800
+
+    fix the gsettings signal handling broken after glib2.43
+    
+    - Details:https://github.com/GNOME/glib/commit/8ff5668a458344da22d30491e3ce726d
+    
+    Change-Id: Iaa0900295a864dbd55a641e600a268156a92d1f6
+
+diff --git a/splash.go b/splash.go
+index 1e00b2d..6c47731 100644
+--- a/splash.go
++++ b/splash.go
+@@ -414,6 +414,8 @@ func listenBgFileChanged() {
+ 			mapBgToRoot()
+ 		}
+ 	})
++	// fix the gsettings signal handling broken after glib2.43
++	bgGSettings.GetString(gkeyCurrentBackground)
+ }
+ 
+ func listenDisplayChanged() {

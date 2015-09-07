@@ -4,7 +4,7 @@
 pkgname=startdde
 pkgver=@PKGVER_FIXED@
 _srcdirname=@SRCDIRNAME@
-pkgrel=3
+pkgrel=5
 pkgdesc="starter of deepin desktop environment"
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/startdde"
@@ -16,13 +16,21 @@ makedepends=('cmake' 'coffee-script' 'python2' 'webkitgtk' 'go' 'sqlite'
 groups=('deepin')
 options=(staticlibs)
 conflicts=('deepin-session')
-source=("@SOURCE@")
-sha256sums=('@SHA256SUM@')
+source=("@SOURCE@"
+        "fix-glib2.43-gsettings-signal-broken.patch")
+sha256sums=('@SHA256SUM@'
+            '29f54659059f806130f8d9b08050dd85dc87ccf6f0ecfac09f90bb84c49a67ae')
+
+prepare() {
+  cd "${_srcdirname}"
+
+  patch -p1 -i ../fix-glib2.43-gsettings-signal-broken.patch
+}
 
 build() {
   cd "${_srcdirname}"
 
-  # TODO: remove this after deepin 2014.2 released
+  # TODO: remove this after deepin 2015.0 released
   sed '13s|GOPATH=/usr/share/gocode|GOPATH="/usr/lib/go:${GOPATH}"|' -i Makefile || die "sed failed"
 
   make GOPATH="/usr/lib/go/site"
