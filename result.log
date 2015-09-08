@@ -991,3 +991,5 @@
 2015-07-28 20:57:09 update-pkgbuild: [SUCCESS] deepin-screenshot updated=false version=14.12+git20150717162046~d869601900
 
 2015-09-07 09:11:04 update-pkgbuild: [SUCCESS] startdde updated=false version=0.1+20141230181929~b99e7b174d
+
+2015-09-08 15:41:11 update-pkgbuild: [SUCCESS] dde-workspace updated=false version=2.1+20150521160615

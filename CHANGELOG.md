@@ -1,3 +1,8 @@
+Version 20150908
+
+ - Fix dde-workspace build issue under go1.5
+
+
 Version 20150907
 
  - Fix startdde wallpaper update issue
