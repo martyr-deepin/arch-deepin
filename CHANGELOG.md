@@ -1,5 +1,9 @@
 Version 20150908
 
+ - Update dde-daemon, move netowrkmanager to optdepends
+
+Version 20150908
+
  - Fix dde-workspace build issue under go1.5
 
 
