@@ -17,11 +17,15 @@ If you want to experience more applications from Deepin, such as
 
     sudo pacman -Sy deepin-extra
 
-# Build for Third-Party Repositories
+# For Third-Party Repositories
 
 All the related PKGBUILDs are put in `pkgbuild` directory, and it
 could be easily to maintainer deepin packages in third-party
 repositories, more information to see [HACKING.md](HACKING.md).
+
+The maintainers could subscribe
+[Changelog notification topic](https://github.com/fasheng/arch-deepin/issues/67)
+to receive updating emails.
 
 # Launch DDE
 
