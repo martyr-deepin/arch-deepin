@@ -995,3 +995,5 @@
 2015-09-08 15:41:11 update-pkgbuild: [SUCCESS] dde-workspace updated=false version=2.1+20150521160615
 
 2015-09-08 16:40:57 update-pkgbuild: [SUCCESS] dde-daemon updated=false version=0.0.1+20150415132138~b7120bedfa
+
+2015-09-09 07:55:16 update-pkgbuild: [SUCCESS] dde-daemon updated=false version=0.0.1+20150415132138~b7120bedfa

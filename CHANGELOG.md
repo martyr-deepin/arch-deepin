@@ -1,3 +1,8 @@
+Version 20150909
+
+ - Fix dde-daemon block issue under go1.5
+
+
 Version 20150908
 
  - Update dde-daemon, move netowrkmanager to optdepends
