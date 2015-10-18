@@ -49,55 +49,25 @@ Package: deepin-crossover
 Format: 3.0 (native)
 Binary: deepin-crossover
 Architecture: i386
-Version: 0.5.0
+Version: 0.5.3
 Maintainer: Deepin Packages Builder <packages@linuxdeepin.com>
 Homepage: http://www.linuxdeepin.com/
 Standards-Version: 3.9.5
 Build-Depends: debhelper (>= 9), libx11-dev, libbsd-dev
-Package-List:
- deepin-crossover deb non-free/otherosfs extra arch=i386
+Package-List: 
+ deepin-crossover deb non-free/otherosfs extra
 Priority: extra
 Section: non-free/otherosfs
 Directory: pool/non-free/d/deepin-crossover
 Files: 
- 9748e3703938d45a704b6cfa885f6272 646 deepin-crossover_0.5.0.dsc
- 88b8b8c5cb336379ddd38b5d3a45dca7 5328 deepin-crossover_0.5.0.tar.xz
+ 0ca311874db3d04cba551c7708c0ca70 640 deepin-crossover_0.5.3.dsc
+ 31117435ab07c7d05f9c87dfa8cb42b0 5703 deepin-crossover_0.5.3.tar.gz
 Checksums-Sha1: 
- e2c30d87c34398ed6a3d94c247126f055e458d4b 646 deepin-crossover_0.5.0.dsc
- 0c90c4235a525316e893066883b14fada7851b4a 5328 deepin-crossover_0.5.0.tar.xz
+ a109f520675353bbaeefd0aef0e07ab4058700bc 640 deepin-crossover_0.5.3.dsc
+ 89da432d211300abc3d86cd2cb7a733a84bef103 5703 deepin-crossover_0.5.3.tar.gz
 Checksums-Sha256: 
- adc58c3fdbc4a3eb34daccaa3b478dc7a2211e516fb152a321a447138733ed6f 646 deepin-crossover_0.5.0.dsc
- cc6f8eb91d1c1b852618b3bacad7e02802762a8e280431d5aa047bf3bd3577d0 5328 deepin-crossover_0.5.0.tar.xz
-
-Package: deepinwine-qqintl
-Format: 3.0 (quilt)
-Binary: deepinwine-qqintl, deepinwine-qq2012, wine-qq2012, wine-qqintl
-Architecture: all i386
-Version: 0.1.3-2
-Maintainer: Li Longyu <leaeasy@gmail.com>
-Homepage: http://www.qq.com/
-Standards-Version: 3.9.2
-Build-Depends: debhelper (>= 8.0.0)
-Package-List:
- deepinwine-qq2012 deb non-free/net extra
- deepinwine-qqintl deb non-free/net extra
- wine-qq2012 deb non-free/net extra
- wine-qqintl deb non-free/net extra
-Priority: extra
-Section: non-free/net
-Directory: pool/non-free/d/deepinwine-qqintl
-Files: 
- 4fa054ec9e2d665769164ae9ae698ed6 1599 deepinwine-qqintl_0.1.3-2.dsc
- 26c29532141784c7f1ce3c4ff17a1054 116069056 deepinwine-qqintl_0.1.3.orig.tar.xz
- b8e1642e1f33aa7a51d4d84c6eae86df 3105 deepinwine-qqintl_0.1.3-2.debian.tar.gz
-Checksums-Sha1: 
- 45812d121fd1376456c7365b18d0c7ce3f9e0f9f 1599 deepinwine-qqintl_0.1.3-2.dsc
- eb251dae9524f9bc22216eea29fbcc57e03ed9dd 116069056 deepinwine-qqintl_0.1.3.orig.tar.xz
- dda0435efa71d2cc3025e7a4cb70f67f23154f8c 3105 deepinwine-qqintl_0.1.3-2.debian.tar.gz
-Checksums-Sha256: 
- f9c1acb71f3f447d06932aa148dafe2d83778c41ea9bf3efac68b6733ec50538 1599 deepinwine-qqintl_0.1.3-2.dsc
- 2d0dcafe7f6195d2037397dd963b059b1f631b1ad6b52081ac397e38fb264394 116069056 deepinwine-qqintl_0.1.3.orig.tar.xz
- 94b5f80b0fba53723adc398d26466af3b23659208a7449d878220ed37e3feb1f 3105 deepinwine-qqintl_0.1.3-2.debian.tar.gz
+ 92a1b3e28f056ca34b24e061e333b6480720757bce5daafc313b2c9814d1842a 640 deepin-crossover_0.5.3.dsc
+ bfb8cba436a55f32afa7e3f1d0567d640d02b03cc9c6465467cbca5d0064ceff 5703 deepin-crossover_0.5.3.tar.gz
 
 Package: draftsight
 Format: 1.0

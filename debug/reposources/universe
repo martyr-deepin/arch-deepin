@@ -66,6 +66,28 @@ Checksums-Sha256:
 Homepage: http://teejeetech.blogspot.in/
 Package-List: aptik deb utils extra
 
+Package: aptik-bmon
+Binary: aptik-bmon
+Version: 1.0.1-0~5~ubuntu14.04.1
+Section: utils
+Maintainer: Tony George <tony.george.kol@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac-0.26, libgtk-3-dev, libgee-0.8-dev, libjson-glib-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (native)
+Directory: pool/universe/a/aptik-bmon
+Files:
+ 52e81731ad3bed3a5047c6bd05ae5a00 54876 aptik-bmon_1.0.1-0~5~ubuntu14.04.1.tar.gz
+ a782013b143198cb3f41a8e95d9b1a31 712 aptik-bmon_1.0.1-0~5~ubuntu14.04.1.dsc
+Checksums-Sha1:
+ 5518d3af343421a7cd5a1cf6a3b433eae1e9f27f 54876 aptik-bmon_1.0.1-0~5~ubuntu14.04.1.tar.gz
+ 97c205d5b2ed7c2e1ca901955cfc7692aedaf0f6 712 aptik-bmon_1.0.1-0~5~ubuntu14.04.1.dsc
+Checksums-Sha256:
+ c4736b143ce308bac74943bd90b62de16fcc67c17ed29e5868df061f412b0716 54876 aptik-bmon_1.0.1-0~5~ubuntu14.04.1.tar.gz
+ f6ef10fb39c774e9bd83bc2f3780518d8e464c8851737ede38dc66aa4b658715 712 aptik-bmon_1.0.1-0~5~ubuntu14.04.1.dsc
+Homepage: http://teejeetech.blogspot.in/
+Package-List: aptik-bmon deb utils extra
+
 Package: autotools-dev
 Format: 3.0 (native)
 Binary: autotools-dev
@@ -95,7 +117,7 @@ Checksums-Sha256:
 
 Package: bbswitch
 Binary: bbswitch-dkms, bbswitch-source
-Version: 0.8-1~trustyppa1
+Version: 0.8-2~trustyppa1
 Section: kernel
 Maintainer: The Bumblebee Project <bumblebee@lists.launchpad.net>
 Build-Depends: debhelper (>= 9), dkms
@@ -105,20 +127,20 @@ Format: 3.0 (quilt)
 Directory: pool/universe/b/bbswitch
 Files:
  5b116b31ace3604ddf9d1fc1f4bc5807 15800 bbswitch_0.8.orig.tar.gz
- eda1c8fee9b287b6e06668ca7769777e 2507 bbswitch_0.8-1~trustyppa1.debian.tar.gz
- f78e92f4e6b6a474cef0668abbb8b881 1688 bbswitch_0.8-1~trustyppa1.dsc
+ 89bc6ca63447a677da50e9e2f0008cae 2824 bbswitch_0.8-2~trustyppa1.debian.tar.xz
+ 8c8789b84d08cbfe076ff33ac47a3eeb 2033 bbswitch_0.8-2~trustyppa1.dsc
 Checksums-Sha1:
  e282ee682d794e3962baa4dead01917c42571e78 15800 bbswitch_0.8.orig.tar.gz
- 0647e62bf004976dac0af71a35ff53c21d4cffb6 2507 bbswitch_0.8-1~trustyppa1.debian.tar.gz
- 72a8bead26d1ecf0af09968552bd394c2e02bfbc 1688 bbswitch_0.8-1~trustyppa1.dsc
+ 765f1c6c05b205d58fb8b2143febbd29c9313b4d 2824 bbswitch_0.8-2~trustyppa1.debian.tar.xz
+ 798f770e15a58ab33f56459c1dcd62513d59ab0c 2033 bbswitch_0.8-2~trustyppa1.dsc
 Checksums-Sha256:
  76cabd3f734fb4fe6ebfe3ec9814138d0d6f47d47238521ecbd6a986b60d1477 15800 bbswitch_0.8.orig.tar.gz
- bc1d060bf9642e492f179dd2b8f3f8bf0545166d6f83ca48691ca64a0bb83608 2507 bbswitch_0.8-1~trustyppa1.debian.tar.gz
- db0fe48f29020afdd9215ae317d1b92d8a7591594df74199ab63ad4a55d17a60 1688 bbswitch_0.8-1~trustyppa1.dsc
+ 2f69664769e318c5dbc213ef05f22749a7639e28369aef195032869acdb35c5a 2824 bbswitch_0.8-2~trustyppa1.debian.tar.xz
+ a80472652ec576a055e5c65fe2d8e326fd1ac9228440a0fcc0aae4012424b145 2033 bbswitch_0.8-2~trustyppa1.dsc
 Homepage: https://github.com/Bumblebee-Project/bbswitch
 Uploaders: Peter Lekensteyn <lekensteyn@gmail.com>, Bruno Pagani <bruno.n.pagani@gmail.com>
-Package-List: bbswitch-dkms deb kernel extra
- bbswitch-source deb kernel extra
+Package-List: bbswitch-dkms deb kernel extra arch=all
+ bbswitch-source deb kernel extra arch=all
 Vcs-Git: git://github.com/Bumblebee-Project/bbswitch.git
 Vcs-Browser: https://github.com/Bumblebee-Project/bbswitch
 
@@ -227,7 +249,7 @@ Package-List: builddeb deb contrib/devel optional
 
 Package: bumblebee
 Binary: bumblebee, bumblebee-nvidia, bumblebee-dbg
-Version: 3.2.1-90~trustyppa1
+Version: 3.2.1-93~trustyppa1
 Section: utils
 Maintainer: The Bumblebee Project <bumblebee@lists.launchpad.net>
 Build-Depends: debhelper (>= 9), libbsd-dev (>= 0.2.0), pkg-config, libx11-dev, libglib2.0-dev, help2man, dh-systemd (>= 1.4)
@@ -237,21 +259,21 @@ Format: 3.0 (quilt)
 Directory: pool/universe/b/bumblebee
 Files:
  30974e677bb13e8a3825fd6f3e7d3b24 143110 bumblebee_3.2.1.orig.tar.gz
- db18e5fc8efc9718fe01dd0e0088025b 7324 bumblebee_3.2.1-90~trustyppa1.debian.tar.gz
- 5bcbdf797d0a89de24bf85079a10bead 1822 bumblebee_3.2.1-90~trustyppa1.dsc
+ f2860421c847799f9cc8dcf4d1f60464 9552 bumblebee_3.2.1-93~trustyppa1.debian.tar.xz
+ 46d8c89a24639cbc78fab8d97edfb8b4 2207 bumblebee_3.2.1-93~trustyppa1.dsc
 Checksums-Sha1:
  a715f4aa1b0c24dd4352ff7e0bc390f1e4e03cd9 143110 bumblebee_3.2.1.orig.tar.gz
- 731149ee604032754adc36d0c3b15d39869ec707 7324 bumblebee_3.2.1-90~trustyppa1.debian.tar.gz
- 387c361bbf7a9ca5adcd4cd082333174a04dd955 1822 bumblebee_3.2.1-90~trustyppa1.dsc
+ 7829db0b37d2842634cef5e1b75917bd65d75603 9552 bumblebee_3.2.1-93~trustyppa1.debian.tar.xz
+ 0d1a7f08a07d0bac79f7cbfcde0725f5752a9509 2207 bumblebee_3.2.1-93~trustyppa1.dsc
 Checksums-Sha256:
  1018703b07e2f607a4641249d69478ce076ae5a1e9dd6cff5694d394fa7ee30e 143110 bumblebee_3.2.1.orig.tar.gz
- 5101517272e8fe6477cb4494fdff26b549ce7ad2587657d77989b51ba9c0395c 7324 bumblebee_3.2.1-90~trustyppa1.debian.tar.gz
- a2be242b2ac42ac53929a1c0dc04da0555d6007e4d4cc5732aeb4f1660910da0 1822 bumblebee_3.2.1-90~trustyppa1.dsc
+ c4e37cb7e2aacaa91c277bed54a97c4a85e44527f32a21a2cd23cae733a05916 9552 bumblebee_3.2.1-93~trustyppa1.debian.tar.xz
+ fdfb0140cd8ea4dd33451f53111be08dcc2095523287cc7c6e170f7a0a2bdb47 2207 bumblebee_3.2.1-93~trustyppa1.dsc
 Homepage: https://launchpad.net/~bumblebee
 Uploaders: Peter Lekensteyn <lekensteyn@gmail.com>, Bruno Pagani <bruno.n.pagani@gmail.com>
-Package-List: bumblebee deb utils extra
- bumblebee-dbg deb debug extra
- bumblebee-nvidia deb contrib/utils extra
+Package-List: bumblebee deb utils extra arch=i386,amd64
+ bumblebee-dbg deb debug extra arch=i386,amd64
+ bumblebee-nvidia deb contrib/utils extra arch=any
 Vcs-Git: git://github.com/Bumblebee-Project/Bumblebee.git
 Vcs-Browser: https://github.com/Bumblebee-Project/Bumblebee
 
@@ -322,23 +344,23 @@ Package-List: codeblocks-fr deb doc optional
 
 Package: conky-manager
 Binary: conky-manager
-Version: 2.3.3~132~ubuntu14.04.1
+Version: 2.3.4~134~ubuntu14.04.1
 Section: utils
 Maintainer: Tony George <tony.george.kol@gmail.com>
-Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac, libgtk-3-dev, libgee-dev, libjson-glib-dev
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac-0.26, libgtk-3-dev, libgee-0.8-dev, libjson-glib-dev
 Architecture: any
 Standards-Version: 3.9.3
 Format: 3.0 (native)
 Directory: pool/universe/c/conky-manager
 Files:
- c4090e7a3de2a52591d0cad8aaaa8c81 766509 conky-manager_2.3.3~132~ubuntu14.04.1.tar.gz
- 548688bf6fd3df5a4dcf89cb9133a29f 724 conky-manager_2.3.3~132~ubuntu14.04.1.dsc
+ 307adf22a3a7e3a7ac7d180251a4fdf4 765528 conky-manager_2.3.4~134~ubuntu14.04.1.tar.gz
+ 0c19c2753b6afb5177ab9adc1b4b5cab 733 conky-manager_2.3.4~134~ubuntu14.04.1.dsc
 Checksums-Sha1:
- 9c27ea86f0f5f7a196d9940f20c79e2a24a1330d 766509 conky-manager_2.3.3~132~ubuntu14.04.1.tar.gz
- 2c94d07ef824ff10d02bf661156d3afeafd55e8c 724 conky-manager_2.3.3~132~ubuntu14.04.1.dsc
+ f03f78eaf3b2ca6ad438587a3cd5bc48c7bce117 765528 conky-manager_2.3.4~134~ubuntu14.04.1.tar.gz
+ 163fda4e07c65c182c6791b4355bc66841214602 733 conky-manager_2.3.4~134~ubuntu14.04.1.dsc
 Checksums-Sha256:
- 62c2b99ba5f45242b32bdb975b2c3e5c7d11a70d61846325bb2ad083ce69b2bf 766509 conky-manager_2.3.3~132~ubuntu14.04.1.tar.gz
- f667f890dd62a35183a5e00e34cdd911290e51f8f4ad267764453ab6f97475a4 724 conky-manager_2.3.3~132~ubuntu14.04.1.dsc
+ 93e20e44eabafbec2101773670f4a02439f0eb7d2404b2c5051906998bd85136 765528 conky-manager_2.3.4~134~ubuntu14.04.1.tar.gz
+ 1df61e4464265bcd98302f9e9758059585d889666052b15bc7a37f94e160a3e0 733 conky-manager_2.3.4~134~ubuntu14.04.1.dsc
 Homepage: http://teejeetech.blogspot.in/
 Package-List: conky-manager deb utils extra
 
@@ -767,7 +789,7 @@ Original-Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
 
 Package: i-nex
 Binary: i-nex
-Version: 7.4.0+bzr887+20150112~ubuntu14.04.1
+Version: 7.4.0+bzr888+20150920~ubuntu14.04.1
 Section: admin
 Maintainer: eloaders <eloaders@linux.pl>
 Build-Depends: debhelper (>= 7), dh-autoreconf, python | python-all | python-dev | python-all-dev, pkg-config, dpkg-dev (>= 1.14.17), libcpuid11-dev, lsb-release, libprocps3-dev | libprocps0-dev | libproc-dev, libx11-dev, libxext-dev, libgl1-mesa-dev, libglu1-mesa-dev, gambas3-dev (>= 3.6.0), gambas3-gb-image (>= 3.6.0), gambas3-gb-qt4 (>= 3.6.0), gambas3-gb-form (>= 3.6.0), gambas3-gb-desktop (>= 3.6.0), gambas3-gb-desktop-x11 (>= 3.6.0), imagemagick
@@ -776,14 +798,14 @@ Standards-Version: 3.9.4
 Format: 3.0 (native)
 Directory: pool/universe/i/i-nex
 Files:
- d8a903abf9102ae48144ded2ba2714a0 3843666 i-nex_7.4.0+bzr887+20150112~ubuntu14.04.1.tar.gz
- c37f001c9e31f28fa8b331d4c71eeeed 1203 i-nex_7.4.0+bzr887+20150112~ubuntu14.04.1.dsc
+ 2b698581a182575f04e6220305428b8c 3835568 i-nex_7.4.0+bzr888+20150920~ubuntu14.04.1.tar.gz
+ 5dab54b70c7c95442c5908935c85a981 1203 i-nex_7.4.0+bzr888+20150920~ubuntu14.04.1.dsc
 Checksums-Sha1:
- 9b422a36337a7f422e1e7f0610178515885c7636 3843666 i-nex_7.4.0+bzr887+20150112~ubuntu14.04.1.tar.gz
- 6e3ba5f03e9f44e711d6e0f1d37b746c9a5fe5a0 1203 i-nex_7.4.0+bzr887+20150112~ubuntu14.04.1.dsc
+ 6b44421e71ccd9e6bad03ca5348625caa29ef750 3835568 i-nex_7.4.0+bzr888+20150920~ubuntu14.04.1.tar.gz
+ 7e21402614cdea66c09aa837ac1dfc09f3645302 1203 i-nex_7.4.0+bzr888+20150920~ubuntu14.04.1.dsc
 Checksums-Sha256:
- 7b03f9bcf3cd4cdc540c48456ae9857c793751c85446b827b5983eb5654b026a 3843666 i-nex_7.4.0+bzr887+20150112~ubuntu14.04.1.tar.gz
- 34081a2f7a1bd295a9801c95f03cb6f89da3d9edba622286b545b9586fa515b2 1203 i-nex_7.4.0+bzr887+20150112~ubuntu14.04.1.dsc
+ 93052441fb4bd4ef7ca25e7efa3d2beac9f1b8ca3ffbbf8e38fff935841731d7 3835568 i-nex_7.4.0+bzr888+20150920~ubuntu14.04.1.tar.gz
+ 6d26981959703fde949740d80d7b44a78d392196ad5afa79b5aa98dd29efb60a 1203 i-nex_7.4.0+bzr888+20150920~ubuntu14.04.1.dsc
 Homepage: http://i-nex.linux.pl
 Uploaders: eloaders <eloaders@linux.pl>
 Package-List: i-nex deb contrib/admin extra
@@ -923,39 +945,41 @@ Vcs-Git: git://git.debian.org/git/pkg-vala/libgee.git
 Vcs-Browser: http://git.debian.org/?p=pkg-vala/libgee.git
 
 Package: libvdpau
-Binary: libvdpau-dev, libvdpau1, libvdpau-doc
-Version: 1.0-0ubuntu0~ppa0~trusty
+Binary: libvdpau-dev, libvdpau1, libvdpau-doc, libvdpau1-dbg
+Version: 1.1-0ubuntu1~xedgers14.04.1
 Section: libs
-Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Build-Depends: debhelper (>= 9), dh-autoreconf, pkg-config, libx11-dev, x11proto-dri2-dev (>= 2.2), libxext-dev
 Build-Depends-Indep: doxygen-latex, graphviz, ghostscript
 Architecture: any all
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Format: 3.0 (quilt)
 Directory: pool/universe/libv/libvdpau
 Files:
- e759acac5350b86d5ad84dd19381d12c 423007 libvdpau_1.0.orig.tar.bz2
- a0d9fcafc66ae066e820a4686d0996bd 6932 libvdpau_1.0-0ubuntu0~ppa0~trusty.debian.tar.xz
- 5da5cae7725861069ea75bde82685c41 2311 libvdpau_1.0-0ubuntu0~ppa0~trusty.dsc
+ 11a842df9fbaad0f5f10cf553b8d5690 424233 libvdpau_1.1.orig.tar.bz2
+ 922da5052f64c9f46d11558c017548b0 8696 libvdpau_1.1-0ubuntu1~xedgers14.04.1.debian.tar.xz
+ b1fbe7c42b0f9609f6a219f4e92dc163 2493 libvdpau_1.1-0ubuntu1~xedgers14.04.1.dsc
 Checksums-Sha1:
- fbf10a02952518e45aa089fe3dc418020983a5fa 423007 libvdpau_1.0.orig.tar.bz2
- c12b9ea09396fd1725d441eaa5a2f4cf73954b35 6932 libvdpau_1.0-0ubuntu0~ppa0~trusty.debian.tar.xz
- ea65921032284a17717577c32e3741eb95d4b534 2311 libvdpau_1.0-0ubuntu0~ppa0~trusty.dsc
+ 1d6b03f4228241cb222d9b6395bcdd8b125a3fe0 424233 libvdpau_1.1.orig.tar.bz2
+ b232beb4df15a02fba2796f1866595711d27f078 8696 libvdpau_1.1-0ubuntu1~xedgers14.04.1.debian.tar.xz
+ 6035ed171fa354d1931d99e97d99acd1e1bb887d 2493 libvdpau_1.1-0ubuntu1~xedgers14.04.1.dsc
 Checksums-Sha256:
- 2f6685cd5c8fca239ac7d9d91d59574a8747c6b99febdf276b3c1a13004073f7 423007 libvdpau_1.0.orig.tar.bz2
- b921c2b604e38112f3c87b8369e0a41742dede64f414edc2e1ee55fb1ed82bc3 6932 libvdpau_1.0-0ubuntu0~ppa0~trusty.debian.tar.xz
- 6e286e686cc11fd5a27ee1b442b27936a8b8c1d82327a46f47bd1751c551b392 2311 libvdpau_1.0-0ubuntu0~ppa0~trusty.dsc
+ 59c8bcfead6410d12284f1dc11ee919d3b11a684424597ba8961211ad8fdf34c 424233 libvdpau_1.1.orig.tar.bz2
+ 85806513cfd920c6488ed616d15bf652e5eca305ffb1bb1ff0f1688570ad76d7 8696 libvdpau_1.1-0ubuntu1~xedgers14.04.1.debian.tar.xz
+ 416de6f21a94455495a8e6ca29128d515b1d10788ec3548aa1d4d2551f9c27a9 2493 libvdpau_1.1-0ubuntu1~xedgers14.04.1.dsc
 Homepage: http://cgit.freedesktop.org/~aplattner/libvdpau
-Uploaders: Jean-Yves Avenard <jyavenard@gmail.com>, Russ Allbery <rra@debian.org>, Andreas Beckmann <anbe@debian.org>,
+Uploaders: Jean-Yves Avenard <jyavenard@gmail.com>, Russ Allbery <rra@debian.org>, Andreas Beckmann <anbe@debian.org>, Vincent Cheng <vcheng@debian.org>
 Package-List: libvdpau-dev deb libdevel optional arch=any
  libvdpau-doc deb doc optional arch=all
  libvdpau1 deb libs optional arch=any
+ libvdpau1-dbg deb debug extra arch=any
 Vcs-Git: git://anonscm.debian.org/pkg-nvidia/libvdpau.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-nvidia/libvdpau.git
+Original-Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
 
 Package: lwqq
 Binary: liblwqq0, liblwqq-dev, liblwqq-dbg
-Version: 0.6.0+git201506072336.e91f1f5-1~lainme~trusty
+Version: 0.6.1+git201507151458.733836e-1~lainme~trusty
 Section: net
 Maintainer: lainme <lainme993@gmail.com>
 Build-Depends: debhelper (>= 7), cdbs, cmake, pkg-config, libcurl4-openssl-dev | libcurl4-nss-dev | libcurl4-gnutls-dev, libsqlite3-dev, libev-dev, libmozjs-17.0-dev | libmozjs185-dev, zlib1g-dev
@@ -964,17 +988,17 @@ Standards-Version: 3.9.3
 Format: 3.0 (quilt)
 Directory: pool/universe/l/lwqq
 Files:
- 44c81fbce078f36527e7594376d899cc 181952 lwqq_0.6.0+git201506072336.e91f1f5.orig.tar.gz
- 8828c844d1b25d7e68eb119c303fe5ed 4274 lwqq_0.6.0+git201506072336.e91f1f5-1~lainme~trusty.debian.tar.gz
- 21acc0d9bffa2e76204bd3a09b1f8246 2119 lwqq_0.6.0+git201506072336.e91f1f5-1~lainme~trusty.dsc
+ 8e57503aae2230b50dc995fde2d64ac3 182466 lwqq_0.6.1+git201507151458.733836e.orig.tar.gz
+ 0321efb3100a8e32cf8a60eac7445705 4332 lwqq_0.6.1+git201507151458.733836e-1~lainme~trusty.debian.tar.gz
+ 4c407dcba984830a2c529f98f3c1e706 2119 lwqq_0.6.1+git201507151458.733836e-1~lainme~trusty.dsc
 Checksums-Sha1:
- e5b18b2838aea232c4d974d7370d7a291d0e0b62 181952 lwqq_0.6.0+git201506072336.e91f1f5.orig.tar.gz
- c9fd78ee4a72f3e8f673efa91215c691379a06f5 4274 lwqq_0.6.0+git201506072336.e91f1f5-1~lainme~trusty.debian.tar.gz
- 3558a57e7d99c7a48ca3f11ce36c8e8f09cd9007 2119 lwqq_0.6.0+git201506072336.e91f1f5-1~lainme~trusty.dsc
+ 0e3ce18d6f4a6841ef2dcb23e4c24a5d12ffa75e 182466 lwqq_0.6.1+git201507151458.733836e.orig.tar.gz
+ 4ce52519f38d3848b4725f88bd4264cb6c9c775f 4332 lwqq_0.6.1+git201507151458.733836e-1~lainme~trusty.debian.tar.gz
+ d5d090ff3f718989aaa94cbcc1c744193f16e52c 2119 lwqq_0.6.1+git201507151458.733836e-1~lainme~trusty.dsc
 Checksums-Sha256:
- 511310ea89d18f5313569940c3534e596679f3ba86dd3c89611fb9b8b2a07dc3 181952 lwqq_0.6.0+git201506072336.e91f1f5.orig.tar.gz
- 4ac10083a9dc915e61365de73d8c2d6e1eccf3b6878a5242d95e157f727f0410 4274 lwqq_0.6.0+git201506072336.e91f1f5-1~lainme~trusty.debian.tar.gz
- 1cfd4220a3837fbb1211ccbb8ca3d83bd6c0429046110fa787a6135052765603 2119 lwqq_0.6.0+git201506072336.e91f1f5-1~lainme~trusty.dsc
+ b52eaf161fb4d0f2745e3886532361ec5869ba14c93b0e153fc8f18b3e124c2e 182466 lwqq_0.6.1+git201507151458.733836e.orig.tar.gz
+ 31e372d4bbecc7ebbdcb2103b0aae192cf3b93fdce86bdff6fe44804a1b5bc1e 4332 lwqq_0.6.1+git201507151458.733836e-1~lainme~trusty.debian.tar.gz
+ f4782efcd6f625bdc0d946c66080b293fb506b20821a5f7d469b2b8dbc45c3a2 2119 lwqq_0.6.1+git201507151458.733836e-1~lainme~trusty.dsc
 Homepage: https://github.com/xiehuc/lwqq
 Package-List: liblwqq-dbg deb debug extra
  liblwqq-dev deb libdevel extra
@@ -1179,9 +1203,74 @@ Checksums-Sha256:
 Homepage: http://www.monodevelop.com/
 Package-List: monodevelop-debugger-gdb-5 deb cli-mono extra
 
+Package: nvidia-graphics-drivers-304
+Binary: nvidia-304, nvidia-304-dev, libcuda1-304, nvidia-libopencl1-304, nvidia-opencl-icd-304, nvidia-current, nvidia-current-dev
+Version: 304.125-0ubuntu1~xedgers14.04.1
+Section: misc
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 6.0.7~), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, cdbs, libc6, libxvmc1, dh-modaliases, libxv1
+Architecture: i386 amd64
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/universe/n/nvidia-graphics-drivers-304
+Files:
+ cea0e4d98942a8846d9b1f6843ae76b8 79636328 nvidia-graphics-drivers-304_304.125.orig.tar.gz
+ 77c6ecc7c698703eb11d10e55423c35a 149032 nvidia-graphics-drivers-304_304.125-0ubuntu1~xedgers14.04.1.diff.gz
+ 23050a35592567967ca3e984c9d95abf 2667 nvidia-graphics-drivers-304_304.125-0ubuntu1~xedgers14.04.1.dsc
+Checksums-Sha1:
+ 3bd33ba40897925609674f49f26b86d02de290bf 79636328 nvidia-graphics-drivers-304_304.125.orig.tar.gz
+ 5c237b092e7ac36b8fc974ee874cd3ebe075c859 149032 nvidia-graphics-drivers-304_304.125-0ubuntu1~xedgers14.04.1.diff.gz
+ df0835671db7f38fd30e0aaf61b326b3c6bac594 2667 nvidia-graphics-drivers-304_304.125-0ubuntu1~xedgers14.04.1.dsc
+Checksums-Sha256:
+ 1d5b39e8d7398ddd2a733a396f07ca15cc792483ac4e30bebbebccb3a0976932 79636328 nvidia-graphics-drivers-304_304.125.orig.tar.gz
+ 7b22a49bd6ff64d1a48042ab87f7d9e887c9fe759d0d3820bec37a0434932c79 149032 nvidia-graphics-drivers-304_304.125-0ubuntu1~xedgers14.04.1.diff.gz
+ f5926fd12522bfe4829c84972ec98d4d81d2f1b47951dbc17a9ca3a8cd63b074 2667 nvidia-graphics-drivers-304_304.125-0ubuntu1~xedgers14.04.1.dsc
+Package-List: libcuda1-304 deb restricted/misc optional arch=i386,amd64
+ nvidia-304 deb restricted/misc optional arch=i386,amd64
+ nvidia-304-dev deb restricted/misc optional arch=i386,amd64
+ nvidia-current deb restricted/misc optional arch=i386,amd64
+ nvidia-current-dev deb restricted/misc optional arch=i386,amd64
+ nvidia-libopencl1-304 deb restricted/misc optional arch=i386,amd64
+ nvidia-opencl-icd-304 deb restricted/misc optional arch=i386,amd64
+Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
+Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
+
+Package: nvidia-graphics-drivers-331
+Binary: nvidia-331, nvidia-331-dev, libcuda1-331, nvidia-libopencl1-331, nvidia-opencl-icd-331, nvidia-331-uvm, nvidia-319, nvidia-319-dev
+Version: 331.113-0ubuntu1~xedgers14.04.1
+Section: misc
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 8.0.0), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, libc6, libxvmc1, dh-modaliases, libxv1
+Architecture: i386 amd64 armhf
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/universe/n/nvidia-graphics-drivers-331
+Files:
+ c4874bda002453f034b95375c62d5b62 89916522 nvidia-graphics-drivers-331_331.113.orig.tar.gz
+ 15d26332276e486fb17d94ad412f601b 154199 nvidia-graphics-drivers-331_331.113-0ubuntu1~xedgers14.04.1.diff.gz
+ fb2e7ad2fb9fe94812c364e031b25ed6 2751 nvidia-graphics-drivers-331_331.113-0ubuntu1~xedgers14.04.1.dsc
+Checksums-Sha1:
+ f5cb4d503711599e5beb5a1b0bdfc40bf749c27d 89916522 nvidia-graphics-drivers-331_331.113.orig.tar.gz
+ e7924ff360f2ad8b1715aac16d8255e73c1557d1 154199 nvidia-graphics-drivers-331_331.113-0ubuntu1~xedgers14.04.1.diff.gz
+ 2759114ef33c790a4945204daa639f39ef5de878 2751 nvidia-graphics-drivers-331_331.113-0ubuntu1~xedgers14.04.1.dsc
+Checksums-Sha256:
+ 677f1056afe13fe0beeb3f3658ac21f73358640a48207a7ab9380784b27b5884 89916522 nvidia-graphics-drivers-331_331.113.orig.tar.gz
+ cc75d1a93050f300dd0f7710501e2a8bc39689da7dd3d0736bf51f0081ab62f8 154199 nvidia-graphics-drivers-331_331.113-0ubuntu1~xedgers14.04.1.diff.gz
+ 228c5c2eeee2dc1f0defa1f2790d2f6e64f1083fb08b4652a39b01fe653ab808 2751 nvidia-graphics-drivers-331_331.113-0ubuntu1~xedgers14.04.1.dsc
+Package-List: libcuda1-331 deb restricted/misc optional arch=i386,amd64,armhf
+ nvidia-319 deb restricted/misc optional arch=i386,amd64
+ nvidia-319-dev deb restricted/misc optional arch=i386,amd64
+ nvidia-331 deb restricted/misc optional arch=i386,amd64,armhf
+ nvidia-331-dev deb restricted/misc optional arch=i386,amd64,armhf
+ nvidia-331-uvm deb restricted/misc optional arch=i386,amd64,armhf
+ nvidia-libopencl1-331 deb restricted/misc optional arch=i386,amd64
+ nvidia-opencl-icd-331 deb restricted/misc optional arch=i386,amd64
+Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
+Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
+
 Package: nvidia-graphics-drivers-340
 Binary: nvidia-340, nvidia-340-dev, libcuda1-340, nvidia-libopencl1-340, nvidia-opencl-icd-340, nvidia-340-uvm
-Version: 340.76-100ubuntu100~ppa1~trusty0
+Version: 340.76-100ubuntu100~ppa3~trusty0
 Section: misc
 Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Build-Depends: debhelper (>= 8.0.0), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, libc6, libxvmc1, dh-modaliases, libxv1
@@ -1190,14 +1279,14 @@ Standards-Version: 3.8.0
 Format: 1.0
 Directory: pool/universe/n/nvidia-graphics-drivers-340
 Files:
- 47dc307e0e3878a107a7c6314aababa6 77444869 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa1~trusty0.tar.gz
- cfbec107f1d10029f30f435231eb61d4 2267 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa1~trusty0.dsc
+ 96435047b1558abfd4920bcbd16b95ca 77445445 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa3~trusty0.tar.gz
+ 62411cfa5bbfc522d6cd0c4eedb2f754 2267 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa3~trusty0.dsc
 Checksums-Sha1:
- 737747d3cc3d9211ece123bdb550a43f26835077 77444869 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa1~trusty0.tar.gz
- 126820fb6f74afb78c521999ab940ed0d2be761f 2267 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa1~trusty0.dsc
+ a526a5116ed27e503de7d6abaa8a86949e81a117 77445445 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa3~trusty0.tar.gz
+ ebab25beadbdb50b9ad4830d7a057429fbd755de 2267 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa3~trusty0.dsc
 Checksums-Sha256:
- 9c297f7cfb2e4cfc695e2fdf75f1bad4b79f7bd974c63b8351857db82cc0a74e 77444869 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa1~trusty0.tar.gz
- 16ce64d25052a174326af964a1a2ea781a6e4c4d48fb51fa23756399ec466db9 2267 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa1~trusty0.dsc
+ 59885ec870f670701278aac43b00f5faaf14660d93f3c64bf38e57a77847e1bb 77445445 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa3~trusty0.tar.gz
+ 25681caa7a9a301878fe40b92563a32bb7902e21a85a50e330a5545d9def77e0 2267 nvidia-graphics-drivers-340_340.76-100ubuntu100~ppa3~trusty0.dsc
 Package-List: libcuda1-340 deb restricted/misc optional arch=i386,amd64
  nvidia-340 deb restricted/misc optional arch=i386,amd64
  nvidia-340-dev deb restricted/misc optional arch=i386,amd64
@@ -1239,26 +1328,29 @@ Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
 
 Package: nvidia-graphics-drivers-346
 Binary: nvidia-346, nvidia-346-dev, libcuda1-346, nvidia-libopencl1-346, nvidia-opencl-icd-346, nvidia-346-uvm
-Version: 346.59-100ubuntu100~ppa1~trusty
+Version: 346.87-0ubuntu0~xedgers14.04.1
 Section: misc
 Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Build-Depends: debhelper (>= 8.0.0), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, libc6, libxvmc1, dh-modaliases, libxv1
-Architecture: i386 amd64
+Architecture: i386 amd64 armhf
 Standards-Version: 3.8.0
 Format: 1.0
 Directory: pool/universe/n/nvidia-graphics-drivers-346
 Files:
- cfb320f59c17e4cf2dd226498119a03c 82091814 nvidia-graphics-drivers-346_346.59-100ubuntu100~ppa1~trusty.tar.gz
- 738b754eb06b107ede4ad705fdd47c95 2258 nvidia-graphics-drivers-346_346.59-100ubuntu100~ppa1~trusty.dsc
+ 40de4fba0990ce5780163d8c48e463d5 105434110 nvidia-graphics-drivers-346_346.87.orig.tar.gz
+ 015b2240179dfb89c73ffa9c5e14d196 150708 nvidia-graphics-drivers-346_346.87-0ubuntu0~xedgers14.04.1.diff.gz
+ 56e24f5a4661e92836a2f114075c4aae 2590 nvidia-graphics-drivers-346_346.87-0ubuntu0~xedgers14.04.1.dsc
 Checksums-Sha1:
- 606d65fc0a19bdb752057271ceb644ff8c76daac 82091814 nvidia-graphics-drivers-346_346.59-100ubuntu100~ppa1~trusty.tar.gz
- 0d640346d06d277f673fe153d5080f091006c05b 2258 nvidia-graphics-drivers-346_346.59-100ubuntu100~ppa1~trusty.dsc
+ caf63c77d32a7d70e0ec31a7f90a82c63c9f2222 105434110 nvidia-graphics-drivers-346_346.87.orig.tar.gz
+ e9d012f27aff773d1a20bfec589d5003271427b5 150708 nvidia-graphics-drivers-346_346.87-0ubuntu0~xedgers14.04.1.diff.gz
+ 76de268931ae57ab82699814db45cd41c03ac4f3 2590 nvidia-graphics-drivers-346_346.87-0ubuntu0~xedgers14.04.1.dsc
 Checksums-Sha256:
- 9e055c6c14a6c50b7e24643a213fb2d84a220d45dfb1a170bec3e8a8e3782808 82091814 nvidia-graphics-drivers-346_346.59-100ubuntu100~ppa1~trusty.tar.gz
- 62d0c60619dfc24d284e8a237123d1e5f9a24524facd717b04a52e328cfb6977 2258 nvidia-graphics-drivers-346_346.59-100ubuntu100~ppa1~trusty.dsc
-Package-List: libcuda1-346 deb restricted/misc optional arch=i386,amd64
- nvidia-346 deb restricted/misc optional arch=i386,amd64
- nvidia-346-dev deb restricted/misc optional arch=i386,amd64
+ 15bca8f463257e587286e935fe4998d393cbdc0a147389bceff0b223b1b0e0c9 105434110 nvidia-graphics-drivers-346_346.87.orig.tar.gz
+ 1ca80661f48189e68e97bbcddf18029439673355776f20446c7f6b2ad82b3728 150708 nvidia-graphics-drivers-346_346.87-0ubuntu0~xedgers14.04.1.diff.gz
+ a9265b09fc7ca53181ff025a8f0d0e2cbcf781c5a0255cd185ffea90285e5936 2590 nvidia-graphics-drivers-346_346.87-0ubuntu0~xedgers14.04.1.dsc
+Package-List: libcuda1-346 deb restricted/misc optional arch=i386,amd64,armhf
+ nvidia-346 deb restricted/misc optional arch=i386,amd64,armhf
+ nvidia-346-dev deb restricted/misc optional arch=i386,amd64,armhf
  nvidia-346-uvm deb restricted/misc optional arch=amd64
  nvidia-libopencl1-346 deb restricted/misc optional arch=i386,amd64
  nvidia-opencl-icd-346 deb restricted/misc optional arch=i386,amd64
@@ -1296,8 +1388,8 @@ Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
 Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
 
 Package: nvidia-graphics-drivers-352
-Binary: nvidia-352, nvidia-352-dev, libcuda1-352, nvidia-libopencl1-352, nvidia-opencl-icd-352, nvidia-352-uvm, nvidia-319, nvidia-319-dev
-Version: 352.21-100ubuntu100~ppa0~trusty0
+Binary: nvidia-352, nvidia-352-dev, libcuda1-352, nvidia-libopencl1-352, nvidia-opencl-icd-352, nvidia-352-uvm
+Version: 352.30-100ubuntu100~ppa0~trusty0
 Section: misc
 Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Build-Depends: debhelper (>= 8.0.0), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, libc6, libxvmc1, dh-modaliases, libxv1
@@ -1306,17 +1398,15 @@ Standards-Version: 3.8.0
 Format: 1.0
 Directory: pool/universe/n/nvidia-graphics-drivers-352
 Files:
- db6b596ea774eb8be0d6e463416bfa80 85770636 nvidia-graphics-drivers-352_352.21-100ubuntu100~ppa0~trusty0.tar.gz
- ce75da68b02aa042d225db990f634e16 2408 nvidia-graphics-drivers-352_352.21-100ubuntu100~ppa0~trusty0.dsc
+ 10cc91f04f6c988e476bfc668bba8dbb 86271007 nvidia-graphics-drivers-352_352.30-100ubuntu100~ppa0~trusty0.tar.gz
+ f3a413e47bf38380deb241c92ae564f5 2262 nvidia-graphics-drivers-352_352.30-100ubuntu100~ppa0~trusty0.dsc
 Checksums-Sha1:
- 663d22bc4acdc69d2902b604d7b41aa97a916deb 85770636 nvidia-graphics-drivers-352_352.21-100ubuntu100~ppa0~trusty0.tar.gz
- a41002c54af0444afda2d0d655513680b55b6e8e 2408 nvidia-graphics-drivers-352_352.21-100ubuntu100~ppa0~trusty0.dsc
+ cb5c1d2029c8694631be4e3502980adb308a7335 86271007 nvidia-graphics-drivers-352_352.30-100ubuntu100~ppa0~trusty0.tar.gz
+ e8bf2b1e13e6436f9567ad86e97e4ab1701ea7dd 2262 nvidia-graphics-drivers-352_352.30-100ubuntu100~ppa0~trusty0.dsc
 Checksums-Sha256:
- 84725a7b8c1d8e891af3767a321d88f28ae2f349daab61cbdfc5ac224b84e61d 85770636 nvidia-graphics-drivers-352_352.21-100ubuntu100~ppa0~trusty0.tar.gz
- d61c91d806e067364a371248a784572c9149a87cd4a1dc21f8689b5c581a3b4a 2408 nvidia-graphics-drivers-352_352.21-100ubuntu100~ppa0~trusty0.dsc
+ b0b460727b8d7bcf70eec884740032e63a3f2f245e957ba562c564ef01fe8315 86271007 nvidia-graphics-drivers-352_352.30-100ubuntu100~ppa0~trusty0.tar.gz
+ fd300d37dfee061c0533ed9a9dfbd772b554b0a85721cc2f11f664ad6bedf684 2262 nvidia-graphics-drivers-352_352.30-100ubuntu100~ppa0~trusty0.dsc
 Package-List: libcuda1-352 deb restricted/misc optional arch=i386,amd64
- nvidia-319 deb restricted/misc optional arch=i386,amd64
- nvidia-319-dev deb restricted/misc optional arch=i386,amd64
  nvidia-352 deb restricted/misc optional arch=i386,amd64
  nvidia-352-dev deb restricted/misc optional arch=i386,amd64
  nvidia-352-uvm deb restricted/misc optional arch=amd64
@@ -1325,9 +1415,39 @@ Package-List: libcuda1-352 deb restricted/misc optional arch=i386,amd64
 Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
 Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
 
+Package: nvidia-graphics-drivers-355
+Binary: nvidia-355, nvidia-355-dev, libcuda1-355, nvidia-libopencl1-355, nvidia-opencl-icd-355
+Version: 355.06-100ubuntu100~ppa0~trusty0
+Section: misc
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 8.0.0), sed (>> 3.0), libxext6, bzip2, xserver-xorg-dev (>= 2:1.4), execstack, libc6, libxvmc1, dh-modaliases, libxv1
+Architecture: i386 amd64 armhf
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/universe/n/nvidia-graphics-drivers-355
+Files:
+ 6e998bf09216c1d952a41e39cfdfe646 105906623 nvidia-graphics-drivers-355_355.06.orig.tar.gz
+ 9b66e9f0493f7e300a09474e866ee14a 152024 nvidia-graphics-drivers-355_355.06-100ubuntu100~ppa0~trusty0.diff.gz
+ 00280154d2d12addbb58cb4ea2d535bf 2524 nvidia-graphics-drivers-355_355.06-100ubuntu100~ppa0~trusty0.dsc
+Checksums-Sha1:
+ 1bb4a2aa0a7c64872848923f008d9b79869eb971 105906623 nvidia-graphics-drivers-355_355.06.orig.tar.gz
+ d69007b76b9987f5b7341b9ff8f8e1b926a75a19 152024 nvidia-graphics-drivers-355_355.06-100ubuntu100~ppa0~trusty0.diff.gz
+ 05165da982f0040b13ecbc2f65376d572ebf5c50 2524 nvidia-graphics-drivers-355_355.06-100ubuntu100~ppa0~trusty0.dsc
+Checksums-Sha256:
+ d8e27aae6bc89a9e8ad562de545e9f75c5241a8d9947afc37f323deed6fdc7d9 105906623 nvidia-graphics-drivers-355_355.06.orig.tar.gz
+ 59ba658816001d3e80941bb01e07792708355231da08d2da333cb5e725382190 152024 nvidia-graphics-drivers-355_355.06-100ubuntu100~ppa0~trusty0.diff.gz
+ a0a039873a4d7c6450df9c0be5d97c813c89c1269c3addc45c0e0593391232aa 2524 nvidia-graphics-drivers-355_355.06-100ubuntu100~ppa0~trusty0.dsc
+Package-List: libcuda1-355 deb restricted/misc optional arch=i386,amd64,armhf
+ nvidia-355 deb restricted/misc optional arch=i386,amd64,armhf
+ nvidia-355-dev deb restricted/misc optional arch=i386,amd64,armhf
+ nvidia-libopencl1-355 deb restricted/misc optional arch=i386,amd64
+ nvidia-opencl-icd-355 deb restricted/misc optional arch=i386,amd64
+Vcs-Git: git://github.com/tseliot/nvidia-graphics-drivers.git
+Vcs-Browser: http://github.com/tseliot/nvidia-graphics-drivers
+
 Package: nvidia-settings
-Binary: nvidia-settings, nvidia-settings-319, nvidia-settings-319-updates, nvidia-settings-313-updates, nvidia-settings-310, nvidia-settings-310-updates, nvidia-settings-304, nvidia-settings-304-updates, nvidia-settings-experimental-304, nvidia-settings-updates
-Version: 352.21-100ubuntu100~ppa0~trusty0
+Binary: nvidia-settings
+Version: 355.06-100ubuntu100~ppa0~trusty0
 Section: x11
 Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
 Build-Depends: debhelper (>= 7), m4, libgtk2.0-dev, libgtk-3-dev, libxext-dev, xutils-dev, libxrandr-dev, libgl1-mesa-dev | libgl-dev, libxxf86vm-dev, libxv-dev, libvdpau-dev, quilt, libjansson-dev
@@ -1336,25 +1456,16 @@ Standards-Version: 3.8.0
 Format: 1.0
 Directory: pool/universe/n/nvidia-settings
 Files:
- b807a7302ba1082bd84cc749974c4c93 1970773 nvidia-settings_352.21-100ubuntu100~ppa0~trusty0.tar.gz
- 1320664303ae8f1b32c0c18444397374 2821 nvidia-settings_352.21-100ubuntu100~ppa0~trusty0.dsc
+ b8faf0d35568ee77fe998e98c0e85b1d 1973744 nvidia-settings_355.06-100ubuntu100~ppa0~trusty0.tar.gz
+ e3e2296c29824248c2a2fce3817f81bd 1976 nvidia-settings_355.06-100ubuntu100~ppa0~trusty0.dsc
 Checksums-Sha1:
- f16833cb5cb90552763815963c3f7dccaa1e867c 1970773 nvidia-settings_352.21-100ubuntu100~ppa0~trusty0.tar.gz
- 15ade89089e24174bd75dc0b363ad5ee208a3b8c 2821 nvidia-settings_352.21-100ubuntu100~ppa0~trusty0.dsc
+ 5f7631caf9c1c2452b9460a4b2237eb924869fba 1973744 nvidia-settings_355.06-100ubuntu100~ppa0~trusty0.tar.gz
+ a64ab70c8b31991105f45f07199fbe3edcc77f09 1976 nvidia-settings_355.06-100ubuntu100~ppa0~trusty0.dsc
 Checksums-Sha256:
- 0e112c0367ceb12d463c4e33abaa0708b17ff1167fe5d26d51679e6286032043 1970773 nvidia-settings_352.21-100ubuntu100~ppa0~trusty0.tar.gz
- 326208b524386c65034b7794711ff880d19749bb06098b0c61fe5d9880845d78 2821 nvidia-settings_352.21-100ubuntu100~ppa0~trusty0.dsc
+ f584c4d0ef03c5e9b361705e4d2a993b88718b43311bdd9f8a0e4944a3fd31c3 1973744 nvidia-settings_355.06-100ubuntu100~ppa0~trusty0.tar.gz
+ 63eb37cd387a4d3bf3f955f31d08c0d39c8b2f575adcd187eefcd887c6c3e69f 1976 nvidia-settings_355.06-100ubuntu100~ppa0~trusty0.dsc
 Uploaders: Randall Donald <rdonald@debian.org>
 Package-List: nvidia-settings deb contrib/x11 optional arch=i386,amd64
- nvidia-settings-304 deb contrib/x11 optional arch=i386,amd64
- nvidia-settings-304-updates deb contrib/x11 optional arch=i386,amd64
- nvidia-settings-310 deb contrib/x11 optional arch=i386,amd64
- nvidia-settings-310-updates deb contrib/x11 optional arch=i386,amd64
- nvidia-settings-313-updates deb contrib/x11 optional arch=i386,amd64
- nvidia-settings-319 deb contrib/x11 optional arch=i386,amd64
- nvidia-settings-319-updates deb contrib/x11 optional arch=i386,amd64
- nvidia-settings-experimental-304 deb contrib/x11 optional arch=i386,amd64
- nvidia-settings-updates deb contrib/x11 optional arch=i386,amd64
 Vcs-Git: git://github.com/tseliot/nvidia-settings.git
 Vcs-Browser: http://github.com/tseliot/nvidia-settings
 Original-Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
@@ -1402,26 +1513,26 @@ Checksums-Sha256:
 
 Package: pidgin-lwqq
 Binary: pidgin-lwqq, pidgin-lwqq-dbg
-Version: 0.6.0+git201506072339.22b08b2-2~lainme~trusty
+Version: 0.6.1+git201507151501.1cf1975-1~lainme~trusty
 Section: net
 Maintainer: lainme <lainme993@gmail.com>
-Build-Depends: debhelper (>= 7), cdbs, cmake, pkg-config, libglib2.0-dev, libpurple-dev, liblwqq-dev (>= 0.6.0)
+Build-Depends: debhelper (>= 7), cdbs, cmake, pkg-config, libglib2.0-dev, libpurple-dev, liblwqq-dev (>= 0.6.1)
 Architecture: any
 Standards-Version: 3.9.3
 Format: 3.0 (quilt)
 Directory: pool/universe/p/pidgin-lwqq
 Files:
- e1d9022e2b263a9d4fe40f9183e3bfc6 1959442 pidgin-lwqq_0.6.0+git201506072339.22b08b2.orig.tar.gz
- a418519fa6ee575a4abc98744cf6d46d 3437 pidgin-lwqq_0.6.0+git201506072339.22b08b2-2~lainme~trusty.debian.tar.gz
- 4b0eb08d74401b2a82c010c1422e7c6b 2063 pidgin-lwqq_0.6.0+git201506072339.22b08b2-2~lainme~trusty.dsc
+ 8a11ff1103f993912a163782eca3b21e 1959483 pidgin-lwqq_0.6.1+git201507151501.1cf1975.orig.tar.gz
+ 8d5b7d7bb0566bfe05db89c7dd34465b 3538 pidgin-lwqq_0.6.1+git201507151501.1cf1975-1~lainme~trusty.debian.tar.gz
+ 0f83e343910627965304c4c13152b2dd 2063 pidgin-lwqq_0.6.1+git201507151501.1cf1975-1~lainme~trusty.dsc
 Checksums-Sha1:
- 3acdde18ad912dcfe550e5f85dfe78b003595ed4 1959442 pidgin-lwqq_0.6.0+git201506072339.22b08b2.orig.tar.gz
- a087ab2fe94fb62d0fd13fda6040af1f33d409b0 3437 pidgin-lwqq_0.6.0+git201506072339.22b08b2-2~lainme~trusty.debian.tar.gz
- 3493555234813323cab7c6d4e3b530bf6419420e 2063 pidgin-lwqq_0.6.0+git201506072339.22b08b2-2~lainme~trusty.dsc
+ 85d81b1086c68369c05d054cf22af10375b39242 1959483 pidgin-lwqq_0.6.1+git201507151501.1cf1975.orig.tar.gz
+ 946e5db4f3a8c17807168a3cf00b6b32c477b1ae 3538 pidgin-lwqq_0.6.1+git201507151501.1cf1975-1~lainme~trusty.debian.tar.gz
+ 4dd677dff9deae8012de0eda0500a4220c8be85c 2063 pidgin-lwqq_0.6.1+git201507151501.1cf1975-1~lainme~trusty.dsc
 Checksums-Sha256:
- 8ab7313ed2e847f1350655616abe02884a45fb4f0258f43489fa0c3a6f850fe9 1959442 pidgin-lwqq_0.6.0+git201506072339.22b08b2.orig.tar.gz
- 8ec7e0729951dd4c8ced841f4031024bc9ce725ed1a1d0edf9cd976cd546819d 3437 pidgin-lwqq_0.6.0+git201506072339.22b08b2-2~lainme~trusty.debian.tar.gz
- e9a03ff0f9cb75bff6a04a64db0812b2b5f4aa3262360d51f4595b62ff0fd30e 2063 pidgin-lwqq_0.6.0+git201506072339.22b08b2-2~lainme~trusty.dsc
+ d9188a678de65856e194c252a94e083fd598fbb2860e647ad25168ab1095cadd 1959483 pidgin-lwqq_0.6.1+git201507151501.1cf1975.orig.tar.gz
+ c791699798c3216a142a7ab3b73de03ff05d612854df5f8691b0af494a8cafa0 3538 pidgin-lwqq_0.6.1+git201507151501.1cf1975-1~lainme~trusty.debian.tar.gz
+ 226a48a005fc432b402a473f7c1ae5ac1e6032458e00ceab20922890392f6a73 2063 pidgin-lwqq_0.6.1+git201507151501.1cf1975-1~lainme~trusty.dsc
 Homepage: https://github.com/xiehuc/pidgin-lwqq
 Package-List: pidgin-lwqq deb net extra
  pidgin-lwqq-dbg deb debug extra
@@ -1504,32 +1615,32 @@ Package-List: premake5 deb contrib/devel optional
 
 Package: primus
 Binary: primus, primus-libs, primus-libs-ia32, primus-libs-dbg
-Version: 20131127-1~trustyppa1
+Version: 20150328-1~trustyppa1
 Section: utils
 Maintainer: The Bumblebee Project <bumblebee@lists.launchpad.net>
-Build-Depends: debhelper (>= 9), bash-completion, mesa-common-dev
+Build-Depends: debhelper (>= 9), mesa-common-dev
 Architecture: i386 amd64
 Standards-Version: 3.9.5
 Format: 3.0 (quilt)
 Directory: pool/universe/p/primus
 Files:
- 31290b69a5c17794d9e60b911221e073 26125 primus_20131127.orig.tar.gz
- 76b4acbfaabce0b5216e8ca79d3dc963 3889 primus_20131127-1~trustyppa1.debian.tar.gz
- f7b6908ab626ed110e6ba48ecca48762 1788 primus_20131127-1~trustyppa1.dsc
+ ca27087338d9bd8cf1d03793e55f96a4 25978 primus_20150328.orig.tar.gz
+ 7fd4c079a67ed53b19b799b18427787f 4252 primus_20150328-1~trustyppa1.debian.tar.xz
+ 548e05418a33127199d5e0b8119062cf 2156 primus_20150328-1~trustyppa1.dsc
 Checksums-Sha1:
- cc29979a51b9a72a3bd885585c1e60060f352508 26125 primus_20131127.orig.tar.gz
- 88e21b560eb3619fc166f34cc9480b7185b01fe6 3889 primus_20131127-1~trustyppa1.debian.tar.gz
- faa196fa9bca878eb67bc9f05d0499eca7a9ddb7 1788 primus_20131127-1~trustyppa1.dsc
+ 8bc283de6b8a4c5169dab1688ad7849ef2d04e92 25978 primus_20150328.orig.tar.gz
+ e76734d95bc20a25963e62f1ab9a26d110e777d2 4252 primus_20150328-1~trustyppa1.debian.tar.xz
+ 864f170ddda0db52135bab4ade957892cefba9fe 2156 primus_20150328-1~trustyppa1.dsc
 Checksums-Sha256:
- 3feed2f9cc639f5de166637477aabe7f6a95f7f283277e205f3449cfcb7f3504 26125 primus_20131127.orig.tar.gz
- b7e5e5e81b2c16705f24108e449b45fa7154a1588d71c5357c81ac59b366c55d 3889 primus_20131127-1~trustyppa1.debian.tar.gz
- fe2543299f046f88b3bdc01ab3fc5d359a69e95f54132f64095c867ee38ea428 1788 primus_20131127-1~trustyppa1.dsc
+ be1fe16bd891b4b542c2020fd69c983ed1783752c475be9d3bbe2fc1205812c0 25978 primus_20150328.orig.tar.gz
+ f9591d4998151d6c9118fc0b30ceffe31ca21a42e34004898380b8a814db217c 4252 primus_20150328-1~trustyppa1.debian.tar.xz
+ ec2665600738d04fcd3eac7b0bcdd45b18851e4c31b8e393b9e539fe89e5ec2e 2156 primus_20150328-1~trustyppa1.dsc
 Homepage: https://github.com/amonakov/primus
 Uploaders: Bruno Pagani <bruno.n.pagani@gmail.com>, Dmitry Zhurikhin <zhurikhin@gmail.com>
-Package-List: primus deb utils extra
- primus-libs deb utils extra
- primus-libs-dbg deb debug extra
- primus-libs-ia32 deb utils extra
+Package-List: primus deb utils extra arch=i386,amd64
+ primus-libs deb utils extra arch=i386,amd64
+ primus-libs-dbg deb debug extra arch=i386,amd64
+ primus-libs-ia32 deb utils extra arch=i386
 Vcs-Git: git://github.com/amonakov/primus.git
 Vcs-Browser: https://github.com/amonakov/primus
 
@@ -2374,23 +2485,23 @@ Original-Maintainer: Michael Vogt <mvo@debian.org>
 
 Package: selene
 Binary: selene
-Version: 2.5.2~185~ubuntu14.04.1
+Version: 2.5.8~198~ubuntu14.04.1
 Section: video
 Maintainer: Tony George <tony.george.kol@gmail.com>
-Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac, libgtk-3-dev, libgee-dev, libjson-glib-dev
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac-0.26, libgtk-3-dev, libgee-0.8-dev, libjson-glib-dev
 Architecture: any
 Standards-Version: 3.9.3
 Format: 3.0 (native)
 Directory: pool/universe/s/selene
 Files:
- fb4fcfe0497dd759fd872b4839f93fbf 264779 selene_2.5.2~185~ubuntu14.04.1.tar.gz
- b44af50ee031ee1a7fa892dd0b20fa94 709 selene_2.5.2~185~ubuntu14.04.1.dsc
+ 8df959b5e1b76284c64bba7ea4b22f86 271236 selene_2.5.8~198~ubuntu14.04.1.tar.gz
+ 48a0c15143d812f60f37698bf4ebc8b2 718 selene_2.5.8~198~ubuntu14.04.1.dsc
 Checksums-Sha1:
- 1f0b5ca6b95ae79adc7f9429321b97a570ad8901 264779 selene_2.5.2~185~ubuntu14.04.1.tar.gz
- 761d45ab498007076424b475d9f38ef0070a4bd4 709 selene_2.5.2~185~ubuntu14.04.1.dsc
+ 6ef1f555be69265f80f98de8374d9459537c287d 271236 selene_2.5.8~198~ubuntu14.04.1.tar.gz
+ c9ccf2072b0ad2dd246891230cc30936dc61ae23 718 selene_2.5.8~198~ubuntu14.04.1.dsc
 Checksums-Sha256:
- a1548a80d2937c30bcf03960a33096bade40f5dfda4f871410068457c49c3da4 264779 selene_2.5.2~185~ubuntu14.04.1.tar.gz
- bdf712e7f18a39be31253ce596552dab9ba961aa1813909ffff36c35432b1268 709 selene_2.5.2~185~ubuntu14.04.1.dsc
+ 057fbc78bd7a92d68ad3522642ef65fb6b5a04c54452ff9f7063ecabe8918e2f 271236 selene_2.5.8~198~ubuntu14.04.1.tar.gz
+ dc45491de70d418e11793d9b034859c073ec53929d17dbf4e59b8add6504df47 718 selene_2.5.8~198~ubuntu14.04.1.dsc
 Homepage: http://teejeetech.blogspot.in/p/selene-media-encoder.html
 Package-List: selene deb video extra
 
@@ -2504,45 +2615,45 @@ Package-List: syncdrive deb gnome extra
 
 Package: timeshift
 Binary: timeshift
-Version: 1.7.2~174~ubuntu14.04.1
+Version: 1.7.4~178~ubuntu14.04.1
 Section: utils
 Maintainer: Tony George <tony.george.kol@gmail.com>
-Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac, libgtk-3-dev, libgee-dev, libgudev-1.0-dev, libjson-glib-dev
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac-0.26, libgtk-3-dev, libgee-0.8-dev, libgudev-1.0-dev, libjson-glib-dev
 Architecture: any
 Standards-Version: 3.9.3
 Format: 3.0 (native)
 Directory: pool/universe/t/timeshift
 Files:
- b551bd8fb052c65f0a3fb6c8c3d3aa41 167661 timeshift_1.7.2~174~ubuntu14.04.1.tar.gz
- 2427af06eee25d34c95828c9368c1aea 718 timeshift_1.7.2~174~ubuntu14.04.1.dsc
+ 5cb25ea3e65c2f17439eb10b986db85e 166001 timeshift_1.7.4~178~ubuntu14.04.1.tar.gz
+ 8bef078a01b0838600155de1d7ac32d4 727 timeshift_1.7.4~178~ubuntu14.04.1.dsc
 Checksums-Sha1:
- 24bc803e3cd634929db260dc2dd3fa674f7b0dfa 167661 timeshift_1.7.2~174~ubuntu14.04.1.tar.gz
- 3c658c0740848bd23664a62b830e0f0d1bbcab9e 718 timeshift_1.7.2~174~ubuntu14.04.1.dsc
+ 665dfd9dd4b46bac70bc2b58507f06c7cec2c1fc 166001 timeshift_1.7.4~178~ubuntu14.04.1.tar.gz
+ 49fc1a316dfb7d21b941a0532df6408d896d146f 727 timeshift_1.7.4~178~ubuntu14.04.1.dsc
 Checksums-Sha256:
- f1f4aba730c288a5a080125f8b0430c5d7841b263878c1305e7504198920a32c 167661 timeshift_1.7.2~174~ubuntu14.04.1.tar.gz
- b24bdf559d68fd6ecc1cdaacb6020183d47e1b9066346f5fce0cbb3ac0c2a650 718 timeshift_1.7.2~174~ubuntu14.04.1.dsc
+ e9a5746877863564f414d02f107b2f32f0363bb75917461137a6bda8f8f48a27 166001 timeshift_1.7.4~178~ubuntu14.04.1.tar.gz
+ 9d3e2740d54f4d4204dc5f42cd3e65c8bece477120b74804eeefb98afb858c4c 727 timeshift_1.7.4~178~ubuntu14.04.1.dsc
 Homepage: http://teejeetech.blogspot.in/
 Package-List: timeshift deb utils extra
 
 Package: timeshift-btrfs
 Binary: timeshift-btrfs
-Version: 1.1~13~ubuntu14.04.1
+Version: 1.1.2~16~ubuntu14.04.1
 Section: utils
 Maintainer: Tony George <tony.george.kol@gmail.com>
-Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac, libgtk-3-dev, libgee-dev, libgudev-1.0-dev, libjson-glib-dev
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, valac-0.26, libgtk-3-dev, libgee-0.8-dev, libgudev-1.0-dev, libjson-glib-dev
 Architecture: any
 Standards-Version: 3.9.3
 Format: 3.0 (native)
 Directory: pool/universe/t/timeshift-btrfs
 Files:
- 9debbd853912da5997bb3a222216e088 120964 timeshift-btrfs_1.1~13~ubuntu14.04.1.tar.gz
- 31d29bc2926c8baa7e501446fa9aa6eb 742 timeshift-btrfs_1.1~13~ubuntu14.04.1.dsc
+ a5692bd92fa9d03d169740c14762fd3b 120025 timeshift-btrfs_1.1.2~16~ubuntu14.04.1.tar.gz
+ 4ec020b6ce58e834e42d30b13408947a 759 timeshift-btrfs_1.1.2~16~ubuntu14.04.1.dsc
 Checksums-Sha1:
- b34804b2eab3a31066466ef645069dfff625038c 120964 timeshift-btrfs_1.1~13~ubuntu14.04.1.tar.gz
- f378cf50cb70822a6785d4d5fe6106149813f798 742 timeshift-btrfs_1.1~13~ubuntu14.04.1.dsc
+ b69d7ea394aae9c50b9ac95dd4885eba4eb3660d 120025 timeshift-btrfs_1.1.2~16~ubuntu14.04.1.tar.gz
+ f86e3fbf231a4c064b803acfb249ff58b78ffb63 759 timeshift-btrfs_1.1.2~16~ubuntu14.04.1.dsc
 Checksums-Sha256:
- 040935aeabc7910f17a317a2eebf0ab5197ef71ccf8b84ec40d434fb02635587 120964 timeshift-btrfs_1.1~13~ubuntu14.04.1.tar.gz
- 078e380bd0370af5ce5591a13a64d2bc09eee6913e26f4ea1ab0dffb142c719e 742 timeshift-btrfs_1.1~13~ubuntu14.04.1.dsc
+ 8a7a653168142f7cf5a9cc04b46631413963dd4592a92751969dc37c84b709f5 120025 timeshift-btrfs_1.1.2~16~ubuntu14.04.1.tar.gz
+ 82b26b1a1f597fb95cfbd9f14db991d96674413ddb31bb56543e56c1c5cb2df7 759 timeshift-btrfs_1.1.2~16~ubuntu14.04.1.dsc
 Homepage: http://teejeetech.blogspot.in/
 Package-List: timeshift-btrfs deb utils extra
 
@@ -2708,28 +2819,28 @@ Original-Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.al
 
 Package: vala-0.28
 Binary: valac, valac-0.28, valac-0.28-vapi, vala-0.28-doc, libvala-0.28-0, libvala-0.28-dev, valac-0.28-dbg, libvala-0.28-0-dbg
-Version: 0.28.0-0ubuntu1~14.04~valateam1
+Version: 0.28.1-0ubuntu1~14.04~valateam0
 Section: devel
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Build-Depends: debhelper (>= 7), dh-autoreconf, libglib2.0-dev (>= 2.26), bison (>= 2.3), autotools-dev, flex, gnome-pkg-tools, xsltproc, libdbus-1-dev, dbus-x11, lsb-release, libgirepository1.0-dev
+Build-Depends: debhelper (>= 7), dh-autoreconf, libglib2.0-dev (>= 2.26), bison (>= 2.3), autotools-dev, flex, gnome-pkg-tools, xsltproc, libdbus-1-dev, dbus-x11, libgirepository1.0-dev
 Architecture: any all
 Standards-Version: 3.9.6
 Format: 3.0 (quilt)
 Directory: pool/universe/v/vala-0.28
 Files:
- 8d4ceac3451a0d5497e7be38e5e4c2ad 2720652 vala-0.28_0.28.0.orig.tar.xz
- 94d66978e55ea71703a091e5b8454242 23436 vala-0.28_0.28.0-0ubuntu1~14.04~valateam1.debian.tar.xz
- fe0d5d770196da446165ec6572f9e3b6 2858 vala-0.28_0.28.0-0ubuntu1~14.04~valateam1.dsc
+ 9e2e9e3dffccf8a158fa988688cd82c9 2721228 vala-0.28_0.28.1.orig.tar.xz
+ 0cf607d55907b6ab8372accebb7b3131 23464 vala-0.28_0.28.1-0ubuntu1~14.04~valateam0.debian.tar.xz
+ 2f9cc74d2636a27950a8ed36a1f16dfa 2879 vala-0.28_0.28.1-0ubuntu1~14.04~valateam0.dsc
 Checksums-Sha1:
- 3fd3e3a0613ccec6e6aac53a9884b3011441715f 2720652 vala-0.28_0.28.0.orig.tar.xz
- bab2e317c955e509d45f600d683a01e326a0e4b0 23436 vala-0.28_0.28.0-0ubuntu1~14.04~valateam1.debian.tar.xz
- 002083186605e937a6d2140167c7c99ca462d5db 2858 vala-0.28_0.28.0-0ubuntu1~14.04~valateam1.dsc
+ 6c32a5467002f0258dd134c46a58977677e3f82d 2721228 vala-0.28_0.28.1.orig.tar.xz
+ 92b0660942ab31ddf79860b92f1d1b9aaff41f39 23464 vala-0.28_0.28.1-0ubuntu1~14.04~valateam0.debian.tar.xz
+ dde86597fbbc3beaa32ba9b58583b5d3ea20a1a3 2879 vala-0.28_0.28.1-0ubuntu1~14.04~valateam0.dsc
 Checksums-Sha256:
- 0d9e3bd3f82145664875f7c29b2f544ba92d2814f75412948f774c0727fc977f 2720652 vala-0.28_0.28.0.orig.tar.xz
- 1ed719b1bae79f3bae7160919680fe9aba8250458401bd5c4430b0cf753a8ceb 23436 vala-0.28_0.28.0-0ubuntu1~14.04~valateam1.debian.tar.xz
- 99e4f34006fc36b05c10867b1f858522ef5a186bea91d28dee330dc75a9e92a7 2858 vala-0.28_0.28.0-0ubuntu1~14.04~valateam1.dsc
+ 1c0eaea6134b75af17221cb699f13d7236d607bb48192565c3d865c38f184f47 2721228 vala-0.28_0.28.1.orig.tar.xz
+ 9d6d8d1c307cfd2f1b451f8efdb659108eef22e1c00d207c55dd702fdba30bdd 23464 vala-0.28_0.28.1-0ubuntu1~14.04~valateam0.debian.tar.xz
+ aa48289d6411272d6e2e1c36a9ad84db9be8df0f7484ebc1f747163c99329e3a 2879 vala-0.28_0.28.1-0ubuntu1~14.04~valateam0.dsc
 Homepage: https://wiki.gnome.org/Projects/Vala/
-Uploaders: Marc-Andre Lureau <marcandre.lureau@gmail.com>, Loic Minier <lool@dooz.org>, Sebastian Dröge <slomo@debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Sjoerd Simons <sjoerd@debian.org>, Sebastian Reichel <sre@debian.org>
+Uploaders: Marc-Andre Lureau <marcandre.lureau@gmail.com>, Loic Minier <lool@dooz.org>, Sebastian Dröge <slomo@debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Sjoerd Simons <sjoerd@debian.org>, Sebastian Reichel <sre@debian.org>, Michael Biebl <biebl@debian.org>
 Package-List: libvala-0.28-0 deb libs optional arch=any
  libvala-0.28-0-dbg deb debug extra arch=any
  libvala-0.28-dev deb libdevel optional arch=any
@@ -2744,28 +2855,28 @@ Original-Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.al
 
 Package: vala-0.30
 Binary: valac-0.30, valac-0.30-vapi, vala-0.30-doc, libvala-0.30-0, libvala-0.30-dev, valac-0.30-dbg, libvala-0.30-0-dbg
-Version: 0.29.1-0ubuntu1~14.04~valateam0
+Version: 0.30.0-0ubuntu1~14.04~valateam0
 Section: devel
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Build-Depends: debhelper (>= 7), dh-autoreconf, libglib2.0-dev (>= 2.26), bison (>= 2.3), autotools-dev, flex, gnome-pkg-tools, xsltproc, libdbus-1-dev, dbus-x11, lsb-release, libgirepository1.0-dev
+Build-Depends: debhelper (>= 7), dh-autoreconf, libglib2.0-dev (>= 2.26), bison (>= 2.3), autotools-dev, flex, gnome-pkg-tools, xsltproc, libdbus-1-dev, dbus-x11, libgirepository1.0-dev
 Architecture: any all
 Standards-Version: 3.9.6
 Format: 3.0 (quilt)
 Directory: pool/universe/v/vala-0.30
 Files:
- 634858cdb8d7a7b5fbb54ed5c54eb189 2721532 vala-0.30_0.29.1.orig.tar.xz
- 1c51f3982b3cfbe2546702935cd5abe3 23604 vala-0.30_0.29.1-0ubuntu1~14.04~valateam0.debian.tar.xz
- 309fad0fe5fe4eae3466687f097114ce 2816 vala-0.30_0.29.1-0ubuntu1~14.04~valateam0.dsc
+ acfaac43a65cc20d80e08fe6c81c7663 2725736 vala-0.30_0.30.0.orig.tar.xz
+ 6c2bc3a302907fff74be4bc7df6b1a61 23664 vala-0.30_0.30.0-0ubuntu1~14.04~valateam0.debian.tar.xz
+ e945fe20fd190b3c51b6acfa12d497fd 2837 vala-0.30_0.30.0-0ubuntu1~14.04~valateam0.dsc
 Checksums-Sha1:
- a9d66c542d9e93f34ad2fb215cc0e68c3eb3bea3 2721532 vala-0.30_0.29.1.orig.tar.xz
- e5451704e53eb84dc9c6f05ac8583e1c805aa0a7 23604 vala-0.30_0.29.1-0ubuntu1~14.04~valateam0.debian.tar.xz
- 6d5d909ea159448bae3e088c138ff3bd1a17bdd7 2816 vala-0.30_0.29.1-0ubuntu1~14.04~valateam0.dsc
+ 39ba8dc14f604c3667e597de14470300254e8df6 2725736 vala-0.30_0.30.0.orig.tar.xz
+ b480ee0c4b03e7f9f7567f72096116d0c4d8d179 23664 vala-0.30_0.30.0-0ubuntu1~14.04~valateam0.debian.tar.xz
+ 2c1ac2153356ca67f5b5e338bd52f0b27fc23cd7 2837 vala-0.30_0.30.0-0ubuntu1~14.04~valateam0.dsc
 Checksums-Sha256:
- 776b95c2cf29e20177bdfebdc05e0b665968a42313d8fd1961e5d5073a2600e9 2721532 vala-0.30_0.29.1.orig.tar.xz
- 5552bab68e9a08b75a8d00b4827b02e7f6838e61428bb5f641cf94252646a6c1 23604 vala-0.30_0.29.1-0ubuntu1~14.04~valateam0.debian.tar.xz
- b2332fe090e6785051183f71bd3a5a753dd17212930b87ea72d3193164edcb6e 2816 vala-0.30_0.29.1-0ubuntu1~14.04~valateam0.dsc
+ 61f0337b000f7ed6ef8c1fea87e0047d9bd7c0f91dd9c5b4eb70fd3fb883dedf 2725736 vala-0.30_0.30.0.orig.tar.xz
+ 736a2567ed071ffaa88e4462d819a088abec06b43d3c6b77b76e538612cd623e 23664 vala-0.30_0.30.0-0ubuntu1~14.04~valateam0.debian.tar.xz
+ 5bb968be71183d9cc739ad613685399c19237db14ad8f2843cf4e3a38fc347b3 2837 vala-0.30_0.30.0-0ubuntu1~14.04~valateam0.dsc
 Homepage: https://wiki.gnome.org/Projects/Vala/
-Uploaders: Marc-Andre Lureau <marcandre.lureau@gmail.com>, Loic Minier <lool@dooz.org>, Sebastian Dröge <slomo@debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Sjoerd Simons <sjoerd@debian.org>, Sebastian Reichel <sre@debian.org>
+Uploaders: Marc-Andre Lureau <marcandre.lureau@gmail.com>, Loic Minier <lool@dooz.org>, Sebastian Dröge <slomo@debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Sjoerd Simons <sjoerd@debian.org>, Sebastian Reichel <sre@debian.org>, Michael Biebl <biebl@debian.org>
 Package-List: libvala-0.30-0 deb libs optional arch=any
  libvala-0.30-0-dbg deb debug extra arch=any
  libvala-0.30-dev deb libdevel optional arch=any
@@ -2810,35 +2921,35 @@ Original-Maintainer: Sebastian Reichel <sre@debian.org>
 
 Package: vdpauinfo
 Binary: vdpauinfo
-Version: 0.9-0ubuntu0~ppa0~trusty
+Version: 1.0-1ubuntu1~gpu14.04.1
 Section: x11
 Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
-Build-Depends: debhelper (>= 9), autoconf, automake, pkg-config, libvdpau-dev (>= 0.9)
+Build-Depends: debhelper (>= 9), autoconf, automake, pkg-config, libvdpau-dev (>= 1.0)
 Architecture: any
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Format: 3.0 (quilt)
 Directory: pool/universe/v/vdpauinfo
 Files:
- f48e7ce838146021a138592ca9bdffc8 87887 vdpauinfo_0.9.orig.tar.gz
- 6c91e2055a80ac660f546ba6f88efae6 2172 vdpauinfo_0.9-0ubuntu0~ppa0~trusty.debian.tar.xz
- 3700e17a2f0f61e51be9bbb828040ef9 2039 vdpauinfo_0.9-0ubuntu0~ppa0~trusty.dsc
+ 4eba3e7bf5062b9c245276860493804f 88567 vdpauinfo_1.0.orig.tar.gz
+ cc4c7df3e9b1a1bea2d13e5dcb3643cd 8508 vdpauinfo_1.0-1ubuntu1~gpu14.04.1.debian.tar.xz
+ 4dd96fd02565157488f98cb4d62bed28 2031 vdpauinfo_1.0-1ubuntu1~gpu14.04.1.dsc
 Checksums-Sha1:
- e98a41b355e4729889d9f21874d8cc5c6da2ebaf 87887 vdpauinfo_0.9.orig.tar.gz
- 81a115118cff008f09322ac8c68b1b533a61c98f 2172 vdpauinfo_0.9-0ubuntu0~ppa0~trusty.debian.tar.xz
- bac0d6ddcf5352ac88ae2d7ea3056e9c1954cd66 2039 vdpauinfo_0.9-0ubuntu0~ppa0~trusty.dsc
+ eba0ab858ad8c06841276c658512167a175911fa 88567 vdpauinfo_1.0.orig.tar.gz
+ 85c741a8ca7e8e42bba52d7eb0214d742b320c0f 8508 vdpauinfo_1.0-1ubuntu1~gpu14.04.1.debian.tar.xz
+ 1990c5940190314ad613d0ae6e9a2a91976dfc84 2031 vdpauinfo_1.0-1ubuntu1~gpu14.04.1.dsc
 Checksums-Sha256:
- a040fe3682db4cb6076179185a68559a62b908cd01f0aee086838eaf2923c8e3 87887 vdpauinfo_0.9.orig.tar.gz
- 7e13e6274ef5091f633df545abca36d142ef7e7131f0fcfc89486614b326d26a 2172 vdpauinfo_0.9-0ubuntu0~ppa0~trusty.debian.tar.xz
- c8da8a9da16b70a8bd09481362ad14489f1ae218811993ba74f437cd5f9247bd 2039 vdpauinfo_0.9-0ubuntu0~ppa0~trusty.dsc
+ 4054960b7ae618c351ff1ce3e7831b5cbda964ae1fbf9969b7146404d3044bc4 88567 vdpauinfo_1.0.orig.tar.gz
+ cac8e445648f076ccd1f74ef6724b3167e6c7800a941a9e819c73e226ec3d4d5 8508 vdpauinfo_1.0-1ubuntu1~gpu14.04.1.debian.tar.xz
+ 0970ffd89be9b2038e42bc729f63ca114f6984aaf037a5bbe9a17196a9865ee7 2031 vdpauinfo_1.0-1ubuntu1~gpu14.04.1.dsc
 Homepage: http://cgit.freedesktop.org/~aplattner/vdpauinfo
 Uploaders: Andreas Beckmann <anbe@debian.org>,
 Package-List: vdpauinfo deb x11 extra arch=any
 Vcs-Git: git://anonscm.debian.org/pkg-nvidia/vdpauinfo.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-nvidia/vdpauinfo.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-nvidia/vdpauinfo.git
 
 Package: virtualgl
 Binary: virtualgl, virtualgl-libs, virtualgl-libs-ia32, virtualgl-dbg, virtualgl-libs-dbg
-Version: 2.3.3-1~trustyppa1
+Version: 2.4.1-1~trustyppa1
 Section: utils
 Maintainer: The Bumblebee Project <bumblebee@lists.launchpad.net>
 Build-Depends: debhelper (>= 9), cmake (>= 2.8), libjpeg-turbo8-dev, libturbojpeg, libx11-dev, libxext-dev, libgl1-mesa-dev, libglu1-mesa-dev, libxv-dev
@@ -2847,24 +2958,24 @@ Standards-Version: 3.9.5
 Format: 3.0 (quilt)
 Directory: pool/universe/v/virtualgl
 Files:
- abd9ceba4a2332c420164666b438f49e 2549896 virtualgl_2.3.3.orig.tar.gz
- 3920b7cfc6c3d9813c4a129e1d130d4a 3769 virtualgl_2.3.3-1~trustyppa1.debian.tar.gz
- 03de39b965b69369082ef06edcfff797 1921 virtualgl_2.3.3-1~trustyppa1.dsc
+ f51223658da4a11b128dd4e05d8b87e7 1116018 virtualgl_2.4.1.orig.tar.gz
+ 943e6a15a8f4b1dd5aa4268e3117b4ad 3640 virtualgl_2.4.1-1~trustyppa1.debian.tar.xz
+ 37a9935eb9cf0718e83fe26d87342319 2322 virtualgl_2.4.1-1~trustyppa1.dsc
 Checksums-Sha1:
- 793c86df790d0b137b4686597a8f42f6cd97ff48 2549896 virtualgl_2.3.3.orig.tar.gz
- 6608ba5877e94ee475245f5922f8773b533856e8 3769 virtualgl_2.3.3-1~trustyppa1.debian.tar.gz
- a7688198713b5db3972437452950683433670eda 1921 virtualgl_2.3.3-1~trustyppa1.dsc
+ 4be0689a667c9b9fe59575d81a003324e9dfc20a 1116018 virtualgl_2.4.1.orig.tar.gz
+ f53344ee859f3109615442949b0deed2223fabe9 3640 virtualgl_2.4.1-1~trustyppa1.debian.tar.xz
+ efa420765e887139b59a98b33f2375d1bd14662c 2322 virtualgl_2.4.1-1~trustyppa1.dsc
 Checksums-Sha256:
- cf90680e46ab8cbf79884b7fcd9724aa3694478aa7d3bcfe07942b1def2ba199 2549896 virtualgl_2.3.3.orig.tar.gz
- b026e7407ab0d520224b6672ab9303c85868d928c75844dcf3708488a27ec0c5 3769 virtualgl_2.3.3-1~trustyppa1.debian.tar.gz
- e6ceb804d96c48528db768bda221be35ffb097a1e0117c4aae1454fd3df48991 1921 virtualgl_2.3.3-1~trustyppa1.dsc
+ 2889c6eb35b50340517856f497c07450a9d5ccab46e9b1700a76029a2159cf2e 1116018 virtualgl_2.4.1.orig.tar.gz
+ 7b02effc0f25bfa6a275e3fc686c4015240863449af347b7a4977d5bdc8654d8 3640 virtualgl_2.4.1-1~trustyppa1.debian.tar.xz
+ 1a7dfb15ebec9f40272a2fde43d8293aba77afb19f4acdec9e76876aae91ef76 2322 virtualgl_2.4.1-1~trustyppa1.dsc
 Homepage: http://www.virtualgl.org/
 Uploaders: Peter Lekensteyn <lekensteyn@gmail.com>, Bruno Pagani <bruno.n.pagani@gmail.com>
-Package-List: virtualgl deb utils extra
- virtualgl-dbg deb debug extra
- virtualgl-libs deb utils extra
- virtualgl-libs-dbg deb debug extra
- virtualgl-libs-ia32 deb utils extra
+Package-List: virtualgl deb utils extra arch=i386,amd64
+ virtualgl-dbg deb debug extra arch=i386,amd64
+ virtualgl-libs deb utils extra arch=i386,amd64
+ virtualgl-libs-dbg deb debug extra arch=i386,amd64
+ virtualgl-libs-ia32 deb utils extra arch=i386
 Vcs-Browser: http://virtualgl.svn.sourceforge.net/viewvc/virtualgl/vgl/
 
 Package: wine-gecko2.21
@@ -2966,6 +3077,31 @@ Checksums-Sha256:
  79443fcb53edab7911f76b5feff4821fdf780aa9642d39b726912a5e3b61e399 1175 wine-gecko2.36_2.36-0ubuntu1~ppa1.dsc
 Homepage: http://www.winehq.org/
 Package-List: wine-gecko2.36 deb multiverse/otherosfs optional
+
+Package: wine-gecko2.40
+Binary: wine-gecko2.40
+Version: 2.40-0ubuntu1
+Section: otherosfs
+Maintainer: Scott Ritchie <scottritchie@ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Architecture: i386 amd64
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/universe/w/wine-gecko2.40
+Files:
+ b7704b6268233ff09b97eb2403565fc1 176046834 wine-gecko2.40_2.40.orig.tar.bz2
+ e633ba100058f7e91de74e174f9fa216 64544796 wine-gecko2.40_2.40-0ubuntu1.debian.tar.gz
+ a13d6b86b6e0bd5bb08a86d71ae992de 1155 wine-gecko2.40_2.40-0ubuntu1.dsc
+Checksums-Sha1:
+ 21affebd103c53176b328fbcbd3ca59e2341a692 176046834 wine-gecko2.40_2.40.orig.tar.bz2
+ b2ed74d7faa1b8e18296b2372300bd52309df8f1 64544796 wine-gecko2.40_2.40-0ubuntu1.debian.tar.gz
+ de24ac12c1487210632351d80092650c7ad687bc 1155 wine-gecko2.40_2.40-0ubuntu1.dsc
+Checksums-Sha256:
+ b41191cb8d23076490fc41a006be98b86a6c22e83dc656d25b51e65e57208aa8 176046834 wine-gecko2.40_2.40.orig.tar.bz2
+ f0311d7e2b2f9e714bb4c273b53e51ca5640338c5edb7787b0a80fa14b53a6c4 64544796 wine-gecko2.40_2.40-0ubuntu1.debian.tar.gz
+ 87e1f2c5eb50a548d4a576cf8707fe1969b6e6a556a8c2f019281e546987a642 1155 wine-gecko2.40_2.40-0ubuntu1.dsc
+Homepage: http://www.winehq.org/
+Package-List: wine-gecko2.40 deb multiverse/otherosfs optional
 
 Package: wine-mono0.0.8
 Binary: wine-mono0.0.8
@@ -3094,7 +3230,7 @@ Package-List: wine-mono4.5.6 deb multiverse/otherosfs optional
 
 Package: wine1.7
 Binary: wine1.7-i386, wine1.7-amd64, wine1.7, wine1.7-dev, wine1.7-dbg, wine
-Version: 1:1.7.44-0ubuntu1
+Version: 1:1.7.50-0ubuntu1
 Section: otherosfs
 Maintainer: Scott Ritchie <scottritchie@ubuntu.com>
 Build-Depends: autotools-dev, bison, debhelper (>= 9), desktop-file-utils, docbook-to-man, docbook-utils, docbook-xsl, flex, fontforge, gettext, libasound2-dev, libcapi20-dev, libcups2-dev, libdbus-1-dev, libfontconfig1-dev | libfontconfig-dev, libfreetype6-dev, libgif-dev, libgl1-mesa-dev | libgl-dev, libglu1-mesa-dev | libglu-dev, libgnutls-dev, libgphoto2-dev | libgphoto2-6-dev | libgphoto2-2-dev, libgsm1-dev, libgstreamer-plugins-base0.10-dev, libgstreamer0.10-dev, libjpeg-dev, liblcms2-dev, libldap2-dev, libmpg123-dev, libncurses5-dev | libncurses-dev, libopenal-dev, libosmesa6-dev, libpcap0.8-dev, libpng12-dev, libpulse-dev, libsane-dev, libtiff5-dev | libtiff4-dev | libtiff-dev, libv4l-dev, libx11-dev, libxcomposite-dev, libxcursor-dev, libxext-dev, libxi-dev, libxinerama-dev, libxml2-dev, libxrandr-dev, libxrender-dev, libxslt1-dev, libxt-dev, libxxf86vm-dev, linux-kernel-headers, ocl-icd-opencl-dev, oss4-dev, prelink, valgrind, unixodbc-dev, x11proto-xinerama-dev
@@ -3103,24 +3239,24 @@ Standards-Version: 3.9.2
 Format: 3.0 (quilt)
 Directory: pool/universe/w/wine1.7
 Files:
- 62f30f7a6937eb213bcab6d0b94710bc 22308686 wine1.7_1.7.44.orig.tar.bz2
- af76bb209da8a017c330a2809400e552 203268 wine1.7_1.7.44-0ubuntu1.debian.tar.gz
- d9fbe2bd739d8b4b1f67ad56f61c598b 2918 wine1.7_1.7.44-0ubuntu1.dsc
+ c8b30bf13c3d418688fd6fa1321edb8a 22586575 wine1.7_1.7.50.orig.tar.bz2
+ 88e560d2dc10b98d6a2a53e971f67988 159904 wine1.7_1.7.50-0ubuntu1.debian.tar.xz
+ 1ea88d4b38dc492cd3929c29ef6ea797 2999 wine1.7_1.7.50-0ubuntu1.dsc
 Checksums-Sha1:
- 1c3bbda41c5d19fbc47bdcd6792975227cd05be0 22308686 wine1.7_1.7.44.orig.tar.bz2
- 27620cd4883a00d268a927584066f5994eecdbe7 203268 wine1.7_1.7.44-0ubuntu1.debian.tar.gz
- 702c78758affc4d22739142ea06cb86f006a631f 2918 wine1.7_1.7.44-0ubuntu1.dsc
+ fef9e2e54dca8fe783ece06f153a62d7a5d48ce3 22586575 wine1.7_1.7.50.orig.tar.bz2
+ b240b7f07b2fb88bd3af2b6d5c2882f0cef1b3f6 159904 wine1.7_1.7.50-0ubuntu1.debian.tar.xz
+ 3ef8396eafa104145b2f832ffb2369f28a64e4d4 2999 wine1.7_1.7.50-0ubuntu1.dsc
 Checksums-Sha256:
- d2e3290d4b312d235ab8ac214eaae8f81c751fb610b15b40c2620904bd38d8bb 22308686 wine1.7_1.7.44.orig.tar.bz2
- cd06ded613ce54e2cf56a4704e1f18d7abebc43732a085c30f01fc9feabaf765 203268 wine1.7_1.7.44-0ubuntu1.debian.tar.gz
- 0e908dadc19f03a9073e7a29d36a6ca7debdb7b5d6a8c471509304daf9a1fe5e 2918 wine1.7_1.7.44-0ubuntu1.dsc
+ 7c5410fab820281f337d478c18305027363c9012f30f742339ef1eb0f9dd711e 22586575 wine1.7_1.7.50.orig.tar.bz2
+ 7347fd9e866b225535052305553a55e3f40182578131855112fa5ef06e0d141d 159904 wine1.7_1.7.50-0ubuntu1.debian.tar.xz
+ f87e1f1d37c0c9aba349b5e603390625d5c141e4046ca0447baea0c7a4e7477b 2999 wine1.7_1.7.50-0ubuntu1.dsc
 Homepage: http://www.winehq.org/
-Package-List: wine deb metapackages extra
- wine1.7 deb otherosfs optional
- wine1.7-amd64 deb otherosfs optional
- wine1.7-dbg deb debug extra
- wine1.7-dev deb libdevel optional
- wine1.7-i386 deb otherosfs optional
+Package-List: wine deb metapackages extra arch=i386,amd64
+ wine1.7 deb otherosfs optional arch=i386,amd64
+ wine1.7-amd64 deb otherosfs optional arch=amd64
+ wine1.7-dbg deb debug extra arch=i386,amd64
+ wine1.7-dev deb libdevel optional arch=i386,amd64
+ wine1.7-i386 deb otherosfs optional arch=i386
 
 Package: winetricks
 Binary: winetricks
@@ -3145,7 +3281,7 @@ Package-List: winetricks deb otherosfs optional
 
 Package: wiznote
 Binary: wiznote
-Version: 2.1.19.1
+Version: 2.2.5
 Section: graphics
 Maintainer: lxn <lxn@wiz.cn>
 Build-Depends: debhelper (>= 9), cmake (>= 2.8), libqt4-dev (>= 4.8), libqtwebkit-dev, zlib1g-dev
@@ -3154,14 +3290,14 @@ Standards-Version: 3.9.5
 Format: 3.0 (native)
 Directory: pool/universe/w/wiznote
 Files:
- 7f878b68f43a3f9e2770eec8af0ef4b1 10307951 wiznote_2.1.19.1.tar.gz
- eed09f1e393812e03aa21ed47b949e60 1126 wiznote_2.1.19.1.dsc
+ 25de06886a99519c9d4ebfb098735356 8513105 wiznote_2.2.5.tar.gz
+ e78cb3692501a798c74abf93c220be50 1111 wiznote_2.2.5.dsc
 Checksums-Sha1:
- 77604fd6d4cdb0aa15def32324ec09bf8780a6a5 10307951 wiznote_2.1.19.1.tar.gz
- da1261752ad4d14bb1d6ee33c25f3ae89518d85b 1126 wiznote_2.1.19.1.dsc
+ 26b06bf16e8cd63b926df05796b0b1c3305951dc 8513105 wiznote_2.2.5.tar.gz
+ 83886e9852ae2153b6f2dec33d4c3f4e4120bda8 1111 wiznote_2.2.5.dsc
 Checksums-Sha256:
- b31e72a46c8d1107c891c31f6938c8badcfa1642aab2edef54d7d920c852db48 10307951 wiznote_2.1.19.1.tar.gz
- 39b0c3f96c3e09c2a9aac250bbd229e84c323405a2a712b29b61d36d193529ef 1126 wiznote_2.1.19.1.dsc
+ 777ec417afbb7bc28f756dce0610683fa4ade0bfd2038869c57dd96242be4f5d 8513105 wiznote_2.2.5.tar.gz
+ 9ea2aa03ade71a59b52e1d6a1ee75c85851691c38c6a925a566b0acb9face0de 1111 wiznote_2.2.5.dsc
 Homepage: http://www.wiznote.com
 Package-List: wiznote deb graphics standard
 
