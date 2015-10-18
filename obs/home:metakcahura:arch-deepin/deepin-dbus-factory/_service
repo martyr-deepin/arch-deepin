@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">ftp5.gwdg.de</param>
     <param name="protocol">http</param>
-    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/dbus-factory/dbus-factory_0.0.2+20141226160557~7e89f03592.tar.gz</param>
+    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/dbus-factory/dbus-factory_14.12+git20150715104229~369bc351ee.tar.gz</param>
   </service>
 </services>

@@ -2,30 +2,30 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-dock-applets
-pkgver=0.0.4.20150521130615
-_srcdirname=dde-dock-applets-0.0.4+20150521130615
-pkgrel=3
+pkgver=14.12.20150629154830
+_srcdirname=dde-dock-applets-14.12+git20150629154830~85806ffefa
+pkgrel=2
 pkgdesc="New control center for linux deepin"
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-dock-applets"
 license=('GPL3')
-depends=('dde-daemon' 'dde-api' 'deepin-qml-widgets' 'dde-qml-dbus-factory'
-         'gtk2' 'qt5-svg' 'qt5-declarative')
+depends=('gtk2' 'qt5-svg' 'qt5-declarative')
 makedepends=('deepin-gettext-tools' 'qt5-tools' 'python2')
 groups=('deepin')
-source=("http://ftp5.gwdg.de/pub/linux/linuxdeepin/packages/pool/main/d/dde-dock-applets/dde-dock-applets_0.0.4+20150521130615.tar.gz")
-sha256sums=('4566d20973198ec34daf369ecefb5215b652ce44b9683289cb4f9e4785a5ec24')
+source=("http://ftp5.gwdg.de/pub/linux/linuxdeepin/packages/pool/main/d/dde-dock-applets/dde-dock-applets_14.12+git20150629154830~85806ffefa.tar.gz")
+sha256sums=('3034c61b33711281469b9670171efb114cc54800d4260cb39c3a96b1d182563f')
 
 build() {
-  cd "${_srcdirname}"
+	cd "${_srcdirname}"
 
-  make
+	make
 }
 
 package() {
-  depends+=('deepin-artwork-themes')
+	depends+=('dde-daemon' 'dde-api' 'dde-qml-dbus-factory'
+			  'deepin-qml-widgets' 'deepin-artwork-themes')
 
-  cd "${_srcdirname}"
+	cd "${_srcdirname}"
 
-  make DESTDIR="${pkgdir}" install
+	make DESTDIR="${pkgdir}" install
 }

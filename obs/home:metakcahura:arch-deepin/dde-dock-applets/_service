@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">ftp5.gwdg.de</param>
     <param name="protocol">http</param>
-    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/dde-dock-applets/dde-dock-applets_0.0.4+20150521130615.tar.gz</param>
+    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/dde-dock-applets/dde-dock-applets_14.12+git20150629154830~85806ffefa.tar.gz</param>
   </service>
 </services>

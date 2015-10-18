@@ -2,30 +2,29 @@
 # Contributor: 
 
 pkgname=python2-pysrt
-_pkgname=pysrt
 pkgver=1.0.1
-pkgrel=2
+pkgrel=4
 pkgdesc="Python parser for SubRip (srt) files"
 arch=('any')
 url="https://github.com/byroot/pysrt"
 license=('GPL3')
 depends=('python2-chardet')
 makedepends=('python2-distribute')
-source=(http://pypi.python.org/packages/source/p/pysrt/${_pkgname}-${pkgver}.tar.gz)
+source=("http://pypi.python.org/packages/source/p/pysrt/pysrt-${pkgver}.tar.gz")
 md5sums=('2ba064c33026bac4b528063f67bd8ebc')
 
 prepare() {
-  cd "${_pkgname}-${pkgver}"
+	cd "pysrt-${pkgver}"
 
-  # fix python version
-  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+	# fix python version
+	find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 package() {
-  cd "${srcdir}/${_pkgname}-${pkgver}"
+	cd "pysrt-${pkgver}"
 
-  # Remove tests
-  rm -rf tests
-  
-  /usr/bin/python2 setup.py install --root="${pkgdir}" --optimize=1
+	# Remove tests
+	rm -rf tests
+
+	/usr/bin/python2 setup.py install --root="${pkgdir}" --optimize=1
 }

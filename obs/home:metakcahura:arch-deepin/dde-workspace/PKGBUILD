@@ -3,19 +3,19 @@
 
 pkgbase=dde-workspace
 pkgname=('dde-workspace' 'lightdm-deepin-greeter')
-pkgver=2.1.20150521160615
-_srcdirname=deepin-desktop-environment-2.1+20150521160615
-pkgrel=5
+pkgver=2.1.20150528170616
+_srcdirname=deepin-desktop-environment-2.1+20150528170616~45cd9c8d06
+pkgrel=2
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-workspace"
 license=('GPL3')
 groups=('deepin')
 makedepends=('cmake' 'go' 'coffee-script' 'go-gettext-go' 'webkitgtk'
              'libdeepin-webkit' 'lightdm' 'cairo' 'dbus-glib' 'python2')
-source=("http://ftp5.gwdg.de/pub/linux/linuxdeepin/packages/pool/main/d/deepin-desktop-environment/deepin-desktop-environment_2.1+20150521160615.tar.gz"
+source=("http://ftp5.gwdg.de/pub/linux/linuxdeepin/packages/pool/main/d/deepin-desktop-environment/deepin-desktop-environment_2.1+20150528170616~45cd9c8d06.tar.gz"
         "default-display-manager"
         "fix-go1.5-template-issue.patch")
-sha256sums=('20aa7a8df56f4be815a5525aa33685365998e9cc63a4dc94e1cd8bc7db85300f'
+sha256sums=('ffcba9a2680b8070778a0fa26ddb1c8b01280bac40850a2687591ac211756267'
             '3667d6cce9a00f0b8c8bc27250b2ceaf421382d3b4e687a5bcea4c64292030df'
             '55025f4c739b87cb71394b1d53fbd43eb79a4dec0a0996cf53585cd91ef6c28b')
 

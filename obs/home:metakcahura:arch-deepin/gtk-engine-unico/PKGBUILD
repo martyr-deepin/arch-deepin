@@ -2,8 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=gtk-engine-unico
-pkgver=1.0.3_r152
-pkgrel=1
+pkgver=1.0.3.r152
+pkgrel=4
 pkgdesc='Unico GTK3 theme engine'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/unico'

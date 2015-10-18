@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">ftp5.gwdg.de</param>
     <param name="protocol">http</param>
-    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/dde-control-center/dde-control-center_0.1+20150413164707~6ec15a41de.tar.gz</param>
+    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/dde-control-center/dde-control-center_14.12+git20150902104832~64f57d1aaf.tar.gz</param>
   </service>
 </services>

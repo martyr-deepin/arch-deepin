@@ -4,7 +4,7 @@
 _pkgname=golang-xgb
 pkgname=go-xgb
 pkgver=0.0.20140510
-pkgrel=2
+pkgrel=3
 pkgdesc='XGB is the X protocol Go language Binding.'
 arch=('any')
 url="https://github.com/BurntSushi/xgb"

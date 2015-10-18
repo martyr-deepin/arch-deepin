@@ -3,8 +3,8 @@
 
 pkgname=python2-xpybutil
 _name=xpybutil
-pkgver=20150213
-pkgrel=1
+pkgver=20150318
+pkgrel=2
 pkgdesc="A Python rendition of xcb-util. EWMH, ICCCM, key binding, Xinerama, etc..."
 arch=('any')
 url="http://burntsushi.net/X11/xpybutil"

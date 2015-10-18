@@ -1,7 +1,26 @@
 <services>
-  <service name="download_url">
-    <param name="host">ftp5.gwdg.de</param>
-    <param name="protocol">http</param>
-    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/dbus-generator/dbus-generator_0.0.3+20141120163131~84ee26c38d.tar.gz</param>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/go-dbus-generator.git</param>
+    <param name="versionformat"></param>
+    <param name="revision">0.6.1</param>
+    <param name="version">generator</param>
+    <param name="filename">go-dbus</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/go-lib.git</param>
+    <param name="versionformat"></param>
+    <param name="revision">0.4.1</param>
+    <param name="version">lib</param>
+    <param name="filename">go</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
   </service>
 </services>

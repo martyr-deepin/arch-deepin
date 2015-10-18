@@ -4,7 +4,7 @@
 _pkgname=golang-jamslam-freetype-go
 pkgname=go-jamslam-freetype-go
 pkgver=0.0.20140903
-pkgrel=2
+pkgrel=3
 pkgdesc='File system notification for GO'
 arch=('any')
 url="https://github.com/BurntSushi/xgb"

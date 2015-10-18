@@ -2,6 +2,6 @@
   <service name="download_url">
     <param name="host">nodejs.org</param>
     <param name="protocol">http</param>
-    <param name="path">/dist/v0.12.4/node-v0.12.4.tar.gz</param>
+    <param name="path">/dist/v4.2.1/node-v4.2.1.tar.gz</param>
   </service>
 </services>

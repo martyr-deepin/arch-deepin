@@ -4,7 +4,7 @@
 _pkgname=golang-graphics-go
 pkgname=go-graphics-go
 pkgver=0.0.20140903
-pkgrel=2
+pkgrel=3
 pkgdesc='File system notification for GO'
 arch=('any')
 url="http://code.google.com/p/graphics-go/"

@@ -1,10 +1,10 @@
 # Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
-# Contributor: 
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=python2-ass
 _pkgname=python-ass
 pkgver=0.4.1
-pkgrel=4
+pkgrel=6
 pkgdesc="A library for parsing and manipulating Advanced SubStation Alpha subtitle files."
 arch=('any')
 url="http://github.com/rfw/python-ass"
@@ -15,17 +15,14 @@ source=("http://packages.linuxdeepin.com/deepin/pool/main/p/${_pkgname}/${_pkgna
 sha256sums=('e4aa5bed22484a6802ee833194d7c162a1cf63311e0543bca0b10b964f969e4b')
 
 prepare() {
-  cd "${_pkgname}-${pkgver}"
+	cd "${_pkgname}-${pkgver}"
 
-  # fix python version
-  find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+	# fix python version
+	find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
 }
 
 package() {
-  cd "${_pkgname}-${pkgver}"
+	cd "${_pkgname}-${pkgver}"
 
-  # Remove tests
-  # rm -rf tests
-  
-  /usr/bin/python2 setup.py install --root="${pkgdir}" --optimize=1
+	/usr/bin/python2 setup.py install --root="${pkgdir}" --optimize=1
 }

@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">downloads.sourceforge.net</param>
-    <param name="protocol">http</param>
-    <param name="path">/lsb/lsb-release-1.4.tar.gz</param>
-  </service>
-</services>

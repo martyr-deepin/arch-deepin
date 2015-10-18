@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">cython.org</param>
-    <param name="protocol">http</param>
-    <param name="path">/release/Cython-0.22.tar.gz</param>
-  </service>
-<service name="download_url"><param name="host">github.com</param><param name="protocol">https</param><param name="path">/cython/cython/commit/9139a7f836151fb5bdb1624a05dce13b1bb17164.patch</param></service></services>

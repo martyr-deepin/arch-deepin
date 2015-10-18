@@ -9,17 +9,17 @@
 # Contributor: TIanyi Cui <tianyicui@gmail.com>
 
 pkgname=nodejs
-pkgver=0.12.4
+pkgver=4.2.1
 pkgrel=1
 pkgdesc='Evented I/O for V8 javascript'
 arch=('i686' 'x86_64')
 url='http://nodejs.org/'
 license=('MIT')
-depends=('openssl' 'zlib' 'icu') # 'libuv' 'v8' 'c-ares')
+depends=('openssl' 'zlib' 'icu' 'libuv' 'http-parser') # 'v8')
 makedepends=('python2' 'procps-ng')
 optdepends=('npm: nodejs package manager')
 source=("http://nodejs.org/dist/v$pkgver/node-v$pkgver.tar.gz")
-sha256sums=('3298d0997613a04ac64343e8316da134d04588132554ae402eb344e3369ec912')
+sha256sums=('8861b9f4c3b4db380fcda19a710c0430c3d62d03ee176c64db63eef95a672663')
 
 prepare() {
   cd node-v$pkgver
@@ -29,6 +29,8 @@ prepare() {
     -e 's_^#!/usr/bin/env python$_&2_' \
     -e 's_^\(#!/usr/bin/python2\).[45]$_\1_' \
     -e 's_^#!/usr/bin/python$_&2_' \
+    -e 's_^\( *exec \+\)python\( \+.*\)$_\1python2\2_'\
+    -e 's_^\(.*\)python\( \+-c \+.*\)$_\1python2\2_'\
     -e "s_'python'_'python2'_" -i {} \;
   find test/ -type f -exec sed 's_python _python2 _' -i {} \;
 }
@@ -42,17 +44,17 @@ build() {
     --with-intl=system-icu \
     --without-npm \
     --shared-openssl \
-    --shared-zlib
-    # --shared-libuv
+    --shared-zlib \
+    --shared-libuv \
+    --shared-http-parser
     # --shared-v8
-    # --shared-cares
 
   make
 }
 
 check() {
   cd node-v$pkgver
-  make test || warning "Tests failed"
+  #make test
 }
 
 package() {
