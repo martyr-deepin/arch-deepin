@@ -18,7 +18,7 @@ _gopkg="pkg.linuxdeepin.com/lib"
 
 prepare() {
 	mkdir -p "${_gobuild_dir}"/src/"${_gopkg}"
-	cp -r "${_srcdirname}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
+	cp -a "${_srcdirname}"/* "${_gobuild_dir}"/src/"${_gopkg}"/
 	rm -rf "${_gobuild_dir}"/src/"${_gopkg}"/debian
 }
 

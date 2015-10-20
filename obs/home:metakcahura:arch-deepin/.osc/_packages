@@ -18,7 +18,6 @@
   <package name="deepin-gettext-tools" state=" " />
   <package name="deepin-gtk-theme" state=" " />
   <package name="deepin-icon-theme" state=" " />
-  <package name="deepin-movie" state=" " />
   <package name="deepin-notifications" state=" " />
   <package name="flattr-icon-theme" state=" " />
   <package name="go" state=" " />
@@ -41,15 +40,6 @@
   <package name="nodejs" state=" " />
   <package name="nodejs-mkdirp" state=" " />
   <package name="polkit-gnome" state=" " />
-  <package name="python2-ass" state=" " />
-  <package name="python2-keybinder2" state=" " />
-  <package name="python2-pyquery" state=" " />
-  <package name="python2-pysrt" state=" " />
-  <package name="python2-setproctitle" state=" " />
-  <package name="python2-xlib" state=" " />
-  <package name="python2-xpyb" state=" " />
-  <package name="python2-xpybutil" state=" " />
-  <package name="pywebkitgtk" state=" " />
   <package name="startdde" state=" " />
   <package name="underscorejs" state=" " />
   <package name="xcur2png" state=" " />
@@ -60,4 +50,5 @@
   <package name="go1.4.2" state=" " />
   <package name="http-parser" state=" " />
   <package name="libuv" state=" " />
+  <package name="deepin-nautilus-properties" state=" " />
 </project>

@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">pypi.python.org</param>
-    <param name="protocol">https</param>
-    <param name="path">/packages/source/p/pysrt/pysrt-1.0.1.tar.gz</param>
-  </service>
-</services>
