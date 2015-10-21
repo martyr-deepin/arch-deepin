@@ -46,7 +46,7 @@ build() {
 
 package_dde-workspace() {
   pkgdesc="Linux Deepin desktop environment."
-  depends=('dde-control-center' 'deepin-menu' 'deepin-artwork'
+  depends=('dde-control-center' 'deepin-menu' 'deepin-artwork' 'deepin-nautilus-properties'
            'libdeepin-webkit' 'cairo' 'dbus-glib' 'python2')
   optdepends=('lightdm-deepin-greeter')
   replaces=("deepin-desktop-environment" "deepin-workspace")
