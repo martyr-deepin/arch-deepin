@@ -1,13 +1,12 @@
-diff --git a/launcher/item/item.go b/launcher/item/item.go
-index 7a22050..259b6a2 100644
---- a/launcher/item/item.go
-+++ b/launcher/item/item.go
-@@ -4,8 +4,6 @@ import (
+diff -U 3 -drN a/launcher/item/item.go b/launcher/item/item.go
+--- a/launcher/item/item.go	2015-10-23 23:26:04.696540490 +0200
++++ b/launcher/item/item.go	2015-10-23 23:27:26.349876650 +0200
+@@ -4,8 +4,6 @@
  	"path"
  	"strings"
  
 -	_ "github.com/mattn/go-sqlite3"
 -
- 	. "pkg.linuxdeepin.com/dde-daemon/launcher/category"
- 	. "pkg.linuxdeepin.com/dde-daemon/launcher/interfaces"
- 	"pkg.linuxdeepin.com/lib/gio-2.0"
+ 	. "pkg.deepin.io/dde/daemon/launcher/category"
+ 	. "pkg.deepin.io/dde/daemon/launcher/interfaces"
+ 	"pkg.deepin.io/lib/gio-2.0"

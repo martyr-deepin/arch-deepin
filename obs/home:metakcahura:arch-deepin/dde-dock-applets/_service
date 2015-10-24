@@ -1,7 +1,13 @@
 <services>
-  <service name="download_url">
-    <param name="host">ftp5.gwdg.de</param>
-    <param name="protocol">http</param>
-    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/dde-dock-applets/dde-dock-applets_14.12+git20150629154830~85806ffefa.tar.gz</param>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/dde-dock-applets.git</param>
+    <param name="revision">2.90.1</param>
+    <param name="version">applets</param>
+    <param name="filename">dde-dock</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
   </service>
 </services>

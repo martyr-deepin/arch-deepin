@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">github.com</param>
-    <param name="protocol">https</param>
-    <param name="path">/jordansissel/xdotool/releases/download/v3.20150503.1/xdotool-3.20150503.1.tar.gz</param>
-  </service>
-</services>

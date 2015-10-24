@@ -1,7 +1,14 @@
 <services>
-  <service name="download_url">
-    <param name="host">ftp5.gwdg.de</param>
-    <param name="protocol">http</param>
-    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/dde-control-center/dde-control-center_14.12+git20150902104832~64f57d1aaf.tar.gz</param>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/dde-control-center.git</param>
+    <param name="versionformat"></param>
+    <param name="revision">2.90.3</param>
+    <param name="version">center</param>
+    <param name="filename">dde-control</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
   </service>
 </services>

@@ -1,7 +1,14 @@
 <services>
-  <service name="download_url">
-    <param name="host">ftp5.gwdg.de</param>
-    <param name="protocol">http</param>
-    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/dde-api/dde-api_0.0.2+20150107093816~d93500c16a.tar.gz</param>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/dde-api.git</param>
+    <param name="versionformat"></param>
+    <param name="revision">2.91.0</param>
+    <param name="version">api</param>
+    <param name="filename">dde</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
   </service>
 </services>

@@ -2,8 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-icon-theme
-pkgver=13.06.13.20150114160019
-_srcdirname=deepin-icon-theme-13.06.13+20150114160019~dff58a2dad
+pkgver=20150629.eeb1a8d
+_commit=eeb1a8d09d0a4fbe4cf5890d0132c4ecf35f17d8
 pkgrel=1
 pkgdesc="This package is DeepinIconTheme which inherits the faenza-icon-theme."
 arch=('any')
@@ -12,26 +12,24 @@ license=('LGPL3')
 makedepends=('inkscape')
 groups=('deepin')
 options=(!strip)
-install="${pkgname}.install"
-source=("http://ftp5.gwdg.de/pub/linux/linuxdeepin/packages/pool/main/d/deepin-icon-theme/deepin-icon-theme_13.06.13+20150114160019~dff58a2dad.tar.gz")
-sha256sums=('f897855958c5cd8bdc5660965d4771e2927d0b1269a476256928967e6de6e042')
+#source=("git+https://github.com/linuxdeepin/deepin-icon-theme.git#commit=$_commit")
+source=('deepin-icon-theme.tar.xz')
+sha256sums=('SKIP')
 
 prepare() {
-  cd "${_srcdirname}"
-
-  sed 's\python\python2\' -i Makefile
+	cd deepin-icon-theme
+	sed 's\python\python2\' -i Makefile
+	sed 's\flattr\Flattr\' -i deepin/index.theme
 }
 
 build() {
-  cd "${_srcdirname}"
-
-  make
+	cd deepin-icon-theme
+	make
 }
 
 package() {
-  depends=('flattr-icon-theme' 'deepin-cursor-theme' 'gtk-update-icon-cache')
+	depends=('flattr-icon-theme' 'deepin-cursor-theme')
 
-  cd "${_srcdirname}"
-
-  make DESTDIR="$pkgdir" install
+	cd deepin-icon-theme
+	make DESTDIR="$pkgdir" install
 }

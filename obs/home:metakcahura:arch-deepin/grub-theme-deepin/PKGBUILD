@@ -2,25 +2,19 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=grub-theme-deepin
-pkgver=0.5
-_srcdirname=grub-themes-deepin-0.5
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='Grub2 themes from Linux Deepin'
 arch=('any')
 url="http://www.linuxdeepin.com/"
 license=('GPL3')
-provides=('grub-themes-deepin')
-conflicts=('grub-themes-deepin')
-replaces=('grub-themes-deepin')
-groups=('deepin')
-source=("http://ftp5.gwdg.de/pub/linux/linuxdeepin/packages/pool/universe/g/grub-themes-deepin/grub-themes-deepin_0.5-9.tar.gz")
-sha256sums=('9c951864d49f58a253bc310342ec8d23fd78aa1683188a79a91e3f979091f842')
+depends=('grub')
+makedepends=('git')
+#source=("git+https://github.com/linuxdeepin/deepin-grub2-themes.git#tag=$pkgver")
+source=('deepin-grub2-themes.tar.xz')
+sha256sums=('SKIP')
 
 package() {
-  depends=('grub')
-
-  cd "${_srcdirname}"
-
-  install -dm755 "${pkgdir}"/boot/grub/themes
-  cp -rf deepin-grub2-themes/deepin "${pkgdir}"/boot/grub/themes/
+	cd deepin-grub2-themes
+	make DESTDIR="${pkgdir}" install
 }

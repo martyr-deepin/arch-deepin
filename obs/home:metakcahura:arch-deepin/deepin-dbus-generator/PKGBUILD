@@ -16,24 +16,23 @@ makedepends=('go' 'qt5-declarative' 'git')
 groups=('deepin-dev')
 #source=("git+https://github.com/linuxdeepin/go-dbus-generator.git#tag=$pkgver"
 #        "git+https://github.com/linuxdeepin/go-lib.git#tag=$_golibver")
-#md5sums=('SKIP'
-#         'SKIP')
 source=('go-dbus-generator.tar.xz' 'go-lib.tar.xz')
-sha256sums=('SKIP' 'SKIP')
+sha256sums=('SKIP'
+			'SKIP')
 
 prepare() {
-  export GOPATH="$srcdir/build"
-  mkdir -p build/src/pkg.deepin.io/lib
-  cp -a go-lib/* build/src/pkg.deepin.io/lib
+	export GOPATH="$srcdir/build"
+	mkdir -p build/src/pkg.deepin.io/lib
+	cp -a go-lib/* build/src/pkg.deepin.io/lib
 }
 
 build() {
-  export GOPATH="$srcdir/build"
+	export GOPATH="$srcdir/build"
 
-  cd go-dbus-generator
-  go build -o out/dbus-generator
+	cd go-dbus-generator
+	go build -o out/dbus-generator
 }
 
 package() {
-  install -Dm 755 go-dbus-generator/out/dbus-generator "${pkgdir}"/usr/bin/dbus-generator
+	install -Dm 755 go-dbus-generator/out/dbus-generator "${pkgdir}"/usr/bin/dbus-generator
 }

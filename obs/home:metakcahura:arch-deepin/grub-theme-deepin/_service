@@ -1,7 +1,13 @@
 <services>
-  <service name="download_url">
-    <param name="host">ftp5.gwdg.de</param>
-    <param name="protocol">http</param>
-    <param name="path">/pub/linux/linuxdeepin/packages/pool/universe/g/grub-themes-deepin/grub-themes-deepin_0.5-9.tar.gz</param>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/deepin-grub2-themes.git</param>
+    <param name="revision">1.0.0</param>
+    <param name="version">themes</param>
+    <param name="filename">deepin-grub2</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
   </service>
 </services>

@@ -1,7 +1,13 @@
 <services>
-  <service name="download_url">
-    <param name="host">ftp5.gwdg.de</param>
-    <param name="protocol">http</param>
-    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/deepin-notifications/deepin-notifications_0.3+20150427175348~b2f1890574.tar.gz</param>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/deepin-notifications.git</param>
+    <param name="revision">2.90.0</param>
+    <param name="version">notifications</param>
+    <param name="filename">deepin</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
   </service>
 </services>

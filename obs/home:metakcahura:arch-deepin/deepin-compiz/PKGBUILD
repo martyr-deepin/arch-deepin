@@ -31,9 +31,11 @@ replaces=('compiz-bzr' 'compiz-core' 'compiz-fusion-plugins-main'
           'compizconfig-backend-gconf' 'compiz-bcop' 'ccsm')
 install='compiz.install'
 source=("http://ftp5.gwdg.de/pub/linux/linuxdeepin/packages/pool/main/c/compiz/compiz_0.9.99-5+git20140707164843~2e85d002e7.tar.gz"
-        'fix-boost-interfaces.patch')
+        'fix-boost-interfaces.patch'
+        'c++11.patch')
 sha256sums=('4077a2f9d86da2781a48e90651b7a52482c6c2d4ac8e60b37d91208f4b9a4250'
-            '9b041e3ca5fe54984d064bab9c3c8fa623e8c0e752129c53c578922a48582845')
+            '9b041e3ca5fe54984d064bab9c3c8fa623e8c0e752129c53c578922a48582845'
+            '9db932804fefb8d74a21788f55d9b5e24675da78d1cc58f0ab828ed1d5948d21')
 
 prepare() {
   cd "${_srcdirname}"
@@ -44,6 +46,8 @@ prepare() {
   find compizconfig/ccsm -type f -exec sed -e 's|^#!.*python|#!/usr/bin/env python2|g' -i {} \;
 
   patch -p1 < ../fix-boost-interfaces.patch
+
+  patch -p1 -i ../c++11.patch
 }
 
 build() {
@@ -66,7 +70,7 @@ build() {
         -DCOMPIZ_DEFAULT_PLUGINS="ccp" \
         -DCOMPIZ_WERROR=FALSE
 
-  make -j8
+  make
 }
 
 package() {

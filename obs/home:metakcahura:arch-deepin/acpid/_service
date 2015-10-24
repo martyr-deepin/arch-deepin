@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">downloads.sourceforge.net</param>
-    <param name="protocol">http</param>
-    <param name="path">/sourceforge/acpid2/acpid-2.0.23.tar.xz</param>
-  </service>
-</services>

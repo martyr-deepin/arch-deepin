@@ -1,5 +1,4 @@
 <project name="home:metakcahura:arch-deepin">
-  <package name="acpid" state=" " />
   <package name="chrpath" state=" " />
   <package name="coffee-script" state=" " />
   <package name="dde-account-faces" state=" " />
@@ -12,7 +11,6 @@
   <package name="deepin-artwork-themes" state=" " />
   <package name="deepin-compiz" state=" " />
   <package name="deepin-cursor-theme" state=" " />
-  <package name="deepin-dbus-factory" state=" " />
   <package name="deepin-dbus-generator" state=" " />
   <package name="deepin-default-gsettings" state=" " />
   <package name="deepin-gettext-tools" state=" " />
@@ -21,16 +19,6 @@
   <package name="deepin-notifications" state=" " />
   <package name="flattr-icon-theme" state=" " />
   <package name="go" state=" " />
-  <package name="go-dlib" state=" " />
-  <package name="go-fsnotify" state=" " />
-  <package name="go-gettext-go" state=" " />
-  <package name="go-gocheck" state=" " />
-  <package name="go-goconvey" state=" " />
-  <package name="go-graphics-go" state=" " />
-  <package name="go-jamslam-freetype-go" state=" " />
-  <package name="go-sqlite3" state=" " />
-  <package name="go-xgb" state=" " />
-  <package name="go-xgbutil" state=" " />
   <package name="grub-theme-deepin" state=" " />
   <package name="jansson" state=" " />
   <package name="libdeepin-webkit" state=" " />
@@ -39,11 +27,9 @@
   <package name="metacity-ubuntu" state=" " />
   <package name="nodejs" state=" " />
   <package name="nodejs-mkdirp" state=" " />
-  <package name="polkit-gnome" state=" " />
   <package name="startdde" state=" " />
   <package name="underscorejs" state=" " />
   <package name="xcur2png" state=" " />
-  <package name="xdotool" state=" " />
   <package name="autoconf-archive" state=" " />
   <package name="nodejs-minimist" state=" " />
   <package name="gtk-engine-unico" state=" " />
@@ -51,4 +37,5 @@
   <package name="http-parser" state=" " />
   <package name="libuv" state=" " />
   <package name="deepin-nautilus-properties" state=" " />
+  <package name="go-packages" state=" " />
 </project>

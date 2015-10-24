@@ -2,8 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-gtk-theme
-pkgver=14.07.20150327153743
-_srcdirname=deepin-gtk-theme-14.07+20150327153743~2d420cb0b9
+pkgver=20151012.5e84c3c
+_commit=5e84c3c3fbb6302c727ea034de847bd8fa7e8264
 pkgrel=1
 pkgdesc="Deepin GTK Theme."
 arch=('any')
@@ -11,15 +11,13 @@ url="https://gitcafe.com/Deepin/deepin-gtk-theme"
 license=('LGPL3')
 optdepends=('gtk-engine-murrine: for gtk2 themes')
 groups=('deepin')
-source=("http://ftp5.gwdg.de/pub/linux/linuxdeepin/packages/pool/main/d/deepin-gtk-theme/deepin-gtk-theme_14.07+20150327153743~2d420cb0b9.tar.gz")
-sha256sums=('377695a4a91c7334259ff6283d39ae7c55c21032d43293b8c7a5298cd8706407')
+#source=("git+https://github.com/linuxdeepin/deepin-gtk-theme.git#commit=$_commit")
+source=('deepin-gtk-theme.tar.xz')
+sha256sums=('SKIP')
 
 package() {
-  depends=('gtk-engine-unico')
+	depends=('gtk-engine-unico')
 
-  cd "${_srcdirname}"
-
-  install -dm0755 "${pkgdir}"/usr/share/themes
-  cp -r Deepin "${pkgdir}"/usr/share/themes/Deepin
-  cp -r Deepin-light "${pkgdir}"/usr/share/themes/Deepin-light
+	install -dm0755 "${pkgdir}"/usr/share/themes
+	cp -a deepin-gtk-theme/Deepin "${pkgdir}"/usr/share/themes/
 }

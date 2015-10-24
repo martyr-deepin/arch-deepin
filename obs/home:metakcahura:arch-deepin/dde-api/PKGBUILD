@@ -2,28 +2,29 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-api
-pkgver=0.0.2.20150107093816
-_srcdirname=dde-api-0.0.2+20150107093816~d93500c16a
-pkgrel=8
+pkgver=2.91.0
+pkgrel=1
 pkgdesc='Go-lang bingdings for dde-daemon'
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-api"
 license=('GPL3')
-depends=('glib2' 'gdk-pixbuf2' 'gtk3' 'libcanberra' 'libxi' 'rfkill')
-makedepends=('go' 'go-dlib' 'go-xgb' 'go-xgbutil'
-             'go-fsnotify' 'dde-go-dbus-factory')
-groups=('deepin')
-source=("http://ftp5.gwdg.de/pub/linux/linuxdeepin/packages/pool/main/d/dde-api/dde-api_0.0.2+20150107093816~d93500c16a.tar.gz")
-sha256sums=('7a45f0c64513c9be7e7795fcb58c1c3eb694e6a1a6a36fb6037281e1dc72e813')
+depends=('glibc' 'libcanberra-pulse' 'libxi' 'rfkill')
+makedepends=('git' 'go-packages' 'gtk3' 'metacity-ubuntu<3.0' 'poppler-glib')
+groups=('deepin-dev')
+#source=("git+https://github.com/linuxdeepin/dde-api.git#tag=$pkgver")
+source=('dde-api.tar.xz')
+sha256sums=('SKIP')
 
-build(){
-  cd "${_srcdirname}"
+prepare() {
+	sed -i 's\share/gocode\lib/go\' dde-api/Makefile
+}
 
-  make GOPATH="/usr/lib/go/site"
+build() {
+	cd dde-api
+	make GOPATH="/usr/lib/go"
 }
 
 package() {
-  cd "${_srcdirname}"
-
-  make DESTDIR="${pkgdir}" install
+	cd dde-api
+	make GOPATH="/usr/lib/go" DESTDIR="${pkgdir}" install
 }

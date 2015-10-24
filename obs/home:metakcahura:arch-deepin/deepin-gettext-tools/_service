@@ -1,7 +1,13 @@
 <services>
-  <service name="download_url">
-    <param name="host">ftp5.gwdg.de</param>
-    <param name="protocol">http</param>
-    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/deepin-gettext-tools/deepin-gettext-tools_0.0.1+20141216200739~6ba50ecb9c.tar.gz</param>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/deepin-gettext-tools.git</param>
+    <param name="revision">1.0.1</param>
+    <param name="version">tools</param>
+    <param name="filename">deepin-gettext</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
   </service>
 </services>

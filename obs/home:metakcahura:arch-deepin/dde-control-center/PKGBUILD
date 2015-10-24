@@ -2,37 +2,33 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-control-center
-pkgver=14.12.20150902104832
-_srcdirname=dde-control-center-14.12+git20150902104832~64f57d1aaf
-pkgrel=4
+pkgver=2.90.3
+pkgrel=1
 pkgdesc="New control center for linux deepin"
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-control-center"
 license=('GPL3')
-depends=('qt5-svg' 'qt5-declarative' 'qt5-quickcontrols')
-makedepends=('deepin-gettext-tools' 'qt5-tools')
-groups=('deepin')
-source=("http://ftp5.gwdg.de/pub/linux/linuxdeepin/packages/pool/main/d/dde-control-center/dde-control-center_14.12+git20150902104832~64f57d1aaf.tar.gz")
-sha256sums=('ac86a85f4c829de49a12e5ff68195fd385f64f692c17d60b2d14bbd759490121')
+depends=('qt5-svg' 'qt5-multimedia')
+makedepends=('deepin-gettext-tools' 'git' 'gtk2' 'qt5-declarative' 'qt5-tools')
+#source=("git+https://github.com/linuxdeepin/dde-control-center.git#tag=$pkgver")
+source=('dde-control-center.tar.xz')
+sha256sums=('SKIP')
 
 prepare() {
-	cd "${_srcdirname}"
-
+	cd dde-control-center
 	# fix python version
 	find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+	sed 's/qmake/qmake-qt5/' -i Makefile
 }
 
 build(){
-	cd "${_srcdirname}"
-
+	cd dde-control-center
 	make
 }
 
 package() {
-	depends+=('deepin-artwork-themes' 'dde-account-faces' 'dde-daemon'
-			  'deepin-qml-widgets' 'dde-qml-dbus-factory' 'dde-api')
-
-	cd "${_srcdirname}"
-
+	depends+=('dde-account-faces' 'dde-api' 'dde-daemon' 'deepin-artwork-themes'
+			  'deepin-dbus-factory' 'deepin-qml-widgets')
+	cd dde-control-center
 	make DESTDIR="${pkgdir}" install
 }
