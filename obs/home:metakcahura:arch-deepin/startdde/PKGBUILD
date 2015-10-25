@@ -4,7 +4,7 @@
 pkgname=startdde
 pkgver=2.91.0
 _commit=272f5e061acc37301e646050e276f783659f04c1
-pkgrel=3
+pkgrel=5
 pkgdesc="starter of deepin desktop environment"
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/startdde"
@@ -15,16 +15,20 @@ makedepends=('cmake' 'coffee-script' 'git' 'go-packages'
 groups=('deepin')
 install='startdde.install'
 #source=("git+https://github.com/linuxdeepin/startdde.git#commit=$_commit"
-#		 "fix-glib2.43-gsettings-signal-broken.patch")
+#		 "fix-app-launch-panic.patch"
+#		 "use-compiz-as-default-wm.patch")
 source=('start-dde.tar.xz'
-		'fix-glib2.43-gsettings-signal-broken.patch')
+		"fix-app-launch-panic.patch"
+		'use-compiz-as-default-wm.patch')
 sha256sums=('SKIP'
-			'29f54659059f806130f8d9b08050dd85dc87ccf6f0ecfac09f90bb84c49a67ae')
+            'SKIP'
+			'SKIP')
 
 prepare() {
 	mv -f start-dde startdde
 	cd startdde
-	patch -p1 -i ../fix-glib2.43-gsettings-signal-broken.patch
+	patch -p1 -i ../fix-app-launch-panic.patch
+	patch -p1 -i ../use-compiz-as-default-wm.patch
 }
 
 build() {

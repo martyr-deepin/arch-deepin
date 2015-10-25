@@ -1,0 +1,40 @@
+commit 952911fba89444b6dd6bc4c0a26cff90854540c3
+Author: fasheng.xu <fasheng.xu@gmail.com>
+Date:   2015-08-13 19:13:51 +0800
+
+    Revert "add launch context."
+    
+    This reverts commit 08d30a891b8d3a91be0c906fb13b8198df21ba30
+    to fix random panic issue caused by app.launch() with
+    gio.GetGdkAppLaunchContext().
+    
+    Change-Id: Ifeeee83ca71e3cfc15d95e80a93f77f548eecb0c
+
+diff --git a/utils.go b/utils.go
+index 4b2d4af..fbcfa54 100644
+--- a/utils.go
++++ b/utils.go
+@@ -190,7 +190,7 @@ func launch(name interface{}, list interface{}) error {
+ 
+ 			// TODO: read delay field
+ 			// TODO: launch context???
+-			_, err := app.Launch(list.([]*gio.File), gio.GetGdkAppLaunchContext())
++			_, err := app.Launch(list.([]*gio.File), nil)
+ 			return err
+ 		} else {
+ 			app, err := gio.AppInfoCreateFromCommandline(
+@@ -204,12 +204,12 @@ func launch(name interface{}, list interface{}) error {
+ 
+ 			defer app.Unref()
+ 
+-			_, err = app.Launch(list.([]*gio.File), gio.GetGdkAppLaunchContext())
++			_, err = app.Launch(list.([]*gio.File), nil)
+ 			return err
+ 		}
+ 
+ 	case *gio.AppInfo, *gio.DesktopAppInfo:
+-		_, err := name.(*gio.AppInfo).Launch(list.([]*gio.File), gio.GetGdkAppLaunchContext())
++		_, err := name.(*gio.AppInfo).Launch(list.([]*gio.File), nil)
+ 		return err
+ 
+ 	case *gio.File:

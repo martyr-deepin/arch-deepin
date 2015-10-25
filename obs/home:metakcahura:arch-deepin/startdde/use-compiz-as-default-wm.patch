@@ -1,0 +1,13 @@
+diff --git a/main.go b/main.go
+index 1c4aa29..4f9708e 100644
+--- a/main.go
++++ b/main.go
+@@ -15,7 +15,7 @@ import (
+ var logger = log.NewLogger("com.deepin.SessionManager")
+ 
+ var debug = flag.Bool("d", false, "debug")
+-var windowManagerBin = flag.String("wm", "/usr/bin/deepin-wm", "the window manager used by dde")
++var windowManagerBin = flag.String("wm", "/usr/bin/compiz", "the window manager used by dde")
+ 
+ func main() {
+ 	C.gtkInit()
