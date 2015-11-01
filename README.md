@@ -1,11 +1,19 @@
-# Install
+arch-deepin
+===========
+
+Building Deepin Software on ArchLinux. They have a whole DE.
+
+Install
+-------
 
 Add following code to `/etc/pacman.conf`:
 
-    [home_metakcahura_arch-deepin_Arch_Extra]
-    SigLevel = Never
-    Server = http://download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
-    #Server = http://anorien.csc.warwick.ac.uk/mirrors/download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
+```INI
+[home_metakcahura_arch-deepin_Arch_Extra]
+SigLevel = Never
+Server = http://download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
+# Server = http://anorien.csc.warwick.ac.uk/mirrors/download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
+```
 
 Then install `deepin`:
 
@@ -17,7 +25,8 @@ If you want to experience more applications from Deepin, such as
 
     sudo pacman -Sy deepin-extra
 
-# For Third-Party Repositories
+For Third-Party Repository Maintainers
+--------------------------------------
 
 All the related PKGBUILDs are put in `pkgbuild` directory, and it
 could be easily to maintainer deepin packages in third-party
@@ -27,20 +36,22 @@ The maintainers could subscribe
 [Changelog notification topic](https://github.com/fasheng/arch-deepin/issues/67)
 to receive updating emails.
 
-# Launch DDE
+Launching DDE
+-------------
 
   We can use either lightdm or xinit to launch DDE, if use xinit,
   specific configuration is as follows:
 
   1. Add the following code to `$HOME/.xinitrc`
 
-     exec startdde
+        exec startdde
 
   2. run xinit in tty to enter DDE
 
-# Troubleshooting
+Troubleshooting
+---------------
 
-  - Memory leak issue for `deepin-terminal` and `deepin-music`
+  - Memory leak issues in `deepin-terminal` and `deepin-music`
 
     This is caused by `pygtk`, and we provide an alternative package
     named `deepin-pygtk`, just install it.
@@ -95,7 +106,8 @@ to receive updating emails.
         sudo systemctl enable ModemManager
         sudo systemctl start ModemManager
 
-# Screenshot
+Screenshots
+-----------
 
 <img src="./screenshot/dde_2014.1_01.png"
 width=500/>
@@ -106,6 +118,7 @@ width=500/>
 <img src="./screenshot/dde_2014.1_03.png"
 width=500/>
 
-# License
+License
+-------
 
 GNU General Public License, Version 3.0
