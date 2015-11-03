@@ -1,0 +1,25 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=gsettings-qt
+pkgver=0.1.r69
+pkgrel=1
+pkgdesc="Qml bindings for GSettings."
+arch=('i686' 'x86_64')
+url="https://launchpad.net/gsettings-qt"
+license=('GPL')
+depends=('glib2' 'qt5-declarative')
+source=("${pkgname}-${pkgver}.tar.xz")
+sha256sums=('SKIP')
+
+build() {
+	cd "${pkgname}-${pkgver}"
+	qmake-qt5 PREFIX=/usr
+	make
+}
+
+package() {
+	cd "${pkgname}-${pkgver}"
+	make INSTALL_ROOT="$pkgdir" install
+	rm -rf "${pkgdir}"/usr/tests
+}

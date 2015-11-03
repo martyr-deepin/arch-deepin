@@ -1,0 +1,30 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=deepin-gettext-tools
+pkgver=1.0.1
+pkgrel=1
+pkgdesc='Deepin Gettext Tools'
+arch=('any')
+url="https://gitcafe.com/Deepin/deepin-gettext-tools"
+license=('GPL3')
+depends=('gettext' 'python2')
+makedepends=('git')
+#source=("git+https://github.com/linuxdeepin/deepin-gettext-tools.git#tag=$pkgver")
+source=('deepin-gettext-tools.tar.xz')
+sha256sums=('SKIP')
+
+prepare() {
+	cd deepin-gettext-tools
+
+	# fix python version
+	find -iname "*.py" | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+
+	sed -e 's/sudo cp/cp/' -i src/generate_mo.py
+	sed -e 's/qmake/qmake-qt5/' -e '/lupdate/d' -i Makefile
+}
+
+package() {
+	cd deepin-gettext-tools
+	make DESTDIR="$pkgdir/" install
+}

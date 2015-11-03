@@ -1,0 +1,14 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://cr.deepin.io/dde/dde-session-ui</param>
+    <param name="versionformat">%cd.%h</param>
+    <param name="revision">develop</param>
+    <param name="filename">dde-session-ui</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+  <service name="set_version"/>
+</services>

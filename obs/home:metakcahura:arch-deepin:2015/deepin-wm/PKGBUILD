@@ -1,0 +1,29 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=deepin-wm
+pkgver=0.0.2.20150107093816
+pkgrel=1
+pkgdesc='Deepin Window Manager'
+arch=('i686' 'x86_64')
+url="https://cr.deepin.io/deepin-wm"
+license=('GPL3')
+depends=('bamf' 'clutter-gtk' 'deepin-desktop-schemas'
+		 'deepin-mutter' 'gnome-desktop' 'libgee')
+makedepends=('gnome-common' 'intltool' 'vala')
+groups=('deepin')
+install='deepin-wm.install'
+source=("${pkgname}-${pkgver}.tar.xz")
+sha256sums=('SKIP')
+
+build(){
+	cd "${pkgname}-${pkgver}"
+	./autogen.sh \
+		--prefix='/usr' \
+		--disable-schemas-compile
+}
+
+package() {
+	cd "${pkgname}-${pkgver}"
+	make DESTDIR="${pkgdir}" install
+}

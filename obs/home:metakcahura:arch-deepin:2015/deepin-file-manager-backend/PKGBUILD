@@ -1,0 +1,25 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=deepin-file-manager-backend
+pkgver=0.0.2.20150107093816
+pkgrel=1
+pkgdesc='deepin file manager backend'
+arch=('i686' 'x86_64')
+url="https://cr.deepin.io/deepin-file-manager"
+license=('GPL3')
+depends=('gtk3' 'poppler-glib')
+makedepends=('dde-api' 'go-packages')
+install="${pkgname}.install"
+source=("${pkgname}-${pkgver}.tar.xz")
+sha256sums=('SKIP')
+
+build(){
+	cd "${pkgname}-${pkgver}"
+	make GOPATH="/usr/lib/go"
+}
+
+package() {
+	cd "${pkgname}-${pkgver}"
+	make GOPATH="/usr/lib/go" DESTDIR="${pkgdir}" install
+}

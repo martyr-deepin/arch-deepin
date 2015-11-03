@@ -1,0 +1,24 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=deepin-desktop-schemas
+pkgver=0.2.20141216171821
+pkgrel=1
+pkgdesc='GSettings deepin desktop-wide schemas'
+arch=('any')
+url="https://github.com/linuxdeepin/deepin-desktop-schemas"
+license=('GPL3')
+depends=('dconf')
+install="${pkgname}.install"
+source=("${pkgname}-${pkgver}.tar.xz")
+sha256sums=('SKIP')
+
+build() {
+	cd "${pkgname}-${pkgver}"
+	make
+}
+
+package() {
+	cd "${pkgname}-${pkgver}"
+	make DESTDIR="${pkgdir}" install
+}

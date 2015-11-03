@@ -1,0 +1,14 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/go-dbus-generator.git</param>
+    <param name="versionformat">%cd.%h</param>
+    <param name="revision">develop</param>
+    <param name="filename">go-dbus-generator</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+  <service name="set_version"/>
+</services>

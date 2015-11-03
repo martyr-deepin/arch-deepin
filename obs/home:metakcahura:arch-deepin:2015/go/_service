@@ -1,0 +1,28 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://go.googlesource.com/go</param>
+    <param name="filename">go</param>
+    <param name="package-meta">yes</param>
+    <param name="version">1.5.1</param>
+    <param name="versionprefix"></param>
+    <param name="revision">go1.5.1</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://go.googlesource.com/tools</param>
+    <param name="filename">go-tools</param>
+    <param name="package-meta">yes</param>
+    <param name="version">git</param>
+    <param name="versionprefix"></param>
+    <param name="revision"></param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+</services>

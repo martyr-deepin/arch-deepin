@@ -1,0 +1,13 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/deepin-gettext-tools.git</param>
+    <param name="revision">1.0.1</param>
+    <param name="version">tools</param>
+    <param name="filename">deepin-gettext</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+</services>

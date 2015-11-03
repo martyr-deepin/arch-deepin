@@ -1,0 +1,35 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=deepin-icon-theme
+pkgver=20150629.eeb1a8d
+_commit=eeb1a8d09d0a4fbe4cf5890d0132c4ecf35f17d8
+pkgrel=1
+pkgdesc="Deepin Icons"
+arch=('any')
+url="https://gitcafe.com/Deepin/deepin-icon-theme"
+license=('GPL3')
+makedepends=('inkscape')
+groups=('deepin')
+options=(!strip)
+#source=("git+https://github.com/linuxdeepin/deepin-icon-theme.git#commit=$_commit")
+source=("${pkgname}.tar.xz")
+sha256sums=('SKIP')
+
+prepare() {
+	cd "${pkgname}"
+	sed 's\flattr\Flattr\' -i deepin/index.theme
+	sed 's\Faenza\Adwaita\' -i deepin/index.theme
+}
+
+build() {
+	cd "${pkgname}"
+	mkdir -p build
+	python2 tools/convert.py deepin build
+}
+
+package() {
+	depends=('flattr-icon-theme')
+	install -dm775 "${pkgdir}"/usr/share/icons
+	cp -r "${pkgname}"/build/deepin "${pkgdir}"/usr/share/icons/Deepin
+}

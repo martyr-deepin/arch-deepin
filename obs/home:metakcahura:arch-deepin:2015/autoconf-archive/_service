@@ -1,0 +1,7 @@
+<services>
+  <service name="download_url">
+    <param name="host">gnu.prunk.si</param>
+    <param name="protocol">http</param>
+    <param name="path">/autoconf-archive/autoconf-archive-2015.02.24.tar.xz</param>
+  </service>
+</services>

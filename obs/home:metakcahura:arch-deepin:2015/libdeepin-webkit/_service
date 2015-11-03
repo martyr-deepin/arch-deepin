@@ -1,0 +1,13 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/deepin-webkit.git</param>
+    <param name="version">1.8.2.2.20141124</param>
+    <param name="revision"></param>
+    <param name="filename">libdeepin-webkit</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+</services>

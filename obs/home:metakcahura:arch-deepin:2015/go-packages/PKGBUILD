@@ -1,0 +1,107 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=go-packages
+pkgver=20151027
+pkgrel=1
+pkgdesc='GO source packages for dde'
+arch=('i686' 'x86_64')
+url="https://github.com"
+license=('custom')
+depends=('go')
+makedepends=('deepin-dbus-generator' 'git' 'mercurial')
+#source=("git+https://github.com/linuxdeepin/go-lib.git"
+#		 "git+https://github.com/linuxdeepin/dbus-factory.git"
+#        "go-assertions::git+https://github.com/smartystreets/assertions.git"
+#        "go-fsnotify::git+https://github.com/howeyc/fsnotify.git"
+#        "go-gettext-go::git+https://github.com/chai2010/gettext-go.git"
+#        "go-gls::git+https://github.com/jtolds/gls.git"
+#        "go-gocheck::git+https://github.com/go-check/check.git"
+#        "go-goconvey::git+https://github.com/smartystreets/goconvey.git"
+#        "go-graphics-go::git+https://github.com/robfig/graphics-go.git"
+#        "go-image::git+https://github.com/golang/image.git"
+#        "go-imaging::git+https://github.com/disintegration/imaging.git"
+#        "go-jamslam-freetype-go::hg+https://code.google.com/r/jamslam-freetype-go/"
+#        "go-kingpin::git+https://github.com/alecthomas/kingpin.git"
+#        "go-sqlite3::git+https://github.com/mattn/go-sqlite3.git"
+#        "go-template::git+https://github.com/alecthomas/template.git"
+#        "go-units::git+https://github.com/alecthomas/units.git"
+#        "go-xgb::git+https://github.com/BurntSushi/xgb.git"
+#        "go-xgbutil::git+https://github.com/BurntSushi/xgbutil.git"
+#		 "fix-arch.patch")
+source=('dbus-factory.tar.xz'
+		'go-assertions.tar.xz'
+		'go-lib.tar.xz'
+		'go-fsnotify.tar.xz'
+		'go-gettext-go.tar.xz'
+		'go-gls.tar.xz'
+		'go-gocheck.tar.xz'
+		'go-goconvey.tar.xz'
+		'go-graphics-go.tar.xz'
+		'go-image.tar.xz'
+		'go-imaging.tar.xz'
+		'go-jamslam-freetype-go.tar.xz'
+		'go-kingpin.tar.xz'
+		'go-sqlite3.tar.xz'
+		'go-template.tar.xz'
+		'go-units.tar.xz'
+		'go-xgb.tar.xz'
+		'go-xgbutil.tar.xz'
+		'fix-arch.patch')
+sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP'
+			'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP'
+			'0195e1258534ef14d8ec63cde5389f8cfad39d5308ab8ddf73966018a34bd300')
+
+_bd="build/src"
+
+prepare() {
+	mkdir -p "${_bd}"/github.com/smartystreets/assertions
+	mkdir -p "${_bd}"/pkg.deepin.io/lib
+	mkdir -p "${_bd}"/github.com/howeyc/fsnotify
+	mkdir -p "${_bd}"/github.com/chai2010/gettext-go
+	mkdir -p "${_bd}"/github.com/jtolds/gls
+	mkdir -p "${_bd}"/github.com/go-check/check
+	mkdir -p "${_bd}"/github.com/smartystreets/goconvey
+	mkdir -p "${_bd}"/code.google.com/p/graphics-go/graphics
+	mkdir -p "${_bd}"/golang.org/x/image
+	mkdir -p "${_bd}"/github.com/disintegration/imaging
+	mkdir -p "${_bd}"/code.google.com/p/jamslam-freetype-go
+	mkdir -p "${_bd}"/gopkg.in/alecthomas/kingpin.v2
+	mkdir -p "${_bd}"/github.com/mattn/go-sqlite3
+	mkdir -p "${_bd}"/github.com/alecthomas/template
+	mkdir -p "${_bd}"/github.com/alecthomas/units
+	mkdir -p "${_bd}"/github.com/BurntSushi/xgb
+	mkdir -p "${_bd}"/github.com/BurntSushi/xgbutil
+
+	cp -a go-assertions/* "${_bd}"/github.com/smartystreets/assertions
+	cp -a go-lib/* "${_bd}"/pkg.deepin.io/lib
+	cp -a go-fsnotify/* "${_bd}"/github.com/howeyc/fsnotify
+	cp -a go-gettext-go/gettext "${_bd}"/github.com/chai2010/gettext-go/
+	cp -a go-gls/* "${_bd}"/github.com/jtolds/gls
+	cp -a go-gocheck/* "${_bd}"/github.com/go-check/check
+	cp -a go-goconvey/* "${_bd}"/github.com/smartystreets/goconvey
+	cp -a go-graphics-go/graphics/* "${_bd}"/code.google.com/p/graphics-go/graphics
+	cp -a go-image/* "${_bd}"/golang.org/x/image
+	cp -a go-imaging/* "${_bd}"/github.com/disintegration/imaging
+	cp -a go-jamslam-freetype-go/freetype "${_bd}"/code.google.com/p/jamslam-freetype-go/
+	cp -a go-kingpin/* "${_bd}"/gopkg.in/alecthomas/kingpin.v2
+	cp -a go-sqlite3/* "${_bd}"/github.com/mattn/go-sqlite3
+	cp -a go-template/* "${_bd}"/github.com/alecthomas/template
+	cp -a go-units/* "${_bd}"/github.com/alecthomas/units
+	cp -a go-xgb/* "${_bd}"/github.com/BurntSushi/xgb
+	cp -a go-xgbutil/* "${_bd}"/github.com/BurntSushi/xgbutil
+
+	cd dbus-factory
+	patch -p1 -i ../fix-arch.patch
+}
+
+build() {
+	cd dbus-factory
+	make build-golang
+}
+
+package() {
+	cd dbus-factory
+	make DESTDIR="${pkgdir}" install-golang
+	cp -a "${srcdir}"/build/src/* "${pkgdir}"/usr/lib/go/src/
+}

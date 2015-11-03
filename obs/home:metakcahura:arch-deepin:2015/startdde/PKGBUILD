@@ -1,0 +1,27 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=startdde
+pkgver=0.1.20141230181929
+pkgrel=1
+pkgdesc="starter of deepin desktop environment"
+arch=('i686' 'x86_64')
+url="https://gitcafe.com/Deepin/startdde"
+license=('GPL3')
+depends=('dde-daemon' 'dde-workspace' 'deepin-wm')
+makedepends=('cmake' 'coffee-script' 'deepin-dbus-factory' 'go-packages'
+			 'libdeepin-webkit' 'python2' 'webkitgtk')
+groups=('deepin')
+options=(!strip)
+source=("${pkgname}-${pkgver}.tar.xz")
+md5sums=('SKIP')
+
+build() {
+	cd "${pkgname}-${pkgver}"
+	make GOPATH="/usr/lib/go"
+}
+
+package() {
+	cd "${pkgname}-${pkgver}"
+	make GOPATH="/usr/lib/go" DESTDIR="${pkgdir}" install
+}
