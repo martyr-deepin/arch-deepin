@@ -1,0 +1,36 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=deepin-artwork-themes
+pkgver=15.10.0
+pkgrel=1
+pkgdesc='Deepin artwork themes'
+arch=('any')
+license=('CCPL:cc-by-sa')
+url="https://github.com/linuxdeepin/deepin-artwork-themes"
+groups=('deepin')
+makedepends=('python2')
+# source=("git+https://github.com/linuxdeepin/deepin-artwork-themes.git#tag=$pkgver"
+#         "https://github.com/linuxdeepin/deepin-desktop-base/raw/master/backgrounds/desktop.jpg")
+source=('deepin-artwork-themes.tar.xz'
+        'desktop.jpg')
+sha256sums=('SKIP' 'SKIP')
+
+prepare() {
+  cd deepin-artwork-themes
+
+  # fix theme font name
+  sed -i 's/^FontName=.*$/FontName=DejaVu Sans/' themes/Deepin/theme.ini
+
+  # append Deepin default background
+  cp "${srcdir}"/desktop.jpg themes/Deepin/wallpapers/default_background.jpg
+}
+
+package() {
+  depends=('deepin-icon-theme')
+
+  cd deepin-artwork-themes
+  python2 convert.py
+  install -dm 755 "${pkgdir}"/usr/share/personalization
+  cp -R {preview,themes,thumbnail} "${pkgdir}"/usr/share/personalization/
+}
