@@ -1,8 +1,8 @@
 <services>
   <service name="tar_scm">
     <param name="scm">git</param>
-    <param name="url">https://cr.deepin.io/deepin-file-manager</param>
-    <param name="versionformat">%cd.%h</param>
+    <param name="url">git://github.com/linuxdeepin/deepin-file-manager.git</param>
+    <param name="versionformat">@PARENT_TAG@.r@TAG_OFFSET@.g%h</param>
     <param name="revision">release/1.0</param>
     <param name="filename">deepin-file-manager-backend</param>
   </service>

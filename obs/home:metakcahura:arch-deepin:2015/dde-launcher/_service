@@ -3,7 +3,7 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/linuxdeepin/dde-launcher.git</param>
     <param name="version">launcher</param>
-    <param name="revision">2.90.0</param>
+    <param name="revision"></param>
     <param name="filename">dde</param>
   </service>
   <service name="recompress">

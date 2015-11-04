@@ -2,7 +2,7 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">git://github.com/linuxdeepin/dde-control-center.git</param>
-    <param name="versionformat">%cd.%h</param>
+    <param name="versionformat">@PARENT_TAG@.r@TAG_OFFSET@.g%h</param>
     <param name="revision">dev/2015</param>
     <param name="filename">dde-control-center</param>
   </service>

@@ -1,8 +1,8 @@
 <services>
   <service name="tar_scm">
     <param name="scm">git</param>
-    <param name="url">https://cr.deepin.io/dde/dde-desktop</param>
-    <param name="versionformat">%cd.%h</param>
+    <param name="url">git://github.com/linuxdeepin/dde-desktop.git</param>
+    <param name="versionformat">@PARENT_TAG@.r@TAG_OFFSET@.g%h</param>
     <param name="revision"></param>
     <param name="filename">dde-desktop</param>
   </service>

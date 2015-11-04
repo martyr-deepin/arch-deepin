@@ -10,6 +10,7 @@ url="https://gitcafe.com/Deepin/deepin-sound-theme"
 license=('GPL3')
 groups=('deepin')
 #makedepends=('git')
+replaces=('deepin-artwork')
 #source=("git+https://github.com/linuxdeepin/deepin-sound-theme.git#tag=$pkgver")
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')

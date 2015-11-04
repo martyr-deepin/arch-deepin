@@ -9,6 +9,7 @@ arch=('any')
 url="https://github.com/linuxdeepin/deepin-desktop-schemas"
 license=('GPL3')
 depends=('dconf')
+replaces=('deepin-default-gsettings')
 install="${pkgname}.install"
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')

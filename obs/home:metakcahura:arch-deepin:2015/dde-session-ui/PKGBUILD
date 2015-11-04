@@ -8,8 +8,9 @@ pkgdesc='deepin desktop-environment - dde session ui module'
 arch=('i686' 'x86_64')
 url="https://cr.deepin.io/dde/dde-session-ui"
 license=('GPL3')
-depends=('gsettings-qt' 'libdui' 'liblightdm-qt5' 'qt5-svg')
 groups=('deepin')
+depends=('gsettings-qt' 'libdui' 'liblightdm-qt5' 'qt5-svg')
+replaces=('dde-workspace')
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 

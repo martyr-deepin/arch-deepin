@@ -3,7 +3,7 @@
     <param name="scm">git</param>
     <param name="url">git://github.com/linuxdeepin/deepin-desktop-schemas.git</param>
     <param name="versionformat">@PARENT_TAG@.r@TAG_OFFSET@.g%h</param>
-    <param name="revision">release/3.0</param>
+    <param name="revision">master</param>
     <param name="filename">deepin-desktop-schemas</param>
   </service>
   <service name="recompress">
