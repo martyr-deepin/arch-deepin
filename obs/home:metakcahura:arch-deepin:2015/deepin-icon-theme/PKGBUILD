@@ -2,17 +2,16 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-icon-theme
-pkgver=20150629.eeb1a8d
-_commit=eeb1a8d09d0a4fbe4cf5890d0132c4ecf35f17d8
+pkgver=15.10.0
 pkgrel=1
 pkgdesc="Deepin Icons"
 arch=('any')
-url="https://gitcafe.com/Deepin/deepin-icon-theme"
+url="https://github.com/linuxdeepin/deepin-icon-theme"
 license=('GPL3')
-makedepends=('inkscape')
+makedepends=('git' 'inkscape')
 groups=('deepin')
 options=(!strip)
-#source=("git+https://github.com/linuxdeepin/deepin-icon-theme.git#commit=$_commit")
+#source=("git+https://github.com/linuxdeepin/deepin-icon-theme.git#tag=$pkgver")
 source=("${pkgname}.tar.xz")
 sha256sums=('SKIP')
 
@@ -30,6 +29,6 @@ build() {
 
 package() {
 	depends=('flattr-icon-theme')
-	install -dm775 "${pkgdir}"/usr/share/icons
+	install -d "${pkgdir}"/usr/share/icons
 	cp -r "${pkgname}"/build/deepin "${pkgdir}"/usr/share/icons/Deepin
 }
