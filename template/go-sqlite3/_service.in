@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">@HOST@</param>
-    <param name="protocol">@PROTOCOL@</param>
-    <param name="path">@PATH_ORIG@</param>
-  </service>
-</services>

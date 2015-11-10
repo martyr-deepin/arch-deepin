@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">ftp5.gwdg.de</param>
-    <param name="protocol">http</param>
-    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/dde-daemon/dde-daemon_0.0.1+20150415132138~b7120bedfa.tar.gz</param>
-  </service>
-</services>

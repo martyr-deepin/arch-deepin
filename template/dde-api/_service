@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">ftp5.gwdg.de</param>
-    <param name="protocol">http</param>
-    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/dde-api/dde-api_0.0.2+20150107093816~d93500c16a.tar.gz</param>
-  </service>
-</services>

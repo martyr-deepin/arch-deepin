@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">ftp5.gwdg.de</param>
-    <param name="protocol">http</param>
-    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/d/deepin-screenshot/deepin-screenshot_14.12+git20150717162046~d869601900.tar.gz</param>
-  </service>
-</services>
