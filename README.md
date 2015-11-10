@@ -1,3 +1,13 @@
+NOTE
+====
+
+Thanks @felixonmars, we could install `deepin-music`, `deepin-movie`
+and many other Deepin software from `[community]` now. But the DDE
+2015 related packages are still in process, and during the time, there
+will be some conflicting packages, such as `deepin-api` in [community]
+and `dde-api` in obs/arch-deepin. Please don't worry about it, mostly,
+just choose the one in OBS and it will works fine.
+
 arch-deepin
 ===========
 
@@ -25,16 +35,10 @@ If you want to experience more applications from Deepin, such as
 
     sudo pacman -Sy deepin-extra
 
-For Third-Party Repository Maintainers
---------------------------------------
+Receive update notification
+---------------------------
 
-All the related PKGBUILDs are put in `pkgbuild` directory, and it
-could be easily to maintainer deepin packages in third-party
-repositories, more information to see [HACKING.md](HACKING.md).
-
-The maintainers could subscribe
-[Changelog notification topic](https://github.com/fasheng/arch-deepin/issues/67)
-to receive updating emails.
+Anyone want to receive the news of arch-deepin please subscribe the [Changelog notification topic](https://github.com/fasheng/arch-deepin/issues/67).
 
 Launching DDE
 -------------
