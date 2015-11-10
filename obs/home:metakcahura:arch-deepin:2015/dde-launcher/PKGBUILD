@@ -3,7 +3,7 @@
 
 pkgname=dde-launcher
 pkgver=2.90.0
-pkgrel=1
+pkgrel=2
 pkgdesc='deepin desktop-environment - launcher module'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-launcher"

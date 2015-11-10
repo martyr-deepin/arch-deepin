@@ -3,12 +3,13 @@
 
 pkgname=deepin-artwork-themes
 pkgver=15.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Deepin artwork themes'
 arch=('any')
 license=('CCPL:cc-by-sa')
 url="https://github.com/linuxdeepin/deepin-artwork-themes"
 groups=('deepin')
+depends=('ttf-dejavu')
 makedepends=('python2')
 # source=("git+https://github.com/linuxdeepin/deepin-artwork-themes.git#tag=$pkgver"
 #         "https://github.com/linuxdeepin/deepin-desktop-base/raw/master/backgrounds/desktop.jpg")
@@ -21,6 +22,9 @@ prepare() {
 
   # fix theme font name
   sed -i 's/^FontName=.*$/FontName=DejaVu Sans/' themes/Deepin/theme.ini
+
+  # fix default background url
+  sed -i 's#^BackgroundFile=.*$#BackgroundFile=file:///usr/share/personalization/themes/Deepin/wallpapers/default_background.jpg#' themes/Deepin/theme.ini
 
   # append Deepin default background
   cp "${srcdir}"/desktop.jpg themes/Deepin/wallpapers/default_background.jpg

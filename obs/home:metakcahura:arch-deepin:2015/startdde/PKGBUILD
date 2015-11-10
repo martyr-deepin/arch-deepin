@@ -8,9 +8,11 @@ pkgdesc="starter of deepin desktop environment"
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/startdde"
 license=('GPL3')
-depends=('dde-daemon' 'deepin-wm')
+depends=('dde-daemon')
 makedepends=('cmake' 'coffee-script' 'deepin-dbus-factory' 'go-packages'
 			 'libdeepin-webkit' 'python2' 'webkitgtk')
+# TODO: move deepin-wm to depends when entering [community]
+optdepends=('deepin-wm: default window manager for Deepin')
 groups=('deepin')
 options=(!strip)
 source=("${pkgname}-${pkgver}.tar.xz")
