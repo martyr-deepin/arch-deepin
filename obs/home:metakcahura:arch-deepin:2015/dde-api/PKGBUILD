@@ -2,17 +2,19 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-api
-pkgver=0.0.2.20150107093816
+pkgver=2.91.0
+_commit=b7998955c3ba3e676ce6684f930d2eed2649c17d
 pkgrel=1
 pkgdesc='Go-lang bingdings for dde-daemon'
 arch=('i686' 'x86_64')
-url="https://gitcafe.com/Deepin/dde-api"
+url="https://github.com/linuxdeepin/dde-api"
 license=('GPL3')
-depends=('libcanberra-pulse' 'rfkill')
+depends=('libcanberra-pulse' 'rfkill' 'metacity')
 makedepends=('deepin-dbus-factory' 'git' 'go-packages'
-			 'gtk3' 'metacity' 'poppler-glib')
+			 'gtk3' 'poppler-glib')
 groups=('deepin')
-source=("${pkgname}-${pkgver}.tar.xz")
+# source=("git+https://github.com/linuxdeepin/dde-api.git#commit=$_commit")
+source=("dde-api.tar.xz")
 sha256sums=('SKIP')
 
 prepare() {
@@ -20,7 +22,7 @@ prepare() {
 	sed -i 's\share/gocode\lib/go\' Makefile
 }
 
-build(){
+build() {
 	cd "${pkgname}-${pkgver}"
 	make GOPATH="/usr/lib/go"
 }
