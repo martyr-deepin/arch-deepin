@@ -4,10 +4,11 @@
 pkgbase=dde-workspace
 pkgname=('dde-workspace' 'lightdm-deepin-greeter')
 pkgver=2.90.1
-pkgrel=1
+pkgrel=4
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-workspace"
 license=('GPL3')
+groups=('deepin')
 makedepends=('cmake' 'coffee-script' 'dbus-glib' 'git' 'go'
              'libdeepin-webkit' 'lightdm' 'python2' 'webkitgtk')
 #source=("git+https://github.com/linuxdeepin/dde-workspace.git#tag=$pkgver"
@@ -50,8 +51,7 @@ build() {
 
 package_dde-workspace() {
 	pkgdesc="Linux Deepin desktop environment."
-	groups=('deepin')
-	depends=('dbus-glib' 'dde-control-center' 'deepin-artwork' 'deepin-menu'
+	depends=('dbus-glib' 'dde-control-center' 'deepin-menu'
 			 'deepin-nautilus-properties' 'libdeepin-webkit')
 	optdepends=('lightdm-deepin-greeter')
 	replaces=('deepin-desktop-environment' 'deepin-workspace')

@@ -3,7 +3,7 @@
 
 pkgname=deepin-notifications
 pkgver=2.90.0
-pkgrel=1
+pkgrel=2
 pkgdesc="System notifications for linuxdeepin desktop environment."
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/deepin-notifications"

@@ -3,7 +3,7 @@
 
 pkgname=dde-dock-applets
 pkgver=2.90.1
-pkgrel=1
+pkgrel=3
 pkgdesc="Dock Applets of Deepin Desktop Environment"
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dde-dock-applets"
@@ -26,7 +26,7 @@ build() {
 
 package() {
 	depends+=('dde-api' 'dde-daemon' 'deepin-dbus-factory'
-			  'deepin-qml-widgets' 'deepin-artwork-themes')
+			  'deepin-qml-widgets')
 	cd dde-dock-applets
 	make DESTDIR="${pkgdir}" install
 }
