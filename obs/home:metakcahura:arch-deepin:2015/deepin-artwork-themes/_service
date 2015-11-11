@@ -2,7 +2,7 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">git://github.com/linuxdeepin/deepin-artwork-themes.git</param>
-    <param name="revision"></param>
+    <param name="revision">aa39fbca463d24d2ef349ce7563fe959789d4145</param>
     <param name="version">themes</param>
     <param name="filename">deepin-artwork</param>
   </service>

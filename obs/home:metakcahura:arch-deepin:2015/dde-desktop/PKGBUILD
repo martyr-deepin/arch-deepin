@@ -3,7 +3,8 @@
 
 pkgname=dde-desktop
 pkgver=2.90.0
-pkgrel=2
+_commit=952853387e5f9adb472ac135f1d39e019478857a
+pkgrel=3
 pkgdesc='deepin desktop-environment - desktop module'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-desktop"
@@ -12,7 +13,7 @@ depends=('deepin-file-manager' 'gsettings-qt'
 		 'gtk2' 'qt5-svg' 'qt5-x11extras')
 makedepends=('git')
 groups=('deepin')
-#source=("git+https://github.com/linuxdeepin/dde-desktop.git#tag=$pkgver")
+#source=("git+https://github.com/linuxdeepin/dde-desktop.git#commit=$_commit")
 source=('dde-desktop.tar.xz')
 sha256sums=('SKIP')
 

@@ -2,13 +2,12 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">https://github.com/linuxdeepin/dde-session-ui</param>
-    <param name="versionformat">0.0.%cd.%h</param>
-    <param name="revision"></param>
-    <param name="filename">dde-session-ui</param>
+    <param name="revision">7cff6da6e631f32981fb2ad5df08f7002eeeb829</param>
+    <param name="version">ui</param>
+    <param name="filename">dde-session</param>
   </service>
   <service name="recompress">
     <param name="file">*.tar</param>
     <param name="compression">xz</param>
   </service>
-  <service name="set_version"/>
 </services>

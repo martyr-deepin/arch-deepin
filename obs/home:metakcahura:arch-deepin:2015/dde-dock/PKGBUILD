@@ -3,8 +3,8 @@
 
 pkgname=dde-dock
 pkgver=2.90.0
-_commit=dfb427d15fd20b73eed3677df0396ef51319ac18
-pkgrel=1
+_commit=293568b692c72b3488e8a95674149863225c1e36
+pkgrel=2
 pkgdesc='deepin desktop-environment - dock module'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-dock"
@@ -12,7 +12,7 @@ license=('GPL3')
 depends=('gtk2' 'libdui' 'qt5-svg')
 makedepends=('git')
 groups=('deepin')
-#source=("git+https://github.com/linuxdeepin/dde-dock.git#tag=$_commit")
+#source=("git+https://github.com/linuxdeepin/dde-dock.git#commit=$_commit")
 source=('dde-dock.tar.xz')
 sha256sums=('SKIP')
 

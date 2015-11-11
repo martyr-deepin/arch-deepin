@@ -3,7 +3,8 @@
 
 pkgname=dde-control-center
 pkgver=2.91.0
-pkgrel=1
+_commit=89cdaa061a9ebe78cdd151224c63d5d4278ba5b4
+pkgrel=2
 pkgdesc='New control center for linux deepin'
 arch=('i686' 'x86_64')
 url="http://github.com/linuxdeepin/dde-control-center"
@@ -12,7 +13,7 @@ depends=('desktop-file-utils' 'libdui')
 makedepends=('dde-dock' 'deepin-gettext-tools' 'git')
 groups=('deepin')
 install="${pkgname}.install"
-#source=("git+https://github.com/linuxdeepin/dde-control-center.git#tag=$pkgver")
+#source=("git+https://github.com/linuxdeepin/dde-control-center.git#commit=$_commit")
 source=("${pkgname}.tar.xz")
 sha256sums=('SKIP')
 

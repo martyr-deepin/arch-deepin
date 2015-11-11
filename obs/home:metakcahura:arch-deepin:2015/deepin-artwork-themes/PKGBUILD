@@ -3,6 +3,7 @@
 
 pkgname=deepin-artwork-themes
 pkgver=15.10.0
+_commit=aa39fbca463d24d2ef349ce7563fe959789d4145
 pkgrel=2
 pkgdesc='Deepin artwork themes'
 arch=('any')
@@ -11,7 +12,7 @@ url="https://github.com/linuxdeepin/deepin-artwork-themes"
 groups=('deepin')
 depends=('ttf-dejavu')
 makedepends=('python2')
-# source=("git+https://github.com/linuxdeepin/deepin-artwork-themes.git#tag=$pkgver"
+# source=("git+https://github.com/linuxdeepin/deepin-artwork-themes.git#commit=$_commit"
 #         "https://github.com/linuxdeepin/deepin-desktop-base/raw/master/backgrounds/desktop.jpg")
 source=('deepin-artwork-themes.tar.xz'
         'desktop.jpg')
@@ -24,17 +25,21 @@ prepare() {
   sed -i 's/^FontName=.*$/FontName=DejaVu Sans/' themes/Deepin/theme.ini
 
   # fix default background url
-  sed -i 's#^BackgroundFile=.*$#BackgroundFile=file:///usr/share/personalization/themes/Deepin/wallpapers/default_background.jpg#' themes/Deepin/theme.ini
+  sed -i 's#^BackgroundFile=.*$#BackgroundFile=file:///usr/share/backgrounds/deepin_default_background.jpg#' themes/Deepin/theme.ini
+}
 
-  # append Deepin default background
-  cp "${srcdir}"/desktop.jpg themes/Deepin/wallpapers/default_background.jpg
+build() {
+  cd deepin-artwork-themes
+
+  make build
 }
 
 package() {
   depends=('deepin-icon-theme')
 
   cd deepin-artwork-themes
-  python2 convert.py
-  install -dm 755 "${pkgdir}"/usr/share/personalization
-  cp -R {preview,themes,thumbnail} "${pkgdir}"/usr/share/personalization/
+  make install DESTDIR="${pkgdir}"
+
+  install -d "${pkgdir}"/usr/share/backgrounds/
+  cp "${srcdir}"/desktop.jpg "${pkgdir}"/usr/share/backgrounds/deepin_default_background.jpg
 }

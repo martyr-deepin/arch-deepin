@@ -2,8 +2,8 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">https://github.com/linuxdeepin/dde-dock.git</param>
+    <param name="revision">293568b692c72b3488e8a95674149863225c1e36</param>
     <param name="version">dock</param>
-    <param name="revision">dfb427d15fd20b73eed3677df0396ef51319ac18</param>
     <param name="filename">dde</param>
   </service>
   <service name="recompress">

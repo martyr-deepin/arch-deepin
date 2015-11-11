@@ -3,7 +3,8 @@
 
 pkgname=dde-launcher
 pkgver=2.90.0
-pkgrel=2
+_commit=b930cad67ebd59cf77c8a3906263afc714c1961e
+pkgrel=3
 pkgdesc='deepin desktop-environment - launcher module'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-launcher"
@@ -11,7 +12,7 @@ license=('GPL3')
 depends=('gtk2' 'gsettings-qt' 'qt5-svg' 'qt5-x11extras')
 makedepends=('git')
 groups=('deepin')
-#source=("git+https://github.com/linuxdeepin/dde-launcher.git#tag=$pkgver")
+#source=("git+https://github.com/linuxdeepin/dde-launcher.git#commit=$_commit")
 source=('dde-launcher.tar.xz')
 sha256sums=('SKIP')
 

@@ -2,7 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-session-ui
-pkgver=0.0.2.20150107093816
+pkgver=0.0.3
+_commit=7cff6da6e631f32981fb2ad5df08f7002eeeb829
 pkgrel=1
 pkgdesc='deepin desktop-environment - dde session ui module'
 arch=('i686' 'x86_64')
@@ -11,17 +12,17 @@ license=('GPL3')
 groups=('deepin')
 depends=('gsettings-qt' 'libdui' 'liblightdm-qt5' 'qt5-svg')
 replaces=('dde-workspace')
-#source=("git+https://github.com/linuxdeepin/dde-session-ui.git#tag=$pkgver")
-source=("${pkgname}-${pkgver}.tar.xz")
+#source=("git+https://github.com/linuxdeepin/dde-session-ui.git#commit=$_commit")
+source=("dde-session-ui.tar.xz")
 sha256sums=('SKIP')
 
-build(){
-	cd "${pkgname}-${pkgver}"
+build() {
+	cd "dde-session-ui"
 	qmake-qt5 PREFIX=/usr
 	make
 }
 
 package() {
-	cd "${pkgname}-${pkgver}"
+	cd "dde-session-ui"
 	make INSTALL_ROOT="${pkgdir}" install
 }

@@ -2,9 +2,9 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">git://github.com/linuxdeepin/dbus-factory.git</param>
-    <param name="versionformat">@PARENT_TAG@.r@TAG_OFFSET@.g%h</param>
-    <param name="revision">release/3.0</param>
-    <param name="filename">deepin-dbus-factory</param>
+    <param name="revision">2.92.0</param>
+    <param name="version">factory</param>
+    <param name="filename">deepin-dbus</param>
   </service>
   <service name="recompress">
     <param name="file">*.tar</param>

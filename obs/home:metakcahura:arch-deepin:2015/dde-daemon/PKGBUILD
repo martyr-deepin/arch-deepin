@@ -2,8 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-daemon
-pkgver=2.92.2
-_commit=dea2892ac333755f88e481e7bb43742e5b8c0c83
+pkgver=2.93.0
+_commit=836561b4f5539ff888f26f3b88692e8c76f6f100
 pkgrel=1
 pkgdesc='daemon handling the DDE session settings'
 arch=('i686' 'x86_64')

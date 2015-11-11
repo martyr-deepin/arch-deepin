@@ -3,22 +3,24 @@
 
 pkgname=libdui
 pkgver=1.2.0
+_commit=efa17ad77d31bb29287efe8b5c89f6f6ed448bee
 pkgrel=1
 pkgdesc='Deepin graphical user interface library'
 arch=('i686' 'x86_64')
-url="https://cr.deepin.io/dde/libdui"
+url="https://github.com/linuxdeepin/libdui"
 license=('GPL3')
 depends=('qt5-multimedia' 'qt5-x11extras')
-source=("${pkgname}-${pkgver}.tar.xz")
+#source=("git+https://github.com/linuxdeepin/libdui.git#commit=$_commit")
+source=("libdui-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 
 build(){
-	cd "${pkgname}-${pkgver}"
+	cd "libdui-${pkgver}"
 	qmake-qt5 PREFIX=/usr
 	make
 }
 
 package() {
-	cd "${pkgname}-${pkgver}"
+	cd "libdui-${pkgver}"
 	make INSTALL_ROOT="${pkgdir}" install
 }
