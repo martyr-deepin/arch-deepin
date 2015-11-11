@@ -2,8 +2,8 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-control-center
-pkgver=0.0.2.20150107093816
-pkgrel=2
+pkgver=2.91.0
+pkgrel=1
 pkgdesc='New control center for linux deepin'
 arch=('i686' 'x86_64')
 url="http://github.com/linuxdeepin/dde-control-center"
@@ -12,17 +12,18 @@ depends=('desktop-file-utils' 'libdui')
 makedepends=('dde-dock' 'deepin-gettext-tools' 'git')
 groups=('deepin')
 install="${pkgname}.install"
-source=("${pkgname}-${pkgver}.tar.xz")
+#source=("git+https://github.com/linuxdeepin/dde-control-center.git#tag=$pkgver")
+source=("${pkgname}.tar.xz")
 sha256sums=('SKIP')
 
 build(){
-	cd "${pkgname}-${pkgver}"
+	cd "${pkgname}"
 	qmake-qt5 PREFIX=/usr WITH_MODULE_GRUB=NO
 	make
 }
 
 package() {
 	depends+=('dde-account-faces' 'dde-api' 'dde-daemon' 'deepin-dbus-factory')
-	cd "${pkgname}-${pkgver}"
+	cd "${pkgname}"
 	make INSTALL_ROOT="${pkgdir}" install
 }

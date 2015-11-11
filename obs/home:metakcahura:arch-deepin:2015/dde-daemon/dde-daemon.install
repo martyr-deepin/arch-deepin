@@ -21,4 +21,5 @@ post_upgrade() {
 post_remove() {
   rm -f /var/log/deepin.log
   rm -f /var/cache/deepin/mark-setup-network-services
+  userdel -r deepin-daemon
 }

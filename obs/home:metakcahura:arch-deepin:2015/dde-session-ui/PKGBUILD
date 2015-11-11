@@ -6,11 +6,12 @@ pkgver=0.0.2.20150107093816
 pkgrel=1
 pkgdesc='deepin desktop-environment - dde session ui module'
 arch=('i686' 'x86_64')
-url="https://cr.deepin.io/dde/dde-session-ui"
+url="https://github.com/linuxdeepin/dde-session-ui"
 license=('GPL3')
 groups=('deepin')
 depends=('gsettings-qt' 'libdui' 'liblightdm-qt5' 'qt5-svg')
 replaces=('dde-workspace')
+#source=("git+https://github.com/linuxdeepin/dde-session-ui.git#tag=$pkgver")
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 

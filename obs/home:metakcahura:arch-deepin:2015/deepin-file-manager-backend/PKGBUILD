@@ -2,15 +2,16 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-file-manager-backend
-pkgver=0.0.2.20150107093816
+pkgver=0.1.0
 pkgrel=1
 pkgdesc='deepin file manager backend'
 arch=('i686' 'x86_64')
-url="https://cr.deepin.io/deepin-file-manager"
+url="https://github.com/linuxdeepin/deepin-file-manager"
 license=('GPL3')
 depends=('gtk3' 'poppler-glib')
 makedepends=('dde-api' 'go-packages')
 install="${pkgname}.install"
+#source=("git+https://github.com/linuxdeepin/deepin-file-manager.git#tag=$pkgver")
 source=("${pkgname}-${pkgver}.tar.xz")
 sha256sums=('SKIP')
 

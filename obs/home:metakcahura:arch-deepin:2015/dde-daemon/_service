@@ -2,7 +2,7 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">git://github.com/linuxdeepin/dde-daemon</param>
-    <param name="revision">release/3.0</param>
+    <param name="revision">dea2892ac333755f88e481e7bb43742e5b8c0c83</param>
     <param name="version">daemon</param>
     <param name="filename">dde</param>
   </service>

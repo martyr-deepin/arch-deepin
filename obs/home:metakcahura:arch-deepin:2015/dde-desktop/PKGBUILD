@@ -2,25 +2,27 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-desktop
-pkgver=0.0.2.20150107093816
+pkgver=2.90.0
 pkgrel=1
 pkgdesc='deepin desktop-environment - desktop module'
 arch=('i686' 'x86_64')
-url="https://cr.deepin.io/dde/dde-desktop"
+url="https://github.com/linuxdeepin/dde-desktop"
 license=('GPL3')
-depends=('deepin-file-manager-backend' 'gtk2'
-		 'gsettings-qt' 'qt5-svg' 'qt5-x11extras')
+depends=('deepin-file-manager-backend' 'gsettings-qt'
+		 'gtk2' 'qt5-svg' 'qt5-x11extras')
+makedepends=('git')
 groups=('deepin')
-source=("${pkgname}-${pkgver}.tar.xz")
+#source=("git+https://github.com/linuxdeepin/dde-desktop.git#tag=$pkgver")
+source=('dde-desktop.tar.xz')
 sha256sums=('SKIP')
 
 build(){
-	cd "${pkgname}-${pkgver}"
+	cd dde-desktop
 	qmake-qt5 PREFIX=/usr
 	make
 }
 
 package() {
-	cd "${pkgname}-${pkgver}"
+	cd dde-desktop
 	make INSTALL_ROOT="${pkgdir}" install
 }

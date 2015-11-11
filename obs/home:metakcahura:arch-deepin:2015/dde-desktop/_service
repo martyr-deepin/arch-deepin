@@ -2,13 +2,12 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">git://github.com/linuxdeepin/dde-desktop.git</param>
-    <param name="versionformat">@PARENT_TAG@.r@TAG_OFFSET@.g%h</param>
-    <param name="revision"></param>
-    <param name="filename">dde-desktop</param>
+    <param name="version">desktop</param>
+    <param name="revision">2.90.0</param>
+    <param name="filename">dde</param>
   </service>
   <service name="recompress">
     <param name="file">*.tar</param>
     <param name="compression">xz</param>
   </service>
-  <service name="set_version"/>
 </services>

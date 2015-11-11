@@ -2,13 +2,12 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">git://github.com/linuxdeepin/startdde.git</param>
-    <param name="versionformat">@PARENT_TAG@.r@TAG_OFFSET@.g%h</param>
-    <param name="revision">release/3.0</param>
+    <param name="version">2.91.1</param>
+    <param name="revision">69761f6d59f754d4c7f166283f29fd385bb39c18</param>
     <param name="filename">startdde</param>
   </service>
   <service name="recompress">
     <param name="file">*.tar</param>
     <param name="compression">xz</param>
   </service>
-  <service name="set_version"/>
 </services>

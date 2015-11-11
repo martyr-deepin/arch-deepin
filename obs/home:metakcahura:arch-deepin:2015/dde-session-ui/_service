@@ -1,7 +1,7 @@
 <services>
   <service name="tar_scm">
     <param name="scm">git</param>
-    <param name="url">https://cr.deepin.io/dde/dde-session-ui</param>
+    <param name="url">https://github.com/linuxdeepin/dde-session-ui</param>
     <param name="versionformat">0.0.%cd.%h</param>
     <param name="revision"></param>
     <param name="filename">dde-session-ui</param>

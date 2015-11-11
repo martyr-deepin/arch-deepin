@@ -2,28 +2,29 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=startdde
-pkgver=0.1.20141230181929
+pkgver=2.91.1
+_commit=69761f6d59f754d4c7f166283f29fd385bb39c18
 pkgrel=1
 pkgdesc="starter of deepin desktop environment"
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/startdde"
 license=('GPL3')
-depends=('dde-daemon')
 makedepends=('cmake' 'coffee-script' 'deepin-dbus-factory' 'go-packages'
 			 'libdeepin-webkit' 'python2' 'webkitgtk')
 # TODO: move deepin-wm to depends when entering [community]
 optdepends=('deepin-wm: default window manager for Deepin')
 groups=('deepin')
-options=(!strip)
-source=("${pkgname}-${pkgver}.tar.xz")
-md5sums=('SKIP')
+#source=("git+https://github.com/linuxdeepin/startdde.git#commit=$_commit")
+source=("startdde-${pkgver}.tar.xz")
+sha256sums=('SKIP')
 
 build() {
-	cd "${pkgname}-${pkgver}"
+	cd startdde-${pkgver}
 	make GOPATH="/usr/lib/go"
 }
 
 package() {
-	cd "${pkgname}-${pkgver}"
+	depends+=('dde-daemon')
+	cd startdde-${pkgver}
 	make GOPATH="/usr/lib/go" DESTDIR="${pkgdir}" install
 }

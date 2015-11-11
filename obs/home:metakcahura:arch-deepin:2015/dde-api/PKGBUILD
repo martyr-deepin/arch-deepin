@@ -18,17 +18,17 @@ source=("dde-api.tar.xz")
 sha256sums=('SKIP')
 
 prepare() {
-	cd "${pkgname}-${pkgver}"
+	cd dde-api
 	sed -i 's\share/gocode\lib/go\' Makefile
 }
 
-build() {
-	cd "${pkgname}-${pkgver}"
+build(){
+	cd dde-api
 	make GOPATH="/usr/lib/go"
 }
 
 package() {
 	depends+=('xcur2png')
-	cd "${pkgname}-${pkgver}"
+	cd dde-api
 	make GOPATH="/usr/lib/go" DESTDIR="${pkgdir}" install
 }
