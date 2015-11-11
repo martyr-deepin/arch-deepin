@@ -11,7 +11,7 @@ url="https://github.com/linuxdeepin/dde-daemon"
 license=('GPL3')
 depends=('deepin-desktop-schemas' 'gvfs'
 		 'libcanberra-pulse' 'metacity' 'poppler-glib' 'rfkill')
-makedepends=('dde-api' 'go-packages' 'gtk2' 'python2' 'sqlite3' 'startdde')
+makedepends=('dde-api' 'go-packages' 'sqlite3')
 optdepends=('networkmanager: Network Management daemon'
 			'grub-theme-deepin: deepin theme for grub menu')
 groups=('deepin')

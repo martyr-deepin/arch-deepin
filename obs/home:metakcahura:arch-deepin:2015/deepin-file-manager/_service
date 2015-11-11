@@ -4,7 +4,7 @@
     <param name="url">git://github.com/linuxdeepin/deepin-file-manager.git</param>
     <param name="versionformat">@PARENT_TAG@.r@TAG_OFFSET@.g%h</param>
     <param name="revision">release/1.0</param>
-    <param name="filename">deepin-file-manager-backend</param>
+    <param name="filename">deepin-file-manager</param>
   </service>
   <service name="recompress">
     <param name="file">*.tar</param>
