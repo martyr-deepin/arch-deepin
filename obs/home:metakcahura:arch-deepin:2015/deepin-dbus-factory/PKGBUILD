@@ -12,7 +12,7 @@ depends=('qt5-declarative')
 makedepends=('git' 'deepin-dbus-generator')
 # source=("git+https://github.com/linuxdeepin/dbus-factory.git#tag=$_pkgver"
 #        'fix-arch.patch')
-source=("${pkgname}-${pkgver}.tar.xz"
+source=("deepin-dbus-factory.tar.xz"
 		'fix-arch.patch')
 sha256sums=('SKIP'
             'bf4b84b2d5cd063a95318877975ead0d15113a91d0ff1703b2af4f222323cac0')
