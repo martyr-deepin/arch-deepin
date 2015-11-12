@@ -21,14 +21,16 @@ install="${pkgname}.install"
 source=("dde-daemon.tar.xz"
         'fix-i686-compile.patch')
 sha256sums=('SKIP'
-            '7b147d9ab9c29dcfa73906aa743d03aae7bed317553e42c604d3c1bf539ba1bc')
+            '1dccf88c5ce480560a4a2d73134e69f05135703fe34ccd5d9e2e5d7fe852efc5')
 
 prepare() {
 	cd dde-daemon
 	# TODO: a temporary solution by disable go-sqlite3 to avoid build
 	#       issue for go1.4/i686
     # https://github.com/golang/go/issues/9510
-	[[ $CARCH == "i686" ]] && patch -p1 -i ../fix-i686-compile.patch
+	if [[ $CARCH == "i686" ]]; then
+        patch -p1 -i ../fix-i686-compile.patch
+    fi
 }
 
 build() {
