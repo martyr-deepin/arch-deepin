@@ -1,0 +1,13 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/deepin-cursor-theme.git</param>
+    <param name="version">theme</param>
+    <param name="revision">15.10.0</param>
+    <param name="filename">deepin-cursor</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+</services>

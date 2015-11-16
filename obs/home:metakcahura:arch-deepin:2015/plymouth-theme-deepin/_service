@@ -1,0 +1,13 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">git://github.com/linuxdeepin/plymouth-theme-deepin.git</param>
+    <param name="version">deepin</param>
+    <param name="revision">cbe7b6312da51c7d1e192fb03df7063e2d5e42a9</param>
+    <param name="filename">plymouth-theme</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*.tar</param>
+    <param name="compression">xz</param>
+  </service>
+</services>

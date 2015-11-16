@@ -1,0 +1,23 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=plymouth-theme-deepin
+pkgver=15.10.0
+_commit=cbe7b6312da51c7d1e192fb03df7063e2d5e42a9
+pkgrel=1
+pkgdesc='Plymouth theme for Linux Deepin'
+arch=('any')
+license=('GPL3')
+url="https://github.com/linuxdeepin/plymouth-theme-deepin"
+makedepends=('git')
+groups=('deepin-extra')
+install="${pkgname}.install"
+#source=("git+https://github.com/linuxdeepin/plymouth-theme-deepin.git#commit=$_commit")
+source=("${pkgname}.tar.xz")
+sha256sums=('SKIP')
+
+package() {
+	depends=('plymouth')
+	cd "${pkgname}"
+	make PREFIX=/usr/share DESTDIR="${pkgdir}" install
+}

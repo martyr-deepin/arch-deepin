@@ -1,0 +1,20 @@
+# Maintainer: Josip Ponjavic <josipponjavic at gmail dot com>
+# Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=deepin-cursor-theme
+pkgver=15.10.0
+pkgrel=1
+pkgdesc='Cursor theme from Linux Deepin'
+arch=('any')
+license=('GPL3')
+url="https://github.com/linuxdeepin/deepin-cursor-theme"
+makedepends=('git')
+groups=('deepin')
+#source=("git+https://github.com/linuxdeepin/deepin-cursor-theme.git#tag=$pkgver")
+source=("${pkgname}.tar.xz")
+sha256sums=('SKIP')
+
+package() {
+	cd "${pkgname}"
+	make DESTDIR="${pkgdir}" install
+}
