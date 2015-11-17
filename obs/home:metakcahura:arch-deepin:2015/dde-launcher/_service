@@ -2,7 +2,7 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">https://github.com/linuxdeepin/dde-launcher.git</param>
-    <param name="revision">b930cad67ebd59cf77c8a3906263afc714c1961e</param>
+    <param name="revision">92a89c173418c66b8f4e7215016781e5cff02075</param>
     <param name="version">launcher</param>
     <param name="filename">dde</param>
   </service>

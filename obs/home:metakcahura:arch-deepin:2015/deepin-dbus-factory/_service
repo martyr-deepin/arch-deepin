@@ -2,7 +2,7 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">git://github.com/linuxdeepin/dbus-factory.git</param>
-    <param name="revision">2.92.0</param>
+    <param name="revision">a4d4010af009f0ff7f5cf3c6435e87c47617505c</param>
     <param name="version">factory</param>
     <param name="filename">deepin-dbus</param>
   </service>

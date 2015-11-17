@@ -3,8 +3,8 @@
 
 pkgname=dde-session-ui
 pkgver=0.0.3
-_commit=7cff6da6e631f32981fb2ad5df08f7002eeeb829
-pkgrel=1
+_commit=418cd682d5989eb0fe8181509fee50e87bfaad05
+pkgrel=2
 pkgdesc='deepin desktop-environment - dde session ui module'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-session-ui"

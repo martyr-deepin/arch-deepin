@@ -3,8 +3,8 @@
 
 pkgname=dde-control-center
 pkgver=2.91.0
-_commit=89cdaa061a9ebe78cdd151224c63d5d4278ba5b4
-pkgrel=2
+_commit=802e8e269c01a494447684dd08bc2f75be1099cc
+pkgrel=3
 pkgdesc='New control center for linux deepin'
 arch=('i686' 'x86_64')
 url="http://github.com/linuxdeepin/dde-control-center"

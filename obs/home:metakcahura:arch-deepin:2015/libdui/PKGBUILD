@@ -3,8 +3,8 @@
 
 pkgname=libdui
 pkgver=1.2.0
-_commit=efa17ad77d31bb29287efe8b5c89f6f6ed448bee
-pkgrel=1
+_commit=a50e93716cdc9f7af6a96e822959d7faffbca65a
+pkgrel=2
 pkgdesc='Deepin graphical user interface library'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/libdui"

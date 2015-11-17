@@ -3,8 +3,8 @@
 
 pkgname=dde-dock
 pkgver=2.90.0
-_commit=293568b692c72b3488e8a95674149863225c1e36
-pkgrel=2
+_commit=cc63caa57528865601d97f17435bae33ff5e2c55
+pkgrel=3
 pkgdesc='deepin desktop-environment - dock module'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-dock"

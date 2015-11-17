@@ -3,8 +3,8 @@
 
 pkgname=dde-api
 pkgver=2.92.0
-_commit=6da213e32974d82a9a692d1a0907b8dd6318838c
-pkgrel=1
+_commit=4ec1f8bc45090b717342c3f38f7c73d7a45083b1
+pkgrel=2
 pkgdesc='Go-lang bingdings for dde-daemon'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-api"

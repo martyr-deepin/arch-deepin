@@ -2,7 +2,7 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">https://github.com/linuxdeepin/dde-session-ui</param>
-    <param name="revision">7cff6da6e631f32981fb2ad5df08f7002eeeb829</param>
+    <param name="revision">418cd682d5989eb0fe8181509fee50e87bfaad05</param>
     <param name="version">ui</param>
     <param name="filename">dde-session</param>
   </service>

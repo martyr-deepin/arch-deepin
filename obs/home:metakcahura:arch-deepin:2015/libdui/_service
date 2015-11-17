@@ -2,7 +2,7 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">git://github.com/linuxdeepin/libdui.git</param>
-    <param name="revision">efa17ad77d31bb29287efe8b5c89f6f6ed448bee</param>
+    <param name="revision">a50e93716cdc9f7af6a96e822959d7faffbca65a</param>
     <param name="version">1.2.0</param>
     <param name="filename">libdui</param>
   </service>
