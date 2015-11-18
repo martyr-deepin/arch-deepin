@@ -3,8 +3,8 @@
 
 pkgname=dde-daemon
 pkgver=2.93.0
-_commit=6726ab7281f17fe2878f6b035f671be9f1f16ccb
-pkgrel=2
+_commit=7edcec1bff18af29b8f4b19c9c07ce5b24ca3004
+pkgrel=3
 pkgdesc='daemon handling the DDE session settings'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-daemon"

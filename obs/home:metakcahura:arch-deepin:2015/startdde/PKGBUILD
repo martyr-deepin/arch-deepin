@@ -3,8 +3,8 @@
 
 pkgname=startdde
 pkgver=2.92.0
-_commit=69761f6d59f754d4c7f166283f29fd385bb39c18
-pkgrel=1
+_commit=331028560508d822554fb7ea99fbb8db7983465c
+pkgrel=2
 pkgdesc="starter of deepin desktop environment"
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/startdde"
