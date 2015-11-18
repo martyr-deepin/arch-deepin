@@ -2,7 +2,7 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">git://github.com/linuxdeepin/deepin-notifications.git</param>
-    <param name="revision">ca35e6d437fc2b40098ece4979e4759df98b708f</param>
+    <param name="revision">7500e897a65da58eb68f1174322a0992e415864a</param>
     <param name="version">notifications</param>
     <param name="filename">deepin</param>
   </service>

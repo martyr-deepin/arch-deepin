@@ -2,15 +2,16 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-session-ui
-pkgver=0.0.3
+pkgver=2.91.0
 _commit=418cd682d5989eb0fe8181509fee50e87bfaad05
-pkgrel=2
+pkgrel=3
 pkgdesc='deepin desktop-environment - dde session ui module'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-session-ui"
 license=('GPL3')
 groups=('deepin')
 depends=('gsettings-qt' 'libdui' 'liblightdm-qt5' 'qt5-svg')
+provides=('lightdm-deepin-greeter')
 replaces=('dde-workspace')
 #source=("git+https://github.com/linuxdeepin/dde-session-ui.git#commit=$_commit")
 source=("dde-session-ui.tar.xz")

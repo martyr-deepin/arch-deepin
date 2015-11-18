@@ -2,10 +2,10 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=go-packages
-pkgver=20151027
+pkgver=20151118
 pkgrel=1
 pkgdesc='GO source packages for dde'
-arch=('i686' 'x86_64')
+arch=('any')
 url="https://github.com"
 license=('custom')
 depends=('go')
