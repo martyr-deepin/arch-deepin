@@ -55,21 +55,18 @@ Launching DDE
 Troubleshooting
 ---------------
 
-  - Memory leak issues in `deepin-terminal` and `deepin-music`
+  - Install Deepin packages failed, report `invalid or corrupted package (checksum)`
 
-    This is caused by `pygtk`, and we provide an alternative package
-    named `deepin-pygtk`, just install it.
+    Well, this is a troublesome issue of OBS for Archlinux users that
+    the the checksums will be out of date after package rebuild
+    without version changed. Sometimes we will increase `pkgrel`
+    manually to avoid such issues, but most of the cases, please
+    install the packages manually through `pacman -U`.
 
-  - Report package downgrading warning when updating
+  - Install Deepin packages failed, report `Maximum file size
+    exceeded`
 
-    Packages version format have been adjusted for that we do not use
-    source git repositories right now. To fix this problem, just run
-    `pacman -Syuu`.
-
-  - Install deepin packages failed, report `Maximum file size
-    exceeded` or `invalid or corrupted package (checksum)`
-
-    Well, the repository site of openSUSE looks like not friendly to
+    The repository site of openSUSE looks like not friendly to
     archlinux users. Please setup `wget` as default download tool by
     removing comment from line `XferCommand = /usr/bin/wget
     --passive-ftp -c -O%o %u` in `/etc/pacman.conf`, then try again.
@@ -78,22 +75,25 @@ Troubleshooting
 
         Server = http://anorien.csc.warwick.ac.uk/mirrors/download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
 
-  - There are conflicting files when updating to dde-daemon-20141201.b14fbe0
+  - Report package downgrading warning when updating
 
-    I'm afraid we have to remove the conflicting files manually:
+    Packages version format have been adjusted for that we do not use
+    source git repositories right now. To fix this problem, just run
+    `pacman -Syuu`.
 
-        sudo rm /usr/share/personalization/thumbnail/autogen/*.png
-
-  - How to report debugging information of deepin?
+  - How to collect debug logs?
 
     Just use journalctl, for example, the following command will
-    print all deepin related log messages since boot:
+    print all Deepin related syslog messages since boot:
 
        journalctl -b | grep -i 'deepin'
 
+    For xsession errors, Xorg logs in `~/.xsession.erros` and
+    `/var/log/Xorg.0.log` will be very helpful for developers.
+
   - Why network in deepin-control-center not working?
 
-    LinuxDeepin manage network through NetworkManager, so don't
+    Deepin manage network through NetworkManager, so don't
     forget to start it,
 
         sudo systemctl start NetworkManager
