@@ -3,13 +3,14 @@
 
 pkgname=go-packages
 pkgver=20151118
-pkgrel=1
+pkgrel=2
 pkgdesc='GO source packages for dde'
 arch=('any')
 url="https://github.com"
 license=('custom')
-depends=('go')
-makedepends=('deepin-dbus-generator' 'git' 'mercurial')
+# TODO: go or gcc-go
+#depends=('go')
+makedepends=('go' 'deepin-dbus-generator' 'git' 'mercurial')
 #source=("git+https://github.com/linuxdeepin/go-lib.git"
 #		 "git+https://github.com/linuxdeepin/dbus-factory.git"
 #        "go-assertions::git+https://github.com/smartystreets/assertions.git"
