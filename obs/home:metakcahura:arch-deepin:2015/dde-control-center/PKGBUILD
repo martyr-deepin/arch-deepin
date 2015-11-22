@@ -2,9 +2,9 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-control-center
-pkgver=2.91.0
-_commit=802e8e269c01a494447684dd08bc2f75be1099cc
-pkgrel=3
+pkgver=2.91.1
+_commit=469a03080618cd806fd6988b03e746f642f5781c
+pkgrel=1
 pkgdesc='New control center for linux deepin'
 arch=('i686' 'x86_64')
 url="http://github.com/linuxdeepin/dde-control-center"

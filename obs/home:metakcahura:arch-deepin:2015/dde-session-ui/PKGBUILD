@@ -2,9 +2,9 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-session-ui
-pkgver=2.91.0
-_commit=418cd682d5989eb0fe8181509fee50e87bfaad05
-pkgrel=3
+pkgver=2.90.2
+_commit=b56cacecae6046d58b35fa2679c0d50d994b3504
+pkgrel=1
 pkgdesc='deepin desktop-environment - dde session ui module'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-session-ui"

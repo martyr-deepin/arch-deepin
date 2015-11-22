@@ -2,9 +2,9 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-dock
-pkgver=2.90.0
-_commit=cc63caa57528865601d97f17435bae33ff5e2c55
-pkgrel=3
+pkgver=2.90.1
+_commit=71abae56030ce9762cbdd686f478da82b527a3f6
+pkgrel=1
 pkgdesc='deepin desktop-environment - dock module'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-dock"

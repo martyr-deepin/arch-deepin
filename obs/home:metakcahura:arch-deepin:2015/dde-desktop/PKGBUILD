@@ -2,9 +2,9 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-desktop
-pkgver=2.90.0
-_commit=8b115f455880f6819205039a1b38ffb6396e42ff
-pkgrel=4
+pkgver=2.90.1
+_commit=8ed7ac5aea42c7f08f13470fad433040ff4accef
+pkgrel=5
 pkgdesc='deepin desktop-environment - desktop module'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-desktop"

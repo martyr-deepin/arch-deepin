@@ -2,9 +2,9 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-launcher
-pkgver=2.90.0
-_commit=92a89c173418c66b8f4e7215016781e5cff02075
-pkgrel=4
+pkgver=2.90.1
+_commit=d25a5dd95b5c26acee49eaed1f0153f10056aecb
+pkgrel=1
 pkgdesc='deepin desktop-environment - launcher module'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-launcher"

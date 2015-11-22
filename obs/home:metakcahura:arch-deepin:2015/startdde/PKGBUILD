@@ -2,13 +2,14 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=startdde
-pkgver=2.92.0
-_commit=331028560508d822554fb7ea99fbb8db7983465c
-pkgrel=2
+pkgver=2.92.1
+_commit=18e8ea2eb38c51fdb4faaa0764cd47d6052da8b5
+pkgrel=1
 pkgdesc="starter of deepin desktop environment"
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/startdde"
 license=('GPL3')
+depends=('gcc-go')
 makedepends=('cmake' 'coffee-script' 'deepin-dbus-factory' 'go-packages' 'dde-api'
 			 'libdeepin-webkit' 'python2' 'webkitgtk')
 # TODO: move deepin-wm to depends when entering [community]

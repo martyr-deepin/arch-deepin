@@ -2,7 +2,7 @@
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">git://github.com/linuxdeepin/deepin-desktop-schemas.git</param>
-    <param name="revision">2.91.0</param>
+    <param name="revision">2.91.1</param>
     <param name="version">schemas</param>
     <param name="filename">deepin-desktop</param>
   </service>

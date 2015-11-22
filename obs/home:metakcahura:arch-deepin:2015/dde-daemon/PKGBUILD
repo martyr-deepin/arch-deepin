@@ -2,14 +2,14 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=dde-daemon
-pkgver=2.93.0
-_commit=7edcec1bff18af29b8f4b19c9c07ce5b24ca3004
-pkgrel=3
+pkgver=2.93.1
+_commit=78866aa465bfcb732eacc8146f826b34a2a69c18
+pkgrel=1
 pkgdesc='daemon handling the DDE session settings'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-daemon"
 license=('GPL3')
-depends=('deepin-desktop-schemas' 'gvfs'
+depends=('gcc-go' 'deepin-desktop-schemas' 'gvfs'
 		 'libcanberra-pulse' 'metacity' 'poppler-glib' 'rfkill')
 makedepends=('dde-api' 'go-packages' 'sqlite3')
 optdepends=('networkmanager: Network Management daemon'
@@ -35,7 +35,7 @@ prepare() {
 
 build() {
 	cd dde-daemon
-	make GOPATH="/usr/lib/go"
+	make GOPATH="/usr/lib/go" USE_GCCGO=1
 }
 
 package() {

@@ -2,9 +2,9 @@
 # Maintainer: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=libdui
-pkgver=1.2.0
-_commit=a50e93716cdc9f7af6a96e822959d7faffbca65a
-pkgrel=2
+pkgver=1.2.1
+_commit=bbc79675aacf9c092344efe4b888a04d2674cc21
+pkgrel=1
 pkgdesc='Deepin graphical user interface library'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/libdui"
