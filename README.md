@@ -7,6 +7,12 @@ now. And currently, we suggest you experience them especially DDE from
 `[community-testing]` instead for that many Deepin 2015 packages still
 under alpha stage and the testing repository looks more stable.
 
+For the old OBS users, please remove OBS repository from
+`/etc/pacman.conf` and update packages like this:
+
+    sudo pacman -R dde-dock-applets
+    sudo pacman -Syyuu
+
 arch-deepin
 ===========
 
@@ -51,6 +57,8 @@ Launching DDE
         exec startdde
 
   2. run xinit in tty to enter DDE
+
+        xinit
 
 Troubleshooting
 ---------------
