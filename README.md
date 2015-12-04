@@ -10,8 +10,10 @@ under alpha stage and the testing repository looks more stable.
 For the old OBS users, please remove OBS repository from
 `/etc/pacman.conf` and update packages like this:
 
-    sudo pacman -R dde-dock-applets
-    sudo pacman -Syyuu
+```sh
+sudo pacman -R dde-dock-applets
+sudo pacman -Syyuu
+```
 
 arch-deepin
 ===========
@@ -24,17 +26,21 @@ Install
 For the DDE(Deepin Desktop Environment), simple install packages in
 `deepin` group:
 
-    sudo pacman -Sy deepin
+```sh
+sudo pacman -Sy deepin
+```
 
 If you want to experience more applications from Deepin, such as
 `deepin-music` and `deepin-movie`, just install `deepin-extra`:
 
-    sudo pacman -Sy deepin-extra
+```sh
+sudo pacman -Sy deepin-extra
+```
 
 For the old Deepin 2014 packages which maintained by @mmetak, please
 use the OBS repository by adding following code to `/etc/pacman.conf`:
 
-```INI
+```ini
 [home_metakcahura_arch-deepin_Arch_Extra]
 SigLevel = Never
 Server = http://download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
@@ -54,16 +60,20 @@ Launching DDE
 
   1. Add the following code to `$HOME/.xinitrc`
 
-        exec startdde
+     ```sh
+     exec startdde
+     ```
 
   2. run xinit in tty to enter DDE
 
-        xinit
+     ```sh
+     xinit
+     ```
 
 Troubleshooting
 ---------------
 
-  - Install Deepin packages failed, report `invalid or corrupted package (checksum)`
+  - Install Deepin packages from OBS failed, report `invalid or corrupted package (checksum)`
 
     Well, this is a troublesome issue of OBS for Archlinux users that
     the the checksums will be out of date after package rebuild
@@ -71,7 +81,7 @@ Troubleshooting
     manually to avoid such issues, but most of the cases, please
     install the packages manually through `pacman -U`.
 
-  - Install Deepin packages failed, report `Maximum file size
+  - Install Deepin packages from OBS failed, report `Maximum file size
     exceeded`
 
     The repository site of openSUSE looks like not friendly to
@@ -81,7 +91,9 @@ Troubleshooting
 
     If not work, try the alternative server:
 
-        Server = http://anorien.csc.warwick.ac.uk/mirrors/download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
+    ```sh
+    Server = http://anorien.csc.warwick.ac.uk/mirrors/download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
+    ```
 
   - Report package downgrading warning when updating
 
@@ -94,7 +106,9 @@ Troubleshooting
     Just use journalctl, for example, the following command will
     print all Deepin related syslog messages since boot:
 
-       journalctl -b | grep -i 'deepin'
+    ```sh
+    journalctl -b | grep -i 'deepin'
+    ```
 
     For xsession errors, Xorg logs in `~/.xsession.erros` and
     `/var/log/Xorg.0.log` will be very helpful for developers.
@@ -104,19 +118,23 @@ Troubleshooting
     Deepin manage network through NetworkManager, so don't
     forget to start it,
 
-        sudo systemctl start NetworkManager
+    ```sh
+    sudo systemctl start NetworkManager
+    ```
 
     And if you want to experience DDE for a long time, using
     NetworkManager instead of netctl is a better choice,
 
-        sudo systemctl stop netctl
-        sudo systemctl disable netctl
-        sudo systemctl stop netctl@ethernetdhcp
-        sudo systemctl disable netctl@ethernetdhcp
-        sudo systemctl enable NetworkManager
-        sudo systemctl start  NetworkManager
-        sudo systemctl enable ModemManager
-        sudo systemctl start ModemManager
+    ```sh
+    sudo systemctl stop netctl
+    sudo systemctl disable netctl
+    sudo systemctl stop netctl@ethernetdhcp
+    sudo systemctl disable netctl@ethernetdhcp
+    sudo systemctl enable NetworkManager
+    sudo systemctl start  NetworkManager
+    sudo systemctl enable ModemManager
+    sudo systemctl start ModemManager
+    ```
 
 Screenshots
 -----------
