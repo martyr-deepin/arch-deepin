@@ -3,17 +3,10 @@ NOTE
 
 Thanks @mmetak and @felixonmars, we could install `deepin-music`,
 `deepin-movie` and many other Deepin software from `[community]`
-now. And currently, we suggest you experience them especially DDE from
-`[community-testing]` instead for that many Deepin 2015 packages still
-under alpha stage and the testing repository looks more stable.
+now.
 
 For the old OBS users, please remove OBS repository from
-`/etc/pacman.conf` and update packages like this:
-
-```sh
-sudo pacman -R dde-dock-applets
-sudo pacman -Syyuu
-```
+`/etc/pacman.conf` and update packages through `sudo pacman -Syyuu`.
 
 arch-deepin
 ===========
