@@ -3,50 +3,40 @@
 /usr/share
 /usr/share/doc
 /usr/share/doc/deepin-artwork-themes
-/usr/share/doc/deepin-artwork-themes/changelog.gz
+/usr/share/doc/deepin-artwork-themes/changelog.Debian.gz
 /usr/share/doc/deepin-artwork-themes/copyright
 /usr/share/personalization
 /usr/share/personalization/preview
-/usr/share/personalization/preview/CursorThemes
-/usr/share/personalization/preview/CursorThemes/Deepin-Cursor-preview.png
-/usr/share/personalization/preview/CursorThemes/DMZ-White-preview.png
-/usr/share/personalization/preview/IconThemes
-/usr/share/personalization/preview/IconThemes/Deepin-2014-preview.png
 /usr/share/personalization/preview/WindowThemes
-/usr/share/personalization/preview/WindowThemes/Deepin-Gray-preview.png
-/usr/share/personalization/preview/WindowThemes/Deepin-preview.png
+/usr/share/personalization/preview/WindowThemes/deepin-preview.png
 /usr/share/personalization/themes
-/usr/share/personalization/themes/Deepin
-/usr/share/personalization/themes/Deepin/preview.png
-/usr/share/personalization/themes/Deepin/theme.ini
-/usr/share/personalization/themes/Deepin/thumbnail.png
-/usr/share/personalization/themes/Deepin/wallpapers
-/usr/share/personalization/themes/Deepin/wallpapers/1.jpg
-/usr/share/personalization/themes/Deepin/wallpapers/2.1.jpg
-/usr/share/personalization/themes/Deepin/wallpapers/2.2.jpg
-/usr/share/personalization/themes/Deepin/wallpapers/3.1.jpg
-/usr/share/personalization/themes/Deepin/wallpapers/3.2.jpg
-/usr/share/personalization/themes/Deepin/wallpapers/3.3.jpg
-/usr/share/personalization/themes/Deepin/wallpapers/new-1.JPG
-/usr/share/personalization/themes/Deepin/wallpapers/new-2.JPG
-/usr/share/personalization/themes/Deepin/wallpapers/new-3.JPG
-/usr/share/personalization/themes/Deepin/wallpapers/time 14.jpg
-/usr/share/personalization/themes/Deepin/wallpapers/time 1.jpg
-/usr/share/personalization/themes/Deepin/wallpapers/time 2.jpg
-/usr/share/personalization/themes/Deepin/wallpapers/time 4.jpg
+/usr/share/personalization/themes/deepin
+/usr/share/personalization/themes/deepin/preview.png
+/usr/share/personalization/themes/deepin/theme.ini
+/usr/share/personalization/themes/deepin/thumbnail.png
+/usr/share/personalization/themes/deepin/wallpapers
+/usr/share/personalization/themes/deepin/wallpapers/Architect.jpg
+/usr/share/personalization/themes/deepin/wallpapers/Bridge.jpg
+/usr/share/personalization/themes/deepin/wallpapers/Chrysanthemum.jpg
+/usr/share/personalization/themes/deepin/wallpapers/City Line.png
+/usr/share/personalization/themes/deepin/wallpapers/Fairy Town.jpg
+/usr/share/personalization/themes/deepin/wallpapers/Falls.png
+/usr/share/personalization/themes/deepin/wallpapers/Garden In The Autumn.jpg
+/usr/share/personalization/themes/deepin/wallpapers/Grasslands Under The Moon.jpg
+/usr/share/personalization/themes/deepin/wallpapers/One Night In Santorini.jpg
+/usr/share/personalization/themes/deepin/wallpapers/Perito Moreno Glacier.jpg
+/usr/share/personalization/themes/deepin/wallpapers/Sailfish.jpg
+/usr/share/personalization/themes/deepin/wallpapers/Sea Waves In Koules Fortress.jpg
+/usr/share/personalization/themes/deepin/wallpapers/Startrails.jpg
+/usr/share/personalization/themes/deepin/wallpapers/The Perito Moreno Glacier.jpg
 /usr/share/personalization/thumbnail
-/usr/share/personalization/thumbnail/CursorThemes
-/usr/share/personalization/thumbnail/CursorThemes/Deepin-Cursor-thumbnail.png
-/usr/share/personalization/thumbnail/CursorThemes/DMZ-White-thumbnail.png
 /usr/share/personalization/thumbnail/IconThemes
 /usr/share/personalization/thumbnail/IconThemes/Compass-thumbnail.png
 /usr/share/personalization/thumbnail/IconThemes/Dalisha-thumbnail.png
-/usr/share/personalization/thumbnail/IconThemes/Deepin-2014-thumbnail.png
-/usr/share/personalization/thumbnail/IconThemes/Deepin-thumbnail.png
+/usr/share/personalization/thumbnail/IconThemes/deepin-thumbnail.png
 /usr/share/personalization/thumbnail/IconThemes/flattr-thumbnail.png
 /usr/share/personalization/thumbnail/IconThemes/Insignia-thumbnail.png
 /usr/share/personalization/thumbnail/IconThemes/Matrilineare-thumbnail.png
 /usr/share/personalization/thumbnail/IconThemes/Nitrux-thumbnail.png
 /usr/share/personalization/thumbnail/WindowThemes
-/usr/share/personalization/thumbnail/WindowThemes/Deepin-Gray-thumbnail.png
-/usr/share/personalization/thumbnail/WindowThemes/Deepin-thumbnail.png
+/usr/share/personalization/thumbnail/WindowThemes/deepin-thumbnail.png

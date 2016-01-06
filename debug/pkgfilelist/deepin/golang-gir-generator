@@ -1,0 +1,9 @@
+/.
+/usr
+/usr/bin
+/usr/bin/gir-generator
+/usr/share
+/usr/share/doc
+/usr/share/doc/golang-gir-generator
+/usr/share/doc/golang-gir-generator/changelog.Debian.gz
+/usr/share/doc/golang-gir-generator/copyright

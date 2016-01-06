@@ -10,7 +10,8 @@
 /usr/share/GConf/gsettings/deepin-mutter-schemas.convert
 /usr/share/glib-2.0
 /usr/share/glib-2.0/schemas
-/usr/share/glib-2.0/schemas/com.deepin.dde.wm.mutter.gschema.xml
+/usr/share/glib-2.0/schemas/com.deepin.wrap.gnome.mutter.gschema.xml
+/usr/share/glib-2.0/schemas/com.deepin.wrap.gnome.mutter.wayland.gschema.xml
 /usr/share/gnome-control-center
 /usr/share/gnome-control-center/keybindings
 /usr/share/gnome-control-center/keybindings/50-deepin-mutter-navigation.xml

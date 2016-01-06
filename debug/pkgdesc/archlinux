@@ -1,0 +1,876 @@
+
+Name           : deepin-account-faces
+Version        : 1.0.10-1
+Description    : Account faces for Linux Deepin
+Architecture   : any
+URL            : https://github.com/linuxdeepin/dde-account-faces
+Licenses       : GPL3
+Groups         : deepin
+Provides       : None
+Depends On     : None
+Optional Deps  : None
+Required By    : deepin-control-center
+Optional For   : None
+Conflicts With : dde-account-faces
+Replaces       : dde-account-faces
+Installed Size : 1449.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Mon 21 Dec 2015 08:57:17 PM HKT
+Install Date   : Tue 22 Dec 2015 01:14:51 AM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-api
+Version        : 3.0.1-1
+Description    : Go-lang bingdings for dde-daemon
+Architecture   : x86_64
+URL            : https://gitcafe.com/Deepin/dde-api
+Licenses       : GPL3
+Groups         : deepin
+Provides       : None
+Depends On     : glib2  gdk-pixbuf2  gtk3  libcanberra-pulse  libxi  libxfixes  rfkill  gcc-libs>=5.3.0-3  poppler-glib  deepin-metacity  xcur2png
+Optional Deps  : None
+Required By    : deepin-control-center
+Optional For   : None
+Conflicts With : dde-api
+Replaces       : dde-api
+Installed Size :  49.65 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 29 Dec 2015 09:53:31 PM HKT
+Install Date   : Wed 30 Dec 2015 01:07:48 PM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-artwork-themes
+Version        : 15.12.2-2
+Description    : Deepin artwork themes
+Architecture   : any
+URL            : https://gitcafe.com/Deepin/deepin-artwork-themes
+Licenses       : LGPL3
+Groups         : deepin
+Provides       : None
+Depends On     : deepin-icon-theme  deepin-desktop-base
+Optional Deps  : None
+Required By    : deepin-desktop-schemas
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size :  40.12 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Wed 30 Dec 2015 09:12:16 PM HKT
+Install Date   : Wed 06 Jan 2016 03:03:02 PM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-control-center
+Version        : 3.0.2-1
+Description    : New control center for linux deepin
+Architecture   : x86_64
+URL            : http://github.com/linuxdeepin/dde-control-center
+Licenses       : GPL3
+Groups         : deepin
+Provides       : None
+Depends On     : desktop-file-utils  libdui  gtk3  deepin-account-faces  deepin-api  deepin-daemon  deepin-dbus-factory  startdde
+Optional Deps  : None
+Required By    : deepin-session-ui
+Optional For   : None
+Conflicts With : dde-control-center  dde-dock-applets
+Replaces       : dde-control-center  dde-dock-applets
+Installed Size :  15.68 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Wed 30 Dec 2015 04:13:56 PM HKT
+Install Date   : Wed 06 Jan 2016 03:03:06 PM HKT
+Install Reason : Explicitly installed
+Install Script : Yes
+Validated By   : Signature
+
+
+Name           : deepin-daemon
+Version        : 3.0.2-1
+Description    : Daemon handling the DDE session settings
+Architecture   : x86_64
+URL            : https://github.com/linuxdeepin/dde-daemon
+Licenses       : GPL3
+Groups         : deepin
+Provides       : None
+Depends On     : deepin-desktop-schemas  gvfs  libcanberra-pulse  metacity  poppler-glib  rfkill  acpid  bluez  deepin-notifications  iso-codes  lsb-release  mobile-broadband-provider-info  polkit-gnome  udisks2  upower  gcc-libs>=5.3.0-3  libxkbfile  accountsservice  deepin-desktop-base
+Optional Deps  : networkmanager: Network Management daemon [installed]
+                 deepin-grub2-themes: deepin theme for grub menu [installed]
+Required By    : deepin-control-center  deepin-desktop  deepin-dock  deepin-launcher  deepin-session-ui  deepin-wm-switcher  startdde
+Optional For   : deepin-screenshot
+Conflicts With : dde-daemon
+Replaces       : dde-daemon
+Installed Size :  77.86 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Wed 30 Dec 2015 09:18:43 PM HKT
+Install Date   : Wed 06 Jan 2016 03:03:04 PM HKT
+Install Reason : Installed as a dependency for another package
+Install Script : Yes
+Validated By   : Signature
+
+
+Name           : deepin-dbus-factory
+Version        : 3.0.0-1
+Description    : QML DBus factory for DDE
+Architecture   : x86_64
+URL            : https://gitcafe.com/Deepin/dbus-factory
+Licenses       : GPL3
+Groups         : None
+Provides       : None
+Depends On     : qt5-declarative
+Optional Deps  : None
+Required By    : deepin-control-center  deepin-movie
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size :  12.62 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 29 Dec 2015 02:49:14 PM HKT
+Install Date   : Tue 29 Dec 2015 10:29:03 PM HKT
+Install Reason : Installed as a dependency for another package
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-dbus-generator
+Version        : 0.6.4-2
+Description    : Convert dbus interfaces to go-lang or qml wrapper code
+Architecture   : x86_64
+URL            : https://gitcafe.com/Deepin/go-dbus-generator
+Licenses       : GPL3
+Groups         : deepin-dev
+Provides       : None
+Depends On     : glibc  gcc-libs>=5.3.0-3
+Optional Deps  : None
+Required By    : None
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size : 605.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Thu 17 Dec 2015 02:44:47 PM HKT
+Install Date   : Tue 22 Dec 2015 01:15:05 AM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-desktop
+Version        : 3.0.2-1
+Description    : Deepin desktop-environment - Desktop module
+Architecture   : x86_64
+URL            : https://github.com/linuxdeepin/dde-desktop
+Licenses       : GPL3
+Groups         : deepin
+Provides       : None
+Depends On     : deepin-file-manager  deepin-nautilus-properties  gsettings-qt  deepin-daemon  libdui  startdde  deepin-dock  gtk2  qt5-svg  qt5-x11extras
+Optional Deps  : None
+Required By    : None
+Optional For   : None
+Conflicts With : dde-desktop
+Replaces       : dde-desktop
+Installed Size : 1230.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Wed 30 Dec 2015 04:48:50 PM HKT
+Install Date   : Wed 06 Jan 2016 03:03:07 PM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-desktop-base
+Version        : 2015.12.30-1
+Description    : Default wallpapers and other base component for Deepin
+Architecture   : any
+URL            : https://github.com/linuxdeepin/deepin-desktop-base
+Licenses       : GPL3
+Groups         : deepin
+Provides       : None
+Depends On     : None
+Optional Deps  : None
+Required By    : deepin-artwork-themes  deepin-daemon
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size : 749.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Wed 30 Dec 2015 09:09:16 PM HKT
+Install Date   : Wed 06 Jan 2016 03:03:00 PM HKT
+Install Reason : Installed as a dependency for another package
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-desktop-schemas
+Version        : 3.0.0-1
+Description    : GSettings deepin desktop-wide schemas
+Architecture   : any
+URL            : https://github.com/linuxdeepin/deepin-desktop-schemas
+Licenses       : GPL3
+Groups         : deepin
+Provides       : None
+Depends On     : dconf  deepin-gtk-theme  deepin-sound-theme  deepin-artwork-themes
+Optional Deps  : None
+Required By    : deepin-daemon  deepin-metacity  deepin-mutter  deepin-wm
+Optional For   : None
+Conflicts With : dde-daemon<=2.92.1
+Replaces       : deepin-default-gsettings
+Installed Size : 241.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 29 Dec 2015 02:48:35 PM HKT
+Install Date   : Tue 29 Dec 2015 10:29:00 PM HKT
+Install Reason : Installed as a dependency for another package
+Install Script : Yes
+Validated By   : Signature
+
+
+Name           : deepin-dock
+Version        : 3.0.1-1
+Description    : Deepin desktop-environment - dock module
+Architecture   : x86_64
+URL            : https://github.com/linuxdeepin/dde-dock
+Licenses       : GPL3
+Groups         : deepin
+Provides       : None
+Depends On     : gtk2  libdui  qt5-svg  deepin-menu  deepin-file-manager  deepin-daemon
+Optional Deps  : None
+Required By    : deepin-desktop
+Optional For   : None
+Conflicts With : dde-dock
+Replaces       : dde-dock
+Installed Size : 1211.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 29 Dec 2015 09:48:30 PM HKT
+Install Date   : Tue 29 Dec 2015 10:29:07 PM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-file-manager
+Version        : 0.1.7-1
+Description    : deepin file manager backend
+Architecture   : x86_64
+URL            : https://github.com/linuxdeepin/deepin-file-manager
+Licenses       : GPL3
+Groups         : None
+Provides       : None
+Depends On     : deepin-metacity  libcanberra  poppler-glib  gcc-libs>=5.3.0-3
+Optional Deps  : None
+Required By    : deepin-desktop  deepin-dock  deepin-launcher
+Optional For   : None
+Conflicts With : None
+Replaces       : deepin-file-manager-backend
+Installed Size :   7.43 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Wed 30 Dec 2015 05:12:31 PM HKT
+Install Date   : Wed 06 Jan 2016 03:03:07 PM HKT
+Install Reason : Explicitly installed
+Install Script : Yes
+Validated By   : Signature
+
+
+Name           : deepin-gettext-tools
+Version        : 1.0.2-1
+Description    : Deepin Gettext Tools
+Architecture   : any
+URL            : https://gitcafe.com/Deepin/deepin-gettext-tools
+Licenses       : GPL3
+Groups         : None
+Provides       : None
+Depends On     : gettext  python2
+Optional Deps  : None
+Required By    : None
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size :   9.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 17 Nov 2015 10:34:17 PM HKT
+Install Date   : Wed 18 Nov 2015 07:08:58 PM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-gir-generator
+Version        : 0.9.2-1
+Description    : Generate static golang bindings for GObject
+Architecture   : x86_64
+URL            : https://gitcafe.com/Deepin/go-gir-generator
+Licenses       : GPL3
+Groups         : None
+Provides       : None
+Depends On     : gobject-introspection  gcc-libs>=5.3.0-3
+Optional Deps  : None
+Required By    : None
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size : 584.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 29 Dec 2015 09:46:01 PM HKT
+Install Date   : Tue 29 Dec 2015 10:40:11 PM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-grub2-themes
+Version        : 1.0.0-2
+Description    : Deepin grub2 themes
+Architecture   : any
+URL            : https://gitcafe.com/Deepin/deepin-grub2-themes
+Licenses       : LGPL3
+Groups         : deepin
+Provides       : None
+Depends On     : None
+Optional Deps  : None
+Required By    : None
+Optional For   : deepin-daemon
+Conflicts With : grub-theme-deepin
+Replaces       : grub-theme-deepin
+Installed Size :   3.53 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 24 Nov 2015 03:29:03 PM HKT
+Install Date   : Tue 24 Nov 2015 04:22:39 PM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-gtk-theme
+Version        : 15.12.3-1
+Description    : Deepin GTK Theme
+Architecture   : any
+URL            : https://gitcafe.com/Deepin/deepin-gtk-theme
+Licenses       : LGPL3
+Groups         : deepin
+Provides       : None
+Depends On     : None
+Optional Deps  : gtk-engine-murrine: for gtk2 themes [installed]
+Required By    : deepin-desktop-schemas
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size : 1681.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 29 Dec 2015 02:45:28 PM HKT
+Install Date   : Tue 29 Dec 2015 10:28:59 PM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-icon-theme
+Version        : 15.12.23-1
+Description    : Deepin Icons
+Architecture   : any
+URL            : https://github.com/linuxdeepin/deepin-icon-theme
+Licenses       : GPL3
+Groups         : None
+Provides       : None
+Depends On     : flattr-icon-theme  faenza-icon-theme
+Optional Deps  : None
+Required By    : deepin-artwork-themes
+Optional For   : None
+Conflicts With : deepin-cursor-theme
+Replaces       : deepin-cursor-theme
+Installed Size :   7.99 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Wed 30 Dec 2015 08:53:56 PM HKT
+Install Date   : Wed 06 Jan 2016 03:03:00 PM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-launcher
+Version        : 3.0.1-1
+Description    : Deepin desktop-environment - Launcher module
+Architecture   : x86_64
+URL            : https://github.com/linuxdeepin/dde-launcher
+Licenses       : GPL3
+Groups         : deepin
+Provides       : None
+Depends On     : gtk2  gsettings-qt  qt5-svg  qt5-x11extras  deepin-file-manager  startdde  deepin-menu  deepin-daemon
+Optional Deps  : None
+Required By    : None
+Optional For   : None
+Conflicts With : dde-launcher
+Replaces       : dde-launcher
+Installed Size : 810.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 29 Dec 2015 09:38:07 PM HKT
+Install Date   : Tue 29 Dec 2015 10:29:08 PM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-menu
+Version        : 3.0.0-1
+Description    : Deepin menu service for building beautiful menus
+Architecture   : x86_64
+URL            : https://gitcafe.com/Deepin/deepin-menu
+Licenses       : GPL3
+Groups         : deepin
+Provides       : None
+Depends On     : python2-pyqt5  qt5-x11extras
+Optional Deps  : None
+Required By    : deepin-dock  deepin-launcher  deepin-movie  deepin-screenshot
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size : 232.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 29 Dec 2015 02:48:16 PM HKT
+Install Date   : Tue 29 Dec 2015 10:29:07 PM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-metacity
+Version        : 3.18.1.4-1
+Description    : 2D window manager for Deepin
+Architecture   : x86_64
+URL            : https://github.com/linuxdeepin/deepin-metacity
+Licenses       : GPL
+Groups         : None
+Provides       : None
+Depends On     : dconf  libcanberra  libgtop  libsm  deepin-desktop-schemas  gtk3  startup-notification  zenity
+Optional Deps  : None
+Required By    : deepin-api  deepin-file-manager  deepin-wm-switcher
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size :   7.19 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Mon 28 Dec 2015 06:22:51 PM HKT
+Install Date   : Tue 29 Dec 2015 10:29:01 PM HKT
+Install Reason : Explicitly installed
+Install Script : Yes
+Validated By   : Signature
+
+
+Name           : deepin-movie
+Version        : 2.3.0.20151102-1
+Description    : Movie player based on QtAV
+Architecture   : any
+URL            : https://gitcafe.com/Deepin/deepin-movie
+Licenses       : GPL3
+Groups         : deepin-extra
+Provides       : None
+Depends On     : python2-pyqt5  qtav  mediainfo  deepin-menu  python2-dbus  python2-peewee  python2-pillow  python2-magic  python2-bottle  deepin-qml-widgets  python2-xpybutil  python2-deepin-utils  python2-requests  dleyna-renderer  deepin-dbus-factory
+Optional Deps  : None
+Required By    : None
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size :  10.24 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Wed 25 Nov 2015 10:46:57 AM HKT
+Install Date   : Mon 14 Dec 2015 11:31:49 AM HKT
+Install Reason : Explicitly installed
+Install Script : Yes
+Validated By   : Signature
+
+
+Name           : deepin-music
+Version        : 2.3.0.20150814-1
+Description    : Awesome music player with brilliant and tweakful UI Deepin-UI based.
+Architecture   : any
+URL            : https://gitcafe.com/Deepin/deepin-music
+Licenses       : GPL3
+Groups         : deepin-extra
+Provides       : deepin-music-player
+Depends On     : gstreamer0.10-python  gstreamer0.10-bad-plugins  gstreamer0.10-good-plugins  gstreamer0.10-ugly-plugins  mutagen  python2-chardet  python2-pyquery  python2-cssselect  python2-dbus  sonata  cddb-py  python2-scipy  python2-pycurl  python2-xlib  python2-keybinder2  python2-deepin-ui  desktop-file-utils
+Optional Deps  : None
+Required By    : None
+Optional For   : None
+Conflicts With : deepin-music-player
+Replaces       : deepin-music-player
+Installed Size :  30.35 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 15 Sep 2015 05:12:28 PM HKT
+Install Date   : Wed 16 Sep 2015 11:47:05 AM HKT
+Install Reason : Explicitly installed
+Install Script : Yes
+Validated By   : Signature
+
+
+Name           : deepin-mutter
+Version        : 3.18.2.3-1
+Description    : Base window manager for deepin, fork of gnome mutter
+Architecture   : x86_64
+URL            : https://gitcafe.com/Deepin/deepin-mutter
+Licenses       : GPL3
+Groups         : None
+Provides       : None
+Depends On     : clutter  dconf  gobject-introspection-runtime  deepin-desktop-schemas  libcanberra  startup-notification  zenity  libsm  gnome-desktop  upower  libxkbcommon-x11  libgudev
+Optional Deps  : None
+Required By    : deepin-wm
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size :   5.10 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Mon 28 Dec 2015 06:24:20 PM HKT
+Install Date   : Tue 29 Dec 2015 10:29:04 PM HKT
+Install Reason : Explicitly installed
+Install Script : Yes
+Validated By   : Signature
+
+
+Name           : deepin-nautilus-properties
+Version        : 3.14.2-2
+Description    : Provide file property dialog for Deepin desktop environment
+Architecture   : x86_64
+URL            : https://gitcafe.com/Deepin/deepin-nautilus-properties
+Licenses       : GPL
+Groups         : None
+Provides       : None
+Depends On     : nautilus  libnotify
+Optional Deps  : None
+Required By    : deepin-desktop
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size : 1337.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Thu 26 Nov 2015 01:33:14 PM HKT
+Install Date   : Fri 04 Dec 2015 05:15:51 PM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-notifications
+Version        : 2.3.5-1
+Description    : System notifications for linuxdeepin desktop environment
+Architecture   : x86_64
+URL            : https://gitcafe.com/Deepin/deepin-notifications
+Licenses       : GPL3
+Groups         : deepin
+Provides       : notification-daemon
+Depends On     : qt5-declarative  qt5-svg
+Optional Deps  : None
+Required By    : deepin-daemon
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size : 144.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Mon 21 Dec 2015 09:27:25 PM HKT
+Install Date   : Tue 22 Dec 2015 01:14:55 AM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-qml-widgets
+Version        : 2.3.2-1
+Description    : Deepin QML widgets
+Architecture   : x86_64
+URL            : https://gitcafe.com/Deepin/deepin-qml-widgets
+Licenses       : GPL3
+Groups         : None
+Provides       : dde-qml-gettext-plugin
+Depends On     : qt5-multimedia  qt5-webkit  qt5-imageformats  qt5-graphicaleffects  qt5-x11extras  gtk2
+Optional Deps  : None
+Required By    : deepin-movie  deepin-screenshot  deepin-social-sharing
+Optional For   : None
+Conflicts With : dde-qml-gettext-plugin
+Replaces       : dde-qml-gettext-plugin
+Installed Size : 689.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Mon 21 Dec 2015 09:35:53 PM HKT
+Install Date   : Tue 22 Dec 2015 01:15:06 AM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-screenshot
+Version        : 3.1.6-1
+Description    : Easy-to-use screenshot tool for linuxdeepin desktop environment
+Architecture   : any
+URL            : https://gitcafe.com/Deepin/deepin-screenshot
+Licenses       : GPL3
+Groups         : deepin-extra
+Provides       : None
+Depends On     : deepin-menu  deepin-qml-widgets  pygtk  qt5-quickcontrols  qt5-svg  python2-pyqt5  python2-wnck  python2-xpybutil
+Optional Deps  : deepin-social-sharing: for "Share" support [installed]
+                 deepin-daemon: for sound effect [installed]
+Required By    : None
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size :  10.69 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 29 Dec 2015 02:43:07 PM HKT
+Install Date   : Tue 29 Dec 2015 10:29:08 PM HKT
+Install Reason : Explicitly installed
+Install Script : Yes
+Validated By   : Signature
+
+
+Name           : deepin-session-ui
+Version        : 3.0.2-1
+Description    : Deepin desktop-environment - Session UI module
+Architecture   : x86_64
+URL            : https://github.com/linuxdeepin/dde-session-ui
+Licenses       : GPL3
+Groups         : deepin
+Provides       : lightdm-deepin-greeter
+Depends On     : gsettings-qt  libdui  liblightdm-qt5  qt5-svg  deepin-daemon  deepin-control-center  startdde  gtk2
+Optional Deps  : None
+Required By    : None
+Optional For   : None
+Conflicts With : dde-workspace  dde-session-ui
+Replaces       : dde-workspace  dde-session-ui
+Installed Size :   4.44 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Wed 30 Dec 2015 04:51:43 PM HKT
+Install Date   : Wed 06 Jan 2016 03:03:07 PM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-social-sharing
+Version        : 1.1.1-1
+Description    : Deepin social sharing service
+Architecture   : any
+URL            : https://gitcafe.com/Deepin/deepin-social-sharing
+Licenses       : GPL3
+Groups         : deepin
+Provides       : None
+Depends On     : deepin-qml-widgets  python2-pyqt5  python2-requests-oauthlib
+Optional Deps  : None
+Required By    : None
+Optional For   : deepin-screenshot
+Conflicts With : None
+Replaces       : None
+Installed Size : 317.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Mon 23 Nov 2015 11:58:21 AM HKT
+Install Date   : Tue 24 Nov 2015 11:12:15 AM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-sound-theme
+Version        : 15.10.0-2
+Description    : Deepin sound theme
+Architecture   : any
+URL            : https://gitcafe.com/Deepin/deepin-sound-theme
+Licenses       : GPL3
+Groups         : deepin
+Provides       : None
+Depends On     : None
+Optional Deps  : None
+Required By    : deepin-desktop-schemas
+Optional For   : None
+Conflicts With : deepin-artwork
+Replaces       : None
+Installed Size : 433.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 24 Nov 2015 03:27:23 PM HKT
+Install Date   : Tue 24 Nov 2015 04:22:39 PM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : deepin-terminal
+Version        : 1.1.2-1
+Description    : Awesome terminal for Linux Deepin
+Architecture   : any
+URL            : https://gitcafe.com/Deepin/deepin-terminal
+Licenses       : GPL3
+Groups         : deepin-extra
+Provides       : None
+Depends On     : python2-deepin-vte  desktop-file-utils  expect  hicolor-icon-theme  python2-dbus  python2-deepin-ui  xdotool  ttf-dejavu
+Optional Deps  : None
+Required By    : None
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size :   5.50 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 29 Dec 2015 02:41:19 PM HKT
+Install Date   : Tue 29 Dec 2015 10:29:09 PM HKT
+Install Reason : Explicitly installed
+Install Script : Yes
+Validated By   : Signature
+
+
+Name           : deepin-wm
+Version        : 1.0.1-1
+Description    : Deepin Window Manager
+Architecture   : x86_64
+URL            : https://github.com/linuxdeepin/deepin-wm
+Licenses       : GPL3
+Groups         : None
+Provides       : None
+Depends On     : bamf  clutter-gtk  deepin-desktop-schemas  deepin-mutter  gnome-desktop  libgee
+Optional Deps  : None
+Required By    : deepin-wm-switcher
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size : 1273.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 29 Dec 2015 06:08:42 PM HKT
+Install Date   : Tue 29 Dec 2015 10:29:04 PM HKT
+Install Reason : Installed as a dependency for another package
+Install Script : Yes
+Validated By   : Signature
+
+
+Name           : deepin-wm-switcher
+Version        : 1.0.0-1
+Description    : Window manager switcher for Deepin
+Architecture   : x86_64
+URL            : https://github.com/linuxdeepin/deepin-wm-switcher
+Licenses       : GPL3
+Groups         : deepin
+Provides       : None
+Depends On     : deepin-daemon  deepin-wm  deepin-metacity  qt5-x11extras
+Optional Deps  : None
+Required By    : startdde
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size :  80.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Mon 28 Dec 2015 06:23:29 PM HKT
+Install Date   : Tue 29 Dec 2015 10:29:04 PM HKT
+Install Reason : Installed as a dependency for another package
+Install Script : No
+Validated By   : Signature
+
+
+Name           : libdui
+Version        : 1.2.6-1
+Description    : Deepin graphical user interface library
+Architecture   : x86_64
+URL            : https://cr.deepin.io/dde/libdui
+Licenses       : GPL3
+Groups         : None
+Provides       : None
+Depends On     : qt5-multimedia  qt5-x11extras
+Optional Deps  : None
+Required By    : deepin-control-center  deepin-desktop  deepin-dock  deepin-session-ui
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size : 1485.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 29 Dec 2015 02:21:51 PM HKT
+Install Date   : Tue 29 Dec 2015 10:29:02 PM HKT
+Install Reason : Installed as a dependency for another package
+Install Script : No
+Validated By   : Signature
+
+
+Name           : python2-deepin-gsettings
+Version        : 0.1.20131016-1
+Description    : deepin gsettings python bindings
+Architecture   : x86_64
+URL            : https://gitcafe.com/Deepin/deepin-gsettings
+Licenses       : GPL3
+Groups         : None
+Provides       : deepin-gsettings
+Depends On     : python2  glib2
+Optional Deps  : None
+Required By    : python2-deepin-ui
+Optional For   : None
+Conflicts With : deepin-gsettings
+Replaces       : deepin-gsettings
+Installed Size :  21.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 15 Sep 2015 12:04:01 AM HKT
+Install Date   : Wed 16 Sep 2015 11:50:27 AM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : python2-deepin-ui
+Version        : 1.0.4-1
+Description    : UI toolkit for Linux Deepin
+Architecture   : any
+URL            : https://gitcafe.com/Deepin/deepin-ui
+Licenses       : GPL3
+Groups         : deepin
+Provides       : deepin-ui
+Depends On     : python2-deepin-utils  python2-deepin-gsettings  pygtk  python2-scipy  glib2  python2-cairo  python2-pillow  python2-xlib  pywebkitgtk  libsoup
+Optional Deps  : None
+Required By    : deepin-music  deepin-terminal
+Optional For   : None
+Conflicts With : deepin-ui
+Replaces       : deepin-ui
+Installed Size :  15.11 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 15 Sep 2015 03:49:15 PM HKT
+Install Date   : Wed 16 Sep 2015 11:50:27 AM HKT
+Install Reason : Installed as a dependency for another package
+Install Script : No
+Validated By   : Signature
+
+
+Name           : python2-deepin-utils
+Version        : 0.1.20140509-1
+Description    : Basic utils for all project in Linux Deepin
+Architecture   : x86_64
+URL            : https://gitcafe.com/Deepin/deepin-utils
+Licenses       : GPL3
+Groups         : deepin
+Provides       : deepin-utils
+Depends On     : pygtk  python2-cairo  freetype2  webkitgtk2  python2-xlib  pywebkitgtk
+Optional Deps  : None
+Required By    : deepin-movie  python2-deepin-ui
+Optional For   : None
+Conflicts With : deepin-utils
+Replaces       : deepin-utils
+Installed Size : 139.00 KiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Tue 15 Sep 2015 12:49:41 AM HKT
+Install Date   : Wed 16 Sep 2015 11:47:03 AM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+
+
+Name           : startdde
+Version        : 3.0.1-1
+Description    : starter of deepin desktop environment
+Architecture   : x86_64
+URL            : https://github.com/linuxdeepin/startdde
+Licenses       : GPL3
+Groups         : deepin
+Provides       : None
+Depends On     : gcc-libs>=5.3.0-3  deepin-daemon  deepin-wm-switcher
+Optional Deps  : None
+Required By    : deepin-control-center  deepin-desktop  deepin-launcher  deepin-session-ui
+Optional For   : None
+Conflicts With : None
+Replaces       : None
+Installed Size :   8.17 MiB
+Packager       : Felix Yan <felixonmars@archlinux.org>
+Build Date     : Wed 30 Dec 2015 08:49:59 PM HKT
+Install Date   : Wed 06 Jan 2016 03:03:05 PM HKT
+Install Reason : Explicitly installed
+Install Script : No
+Validated By   : Signature
+

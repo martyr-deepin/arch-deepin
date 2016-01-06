@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/bin
+/usr/bin/deepin-metacity
+/usr/bin/deepin-metacity-message
+/usr/bin/deepin-metacity-theme-viewer
+/usr/bin/deepin-metacity-window-demo
+/usr/share
+/usr/share/applications
+/usr/share/applications/deepin-metacity.desktop
+/usr/share/doc
+/usr/share/doc/deepin-metacity
+/usr/share/doc/deepin-metacity/changelog.Debian.gz
+/usr/share/doc/deepin-metacity/changelog.gz
+/usr/share/doc/deepin-metacity/copyright
+/usr/share/doc/deepin-metacity/README.Debian

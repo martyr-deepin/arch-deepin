@@ -26,7 +26,3 @@
 /usr/share/dbus-1
 /usr/share/dbus-1/services
 /usr/share/dbus-1/services/com.deepin.menu.service
-/usr/share/pyshared
-/usr/share/pyshared/DBusInterfaces.py
-/usr/share/pyshared/__init__.py
-/usr/share/pyshared/menu.py

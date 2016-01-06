@@ -69,6 +69,36 @@ Checksums-Sha256:
  92a1b3e28f056ca34b24e061e333b6480720757bce5daafc313b2c9814d1842a 640 deepin-crossover_0.5.3.dsc
  bfb8cba436a55f32afa7e3f1d0567d640d02b03cc9c6465467cbca5d0064ceff 5703 deepin-crossover_0.5.3.tar.gz
 
+Package: deepinwine-qqintl
+Format: 3.0 (quilt)
+Binary: deepinwine-qqintl, deepinwine-qq2012, wine-qq2012, wine-qqintl
+Architecture: all i386
+Version: 0.1.3-2
+Maintainer: Li Longyu <leaeasy@gmail.com>
+Homepage: http://www.qq.com/
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8.0.0)
+Package-List:
+ deepinwine-qq2012 deb non-free/net extra
+ deepinwine-qqintl deb non-free/net extra
+ wine-qq2012 deb non-free/net extra
+ wine-qqintl deb non-free/net extra
+Priority: extra
+Section: non-free/net
+Directory: pool/non-free/d/deepinwine-qqintl
+Files: 
+ 4fa054ec9e2d665769164ae9ae698ed6 1599 deepinwine-qqintl_0.1.3-2.dsc
+ 26c29532141784c7f1ce3c4ff17a1054 116069056 deepinwine-qqintl_0.1.3.orig.tar.xz
+ b8e1642e1f33aa7a51d4d84c6eae86df 3105 deepinwine-qqintl_0.1.3-2.debian.tar.gz
+Checksums-Sha1: 
+ 45812d121fd1376456c7365b18d0c7ce3f9e0f9f 1599 deepinwine-qqintl_0.1.3-2.dsc
+ eb251dae9524f9bc22216eea29fbcc57e03ed9dd 116069056 deepinwine-qqintl_0.1.3.orig.tar.xz
+ dda0435efa71d2cc3025e7a4cb70f67f23154f8c 3105 deepinwine-qqintl_0.1.3-2.debian.tar.gz
+Checksums-Sha256: 
+ f9c1acb71f3f447d06932aa148dafe2d83778c41ea9bf3efac68b6733ec50538 1599 deepinwine-qqintl_0.1.3-2.dsc
+ 2d0dcafe7f6195d2037397dd963b059b1f631b1ad6b52081ac397e38fb264394 116069056 deepinwine-qqintl_0.1.3.orig.tar.xz
+ 94b5f80b0fba53723adc398d26466af3b23659208a7449d878220ed37e3feb1f 3105 deepinwine-qqintl_0.1.3-2.debian.tar.gz
+
 Package: draftsight
 Format: 1.0
 Binary: dassault-systemes-draftsight, draftsight

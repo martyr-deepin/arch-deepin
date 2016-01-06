@@ -12,7 +12,6 @@
 /usr/lib/python2.7/dist-packages/deepin_menu-0.1.egg-info
 /usr/lib/python2.7/dist-packages/deepin_menu-0.1.egg-info/dependency_links.txt
 /usr/lib/python2.7/dist-packages/deepin_menu-0.1.egg-info/PKG-INFO
-/usr/lib/python2.7/dist-packages/deepin_menu-0.1.egg-info/SOURCES.txt
 /usr/lib/python2.7/dist-packages/deepin_menu-0.1.egg-info/top_level.txt
 /usr/lib/python2.7/dist-packages/deepin_menu/DBusInterfaces.py
 /usr/lib/python2.7/dist-packages/deepin_menu/__init__.py
@@ -23,7 +22,7 @@
 /usr/share/dbus-1/services/com.deepin.menu.service
 /usr/share/doc
 /usr/share/doc/deepin-menu
-/usr/share/doc/deepin-menu/changelog.gz
+/usr/share/doc/deepin-menu/changelog.Debian.gz
 /usr/share/doc/deepin-menu/copyright
 /usr/share/pyshared
 /usr/share/pyshared/deepin_menu
