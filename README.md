@@ -20,24 +20,7 @@ For the DDE(Deepin Desktop Environment), simple install packages in
 `deepin` group:
 
 ```sh
-sudo pacman -Sy deepin
-```
-
-If you want to experience more applications from Deepin, such as
-`deepin-music` and `deepin-movie`, just install `deepin-extra`:
-
-```sh
-sudo pacman -Sy deepin-extra
-```
-
-For the old Deepin 2014 packages which maintained by @mmetak, please
-use the OBS repository by adding following code to `/etc/pacman.conf`:
-
-```ini
-[home_metakcahura_arch-deepin_Arch_Extra]
-SigLevel = Never
-Server = http://download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
-# Server = http://anorien.csc.warwick.ac.uk/mirrors/download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
+sudo pacman -S deepin deepin-extra
 ```
 
 Receive update notification
@@ -65,34 +48,6 @@ Launching DDE
 
 Troubleshooting
 ---------------
-
-  - Install Deepin packages from OBS failed, report `invalid or corrupted package (checksum)`
-
-    Well, this is a troublesome issue of OBS for Archlinux users that
-    the the checksums will be out of date after package rebuild
-    without version changed. Sometimes we will increase `pkgrel`
-    manually to avoid such issues, but most of the cases, please
-    install the packages manually through `pacman -U`.
-
-  - Install Deepin packages from OBS failed, report `Maximum file size
-    exceeded`
-
-    The repository site of openSUSE looks like not friendly to
-    archlinux users. Please setup `wget` as default download tool by
-    removing comment from line `XferCommand = /usr/bin/wget
-    --passive-ftp -c -O%o %u` in `/etc/pacman.conf`, then try again.
-
-    If not work, try the alternative server:
-
-    ```sh
-    Server = http://anorien.csc.warwick.ac.uk/mirrors/download.opensuse.org/repositories/home:/metakcahura:/arch-deepin/Arch_Extra/$arch
-    ```
-
-  - Report package downgrading warning when updating
-
-    Packages version format have been adjusted for that we do not use
-    source git repositories right now. To fix this problem, just run
-    `pacman -Syuu`.
 
   - How to collect debug logs?
 
@@ -128,18 +83,6 @@ Troubleshooting
     sudo systemctl enable ModemManager
     sudo systemctl start ModemManager
     ```
-
-Screenshots
------------
-
-<img src="./screenshot/dde_2014.1_01.png"
-width=500/>
-
-<img src="./screenshot/dde_2014.1_02.png"
-width=500/>
-
-<img src="./screenshot/dde_2014.1_03.png"
-width=500/>
 
 License
 -------
