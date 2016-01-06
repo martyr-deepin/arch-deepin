@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">github.com</param>
-    <param name="protocol">https</param>
-    <param name="path">/NitruxSA/flattr-icons/archive/v1.3.tar.gz</param>
-  </service>
-</services>

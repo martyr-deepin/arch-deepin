@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">ftp5.gwdg.de</param>
-    <param name="protocol">http</param>
-    <param name="path">/pub/linux/linuxdeepin/packages/pool/main/c/compiz/compiz_0.9.99-5+git20140707164843~2e85d002e7.tar.gz</param>
-  </service>
-</services>

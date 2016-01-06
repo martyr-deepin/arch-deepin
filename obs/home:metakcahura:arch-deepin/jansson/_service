@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">www.digip.org</param>
-    <param name="protocol">http</param>
-    <param name="path">/jansson/releases/jansson-2.7.tar.bz2</param>
-  </service>
-</services>

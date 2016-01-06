@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="host">download.savannah.gnu.org</param>
-    <param name="protocol">http</param>
-    <param name="path">/releases/libunwind/libunwind-1.1.tar.gz</param>
-  </service>
-</services>
