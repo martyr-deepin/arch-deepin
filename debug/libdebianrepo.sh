@@ -24,13 +24,13 @@ deepin_repo_sources=(
   "${mirror}${fileurl_prefix}/dists/trusty/universe/source/Sources.gz"
 )
 local_sources=(
-  "./reposources/main"
-  "./reposources/non-free"
-  "./reposources/universe"
+  "./upstream_repos/main"
+  "./upstream_repos/non-free"
+  "./upstream_repos/universe"
 )
 
 download_repo_sources() {
-  rm -f ./reposources/*
+  rm -f ./upstream_repos/*
   local i=0
   for s in "${deepin_repo_sources[@]}"; do
     local l="${local_sources[${i}]}"

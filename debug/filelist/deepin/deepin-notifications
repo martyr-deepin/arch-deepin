@@ -1,0 +1,7 @@
+/usr
+/usr/lib
+/usr/lib/deepin-notifications
+/usr/lib/deepin-notifications/deepin-notifications
+/usr/share/dbus-1
+/usr/share/dbus-1/services
+/usr/share/dbus-1/services/com.deepin.Notifications.service

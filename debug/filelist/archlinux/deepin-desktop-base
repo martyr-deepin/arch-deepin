@@ -1,0 +1,13 @@
+/etc
+/etc/deepin-version
+/usr
+/usr/lib
+/usr/lib/deepin
+/usr/lib/deepin/desktop-version
+/usr/share/backgrounds
+/usr/share/backgrounds/deepin_default_background.jpg
+/usr/share/i18n
+/usr/share/i18n/i18n_dependent.json
+/usr/share/i18n/language_info.json
+/usr/share/plymouth
+/usr/share/plymouth/deepin-logo.png

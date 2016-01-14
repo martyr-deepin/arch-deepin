@@ -1,0 +1,11 @@
+/usr
+/usr/bin
+/usr/bin/deepin-mutter
+/usr/lib
+/usr/lib/deepin-mutter
+/usr/lib/deepin-mutter/mutter-restart-helper
+/usr/lib/deepin-mutter/plugins
+/usr/lib/deepin-mutter/plugins/default.so
+/usr/share/applications
+/usr/share/applications/deepin-mutter.desktop
+/usr/share/applications/deepin-mutter-wayland.desktop

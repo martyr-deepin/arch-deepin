@@ -1,0 +1,17 @@
+/usr
+/usr/bin
+/usr/bin/dde-dock
+/usr/include
+/usr/include/dde-dock
+/usr/include/dde-dock/dockconstants.h
+/usr/include/dde-dock/dockplugininterface.h
+/usr/include/dde-dock/dockpluginproxyinterface.h
+/usr/lib
+/usr/lib/dde-dock
+/usr/lib/dde-dock/plugins
+/usr/lib/dde-dock/plugins/libdde-dock-shutdown-plugin.so
+/usr/lib/dde-dock/plugins/libdde-dock-systray-plugin.so
+/usr/lib/dde-dock/plugins/libdde-dock-trash-plugin.so
+/usr/share/dbus-1
+/usr/share/dbus-1/services
+/usr/share/dbus-1/services/com.deepin.dde.dock.service

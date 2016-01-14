@@ -1,0 +1,13 @@
+/usr
+/usr/lib
+/usr/lib/pyshared
+/usr/lib/pyshared/python2.7
+/usr/lib/pyshared/python2.7/deepin_gsettings.so
+/usr/share/pyshared
+/usr/share/pyshared/deepin_gsettings-0.1.egg-info
+/usr/share/pyshared/deepin_gsettings-0.1.egg-info/dependency_links.txt
+/usr/share/pyshared/deepin_gsettings-0.1.egg-info/PKG-INFO
+/usr/share/pyshared/deepin_gsettings-0.1.egg-info/SOURCES.txt
+/usr/share/pyshared/deepin_gsettings-0.1.egg-info/top_level.txt
+/usr/share/python-support
+/usr/share/python-support/python-deepin-gsettings.public

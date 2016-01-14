@@ -1,0 +1,6 @@
+/usr
+/usr/bin
+/usr/bin/dde-desktop
+/usr/share/dbus-1
+/usr/share/dbus-1/services
+/usr/share/dbus-1/services/com.deepin.dde.desktop.service
