@@ -3,9 +3,7 @@
 /etc/dbus-1/system.d
 /etc/dbus-1/system.d/com.deepin.api.Device.conf
 /etc/dbus-1/system.d/com.deepin.api.GreeterHelper.conf
-/etc/dbus-1/system.d/com.deepin.api.GreeterUtils.conf
 /etc/dbus-1/system.d/com.deepin.api.LocaleHelper.conf
-/etc/dbus-1/system.d/com.deepin.api.SetDateTime.conf
 /etc/dbus-1/system.d/com.deepin.api.SoundThemePlayer.conf
 /lib
 /lib/systemd

@@ -1,42 +1,14 @@
 1d0
 < /usr
-6d5
-< /etc/dbus-1/system.d/com.deepin.api.GreeterUtils.conf
-8d6
-< /etc/dbus-1/system.d/com.deepin.api.SetDateTime.conf
-10,13d7
+8,11d7
 < /lib
 < /lib/systemd
 < /lib/systemd/system
 < /lib/systemd/system/deepin-shutdown-sound.service
-29a24,26
+27a24,26
 > /usr/lib/systemd
 > /usr/lib/systemd/system
 > /usr/lib/systemd/system/deepin-shutdown-sound.service
-15,16c15,16
-< /usr/share/personalization/themes/deepin/wallpapers/City Line.png
-< /usr/share/personalization/themes/deepin/wallpapers/Fairy Town.jpg
----
-> /usr/share/personalization/themes/deepin/wallpapers/City
-> /usr/share/personalization/themes/deepin/wallpapers/Fairy
-18,21c18,21
-< /usr/share/personalization/themes/deepin/wallpapers/Garden In The Autumn.jpg
-< /usr/share/personalization/themes/deepin/wallpapers/Grasslands Under The Moon.jpg
-< /usr/share/personalization/themes/deepin/wallpapers/One Night In Santorini.jpg
-< /usr/share/personalization/themes/deepin/wallpapers/Perito Moreno Glacier.jpg
----
-> /usr/share/personalization/themes/deepin/wallpapers/Garden
-> /usr/share/personalization/themes/deepin/wallpapers/Grasslands
-> /usr/share/personalization/themes/deepin/wallpapers/One
-> /usr/share/personalization/themes/deepin/wallpapers/Perito
-23c23
-< /usr/share/personalization/themes/deepin/wallpapers/Sea Waves In Koules Fortress.jpg
----
-> /usr/share/personalization/themes/deepin/wallpapers/Sea
-25c25
-< /usr/share/personalization/themes/deepin/wallpapers/The Perito Moreno Glacier.jpg
----
-> /usr/share/personalization/themes/deepin/wallpapers/The
 12d11
 < /usr/lib/dde-control-center/modules/libgrub.so
 18d16
@@ -866,31 +838,24 @@
 < /usr/share/dde-launcher/translations/dde-launcher_uk.qm
 < /usr/share/dde-launcher/translations/dde-launcher_zh_CN.qm
 < /usr/share/dde-launcher/translations/dde-launcher_zh_TW.qm
-9,17c9,24
-< /usr/lib/python2.7/dist-packages
-< /usr/lib/python2.7/dist-packages/deepin_menu
-< /usr/lib/python2.7/dist-packages/deepin_menu-0.1.egg-info
-< /usr/lib/python2.7/dist-packages/deepin_menu-0.1.egg-info/dependency_links.txt
-< /usr/lib/python2.7/dist-packages/deepin_menu-0.1.egg-info/PKG-INFO
-< /usr/lib/python2.7/dist-packages/deepin_menu-0.1.egg-info/top_level.txt
-< /usr/lib/python2.7/dist-packages/deepin_menu/DBusInterfaces.py
-< /usr/lib/python2.7/dist-packages/deepin_menu/__init__.py
-< /usr/lib/python2.7/dist-packages/deepin_menu/menu.py
+11,14c11,15
+< /usr/lib/python2.7/site-packages/deepin_menu-0.1.egg-info
+< /usr/lib/python2.7/site-packages/deepin_menu-0.1.egg-info/dependency_links.txt
+< /usr/lib/python2.7/site-packages/deepin_menu-0.1.egg-info/PKG-INFO
+< /usr/lib/python2.7/site-packages/deepin_menu-0.1.egg-info/top_level.txt
 ---
-> /usr/lib/python2.7/site-packages
-> /usr/lib/python2.7/site-packages/deepin_menu
 > /usr/lib/python2.7/site-packages/deepin_menu-0.1-py2.7.egg-info
 > /usr/lib/python2.7/site-packages/deepin_menu-0.1-py2.7.egg-info/dependency_links.txt
 > /usr/lib/python2.7/site-packages/deepin_menu-0.1-py2.7.egg-info/PKG-INFO
 > /usr/lib/python2.7/site-packages/deepin_menu-0.1-py2.7.egg-info/SOURCES.txt
 > /usr/lib/python2.7/site-packages/deepin_menu-0.1-py2.7.egg-info/top_level.txt
-> /usr/lib/python2.7/site-packages/deepin_menu/DBusInterfaces.py
+15a17,18
 > /usr/lib/python2.7/site-packages/deepin_menu/DBusInterfaces.pyc
 > /usr/lib/python2.7/site-packages/deepin_menu/DBusInterfaces.pyo
-> /usr/lib/python2.7/site-packages/deepin_menu/__init__.py
+16a20,21
 > /usr/lib/python2.7/site-packages/deepin_menu/__init__.pyc
 > /usr/lib/python2.7/site-packages/deepin_menu/__init__.pyo
-> /usr/lib/python2.7/site-packages/deepin_menu/menu.py
+17a23,24
 > /usr/lib/python2.7/site-packages/deepin_menu/menu.pyc
 > /usr/lib/python2.7/site-packages/deepin_menu/menu.pyo
 21,25d27
@@ -1097,24 +1062,3 @@
 > /usr/lib/libdui.so.1.0.0
 > /usr/lib/pkgconfig
 > /usr/lib/pkgconfig/dui.pc
-3,13c3,10
-< /usr/lib/pyshared
-< /usr/lib/pyshared/python2.7
-< /usr/lib/pyshared/python2.7/deepin_gsettings.so
-< /usr/share/pyshared
-< /usr/share/pyshared/deepin_gsettings-0.1.egg-info
-< /usr/share/pyshared/deepin_gsettings-0.1.egg-info/dependency_links.txt
-< /usr/share/pyshared/deepin_gsettings-0.1.egg-info/PKG-INFO
-< /usr/share/pyshared/deepin_gsettings-0.1.egg-info/SOURCES.txt
-< /usr/share/pyshared/deepin_gsettings-0.1.egg-info/top_level.txt
-< /usr/share/python-support
-< /usr/share/python-support/python-deepin-gsettings.public
----
-> /usr/lib/python2.7
-> /usr/lib/python2.7/site-packages
-> /usr/lib/python2.7/site-packages/deepin_gsettings-0.1-py2.7.egg-info
-> /usr/lib/python2.7/site-packages/deepin_gsettings-0.1-py2.7.egg-info/dependency_links.txt
-> /usr/lib/python2.7/site-packages/deepin_gsettings-0.1-py2.7.egg-info/PKG-INFO
-> /usr/lib/python2.7/site-packages/deepin_gsettings-0.1-py2.7.egg-info/SOURCES.txt
-> /usr/lib/python2.7/site-packages/deepin_gsettings-0.1-py2.7.egg-info/top_level.txt
-> /usr/lib/python2.7/site-packages/deepin_gsettings.so

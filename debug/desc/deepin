@@ -42,8 +42,6 @@ Conffiles:
  /etc/dbus-1/system.d/com.deepin.api.GreeterHelper.conf 43a0d306187c410765e7678cfea3657a
  /etc/dbus-1/system.d/com.deepin.api.LocaleHelper.conf a15be062c459ae117305ff14961dd473
  /etc/dbus-1/system.d/com.deepin.api.SoundThemePlayer.conf 8d9b0e324a81b687b7caa449370cea4a
- /etc/dbus-1/system.d/com.deepin.api.SetDateTime.conf fbf84a5c4bc957ff73851dde08972124 obsolete
- /etc/dbus-1/system.d/com.deepin.api.GreeterUtils.conf 0e806761f29c5094d2e22f619edbf450 obsolete
 Description: Go-lang bingdings for dde-daemon
  Go-lang bindings for dde-daemon
 Homepage: http://www.linuxdeepin.com

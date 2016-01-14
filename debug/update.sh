@@ -21,7 +21,8 @@ action_collect_deepin() {
 do_action_collect_deepin() {
   pkgname="${1}"
   dpkg -L "${pkgname}" | sort | grep -v '^/usr/share/doc\|^/usr/share$\|^/\.$' | \
-      sed 's#/usr/lib/x86_64-linux-gnu/qt5/qml#/usr/lib/qt/qml#' \
+      sed 's#/usr/lib/x86_64-linux-gnu/qt5/qml#/usr/lib/qt/qml#' | \
+      sed 's#/usr/lib/python2.7/dist-packages#/usr/lib/python2.7/site-packages#' \
       > "filelist/deepin/${pkgname}"
 }
 
@@ -35,7 +36,7 @@ action_collect_archlinux() {
 }
 do_action_collect_archlinux() {
   pkgname="${1}"
-  pacman -Ql "${pkgname}" | awk '{print $2}' | sort | sed 's=/$==' | \
+  pacman -Ql "${pkgname}" | sed 's/[^ ]* //' | sort | sed 's=/$==' | \
       grep -v '^/usr/share$' > "filelist/archlinux/${pkgname}"
 }
 
@@ -77,7 +78,7 @@ action_diff_filelist() {
   # diff deepin/deepin-wm archlinux/deepin-wm >> "${filelist_diff}"
   diff deepin/deepin-wm-switcher archlinux/deepin-wm-switcher >> "${filelist_diff}"
   diff deepin/libdui1 archlinux/libdui >> "${filelist_diff}"
-  diff deepin/python-deepin-gsettings archlinux/python2-deepin-gsettings >> "${filelist_diff}"
+  # diff deepin/python-deepin-gsettings archlinux/python2-deepin-gsettings >> "${filelist_diff}"
   # diff deepin/python-deepin-storm archlinux/python2-deepin-storm >> "${filelist_diff}"
   # diff deepin/deepin-ui archlinux/python2-deepin-ui >> "${filelist_diff}"
   # diff deepin/python-deepin-utils archlinux/python2-deepin-utils >> "${filelist_diff}"
